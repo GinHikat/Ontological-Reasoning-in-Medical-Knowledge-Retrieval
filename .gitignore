@@ -17,5 +17,6 @@ notebooks/*
 
 *.ipynb
 
-.gitnexus
 *.vscode 
+
+modules/model/statedict/
