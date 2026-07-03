@@ -24,11 +24,11 @@ def generate_embeddings():
     
     # Process Drugs (Temporarily skipped as requested)
     drug_csv = var_dir / "data" / "viettel" / "base" / "short_drug.csv"
-    print(f"\nSkipping Drugs from {drug_csv}")
-    if False and drug_csv.exists():
+    print(f"\nProcessing Drugs from {drug_csv}")
+    if drug_csv.exists():
         df_drug = pd.read_csv(drug_csv)
         if 'term' in df_drug.columns:
-            terms = df_drug['term'].fillna("").astype(str).tolist()
+            terms = [str(t).lower() for t in df_drug['term'].fillna("").tolist()]
             print(f"Encoding {len(terms)} drug terms...")
             embeddings = sapbert_en.encode_text(terms, batch_size=64, show_progress=True)
             
@@ -47,7 +47,7 @@ def generate_embeddings():
     if diag_csv.exists():
         df_diag = pd.read_csv(diag_csv)
         if 'name_vi' in df_diag.columns:
-            names = df_diag['name_vi'].fillna("").astype(str).tolist()
+            names = [str(n).lower() for n in df_diag['name_vi'].fillna("").tolist()]
             print(f"Encoding {len(names)} diagnosis terms (Vietnamese)...")
             embeddings = sapbert_vi.encode_text(names, batch_size=64, show_progress=True)
             

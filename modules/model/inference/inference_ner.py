@@ -79,34 +79,45 @@ class NER:
                 aggregation_strategy="simple" 
             )
         
-        raw_results = _PIPELINES[pipeline_key](text)
+        # Process text line-by-line to avoid exceeding max token length (512)
+        lines = text.split('\n')
         entities = []
+        global_offset = 0
         
-        # Chronological pointer to search through the original text
-        current_search_idx = 0
-    
-        for entity in raw_results:
-            label = entity['entity_group']
-            if label == "O":
+        for line in lines:
+            if not line.strip():
+                global_offset += len(line) + 1 # +1 for the \n
                 continue
+                
+            raw_results = _PIPELINES[pipeline_key](line)
             
-            term = entity['word'].strip().replace('@@', '').replace('##', '')
+            # Chronological pointer to search through the current line
+            current_search_idx = 0
+        
+            for entity in raw_results:
+                label = entity['entity_group']
+                if label == "O":
+                    continue
+                
+                term = entity['word'].strip().replace('@@', '').replace('##', '')
+                
+                start_idx = line.find(term, current_search_idx)
+                
+                if start_idx != -1:
+                    end_idx = start_idx + len(term)
+                    offset = (global_offset + start_idx, global_offset + end_idx)
+                    current_search_idx = end_idx  # Move pointer forward
+                else:
+                    # Fallback if subword merging aggressively changed the string
+                    offset = (None, None)
+                
+                entities.append({
+                    "term": term,
+                    "offset": offset,
+                    "label": label
+                })
             
-            start_idx = text.find(term, current_search_idx)
-            
-            if start_idx != -1:
-                end_idx = start_idx + len(term)
-                offset = (start_idx, end_idx)
-                current_search_idx = end_idx  # Move pointer forward
-            else:
-                # Fallback if subword merging aggressively changed the string
-                offset = (None, None)
-            
-            entities.append({
-                "term": term,
-                "offset": offset,
-                "label": label
-            })
+            global_offset += len(line) + 1 # +1 for the \n
             
         merged_entities = []
         for ent in entities:

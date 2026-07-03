@@ -111,14 +111,84 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 > **Accomplishment:** We successfully established an end-to-end inference and evaluation pipeline that reads raw inputs, extracts core medical entities, retrieves standard dictionary IDs, and structures the final output. This gives us our baseline evaluation score.
 
 > [!IMPORTANT]
-> **Limitations to Address:**
-> 1.  **Missing Entity Types:** The system cannot detect Symptoms (`TRIỆU_CHỨNG`) or Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`).
-> 2.  **Missing Contextual Assertions:** All modifiers (`isNegated`, `isFamily`, `isHistorical`) default to empty arrays; Phase 2 needs to be implemented.
-> 3.  **Low ID Retrieval Accuracy:** The `J_candidates` score is quite low (`3.7516`), indicating that retrieval against the current short base dictionaries struggles to find correct IDs.
+> **Limitations to Address & Future Optimizations:**
+> 0.  **NER Extraction is the Bottleneck:** A deep dive into the outputs shows that the Ontology mapping logic (SapBERT) is highly accurate. The primary cause for the poor `J_candidates` and `WER` scores is the base NER model itself: it frequently chops off words (e.g., "khó th"), completely misses obvious entities (e.g., "buồn nôn", "ecg"), and misclassifies types (e.g., classifying "phân tích nước tiểu" as a Disease).
+> 1.  **Missing Entity Types:** The system cannot detect Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`). (Symptoms are now handled via dual-retrieval).
+> 2.  **Missing Contextual Assertions:** All modifiers (`isNegated`, `isFamily`, `isHistorical`) default to empty arrays.
+>     *   *Optimization Idea - Structure-based `isHistorical`:* Test notes follow a strict 3-part structure ("1. Tiền sử bệnh", "2. Tiền sử bệnh hiện tại", "3. Đánh giá tại bệnh viện"). We can track these section headers to automatically flag entities under "Tiền sử bệnh" as `isHistorical`. (Note: We cannot rely on sections to classify `CHẨN_ĐOÁN` vs `TRIỆU_CHỨNG`, as they can appear in any section).
+>     *   *Optimization Idea - Regex-based `isNegated`:* Split sentences into clauses using commas. If the clause containing the extracted entity has words like "không" or "chưa" nearby, assign the `isNegated` flag.
+> 3.  **Incomplete Drug Extraction Boundaries:** The base NER model only extracts the core drug name (e.g., "aspirin"), missing the dosage and frequency context.
+>     *   *Optimization Idea - Regex Boundary Expansion:* Build a regex to find numbers or units of measurement (e.g., "325mg x 1") around the extracted drug in its clause. Mark that as the boundary and expand the final extracted `text` to include the full phrase (e.g., "aspirin 325mg x 1"). However, continue using *only* the core extracted drug term for SapBERT retrieval to avoid noise.
+> 4.  **ID Retrieval Accuracy:** `J_candidates` can still be further optimized.
 
-**Current Evaluation Results (1st Run):**
+## 5. Change Log
+
+### Modification Ver 2
+1. **Symptom Dictionary Generation:** Created `generate_embedding_symptom.py` to extract Disease and Phenotype relationships from `external_kg.parquet` and build a massive ~54,000 term Symptom dictionary with embeddings.
+2. **Dual-Retrieval Logic:** Rebuilt the `test_sample_pipeline.py` inference flow so that when the base NER model predicts a disease-related entity, we cross-reference it against both the Diagnosis dictionary and the Symptom dictionary. We dynamically classify it as `CHẨN_ĐOÁN` or `TRIỆU_CHỨNG` based on the highest cosine similarity score.
+3. **Optimized JSON Format:** Stripped out the `candidates` key from the JSON outputs for `TRIỆU_CHỨNG` (and other irrelevant types) to adhere closer to the gold standard evaluation format.
+
+### Modification Ver 3
+1. **Lowercase Standardization:** Converted the entire matching architecture to be case-insensitive by `.lower()`ing all texts exactly prior to SapBERT embedding (for both the dictionary preprocessing scripts and the live inference pipeline), completely resolving the case mismatch errors.
+2. **Similarity Thresholding:** Added a strict minimum cosine similarity cutoff of `0.7` for both `CHẨN_ĐOÁN` and `THUỐC` mapping. If the SapBERT score is below this, we drop the candidate ID instead of accidentally mapping a low-confidence false positive.
+
+### Modification Ver 4
+1. **Word Fragmentation Expansion:** Implemented a post-processing boundary fix for the base NER outputs. If an extracted entity boundary falls in the middle of a word (e.g., "khó th"), the script automatically expands the offset backwards and forwards to the nearest whitespace or punctuation to capture the complete word ("khó thở").
+2. **Lab Test & Procedure Filtering:** Added hardcoded keyword matching for common lab/procedure stopwords (e.g., "phân tích", "xét nghiệm", "ct", "mri"). If these appear in the extracted entity, it is immediately routed to `TÊN_XÉT_NGHIỆM` instead of performing expensive (and inaccurate) SapBERT lookups for diseases.
+3. **Drug Boundary Expansion:** Added regex matching to safely expand extracted drug boundaries to include trailing dosages and frequencies (e.g., "325mg x 1") in the final output string, while keeping the core drug term isolated for precise SapBERT ontology mapping.
+4. **Training Data Word-Segmentation Fix:** Discovered the base NER model was trained on underscore-segmented text (e.g., "tiêu_chảy"), which caused fragmented outputs when inferencing on raw space-separated text. Executed a script to clean the `.conll` files, splitting underscored tokens into individual words and updating their BIO tags to prepare for a clean model retraining.
+
+### Modification Ver 5
+1. **Smarter Contextual Assertions:**
+    *   **Strict `isHistorical`:** Dynamically tracked section boundaries to guarantee that `isHistorical` is only applied if the entity falls exactly within Section 1 (*Tiền sử bệnh*). It stops immediately at Section 2 to avoid false positives.
+    *   **Advanced `isNegated`:** Replaced naive regex with a multi-rule system:
+        *   Catches exact bullet-point negations (e.g., "- Không đau ngực").
+        *   Catches comma-separated lists correctly (e.g., "Không ho, sốt, đau ngực" negates all three).
+        *   Implements contrast-blocking (e.g., "Không sốt nhưng có ho" safely aborts the negation for "ho" because of "nhưng có").
+    *   **Dropped `isFamily`:** Analysis revealed that "người nhà" mostly acts as an informant ("Theo lời người nhà"), causing massive false positives. We completely stripped `isFamily` to protect the score.
+2. **Semantic-Lexical Hybrid Retrieval:**
+    *   Upgraded the retrieval architecture to finally hit long Semantic Clinical Drug IDs (SCD) instead of falling back to short Ingredient IDs.
+    *   Modified the pipeline to feed the **full expanded string** (e.g., "Chlorpheniramine 10ml") into SapBERT instead of just the core drug name.
+    *   Implemented a "Retrieve and Rerank" algorithm: SapBERT instantly grabs the **Top 3** semantic matches. A `difflib` string similarity algorithm then acts as a tie-breaker, assigning a combined hybrid score to ensure exact dosage overlaps (e.g., matching "10ml" exactly) win out over purely semantic matches.
+
+### Modification Ver 6 (Planned)
+1. **Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`) Post-Processor:** The base NER model currently misses 100% of Lab Results. Plan: Write a smart regex module to scan the text for common lab tests (Glucose, WBC, AST, etc.) or nearby `TÊN_XÉT_NGHIỆM` tags, and strictly extract their adjoining numerical values to plug this massive hole in our overall recall.
+2. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
+3. **Simulate Threshold Relaxing:** Currently, SapBERT drops any mapping below a strict `0.7` cosine similarity cutoff. Plan: Experiment with dropping this to `0.6` in combination with the new hybrid lexical tie-breaker, evaluating if the boost in True Positives outweighs the potential noise from False Positives.
+
+---
+
+**Evaluation Results (1st Run - Baseline):**
 *   **Score (Điểm):** 8.33930
 *   **WER:** 85.948
 *   **J_assertion:** 8.7434
 *   **J_candidates:** 3.7516
+*   **Records Scored:** 100
+
+**Evaluation Results (2nd Run - Symptom Split & Formatting):**
+*   **Score (Điểm):** 16.84840
+*   **WER:** 80.785
+*   **J_assertion:** 20.8896
+*   **J_candidates:** 6.1360
+*   **Records Scored:** 100
+
+**Evaluation Results (3rd Run - Threshold & Lowercase):**
+*   **Score (Điểm):** 16.97530
+*   **WER:** 80.785
+*   **J_assertion:** 20.8896
+*   **J_candidates:** 12.3597
+*   **Records Scored:** 100
+
+**Evaluation Results (4th Run - ViHealthBERT + Chunking Fix + Drug Expansion):**
+*   **Score (Điểm):** 18.42670 
+*   **WER:** 78.0532           
+*   **J_assertion:** 22.1193  
+*   **J_candidates:** 13.0171  
+*   **Records Scored:** 100
+
+**Evaluation Results (5th Run - Mod Ver 5: Hybrid Retrieval & Smarter Assertions):**
+*   **Score (Điểm):** 18.76750
+*   **WER:** 77.9624
+*   **J_assertion:** 22.8200
+*   **J_candidates:** 13.2756
 *   **Records Scored:** 100

@@ -41,7 +41,7 @@ UMLS_STY_TO_CATEGORY = {
 }
 
 class EntityExtractor:
-    def __init__(self, mode: str, ner_model: str = "phobert", retrieval_model: str = "cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR"):
+    def __init__(self, mode: str, ner_model: str = "vihealthbert", retrieval_model: str = "cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR"):
         """
         EntityExtractor utility for unified medical entity extraction. Supports 4 different extraction modes
 
@@ -85,7 +85,7 @@ class EntityExtractor:
     def _get_ner_instance(self, lang="vi"):
         ner_lang_mode = "english" if lang == "en" else "vietnamese"
         if self._ner_instance is None or getattr(self._ner_instance, 'mode', '') != ner_lang_mode:
-            from modules.extend.model.inference.inference_ner import NER
+            from .model.inference.inference_ner import NER
             self._ner_instance = NER(mode=ner_lang_mode, model_name=self.ner_model)
         return self._ner_instance
         
