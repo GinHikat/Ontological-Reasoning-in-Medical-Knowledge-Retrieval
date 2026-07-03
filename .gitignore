@@ -11,12 +11,11 @@ data/
 
 *.pt
 
-*.txt
-
 notebooks/*
 
 *.ipynb
 
 *.vscode 
+
 
 modules/model/statedict/
