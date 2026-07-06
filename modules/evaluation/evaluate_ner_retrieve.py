@@ -1,39 +1,67 @@
 import json
-import torch
 import os
 import sys
 
+import torch
+
 # Dynamically add the project root to sys.path so python can find the 'modules' package
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from tqdm import tqdm
-import pandas as pd
-import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from modules.models.models import EmbeddingModels
-
 import argparse
-from modules.extend.model.inference_ner import NER
+
+import numpy as np
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+from tqdm import tqdm
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+from modules.model.embedding_models import EmbeddingModels
+from modules.model.inference.inference_ner import NER
+
 
 def main():
-    parser = argparse.ArgumentParser(description="End-to-End Evaluation against Gold Standard SapBERT CUIs")
-    parser.add_argument("--extractor", type=str, choices=["qwen", "ner"], default="ner", help="Which model type to use for extraction.")
-    parser.add_argument("--qwen_model", type=str, default="PeterPaker123/Qwen2.5-7B-Vietnamese-Medical-NER-GRPO", help="HuggingFace Hub ID for Qwen model (or LoRA adapter)")
-    parser.add_argument("--base_model", type=str, default="", help="HuggingFace Hub ID for base model if using a LoRA adapter")
-    parser.add_argument("--ner_model", type=str, default="vihealthbert", help="Local NER model folder name (e.g. vihealthbert, vipubmed-deberta)")
+    parser = argparse.ArgumentParser(
+        description="End-to-End Evaluation against Gold Standard SapBERT CUIs"
+    )
+    parser.add_argument(
+        "--extractor",
+        type=str,
+        choices=["qwen", "ner"],
+        default="ner",
+        help="Which model type to use for extraction.",
+    )
+    parser.add_argument(
+        "--qwen_model",
+        type=str,
+        default="PeterPaker123/Qwen2.5-7B-Vietnamese-Medical-NER-GRPO",
+        help="HuggingFace Hub ID for Qwen model (or LoRA adapter)",
+    )
+    parser.add_argument(
+        "--base_model",
+        type=str,
+        default="",
+        help="HuggingFace Hub ID for base model if using a LoRA adapter",
+    )
+    parser.add_argument(
+        "--ner_model",
+        type=str,
+        default="vihealthbert",
+        help="Local NER model folder name (e.g. vihealthbert, vipubmed-deberta)",
+    )
     args = parser.parse_args()
 
     input_file = "data/viettel/vietnamese_ner/gold_standard_benchmark.jsonl"
     output_file = "data/viettel/vietnamese_ner/ner_predictions.jsonl"
     THRESHOLD = 0.80
-    
+
     # Check if we are running in the correct directory
     if not os.path.exists(input_file):
         print(f"Error: Could not find '{input_file}'.")
-        print("Please run this script from the root of the 'Patient-EHR-Graph-Representation-for-Multi-task-Learning' directory.")
+        print(
+            "Please run this script from the root of the 'Patient-EHR-Graph-Representation-for-Multi-task-Learning' directory."
+        )
         return
 
     if args.extractor == "qwen":
@@ -41,39 +69,36 @@ def main():
         print(f"Loading tokenizer from {tokenizer_id}...")
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_id)
         tokenizer.chat_template = "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\\nYou are a helpful assistant.<|im_end|>\\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\\n' + message['content'] + '<|im_end|>' + '\\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\\n' }}{% endif %}"
-        
+
         print(f"Loading model {args.qwen_model}...")
         if args.base_model:
             print(f"Loading base model {args.base_model} and applying LoRA...")
             from peft import PeftModel
+
             base_model = AutoModelForCausalLM.from_pretrained(
-                args.base_model,
-                device_map="auto",
-                torch_dtype=torch.bfloat16
+                args.base_model, device_map="auto", torch_dtype=torch.bfloat16
             )
             model = PeftModel.from_pretrained(base_model, args.qwen_model)
         else:
             model = AutoModelForCausalLM.from_pretrained(
-                args.qwen_model, 
-                device_map="auto", 
-                torch_dtype=torch.bfloat16
+                args.qwen_model, device_map="auto", torch_dtype=torch.bfloat16
             )
     else:
         print(f"Loading local NER model '{args.ner_model}'...")
         ner_extractor = NER(args.ner_model)
-    
+
     # Load SapBERT for entity linking
     print("Loading SapBERT model for entity linking...")
     sapbert_model_name = "cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR"
     embedder = EmbeddingModels(model_choice=sapbert_model_name)
-    
+
     # Load mapped entities with their SapBERT embeddings for quick cosine similarity matching
     print("Loading pre-computed SapBERT embeddings database...")
     base_df = pd.read_pickle("data/viettel/mapping/mapped_entities_embedded.pkl")
     # We only care about rows that have a valid CUI
-    base_df = base_df.dropna(subset=['mapped_cui']).reset_index(drop=True)
-    base_embeddings = np.vstack(base_df['embedding'].values)
-    
+    base_df = base_df.dropna(subset=["mapped_cui"]).reset_index(drop=True)
+    base_embeddings = np.vstack(base_df["embedding"].values)
+
     # Label mapping dictionary (from Qwen NER output) - expanded to catch variations
     label_mapping = {
         "SYMPTOM_AND_DISEASE": "Disease/Symptom",
@@ -89,7 +114,7 @@ def main():
         "LAB": "Procedure/Treatment",
         # "DIAGNOSTIC": "Procedure/Treatment"
     }
-    
+
     # UMLS Semantic Type to Macro Class Mapping
     umls_to_three_classes = {
         "Clinical Attribute": "Disease/Symptom",
@@ -117,21 +142,21 @@ def main():
         "Medical Device": "Procedure/Treatment",
         "Therapeutic or Preventive Procedure": "Procedure/Treatment",
     }
-    
-    base_df['macro_type'] = base_df['mapped_type'].map(umls_to_three_classes)
-    
+
+    base_df["macro_type"] = base_df["mapped_type"].map(umls_to_three_classes)
+
     with open(input_file, "r", encoding="utf-8") as f:
         lines = f.readlines()
-        
+
     print(f"Loaded {len(lines)} examples from {input_file}")
-    
+
     # Global tracking for TP, FP, FN
     metrics = {
         "Disease/Symptom": {"tp": 0, "fp": 0, "fn": 0},
         "Procedure/Treatment": {"tp": 0, "fp": 0, "fn": 0},
-        "Drug": {"tp": 0, "fp": 0, "fn": 0}
+        "Drug": {"tp": 0, "fp": 0, "fn": 0},
     }
-    
+
     # System prompt if using Qwen for NER
     system_prompt = (
         "You are an expert clinical annotator. Your task is to extract medical entities from Vietnamese clinical text.\n"
@@ -146,43 +171,53 @@ def main():
         "4. EXACT TEXT: Extract precise, concise clinical terms exactly as they appear in the original text.\n"
         "5. EXAMPLE: For 'bệnh nhân bị viêm kết mạc cấp do vi khuẩn', extract ONLY 'viêm kết mạc cấp'. Do NOT extract 'viêm kết mạc do vi khuẩn' or 'do vi khuẩn'.\n"
         "\nOUTPUT FORMAT:\n"
-        "Return the result STRICTLY as a JSON list containing dictionaries with \"entity\" and \"type\" keys. "
-        "Ensure the \"type\" is exactly one of: SYMPTOM_AND_DISEASE, MEDICAL_PROCEDURE, DRUG.\n"
+        'Return the result STRICTLY as a JSON list containing dictionaries with "entity" and "type" keys. '
+        'Ensure the "type" is exactly one of: SYMPTOM_AND_DISEASE, MEDICAL_PROCEDURE, DRUG.\n'
         "If no relevant entities are found, return an empty list []"
     )
-    
+
     results = []
-    
+
     for line in tqdm(lines, desc="Extracting Entities"):
         data = json.loads(line)
         text = data.get("text", "")
-        
+
         # Extract entities using Qwen
         if args.extractor == "qwen":
             prompt = [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"Text: {text}"}
+                {"role": "user", "content": f"Text: {text}"},
             ]
-            
-            inputs = tokenizer.apply_chat_template(prompt, return_tensors="pt", add_generation_prompt=True, return_dict=True).to(model.device)
-            
+
+            inputs = tokenizer.apply_chat_template(
+                prompt,
+                return_tensors="pt",
+                add_generation_prompt=True,
+                return_dict=True,
+            ).to(model.device)
+
             with torch.no_grad():
                 outputs = model.generate(
-                    **inputs, 
-                    max_new_tokens=256, 
+                    **inputs,
+                    max_new_tokens=256,
                     do_sample=False,
                     temperature=None,
                     top_p=None,
-                    top_k=None
+                    top_k=None,
                 )
-                
-            response = tokenizer.decode(outputs[0][inputs['input_ids'].shape[-1]:], skip_special_tokens=True)
-            
+
+            response = tokenizer.decode(
+                outputs[0][inputs["input_ids"].shape[-1] :], skip_special_tokens=True
+            )
+
             predicted_entities = []
             try:
                 import re
+
                 # Search for anything between ```json and ```, handling multi-line properly
-                json_match = re.search(r'```json\s*(.*?)\s*```', response, re.DOTALL | re.IGNORECASE)
+                json_match = re.search(
+                    r"```json\s*(.*?)\s*```", response, re.DOTALL | re.IGNORECASE
+                )
                 if json_match:
                     json_str = json_match.group(1).strip()
                     predicted_entities = json.loads(json_str)
@@ -194,20 +229,20 @@ def main():
         else:
             # NER extraction
             ner_results = ner_extractor.extract_entities(text)
-            predicted_entities = [{"entity": e["term"], "type": e["label"]} for e in ner_results]
-            
+            predicted_entities = [
+                {"entity": e["term"], "type": e["label"]} for e in ner_results
+            ]
+
         # Perform Entity Linking
-        linked_entities = {
-            "Disease/Symptom": [],
-            "Procedure/Treatment": [],
-            "Drug": []
-        }
-        
+        linked_entities = {"Disease/Symptom": [], "Procedure/Treatment": [], "Drug": []}
+
         if predicted_entities:
             # Batch embed all extracted entities
             extracted_texts = [ent.get("entity", "") for ent in predicted_entities]
-            extracted_embeddings = embedder.encode_text(extracted_texts, batch_size=32, show_progress=False)
-            
+            extracted_embeddings = embedder.encode_text(
+                extracted_texts, batch_size=32, show_progress=False
+            )
+
             for idx, ent in enumerate(predicted_entities):
                 raw_type = str(ent.get("type", "")).strip().upper()
                 # If we used NER, the label is already the macro class "Disease/Symptom" etc.
@@ -215,109 +250,122 @@ def main():
                     mapped_type = ent.get("type", "")
                 else:
                     mapped_type = label_mapping.get(raw_type)
-                
+
                 # Skip unmapped or demographic entities
                 if not mapped_type:
                     continue
-                    
-                emb = extracted_embeddings[idx:idx+1]
-                
+
+                emb = extracted_embeddings[idx : idx + 1]
+
                 # Filter base_df by the macro_type (derived from mapped_type)
-                mask = base_df['macro_type'] == mapped_type
+                mask = base_df["macro_type"] == mapped_type
                 if not mask.any():
                     continue
-                    
+
                 type_df = base_df[mask]
-                type_embeddings = np.vstack(type_df['embedding'].values)
-                
+                type_embeddings = np.vstack(type_df["embedding"].values)
+
                 # Calculate cosine similarity
                 sims = cosine_similarity(emb, type_embeddings)[0]
                 max_idx = np.argmax(sims)
                 max_sim = sims[max_idx]
-                
+
                 if max_sim > THRESHOLD:
-                    cui = type_df.iloc[max_idx]['mapped_cui']
+                    cui = type_df.iloc[max_idx]["mapped_cui"]
                     if pd.notna(cui) and cui != "":
                         linked_entities[mapped_type].append(str(cui))
-                        
+
         # Deduplicate the CUIs for each type
-        linked_entities["Disease/Symptom"] = list(set(linked_entities["Disease/Symptom"]))
-        linked_entities["Procedure/Treatment"] = list(set(linked_entities["Procedure/Treatment"]))
+        linked_entities["Disease/Symptom"] = list(
+            set(linked_entities["Disease/Symptom"])
+        )
+        linked_entities["Procedure/Treatment"] = list(
+            set(linked_entities["Procedure/Treatment"])
+        )
         linked_entities["Drug"] = list(set(linked_entities["Drug"]))
-            
+
         # Compare Sets and Update Metrics
-        gold_entities = data.get('gold_entities', {})
+        gold_entities = data.get("gold_entities", {})
         gold_sets = {
             "Disease/Symptom": set(gold_entities.get("Disease/Symptom", [])),
             "Procedure/Treatment": set(gold_entities.get("Procedure/Treatment", [])),
-            "Drug": set(gold_entities.get("Drug", []))
+            "Drug": set(gold_entities.get("Drug", [])),
         }
-        
+
         pred_sets = {
             "Disease/Symptom": set(linked_entities["Disease/Symptom"]),
             "Procedure/Treatment": set(linked_entities["Procedure/Treatment"]),
-            "Drug": set(linked_entities["Drug"])
+            "Drug": set(linked_entities["Drug"]),
         }
-        
+
         for cls in ["Disease/Symptom", "Procedure/Treatment", "Drug"]:
             gold = gold_sets[cls]
             pred = pred_sets[cls]
-            
+
             tp = len(gold.intersection(pred))
             fp = len(pred - gold)
             fn = len(gold - pred)
-            
+
             metrics[cls]["tp"] += tp
             metrics[cls]["fp"] += fp
             metrics[cls]["fn"] += fn
-            
+
         data["predicted_entities"] = predicted_entities
         data["linked_entities"] = linked_entities
         results.append(data)
 
-    print("\n" + "="*50)
+    print("\n" + "=" * 50)
     print("QWEN2.5 + SAPBERT EVALUATION RESULTS")
-    print("="*50)
-    
+    print("=" * 50)
+
     total_tp = 0
     total_fp = 0
     total_fn = 0
-    
+
     for cls in ["Disease/Symptom", "Procedure/Treatment", "Drug"]:
         tp = metrics[cls]["tp"]
         fp = metrics[cls]["fp"]
         fn = metrics[cls]["fn"]
-        
+
         total_tp += tp
         total_fp += fp
         total_fn += fn
-        
+
         precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
         recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
-        f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
-        
+        f1 = (
+            2 * (precision * recall) / (precision + recall)
+            if (precision + recall) > 0
+            else 0.0
+        )
+
         print(f"\n[{cls}]")
         print(f"  Precision: {precision:.4f}  (TP: {tp}, FP: {fp})")
         print(f"  Recall:    {recall:.4f}  (FN: {fn})")
         print(f"  F1-Score:  {f1:.4f}")
 
-    print("\n" + "-"*50)
+    print("\n" + "-" * 50)
     macro_p = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0.0
     macro_r = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0.0
-    macro_f1 = 2 * (macro_p * macro_r) / (macro_p + macro_r) if (macro_p + macro_r) > 0 else 0.0
-    
+    macro_f1 = (
+        2 * (macro_p * macro_r) / (macro_p + macro_r)
+        if (macro_p + macro_r) > 0
+        else 0.0
+    )
+
     print(f"OVERALL MACRO (All Classes):")
     print(f"  Precision: {macro_p:.4f}")
     print(f"  Recall:    {macro_r:.4f}")
     print(f"  F1-Score:  {macro_f1:.4f}")
-    print("="*50 + "\n")
+    print("=" * 50 + "\n")
 
     print(f"Saving predictions to {output_file}...")
     with open(output_file, "w", encoding="utf-8") as f:
         for res in results:
             f.write(json.dumps(res, ensure_ascii=False) + "\n")
-            
+
     print("Done!")
+
 
 if __name__ == "__main__":
     main()

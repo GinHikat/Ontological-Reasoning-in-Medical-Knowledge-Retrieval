@@ -1,4 +1,6 @@
 data/
+output/
+folder/
 
 .env
 
@@ -15,7 +17,7 @@ notebooks/*
 
 *.ipynb
 
-*.vscode 
+*.vscode
 
 
 modules/model/statedict/
