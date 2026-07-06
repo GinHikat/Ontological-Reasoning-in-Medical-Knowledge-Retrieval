@@ -52,7 +52,7 @@ Check the current state in state.md
 
 ```bash
 git clone https://github.com/GinHikat/Ontological-Reasoning-in-Medical-Knowledge-Retrieval.git
-cd Ontological-Reasoning-in-Medical-Knowledge-Retrieval/VAR
+cd Ontological-Reasoning-in-Medical-Knowledge-Retrieval
 ```
 
 ### 2. Set Up Environment Variables
@@ -104,12 +104,27 @@ move statedict ../modules/model/
 mv statedict ../modules/model/
 ```
 
-### Step 2: Run the Evaluation Pipeline
-You can run the end-to-end evaluation script to iterate through all 100 sample `.txt` files in `data/var/test/`, extract their entities, calculate their ontological IDs, and save the results cleanly.
+### Step 2: Run a Versioned Pipeline
+The recommended runner is now the versioned pipeline entrypoint. It lets you compare old and new implementations without editing the core scripts.
+
+```bash
+# Refactored V5 implementation using composable OOP components
+python modules/evaluation/run_pipeline.py --pipeline v5_refactored
+
+# Frozen V5 adapter for regression comparison
+python modules/evaluation/run_pipeline.py --pipeline legacy_v5
+
+# Quick smoke test on one note
+python modules/evaluation/run_pipeline.py --pipeline v5_refactored --samples 1 --output-dir output_smoke
+```
+
+The output is saved as `.json` files matching the input filenames from `data/var/test/`.
+
+The original monolithic runner is still available for rollback/reference:
+
 ```bash
 python modules/evaluation/test_sample_pipeline.py
 ```
-The output will be saved sequentially as `.json` files in the `VAR/output/` directory matching the exact specifications requested in `state.md`.
 
 ---
 
@@ -132,4 +147,4 @@ print(df_results.head())
 ```
 
 **Note on strict JSON formatting:**
-The strict JSON schema (with `type`, `candidates`, `assertions`, and `position`) requested in `state.md` is specifically assembled and formatted by the `test_sample_pipeline.py` script, which maps the raw extracted terms to the optimized `.npy` dictionaries and outputs the final `.json` files.
+The strict JSON schema (with `type`, `candidates`, `assertions`, and `position`) is now handled by `modules/components/formatting/competition_json.py` when using `modules/evaluation/run_pipeline.py`. The legacy `test_sample_pipeline.py` script still contains its original inline formatting logic for rollback/reference.

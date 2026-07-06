@@ -151,6 +151,12 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
     *   Modified the pipeline to feed the **full expanded string** (e.g., "Chlorpheniramine 10ml") into SapBERT instead of just the core drug name.
     *   Implemented a "Retrieve and Rerank" algorithm: SapBERT instantly grabs the **Top 3** semantic matches. A `difflib` string similarity algorithm then acts as a tie-breaker, assigning a combined hybrid score to ensure exact dosage overlaps (e.g., matching "10ml" exactly) win out over purely semantic matches.
 
+### Architecture Refactor for Iterative Refinement
+1. **Legacy Preservation:** Copied the current working monolithic files to `modules/legacy/utils_legacy.py` and `modules/legacy/test_sample_pipeline_legacy.py` for rollback and regression comparison.
+2. **OOP Component Layer:** Added typed schemas, base interfaces, and composable components under `modules/core/`, `modules/components/`, and `modules/pipelines/`.
+3. **Versioned Runner:** Added `modules/evaluation/run_pipeline.py` with selectable pipelines: `legacy_v5` and `v5_refactored`.
+4. **Refactor Documentation:** Added `docs/tung/refactor_architecture.md` to describe how to add future `v6`, `v7`, and ablation pipelines safely.
+
 ### Modification Ver 6 (Planned)
 1. **Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`) Post-Processor:** The base NER model currently misses 100% of Lab Results. Plan: Write a smart regex module to scan the text for common lab tests (Glucose, WBC, AST, etc.) or nearby `TÊN_XÉT_NGHIỆM` tags, and strictly extract their adjoining numerical values to plug this massive hole in our overall recall.
 2. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
