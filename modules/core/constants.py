@@ -34,5 +34,35 @@ CANDIDATE_ELIGIBLE_LABELS = {
     TARGET_LABEL_DRUG,
 }
 
-PROCEDURE_TEST_KEYWORDS = {"phân tích", "xét nghiệm"}
-PROCEDURE_TEST_EXACT_TERMS = {"ct", "mri"}
+PROCEDURE_TEST_KEYWORDS = {
+    "phân tích",
+    "xét nghiệm",
+    "chụp x-quang",
+    "x-quang",
+    "x quang",
+    "điện tâm đồ",
+    "monitor holter",
+    "holter",
+    "siêu âm",
+    "sinh thiết",
+    "nội soi",
+    "mri",
+    "ct",
+    "ecg",
+    "ekg",
+}
+PROCEDURE_TEST_EXACT_TERMS = {
+    "ct",
+    "mri",
+    "ecg",
+    "ekg",
+    "cea",
+    "wbc",
+    "rbc",
+    "hgb",
+    "plt",
+    "ast",
+    "alt",
+    "bun",
+    "crp",
+}

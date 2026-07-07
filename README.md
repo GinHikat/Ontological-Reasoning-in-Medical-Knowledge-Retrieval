@@ -109,16 +109,26 @@ The recommended runner is now the versioned pipeline entrypoint. It lets you com
 
 ```bash
 # Refactored V5 implementation using composable OOP components
+# Saves to output/v5_refactored/
 python modules/evaluation/run_pipeline.py --pipeline v5_refactored
 
+# Refined V6 implementation with clinical recall/cleanup
+# Saves to output/v6_refined/
+python modules/evaluation/run_pipeline.py --pipeline v6_refined
+
 # Frozen V5 adapter for regression comparison
+# Saves to output/legacy_v5/
 python modules/evaluation/run_pipeline.py --pipeline legacy_v5
 
 # Quick smoke test on one note
-python modules/evaluation/run_pipeline.py --pipeline v5_refactored --samples 1 --output-dir output_smoke
+# Saves to output/v6_refined_samples_1/
+python modules/evaluation/run_pipeline.py --pipeline v6_refined --samples 1
+
+# Optional flat export for submission/evaluator compatibility
+python modules/evaluation/run_pipeline.py --pipeline v6_refined --output-dir output_submission
 ```
 
-The output is saved as `.json` files matching the input filenames from `data/var/test/`.
+By default, each run is saved under `output/<run_name>/` as `.json` files matching the input filenames from `data/var/test/`.
 
 The original monolithic runner is still available for rollback/reference:
 

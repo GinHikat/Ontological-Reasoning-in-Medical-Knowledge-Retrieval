@@ -5,12 +5,21 @@ from collections.abc import Callable
 from modules.pipelines.base import BasePipeline
 from modules.pipelines.legacy_adapter import LegacyV5PipelineAdapter
 from modules.pipelines.v5 import build_v5_refactored_pipeline
+from modules.pipelines.v6 import build_v6_refined_pipeline
 
-PipelineBuilder = Callable[[], BasePipeline]
+NER_MODEL_CHOICES = ["vihealthbert", "vipubmed-deberta", "phobert", "xlm-roberta"]
+
+PipelineBuilder = Callable[..., BasePipeline]
+
+
+def _build_v6(model_name: str = "vihealthbert") -> BasePipeline:
+    return build_v6_refined_pipeline(model_name=model_name)
+
 
 PIPELINE_BUILDERS: dict[str, PipelineBuilder] = {
     "legacy_v5": LegacyV5PipelineAdapter,
     "v5_refactored": build_v5_refactored_pipeline,
+    "v6_refined": _build_v6,
 }
 
 
@@ -18,7 +27,7 @@ def available_pipelines() -> list[str]:
     return sorted(PIPELINE_BUILDERS.keys())
 
 
-def build_pipeline(name: str) -> BasePipeline:
+def build_pipeline(name: str, model_name: str = "vihealthbert") -> BasePipeline:
     try:
         builder = PIPELINE_BUILDERS[name]
     except KeyError as exc:
@@ -26,4 +35,4 @@ def build_pipeline(name: str) -> BasePipeline:
         raise ValueError(
             f"Unknown pipeline '{name}'. Available pipelines: {available}"
         ) from exc
-    return builder()
+    return builder(model_name=model_name)

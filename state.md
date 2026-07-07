@@ -157,10 +157,17 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 3. **Versioned Runner:** Added `modules/evaluation/run_pipeline.py` with selectable pipelines: `legacy_v5` and `v5_refactored`.
 4. **Refactor Documentation:** Added `docs/tung/refactor_architecture.md` to describe how to add future `v6`, `v7`, and ablation pipelines safely.
 
-### Modification Ver 6 (Planned)
-1. **Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`) Post-Processor:** The base NER model currently misses 100% of Lab Results. Plan: Write a smart regex module to scan the text for common lab tests (Glucose, WBC, AST, etc.) or nearby `TÊN_XÉT_NGHIỆM` tags, and strictly extract their adjoining numerical values to plug this massive hole in our overall recall.
-2. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
-3. **Simulate Threshold Relaxing:** Currently, SapBERT drops any mapping below a strict `0.7` cosine similarity cutoff. Plan: Experiment with dropping this to `0.6` in combination with the new hybrid lexical tie-breaker, evaluating if the boost in True Positives outweighs the potential noise from False Positives.
+### Modification Ver 6
+1. **Versioned V6 Pipeline:** Added `v6_refined` to `modules/evaluation/run_pipeline.py` via `modules/pipelines/v6.py`, preserving `v5_refactored` for regression comparison.
+2. **Lab/Test Result Recall:** Added `ClinicalRecallPostProcessor` to recover high-value missed entities for `TÊN_XÉT_NGHIỆM`, `KẾT_QUẢ_XÉT_NGHIỆM`, and conservative symptom bullets from structured note sections.
+3. **Type Correction:** Added `ClinicalTypeCorrectionPostProcessor` to correct common symptoms away from ICD diagnosis linking and recover medication spans mislabeled as procedures when dosage/medication context is present.
+4. **Precision Cleanup:** Added `ClinicalPrecisionFilterPostProcessor` plus nested overlap cleanup to remove artifacts such as standalone dosing tokens and generic headers.
+5. **Assertion Scope Tightening:** V6 restricts contextual assertions to the competition-eligible labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
+6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/` with 100 note-level JSON files. External competition/evaluator score is still pending.
+
+### Remaining Ver 6+ Ideas
+1. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
+2. **Simulate Threshold Relaxing:** Currently, SapBERT drops any mapping below a strict `0.7` cosine similarity cutoff. Plan: Experiment with dropping this to `0.6` in combination with the new hybrid lexical tie-breaker, evaluating if the boost in True Positives outweighs the potential noise from False Positives.
 
 ---
 
