@@ -145,7 +145,8 @@ def run_pipeline(samples: int = None):
         "Medication": "THUỐC",
         "Chemical": "THUỐC",
         "Procedure": "TÊN_XÉT_NGHIỆM",
-        "Test": "TÊN_XÉT_NGHIỆM"
+        "Test": "TÊN_XÉT_NGHIỆM",
+        "Procedure/Treatment": "TÊN_XÉT_NGHIỆM"
     }
 
     test_files = list(test_dir.glob("*.txt"))
@@ -198,7 +199,8 @@ def run_pipeline(samples: int = None):
             
             # 1.5.5 Common Stopwords for Lab Tests / Procedures
             test_keywords = ["phân tích", "xét nghiệm"]
-            term_lower = term.lower()
+            term_lower = term.lower().strip()
+            
             if any(kw in term_lower for kw in test_keywords) or term_lower in ["ct", "mri"]:
                 mapped_type = "TÊN_XÉT_NGHIỆM"
                 is_disease = False  # Prevent it from going into the Symptom/Diagnosis lookup
@@ -245,7 +247,7 @@ def run_pipeline(samples: int = None):
                         best_idx = np.argmax(sims)
                         best_sym_sim = sims[best_idx]
                         
-                if best_diag_sim >= best_sym_sim and best_diag_id is not None and best_diag_sim >= 0.6:
+                if best_diag_sim >= best_sym_sim and best_diag_id is not None and best_diag_sim >= 0.5:
                     mapped_type = "CHẨN_ĐOÁN"
                     candidates = [best_diag_id]
                 else:
@@ -290,6 +292,28 @@ def run_pipeline(samples: int = None):
                 entity_output["candidates"] = candidates
                 
             final_entities.append(entity_output)
+            
+            # --- Heuristic for KẾT_QUẢ_XÉT_NGHIỆM ---
+            if mapped_type == "TÊN_XÉT_NGHIỆM" and boundaries.get("s3", -1) != -1 and offset[0] >= boundaries["s3"]:
+                start_idx = offset[1]
+                end_idx = text.find('\n', start_idx)
+                if end_idx == -1:
+                    end_idx = len(text)
+                
+                raw_substring = text[start_idx:end_idx]
+                result_str = raw_substring.strip()
+                result_str = re.sub(r'^[:\-]+\s*', '', result_str).strip()
+                
+                if result_str:
+                    match_start = raw_substring.find(result_str)
+                    actual_start = start_idx + match_start
+                    final_entities.append({
+                        "text": result_str,
+                        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+                        "candidates": [],
+                        "assertions": [],
+                        "position": [actual_start, actual_start + len(result_str)]
+                    })
             
         # Save JSON output
         out_json_path = output_dir / f"{file_path.stem}.json"
