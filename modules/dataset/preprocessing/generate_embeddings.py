@@ -23,7 +23,7 @@ def generate_embeddings():
     sapbert_vi = extractor._get_sapbert_instance(lang="vi")
     
     # Process Drugs (Temporarily skipped as requested)
-    drug_csv = var_dir / "data" / "viettel" / "base" / "short_drug.csv"
+    drug_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.csv"
     print(f"\nProcessing Drugs from {drug_csv}")
     if drug_csv.exists():
         df_drug = pd.read_csv(drug_csv)
@@ -42,7 +42,7 @@ def generate_embeddings():
         print(f"File not found: {drug_csv}")
         
     # Process Diagnosis
-    diag_csv = var_dir / "data" / "viettel" / "base" / "short_diagnosis.csv"
+    diag_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
     print(f"\nProcessing Diagnosis from {diag_csv}")
     if diag_csv.exists():
         df_diag = pd.read_csv(diag_csv)

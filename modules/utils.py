@@ -168,7 +168,7 @@ class EntityExtractor:
         if self._base_df_cache is None:
             map_path = os.path.join(
                 project_root,
-                "data",
+                "v_dataset",
                 "viettel",
                 "mapping",
                 "mapped_entities_embedded.csv",
@@ -194,7 +194,7 @@ class EntityExtractor:
         if self._external_kg_cache is None:
             try:
                 ekg_path = os.path.join(
-                    project_root, "data", "viettel", "mapping", "external_kg.parquet"
+                    project_root, "v_dataset", "viettel", "mapping", "external_kg.parquet"
                 )
                 df_ekg = pd.read_parquet(ekg_path)
                 self._external_kg_cache = df_ekg[
@@ -331,7 +331,7 @@ class EntityExtractor:
     def _get_cui_vocab_codes(self, cui: str) -> dict:
         if self._mrconso_cache is None:
             optimized_path = os.path.join(
-                project_root, "data", "UML", "MRCONSO_optimized.parquet"
+                project_root, "v_dataset", "UML", "MRCONSO_optimized.parquet"
             )
             if os.path.exists(optimized_path):
                 df = pd.read_parquet(optimized_path)

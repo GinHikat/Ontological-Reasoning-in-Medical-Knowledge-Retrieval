@@ -13,7 +13,7 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 ├── README.md                # General introduction and execution quickstart
 ├── requirements.txt         # Package dependencies (PyTorch, Transformers, etc.)
 ├── state.md                 # Master project state, requirements, and changelog
-├── data/                    # Local clinical notes, ontologies, and embeddings
+├── v_dataset/               # Local clinical notes, ontologies, and embeddings
 │   ├── var/test/            # 100 raw clinical note text files
 │   └── viettel/             # Dictionary lookup files and datasets
 │       ├── base/            # Extracted mapping CSVs & precomputed .npy embeddings

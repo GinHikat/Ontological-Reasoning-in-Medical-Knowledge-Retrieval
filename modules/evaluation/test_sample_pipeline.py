@@ -36,13 +36,13 @@ from modules.utils import EntityExtractor
 
 def load_dictionaries():
     """Load the pre-computed dictionaries and their embeddings."""
-    diag_csv = var_dir / "data" / "viettel" / "base" / "short_diagnosis.csv"
-    drug_csv = var_dir / "data" / "viettel" / "base" / "short_drug.csv"
-    sym_csv = var_dir / "data" / "viettel" / "base" / "short_symptom.csv"
+    diag_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
+    drug_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.csv"
+    sym_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
     
-    diag_npy = var_dir / "data" / "viettel" / "base" / "short_diagnosis.npy"
-    drug_npy = var_dir / "data" / "viettel" / "base" / "short_drug.npy"
-    sym_npy = var_dir / "data" / "viettel" / "base" / "short_symptom.npy"
+    diag_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.npy"
+    drug_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.npy"
+    sym_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
     
     df_diag = pd.read_csv(diag_csv) if diag_csv.exists() else pd.DataFrame()
     df_drug = pd.read_csv(drug_csv) if drug_csv.exists() else pd.DataFrame()

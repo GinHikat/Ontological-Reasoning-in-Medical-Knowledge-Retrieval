@@ -3,8 +3,8 @@ import json
 import os
 
 def main():
-    base_dir = "data/viettel/vietnamese_ner/training/vietnamese/document_classification"
-    csv_path = "data/viettel/mapping/ground_truth_vn_entity.csv"
+    base_dir = "v_dataset/viettel/vietnamese_ner/training/vietnamese/document_classification"
+    csv_path = "v_dataset/viettel/mapping/ground_truth_vn_entity.csv"
 
     # 1. Load CSV and create mapping dictionary
     df = pd.read_csv(csv_path)

@@ -73,7 +73,7 @@ The pipeline MUST output exactly these 5 labels (no broad English categories are
 ### 1.2 Ontology Standardization (Strict Requirements)
 Extracted entities for specific labels MUST be mapped to their standardized IDs (returned in the `candidates` array):
 *   **`CHẨN_ĐOÁN`** ➡️ MUST be mapped to **ICD-10**. 
-    *   *Reference File:* `data\viettel\combine\diagnosis_10.csv`
+    *   *Reference File:* `v_dataset\viettel\combine\diagnosis_10.csv`
 *   **`THUỐC`** ➡️ MUST be mapped to **RxNorm**.
     *   *Raw Data Source:* `F:\Din\Study\Education\Projects\Thesis\data\mapping\mapping\RxNorm`
     *   *Task:* A `drug_rxnorm.csv` term-ID mapping file must be created to facilitate this.
@@ -89,9 +89,9 @@ We must detect contextual states for the entities.
 ## 2. Target Output & Submission Format
 The final pipeline must produce predictions for the final test set.
 
-*   **Test Set Location:** `VAR\data\var` (contains `1.txt`, `2.txt`, etc.)
+*   **Test Set Location:** `VAR\v_dataset\var` (contains `1.txt`, `2.txt`, etc.)
 *   **Output Location:** Must be saved in an `output/` directory.
-*   **File Structure:** 1-to-1 mapping. `output/1.json` corresponds to the predictions for `VAR\data\var\1.txt`.
+*   **File Structure:** 1-to-1 mapping. `output/1.json` corresponds to the predictions for `VAR\v_dataset\var\1.txt`.
 
 ### 2.1 JSON Schema Requirement
 Each `.json` file must contain a JSON array of dictionaries. Each dictionary represents one extracted entity and MUST match this exact schema:
@@ -133,7 +133,7 @@ We will NOT retrain the base Vietnamese NER model (which currently outputs `Dise
 *   **`Drug` ➡️ `THUỐC`**.
 *   **`Procedure` ➡️ `TÊN_XÉT_NGHIỆM`**.
 *   **Missing Labels Extraction:**
-    *   **`TRIỆU_CHỨNG`:** Extract by querying the Knowledge Graph (`data\viettel\mapping\external_kg.parquet`) for `Disease` or `Phenotype` relationships.
+    *   **`TRIỆU_CHỨNG`:** Extract by querying the Knowledge Graph (`v_dataset\viettel\mapping\external_kg.parquet`) for `Disease` or `Phenotype` relationships.
     *   **`KẾT_QUẢ_XÉT_NGHIỆM`:** We will evaluate translating the English `MIMIC-IV Radiology Note` dataset to train a specialized extractor for diagnostic and lab results.
 
 ### Phase 2: Contextual Assertion Detection
@@ -158,8 +158,8 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
     > [!WARNING]
     > **Missing Classes:** Currently, **2 required classes are missing entirely** (`TRIỆU_CHỨNG` and `KẾT_QUẢ_XÉT_NGHIỆM`) because the base model does not predict them.
 3.  **Knowledge Graph Retrieval:** For the mapped entities, we run dense retrieval (SapBERT) against our mapping datasets to fetch standard IDs:
-    *   **Diagnoses (`CHẨN_ĐOÁN`):** Queried against `data/viettel/base/short_diagnosis.csv` to retrieve the **ICD-10 ID**.
-    *   **Drugs (`THUỐC`):** Queried against `data/viettel/base/short_drug.csv` to retrieve the **RxNorm ID**.
+    *   **Diagnoses (`CHẨN_ĐOÁN`):** Queried against `v_dataset/viettel/base/short_diagnosis.csv` to retrieve the **ICD-10 ID**.
+    *   **Drugs (`THUỐC`):** Queried against `v_dataset/viettel/base/short_drug.csv` to retrieve the **RxNorm ID**.
 4.  **Target Output Formatter:** Predictions are formatted into the exact JSON schema and saved in the `output/` directory. Assertions are defaulted to an empty list `[]`.
 
 ### Current Accomplishments & Limitations

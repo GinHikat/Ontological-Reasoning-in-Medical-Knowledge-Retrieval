@@ -119,7 +119,7 @@ def compute_metrics(p):
 def main():
     model_name = "demdecuong/vihealthbert-base-word"
     output_dir = r"models\vihealthbert_ner"
-    base_dir = r"data\viettel\vietnamese_ner\training\vietnamese\ner_train"
+    base_dir = r"v_dataset\viettel\vietnamese_ner\training\vietnamese\ner_train"
     
     print("Loading Data...")
     train_sentences, train_labels = load_conll(os.path.join(base_dir, "ner_train.conll"))
