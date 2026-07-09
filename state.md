@@ -2,6 +2,63 @@
 
 This document serves as the single source of truth for the project's requirements, current state, and the execution plan. Any AI agent reading this should be able to fully understand the project constraints and goals without further user explanation.
 
+## System Architecture & Pipeline Overview
+The following flowchart illustrates the current end-to-end processing pipeline, from data training and NER extraction to entity retrieval and flag assignments, based on the system diagram:
+
+```mermaid
+graph TD
+    %% Objectives / Mục tiêu
+    subgraph Objectives[Mục tiêu]
+        direction LR
+        M[Mục tiêu] --> TC((TRIỆU<br>CHỨNG))
+        M --> TH((THUỐC))
+        TH --> RxNORM((RxNORM))
+        M --> CD((CHẨN ĐOÁN))
+        CD --> ICD10((ICD-10))
+        M --> KQXN((KẾT QUẢ<br>XÉT NGHIỆM))
+        M --> XN((XÉT<br>NGHIỆM))
+        
+        FlagsBox[isFamily<br>isHistory<br>isNegated] --> M
+    end
+
+    %% Pipeline Flow
+    DT[Data Training] --- DT_Desc[Currently using 4<br>Vietnamese NER datasets]
+    DT --> NER[NER]
+    
+    NER --> NER_Model[Huggingface backbone +<br>Per-token linear head]
+    NER_Model --> Classes[Currently 3 classes from<br>model: Disease, Drug, Procedure]
+    
+    Classes --> Proc[Procedure renamed to<br>XÉT_NGHIỆM]
+    Proc --> Proc_Desc[Split text into 3 parts,<br>text following XÉT NGHIỆM<br>in part 3 is the test result]
+    
+    Classes --> Drug[Drug renamed to<br>THUỐC]
+    
+    Classes --> Dis[Disease Retrieval]
+    Dis --> Dis_TC[If highest similarity<br>from External kg,<br>it is TRIỆU_CHỨNG]
+    Dis --> Dis_CD[If highest similarity<br>from Diagnosis,<br>it is CHẨN_ĐOÁN]
+    
+    NER --> LE((List Entity))
+    
+    LE --> Ret[Retrieval]
+    Ret --- Ret_Desc[Using SapBERT to<br>calculate embeddings<br>for each Entity]
+    Ret --> IDMap((ID Mapping))
+    
+    LE --> Flags[For Flags]
+    Flags --- Flags_Desc[isNegated if words like<br>'không, chưa, ...'<br>are in the clause<br><br>isHistorical if it<br>appears in section 1<br><br>isFamily not yet implemented]
+    Flags --> FlagsCircle((Flags))
+    
+    classDef default fill:#fff,stroke:#333,stroke-width:1px;
+    classDef yellow fill:#fef9e7,stroke:#f1c40f,stroke-width:1px;
+    classDef blue fill:#eaf2f8,stroke:#2980b9,stroke-width:1px;
+    classDef green fill:#e8f8f5,stroke:#27ae60,stroke-width:1px;
+    classDef purple fill:#f4ecf7,stroke:#8e44ad,stroke-width:1px;
+    
+    class DT,Ret yellow;
+    class NER blue;
+    class LE green;
+    class Flags purple;
+```
+
 ## 1. Project Goal & Core Requirements
 The objective is to process raw Vietnamese clinical notes (unstructured text) and extract specific medical entities, map them to international ontologies, and identify contextual assertions.
 

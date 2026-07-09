@@ -197,11 +197,45 @@ def run_pipeline(samples: int = None):
             offset = [start, end]
             term = text[start:end]
             
-            # 1.5.5 Common Stopwords for Lab Tests / Procedures
-            test_keywords = ["phân tích", "xét nghiệm"]
-            term_lower = term.lower().strip()
+            # --- 1.5.5 Precision Filter (Garbage Removal) ---
+            term_normalized = " ".join(term.lower().strip(" \t\r\n.,;:-()[]{}").split())
+            if not term_normalized:
+                continue
+                
+            # Short abbreviation drop (unless whitelisted)
+            if len(term_normalized) < 3 and term_normalized not in ["ho", "mủ", "u", "k"]:
+                if mapped_type != "TÊN_XÉT_NGHIỆM": # Lab tests like CT, XQ can be short
+                    continue
+
+            # Generic artifacts
+            if term_normalized in ["cảm thấy", "cảm giác", "khó chịu", "bất thường", "bình thường", "theo dõi"]:
+                continue
+            if term_normalized.startswith("cảm thấy ") and len(term_normalized.split()) <= 2:
+                continue
+                
+            # Dosing-only artifacts
+            if mapped_type == "THUỐC" and re.fullmatch(r"^\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|ml|viên|ống|lọ|gói|iu|ui)$", term_normalized, re.IGNORECASE):
+                continue
+                
+            # --- 1.5.6 Type Correction ---
+            COMMON_SYMPTOMS = ["khó thở", "buồn nôn", "đau ngực", "đau đầu", "đau bụng", "đau lưng", "tiêu chảy", "mệt mỏi", "chóng mặt", "sốt", "ho", "nôn", "đờm"]
+            # Check if any common symptom is in the normalized term
+            if is_disease and any(sym in term_normalized for sym in COMMON_SYMPTOMS):
+                mapped_type = "TRIỆU_CHỨNG"
+                is_disease = False
+                
+            # Correct Procedure -> Drug if it has drug-like context
+            if mapped_type == "TÊN_XÉT_NGHIỆM":
+                before = text[max(0, start - 40):start].lower()
+                after = text[end:min(len(text), end + 40)].lower()
+                if re.search(r"^\s*(?:\d+(?:[.,]\d+)?\s*)?(?:mg|g|mcg|ml|viên|ống|lọ|gói|iu|ui|đơn vị)\b", after) or \
+                   re.search(r"(?:thuốc|dùng|uống|sử dụng|điều trị)\s*$", before):
+                    mapped_type = "THUỐC"
             
-            if any(kw in term_lower for kw in test_keywords) or term_lower in ["ct", "mri"]:
+            # --- 1.5.7 Common Stopwords for Lab Tests / Procedures ---
+            test_keywords = ["phân tích", "xét nghiệm"]
+            
+            if any(kw in term_normalized for kw in test_keywords) or term_normalized in ["ct", "mri", "x-quang", "xq"]:
                 mapped_type = "TÊN_XÉT_NGHIỆM"
                 is_disease = False  # Prevent it from going into the Symptom/Diagnosis lookup
                 
