@@ -13,7 +13,7 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 ├── README.md                # General introduction and execution quickstart
 ├── requirements.txt         # Package dependencies (PyTorch, Transformers, etc.)
 ├── state.md                 # Master project state, requirements, and changelog
-├── data/                    # Local clinical notes, ontologies, and embeddings
+├── v_dataset/               # Local clinical notes, ontologies, and embeddings
 │   ├── var/test/            # 100 raw clinical note text files
 │   └── viettel/             # Dictionary lookup files and datasets
 │       ├── base/            # Extracted mapping CSVs & precomputed .npy embeddings
@@ -70,7 +70,7 @@ Once boundaries are extracted, entities are matched against canonical dictionari
 *   **Retrieval Models (`modules/utils.py`):** 
     *   Vietnamese: `cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR`
     *   English: `cambridgeltl/SapBERT-from-PubMedBERT-fulltext`
-*   **Pre-computed Embedding Maps (`data/viettel/base/`):** Dictionary lists and pre-calculated `.npy` numpy array embeddings of target concepts.
+*   **Pre-computed Embedding Maps (`v_dataset/viettel/base/`):** Dictionary lists and pre-calculated `.npy` numpy array embeddings of target concepts.
 *   **Dual-Retrieval Matching:**
     *   When the NER model yields a disease-related tag, it is simultaneously embedded and compared using cosine similarity against both `short_diagnosis.csv` (ICD-10 codes) and `short_symptom.csv` (symptom identifiers).
     *   It is classified dynamically as `CHẨN_ĐOÁN` or `TRIỆU_CHỨNG` based on the highest cosine similarity score.
@@ -149,4 +149,4 @@ python modules/dataset/preprocessing/generate_embedding_symptom.py
 ```bash
 python modules/evaluation/test_sample_pipeline.py
 ```
-This processes all `.txt` documents under `data/var/test/` and deposits formatted predictions into `output/`.
+This processes all `.txt` documents under `v_dataset/var/test/` and deposits formatted predictions into `output/`.

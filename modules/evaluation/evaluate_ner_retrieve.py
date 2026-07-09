@@ -52,8 +52,8 @@ def main():
     )
     args = parser.parse_args()
 
-    input_file = "data/viettel/vietnamese_ner/gold_standard_benchmark.jsonl"
-    output_file = "data/viettel/vietnamese_ner/ner_predictions.jsonl"
+    input_file = "v_dataset/viettel/vietnamese_ner/gold_standard_benchmark.jsonl"
+    output_file = "v_dataset/viettel/vietnamese_ner/ner_predictions.jsonl"
     THRESHOLD = 0.80
 
     # Check if we are running in the correct directory
@@ -94,7 +94,7 @@ def main():
 
     # Load mapped entities with their SapBERT embeddings for quick cosine similarity matching
     print("Loading pre-computed SapBERT embeddings database...")
-    base_df = pd.read_pickle("data/viettel/mapping/mapped_entities_embedded.pkl")
+    base_df = pd.read_pickle("v_dataset/viettel/mapping/mapped_entities_embedded.pkl")
     # We only care about rows that have a valid CUI
     base_df = base_df.dropna(subset=["mapped_cui"]).reset_index(drop=True)
     base_embeddings = np.vstack(base_df["embedding"].values)

@@ -21,7 +21,7 @@ def process_rxnorm():
     conso_file = base_path / "RXNCONSO.RRF"
     rel_file = base_path / "RXNREL.RRF"
     
-    output_dir = var_dir / "data" / "viettel" / "mapping"
+    output_dir = var_dir / "v_dataset" / "viettel" / "mapping"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "drug_rxnorm.csv"
     

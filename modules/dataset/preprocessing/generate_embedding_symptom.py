@@ -11,9 +11,9 @@ sys.path.append(str(var_dir.parent)) # Thesis/
 
 from VAR.modules.utils import EntityExtractor
 
-kg_path = var_dir.parent / "data" / "viettel" / "mapping" / "external_kg.parquet"
-out_csv = var_dir / "data" / "viettel" / "base" / "short_symptom.csv"
-out_npy = var_dir / "data" / "viettel" / "base" / "short_symptom.npy"
+kg_path = var_dir.parent / "v_dataset" / "viettel" / "mapping" / "external_kg.parquet"
+out_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
+out_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
 
 if not out_csv.exists() or not out_npy.exists():
     print("Loading external KG...")

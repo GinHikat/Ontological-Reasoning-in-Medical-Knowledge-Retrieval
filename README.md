@@ -23,7 +23,7 @@ VAR/
 ├── README.md                # This file
 ├── requirements.txt         # Python dependencies
 ├── state.md                 # Master project state & requirements definition
-├── data/                    # Clinical notes and ontology databases
+├── v_dataset/               # Clinical notes and ontology databases
 │   ├── var/test/            # 100 sample text files containing raw clinical notes
 │   └── viettel/             # Dictionaries and datasets for mapping
 │       ├── base/            # Extracted CSV and optimized .npy embedding dictionaries
@@ -105,7 +105,7 @@ mv statedict ../modules/model/
 ```
 
 ### Step 2: Run the Evaluation Pipeline
-You can run the end-to-end evaluation script to iterate through all 100 sample `.txt` files in `data/var/test/`, extract their entities, calculate their ontological IDs, and save the results cleanly.
+You can run the end-to-end evaluation script to iterate through all 100 sample `.txt` files in `v_dataset/var/test/`, extract their entities, calculate their ontological IDs, and save the results cleanly.
 ```bash
 python modules/evaluation/test_sample_pipeline.py
 ```

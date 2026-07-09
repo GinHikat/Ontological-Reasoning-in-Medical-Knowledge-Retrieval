@@ -127,7 +127,7 @@ def process_file(in_path, out_path):
     print(f"  Entities Modified/Relabeled: {modified}")
     print(f"  Entities Dropped (Garbage): {dropped}")
 
-base_dir = r"d:\Study\Education\Projects\Thesis\data\viettel\vietnamese_ner\training\vietnamese\qwen_finetune"
+base_dir = r"d:\Study\Education\Projects\Thesis\v_dataset\viettel\vietnamese_ner\training\vietnamese\qwen_finetune"
 files = ["qwen_train.jsonl", "qwen_dev.jsonl", "qwen_test.jsonl"]
 
 for f in files:
