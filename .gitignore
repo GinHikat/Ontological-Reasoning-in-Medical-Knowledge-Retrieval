@@ -19,5 +19,7 @@ notebooks/*
 
 *.vscode
 
+output_20/
+
 
 modules/model/statedict/

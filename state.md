@@ -2,6 +2,63 @@
 
 This document serves as the single source of truth for the project's requirements, current state, and the execution plan. Any AI agent reading this should be able to fully understand the project constraints and goals without further user explanation.
 
+## System Architecture & Pipeline Overview
+The following flowchart illustrates the current end-to-end processing pipeline, from data training and NER extraction to entity retrieval and flag assignments, based on the system diagram:
+
+```mermaid
+graph TD
+    %% Objectives / Mục tiêu
+    subgraph Objectives[Mục tiêu]
+        direction LR
+        M[Mục tiêu] --> TC((TRIỆU<br>CHỨNG))
+        M --> TH((THUỐC))
+        TH --> RxNORM((RxNORM))
+        M --> CD((CHẨN ĐOÁN))
+        CD --> ICD10((ICD-10))
+        M --> KQXN((KẾT QUẢ<br>XÉT NGHIỆM))
+        M --> XN((XÉT<br>NGHIỆM))
+        
+        FlagsBox[isFamily<br>isHistory<br>isNegated] --> M
+    end
+
+    %% Pipeline Flow
+    DT[Data Training] --- DT_Desc[Currently using 4<br>Vietnamese NER datasets]
+    DT --> NER[NER]
+    
+    NER --> NER_Model[Huggingface backbone +<br>Per-token linear head]
+    NER_Model --> Classes[Currently 3 classes from<br>model: Disease, Drug, Procedure]
+    
+    Classes --> Proc[Procedure renamed to<br>XÉT_NGHIỆM]
+    Proc --> Proc_Desc[Split text into 3 parts,<br>text following XÉT NGHIỆM<br>in part 3 is the test result]
+    
+    Classes --> Drug[Drug renamed to<br>THUỐC]
+    
+    Classes --> Dis[Disease Retrieval]
+    Dis --> Dis_TC[If highest similarity<br>from External kg,<br>it is TRIỆU_CHỨNG]
+    Dis --> Dis_CD[If highest similarity<br>from Diagnosis,<br>it is CHẨN_ĐOÁN]
+    
+    NER --> LE((List Entity))
+    
+    LE --> Ret[Retrieval]
+    Ret --- Ret_Desc[Using SapBERT to<br>calculate embeddings<br>for each Entity]
+    Ret --> IDMap((ID Mapping))
+    
+    LE --> Flags[For Flags]
+    Flags --- Flags_Desc[isNegated if words like<br>'không, chưa, ...'<br>are in the clause<br><br>isHistorical if it<br>appears in section 1<br><br>isFamily not yet implemented]
+    Flags --> FlagsCircle((Flags))
+    
+    classDef default fill:#fff,stroke:#333,stroke-width:1px;
+    classDef yellow fill:#fef9e7,stroke:#f1c40f,stroke-width:1px;
+    classDef blue fill:#eaf2f8,stroke:#2980b9,stroke-width:1px;
+    classDef green fill:#e8f8f5,stroke:#27ae60,stroke-width:1px;
+    classDef purple fill:#f4ecf7,stroke:#8e44ad,stroke-width:1px;
+    
+    class DT,Ret yellow;
+    class NER blue;
+    class LE green;
+    class Flags purple;
+```
+
 ## 1. Project Goal & Core Requirements
 The objective is to process raw Vietnamese clinical notes (unstructured text) and extract specific medical entities, map them to international ontologies, and identify contextual assertions.
 
@@ -157,6 +214,19 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 3. **Retrain NER Model with Focal Loss:** Retrained the base ViHealthBERT NER model on the cleaned `.conll` dataset using a Focal Loss implementation in `train_ner.py`. This specifically combats class imbalance to boost minority classes like Drugs and Procedures.
 4. **Relabel Procedure Category:** Fixed a mapping bug where the NER model's `"Procedure/Treatment"` output was being silently dropped. Added `"Procedure/Treatment"` to the `LABEL_MAP` dictionary to ensure it correctly maps to `TÊN_XÉT_NGHIỆM`, which in turn successfully triggers the Lab Results heuristic.
 
+### Modification Ver 7 
+1. **OOP Pipeline Refactoring:** Shifted to a modular pipeline architecture (`modules/pipelines/v6.py`), separating out discrete post-processing modules.
+2. **Clinical Recall Post-Processor:** Added `ClinicalRecallPostProcessor` to systematically recover high-value missed entities for `TÊN_XÉT_NGHIỆM`, `KẾT_QUẢ_XÉT_NGHIỆM`, and conservative symptom bullets from structured note sections.
+3. **Clinical Type Correction:** Added `ClinicalTypeCorrectionPostProcessor` to correctly route symptoms away from ICD diagnosis linking, and to recover medication spans that were mislabeled as procedures when dosage context is present.
+4. **Clinical Precision Filter & Dedup:** Added `ClinicalPrecisionFilterPostProcessor` alongside `OverlapDedupPostProcessor` to aggressively filter out artifacts, standalone dosing tokens, generic headers, and overlapping nested entities.
+5. **Assertion Scope Tightening:** Restricted contextual assertions strictly to competition-eligible labels (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`), boosting evaluation precision.
+
+### Modification Ver 10 (Planned LLM Integration)
+*Note: These changes are planned and might be broken down into individual Modification versions during actual implementation.*
+1. **Synthetic Training Data Generation:** Generate synthetic Vietnamese clinical notes using an LLM. We will utilize k-shot prompting with examples from English MIMIC-IV Discharge Notes to teach the LLM the correct structural design patterns and entity density.
+2. **Unified LLM for NER and Contextual Flags:** Finetune an LLM to replace the base NER model. This unified LLM will be trained to extract the entities AND natively assign contextual flags (`isHistorical`, `isNegated`) based on surrounding context, replacing the brittle regex and section-based heuristics.
+3. **Cross-lingual Ontology Retrieval:** Utilize an LLM (e.g., MedGemma) to translate extracted Vietnamese entities into English before performing SapBERT retrieval, bridging the semantic gap and leveraging richer English medical ontologies.
+
 ---
 
 **Evaluation Results (1st Run - Baseline):**
@@ -199,4 +269,8 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 *   **WER:** 76.2642
 *   **J_assertion:** 25.0139
 *   **J_candidates:** 13.8149
+*   **Records Scored:** 100
+
+**Evaluation Results (7th Run - Mod Ver 7: Tung's V6 Refined OOP Pipeline):**
+*   **Score (Điểm):** 22.40000
 *   **Records Scored:** 100
