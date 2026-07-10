@@ -7,6 +7,7 @@ from modules.pipelines.legacy_adapter import LegacyV5PipelineAdapter
 from modules.pipelines.v5 import build_v5_refactored_pipeline
 from modules.pipelines.v6 import build_v6_refined_pipeline
 from modules.pipelines.v7 import build_v7_structured_pipeline
+from modules.pipelines.v8 import build_v8_candidate_integrity_pipeline
 
 NER_MODEL_CHOICES = ["vihealthbert", "vipubmed-deberta", "phobert", "xlm-roberta"]
 
@@ -21,11 +22,16 @@ def _build_v7(model_name: str = "vihealthbert") -> BasePipeline:
     return build_v7_structured_pipeline(model_name=model_name)
 
 
+def _build_v8(model_name: str = "vihealthbert") -> BasePipeline:
+    return build_v8_candidate_integrity_pipeline(model_name=model_name)
+
+
 PIPELINE_BUILDERS: dict[str, PipelineBuilder] = {
     "legacy_v5": LegacyV5PipelineAdapter,
     "v5_refactored": build_v5_refactored_pipeline,
     "v6_refined": _build_v6,
     "v7_structured": _build_v7,
+    "v8_candidate_integrity": _build_v8,
 }
 
 

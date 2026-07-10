@@ -1,0 +1,46 @@
+Building ontology drug recall index for diagnostics...
+{
+  "total_drugs": 276,
+  "v7_with_candidates": 274,
+  "v7_without_candidates": 2,
+  "ontology_origin": 202,
+  "with_preset_meta": 202,
+  "unambiguous": 202,
+  "ambiguous": 0,
+  "invalid_missing": 0,
+  "preset_used": 202,
+  "sapbert_fallback": 74,
+  "unchanged": 275,
+  "changed": 1,
+  "newly_linked": 0,
+  "newly_unlinked": 0,
+  "changed_linked": 1,
+  "of_17_newly_linked": 0,
+  "of_259_changed": 1,
+  "noisy_cases": 18
+}
+# v8 submission decision
+
+## Decision: **READY TO SUBMIT**
+
+## Hard gates
+
+- v7 regression: PASS
+- entity/text/position/type/assertion invariants: PASS
+- diagnosis candidates unchanged: PASS
+
+## Candidate-change risk
+
+- total drugs: 276
+- changed drug candidates: 1 (0.4%)
+- newly linked: 0
+- newly unlinked: 0
+- previously linked ID changes: 1
+
+## Submission ZIP
+
+- path: `None`
+- size: None
+- SHA256: `None`
+- valid: False
+

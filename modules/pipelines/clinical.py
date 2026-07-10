@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 from typing import Any
 
 from modules.components.assertions.base import BaseAssertionDetector
@@ -36,80 +37,155 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
         self.linker = linker
         self.assertion_detector = assertion_detector
 
+    @staticmethod
+    def _snapshot_entity(m: EntityMention | FinalEntity) -> dict[str, Any]:
+        """Immutable serialized snapshot so later mutations cannot rewrite traces."""
+        if hasattr(m, "span"):
+            start, end = m.span.start, m.span.end
+        else:
+            start, end = None, None
+
+        text = getattr(m, "text", "")
+        label = getattr(m, "label", getattr(m, "type", ""))
+        candidates = getattr(m, "candidates", [])
+        assertions = getattr(m, "assertions", [])
+        confidence = getattr(m, "confidence", None)
+        source = getattr(m, "source", None)
+        metadata = getattr(m, "metadata", {}) or {}
+
+        return {
+            "text": text,
+            "label": label,
+            "start": start,
+            "end": end,
+            "confidence": confidence,
+            "source": source,
+            "candidates": list(candidates) if candidates else [],
+            "assertions": list(assertions) if assertions else [],
+            "metadata": copy.deepcopy(metadata),
+        }
+
+    @staticmethod
+    def _snapshot_entities(
+        mentions: list[EntityMention] | list[FinalEntity],
+    ) -> list[dict[str, Any]]:
+        return [ClinicalEntityLinkingPipeline._snapshot_entity(m) for m in mentions]
+
+    @staticmethod
+    def _span_iou(a: dict[str, Any], b: dict[str, Any]) -> float:
+        if (
+            a["start"] is None
+            or a["end"] is None
+            or b["start"] is None
+            or b["end"] is None
+        ):
+            return 0.0
+        inter = max(0, min(a["end"], b["end"]) - max(a["start"], b["start"]))
+        if inter <= 0:
+            return 0.0
+        union = max(a["end"], b["end"]) - min(a["start"], b["start"])
+        if union <= 0:
+            return 0.0
+        return inter / union
+
+    @staticmethod
+    def _boundary_distance(a: dict[str, Any], b: dict[str, Any]) -> float:
+        if (
+            a["start"] is None
+            or a["end"] is None
+            or b["start"] is None
+            or b["end"] is None
+        ):
+            return float("inf")
+        return abs(a["start"] - b["start"]) + abs(a["end"] - b["end"])
+
     def _diff_mentions(
         self,
-        before: list[EntityMention] | list[FinalEntity],
-        after: list[EntityMention] | list[FinalEntity],
+        before: list[EntityMention] | list[FinalEntity] | list[dict[str, Any]],
+        after: list[EntityMention] | list[FinalEntity] | list[dict[str, Any]],
     ) -> dict[str, list[Any]]:
-        def to_item(m: EntityMention | FinalEntity) -> dict[str, Any]:
-            if hasattr(m, "span"):
-                start, end = m.span.start, m.span.end
-            else:
-                start, end = None, None
-
-            text = getattr(m, "text", "")
-            label = getattr(m, "label", getattr(m, "type", ""))
-            candidates = getattr(m, "candidates", [])
-            assertions = getattr(m, "assertions", [])
-
-            return {
-                "start": start,
-                "end": end,
-                "text": text,
-                "label": label,
-                "candidates": list(candidates) if candidates else [],
-                "assertions": list(assertions) if assertions else [],
-            }
+        def to_item(m: Any) -> dict[str, Any]:
+            if isinstance(m, dict) and "text" in m and "label" in m:
+                return {
+                    "start": m.get("start"),
+                    "end": m.get("end"),
+                    "text": m.get("text", ""),
+                    "label": m.get("label", ""),
+                    "candidates": list(m.get("candidates") or []),
+                    "assertions": list(m.get("assertions") or []),
+                    "source": m.get("source"),
+                    "metadata": copy.deepcopy(m.get("metadata") or {}),
+                }
+            return self._snapshot_entity(m)
 
         b_items = [to_item(m) for m in before]
         a_items = [to_item(m) for m in after]
 
-        matched_a = set()
-        matched_b = set()
+        matched_a: set[int] = set()
+        matched_b: set[int] = set()
 
-        modified = []
-        unchanged = []
+        modified: list[tuple[dict[str, Any], dict[str, Any]]] = []
+        unchanged: list[tuple[dict[str, Any], dict[str, Any]]] = []
 
-        # Pass 1: exact matches
+        def _record_match(i: int, j: int) -> None:
+            b, a = b_items[i], a_items[j]
+            if b["candidates"] == a["candidates"] and b["assertions"] == a["assertions"]:
+                if (
+                    b["text"] == a["text"]
+                    and b["label"] == a["label"]
+                    and b["start"] == a["start"]
+                    and b["end"] == a["end"]
+                ):
+                    unchanged.append((b, a))
+                else:
+                    modified.append((b, a))
+            else:
+                modified.append((b, a))
+            matched_b.add(i)
+            matched_a.add(j)
+
+        # Priority 1: exact same [start, end]
         for i, b in enumerate(b_items):
             for j, a in enumerate(a_items):
                 if j in matched_a:
                     continue
-                if (
-                    b["start"] == a["start"]
-                    and b["end"] == a["end"]
-                    and b["text"] == a["text"]
-                    and b["label"] == a["label"]
-                ):
-                    if b["candidates"] == a["candidates"] and b["assertions"] == a["assertions"]:
-                        unchanged.append((b, a))
-                    else:
-                        modified.append((b, a))
-                    matched_b.add(i)
-                    matched_a.add(j)
+                if b["start"] == a["start"] and b["end"] == a["end"]:
+                    _record_match(i, j)
                     break
 
-        # Pass 2: overlapping matches
+        # Priority 2: exact same text and label
         for i, b in enumerate(b_items):
             if i in matched_b:
                 continue
             for j, a in enumerate(a_items):
                 if j in matched_a:
                     continue
-                if (
-                    b["start"] is not None
-                    and b["end"] is not None
-                    and a["start"] is not None
-                    and a["end"] is not None
-                ):
-                    overlap = max(
-                        0, min(b["end"], a["end"]) - max(b["start"], a["start"])
-                    )
-                    if overlap > 0:
-                        modified.append((b, a))
-                        matched_b.add(i)
-                        matched_a.add(j)
-                        break
+                if b["text"] == a["text"] and b["label"] == a["label"]:
+                    _record_match(i, j)
+                    break
+
+        # Priority 3–5: best IoU, then same source, then closest boundaries
+        IOU_THRESHOLD = 0.3
+        for i, b in enumerate(b_items):
+            if i in matched_b:
+                continue
+            best_j = None
+            best_key = None
+            for j, a in enumerate(a_items):
+                if j in matched_a:
+                    continue
+                iou = self._span_iou(b, a)
+                if iou < IOU_THRESHOLD:
+                    continue
+                same_source = 1 if (b.get("source") == a.get("source")) else 0
+                dist = self._boundary_distance(b, a)
+                # Maximize IoU, then same source, then minimize boundary distance
+                key = (iou, same_source, -dist)
+                if best_key is None or key > best_key:
+                    best_key = key
+                    best_j = j
+            if best_j is not None:
+                _record_match(i, best_j)
 
         removed = [b for i, b in enumerate(b_items) if i not in matched_b]
         added = [a for j, a in enumerate(a_items) if j not in matched_a]
@@ -150,9 +226,13 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
                 if b["label"] != a["label"]:
                     changes.append(f"label: {b['label']} -> {a['label']}")
                 if b["candidates"] != a["candidates"]:
-                    changes.append(f"candidates: {b['candidates']} -> {a['candidates']}")
+                    changes.append(
+                        f"candidates: {b['candidates']} -> {a['candidates']}"
+                    )
                 if b["assertions"] != a["assertions"]:
-                    changes.append(f"assertions: {b['assertions']} -> {a['assertions']}")
+                    changes.append(
+                        f"assertions: {b['assertions']} -> {a['assertions']}"
+                    )
 
                 lines.append(
                     f"      - \"{b['text']}\" [{b['start']}, {b['end']}] ({b['label']})"
@@ -163,42 +243,87 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
             lines.append("  (No changes)")
         return "\n".join(lines)
 
+    def _format_linker_diagnostics(self, entity_snap: dict[str, Any]) -> str:
+        """Extra diagnostics for linker-stage traces (not competition JSON)."""
+        meta = entity_snap.get("metadata") or {}
+        label = entity_snap.get("label", "")
+        lines: list[str] = []
+
+        if label == "THUỐC" or meta.get("ontology_drug_recall"):
+            lines.append("      drug diagnostics:")
+            lines.append(f"        drug_link: {meta.get('drug_link', '')}")
+            lines.append(
+                f"        ontology_drug_recall: {meta.get('ontology_drug_recall', False)}"
+            )
+            lines.append(f"        match: {meta.get('match', '')}")
+            lines.append(f"        alias: {meta.get('alias', '')}")
+            lines.append(
+                f"        preset_rxcui_candidates: {meta.get('preset_rxcui_candidates', [])}"
+            )
+            lines.append(
+                f"        preset_rxcui_count: {meta.get('preset_rxcui_count', '')}"
+            )
+            lines.append(f"        preset_used: {meta.get('preset_used', '')}")
+            lines.append(
+                f"        fallback_reason: {meta.get('drug_link_fallback_reason', '')}"
+            )
+            lines.append(f"        drug_similarity: {meta.get('drug_similarity', '')}")
+            lines.append(f"        final_candidates: {entity_snap.get('candidates', [])}")
+
+        if meta.get("is_disease_like") or "diagnosis_similarity" in meta:
+            lines.append("      disease/symptom diagnostics:")
+            lines.append(
+                f"        best_diagnosis_id: {entity_snap.get('candidates', [])}"
+            )
+            lines.append(
+                f"        diagnosis_similarity: {meta.get('diagnosis_similarity', '')}"
+            )
+            lines.append(
+                f"        symptom_similarity: {meta.get('symptom_similarity', '')}"
+            )
+            lines.append(f"        final_type: {label}")
+
+        return "\n".join(lines)
+
     def _format_all_mentions(
-        self, mentions: list[EntityMention] | list[FinalEntity]
+        self,
+        mentions: list[EntityMention] | list[FinalEntity] | list[dict[str, Any]],
+        include_linker_diagnostics: bool = False,
     ) -> str:
         if not mentions:
             return "  (No mentions)"
         lines = []
 
-        def get_span_start(m: EntityMention | FinalEntity) -> int:
-            if hasattr(m, "span") and m.span.start is not None:
-                return m.span.start
-            return 0
-
-        def get_span_end(m: EntityMention | FinalEntity) -> int:
-            if hasattr(m, "span") and m.span.end is not None:
-                return m.span.end
-            return 0
+        snaps = [
+            m
+            if isinstance(m, dict) and "text" in m
+            else self._snapshot_entity(m)
+            for m in mentions
+        ]
 
         sorted_mentions = sorted(
-            mentions, key=lambda m: (get_span_start(m), get_span_end(m))
+            snaps,
+            key=lambda m: (
+                m.get("start") if m.get("start") is not None else 0,
+                m.get("end") if m.get("end") is not None else 0,
+            ),
         )
         for m in sorted_mentions:
-            if hasattr(m, "span"):
-                start, end = m.span.start, m.span.end
-            else:
-                start, end = None, None
-
-            text = getattr(m, "text", "")
-            label = getattr(m, "label", getattr(m, "type", ""))
-            candidates = getattr(m, "candidates", [])
-            assertions = getattr(m, "assertions", [])
+            start, end = m.get("start"), m.get("end")
+            text = m.get("text", "")
+            label = m.get("label", "")
+            candidates = m.get("candidates", [])
+            assertions = m.get("assertions", [])
 
             cand_str = f", candidates: {candidates}" if candidates else ""
             asrt_str = f", assertions: {assertions}" if assertions else ""
             lines.append(
                 f"  - \"{text}\" [{start}, {end}] ({label}){cand_str}{asrt_str}"
             )
+            if include_linker_diagnostics:
+                diag = self._format_linker_diagnostics(m)
+                if diag:
+                    lines.append(diag)
         return "\n".join(lines)
 
     def process_document(self, document: Document) -> list[FinalEntity]:
@@ -228,69 +353,75 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
 
         # 2. NER
         mentions = self.ner.extract(working_document)
+        snap = self._snapshot_entities(mentions)
         trace_steps.append({
             "step": f"NER Extraction: {self.ner.__class__.__name__}",
             "type": "ner",
             "mentions_count": len(mentions),
-            "mentions": list(mentions),
-            "diff": self._diff_mentions([], mentions)
+            "mentions": snap,
+            "diff": self._diff_mentions([], snap)
         })
 
         # 3. Pre-classification postprocessors
-        prev_mentions = list(mentions)
+        prev_snap = snap
         for postprocessor in self.pre_classification_postprocessors:
             mentions = postprocessor.apply(working_document, mentions)
+            snap = self._snapshot_entities(mentions)
             trace_steps.append({
                 "step": f"Pre-classification Postprocessor: {postprocessor.__class__.__name__}",
                 "type": "postprocessor",
                 "mentions_count": len(mentions),
-                "mentions": list(mentions),
-                "diff": self._diff_mentions(prev_mentions, mentions)
+                "mentions": snap,
+                "diff": self._diff_mentions(prev_snap, snap)
             })
-            prev_mentions = list(mentions)
+            prev_snap = snap
 
         # 4. Classifier
         mentions = self.classifier.classify(working_document, mentions)
+        snap = self._snapshot_entities(mentions)
         trace_steps.append({
             "step": f"Classifier: {self.classifier.__class__.__name__}",
             "type": "classifier",
             "mentions_count": len(mentions),
-            "mentions": list(mentions),
-            "diff": self._diff_mentions(prev_mentions, mentions)
+            "mentions": snap,
+            "diff": self._diff_mentions(prev_snap, snap)
         })
-        prev_mentions = list(mentions)
+        prev_snap = snap
 
         # 5. Post-classification postprocessors
         for postprocessor in self.post_classification_postprocessors:
             mentions = postprocessor.apply(working_document, mentions)
+            snap = self._snapshot_entities(mentions)
             trace_steps.append({
                 "step": f"Post-classification Postprocessor: {postprocessor.__class__.__name__}",
                 "type": "postprocessor",
                 "mentions_count": len(mentions),
-                "mentions": list(mentions),
-                "diff": self._diff_mentions(prev_mentions, mentions)
+                "mentions": snap,
+                "diff": self._diff_mentions(prev_snap, snap)
             })
-            prev_mentions = list(mentions)
+            prev_snap = snap
 
         # 6. Linker
         final_entities = self.linker.link(working_document, mentions)
+        entity_snap = self._snapshot_entities(final_entities)
         trace_steps.append({
             "step": f"Entity Linker: {self.linker.__class__.__name__}",
             "type": "linker",
             "entities_count": len(final_entities),
-            "entities": list(final_entities),
-            "diff": self._diff_mentions(prev_mentions, final_entities)
+            "entities": entity_snap,
+            "diff": self._diff_mentions(prev_snap, entity_snap)
         })
-        prev_entities = list(final_entities)
+        prev_entity_snap = entity_snap
 
         # 7. Assertion detector
         final_entities = self.assertion_detector.apply(working_document, final_entities)
+        entity_snap = self._snapshot_entities(final_entities)
         trace_steps.append({
             "step": f"Assertion Detector: {self.assertion_detector.__class__.__name__}",
             "type": "assertion_detector",
             "entities_count": len(final_entities),
-            "entities": list(final_entities),
-            "diff": self._diff_mentions(prev_entities, final_entities)
+            "entities": entity_snap,
+            "diff": self._diff_mentions(prev_entity_snap, entity_snap)
         })
 
         # Build human-readable text trace
@@ -316,7 +447,12 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
                 txt_trace.append("  Changes in this step:")
                 txt_trace.append(self._format_diff(step["diff"]))
                 txt_trace.append(f"  All current {item_lbl.lower()}:")
-                txt_trace.append(self._format_all_mentions(step.get("mentions", step.get("entities", []))))
+                txt_trace.append(
+                    self._format_all_mentions(
+                        step.get("mentions", step.get("entities", [])),
+                        include_linker_diagnostics=(step["type"] == "linker"),
+                    )
+                )
 
         txt_trace.append("\n" + "=" * 80)
         txt_trace.append("END OF TRACE")
@@ -329,4 +465,3 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
         document.metadata["trace_txt"] = trace_str
 
         return final_entities
-

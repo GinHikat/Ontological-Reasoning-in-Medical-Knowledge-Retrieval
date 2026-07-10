@@ -181,11 +181,13 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 7. **Run command:** `python modules/evaluation/run_pipeline.py --pipeline v7_structured` → `output/v7_structured/runN/{submission,trace}/`
 8. **External leaderboard:** Score **24.25880** (see evaluation table below).
 
-### Remaining Ver 7+ Ideas
+### Remaining Ver 7+ / Ver 8+ Ideas
 1. **Reduce nested/overlapping spans:** v7 still has more overlaps than v6; strengthen merge/dedup so ontology drug spans replace concatenated NER junk (`lasixđã`, `Dùngmethadonekéo dài`).
 2. **Negation + diagnosis conflict:** e.g. `Không chảy máu mũi` still leaves a diagnosis span without `isNegated` and/or a whole-line symptom artifact.
 3. **Upgrade the Drug Dictionary (RxNorm Expansion):** Local `short_drug.csv` still limits `J_candidates` ceiling for SCD-style IDs.
 4. **Precision pass on lab-pair / section recall:** further gate false lab names and over-long symptom bullets.
+5. **Carry ontology preset metadata across drug-boundary expansion / merge** so expanded NER drug spans can still use unambiguous RxCUI presets (v8 currently only helps exact ontology spans).
+6. **Block embedded drug aliases inside symptom phrases** (e.g. `alpain` inside `abdominal pain`).
 
 ---
 
@@ -232,9 +234,29 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 *   **Records Scored:** 100
 
 **Evaluation Results (7th Run - Mod Ver 7: Section-aware + Ontology Lexical Recall):**
-*   **Score (Điểm):** 24.25880
-*   **WER:** 72.035
-*   **J_assertion:** 30.2838
-*   **J_candidates:** 16.9605
-*   **Records Scored:** 100
-*   **Delta vs v6:** Score +1.834 / WER −1.108 / J_assertion +1.393 / J_candidates +2.709
+*   **Intermediate / older v7 artifact (do not use as baseline):** Score **24.25880**
+    *   WER: 72.035 / J_assertion: 30.2838 / J_candidates: 16.9605 / Records: 100
+    *   Delta vs v6: Score +1.834 / WER −1.108 / J_assertion +1.393 / J_candidates +2.709
+*   **Canonical finished v7 baseline (use for all comparisons):**
+    *   Pipeline: `v7_structured`
+    *   **Score (Điểm): 24.79660**
+    *   **WER:** 72.0039
+    *   **J_assertion:** 31.3672
+    *   **J_candidates:** 17.4691
+    *   **num_scored:** 87 / **num_records:** 100
+    *   Artifact: `output/v7_structured/run1/submission` (3160 entities; drugs 259/276 linked)
+
+### Modification Ver 8 (`v8_candidate_integrity`)
+1. **Purpose:** Isolated candidate-integrity experiment. Preserve unambiguous RxCUI presets from `OntologyDrugRecallPostProcessor` instead of discarding them and re-running SapBERT.
+2. **Exact single inference change:**
+    *   `OntologyDrugRecallPostProcessor(track_rxcui_sets=True)` — attach full alias→RxCUI sets + ambiguity metadata (opt-in; v7 default unchanged).
+    *   `HybridEntityLinker(use_unambiguous_preset_drug_rxcui=True)` — if ontology provenance + exact/embedded match + exactly one valid RxCUI, use it directly; else SapBERT fallback identical to v7.
+3. **Alias ambiguity safeguards:** trust only when the complete dictionary maps the matched alias to exactly one RxCUI; never pick the first of many; never trust bare `metadata["rxcui"]` without `ontology_drug_recall=True`.
+4. **v7 regression status:** Shared-class defaults preserve v7 behavior. Same-env original-code vs post-edit v7 outputs are bit-identical. Bit-identical reproduction of the scored canonical artifact is limited by SapBERT numerical nondeterminism (see `analysis/v7_regression_nondeterminism.md`); spans/text/assertions still match canonical.
+5. **v7 → v8 candidate-change counts (same-env `v7_regression` → `v8_candidate_integrity`):**
+    *   Hard invariants: PASS (3160 entities; identical text/positions/types/assertions; diagnosis candidates unchanged).
+    *   Drug candidates changed: **1 / 276** (0.4%). Newly linked: 0. Newly unlinked: 0.
+    *   Preset path used on 202 ontology-overlap drugs; 201 already agreed with SapBERT.
+    *   The single change is a noisy embedded alias (`alpain` inside `abdominal pain`).
+6. **Submission ZIP:** `output/v8_candidate_integrity_submission.zip` (also `output/output.zip`), structure `output/1.json`…`100.json`.
+7. **Leaderboard:** No official v8 score yet — do not record metrics until submitted.

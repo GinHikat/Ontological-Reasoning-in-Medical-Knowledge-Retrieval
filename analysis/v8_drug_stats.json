@@ -1,0 +1,20 @@
+{
+  "total_drugs": 276,
+  "v7_with_candidates": 274,
+  "v7_without_candidates": 2,
+  "ontology_origin": 202,
+  "with_preset_meta": 202,
+  "unambiguous": 202,
+  "ambiguous": 0,
+  "invalid_missing": 0,
+  "preset_used": 202,
+  "sapbert_fallback": 74,
+  "unchanged": 275,
+  "changed": 1,
+  "newly_linked": 0,
+  "newly_unlinked": 0,
+  "changed_linked": 1,
+  "of_17_newly_linked": 0,
+  "of_259_changed": 1,
+  "noisy_cases": 18
+}

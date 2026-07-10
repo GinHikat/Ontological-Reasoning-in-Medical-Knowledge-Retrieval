@@ -12,6 +12,7 @@ from modules.components.postprocessing.base import BaseMentionPostProcessor
 from modules.components.structure.section_parser import VietnameseClinicalSectionParser
 from modules.core.config import ProjectPaths
 from modules.core.constants import TARGET_LABEL_DRUG
+from modules.core.ids import normalize_rxcui
 from modules.core.schemas import Document, EntityMention, Span
 
 
@@ -170,16 +171,22 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
         dictionary_path: Path | None = None,
         section_parser: VietnameseClinicalSectionParser | None = None,
         max_aliases: int = 80000,
+        track_rxcui_sets: bool = False,
     ):
         self.dictionary_path = dictionary_path or (
             ProjectPaths().viettel_base_dir / "short_drug.csv"
         )
         self.section_parser = section_parser or VietnameseClinicalSectionParser()
         self.max_aliases = max_aliases
+        # Opt-in: build complete alias→RxCUI sets for unambiguous preset linking (v8).
+        # Default False preserves exact v7 metadata/behavior.
+        self.track_rxcui_sets = track_rxcui_sets
         self._loaded = False
         self._exact_index: dict[str, list[_AliasEntry]] = defaultdict(list)
         self._trie_root = _CompactTrieNode()
         self._compact_by_first: dict[str, list[_AliasEntry]] = defaultdict(list)
+        self._norm_to_rxcuis: dict[str, set[str]] = defaultdict(set)
+        self._compact_to_rxcuis: dict[str, set[str]] = defaultdict(set)
 
     def _safe_alias(self, term: str) -> bool:
         t = term.strip()
@@ -224,6 +231,72 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
         node.entries.append(entry)
         self._compact_by_first[compact[0]].append(entry)
 
+    def _record_rxcui_sets(self, term: str, rxcui_raw: object) -> None:
+        """Record all valid RxCUIs for an alias before matching-index dedup."""
+        if not self.track_rxcui_sets:
+            return
+        rxcui = normalize_rxcui(rxcui_raw)
+        if rxcui is None:
+            return
+        if not self._safe_alias(term):
+            return
+        norm, _ = normalize_with_map(term)
+        if not norm or len(norm.replace(" ", "")) < 4:
+            return
+        compact = norm.replace(" ", "")
+        if len(compact) < 4:
+            return
+        self._norm_to_rxcuis[norm].add(rxcui)
+        self._compact_to_rxcuis[compact].add(rxcui)
+
+    def _preset_meta_exact(self, alias_norm: str, entry: _AliasEntry) -> dict:
+        if not self.track_rxcui_sets:
+            return {"match": "exact_norm", "alias": entry.alias, "rxcui": entry.rxcui}
+        candidates = sorted(
+            {
+                rid
+                for rid in self._norm_to_rxcuis.get(alias_norm, set())
+                if normalize_rxcui(rid) is not None
+            }
+        )
+        meta: dict = {
+            "match": "exact_norm",
+            "alias": entry.alias,
+            "matched_alias_norm": alias_norm,
+            "preset_rxcui_candidates": candidates,
+            "preset_rxcui_count": len(candidates),
+            "preset_rxcui_unambiguous": len(candidates) == 1,
+        }
+        if len(candidates) == 1:
+            meta["rxcui"] = candidates[0]
+        return meta
+
+    def _preset_meta_embedded(self, entry: _AliasEntry) -> dict:
+        if not self.track_rxcui_sets:
+            return {
+                "match": "embedded_compact",
+                "alias": entry.alias,
+                "rxcui": entry.rxcui,
+            }
+        candidates = sorted(
+            {
+                rid
+                for rid in self._compact_to_rxcuis.get(entry.compact, set())
+                if normalize_rxcui(rid) is not None
+            }
+        )
+        meta: dict = {
+            "match": "embedded_compact",
+            "alias": entry.alias,
+            "matched_alias_compact": entry.compact,
+            "preset_rxcui_candidates": candidates,
+            "preset_rxcui_count": len(candidates),
+            "preset_rxcui_unambiguous": len(candidates) == 1,
+        }
+        if len(candidates) == 1:
+            meta["rxcui"] = candidates[0]
+        return meta
+
     def _ensure_loaded(self) -> None:
         if self._loaded:
             return
@@ -231,7 +304,17 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
         if not path.exists():
             self._loaded = True
             return
-        df = pd.read_csv(path, usecols=lambda c: c in {"term", "rxcui", "tty"})
+        # String-safe RxCUI parsing for v8 maps. Keep legacy CSV loading for the
+        # default v7 path so matching-index construction stays bit-identical.
+        if self.track_rxcui_sets:
+            df = pd.read_csv(
+                path,
+                dtype=str,
+                keep_default_na=False,
+                usecols=lambda c: c in {"term", "rxcui", "tty"},
+            )
+        else:
+            df = pd.read_csv(path, usecols=lambda c: c in {"term", "rxcui", "tty"})
         # Prefer clean ingredient/brand rows first
         if "tty" in df.columns:
             preferred = df[df["tty"].isin(self.PREFERRED_TTY)].copy()
@@ -244,7 +327,8 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
         seen_compact: set[str] = set()
         for row in ordered.itertuples(index=False):
             term = str(getattr(row, "term", "") or "")
-            rxcui = str(getattr(row, "rxcui", "") or "")
+            rxcui_raw = getattr(row, "rxcui", "")
+            rxcui = str(rxcui_raw or "")
             if not term or not rxcui or term == "nan":
                 continue
             # Skip long dosage-heavy synonyms early
@@ -254,15 +338,21 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
                 continue
             norm, _ = normalize_with_map(term)
             compact = norm.replace(" ", "")
+            # Complete alias→ID maps are built BEFORE first-entry dedup.
+            self._record_rxcui_sets(term, rxcui_raw)
             if compact in seen_compact:
                 continue
             if not self._safe_alias(term):
                 continue
             seen_compact.add(compact)
+            # Matching index retains v7 first-entry / max_aliases behavior.
             self._add_alias(term, rxcui)
             count += 1
             if count >= self.max_aliases:
-                break
+                # Keep scanning only to complete ID maps when tracking is on.
+                if not self.track_rxcui_sets:
+                    break
+                continue
         self._loaded = True
 
     def _in_drug_context(
@@ -362,7 +452,7 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
                     s,
                     e,
                     confidence=conf,
-                    meta={"match": "exact_norm", "alias": entry.alias, "rxcui": entry.rxcui},
+                    meta=self._preset_meta_exact(alias_norm, entry),
                 )
 
     def _embedded_compact_match(
@@ -419,11 +509,7 @@ class OntologyDrugRecallPostProcessor(BaseMentionPostProcessor):
                             orig_start,
                             orig_end,
                             confidence=0.9 if gated else 0.82,
-                            meta={
-                                "match": "embedded_compact",
-                                "alias": entry.alias,
-                                "rxcui": entry.rxcui,
-                            },
+                            meta=self._preset_meta_embedded(entry),
                         )
                         i = bj
                         continue

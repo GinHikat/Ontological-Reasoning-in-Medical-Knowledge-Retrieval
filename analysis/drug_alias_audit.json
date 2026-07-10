@@ -1,0 +1,356 @@
+{
+  "dictionary": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/data/viettel/base/short_drug.csv",
+  "total_rows": 310332,
+  "unique_raw_terms": 310332,
+  "unique_normalized_aliases": 310182,
+  "unique_compact_aliases": 308657,
+  "unique_rxcuis": 228042,
+  "normalized_aliases_mapping_to_exactly_1_rxcui": 310146,
+  "normalized_aliases_mapping_to_gt1_rxcui": 36,
+  "compact_aliases_mapping_to_exactly_1_rxcui": 308294,
+  "compact_aliases_mapping_to_gt1_rxcui": 363,
+  "ambiguity_by_tty": {
+    "BN": {
+      "unique_aliases": 11762,
+      "unambiguous": 11762,
+      "ambiguous": 0
+    },
+    "IN": {
+      "unique_aliases": 14440,
+      "unambiguous": 14427,
+      "ambiguous": 13
+    },
+    "SY": {
+      "unique_aliases": 48219,
+      "unambiguous": 48218,
+      "ambiguous": 1
+    },
+    "PIN": {
+      "unique_aliases": 3433,
+      "unambiguous": 3427,
+      "ambiguous": 6
+    },
+    "IN|TMSY": {
+      "unique_aliases": 155,
+      "unambiguous": 155,
+      "ambiguous": 0
+    },
+    "TMSY|PIN": {
+      "unique_aliases": 182,
+      "unambiguous": 182,
+      "ambiguous": 0
+    },
+    "DF": {
+      "unique_aliases": 191,
+      "unambiguous": 191,
+      "ambiguous": 0
+    },
+    "ET": {
+      "unique_aliases": 11,
+      "unambiguous": 11,
+      "ambiguous": 0
+    },
+    "TMSY|BN": {
+      "unique_aliases": 70,
+      "unambiguous": 70,
+      "ambiguous": 0
+    },
+    "MIN": {
+      "unique_aliases": 3241,
+      "unambiguous": 3241,
+      "ambiguous": 0
+    },
+    "SY|IN|TMSY": {
+      "unique_aliases": 1,
+      "unambiguous": 1,
+      "ambiguous": 0
+    },
+    "SCDF": {
+      "unique_aliases": 13632,
+      "unambiguous": 13632,
+      "ambiguous": 0
+    },
+    "SY|IN": {
+      "unique_aliases": 6,
+      "unambiguous": 6,
+      "ambiguous": 0
+    },
+    "SBDF": {
+      "unique_aliases": 12462,
+      "unambiguous": 12462,
+      "ambiguous": 0
+    },
+    "TMSY|MIN": {
+      "unique_aliases": 586,
+      "unambiguous": 586,
+      "ambiguous": 0
+    },
+    "SCD": {
+      "unique_aliases": 27284,
+      "unambiguous": 27284,
+      "ambiguous": 0
+    },
+    "SY|PSN": {
+      "unique_aliases": 13866,
+      "unambiguous": 13864,
+      "ambiguous": 2
+    },
+    "SBD": {
+      "unique_aliases": 20083,
+      "unambiguous": 20083,
+      "ambiguous": 0
+    },
+    "TMSY|SBD": {
+      "unique_aliases": 3813,
+      "unambiguous": 3813,
+      "ambiguous": 0
+    },
+    "SBDF|TMSY": {
+      "unique_aliases": 2070,
+      "unambiguous": 2070,
+      "ambiguous": 0
+    },
+    "PSN": {
+      "unique_aliases": 15745,
+      "unambiguous": 15745,
+      "ambiguous": 0
+    },
+    "SCDC": {
+      "unique_aliases": 26547,
+      "unambiguous": 26547,
+      "ambiguous": 0
+    },
+    "SCD|PSN": {
+      "unique_aliases": 7746,
+      "unambiguous": 7746,
+      "ambiguous": 0
+    },
+    "SCD|TMSY": {
+      "unique_aliases": 3962,
+      "unambiguous": 3962,
+      "ambiguous": 0
+    },
+    "SY|TMSY": {
+      "unique_aliases": 4028,
+      "unambiguous": 4028,
+      "ambiguous": 0
+    },
+    "TMSY|SCDF": {
+      "unique_aliases": 1487,
+      "unambiguous": 1487,
+      "ambiguous": 0
+    },
+    "SCD|TMSY|PSN": {
+      "unique_aliases": 682,
+      "unambiguous": 682,
+      "ambiguous": 0
+    },
+    "SY|TMSY|PSN": {
+      "unique_aliases": 418,
+      "unambiguous": 418,
+      "ambiguous": 0
+    },
+    "SY|SCD|TMSY|PSN": {
+      "unique_aliases": 19,
+      "unambiguous": 19,
+      "ambiguous": 0
+    },
+    "SY|SCD": {
+      "unique_aliases": 51,
+      "unambiguous": 51,
+      "ambiguous": 0
+    },
+    "SY|SCD|PSN": {
+      "unique_aliases": 95,
+      "unambiguous": 95,
+      "ambiguous": 0
+    },
+    "SY|TMSY|SBD": {
+      "unique_aliases": 3,
+      "unambiguous": 3,
+      "ambiguous": 0
+    },
+    "SCDC|TMSY": {
+      "unique_aliases": 1676,
+      "unambiguous": 1676,
+      "ambiguous": 0
+    },
+    "SY|PIN": {
+      "unique_aliases": 1,
+      "unambiguous": 1,
+      "ambiguous": 0
+    },
+    "SBDC|TMSY": {
+      "unique_aliases": 3042,
+      "unambiguous": 3042,
+      "ambiguous": 0
+    },
+    "SBDC": {
+      "unique_aliases": 16355,
+      "unambiguous": 16355,
+      "ambiguous": 0
+    },
+    "SY|SBD": {
+      "unique_aliases": 2,
+      "unambiguous": 2,
+      "ambiguous": 0
+    },
+    "GPCK": {
+      "unique_aliases": 791,
+      "unambiguous": 791,
+      "ambiguous": 0
+    },
+    "BPCK": {
+      "unique_aliases": 935,
+      "unambiguous": 935,
+      "ambiguous": 0
+    },
+    "TMSY|GPCK": {
+      "unique_aliases": 118,
+      "unambiguous": 118,
+      "ambiguous": 0
+    },
+    "BPCK|TMSY": {
+      "unique_aliases": 64,
+      "unambiguous": 64,
+      "ambiguous": 0
+    },
+    "SY|SCD|TMSY": {
+      "unique_aliases": 3,
+      "unambiguous": 3,
+      "ambiguous": 0
+    },
+    "SY|TMSY|GPCK": {
+      "unique_aliases": 1,
+      "unambiguous": 1,
+      "ambiguous": 0
+    },
+    "DFG": {
+      "unique_aliases": 47,
+      "unambiguous": 47,
+      "ambiguous": 0
+    },
+    "SCDG": {
+      "unique_aliases": 14706,
+      "unambiguous": 14706,
+      "ambiguous": 0
+    },
+    "SCDG|TMSY": {
+      "unique_aliases": 1676,
+      "unambiguous": 1676,
+      "ambiguous": 0
+    },
+    "SBDG": {
+      "unique_aliases": 20024,
+      "unambiguous": 20024,
+      "ambiguous": 0
+    },
+    "TMSY|SBDG": {
+      "unique_aliases": 129,
+      "unambiguous": 129,
+      "ambiguous": 0
+    },
+    "SCDFP|TMSY": {
+      "unique_aliases": 812,
+      "unambiguous": 812,
+      "ambiguous": 0
+    },
+    "SCDFP": {
+      "unique_aliases": 3696,
+      "unambiguous": 3696,
+      "ambiguous": 0
+    },
+    "SBDFP": {
+      "unique_aliases": 3922,
+      "unambiguous": 3922,
+      "ambiguous": 0
+    },
+    "TMSY|SBDFP": {
+      "unique_aliases": 1222,
+      "unambiguous": 1222,
+      "ambiguous": 0
+    },
+    "SCDGP": {
+      "unique_aliases": 3831,
+      "unambiguous": 3831,
+      "ambiguous": 0
+    },
+    "TMSY|SCDGP": {
+      "unique_aliases": 955,
+      "unambiguous": 955,
+      "ambiguous": 0
+    }
+  },
+  "ambiguous_alias_count_exported": 363,
+  "examples": {
+    "alias_to_one_rxcui": [
+      {
+        "alias": "0 005 ml dexamethasone 103 4 mg ml injection",
+        "rxcuis": [
+          "2045404"
+        ]
+      },
+      {
+        "alias": "0 005 ml dexamethasone 103 4 mg ml injection dexycu",
+        "rxcuis": [
+          "2045409"
+        ]
+      },
+      {
+        "alias": "0 005 ml dexycu 103 4 mg ml injection",
+        "rxcuis": [
+          "2045409"
+        ]
+      },
+      {
+        "alias": "0 05 ml aflibercept 40 mg ml injection",
+        "rxcuis": [
+          "1232154"
+        ]
+      },
+      {
+        "alias": "0 05 ml aflibercept 40 mg ml injection eylea",
+        "rxcuis": [
+          "1232159"
+        ]
+      }
+    ],
+    "alias_to_multiple_rxcuis": [
+      {
+        "alias": "2 3 dihydroxyacetophenone",
+        "rxcuis": [
+          "1999190",
+          "2268051"
+        ]
+      },
+      {
+        "alias": "2 hydroxyacetophenone",
+        "rxcuis": [
+          "1664428",
+          "1919492"
+        ]
+      },
+      {
+        "alias": "4 terpineol",
+        "rxcuis": [
+          "1314261",
+          "1803668"
+        ]
+      },
+      {
+        "alias": "adalimumab adaz pediatric crohns starter kit patient weight 40 kg",
+        "rxcuis": [
+          "2641668",
+          "2641672"
+        ]
+      },
+      {
+        "alias": "allantoin",
+        "rxcuis": [
+          "1739978",
+          "508"
+        ]
+      }
+    ]
+  }
+}

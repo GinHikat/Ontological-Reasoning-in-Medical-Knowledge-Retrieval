@@ -1,0 +1,416 @@
+[
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "13",
+    "original_context": "i     - Thở oxy tại nhà     - Tăng liều bactrim (do bác sĩ chăm sóc chính kê đơn)     -",
+    "final_text": "bactrim",
+    "position": [
+      382,
+      389
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "13",
+    "original_context": " thay thế khám vào ngày, được tăng liều bactrim và doxycycline để điều trị chẩn đoán Vi",
+    "final_text": "bactrim",
+    "position": [
+      1887,
+      1894
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "13",
+    "original_context": " quyết muốn tiếp tục sử dụng doxycyclinebactrim cho khả năng Viêm mô tế bào     - Cảm t",
+    "final_text": "bactrim",
+    "position": [
+      2246,
+      2253
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "44",
+    "original_context": "p viện - Bệnh nhân đã dùng thêm 80mg po lasix ở nhà mà không có tác dụng - Bệnh nhân ",
+    "final_text": "lasix",
+    "position": [
+      1440,
+      1445
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "44",
+    "original_context": " - Nhận 2 sl ntg - Nhận asa - Nhận 80mg lasix iv - Nhận 8mg morphine - Nhận 1mg dilau",
+    "final_text": "lasix",
+    "position": [
+      1720,
+      1725
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "71",
+    "original_context": " thuật: CABG Thuốc trước khi nhập viện: lasix (tăng liều gần đây)  2. Bệnh sử hiện tạ",
+    "final_text": "lasix",
+    "position": [
+      272,
+      277
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "71",
+    "original_context": "cấp - được điều trị bằng cách tăng liều lasix Tình trạng ngay trước khi nhập viện - v",
+    "final_text": "lasix",
+    "position": [
+      544,
+      549
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "74",
+    "original_context": "khi nhập viện lần này     - cipro     - bactrim     - Kháng sinh cho nhiễm khuẩn đường ",
+    "final_text": "bactrim",
+    "position": [
+      177,
+      184
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "74",
+    "original_context": "hính vào hôm qua, bắt đầu dùng cipro và bactrim     Tình trạng ngay trước khi nhập viện",
+    "final_text": "bactrim",
+    "position": [
+      1021,
+      1028
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "Dùngmethadonekéo dài",
+    "file": "88",
+    "original_context": "đang dùng trước khi nhập viện     - Dùngmethadonekéo dài     - lasixđã dừng cách vài tuần",
+    "final_text": "methadone",
+    "position": [
+      360,
+      369
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "methadone",
+    "all_rxcuis": [
+      "6813"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "6813"
+    ],
+    "v8_candidate": [
+      "6813"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "Dùngmethadonekéo dài",
+    "file": "88",
+    "original_context": "p viện     - Dùngmethadonekéo dài     - lasixđã dừng cách vài tuần  2.  Bệnh sử hiện ",
+    "final_text": "lasix",
+    "position": [
+      383,
+      388
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "88",
+    "original_context": "c bản thân tại nhà, bệnh nhân tự ý dừng Lasix vì không muốn đi tiểu nhiều lần. Sau kh",
+    "final_text": "Lasix",
+    "position": [
+      604,
+      609
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "lasixđã dừng",
+    "file": "88",
+    "original_context": "đi tiểu nhiều lần. Sau khi dừng sử dụng lasix cách đây vài tuần, xuất hiện phù chân. ",
+    "final_text": "lasix",
+    "position": [
+      664,
+      669
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "lasix",
+    "all_rxcuis": [
+      "202991"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "202991"
+    ],
+    "v8_candidate": [
+      "202991"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "Đã sử dụngvancozosyn",
+    "file": "96",
+    "original_context": "huốc đã dùng trước đây - Đã sử dụngvancozosyn nhưng hiện tại đang dừng. Sau khi khám ",
+    "final_text": "zosyn",
+    "position": [
+      241,
+      246
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "zosyn",
+    "all_rxcuis": [
+      "74170"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "74170"
+    ],
+    "v8_candidate": [
+      "74170"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "96",
+    "original_context": "khám chuyên khoa Truyền nhiễm đang dùng bactrim để điều trị nhiễm khuẩn đường tiết niệu",
+    "final_text": "bactrim",
+    "position": [
+      321,
+      328
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "Đã sử dụngvancozosyn",
+    "file": "96",
+    "original_context": "ng huyết điều trị bằng kháng sinh  vancozosynbactrim  điều trị  bệnh viêm tuỷ xương. ",
+    "final_text": "zosyn",
+    "position": [
+      546,
+      551
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "zosyn",
+    "all_rxcuis": [
+      "74170"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "74170"
+    ],
+    "v8_candidate": [
+      "74170"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "vancozosynbactrim",
+    "file": "96",
+    "original_context": "yết điều trị bằng kháng sinh  vancozosynbactrim  điều trị  bệnh viêm tuỷ xương.  Sau đó",
+    "final_text": "bactrim",
+    "position": [
+      551,
+      558
+    ],
+    "match_type": "embedded_compact",
+    "matched_alias": "bactrim",
+    "all_rxcuis": [
+      "151399"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  },
+  {
+    "pattern": "Đã sử dụngvancozosyn",
+    "file": "96",
+    "original_context": " trị  bệnh viêm tuỷ xương.  Sau đó dùng zosyn 8 ngày và dừng tất cả kháng sinh để điề",
+    "final_text": "zosyn",
+    "position": [
+      604,
+      609
+    ],
+    "match_type": "exact_norm",
+    "matched_alias": "zosyn",
+    "all_rxcuis": [
+      "74170"
+    ],
+    "unambiguous": true,
+    "v7_candidate": [
+      "74170"
+    ],
+    "v8_candidate": [
+      "74170"
+    ],
+    "link_path": "preset_unambiguous_rxcui"
+  }
+]

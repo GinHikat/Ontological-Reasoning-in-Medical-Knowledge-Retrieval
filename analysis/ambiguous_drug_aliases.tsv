@@ -1,0 +1,364 @@
+alias	normalized_alias	compact_alias	rxcui_count	rxcuis	ttys	original_terms
+limonene	limonene	limonene	5	1363991|1426476|1426477|1426777|28730	IN|PIN	limonene|limonene, ()-|limonene, (+)-|limonene, (+/-)-|limonene, (-)-
+carvone	carvone	carvone	4	1427074|1427075|1747726|2048712	IN|PIN	carvone|carvone, (+)-|carvone, (+-)-|carvone, (-)-
+linalool, ()-	linalool	linalool	4	1362146|1368896|1430254|1800669	IN|PIN	linalool, ()-|linalool, (+)-|linalool, (+-)-|linalool, (-)-
+.beta.-pinene, (+)-	beta pinene	betapinene	3	1923811|2393778|2396437	IN|PIN	.beta.-pinene, (+)-|.beta.-pinene, (-)-|beta-pinene
+borneol	borneol	borneol	3	1368202|2398335|2530132	IN	borneol|borneol, (+)-|borneol, (-)-
+(+) equol	equol	equol	3	1492341|1648566|1803717	IN|PIN|SY	(+) equol|equol, (+)|equol, (+-)-|equol, (-)-
+linalyl acetate	linalyl acetate	linalylacetate	3	1735331|2048708|2398334	IN	linalyl acetate|linalyl acetate, (+)-|linalyl acetate, (-)-
+menthol 1.25 mg/ml	menthol 12 5 mg ml	menthol125mgml	3	1093357|340115|343613	SCDC	menthol 1.25 mg/ml|menthol 12.5 mg/ml|menthol 125 mg/ml
+10 ml dextrose 2.5 % prefilled syringe	10 ml dextrose 25 prefilled syringe	10mldextrose25prefilledsyringe	2	727518|856474	SY	10 ml dextrose 2.5 % prefilled syringe|10 ml dextrose 25 % prefilled syringe
+1.3 ml rho(d) immune globulin, human 1154 unt/ml injection	1 3 ml rho d immune globulin human 1154 unt ml injection	13mlrhodimmuneglobulinhuman1154untmlinjection	2	1790506|1790512	SCD	1.3 ml rho(d) immune globulin, human 1154 unt/ml injection|13 ml rho(d) immune globulin, human 1154 unt/ml injection
+1.3 ml rho(d) immune globulin, human 1154 unt/ml injection [winrho]	1 3 ml rho d immune globulin human 1154 unt ml injection winrho	13mlrhodimmuneglobulinhuman1154untmlinjectionwinrho	2	1790508|1790513	SBD	1.3 ml rho(d) immune globulin, human 1154 unt/ml injection [winrho]|13 ml rho(d) immune globulin, human 1154 unt/ml injection [winrho]
+1.3 ml winrho 1154 unt/ml injection	1 3 ml winrho 1154 unt ml injection	13mlwinrho1154untmlinjection	2	1790508|1790513	SY	1.3 ml winrho 1154 unt/ml injection|13 ml winrho 1154 unt/ml injection
+2',3'-dihydroxyacetophenone	2 3 dihydroxyacetophenone	23dihydroxyacetophenone	2	1999190|2268051	IN	2',3'-dihydroxyacetophenone|2,3-dihydroxyacetophenone
+2'-hydroxyacetophenone	2 hydroxyacetophenone	2hydroxyacetophenone	2	1664428|1919492	IN	2'-hydroxyacetophenone|2-hydroxyacetophenone
+4-terpineol	4 terpineol	4terpineol	2	1314261|1803668	IN|SY	4-terpineol|4-terpineol, (+)-
+5.26 ml gemcitabine 38 mg/ml injection	52 6 ml gemcitabine 38 mg ml injection	526mlgemcitabine38mgmlinjection	2	1720975|1720977	SCD	5.26 ml gemcitabine 38 mg/ml injection|52.6 ml gemcitabine 38 mg/ml injection
+acetaminophen 2.5 mg/ml	acetaminophen 25 mg ml	acetaminophen25mgml	2	315258|393031	SCDC	acetaminophen 2.5 mg/ml|acetaminophen 25 mg/ml
+acetaminophen 2.5 mg/ml oral solution	acetaminophen 2 5 mg ml oral solution	acetaminophen25mgmloralsolution	2	387001|755717	SCD	acetaminophen 2.5 mg/ml oral solution|acetaminophen 25 mg/ml oral solution
+acyclovir 2.5 mg/ml	acyclovir 25 mg ml	acyclovir25mgml	2	330925|437346	SCDC	acyclovir 2.5 mg/ml|acyclovir 25 mg/ml
+acyclovir 2.5 mg/ml injectable solution	acyclovir 25 mg ml injectable solution	acyclovir25mgmlinjectablesolution	2	248108|415661	SCD	acyclovir 2.5 mg/ml injectable solution|acyclovir 25 mg/ml injectable solution
+acycycloguanosine 2.5 mg/ml injectable solution	acycycloguanosine 25 mg ml injectable solution	acycycloguanosine25mgmlinjectablesolution	2	248108|415661	SY	acycycloguanosine 2.5 mg/ml injectable solution|acycycloguanosine 25 mg/ml injectable solution
+adalimumab-adaz pediatric crohn's starter kit patient weight < 40 kg	adalimumab adaz pediatric crohns starter kit patient weight 40 kg	adalimumabadazpediatriccrohnsstarterkitpatientweight40kg	2	2641668|2641672	SY|PSN	adalimumab-adaz pediatric crohn's starter kit patient weight < 40 kg|adalimumab-adaz pediatric crohn's starter kit patient weight > 40 kg
+agri-mectin	agri mectin	agrimectin	2	1050948|993773	BN	agri-mectin|agrimectin
+allantoin	allantoin	allantoin	2	1739978|508	IN|PIN	allantoin|allantoin, (+)-
+alpha-bisabolol, (+)-	alpha bisabolol	alphabisabolol	2	1306126|1487162	IN|PIN	alpha-bisabolol, (+)-|alpha-bisabolol, (+-)-
+.alpha.-pinene, (+)-	alpha pinene	alphapinene	2	2362183|2371700	IN|PIN	.alpha.-pinene, (+)-|alpha-pinene
+alpha-terpineol	alpha terpineol	alphaterpineol	2	1371307|2398338	IN|PIN	alpha-terpineol|alpha-terpineol, (+)-
+.alpha.-terpinyl acetate, (+/-)-	alpha terpinyl acetate	alphaterpinylacetate	2	2261734|2398336	IN	.alpha.-terpinyl acetate, (+/-)-|alpha-terpinyl acetate, (-)-
+ambrosia artemisiifolia pollen extract 20,000 pnu/ml / ambrosia trifida pollen extract 20,000 pnu/ml injectable solution	ambrosia artemisiifolia pollen extract 20 000 pnu ml ambrosia trifida pollen extract 20 000 pnu ml injectable solution	ambrosiaartemisiifoliapollenextract20000pnumlambrosiatrifidapollenextract20000pnumlinjectablesolution	2	1922790|896195	SY	ambrosia artemisiifolia pollen extract 20,000 pnu/ml / ambrosia trifida pollen extract 20,000 pnu/ml injectable solution|ambrosia artemisiifolia pollen extract 20000 pnu/ml / ambrosia trifida pollen extract 20000 pnu/ml injectable solution
+ambrosia artemisiifolia pollen extract 20,000 unt/ml / ambrosia trifida pollen extract 20,000 unt/ml injectable solution	ambrosia artemisiifolia pollen extract 20 000 unt ml ambrosia trifida pollen extract 20 000 unt ml injectable solution	ambrosiaartemisiifoliapollenextract20000untmlambrosiatrifidapollenextract20000untmlinjectablesolution	2	1922790|896195	SY	ambrosia artemisiifolia pollen extract 20,000 unt/ml / ambrosia trifida pollen extract 20,000 unt/ml injectable solution|ambrosia artemisiifolia pollen extract 20000 unt/ml / ambrosia trifida pollen extract 20000 unt/ml injectable solution
+ambroxol 1.5 mg/ml	ambroxol 1 5 mg ml	ambroxol15mgml	2	332879|437531	SCDC	ambroxol 1.5 mg/ml|ambroxol 15 mg/ml
+aminophylline 2.5 mg/ml	aminophylline 25 mg ml	aminophylline25mgml	2	350709|437036	SCDC	aminophylline 2.5 mg/ml|aminophylline 25 mg/ml
+amphetamine 1.25 mg	amphetamine 1 25 mg	amphetamine125mg	2	1739801|343573	SCDC	amphetamine 1.25 mg|amphetamine 12.5 mg
+amphetamine aspartate 1.25 mg	amphetamine aspartate 1 25 mg	amphetamineaspartate125mg	2	1927606|540473	SCDC	amphetamine aspartate 1.25 mg|amphetamine aspartate 12.5 mg
+amphetamine sulfate 1.25 mg	amphetamine sulfate 1 25 mg	amphetaminesulfate125mg	2	1927607|540474	SCDC	amphetamine sulfate 1.25 mg|amphetamine sulfate 12.5 mg
+apap 2.5 mg/ml oral solution	apap 2 5 mg ml oral solution	apap25mgmloralsolution	2	387001|755717	SY	apap 2.5 mg/ml oral solution|apap 25 mg/ml oral solution
+arginine 1.2 mg/ml	arginine 12 mg ml	arginine12mgml	2	800594|800935	SCDC	arginine 1.2 mg/ml|arginine 12 mg/ml
+ascorbic acid 62.5 mg	ascorbic acid 62 5 mg	ascorbicacid625mg	2	437621|437622	SCDC	ascorbic acid 62.5 mg|ascorbic acid 625 mg
+benzalkonium chloride 1.25 mg/ml	benzalkonium chloride 1 25 mg ml	benzalkoniumchloride125mgml	2	1113692|1494036	SCDC	benzalkonium chloride 1.25 mg/ml|benzalkonium chloride 12.5 mg/ml
+benzalkonium chloride 1.2 mg/ml	benzalkonium chloride 1 2 mg ml	benzalkoniumchloride12mgml	2	1038740|2390354	SCDC	benzalkonium chloride 1.2 mg/ml|benzalkonium chloride 12 mg/ml
+benzalkonium chloride 1.2 mg/ml topical solution	benzalkonium chloride 1 2 mg ml topical solution	benzalkoniumchloride12mgmltopicalsolution	2	1052949|2390355	SCD	benzalkonium chloride 1.2 mg/ml topical solution|benzalkonium chloride 12 mg/ml topical solution
+benzalkonium chloride 1.3 mg/ml	benzalkonium chloride 1 3 mg ml	benzalkoniumchloride13mgml	2	1089989|997657	SCDC	benzalkonium chloride 1.3 mg/ml|benzalkonium chloride 13 mg/ml
+benzalkonium chloride 1.3 mg/ml medicated liquid soap	benzalkonium chloride 1 3 mg ml medicated liquid soap	benzalkoniumchloride13mgmlmedicatedliquidsoap	2	1046593|1089990	SCD	benzalkonium chloride 1.3 mg/ml medicated liquid soap|benzalkonium chloride 13 mg/ml medicated liquid soap
+benzalkonium chloride 1.5 mg/ml	benzalkonium chloride 1 5 mg ml	benzalkoniumchloride15mgml	2	1012712|1014350	SCDC	benzalkonium chloride 1.5 mg/ml|benzalkonium chloride 15 mg/ml
+benzalkonium chloride 1.5 mg/ml topical foam	benzalkonium chloride 1 5 mg ml topical foam	benzalkoniumchloride15mgmltopicalfoam	2	1116729|2461972	SCD	benzalkonium chloride 1.5 mg/ml topical foam|benzalkonium chloride 15 mg/ml topical foam
+benzalkonium chloride 1.6 mg/ml	benzalkonium chloride 1 6 mg ml	benzalkoniumchloride16mgml	2	2375838|2462800	SCDC	benzalkonium chloride 1.6 mg/ml|benzalkonium chloride 16 mg/ml
+benzalkonium chloride 2.5 mg/ml	benzalkonium chloride 25 mg ml	benzalkoniumchloride25mgml	2	1046528|2288171	SCDC	benzalkonium chloride 2.5 mg/ml|benzalkonium chloride 25 mg/ml
+benzocaine 1.5 mg	benzocaine 15 mg	benzocaine15mg	2	315469|437889	SCDC	benzocaine 1.5 mg|benzocaine 15 mg
+benzocaine 2.1 mg/ml	benzocaine 21 mg ml	benzocaine21mgml	2	332568|343238	SCDC	benzocaine 2.1 mg/ml|benzocaine 21 mg/ml
+benzocaine 2.5 mg	benzocaine 25 mg	benzocaine25mg	2	331181|437856	SCDC	benzocaine 2.5 mg|benzocaine 25 mg
+benzocaine 7.5 mg	benzocaine 75 mg	benzocaine75mg	2	437858|437915	SCDC	benzocaine 7.5 mg|benzocaine 75 mg
+beta carotene 1.5 mg	beta carotene 15 mg	betacarotene15mg	2	358433|358540	SCDC	beta carotene 1.5 mg|beta carotene 15 mg
+beta carotene 1.5 mg oral capsule	beta carotene 15 mg oral capsule	betacarotene15mgoralcapsule	2	204903|411926	PSN|SCD	beta carotene 1.5 mg oral capsule|beta carotene 15 mg oral capsule|beta-carotene 15 mg oral capsule
+beta carotene 1.5 mg oral tablet	beta carotene 15 mg oral tablet	betacarotene15mgoraltablet	2	204902|252375	SCD	beta carotene 1.5 mg oral tablet|beta carotene 15 mg oral tablet
+bornyl acetate	bornyl acetate	bornylacetate	2	1491978|2395802	IN	bornyl acetate|bornyl acetate, (-)-
+bromocriptine 2.5 mg	bromocriptine 2 5 mg	bromocriptine25mg	2	329605|752865	SCDC	bromocriptine 2.5 mg|bromocriptine 25 mg
+bromocriptine 2.5 mg oral tablet	bromocriptine 2 5 mg oral tablet	bromocriptine25mgoraltablet	2	197411|752866	SCD	bromocriptine 2.5 mg oral tablet|bromocriptine 25 mg oral tablet
+butylphenyl methylpropional	butylphenyl methylpropional	butylphenylmethylpropional	2	1307156|1664338	IN|PIN	butylphenyl methylpropional|butylphenyl methylpropional, (+)-
+calcium carbonate 67.5 mg	calcium carbonate 67 5 mg	calciumcarbonate675mg	2	332653|476550	SCDC	calcium carbonate 67.5 mg|calcium carbonate 675 mg
+calcium carbonate 87.5 mg	calcium carbonate 875 mg	calciumcarbonate875mg	2	1298186|332746	SCDC	calcium carbonate 87.5 mg|calcium carbonate 875 mg
+calcium pantothenate	calcium pantothenate	calciumpantothenate	2	1792121|1918	PIN	calcium pantothenate|calcium pantothenate, (-)-
+camphor	camphor	camphor	2	1648124|1952	IN	camphor|camphor, (-)-
+camphor 1.5 mg/ml	camphor 15 mg ml	camphor15mgml	2	2606064|637036	SCDC	camphor 1.5 mg/ml|camphor 15 mg/ml
+camphor 4.7 mg/ml	camphor 47 mg ml	camphor47mgml	2	384562|580197	SCDC	camphor 4.7 mg/ml|camphor 47 mg/ml
+capsicum extract 1.3 mg/ml	capsicum extract 13 mg ml	capsicumextract13mgml	2	2585448|823948	SCDC	capsicum extract 1.3 mg/ml|capsicum extract 13 mg/ml
+carbidopa 3.125 mg	carbidopa 3 125 mg	carbidopa3125mg	2	484490|810082	SCDC	carbidopa 3.125 mg|carbidopa 31.25 mg
+carbomer 940	carbomer 940	carbomer940	2	1305738|1362909	IN|SY	carbomer 940|carbomer-940
+carbon dioxide 1.3 %	carbon dioxide 13	carbondioxide13	2	393095|393164	SCDC	carbon dioxide 1.3 %|carbon dioxide 13 %
+cascara sagrada 32.4 mg	cascara sagrada 32 4 mg	cascarasagrada324mg	2	331328|331637	SCDC	cascara sagrada 32.4 mg|cascara sagrada 324 mg
+cetrimide 1.5 mg/ml	cetrimide 15 mg ml	cetrimide15mgml	2	332766|332768	SCDC	cetrimide 1.5 mg/ml|cetrimide 15 mg/ml
+chloramphenicol 2.5 mg/ml	chloramphenicol 2 5 mg ml	chloramphenicol25mgml	2	333634|333636	SCDC	chloramphenicol 2.5 mg/ml|chloramphenicol 25 mg/ml
+chlorhexidine gluconate 1.2 mg/ml	chlorhexidine gluconate 1 2 mg ml	chlorhexidinegluconate12mgml	2	1294256|346134	SCDC	chlorhexidine gluconate 1.2 mg/ml|chlorhexidine gluconate 12 mg/ml
+chlorhexidine gluconate 1.5 mg/ml	chlorhexidine gluconate 15 mg ml	chlorhexidinegluconate15mgml	2	2568122|834193	SCDC	chlorhexidine gluconate 1.5 mg/ml|chlorhexidine gluconate 15 mg/ml
+chlorhexidine gluconate topical solution [hexi-dip]	chlorhexidine gluconate topical solution hexidip	chlorhexidinegluconatetopicalsolutionhexidip	2	2656627|2657305	SBDFP	chlorhexidine gluconate topical solution [hexi-dip]|chlorhexidine gluconate topical solution [hexidip]
+chlorhexidine topical solution [hexi-dip]	chlorhexidine topical solution hexidip	chlorhexidinetopicalsolutionhexidip	2	1425491|1485608	SBDF	chlorhexidine topical solution [hexi-dip]|chlorhexidine topical solution [hexidip]
+chloroxylenol 1.5 mg/ml	chloroxylenol 15 mg ml	chloroxylenol15mgml	2	1043128|2682819	SCDC	chloroxylenol 1.5 mg/ml|chloroxylenol 15 mg/ml
+chloroxylenol 1.5 mg/ml topical foam	chloroxylenol 15 mg ml topical foam	chloroxylenol15mgmltopicalfoam	2	2168394|2682820	SCD	chloroxylenol 1.5 mg/ml topical foam|chloroxylenol 15 mg/ml topical foam
+chloroxylenol 2.5 mg/ml	chloroxylenol 2 5 mg ml	chloroxylenol25mgml	2	1439954|332783	SCDC	chloroxylenol 2.5 mg/ml|chloroxylenol 25 mg/ml
+chloroxylenol 2.5 mg/ml medicated liquid soap	chloroxylenol 2 5 mg ml medicated liquid soap	chloroxylenol25mgmlmedicatedliquidsoap	2	1435989|1439955	SCD	chloroxylenol 2.5 mg/ml medicated liquid soap|chloroxylenol 25 mg/ml medicated liquid soap
+chloroxylenol 3.5 mg/ml	chloroxylenol 35 mg ml	chloroxylenol35mgml	2	1370951|2689267	SCDC	chloroxylenol 3.5 mg/ml|chloroxylenol 35 mg/ml
+clavulanate 12.5 mg	clavulanate 125 mg	clavulanate125mg	2	1810267|345821	SCDC	clavulanate 12.5 mg|clavulanate 125 mg
+clavulanate 2.5 mg/ml	clavulanate 2 5 mg ml	clavulanate25mgml	2	617291|617974	SCDC	clavulanate 2.5 mg/ml|clavulanate 25 mg/ml
+clove oil 2.5 mg/ml	clove oil 25 mg ml	cloveoil25mgml	2	1592729|329569	SCDC	clove oil 2.5 mg/ml|clove oil 25 mg/ml
+coal tar 1.1 mg/ml	coal tar 11 mg ml	coaltar11mgml	2	331739|647626	SCDC	coal tar 1.1 mg/ml|coal tar 11 mg/ml
+codeine phosphate 1.5 mg/ml	codeine phosphate 1 5 mg ml	codeinephosphate15mgml	2	891481|997172	SCDC	codeine phosphate 1.5 mg/ml|codeine phosphate 15 mg/ml
+colloidal oatmeal 1.5 mg/ml	colloidal oatmeal 15 mg ml	colloidaloatmeal15mgml	2	1235012|2709426	SCDC	colloidal oatmeal 1.5 mg/ml|colloidal oatmeal 15 mg/ml
+comfort caine	comfort caine	comfortcaine	2	1592286|543722	BN	comfort caine|comfortcaine
+compazine 2.5 mg rectal suppository	compazine 2 5 mg rectal suppository	compazine25mgrectalsuppository	2	207635|207639	SY|PSN	compazine 2.5 mg rectal suppository|compazine 25 mg rectal suppository
+co q-10 100 mg oral capsule	co q 10 100 mg oral capsule	coq10100mgoralcapsule	2	252761|801796	SY	co q-10 100 mg oral capsule|co-q10 100 mg oral capsule
+danthron 1.5 mg/ml	danthron 15 mg ml	danthron15mgml	2	332956|438893	SCDC	danthron 1.5 mg/ml|danthron 15 mg/ml
+ddi 1.67 mg/ml oral solution	ddi 1 67 mg ml oral solution	ddi167mgmloralsolution	2	309869|486330	SY	ddi 1.67 mg/ml oral solution|ddi 16.7 mg/ml oral solution
+denti care	denticare	denticare	2	545696|583549	BN	denti care|denticare
+derma gran	dermagran	dermagran	2	1441549|216476	BN	derma gran|dermagran
+derma gran topical product	dermagran topical product	dermagrantopicalproduct	2	1173771|1441552	SBDG	derma gran topical product|dermagran topical product
+dexamethasone / sodium phosphate	dexamethasone sodium phosphate	dexamethasonesodiumphosphate	2	1009150|48933	TMSY|MIN|TMSY|PIN	dexamethasone / sodium phosphate|dexamethasone sodium phosphate
+dexamethasone / sodium phosphate injectable product	dexamethasone sodium phosphate injectable product	dexamethasonesodiumphosphateinjectableproduct	2	1154526|2663011	SCDG|TMSY|TMSY|SCDGP	dexamethasone / sodium phosphate injectable product|dexamethasone sodium phosphate injectable product
+dexmethylphenidate hydrochloride 2.5 mg	dexmethylphenidate hydrochloride 2 5 mg	dexmethylphenidatehydrochloride25mg	2	1101925|899556	SCDC	dexmethylphenidate hydrochloride 2.5 mg|dexmethylphenidate hydrochloride 25 mg
+dexmethylphenidate hydrochloride 2.5 mg [focalin]	dexmethylphenidate hydrochloride 2 5 mg focalin	dexmethylphenidatehydrochloride25mgfocalin	2	1101927|899558	SBDC	dexmethylphenidate hydrochloride 2.5 mg [focalin]|dexmethylphenidate hydrochloride 25 mg [focalin]
+dextroamphetamine saccharate 1.25 mg	dextroamphetamine saccharate 1 25 mg	dextroamphetaminesaccharate125mg	2	1927608|540476	SCDC	dextroamphetamine saccharate 1.25 mg|dextroamphetamine saccharate 12.5 mg
+dextroamphetamine sulfate 1.25 mg	dextroamphetamine sulfate 1 25 mg	dextroamphetaminesulfate125mg	2	1927609|578551	SCDC	dextroamphetamine sulfate 1.25 mg|dextroamphetamine sulfate 12.5 mg
+dextromethorphan hydrobromide 2.5 mg	dextromethorphan hydrobromide 2 5 mg	dextromethorphanhydrobromide25mg	2	1037198|1357904	SCDC	dextromethorphan hydrobromide 2.5 mg|dextromethorphan hydrobromide 25 mg
+didanosine 1.67 mg/ml	didanosine 1 67 mg ml	didanosine167mgml	2	384480|486329	SCDC	didanosine 1.67 mg/ml|didanosine 16.7 mg/ml
+didanosine 1.67 mg/ml oral solution	didanosine 1 67 mg ml oral solution	didanosine167mgmloralsolution	2	309869|486330	SCD	didanosine 1.67 mg/ml oral solution|didanosine 16.7 mg/ml oral solution
+dideoxyinosine 1.67 mg/ml oral solution	dideoxyinosine 1 67 mg ml oral solution	dideoxyinosine167mgmloralsolution	2	309869|486330	SY	dideoxyinosine 1.67 mg/ml oral solution|dideoxyinosine 16.7 mg/ml oral solution
+dimethicone 1.1 % topical lotion	dimethicone 11 topical lotion	dimethicone11topicallotion	2	1440188|2590920	PSN|SY|PSN	dimethicone 1.1 % topical lotion|dimethicone 11 % topical lotion
+dimethicone 12.5 mg/ml	dimethicone 12 5 mg ml	dimethicone125mgml	2	2613880|353557	SCDC	dimethicone 12.5 mg/ml|dimethicone 125 mg/ml
+dimethicone 12.5 mg/ml topical cream	dimethicone 12 5 mg ml topical cream	dimethicone125mgmltopicalcream	2	1537911|2613881	SCD	dimethicone 12.5 mg/ml topical cream|dimethicone 125 mg/ml topical cream
+dimethicone 1.25 % topical cream	dimethicone 1 25 topical cream	dimethicone125topicalcream	2	1537911|2613881	SY|PSN	dimethicone 1.25 % topical cream|dimethicone 12.5 % topical cream
+dimethicone 1.5 mg/ml	dimethicone 15 mg ml	dimethicone15mgml	2	1233683|343209	SCDC	dimethicone 1.5 mg/ml|dimethicone 15 mg/ml
+dimethicone 1.5 mg/ml topical lotion	dimethicone 15 mg ml topical lotion	dimethicone15mgmltopicallotion	2	1233684|200090	SCD	dimethicone 1.5 mg/ml topical lotion|dimethicone 15 mg/ml topical lotion
+diphenhydramine hydrochloride 1.25 mg/ml	diphenhydramine hydrochloride 1 25 mg ml	diphenhydraminehydrochloride125mgml	2	1049883|1293951	SCDC|TMSY	diphenhydramine hydrochloride 1.25 mg/ml|diphenhydramine hydrochloride 12.5 mg/ml
+diphenhydramine hydrochloride 1.67 mg/ml	diphenhydramine hydrochloride 1 67 mg ml	diphenhydraminehydrochloride167mgml	2	1092372|2671698	SCDC|TMSY	diphenhydramine hydrochloride 1.67 mg/ml|diphenhydramine hydrochloride 16.7 mg/ml
+diphenhydramine hydrochloride 1.67 mg/ml oral solution	diphenhydramine hydrochloride 1 67 mg ml oral solution	diphenhydraminehydrochloride167mgmloralsolution	2	1248354|2671699	SCD|TMSY	diphenhydramine hydrochloride 1.67 mg/ml oral solution|diphenhydramine hydrochloride 16.7 mg/ml oral solution
+e.e.s. 400 mg oral tablet	ees 400 mg oral tablet	ees400mgoraltablet	2	686405|863606	SY|SY|PSN	e.e.s. 400 mg oral tablet|ees 400 mg oral tablet
+e.e.s. 40 mg/ml oral suspension	ees 40 mg ml oral suspension	ees40mgmloralsuspension	2	686400|863603	SY	e.e.s. 40 mg/ml oral suspension|ees 40 mg/ml oral suspension
+e.e.s. 80 mg/ml oral suspension	ees 80 mg ml oral suspension	ees80mgmloralsuspension	2	686418|863626	SY	e.e.s. 80 mg/ml oral suspension|ees 80 mg/ml oral suspension
+ephedrine hydrochloride 4.7 mg/ml	ephedrine hydrochloride 4 7 mg ml	ephedrinehydrochloride47mgml	2	2560084|2560093	SCDC|TMSY	ephedrine hydrochloride 4.7 mg/ml|ephedrine hydrochloride 47 mg/ml
+ephedrine hydrochloride 4.7 mg/ml injection	ephedrine hydrochloride 4 7 mg ml injection	ephedrinehydrochloride47mgmlinjection	2	2560091|2560097	SCD|TMSY	ephedrine hydrochloride 4.7 mg/ml injection|ephedrine hydrochloride 47 mg/ml injection
+ephedrine hydrochloride 4.7 mg/ml injection [rezipres]	ephedrine hydrochloride 4 7 mg ml injection rezipres	ephedrinehydrochloride47mgmlinjectionrezipres	2	2560092|2560098	TMSY|SBD	ephedrine hydrochloride 4.7 mg/ml injection [rezipres]|ephedrine hydrochloride 47 mg/ml injection [rezipres]
+ephedrine hydrochloride 4.7 mg/ml [rezipres]	ephedrine hydrochloride 4 7 mg ml rezipres	ephedrinehydrochloride47mgmlrezipres	2	2560087|2560095	SBDC|TMSY	ephedrine hydrochloride 4.7 mg/ml [rezipres]|ephedrine hydrochloride 47 mg/ml [rezipres]
+ephedrine sulfate 2.5 mg/ml	ephedrine sulfate 25 mg ml	ephedrinesulfate25mgml	2	1116114|345996	SCDC|TMSY	ephedrine sulfate 2.5 mg/ml|ephedrine sulfate 25 mg/ml
+ergocalciferol 500,000 unt/ml injectable solution	ergocalciferol 500000 unt ml injectable solution	ergocalciferol500000untmlinjectablesolution	2	310141|346739	PSN|SCD	ergocalciferol 500,000 unt/ml injectable solution|ergocalciferol 500000 unt/ml injectable solution
+estrogens, conjugated (usp) 2.5 mg	estrogens conjugated usp 2 5 mg	estrogensconjugatedusp25mg	2	1729186|343615	SCDC	estrogens, conjugated (usp) 2.5 mg|estrogens, conjugated (usp) 25 mg
+estrogens, conjugated (usp) 2.5 mg [premarin]	estrogens conjugated usp 2 5 mg premarin	estrogensconjugatedusp25mgpremarin	2	1729189|566151	SBDC	estrogens, conjugated (usp) 2.5 mg [premarin]|estrogens, conjugated (usp) 25 mg [premarin]
+estrone 1.5 mg/ml	estrone 1 5 mg ml	estrone15mgml	2	315885|393155	SCDC	estrone 1.5 mg/ml|estrone 15 mg/ml
+ferrous sulfate 1.25 mg/ml	ferrous sulfate 125 mg ml	ferroussulfate125mgml	2	1356784|328927	SCDC	ferrous sulfate 1.25 mg/ml|ferrous sulfate 125 mg/ml
+ferrous sulfate 1.25 mg/ml oral solution	ferrous sulfate 125 mg ml oral solution	ferroussulfate125mgmloralsolution	2	1356785|310316	SCD	ferrous sulfate 1.25 mg/ml oral solution|ferrous sulfate 125 mg/ml oral solution
+feso4 1.25 mg/ml oral solution	feso4 125 mg ml oral solution	feso4125mgmloralsolution	2	1356785|310316	SY	feso4 1.25 mg/ml oral solution|feso4 125 mg/ml oral solution
+fluphenazine 2.5 mg/ml	fluphenazine 25 mg ml	fluphenazine25mgml	2	328237|328252	SCDC|TMSY	fluphenazine 2.5 mg/ml|fluphenazine 25 mg/ml
+folic acid 1.5 mg	folic acid 1 5 mg	folicacid15mg	2	337024|439840	SCDC	folic acid 1.5 mg|folic acid 15 mg
+folic acid 2.5 mg	folic acid 25 mg	folicacid25mg	2	334820|336153	SCDC	folic acid 2.5 mg|folic acid 25 mg
+furosemide 12.5 mg	furosemide 125 mg	furosemide125mg	2	439805|630031	SCDC	furosemide 12.5 mg|furosemide 125 mg
+furosemide 12.5 mg oral tablet	furosemide 125 mg oral tablet	furosemide125mgoraltablet	2	428541|630032	SCD|SCD|PSN	furosemide 12.5 mg oral tablet|furosemide 125 mg oral tablet
+glycerin 7.5 mg/ml	glycerin 75 mg ml	glycerin75mgml	2	1114097|2705815	SCDC	glycerin 7.5 mg/ml|glycerin 75 mg/ml
+glycine 1.5 % irrigation solution	glycine 1 5 irrigation solution	glycine15irrigationsolution	2	310571|310572	SY|PSN	glycine 1.5 % irrigation solution|glycine 15 % irrigation solution
+halls 1.8 mg oral lozenge	halls 18 mg oral lozenge	halls18mgorallozenge	2	1422189|2109514	SY|PSN	halls 1.8 mg oral lozenge|halls 18 mg oral lozenge
+hepatasol (8 % amino acids) injectable solution	hepatasol 8 amino acids injectable solution	hepatasol8aminoacidsinjectablesolution	2	800954|800957	SY	hepatasol (8 % amino acids) injectable solution|hepatasol 8 % amino acids injectable solution
+hexi-dip	hexidip	hexidip	2	1425489|1485606	BN	hexi-dip|hexidip
+hexi-dip topical product	hexidip topical product	hexidiptopicalproduct	2	1425492|1485609	SBDG	hexi-dip topical product|hexidip topical product
+hydrocortisone 2.5 mg/ml	hydrocortisone 25 mg ml	hydrocortisone25mgml	2	330460|343175	SCDC	hydrocortisone 2.5 mg/ml|hydrocortisone 25 mg/ml
+hydrocortisone 2.5 mg/ml topical cream	hydrocortisone 2 5 mg ml topical cream	hydrocortisone25mgmltopicalcream	2	199190|310891	SCD	hydrocortisone 2.5 mg/ml topical cream|hydrocortisone 25 mg/ml topical cream
+hydrocortisone 2.5 mg/ml topical lotion	hydrocortisone 2 5 mg ml topical lotion	hydrocortisone25mgmltopicallotion	2	197781|197785	SCD	hydrocortisone 2.5 mg/ml topical lotion|hydrocortisone 25 mg/ml topical lotion
+hydrogen peroxide 1.25 mg/ml	hydrogen peroxide 12 5 mg ml	hydrogenperoxide125mgml	2	1370370|2397695	SCDC	hydrogen peroxide 1.25 mg/ml|hydrogen peroxide 12.5 mg/ml
+hydrogen peroxide 1.5 % mucous membrane topical solution	hydrogen peroxide 1 5 mucous membrane topical solution	hydrogenperoxide15mucousmembranetopicalsolution	2	205336|708104	SY|SY|PSN	hydrogen peroxide 1.5 % mucous membrane topical solution|hydrogen peroxide 15 % mucous membrane topical solution
+hypromellose 2.5 mg/ml	hypromellose 25 mg ml	hypromellose25mgml	2	323955|358711	SCDC	hypromellose 2.5 mg/ml|hypromellose 25 mg/ml
+hypromellose 2.5 mg/ml ophthalmic solution	hypromellose 2 5 mg ml ophthalmic solution	hypromellose25mgmlophthalmicsolution	2	203098|310934	SCD	hypromellose 2.5 mg/ml ophthalmic solution|hypromellose 25 mg/ml ophthalmic solution
+hyrimoz pediatric crohn's starter kit patient weight < 40 kg	hyrimoz pediatric crohns starter kit patient weight 40 kg	hyrimozpediatriccrohnsstarterkitpatientweight40kg	2	2641669|2641673	SY|PSN	hyrimoz pediatric crohn's starter kit patient weight < 40 kg|hyrimoz pediatric crohn's starter kit patient weight > 40 kg
+ibuprofen 200 mg [ibu-tab]	ibuprofen 200 mg ibu tab	ibuprofen200mgibutab	2	1359093|567691	SBDC	ibuprofen 200 mg [ibu-tab]|ibuprofen 200 mg [ibutab]
+ibuprofen 200 mg oral tablet [ibu-tab]	ibuprofen 200 mg oral tablet ibu tab	ibuprofen200mgoraltabletibutab	2	1359097|206889	SBD	ibuprofen 200 mg oral tablet [ibu-tab]|ibuprofen 200 mg oral tablet [ibutab]
+ibuprofen oral tablet [ibu-tab]	ibuprofen oral tablet ibu tab	ibuprofenoraltabletibutab	2	1359094|368822	SBDF	ibuprofen oral tablet [ibu-tab]|ibuprofen oral tablet [ibutab]
+ibu-tab	ibu tab	ibutab	2	1359092|217694	BN	ibu-tab|ibutab
+ibu-tab 200 mg oral tablet	ibu tab 200 mg oral tablet	ibutab200mgoraltablet	2	1359097|206889	SY|PSN	ibu-tab 200 mg oral tablet|ibutab 200 mg oral tablet
+ibu-tab oral product	ibu tab oral product	ibutaboralproduct	2	1166577|1359095	SBDG	ibu-tab oral product|ibutab oral product
+ibu-tab pill	ibu tab pill	ibutabpill	2	1166578|1359096	SBDG	ibu-tab pill|ibutab pill
+interceptor 2.3 mg oral tablet	interceptor 2 3 mg oral tablet	interceptor23mgoraltablet	2	890933|890937	SY	interceptor 2.3 mg oral tablet|interceptor 23 mg oral tablet
+interceptor flavor tabs 2.3 mg oral tablet	interceptor flavor tabs 2 3 mg oral tablet	interceptorflavortabs23mgoraltablet	2	890933|890937	PSN	interceptor flavor tabs 2.3 mg oral tablet|interceptor flavor tabs 23 mg oral tablet
+interceptor plus (milbemycin oxime 2.3 mg / praziquantel 22.8 mg) chewable tablet	interceptor plus milbemycin oxime 2 3 mg praziquantel 22 8 mg chewable tablet	interceptorplusmilbemycinoxime23mgpraziquantel228mgchewabletablet	2	2058482|2058491	SY	interceptor plus (milbemycin oxime 2.3 mg / praziquantel 22.8 mg) chewable tablet|interceptor plus (milbemycin oxime 23 mg / praziquantel 228 mg) chewable tablet
+iodine 2.5 mg/ml	iodine 2 5 mg ml	iodine25mgml	2	335030|440758	SCDC	iodine 2.5 mg/ml|iodine 25 mg/ml
+iodine 2.5 mg/ml topical solution	iodine 25 mg ml topical solution	iodine25mgmltopicalsolution	2	421536|991284	SCD	iodine 2.5 mg/ml topical solution|iodine 25 mg/ml topical solution
+ipecac 1.4 mg/ml	ipecac 1 4 mg ml	ipecac14mgml	2	440808|628450	SCDC	ipecac 1.4 mg/ml|ipecac 14 mg/ml
+ipecac 1.4 mg/ml oral solution	ipecac 1 4 mg ml oral solution	ipecac14mgmloralsolution	2	756112|756113	SCD	ipecac 1.4 mg/ml oral solution|ipecac 14 mg/ml oral solution
+isotretinoin 2.5 mg	isotretinoin 2 5 mg	isotretinoin25mg	2	1547560|440914	SCDC|TMSY	isotretinoin 2.5 mg|isotretinoin 25 mg
+isotretinoin 2.5 mg oral capsule	isotretinoin 2 5 mg oral capsule	isotretinoin25mgoralcapsule	2	1547561|411392	SCD|TMSY|SCD|TMSY|PSN	isotretinoin 2.5 mg oral capsule|isotretinoin 25 mg oral capsule
+kaolin 197 mg/ml / pectin 4.4 mg/ml oral suspension	kaolin 197 mg ml pectin 44 mg ml oral suspension	kaolin197mgmlpectin44mgmloralsuspension	2	246538|422018	SCD	kaolin 197 mg/ml / pectin 4.4 mg/ml oral suspension|kaolin 197 mg/ml / pectin 44 mg/ml oral suspension
+k+ chloride 2.5 meq oral tablet	k chloride 2 5 meq oral tablet	kchloride25meqoraltablet	2	237389|312517	SY	k+ chloride 2.5 meq oral tablet|k+ chloride 25 meq oral tablet
+ketamine 100 mg/ml injectable solution [keta-thesia]	ketamine 100 mg ml injectable solution keta thesia	ketamine100mgmlinjectablesolutionketathesia	2	1301259|631282	SBD	ketamine 100 mg/ml injectable solution [keta-thesia]|ketamine 100 mg/ml injectable solution [ketathesia]
+ketamine 100 mg/ml [keta-thesia]	ketamine 100 mg ml keta thesia	ketamine100mgmlketathesia	2	1301256|631280	SBDC	ketamine 100 mg/ml [keta-thesia]|ketamine 100 mg/ml [ketathesia]
+ketamine injectable solution [keta-thesia]	ketamine injectable solution keta thesia	ketamineinjectablesolutionketathesia	2	1301257|631281	SBDF	ketamine injectable solution [keta-thesia]|ketamine injectable solution [ketathesia]
+keta-thesia	keta thesia	ketathesia	2	1301255|631279	BN	keta-thesia|ketathesia
+keta-thesia 100 mg/ml injectable solution	keta thesia 100 mg ml injectable solution	ketathesia100mgmlinjectablesolution	2	1301259|631282	SY	keta-thesia 100 mg/ml injectable solution|ketathesia 100 mg/ml injectable solution
+keta-thesia injectable product	keta thesia injectable product	ketathesiainjectableproduct	2	1170701|1301258	SBDG	keta-thesia injectable product|ketathesia injectable product
+lenalidomide 2.5 mg	lenalidomide 25 mg	lenalidomide25mg	2	1242230|643719	SCDC	lenalidomide 2.5 mg|lenalidomide 25 mg
+lenalidomide 2.5 mg oral capsule	lenalidomide 25 mg oral capsule	lenalidomide25mgoralcapsule	2	1242231|643720	SCD|PSN	lenalidomide 2.5 mg oral capsule|lenalidomide 25 mg oral capsule
+lenalidomide 2.5 mg oral capsule [revlimid]	lenalidomide 25 mg oral capsule revlimid	lenalidomide25mgoralcapsulerevlimid	2	1242233|643722	SBD	lenalidomide 2.5 mg oral capsule [revlimid]|lenalidomide 25 mg oral capsule [revlimid]
+lenalidomide 2.5 mg [revlimid]	lenalidomide 25 mg revlimid	lenalidomide25mgrevlimid	2	1242232|643721	SBDC	lenalidomide 2.5 mg [revlimid]|lenalidomide 25 mg [revlimid]
+leucine 1.4 mg/ml	leucine 1 4 mg ml	leucine14mgml	2	800601|801400	SCDC	leucine 1.4 mg/ml|leucine 14 mg/ml
+leucovorin 2.5 mg	leucovorin 25 mg	leucovorin25mg	2	329898|440776	SCDC	leucovorin 2.5 mg|leucovorin 25 mg
+leucovorin 2.5 mg oral tablet	leucovorin 25 mg oral tablet	leucovorin25mgoraltablet	2	197862|432927	SCD	leucovorin 2.5 mg oral tablet|leucovorin 25 mg oral tablet
+levothyroxine sodium 12.5 mcg oral tablet	levothyroxine sodium 125 mcg oral tablet	levothyroxinesodium125mcgoraltablet	2	966224|966280	SY|PSN	levothyroxine sodium 12.5 mcg oral tablet|levothyroxine sodium 125 mcg oral tablet
+limonene oxide	limonene oxide	limoneneoxide	2	1992034|1992035	IN|PIN	limonene oxide|limonene oxide, (+)-
+loxapine 2.5 mg	loxapine 25 mg	loxapine25mg	2	329943|434659	SCDC	loxapine 2.5 mg|loxapine 25 mg
+loxapine 2.5 mg oral tablet	loxapine 25 mg oral tablet	loxapine25mgoraltablet	2	248746|430457	SCD	loxapine 2.5 mg oral tablet|loxapine 25 mg oral tablet
+lutein 2.5 mg	lutein 2 5 mg	lutein25mg	2	1115784|1291248	SCDC	lutein 2.5 mg|lutein 25 mg
+magnesium hydroxide 13.3 mg/ml	magnesium hydroxide 133 mg ml	magnesiumhydroxide133mgml	2	1233565|330967	SCDC	magnesium hydroxide 13.3 mg/ml|magnesium hydroxide 133 mg/ml
+max revive	max revive	maxrevive	2	1482614|1874175	BN	max revive|maxrevive
+max revive topical product	max revive topical product	maxrevivetopicalproduct	2	1482617|1874178	SBDG	max revive topical product|maxrevive topical product
+menthol	menthol	menthol	2	1648123|6750	IN|PIN	menthol|menthol, (+)-
+menthol 1.2 % topical gel	menthol 1 2 topical gel	menthol12topicalgel	2	2045038|2121666	SY|SY|PSN	menthol 1.2 % topical gel|menthol 12 % topical gel
+menthol 14.5 mg/ml	menthol 14 5 mg ml	menthol145mgml	2	1046588|1293428	SCDC	menthol 14.5 mg/ml|menthol 145 mg/ml
+menthol 1.5 mg	menthol 1 5 mg	menthol15mg	2	1043730|1421440	SCDC	menthol 1.5 mg|menthol 15 mg
+menthol 1.5 mg/ml	menthol 15 mg ml	menthol15mgml	2	331743|446274	SCDC	menthol 1.5 mg/ml|menthol 15 mg/ml
+menthol 1.5 mg/ml topical lotion	menthol 15 mg ml topical lotion	menthol15mgmltopicallotion	2	1148429|1293192	SCD	menthol 1.5 mg/ml topical lotion|menthol 15 mg/ml topical lotion
+menthol 1.5 mg oral lozenge	menthol 1 5 mg oral lozenge	menthol15mgorallozenge	2	1043731|1421441	SCD|PSN	menthol 1.5 mg oral lozenge|menthol 15 mg oral lozenge
+menthol 1.6 mg	menthol 1 6 mg	menthol16mg	2	2122214|452756	SCDC	menthol 1.6 mg|menthol 16 mg
+menthol 1.6 mg oral lozenge	menthol 1 6 mg oral lozenge	menthol16mgorallozenge	2	2122215|637116	SCD|PSN	menthol 1.6 mg oral lozenge|menthol 16 mg oral lozenge
+menthol 1.8 mg	menthol 18 mg	menthol18mg	2	1422186|1429018	SCDC	menthol 1.8 mg|menthol 18 mg
+menthol 1.8 mg [halls]	menthol 18 mg halls	menthol18mghalls	2	1422188|2109513	SBDC	menthol 1.8 mg [halls]|menthol 18 mg [halls]
+menthol 1.8 mg oral lozenge	menthol 18 mg oral lozenge	menthol18mgorallozenge	2	1422187|1429019	SCD|PSN	menthol 1.8 mg oral lozenge|menthol 18 mg oral lozenge
+menthol 1.8 mg oral lozenge [halls]	menthol 18 mg oral lozenge halls	menthol18mgorallozengehalls	2	1422189|2109514	SBD	menthol 1.8 mg oral lozenge [halls]|menthol 18 mg oral lozenge [halls]
+menthol 2.5 mg/ml	menthol 2 5 mg ml	menthol25mgml	2	336317|884801	SCDC	menthol 2.5 mg/ml|menthol 25 mg/ml
+menthol 2.6 mg/ml	menthol 26 mg ml	menthol26mgml	2	2370900|384577	SCDC	menthol 2.6 mg/ml|menthol 26 mg/ml
+menthol 3.5 mg	menthol 3 5 mg	menthol35mg	2	2053865|446216	SCDC	menthol 3.5 mg|menthol 35 mg
+menthol 3.7 mg	menthol 3 7 mg	menthol37mg	2	1114447|1304083	SCDC	menthol 3.7 mg|menthol 37 mg
+menthol 4.5 mg/ml	menthol 4 5 mg ml	menthol45mgml	2	1928602|2171391	SCDC	menthol 4.5 mg/ml|menthol 45 mg/ml
+menthol / methyl salicylate medicated patch [max revive]	menthol methyl salicylate medicated patch max revive	mentholmethylsalicylatemedicatedpatchmaxrevive	2	1792923|1874177	SBDF	menthol / methyl salicylate medicated patch [max revive]|menthol / methyl salicylate medicated patch [maxrevive]
+menthone, (+)-	menthone	menthone	2	2048709|2282305	IN	menthone, (+)-|menthone, (+/-)-
+menthone 1,2-glycerol ketal, (+/-)-	menthone 1 2 glycerol ketal	menthone12glycerolketal	2	1426479|2462151	IN	menthone 1,2-glycerol ketal, (+/-)-|menthone 1,2-glycerol ketal, (-)-
+menthyl acetate	menthyl acetate	menthylacetate	2	2048710|2282306	IN|SY	menthyl acetate|menthyl acetate, (+/-)-|menthyl acetate, (-)-
+methadone hydrochloride 2.5 mg/ml	methadone hydrochloride 2 5 mg ml	methadonehydrochloride25mgml	2	864785|864793	SCDC	methadone hydrochloride 2.5 mg/ml|methadone hydrochloride 25 mg/ml
+methotrexate 2.5 mg/ml	methotrexate 25 mg ml	methotrexate25mgml	2	328406|330028	SCDC	methotrexate 2.5 mg/ml|methotrexate 25 mg/ml
+methotrexate 2.5 mg/ml injectable solution	methotrexate 2 5 mg ml injectable solution	methotrexate25mgmlinjectablesolution	2	1946772|315148	SCD|SCD|PSN	methotrexate 2.5 mg/ml injectable solution|methotrexate 25 mg/ml injectable solution
+methotrexate (as methotrexate sodium) 2.5 mg/ml injectable solution	methotrexate as methotrexate sodium 2 5 mg ml injectable solution	methotrexateasmethotrexatesodium25mgmlinjectablesolution	2	1946772|315148	SY	methotrexate (as methotrexate sodium) 2.5 mg/ml injectable solution|methotrexate (as methotrexate sodium) 25 mg/ml injectable solution
+methyl lactate	methyl lactate	methyllactate	2	1310580|1551572	IN|PIN	methyl lactate|methyl lactate, (+)-
+methylphenidate hydrochloride 2.5 mg	methylphenidate hydrochloride 2 5 mg	methylphenidatehydrochloride25mg	2	1091388|2119558	SCDC	methylphenidate hydrochloride 2.5 mg|methylphenidate hydrochloride 25 mg
+methyltestosterone 2.5 mg	methyltestosterone 2 5 mg	methyltestosterone25mg	2	316290|316291	SCDC|TMSY	methyltestosterone 2.5 mg|methyltestosterone 25 mg
+mevalonolactone	mevalonolactone	mevalonolactone	2	1442201|1442202	IN|PIN	mevalonolactone|mevalonolactone, (+/-)-
+milbeguard 2.3 mg oral tablet	milbeguard 2 3 mg oral tablet	milbeguard23mgoraltablet	2	2106990|2106992	SY|PSN	milbeguard 2.3 mg oral tablet|milbeguard 23 mg oral tablet
+milbehart 2.3 mg oral tablet	milbehart 2 3 mg oral tablet	milbehart23mgoraltablet	2	2534472|2534478	SY|PSN	milbehart 2.3 mg oral tablet|milbehart 23 mg oral tablet
+milbemycin oxime 2.3 mg	milbemycin oxime 2 3 mg	milbemycinoxime23mg	2	890930|890934	SCDC	milbemycin oxime 2.3 mg|milbemycin oxime 23 mg
+milbemycin oxime 2.3 mg [interceptor]	milbemycin oxime 2 3 mg interceptor	milbemycinoxime23mginterceptor	2	890932|890936	SBDC	milbemycin oxime 2.3 mg [interceptor]|milbemycin oxime 23 mg [interceptor]
+milbemycin oxime 2.3 mg [milbeguard]	milbemycin oxime 2 3 mg milbeguard	milbemycinoxime23mgmilbeguard	2	2106989|2106991	SBDC	milbemycin oxime 2.3 mg [milbeguard]|milbemycin oxime 23 mg [milbeguard]
+milbemycin oxime 2.3 mg [milbehart]	milbemycin oxime 2 3 mg milbehart	milbemycinoxime23mgmilbehart	2	2534468|2534477	SBDC	milbemycin oxime 2.3 mg [milbehart]|milbemycin oxime 23 mg [milbehart]
+milbemycin oxime 2.3 mg oral tablet	milbemycin oxime 2 3 mg oral tablet	milbemycinoxime23mgoraltablet	2	890931|890935	SCD|PSN	milbemycin oxime 2.3 mg oral tablet|milbemycin oxime 23 mg oral tablet
+milbemycin oxime 2.3 mg oral tablet [interceptor]	milbemycin oxime 2 3 mg oral tablet interceptor	milbemycinoxime23mgoraltabletinterceptor	2	890933|890937	SBD	milbemycin oxime 2.3 mg oral tablet [interceptor]|milbemycin oxime 23 mg oral tablet [interceptor]
+milbemycin oxime 2.3 mg oral tablet [milbeguard]	milbemycin oxime 2 3 mg oral tablet milbeguard	milbemycinoxime23mgoraltabletmilbeguard	2	2106990|2106992	SBD	milbemycin oxime 2.3 mg oral tablet [milbeguard]|milbemycin oxime 23 mg oral tablet [milbeguard]
+milbemycin oxime 2.3 mg oral tablet [milbehart]	milbemycin oxime 2 3 mg oral tablet milbehart	milbemycinoxime23mgoraltabletmilbehart	2	2534472|2534478	SBD	milbemycin oxime 2.3 mg oral tablet [milbehart]|milbemycin oxime 23 mg oral tablet [milbehart]
+milbemycin oxime 2.3 mg / praziquantel 22.8 mg chewable tablet	milbemycin oxime 2 3 mg praziquantel 22 8 mg chewable tablet	milbemycinoxime23mgpraziquantel228mgchewabletablet	2	2058475|2058489	SCD|SCD|PSN	milbemycin oxime 2.3 mg / praziquantel 22.8 mg chewable tablet|milbemycin oxime 23 mg / praziquantel 228 mg chewable tablet
+milbemycin oxime 2.3 mg / praziquantel 22.8 mg chewable tablet [interceptor plus]	milbemycin oxime 2 3 mg praziquantel 22 8 mg chewable tablet interceptor plus	milbemycinoxime23mgpraziquantel228mgchewabletabletinterceptorplus	2	2058482|2058491	SBD	milbemycin oxime 2.3 mg / praziquantel 22.8 mg chewable tablet [interceptor plus]|milbemycin oxime 23 mg / praziquantel 228 mg chewable tablet [interceptor plus]
+milbemycin oxime 2.3 mg / praziquantel 22.8 mg [interceptor plus]	milbemycin oxime 2 3 mg praziquantel 22 8 mg interceptor plus	milbemycinoxime23mgpraziquantel228mginterceptorplus	2	2058477|2058490	SBDC	milbemycin oxime 2.3 mg / praziquantel 22.8 mg [interceptor plus]|milbemycin oxime 23 mg / praziquantel 228 mg [interceptor plus]
+nature-throid 16.25 mg oral tablet	nature throid 16 25 mg oral tablet	naturethroid1625mgoraltablet	2	1537769|728583	SY|PSN	nature-throid 16.25 mg oral tablet|nature-throid 162.5 mg oral tablet
+nature-throid 32.5 mg oral tablet	nature throid 32 5 mg oral tablet	naturethroid325mgoraltablet	2	1301876|728587	SY|PSN	nature-throid 32.5 mg oral tablet|nature-throid 325 mg oral tablet
+ocu-mycin	ocumycin	ocumycin	2	218855|352830	BN	ocu-mycin|ocumycin
+ocu-mycin ophthalmic product	ocu mycin ophthalmic product	ocumycinophthalmicproduct	2	1180541|1181137	SBDG	ocu-mycin ophthalmic product|ocumycin ophthalmic product
+oxatomide 2.5 mg/ml	oxatomide 25 mg ml	oxatomide25mgml	2	337386|337489	SCDC	oxatomide 2.5 mg/ml|oxatomide 25 mg/ml
+oxatomide 2.5 mg/ml oral suspension	oxatomide 2 5 mg ml oral suspension	oxatomide25mgmloralsuspension	2	246130|250999	SCD	oxatomide 2.5 mg/ml oral suspension|oxatomide 25 mg/ml oral suspension
+(+)-panthenol	panthenol	panthenol	2	1044977|22701	IN|SY	(+)-panthenol|panthenol
+pantolactone	pantolactone	pantolactone	2	1426783|1427237	IN|PIN	pantolactone|pantolactone, (+-)-
+pantothenic acid	pantothenic acid	pantothenicacid	2	2394646|7891	IN|PIN	pantothenic acid|pantothenic acid, (+-)-
+pantothenic acid 12.5 mg	pantothenic acid 125 mg	pantothenicacid125mg	2	333957|451453	SCDC	pantothenic acid 12.5 mg|pantothenic acid 125 mg
+papain 7.5 mg	papain 75 mg	papain75mg	2	437130|578353	SCDC	papain 7.5 mg|papain 75 mg
+pectin 4.4 mg/ml	pectin 44 mg ml	pectin44mgml	2	335084|440965	SCDC	pectin 4.4 mg/ml|pectin 44 mg/ml
+pectin 6.6 mg/ml	pectin 6 6 mg ml	pectin66mgml	2	440963|582552	SCDC	pectin 6.6 mg/ml|pectin 66 mg/ml
+periciazine 2.5 mg	periciazine 2 5 mg	periciazine25mg	2	343352|385677	SCDC	periciazine 2.5 mg|periciazine 25 mg
+periciazine 2.5 mg oral tablet	periciazine 2 5 mg oral tablet	periciazine25mgoraltablet	2	104744|104746	SCD|SCD|PSN	periciazine 2.5 mg oral tablet|periciazine 25 mg oral tablet
+phenobarbital 1.5 mg/ml	phenobarbital 15 mg ml	phenobarbital15mgml	2	316477|353593	SCDC|TMSY	phenobarbital 1.5 mg/ml|phenobarbital 15 mg/ml
+phenobarbital 1.5 mg/ml oral solution	phenobarbital 15 mg ml oral solution	phenobarbital15mgmloralsolution	2	435436|756326	SCD|TMSY	phenobarbital 1.5 mg/ml oral solution|phenobarbital 15 mg/ml oral solution
+phenobarbital 3.2 mg/ml	phenobarbital 3 2 mg ml	phenobarbital32mgml	2	328888|330118	SCDC|TMSY	phenobarbital 3.2 mg/ml|phenobarbital 32 mg/ml
+phenobarbital 6.5 mg	phenobarbital 65 mg	phenobarbital65mg	2	316486|336464	SCDC|TMSY	phenobarbital 6.5 mg|phenobarbital 65 mg
+phenylalanine 1.04 mg/ml	phenylalanine 1 04 mg ml	phenylalanine104mgml	2	800015|800577	SCDC	phenylalanine 1.04 mg/ml|phenylalanine 10.4 mg/ml
+phenyl butyrate	phenylbutyrate	phenylbutyrate	2	1545685|81647	IN	phenyl butyrate|phenylbutyrate
+phenylephrine 2.5 mg/ml	phenylephrine 25 mg ml	phenylephrine25mgml	2	323937|329039	SCDC	phenylephrine 2.5 mg/ml|phenylephrine 25 mg/ml
+phenylephrine hydrochloride 1.25 mg	phenylephrine hydrochloride 1 25 mg	phenylephrinehydrochloride125mg	2	1037160|1367153	SCDC	phenylephrine hydrochloride 1.25 mg|phenylephrine hydrochloride 12.5 mg
+phenylephrine hydrochloride 2.5 mg	phenylephrine hydrochloride 2 5 mg	phenylephrinehydrochloride25mg	2	1046711|998604	SCDC	phenylephrine hydrochloride 2.5 mg|phenylephrine hydrochloride 25 mg
+phenylephrine hydrochloride 2.5 mg/ml	phenylephrine hydrochloride 2 5 mg ml	phenylephrinehydrochloride25mgml	2	1232666|997282	SCDC	phenylephrine hydrochloride 2.5 mg/ml|phenylephrine hydrochloride 25 mg/ml
+phenylephrine hydrochloride 2.5 mg/ml [neo-synephrine]	phenylephrine hydrochloride 25 mg ml neo synephrine	phenylephrinehydrochloride25mgmlneosynephrine	2	1232668|1234577	SBDC	phenylephrine hydrochloride 2.5 mg/ml [neo-synephrine]|phenylephrine hydrochloride 25 mg/ml [neo-synephrine]
+phenylephrine hydrochloride 7.5 mg	phenylephrine hydrochloride 7 5 mg	phenylephrinehydrochloride75mg	2	1308370|2371263	SCDC	phenylephrine hydrochloride 7.5 mg|phenylephrine hydrochloride 75 mg
+phenylpropanolamine hydrochloride 2.5 mg/ml	phenylpropanolamine hydrochloride 2 5 mg ml	phenylpropanolaminehydrochloride25mgml	2	1037302|1192934	SCDC	phenylpropanolamine hydrochloride 2.5 mg/ml|phenylpropanolamine hydrochloride 25 mg/ml
+phenylpropanolamine hydrochloride 2.5 mg/ml oral solution	phenylpropanolamine hydrochloride 2 5 mg ml oral solution	phenylpropanolaminehydrochloride25mgmloralsolution	2	1192935|756146	SCD	phenylpropanolamine hydrochloride 2.5 mg/ml oral solution|phenylpropanolamine hydrochloride 25 mg/ml oral solution
+potassium 62.5 mg	potassium 62 5 mg	potassium625mg	2	332038|451187	SCDC	potassium 62.5 mg|potassium 625 mg
+potassium chloride 2.5 meq	potassium chloride 25 meq	potassiumchloride25meq	2	316548|336291	SCDC	potassium chloride 2.5 meq|potassium chloride 25 meq
+potassium chloride 2.5 meq oral tablet	potassium chloride 2 5 meq oral tablet	potassiumchloride25meqoraltablet	2	237389|312517	SCD|SCD|PSN	potassium chloride 2.5 meq oral tablet|potassium chloride 25 meq oral tablet
+pot chloride 2.5 meq oral tablet	pot chloride 2 5 meq oral tablet	potchloride25meqoraltablet	2	237389|312517	SY	pot chloride 2.5 meq oral tablet|pot chloride 25 meq oral tablet
+povidone-iodine 2.5 mg/ml	povidone iodine 25 mg ml	povidoneiodine25mgml	2	333204|349680	SCDC	povidone-iodine 2.5 mg/ml|povidone-iodine 25 mg/ml
+povidone-iodine 7.5 mg/ml	povidone iodine 75 mg ml	povidoneiodine75mgml	2	1546211|329142	SCDC	povidone-iodine 7.5 mg/ml|povidone-iodine 75 mg/ml
+povidone-iodine 7.5 mg/ml topical solution	povidone iodine 75 mg ml topical solution	povidoneiodine75mgmltopicalsolution	2	1546212|314188	SCD	povidone-iodine 7.5 mg/ml topical solution|povidone-iodine 75 mg/ml topical solution
+praziquantel 22.8 mg	praziquantel 228 mg	praziquantel228mg	2	1487102|895891	SCDC	praziquantel 22.8 mg|praziquantel 228 mg
+prednisolone 2.5 mg	prednisolone 25 mg	prednisolone25mg	2	333210|335529	SCDC|TMSY	prednisolone 2.5 mg|prednisolone 25 mg
+prednisolone 2.5 mg/ml	prednisolone 2 5 mg ml	prednisolone25mgml	2	328813|337411	SCDC|TMSY	prednisolone 2.5 mg/ml|prednisolone 25 mg/ml
+prednisolone 2.5 mg/ml ophthalmic suspension	prednisolone 2 5 mg ml ophthalmic suspension	prednisolone25mgmlophthalmicsuspension	2	312604|392181	SCD|TMSY	prednisolone 2.5 mg/ml ophthalmic suspension|prednisolone 25 mg/ml ophthalmic suspension
+prednisolone 2.5 mg oral tablet	prednisolone 2 5 mg oral tablet	prednisolone25mgoraltablet	2	105411|199967	SCD|TMSY|SCD|TMSY|PSN	prednisolone 2.5 mg oral tablet|prednisolone 25 mg oral tablet
+prednisone 2.5 mg	prednisone 2 5 mg	prednisone25mg	2	316581|316583	SCDC|TMSY	prednisone 2.5 mg|prednisone 25 mg
+prednisone 2.5 mg oral tablet	prednisone 2 5 mg oral tablet	prednisone25mgoraltablet	2	198146|312616	SCD|TMSY|PSN	prednisone 2.5 mg oral tablet|prednisone 25 mg oral tablet
+prochlorperazine 2.5 mg	prochlorperazine 2 5 mg	prochlorperazine25mg	2	316595|316596	SCDC	prochlorperazine 2.5 mg|prochlorperazine 25 mg
+prochlorperazine 2.5 mg [compazine]	prochlorperazine 25 mg compazine	prochlorperazine25mgcompazine	2	544002|568387	SBDC	prochlorperazine 2.5 mg [compazine]|prochlorperazine 25 mg [compazine]
+prochlorperazine 2.5 mg rectal suppository	prochlorperazine 25 mg rectal suppository	prochlorperazine25mgrectalsuppository	2	198159|198160	SCD|PSN	prochlorperazine 2.5 mg rectal suppository|prochlorperazine 25 mg rectal suppository
+prochlorperazine 2.5 mg rectal suppository [compazine]	prochlorperazine 2 5 mg rectal suppository compazine	prochlorperazine25mgrectalsuppositorycompazine	2	207635|207639	SBD	prochlorperazine 2.5 mg rectal suppository [compazine]|prochlorperazine 25 mg rectal suppository [compazine]
+progesterone 2.5 mg	progesterone 2 5 mg	progesterone25mg	2	316598|452134	SCDC	progesterone 2.5 mg|progesterone 25 mg
+promazine 2.5 mg/ml	promazine 25 mg ml	promazine25mgml	2	328568|360918	SCDC	promazine 2.5 mg/ml|promazine 25 mg/ml
+promethazine hydrochloride 2.5 mg/ml	promethazine hydrochloride 25 mg ml	promethazinehydrochloride25mgml	2	861572|992901	SCDC	promethazine hydrochloride 2.5 mg/ml|promethazine hydrochloride 25 mg/ml
+pseudoephedrine hydrochloride 1.2 mg/ml	pseudoephedrine hydrochloride 12 mg ml	pseudoephedrinehydrochloride12mgml	2	2178055|996104	SCDC	pseudoephedrine hydrochloride 1.2 mg/ml|pseudoephedrine hydrochloride 12 mg/ml
+pseudoephedrine hydrochloride 1.6 mg/ml	pseudoephedrine hydrochloride 1 6 mg ml	pseudoephedrinehydrochloride16mgml	2	1357935|2178162	SCDC	pseudoephedrine hydrochloride 1.6 mg/ml|pseudoephedrine hydrochloride 16 mg/ml
+pseudoephedrine hydrochloride 2.5 mg/ml	pseudoephedrine hydrochloride 2 5 mg ml	pseudoephedrinehydrochloride25mgml	2	1010819|1010991	SCDC	pseudoephedrine hydrochloride 2.5 mg/ml|pseudoephedrine hydrochloride 25 mg/ml
+pseudoephedrine hydrochloride 7.5 mg	pseudoephedrine hydrochloride 75 mg	pseudoephedrinehydrochloride75mg	2	1099673|1293705	SCDC	pseudoephedrine hydrochloride 7.5 mg|pseudoephedrine hydrochloride 75 mg
+pyrantel 22.7 mg	pyrantel 22 7 mg	pyrantel227mg	2	1006640|892313	SCDC	pyrantel 22.7 mg|pyrantel 227 mg
+pyridoxine hydrochloride 2.5 mg	pyridoxine hydrochloride 2 5 mg	pyridoxinehydrochloride25mg	2	349885|995850	SCDC	pyridoxine hydrochloride 2.5 mg|pyridoxine hydrochloride 25 mg
+pyrilamine 2.5 mg/ml	pyrilamine 2 5 mg ml	pyrilamine25mgml	2	329473|334444	SCDC	pyrilamine 2.5 mg/ml|pyrilamine 25 mg/ml
+pyrimethamine 2.5 mg	pyrimethamine 25 mg	pyrimethamine25mg	2	316613|332960	SCDC	pyrimethamine 2.5 mg|pyrimethamine 25 mg
+quinine 1.5 mg	quinine 15 mg	quinine15mg	2	437589|437774	SCDC|TMSY	quinine 1.5 mg|quinine 15 mg
+revlimid 2.5 mg oral capsule	revlimid 25 mg oral capsule	revlimid25mgoralcapsule	2	1242233|643722	SY|PSN	revlimid 2.5 mg oral capsule|revlimid 25 mg oral capsule
+rezipres 4.7 mg/ml injection	rezipres 4 7 mg ml injection	rezipres47mgmlinjection	2	2560092|2560098	SY	rezipres 4.7 mg/ml injection|rezipres 47 mg/ml injection
+riboflavin 1.8 mg	riboflavin 1 8 mg	riboflavin18mg	2	349886|350537	SCDC	riboflavin 1.8 mg|riboflavin 18 mg
+rilpivirine 2.5 mg	rilpivirine 25 mg	rilpivirine25mg	2	1102271|2678241	SCDC	rilpivirine 2.5 mg|rilpivirine 25 mg
+rilpivirine 2.5 mg [edurant]	rilpivirine 25 mg edurant	rilpivirine25mgedurant	2	1102275|2678245	SBDC	rilpivirine 2.5 mg [edurant]|rilpivirine 25 mg [edurant]
+salicylic acid 1.5 mg/ml	salicylic acid 15 mg ml	salicylicacid15mgml	2	1371357|340618	SCDC	salicylic acid 1.5 mg/ml|salicylic acid 15 mg/ml
+salicylic acid 1.5 % topical solution	salicylic acid 15 topical solution	salicylicacid15topicalsolution	2	1244193|238466	SY|PSN	salicylic acid 1.5 % topical solution|salicylic acid 15 % topical solution
+salicylic acid 1.7 % topical gel	salicylic acid 17 topical gel	salicylicacid17topicalgel	2	1050665|312880	SY|PSN	salicylic acid 1.7 % topical gel|salicylic acid 17 % topical gel
+salicylic acid 1.8 % topical solution	salicylic acid 1 8 topical solution	salicylicacid18topicalsolution	2	2627647|2706381	SY|PSN	salicylic acid 1.8 % topical solution|salicylic acid 18 % topical solution
+salicylic acid 1.9 mg/ml	salicylic acid 19 mg ml	salicylicacid19mgml	2	1547641|1594681	SCDC	salicylic acid 1.9 mg/ml|salicylic acid 19 mg/ml
+salicylic acid 1.9 mg/ml medicated pad	salicylic acid 19 mg ml medicated pad	salicylicacid19mgmlmedicatedpad	2	1547642|1594682	SCD	salicylic acid 1.9 mg/ml medicated pad|salicylic acid 19 mg/ml medicated pad
+salicylic acid 20 mg/ml medicated pad [stri-dex]	salicylic acid 20 mg ml medicated pad stri dex	salicylicacid20mgmlmedicatedpadstridex	2	1425554|797951	SBD	salicylic acid 20 mg/ml medicated pad [stri-dex]|salicylic acid 20 mg/ml medicated pad [stridex]
+salicylic acid 20 mg/ml [stri-dex]	salicylic acid 20 mg ml stri dex	salicylicacid20mgmlstridex	2	1364389|797949	SBDC	salicylic acid 20 mg/ml [stri-dex]|salicylic acid 20 mg/ml [stridex]
+salicylic acid 2.5 mg/ml	salicylic acid 2 5 mg ml	salicylicacid25mgml	2	334231|343176	SCDC	salicylic acid 2.5 mg/ml|salicylic acid 25 mg/ml
+salicylic acid 2.5 mg/ml medicated shampoo	salicylic acid 2 5 mg ml medicated shampoo	salicylicacid25mgmlmedicatedshampoo	2	1537337|2586423	SCD	salicylic acid 2.5 mg/ml medicated shampoo|salicylic acid 25 mg/ml medicated shampoo
+salicylic acid medicated pad [stri-dex]	salicylic acid medicated pad stri dex	salicylicacidmedicatedpadstridex	2	797950|968099	SBDF	salicylic acid medicated pad [stri-dex]|salicylic acid medicated pad [stridex]
+salsolinol hydrochloride	salsolinol hydrochloride	salsolinolhydrochloride	2	1312374|2198978	PIN	salsolinol hydrochloride|salsolinol hydrochloride, (+/-)-
+sennosides, usp 17.5 mg	sennosides usp 175 mg	sennosidesusp175mg	2	451426|451479	SCDC	sennosides, usp 17.5 mg|sennosides, usp 175 mg
+sodium bicarbonate 20.0 mg/ml oral solution	sodium bicarbonate 200 mg ml oral solution	sodiumbicarbonate200mgmloralsolution	2	1119422|312972	SCD|SY	sodium bicarbonate 20.0 mg/ml oral solution|sodium bicarbonate 200 mg/ml oral solution
+sodium chloride 3.5 mg/ml	sodium chloride 35 mg ml	sodiumchloride35mgml	2	2108509|2592645	SCDC	sodium chloride 3.5 mg/ml|sodium chloride 35 mg/ml
+sodium fluoride 1.1 mg/ml	sodium fluoride 11 mg ml	sodiumfluoride11mgml	2	330226|336809	SCDC	sodium fluoride 1.1 mg/ml|sodium fluoride 11 mg/ml
+sodium fluoride 1.1 mg/ml oral solution	sodium fluoride 11 mg ml oral solution	sodiumfluoride11mgmloralsolution	2	313037|315102	SCD	sodium fluoride 1.1 mg/ml oral solution|sodium fluoride 11 mg/ml oral solution
+sodium fluoride 2.2 mg/ml	sodium fluoride 2 2 mg ml	sodiumfluoride22mgml	2	334390|630005	SCDC	sodium fluoride 2.2 mg/ml|sodium fluoride 22 mg/ml
+spironolactone 2.5 mg	spironolactone 25 mg	spironolactone25mg	2	316728|451921	SCDC	spironolactone 2.5 mg|spironolactone 25 mg
+stri-dex	stri dex	stridex	2	220049|968097	BN	stri-dex|stridex
+stri-dex 20 mg/ml medicated pad	stri dex 20 mg ml medicated pad	stridex20mgmlmedicatedpad	2	1425554|797951	SY	stri-dex 20 mg/ml medicated pad|stridex 20 mg/ml medicated pad
+stri-dex 2 % medicated pad	stri dex 2 medicated pad	stridex2medicatedpad	2	1425554|797951	SY|PSN	stri-dex 2 % medicated pad|stridex 2 % medicated pad
+stri-dex medicated pad or tape	stri dex medicated pad or tape	stridexmedicatedpadortape	2	1180215|1180218	SBDG	stri-dex medicated pad or tape|stridex medicated pad or tape
+stri-dex soap product	stri dex soap product	stridexsoapproduct	2	1295895|1364391	SBDG	stri-dex soap product|stridex soap product
+stri-dex topical product	stri dex topical product	stridextopicalproduct	2	1296422|1296777	SBDG	stri-dex topical product|stridex topical product
+sultilains 8.2 unt/mg	sultilains 82 unt mg	sultilains82untmg	2	335653|485730	SCDC	sultilains 8.2 unt/mg|sultilains 82 unt/mg
+sultilains 8.2 unt/mg topical ointment	sultilains 82 unt mg topical ointment	sultilains82untmgtopicalointment	2	244518|485731	SCD	sultilains 8.2 unt/mg topical ointment|sultilains 82 unt/mg topical ointment
+theophylline 1.6 mg/ml	theophylline 1 6 mg ml	theophylline16mgml	2	317512|335694	SCDC	theophylline 1.6 mg/ml|theophylline 16 mg/ml
+thiamine 1.5 mg	thiamine 15 mg	thiamine15mg	2	349799|349807	SCDC	thiamine 1.5 mg|thiamine 15 mg
+thiamine hydrochloride 1.25 mg/ml	thiamine hydrochloride 12 5 mg ml	thiaminehydrochloride125mgml	2	1314395|1314635	SCDC	thiamine hydrochloride 1.25 mg/ml|thiamine hydrochloride 12.5 mg/ml
+thiamine mononitrate 1.5 mg	thiamine mononitrate 1 5 mg	thiaminemononitrate15mg	2	1090060|891520	SCDC	thiamine mononitrate 1.5 mg|thiamine mononitrate 15 mg
+thiamine mononitrate 1.6 mg	thiamine mononitrate 1 6 mg	thiaminemononitrate16mg	2	1119562|1248244	SCDC	thiamine mononitrate 1.6 mg|thiamine mononitrate 16 mg
+thyroid 16.25 mg oral tablet	thyroid 16 25 mg oral tablet	thyroid1625mgoraltablet	2	1537767|728581	PSN	thyroid 16.25 mg oral tablet|thyroid 162.5 mg oral tablet
+thyroid 32.5 mg oral tablet	thyroid 325 mg oral tablet	thyroid325mgoraltablet	2	313389|347151	PSN	thyroid 32.5 mg oral tablet|thyroid 325 mg oral tablet
+thyroid (usp) 16.25 mg	thyroid usp 16 25 mg	thyroidusp1625mg	2	1537766|728580	SCDC	thyroid (usp) 16.25 mg|thyroid (usp) 162.5 mg
+thyroid (usp) 16.25 mg [nature-throid]	thyroid usp 16 25 mg nature throid	thyroidusp1625mgnaturethroid	2	1537768|728582	SBDC	thyroid (usp) 16.25 mg [nature-throid]|thyroid (usp) 162.5 mg [nature-throid]
+thyroid (usp) 16.25 mg oral tablet	thyroid usp 16 25 mg oral tablet	thyroidusp1625mgoraltablet	2	1537767|728581	SCD	thyroid (usp) 16.25 mg oral tablet|thyroid (usp) 162.5 mg oral tablet
+thyroid (usp) 16.25 mg oral tablet [nature-throid]	thyroid usp 16 25 mg oral tablet nature throid	thyroidusp1625mgoraltabletnaturethroid	2	1537769|728583	SBD	thyroid (usp) 16.25 mg oral tablet [nature-throid]|thyroid (usp) 162.5 mg oral tablet [nature-throid]
+thyroid (usp) 16.25 mg oral tablet [westhroid]	thyroid usp 16 25 mg oral tablet westhroid	thyroidusp1625mgoraltabletwesthroid	2	1087008|1537771	SBD	thyroid (usp) 16.25 mg oral tablet [westhroid]|thyroid (usp) 162.5 mg oral tablet [westhroid]
+thyroid (usp) 16.25 mg [westhroid]	thyroid usp 16 25 mg westhroid	thyroidusp1625mgwesthroid	2	1087007|1537770	SBDC	thyroid (usp) 16.25 mg [westhroid]|thyroid (usp) 162.5 mg [westhroid]
+thyroid (usp) 32.5 mg	thyroid usp 325 mg	thyroidusp325mg	2	316828|349969	SCDC	thyroid (usp) 32.5 mg|thyroid (usp) 325 mg
+thyroid (usp) 32.5 mg [nature-throid]	thyroid usp 32 5 mg nature throid	thyroidusp325mgnaturethroid	2	1301875|728586	SBDC	thyroid (usp) 32.5 mg [nature-throid]|thyroid (usp) 325 mg [nature-throid]
+thyroid (usp) 32.5 mg oral tablet	thyroid usp 325 mg oral tablet	thyroidusp325mgoraltablet	2	313389|347151	SCD	thyroid (usp) 32.5 mg oral tablet|thyroid (usp) 325 mg oral tablet
+thyroid (usp) 32.5 mg oral tablet [nature-throid]	thyroid usp 32 5 mg oral tablet nature throid	thyroidusp325mgoraltabletnaturethroid	2	1301876|728587	SBD	thyroid (usp) 32.5 mg oral tablet [nature-throid]|thyroid (usp) 325 mg oral tablet [nature-throid]
+thyroid (usp) 32.5 mg oral tablet [westhroid]	thyroid usp 32 5 mg oral tablet westhroid	thyroidusp325mgoraltabletwesthroid	2	1087012|1087016	SBD	thyroid (usp) 32.5 mg oral tablet [westhroid]|thyroid (usp) 325 mg oral tablet [westhroid]
+thyroid (usp) 32.5 mg [westhroid]	thyroid usp 32 5 mg westhroid	thyroidusp325mgwesthroid	2	1087011|1087015	SBDC	thyroid (usp) 32.5 mg [westhroid]|thyroid (usp) 325 mg [westhroid]
+trimeprazine 2.5 mg	trimeprazine 2 5 mg	trimeprazine25mg	2	328755|452379	SCDC	trimeprazine 2.5 mg|trimeprazine 25 mg
+trimeprazine 2.5 mg oral tablet	trimeprazine 2 5 mg oral tablet	trimeprazine25mgoraltablet	2	314237|429449	SCD|SCD|PSN	trimeprazine 2.5 mg oral tablet|trimeprazine 25 mg oral tablet
+triprolidine hydrochloride 1.25 mg	triprolidine hydrochloride 1 25 mg	triprolidinehydrochloride125mg	2	1099642|1099721	SCDC	triprolidine hydrochloride 1.25 mg|triprolidine hydrochloride 12.5 mg
+ulmus pumila pollen extract 10,000 unt/ml injectable solution	ulmus pumila pollen extract 10 000 unt ml injectable solution	ulmuspumilapollenextract10000untmlinjectablesolution	2	1299998|1314461	SY	ulmus pumila pollen extract 10,000 unt/ml injectable solution|ulmus pumila pollen extract 10000 unt/ml injectable solution
+vitamin b12 2.5 mg	vitamin b12 2 5 mg	vitaminb1225mg	2	332418|654213	SCDC	vitamin b12 2.5 mg|vitamin b12 25 mg
+vitamin b1 25 mg/ml injectable solution	vitamin b1 25 mg ml injectable solution	vitaminb125mgmlinjectablesolution	2	2001499|313328	SCD|SY	vitamin b1 25 mg/ml injectable solution|vitamin b12 5 mg/ml injectable solution
+vitamin b 15 mg oral tablet	vitamin b 15 mg oral tablet	vitaminb15mgoraltablet	2	282761|313329	PSN|SY	vitamin b 15 mg oral tablet|vitamin b1 5 mg oral tablet
+vitamin b6 12.5 mg	vitamin b6 125 mg	vitaminb6125mg	2	332601|746576	SCDC	vitamin b6 12.5 mg|vitamin b6 125 mg
+vitamin e 1.5 unt	vitamin e 1 5 unt	vitamine15unt	2	333575|335856	SCDC	vitamin e 1.5 unt|vitamin e 15 unt
+vitamin e 7.5 unt	vitamin e 75 unt	vitamine75unt	2	385528|749161	SCDC	vitamin e 7.5 unt|vitamin e 75 unt
+westhroid 16.25 mg oral tablet	westhroid 16 25 mg oral tablet	westhroid1625mgoraltablet	2	1087008|1537771	SY|PSN	westhroid 16.25 mg oral tablet|westhroid 162.5 mg oral tablet
+westhroid 32.5 mg oral tablet	westhroid 32 5 mg oral tablet	westhroid325mgoraltablet	2	1087012|1087016	SY|PSN	westhroid 32.5 mg oral tablet|westhroid 325 mg oral tablet
+zinc acetate 1.2 mg/ml	zinc acetate 1 2 mg ml	zincacetate12mgml	2	334578|360823	SCDC	zinc acetate 1.2 mg/ml|zinc acetate 12 mg/ml
+zinc gluconate 10.5 mg	zinc gluconate 10 5 mg	zincgluconate105mg	2	337280|337465	SCDC	zinc gluconate 10.5 mg|zinc gluconate 105 mg
+zinc gluconate 2.5 mg	zinc gluconate 2 5 mg	zincgluconate25mg	2	337419|337440	SCDC	zinc gluconate 2.5 mg|zinc gluconate 25 mg
+zinc gluconate 7.5 mg	zinc gluconate 7 5 mg	zincgluconate75mg	2	337466|452637	SCDC	zinc gluconate 7.5 mg|zinc gluconate 75 mg
+zinc oxide 12.5 mg/ml	zinc oxide 125 mg ml	zincoxide125mgml	2	2280728|323963	SCDC	zinc oxide 12.5 mg/ml|zinc oxide 125 mg/ml
+zinc oxide 1.8 % topical ointment	zinc oxide 18 topical ointment	zincoxide18topicalointment	2	1039181|1044412	SY|PSN	zinc oxide 1.8 % topical ointment|zinc oxide 18 % topical ointment
+zinc pyrithione 1.25 mg/ml	zinc pyrithione 12 5 mg ml	zincpyrithione125mgml	2	2275630|333234	SCDC	zinc pyrithione 1.25 mg/ml|zinc pyrithione 12.5 mg/ml
+zinc pyrithione 1.2 mg/ml	zinc pyrithione 12 mg ml	zincpyrithione12mgml	2	2634476|334151	SCDC	zinc pyrithione 1.2 mg/ml|zinc pyrithione 12 mg/ml
+zinc sulfate 2.2 mg/ml	zinc sulfate 22 mg ml	zincsulfate22mgml	2	1650333|2003343	SCDC	zinc sulfate 2.2 mg/ml|zinc sulfate 22 mg/ml
+z-pak	zpak	zpak	2	539819|750149	BN|SY	z-pak|zpak
+z tuss	z tuss	ztuss	2	545942|857727	BN	z tuss|ztuss
+z tuss oral product	z tuss oral product	ztussoralproduct	2	1186841|1186862	SBDG	z tuss oral product|ztuss oral product

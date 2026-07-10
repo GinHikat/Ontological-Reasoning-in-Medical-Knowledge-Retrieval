@@ -1,0 +1,53 @@
+{
+  "mode": "candidate_integrity",
+  "baseline_dir": "output/v7_regression",
+  "candidate_dir": "output/v8_candidate_integrity",
+  "stats": {
+    "baseline_files": 100,
+    "candidate_files": 100,
+    "baseline_entities": 3160,
+    "candidate_entities": 3160,
+    "changed_files": 1,
+    "changed_entities": 0,
+    "changed_text": 0,
+    "changed_positions": 0,
+    "changed_types": 0,
+    "changed_assertions": 0,
+    "changed_candidates": 1,
+    "changed_diagnosis_candidates": 0,
+    "changed_drug_candidates": 1,
+    "unchanged_drug_candidates": 275,
+    "newly_linked_drugs": 0,
+    "newly_unlinked_drugs": 0,
+    "changed_linked_drugs": 1
+  },
+  "baseline_type_counts": {
+    "THUỐC": 276,
+    "CHẨN_ĐOÁN": 216,
+    "TRIỆU_CHỨNG": 1877,
+    "TÊN_XÉT_NGHIỆM": 655,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 136
+  },
+  "candidate_type_counts": {
+    "THUỐC": 276,
+    "CHẨN_ĐOÁN": 216,
+    "TRIỆU_CHỨNG": 1877,
+    "TÊN_XÉT_NGHIỆM": 655,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 136
+  },
+  "baseline_assertion_counts": {
+    "isHistorical": 675,
+    "isNegated": 227
+  },
+  "candidate_assertion_counts": {
+    "isHistorical": 675,
+    "isNegated": 227
+  },
+  "failure_count": 0,
+  "failures_sample": [],
+  "warnings": [
+    "canonical type reference TRIỆU_CHỨNG: got 1877, canonical scored run had 1899",
+    "canonical type reference CHẨN_ĐOÁN: got 216, canonical scored run had 194"
+  ],
+  "passed": true
+}

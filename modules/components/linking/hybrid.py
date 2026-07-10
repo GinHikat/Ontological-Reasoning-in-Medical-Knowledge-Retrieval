@@ -12,6 +12,7 @@ from modules.core.constants import (
     TARGET_LABEL_DRUG,
     TARGET_LABEL_SYMPTOM,
 )
+from modules.core.ids import normalize_rxcui
 from modules.core.schemas import Document, EntityMention, FinalEntity
 
 
@@ -46,6 +47,7 @@ class HybridEntityLinker(BaseEntityLinker):
         candidate_semantic_floor: float = 0.5,
         lexical_weight: float = 0.5,
         top_k: int = 3,
+        use_unambiguous_preset_drug_rxcui: bool = False,
     ):
         self.dictionary_store = dictionary_store or CompetitionDictionaryStore()
         self.diagnosis_threshold = diagnosis_threshold
@@ -53,6 +55,9 @@ class HybridEntityLinker(BaseEntityLinker):
         self.candidate_semantic_floor = candidate_semantic_floor
         self.lexical_weight = lexical_weight
         self.top_k = top_k
+        # Opt-in v8 path: trust unambiguous ontology-drug-recall RxCUI presets.
+        # Default False preserves exact v7 SapBERT drug linking.
+        self.use_unambiguous_preset_drug_rxcui = use_unambiguous_preset_drug_rxcui
         self._sapbert_vi = None
         self._sapbert_en = None
 
@@ -100,6 +105,58 @@ class HybridEntityLinker(BaseEntityLinker):
                 best_id = str(df.iloc[idx][id_column])
 
         return best_id, best_semantic_score
+
+    def _valid_unique_preset_rxcuis(self, mention: EntityMention) -> list[str]:
+        """Return sorted unique valid RxCUIs from ontology-recall preset metadata."""
+        raw = mention.metadata.get("preset_rxcui_candidates")
+        if raw is None:
+            return []
+        if not isinstance(raw, (list, tuple, set)):
+            return []
+        unique: set[str] = set()
+        for item in raw:
+            normalized = normalize_rxcui(item)
+            if normalized is not None:
+                unique.add(normalized)
+        return sorted(unique)
+
+    def _try_preset_drug_link(
+        self, mention: EntityMention, metadata: dict
+    ) -> tuple[list[str] | None, str]:
+        """Attempt unambiguous preset RxCUI linking.
+
+        Returns (candidates_or_None, fallback_reason).
+        candidates is not None only when the preset path is used.
+        """
+        if not self.use_unambiguous_preset_drug_rxcui:
+            return None, "feature_disabled"
+
+        # Require explicit ontology drug recall provenance (not arbitrary metadata).
+        if mention.metadata.get("ontology_drug_recall") is not True:
+            return None, "not_ontology_recall"
+
+        match_type = mention.metadata.get("match")
+        if match_type not in {"exact_norm", "embedded_compact"}:
+            return None, "not_ontology_recall"
+
+        if "preset_rxcui_candidates" not in mention.metadata:
+            return None, "missing_preset"
+
+        valid = self._valid_unique_preset_rxcuis(mention)
+        if len(valid) == 0:
+            return None, "invalid_preset"
+        if len(valid) > 1:
+            metadata["preset_rxcui_candidates"] = valid
+            metadata["preset_rxcui_count"] = len(valid)
+            return None, "ambiguous_alias"
+
+        unique = valid[0]
+        metadata["drug_link"] = "preset_unambiguous_rxcui"
+        metadata["preset_rxcui"] = unique
+        metadata["preset_rxcui_count"] = 1
+        metadata["preset_rxcui_candidates"] = [unique]
+        metadata["preset_used"] = True
+        return [unique], "preset_used"
 
     def link(
         self, document: Document, mentions: list[EntityMention]
@@ -176,19 +233,34 @@ class HybridEntityLinker(BaseEntityLinker):
                     metadata["diagnosis_similarity"] = best_diag_sim
 
             elif mapped_type == TARGET_LABEL_DRUG:
-                embedding = self._get_sapbert_en().encode_text(
-                    [mention.text.lower()], show_progress=False
+                preset_candidates, fallback_reason = self._try_preset_drug_link(
+                    mention, metadata
                 )
-                best_drug_id, best_drug_sim = self._best_hybrid_match(
-                    mention.text,
-                    embedding,
-                    bundle.drugs,
-                    bundle.drug_embeddings,
-                    "rxcui",
-                )
-                if best_drug_id is not None and best_drug_sim >= self.drug_threshold:
-                    candidates = [best_drug_id]
-                metadata["drug_similarity"] = best_drug_sim
+                if preset_candidates is not None:
+                    candidates = preset_candidates
+                else:
+                    # Exact current v7 drug-linking behavior (SapBERT fallback).
+                    embedding = self._get_sapbert_en().encode_text(
+                        [mention.text.lower()], show_progress=False
+                    )
+                    best_drug_id, best_drug_sim = self._best_hybrid_match(
+                        mention.text,
+                        embedding,
+                        bundle.drugs,
+                        bundle.drug_embeddings,
+                        "rxcui",
+                    )
+                    if (
+                        best_drug_id is not None
+                        and best_drug_sim >= self.drug_threshold
+                    ):
+                        candidates = [best_drug_id]
+                    metadata["drug_similarity"] = best_drug_sim
+                    # Diagnostic-only fields (stripped from competition JSON).
+                    if self.use_unambiguous_preset_drug_rxcui:
+                        metadata["drug_link"] = "sapbert_fallback"
+                        metadata["drug_link_fallback_reason"] = fallback_reason
+                        metadata["preset_used"] = False
 
             final_entities.append(
                 FinalEntity(

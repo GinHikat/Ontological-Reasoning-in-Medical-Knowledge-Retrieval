@@ -1,0 +1,342 @@
+[
+  {
+    "file": "41",
+    "text": "al pain",
+    "context": "    - Ăn uống kém.     - nausea     - diarrhea     - abdomin[al pain]     Các sự kiện trước khi nhập viện     - Chẩn đoán viêm dạ",
+    "matched_alias": "alpain",
+    "match": "embedded_compact",
+    "preset_ids": [
+      "602512"
+    ],
+    "v7_candidate": [
+      "152220"
+    ],
+    "v8_candidate": [
+      "602512"
+    ],
+    "reason": "preset_override_of_sapbert"
+  },
+  {
+    "file": "1",
+    "text": "doxycycline",
+    "context": "huốc trước khi nhập viện     - metoprolol 25mg po bid     - [doxycycline] cho viêm tuyến mồ hôi     - atenolol (uống hôm nay)     Các",
+    "matched_alias": "doxycycline",
+    "match": "exact_norm",
+    "preset_ids": [
+      "3640"
+    ],
+    "v7_candidate": [
+      "3640"
+    ],
+    "v8_candidate": [
+      "3640"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "1",
+    "text": "atenolol",
+    "context": "l 25mg po bid     - doxycycline cho viêm tuyến mồ hôi     - [atenolol] (uống hôm nay)     Các yếu tố nguy cơ liên quan     - Theo ",
+    "matched_alias": "atenolol",
+    "match": "exact_norm",
+    "preset_ids": [
+      "1202"
+    ],
+    "v7_candidate": [
+      "1202"
+    ],
+    "v8_candidate": [
+      "1202"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "1",
+    "text": "caffeine",
+    "context": "-  Một ngày người bệnh có thể uống hàng chục tách cà phê có [caffeine]     -  và 1 tách cà phê không caffeine  2.  Tiền sử bệnh hi",
+    "matched_alias": "caffeine",
+    "match": "exact_norm",
+    "preset_ids": [
+      "1886"
+    ],
+    "v7_candidate": [
+      "1886"
+    ],
+    "v8_candidate": [
+      "1886"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "1",
+    "text": "caffeine",
+    "context": " chục tách cà phê có caffeine     -  và 1 tách cà phê không [caffeine]  2.  Tiền sử bệnh hiện tại     Lý do nhập viện:  Bệnh nhân ",
+    "matched_alias": "caffeine",
+    "match": "exact_norm",
+    "preset_ids": [
+      "1886"
+    ],
+    "v7_candidate": [
+      "1886"
+    ],
+    "v8_candidate": [
+      "1886"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "100",
+    "text": "nitroglycerin",
+    "context": " kéo dài khoảng 5 phút  sau đó đã được sử dụng ngay 01 viên [nitroglycerin] đặt dưới lưỡi     - Hiện tại bệnh nhân còn đau ở sau đầu và",
+    "matched_alias": "nitroglycerin",
+    "match": "exact_norm",
+    "preset_ids": [
+      "4917"
+    ],
+    "v7_candidate": [
+      "4917"
+    ],
+    "v8_candidate": [
+      "4917"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "100",
+    "text": "creatinine",
+    "context": "; canxi ion hóa 6.8     - canx toàn phầni là 12.3     - cr ([creatinine]) 1.2     Kết quả chẩn đoán hình ảnh: MRI ngoại trú cho thấy",
+    "matched_alias": "creatinine",
+    "match": "exact_norm",
+    "preset_ids": [
+      "2913"
+    ],
+    "v7_candidate": [
+      "2913"
+    ],
+    "v8_candidate": [
+      "2913"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "12",
+    "text": "levofloxacin",
+    "context": "uyển đến phòng cấp cứu khám và điều trị     - Được cho dùng [levofloxacin] vì nghi ngờ viêm phế quản do viêm phổi mắc phải cộng đồng ở",
+    "matched_alias": "levofloxacin",
+    "match": "exact_norm",
+    "preset_ids": [
+      "82122"
+    ],
+    "v7_candidate": [
+      "82122"
+    ],
+    "v8_candidate": [
+      "82122"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "bactrim",
+    "context": "coid liều cao kéo dài     - Thở oxy tại nhà     - Tăng liều [bactrim] (do bác sĩ chăm sóc chính kê đơn)     - doxycycline (do bác",
+    "matched_alias": "bactrim",
+    "match": "exact_norm",
+    "preset_ids": [
+      "151399"
+    ],
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "doxycycline",
+    "context": "- Tăng liều bactrim (do bác sĩ chăm sóc chính kê đơn)     - [doxycycline] (do bác sĩ chăm sóc chính kê đơn) - Suy giảm miễn dịch do s",
+    "matched_alias": "doxycycline",
+    "match": "exact_norm",
+    "preset_ids": [
+      "3640"
+    ],
+    "v7_candidate": [
+      "3640"
+    ],
+    "v8_candidate": [
+      "3640"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "cotrim",
+    "context": "g âm hộ phải. Sau đó được bác sĩ điều trị khám và tăng liều [cotrim]oxazol, đồng thời bổ sung doxycyclin do nghi ngờ viêm mô tế ",
+    "matched_alias": "cotrim",
+    "match": "embedded_compact",
+    "preset_ids": [
+      "202796"
+    ],
+    "v7_candidate": [
+      "202796"
+    ],
+    "v8_candidate": [
+      "202796"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "bactrim",
+    "context": "ác sĩ chăm sóc chính thay thế khám vào ngày, được tăng liều [bactrim] và doxycycline để điều trị chẩn đoán Viêm mô tế bào     - B",
+    "matched_alias": "bactrim",
+    "match": "exact_norm",
+    "preset_ids": [
+      "151399"
+    ],
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "doxycycline",
+    "context": "sóc chính thay thế khám vào ngày, được tăng liều bactrim và [doxycycline] để điều trị chẩn đoán Viêm mô tế bào     - Báo cáo có cải t",
+    "matched_alias": "doxycycline",
+    "match": "exact_norm",
+    "preset_ids": [
+      "3640"
+    ],
+    "v7_candidate": [
+      "3640"
+    ],
+    "v8_candidate": [
+      "3640"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "doxycycline",
+    "context": "h giá thêm     - Bệnh nhân kiên quyết muốn tiếp tục sử dụng [doxycycline]bactrim cho khả năng Viêm mô tế bào     - Cảm thấy rằng cô ấ",
+    "matched_alias": "doxycycline",
+    "match": "embedded_compact",
+    "preset_ids": [
+      "3640"
+    ],
+    "v7_candidate": [
+      "3640"
+    ],
+    "v8_candidate": [
+      "3640"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "13",
+    "text": "bactrim",
+    "context": "    - Bệnh nhân kiên quyết muốn tiếp tục sử dụng doxycycline[bactrim] cho khả năng Viêm mô tế bào     - Cảm thấy rằng cô ấy đã có",
+    "matched_alias": "bactrim",
+    "match": "embedded_compact",
+    "preset_ids": [
+      "151399"
+    ],
+    "v7_candidate": [
+      "151399"
+    ],
+    "v8_candidate": [
+      "151399"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "16",
+    "text": "guaiac",
+    "context": " phù, dịch rỉ huyết thanh từ vết mổ, và phân nâu dương tính [guaiac]. - dấu hiệu sinh tồn là: 98.8 65 9360 20 95 2LNC (tại khoa ",
+    "matched_alias": "guaiac",
+    "match": "exact_norm",
+    "preset_ids": [
+      "1373150"
+    ],
+    "v7_candidate": [
+      "1373150"
+    ],
+    "v8_candidate": [
+      "1373150"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "16",
+    "text": "guaiac",
+    "context": "ù - dịch thanh dịch lẫn máu từ vết mổ - phân nâu dương tính [guaiac] Kết quả xét nghiệm: huyết khối 26.3, giảm so với hôm qua, n",
+    "matched_alias": "guaiac",
+    "match": "exact_norm",
+    "preset_ids": [
+      "1373150"
+    ],
+    "v7_candidate": [
+      "1373150"
+    ],
+    "v8_candidate": [
+      "1373150"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "17",
+    "text": "tylenol",
+    "context": "mệt mỏi, đau cơ - Sốt cao nhất là 102.9°F không đáp ứng với [tylenol] và advil - Báo cáo đau cổ và vai phải kèm theo sưng quanh k",
+    "matched_alias": "tylenol",
+    "match": "exact_norm",
+    "preset_ids": [
+      "202433"
+    ],
+    "v7_candidate": [
+      "202433"
+    ],
+    "v8_candidate": [
+      "202433"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "17",
+    "text": "advil",
+    "context": "u cơ - Sốt cao nhất là 102.9°F không đáp ứng với tylenol và [advil] - Báo cáo đau cổ và vai phải kèm theo sưng quanh khớp ức đò",
+    "matched_alias": "advil",
+    "match": "exact_norm",
+    "preset_ids": [
+      "153010"
+    ],
+    "v7_candidate": [
+      "153010"
+    ],
+    "v8_candidate": [
+      "153010"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  },
+  {
+    "file": "19",
+    "text": "vicodin",
+    "context": "ấy u di căn bán cầu não phải     Thuốc trước khi nhập viện: [vicodin] (uống không thấy giảm đau) 2.  Tiền sử bệnh hiện tại     Lý",
+    "matched_alias": "vicodin",
+    "match": "exact_norm",
+    "preset_ids": [
+      "128793"
+    ],
+    "v7_candidate": [
+      "128793"
+    ],
+    "v8_candidate": [
+      "128793"
+    ],
+    "reason": "preset_unambiguous_rxcui"
+  }
+]

@@ -1,0 +1,23 @@
+v8_candidate_integrity starting state
+=====================================
+date/time: 2026-07-10T14:49:16.176942+07:00
+git commit hash: 299f0cef890f97b7c1ab44c6b8bdf352ad81d962
+working-tree status:
+On branch tung
+Your branch is up to date with 'origin/tung'.
+
+nothing to commit, working tree clean
+
+git diff (empty if clean):
+(clean working tree)
+
+canonical v7 leaderboard metrics:
+Pipeline: v7_structured
+Score: 24.79660
+WER: 72.0039
+J_assertion: 31.3672
+J_candidates: 17.4691
+num_scored: 87
+num_records: 100
+
+canonical artifact path: output/v7_structured/run1/submission

@@ -1,0 +1,2 @@
+file	start	end	text	source	match_type	matched_alias	preset_rxcui_count	preset_rxcui_candidates	v7_candidate	v8_candidate	v7_had_candidate	v8_has_candidate	left_context	right_context
+41	1965	1972	al pain	ontology_drug_recall	embedded_compact	alpain	1	602512	152220	602512	True	True	    - Ăn uống kém.     - nausea     - diarrhea     - abdomin	     Các sự kiện trước khi nhập viện     - Chẩn đoán viêm dạ
