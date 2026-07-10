@@ -35,4 +35,9 @@ def build_pipeline(name: str, model_name: str = "vihealthbert") -> BasePipeline:
         raise ValueError(
             f"Unknown pipeline '{name}'. Available pipelines: {available}"
         ) from exc
-    return builder(model_name=model_name)
+    
+    import inspect
+    sig = inspect.signature(builder)
+    if "model_name" in sig.parameters:
+        return builder(model_name=model_name)
+    return builder()

@@ -163,7 +163,7 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 3. **Type Correction:** Added `ClinicalTypeCorrectionPostProcessor` to correct common symptoms away from ICD diagnosis linking and recover medication spans mislabeled as procedures when dosage/medication context is present.
 4. **Precision Cleanup:** Added `ClinicalPrecisionFilterPostProcessor` plus nested overlap cleanup to remove artifacts such as standalone dosing tokens and generic headers.
 5. **Assertion Scope Tightening:** V6 restricts contextual assertions to the competition-eligible labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
-6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/` with 100 note-level JSON files. External competition/evaluator score is still pending.
+6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/vihealthbert/run1/` with 100 note-level JSON files. External competition/evaluator score has been returned: 22.42480.
 
 ### Remaining Ver 6+ Ideas
 1. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
@@ -204,4 +204,11 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 *   **WER:** 77.9624
 *   **J_assertion:** 22.8200
 *   **J_candidates:** 13.2756
+*   **Records Scored:** 100
+
+**Evaluation Results (6th Run - Mod Ver 6: OOP Refactor, Recall & Cleanup Postprocessors):**
+*   **Score (Điểm):** 22.42480
+*   **WER:** 73.1428
+*   **J_assertion:** 28.8905
+*   **J_candidates:** 14.2511
 *   **Records Scored:** 100

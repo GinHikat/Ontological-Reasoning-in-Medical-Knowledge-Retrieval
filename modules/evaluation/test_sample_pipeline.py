@@ -136,7 +136,7 @@ def run_pipeline(samples: int = None):
     sapbert_en = extractor._get_sapbert_instance(lang="en")
     
     test_dir = var_dir / "data" / "var" / "test"
-    output_dir = var_dir / "output"
+    output_dir = var_dir / "output" / "legacy_v5" / "monolithic"
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Mapping raw NER labels to final categories

@@ -58,11 +58,13 @@ modules/
 | Pipeline | Purpose |
 |---|---|
 | `legacy_v5` | Adapter around the frozen V5 helper logic. Useful for regression checks. |
-| `v5_refactored` | Same main behavior rebuilt from composable classes. Default for future work. |
+| `v5_refactored` | Same main behavior rebuilt from composable classes. |
+| `v6_refined` | Refined pipeline adding type correction, test recall, result extraction, precision filtering, and overlap deduplication. (SOTA) |
 
-Run either version with:
+Run any version with:
 
 ```bash
+python modules/evaluation/run_pipeline.py --pipeline v6_refined
 python modules/evaluation/run_pipeline.py --pipeline v5_refactored
 python modules/evaluation/run_pipeline.py --pipeline legacy_v5
 ```
@@ -70,7 +72,7 @@ python modules/evaluation/run_pipeline.py --pipeline legacy_v5
 For a quick smoke test:
 
 ```bash
-python modules/evaluation/run_pipeline.py --pipeline v5_refactored --samples 1 --output-dir output_smoke
+python modules/evaluation/run_pipeline.py --pipeline v6_refined --samples 1 --output-dir output_smoke
 ```
 
 Note: the local model weights under `modules/model/statedict/ner/...` must be present for a full run.
@@ -84,21 +86,27 @@ Document
   -> Pre-classification mention postprocessors
   -> Label classifier
   -> Post-classification mention postprocessors
+       - ClinicalTypeCorrectionPostProcessor
+       - DrugBoundaryPostProcessor
+       - ClinicalRecallPostProcessor
+       - ClinicalPrecisionFilterPostProcessor
+       - OverlapDedupPostProcessor
   -> Entity linker
-  -> Assertion detector
+  -> Assertion detector (restricts assertions to competition labels)
   -> Competition JSON formatter
 ```
 
-## How to Add V6 Improvements
+## Implemented V6 Postprocessors
 
-Create a new builder, for example `modules/pipelines/v6.py`, and register it in `modules/pipelines/factory.py`.
+1.  **`ClinicalTypeCorrectionPostProcessor`**: Corrects systematic classification errors, e.g., mapping symptom phrases away from diagnosis tags and restoring drug mentions mislabeled as procedures.
+2.  **`DrugBoundaryPostProcessor`**: Scans for dosage and frequency context around drug names using regex and expands the span.
+3.  **`ClinicalRecallPostProcessor`**: Recalls high-value missed tests (e.g. `ECG`, `CEA`), symptoms (`ho`, `sốt`, `khó thở`), and automatically parses numeric lab results (e.g. `glucose 6.8`) from note sections.
+4.  **`ClinicalPrecisionFilterPostProcessor`**: Removes common noise terms (e.g. "nhẹ", "nặng", "bệnh lý") and standalone dosage tokens (e.g. "po", "bid", "mg").
+5.  **`OverlapDedupPostProcessor`**: Resolves nesting and duplicate conflicts in the final prediction list.
 
-Suggested next components:
+## Future V7 Improvements Ideas
 
-1. `LabResultPostProcessor` for `KẾT_QUẢ_XÉT_NGHIỆM` recall.
-2. `AbbreviationNormalizer` for `THA`, `ĐTĐ`, `NMCT`, `XN`, `CTM`, etc.
-3. `PerTypeThresholdHybridLinker` extending `HybridEntityLinker`.
-4. `ContextAwareDiseaseSymptomClassifier` extending the current label mapper/retrieval split.
-5. `OverlapDedupPostProcessor` for final duplicate cleanup.
+1.  **Upgrade the Drug Dictionary (RxNorm Expansion)**: Update dictionary construction to include a larger database of RxNorm codes to improve matching accuracy.
+2.  **AbbreviationNormalizer**: Add component to resolve clinical abbreviations (`THA` -> `tăng huyết áp`, `ĐTĐ` -> `đái tháo đường`) prior to NER or linking.
+3.  **Context-Aware Classifier**: Integrate a cross-encoder model to dynamically resolve ambiguous entities based on neighboring text window content.
 
-Each component should be tested by registering a new pipeline version instead of mutating the current best pipeline directly.

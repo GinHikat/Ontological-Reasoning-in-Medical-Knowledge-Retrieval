@@ -751,20 +751,14 @@ Both `generate_embeddings.py` and `generate_embedding_symptom.py` follow the sam
 
 ---
 
-## 9. EntityExtractor Modes & CUI Lookup
+## 9. Entity Linker & CUI Lookup
 
-### 9.1 Four Extraction Modes
+### 9.1 Linking Architecture
 
-| Mode | Description | Components Used |
-|---|---|---|
-| `quickumls` | SpaCy-based string matching with UMLS synonyms | SpaCy + QuickUMLS |
-| `ner only` | Raw NER model output without retrieval | ViHealthBERT only |
-| `ner + retrieval` | NER + SapBERT dense retrieval | ViHealthBERT + SapBERT |
-| `doc_class` | Document-level multi-label classification | PLMICDModel (LAAT head) |
+The refactored pipeline replaces the legacy monolithic `EntityExtractor` (from `modules/utils.py`) with modular OOP classes, specifically `HybridEntityLinker` (in `modules/components/linking/hybrid.py`).
 
-The competition pipeline uses `ner + retrieval` mode via the `EntityExtractor` class, but the actual evaluation script (`test_sample_pipeline.py`) directly accesses the internal NER and SapBERT instances for more control.
+### 9.2 Linking & Retrieval Flow
 
-### 9.2 `_run_ner_retrieval()` Flow
 
 1. **NER extraction:** `ner.extract_entities(text)` → list of `{term, label, offset}`
 2. **Batch embedding:** All terms are embedded in a single batch call for efficiency
@@ -927,22 +921,21 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 
 | Threshold | Value | Location | Purpose |
 |---|---|---|---|
-| Hybrid semantic minimum | `< 0.5` | `test_sample_pipeline.py:234,268` | Skip low-confidence Top-3 candidates |
-| Final diagnosis threshold | `≥ 0.6` | `test_sample_pipeline.py:248` | Minimum cosine sim for CHẨN_ĐOÁN |
-| Final drug threshold | `≥ 0.6` | `test_sample_pipeline.py:277` | Minimum cosine sim for RxNorm mapping |
-| Lexical weight in hybrid | `0.5` | `test_sample_pipeline.py:236,270` | `hybrid = sem + lex × 0.5` |
-| NER retrieval threshold | `> 0.7` | `utils.py:547` | Used in `_run_ner_retrieval()` mode |
-| Min entity length | `3 chars` | `inference_ner.py:154` | Drop entities shorter than 3 characters |
+| Hybrid semantic minimum | `< 0.5` | `modules/components/linking/hybrid.py` | Skip low-confidence Top-3 candidates |
+| Final diagnosis threshold | `≥ 0.6` | `modules/components/linking/hybrid.py` | Minimum cosine sim for CHẨN_ĐOÁN |
+| Final drug threshold | `≥ 0.6` | `modules/components/linking/hybrid.py` | Minimum cosine sim for RxNorm mapping |
+| Lexical weight in hybrid | `0.5` | `modules/components/linking/hybrid.py` | `hybrid = sem + lex × 0.5` |
+| Min entity length | `3 chars` | `modules/components/postprocessing/precision_filter.py` | Drop entities shorter than 3 characters |
 
 ### 11.2 Regex Patterns
 
 | Pattern | Location | Purpose |
 |---|---|---|
-| `r'1\.\s+(Tiền sử bệnh\|Tiền sử)'` | `test_sample_pipeline.py:60` | Section 1 boundary |
-| `r'2\.\s+(Tiền sử bệnh hiện tại\|Bệnh sử hiện tại)'` | `test_sample_pipeline.py:61` | Section 2 boundary |
-| `r'3\.\s+Đánh giá tại bệnh viện'` | `test_sample_pipeline.py:62` | Section 3 boundary |
-| Drug expansion regex | `test_sample_pipeline.py:118` | Dosage/frequency boundary expansion |
-| Vietnamese diacritics | `utils.py:137` | Language detection |
+| `r'1\.\s+(Tiền sử bệnh\|Tiền sử)'` | `modules/components/assertions/rule_based.py` | Section 1 boundary |
+| `r'2\.\s+(Tiền sử bệnh hiện tại\|Bệnh sử hiện tại)'` | `modules/components/assertions/rule_based.py` | Section 2 boundary |
+| `r'3\.\s+Đánh giá tại bệnh viện'` | `modules/components/assertions/rule_based.py` | Section 3 boundary |
+| Drug expansion regex | `modules/components/postprocessing/drug_boundary.py` | Dosage/frequency boundary expansion |
+| Lab result cue regex | `modules/components/postprocessing/clinical_recall.py` | Capture test name result context |
 
 ### 11.3 Label Mappings
 
@@ -985,9 +978,9 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 |---|---|
 | No external API calls | All models run locally (self-hosted) |
 | Model ≤ 9B params | ViHealthBERT ~110M, SapBERT ~500M |
-| Reproducible | Clean repo structure, `requirements.txt`, auto-evaluation script |
+| Reproducible | Clean repo structure, `requirements.txt`, central runner |
 | Output format | Strict JSON schema: `{text, type, candidates, assertions, position}` |
-| 100 test files | Automated pipeline processes all `data/var/test/*.txt` → `output/*.json` |
+| 100 test files | Automated pipeline processes all `data/var/test/*.txt` → `output/` |
 | Source code for top 15 | Well-organized modules with clear separation of concerns |
 
 ---
@@ -996,13 +989,13 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 
 | File | Purpose |
 |---|---|
-| `modules/model/inference/inference_ner.py` | NER model loading & entity extraction |
-| `modules/model/training/train_ner.py` | ViHealthBERT fine-tuning on CoNLL data |
-| `modules/utils.py` | `EntityExtractor` class (4 modes) |
-| `modules/evaluation/test_sample_pipeline.py` | End-to-end competition pipeline |
-| `modules/dataset/preprocessing/generate_embeddings.py` | Dictionary embedding generation |
-| `modules/dataset/preprocessing/generate_embedding_symptom.py` | Symptom dictionary construction |
-| `modules/dataset/dataset_processing/process_rxnorm.py` | RxNorm RRF → CSV parser |
+| `modules/components/ner/vihealthbert.py` | NER extractor component loading model weights |
+| `modules/components/linking/hybrid.py` | Hybrid SapBERT semantic & lexical reranking linker |
+| `modules/components/assertions/rule_based.py` | Negation and historical status detector |
+| `modules/components/postprocessing/` | V6 clinical recall, precision, type correction, and boundary filters |
+| `modules/pipelines/v6.py` | SOTA refined pipeline builder |
+| `modules/evaluation/run_pipeline.py` | Central CLI runner for all pipeline configurations |
+| `modules/dataset/preprocessing/generate_embeddings.py` | Embedding precomputation scripts |
 
 ---
 
@@ -1015,11 +1008,21 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 | v3 | 16.98 | 80.79 | 20.89 | 12.36 | Lowercase normalization + threshold |
 | v4 | 18.43 | 78.05 | 22.12 | 13.02 | Word fragmentation fix + drug expansion |
 | v5 | 18.77 | 77.96 | 22.82 | 13.28 | Hybrid retrieval + smarter assertions |
+| v6 | 22.42 | 73.14 | 28.89 | 14.25 | OOP refactored pipeline SOTA with postprocessors |
 
 ---
 
-## 15. Future Optimization Directions (Ver 6)
+## 15. Future Optimization Directions (Ver 7)
 
-1. **Lab Results (`KẾT_QUẢ_XÉT_NGHIỆM`)**: Smart regex module to scan for common lab tests (Glucose, WBC, AST) and extract adjoining numerical values — currently 100% missed.
-2. **Larger RxNorm Dictionary**: Current subset causes impossible matches (e.g., ground truth wants `360047` but dictionary only has `1360047`).
-3. **Threshold Relaxation**: Experiment with lowering the 0.6 cosine cutoff to 0.6 in combination with the hybrid tie-breaker.
+1. **Upgrade the Drug Dictionary (RxNorm Expansion)**: Build embedding map with comprehensive RxNorm SCD terms rather than a subset to maximize candidate retrieval ceiling.
+2. **AbbreviationNormalizer**: Automatically expand clinical acronyms (`THA`, `ĐTĐ`, `XN`) to full Vietnamese terms before matching or linking.
+3. **Threshold Calibration**: Tune entity-specific SapBERT thresholds dynamically to boost True Positives.
+
+
+## 16. Pipeline Debugging & Step-by-Step Tracing
+
+To facilitate easy debugging and inspection, the refactored pipeline supports step-by-step tracing. When running `run_pipeline.py`, intermediate outputs are written to a trace file next to each output JSON. This allows debugging boundary fixes, classifications, and linking decisions directly per-document.
+
+Trace files are saved as `output/<pipeline_name>/<model_name>/<run_name>/<doc_id>_trace.txt`.
+
+
