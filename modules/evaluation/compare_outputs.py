@@ -10,7 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from modules.evaluation.analyze_outputs import analyze_run
+from modules.evaluation.analyze_outputs import analyze_run, resolve_submission_dir
 
 CONTEXT = 50
 
@@ -33,7 +33,8 @@ def parse_args() -> argparse.Namespace:
 
 def _load_map(output_dir: Path) -> dict[str, list[dict[str, Any]]]:
     result = {}
-    for path in sorted(output_dir.glob("*.json")):
+    submission_dir = resolve_submission_dir(output_dir)
+    for path in sorted(submission_dir.glob("*.json")):
         result[path.stem] = json.loads(path.read_text(encoding="utf-8"))
     return result
 

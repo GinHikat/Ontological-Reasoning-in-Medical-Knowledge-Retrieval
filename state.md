@@ -163,7 +163,7 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 3. **Type Correction:** Added `ClinicalTypeCorrectionPostProcessor` to correct common symptoms away from ICD diagnosis linking and recover medication spans mislabeled as procedures when dosage/medication context is present.
 4. **Precision Cleanup:** Added `ClinicalPrecisionFilterPostProcessor` plus nested overlap cleanup to remove artifacts such as standalone dosing tokens and generic headers.
 5. **Assertion Scope Tightening:** V6 restricts contextual assertions to the competition-eligible labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
-6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/vihealthbert/run1/` with 100 note-level JSON files. External competition/evaluator score has been returned: 22.42480.
+6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/run1/submission/` with 100 note-level JSON files (traces under `output/v6_refined/run1/trace/`). External competition/evaluator score has been returned: 22.42480.
 
 ### Modification Ver 7 (`v7_structured`)
 1. **Independent candidate generation:** Stopped treating base NER as the only entity source. Added section-aware + ontology lexical recall on top of the unchanged `v6_refined` stack.
@@ -178,7 +178,7 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 4. **Linker:** `HybridEntityLinker` can now assign ICD candidates for already-typed `CHẨN_ĐOÁN` mentions (including preset concept IDs from ontology recall).
 5. **Pipeline registration:** `v7_structured` in `modules/pipelines/v7.py` + `modules/pipelines/factory.py`.
 6. **Diagnostics:** `modules/evaluation/analyze_outputs.py`, `compare_outputs.py`, and `analysis/v6_vs_v7.md`.
-7. **Run command:** `python modules/evaluation/run_pipeline.py --pipeline v7_structured --output-dir output/v7_structured`
+7. **Run command:** `python modules/evaluation/run_pipeline.py --pipeline v7_structured` → `output/v7_structured/runN/{submission,trace}/`
 8. **External leaderboard:** Score **24.25880** (see evaluation table below).
 
 ### Remaining Ver 7+ Ideas

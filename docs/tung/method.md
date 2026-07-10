@@ -1023,6 +1023,6 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 
 To facilitate easy debugging and inspection, the refactored pipeline supports step-by-step tracing. When running `run_pipeline.py`, intermediate outputs are written to a trace file next to each output JSON. This allows debugging boundary fixes, classifications, and linking decisions directly per-document.
 
-Trace files are saved as `output/<pipeline_name>/<model_name>/<run_name>/<doc_id>_trace.txt`.
+Trace files are saved as `output/<version>/runN/trace/<doc_id>_trace.txt`.
 
 

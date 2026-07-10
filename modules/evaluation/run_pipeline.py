@@ -29,7 +29,16 @@ def parse_args() -> argparse.Namespace:
         "--model",
         choices=NER_MODEL_CHOICES,
         default="vihealthbert",
-        help="Base NER model; used to namespace outputs under output/<model>/.",
+        help="Base NER model used by the pipeline.",
+    )
+    parser.add_argument(
+        "--version-name",
+        type=str,
+        default=None,
+        help=(
+            "Output version folder under output/ (default: --pipeline name). "
+            "Usually omit this."
+        ),
     )
     parser.add_argument(
         "--input-dir",
@@ -41,7 +50,7 @@ def parse_args() -> argparse.Namespace:
         "--output-root",
         type=Path,
         default=PROJECT_ROOT / "output",
-        help="Root folder where model/run directories are saved.",
+        help="Root folder where version/run directories are saved.",
     )
     parser.add_argument(
         "--run-name",
@@ -55,7 +64,7 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help=(
             "Exact directory where .json outputs will be written. "
-            "Overrides the model/run structure; use only for flat submission exports."
+            "Overrides the version/run structure; use only for flat submission exports."
         ),
     )
     parser.add_argument(
@@ -74,7 +83,7 @@ def parse_args() -> argparse.Namespace:
         "--trace",
         action="store_true",
         default=True,
-        help="Enable writing step-by-step trace logging files next to JSON output.",
+        help="Enable writing step-by-step trace logging files under run/trace/.",
     )
     parser.add_argument(
         "--no-trace",
@@ -85,16 +94,41 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def _next_run_name(model_dir: Path) -> str:
-    """Return the next `runN` name within `model_dir` (run1, run2, ...)."""
+def _next_run_name(version_dir: Path) -> str:
+    """Return the next `runN` name within `version_dir` (run1, run2, ...)."""
     existing: list[int] = []
-    if model_dir.exists():
-        for child in model_dir.iterdir():
+    if version_dir.exists():
+        for child in version_dir.iterdir():
             if child.is_dir() and child.name.startswith("run"):
                 suffix = child.name[len("run") :]
                 if suffix.isdigit():
                     existing.append(int(suffix))
     return f"run{(max(existing) + 1) if existing else 1}"
+
+
+def _resolve_run_dirs(
+    args: argparse.Namespace,
+) -> tuple[Path, Path | None, bool]:
+    """Return (submission_dir, trace_dir, structured).
+
+    structured=True means the version/run layout with submission/ and trace/.
+    """
+    if args.output_dir is not None:
+        return args.output_dir, None, False
+
+    version_name = args.version_name or args.pipeline
+    version_dir = args.output_root / version_name
+
+    if args.run_name:
+        run_dir = version_dir / args.run_name
+    elif args.samples is not None:
+        run_dir = version_dir / f"samples_{args.samples}"
+    else:
+        run_dir = version_dir / _next_run_name(version_dir)
+
+    submission_dir = run_dir / "submission"
+    trace_dir = run_dir / "trace" if args.trace else None
+    return submission_dir, trace_dir, True
 
 
 def main() -> None:
@@ -107,19 +141,10 @@ def main() -> None:
     if not args.input_dir.exists():
         raise FileNotFoundError(f"Input directory not found: {args.input_dir}")
 
-    if args.output_dir is not None:
-        output_dir = args.output_dir
-    else:
-        pipeline_dir = args.output_root / args.pipeline
-        if args.run_name:
-            output_dir = pipeline_dir / args.model / args.run_name
-        elif args.samples is not None:
-            output_dir = pipeline_dir / f"{args.model}_samples_{args.samples}"
-        else:
-            model_dir = pipeline_dir / args.model
-            run_name = _next_run_name(model_dir)
-            output_dir = model_dir / run_name
-    output_dir.mkdir(parents=True, exist_ok=True)
+    submission_dir, trace_dir, structured = _resolve_run_dirs(args)
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    if trace_dir is not None:
+        trace_dir.mkdir(parents=True, exist_ok=True)
 
     files = sorted(args.input_dir.glob("*.txt"))
     if args.samples is not None:
@@ -132,14 +157,17 @@ def main() -> None:
     )
 
     print(f"Processing {len(files)} files from {args.input_dir}")
-    print(f"Outputs -> {output_dir}")
+    print(f"Submission -> {submission_dir}")
+    if trace_dir is not None:
+        print(f"Traces     -> {trace_dir}")
+
     for file_path in tqdm(files, desc=f"Running {args.pipeline}/{args.model}"):
         text = file_path.read_text(encoding="utf-8")
         document = Document(doc_id=file_path.stem, text=text)
         entities = pipeline.process_document(document)
         output = formatter.format(entities)
 
-        out_json_path = output_dir / f"{file_path.stem}.json"
+        out_json_path = submission_dir / f"{file_path.stem}.json"
         indent = None if args.indent == 0 else args.indent
         out_json_path.write_text(
             json.dumps(output, ensure_ascii=False, indent=indent),
@@ -147,17 +175,30 @@ def main() -> None:
         )
 
         if args.trace and "trace_txt" in document.metadata:
-            trace_dir = output_dir.parent / f"{output_dir.name}_traces"
-            trace_dir.mkdir(parents=True, exist_ok=True)
-            trace_path = trace_dir / f"{file_path.stem}_trace.txt"
+            if structured:
+                target_trace_dir = trace_dir
+            else:
+                # Flat --output-dir exports keep traces in a sibling folder.
+                target_trace_dir = (
+                    submission_dir.parent / f"{submission_dir.name}_traces"
+                )
+                target_trace_dir.mkdir(parents=True, exist_ok=True)
+            assert target_trace_dir is not None
+            trace_path = target_trace_dir / f"{file_path.stem}_trace.txt"
             trace_path.write_text(
                 document.metadata["trace_txt"],
                 encoding="utf-8",
             )
 
-    print(f"Done. Outputs written to {output_dir}")
+    print(f"Done. Submission written to {submission_dir}")
     if args.trace:
-        print(f"Traces written to {output_dir.parent / f'{output_dir.name}_traces'}")
+        if structured:
+            print(f"Traces written to {trace_dir}")
+        else:
+            print(
+                f"Traces written to "
+                f"{submission_dir.parent / f'{submission_dir.name}_traces'}"
+            )
 
 
 if __name__ == "__main__":

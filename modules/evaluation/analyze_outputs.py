@@ -110,13 +110,22 @@ def _span_issues(text: str, entities: list[dict[str, Any]]) -> dict[str, int]:
     return dict(issues)
 
 
+def resolve_submission_dir(output_dir: Path) -> Path:
+    """Accept either a run folder (`.../runN`) or a flat/submission JSON folder."""
+    submission = output_dir / "submission"
+    if submission.is_dir():
+        return submission
+    return output_dir
+
+
 def analyze_run(
     input_dir: Path,
     output_dir: Path,
     analysis_dir: Path,
     run_name: str,
 ) -> dict[str, Any]:
-    json_files = sorted(output_dir.glob("*.json"))
+    submission_dir = resolve_submission_dir(output_dir)
+    json_files = sorted(submission_dir.glob("*.json"))
     type_counts: Counter[str] = Counter()
     assertion_counts: Counter[str] = Counter()
     diag_with = diag_without = 0

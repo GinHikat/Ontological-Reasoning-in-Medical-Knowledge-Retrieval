@@ -25,8 +25,8 @@ def build_v6_refined_pipeline(
 ) -> ClinicalEntityLinkingPipeline:
     """Build V6 with rule-based recall and precision cleanup on top of V5.
 
-    `model_name` selects the base NER model and is used to namespace outputs
-    (e.g. `output/v6_refined/vihealthbert/run1/...`).
+    `model_name` selects the base NER model. Outputs are namespaced by pipeline
+    version under `output/<version>/runN/{submission,trace}/`.
     """
 
     return ClinicalEntityLinkingPipeline(

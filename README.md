@@ -108,27 +108,29 @@ mv statedict ../modules/model/
 The recommended runner is now the versioned pipeline entrypoint. It lets you compare old and new implementations without editing the core scripts.
 
 ```bash
-# Refactored V5 implementation using composable OOP components
-# Saves to output/v5_refactored/<model>/runN/
+# Refactored V5 — saves to output/v5_refactored/runN/{submission,trace}/
 python modules/evaluation/run_pipeline.py --pipeline v5_refactored
 
-# Refined V6 implementation with clinical recall/cleanup
-# Saves to output/v6_refined/<model>/runN/
+# Refined V6 — saves to output/v6_refined/runN/{submission,trace}/
 python modules/evaluation/run_pipeline.py --pipeline v6_refined
 
-# Frozen V5 adapter for regression comparison
-# Saves to output/legacy_v5/<model>/runN/
-python modules/evaluation/run_pipeline.py --pipeline legacy_v5
+# Structured V7 — saves to output/v7_structured/runN/{submission,trace}/
+python modules/evaluation/run_pipeline.py --pipeline v7_structured
 
 # Quick smoke test on one note
-# Saves to output/v6_refined/<model>_samples_1/
+# Saves to output/v6_refined/samples_1/{submission,trace}/
 python modules/evaluation/run_pipeline.py --pipeline v6_refined --samples 1
 
 # Optional flat export for submission/evaluator compatibility
 python modules/evaluation/run_pipeline.py --pipeline v6_refined --output-dir output_submission
 ```
 
-By default, each run is saved under `output/<pipeline>/<model>/runN/` (or `output/<pipeline>/<model>_samples_<N>/` for sample runs) as `.json` files matching the input filenames from `data/var/test/`.
+By default, each run is saved under `output/<version>/runN/` where `<version>` defaults to the `--pipeline` name (override with `--version-name`). Inside each run:
+
+- `submission/` — competition JSON files (`1.json`, `2.json`, …)
+- `trace/` — step-by-step trace logs (`1_trace.txt`, …)
+
+New runs auto-increment (`run1`, `run2`, …).
 
 The original monolithic runner is still available for rollback/reference:
 
