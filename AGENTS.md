@@ -63,14 +63,14 @@ Data / weights live under `v_dataset/` (renamed from `data/`). NER weights: `v_d
 
 ## Active experiment handoff (session recovery)
 
-Live progress is **not** maintained in this file.
+Live progress is **not** maintained in this file. `WORKLOG.md` is an **append-only** log (grows forever).
 
-1. Read `WORKLOG.md` (status + next action).
-2. Read `PLAN.md` (phase checklist + hard constraints).
+1. **Read** latest state only: `tail -n 80 WORKLOG.md` (do not load the whole file). Follow **Next** in the last entry.
+2. Read `PLAN.md` for phase checklist + hard constraints.
 3. Read or create `CURRENT_MACHINE.md` (host paths / GPU / disk quirks).
 4. Use `state.md` for historical scores / conclusions only.
 
-After meaningful steps, update `WORKLOG.md` in the same turn.
+After meaningful steps, **append** to `WORKLOG.md` via bash heredoc in the same turn (`cat >> WORKLOG.md <<'EOF' ... EOF`). Include **Status** + **Next** so the next `tail` is enough to resume.
 
 ## Hard boundaries
 

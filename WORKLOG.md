@@ -1,64 +1,55 @@
-# WORKLOG — live session state
+# WORKLOG — append-only session log
 
-> **Agents: read this first, then `PLAN.md`.** Update this file after every meaningful step.
+> Growing file. **Do not** open/read the whole thing. Latest state is at the **bottom**.
 
-Last updated: 2026-07-11 02:10 +07
+## Agent I/O (mandatory)
 
-## Status
+**Read** (last ~80 lines — enough for recent Status / Next):
 
-```text
-ACTIVE EXPERIMENT: rxnorm_policy_probes (COMPLETE — awaiting manual submit)
-BASELINE: newest v7 same_env (NOT the missing 24.79660 ZIP)
-PARALLEL: v9_llm_recall left untouched
-DECISION: user submits ZIPs manually; fill scores in analysis/rxnorm_probe_leaderboard_results.md
-HYGIENE: CURRENT_MACHINE.md added (gitignored); AGENTS.md points to it
+```bash
+tail -n 80 WORKLOG.md
 ```
 
-## Next action
+If the last entry is truncated mid-block, bump the window (`tail -n 120`). Do **not** use the Read tool on this file unless debugging corruption.
 
-1. User manually submits ZIPs in order (see `analysis/rxnorm_probe_submission_order.md`).
-2. After scores: fill `analysis/rxnorm_probe_leaderboard_results.md` and decide Outcome A–E.
-3. Resume v9 only after probe scores are in (or if user redirects).
+**Append** after every meaningful step (never rewrite earlier entries):
 
-## Baseline used
+```bash
+HOST=$(hostname)
+TS=$(date '+%Y-%m-%d %H:%M %z')
+cat >> WORKLOG.md <<EOF
 
-```text
-source: output/v7_structured/same_env/submission
-frozen: artifacts/v7_newest_same_env/submission
-semantic hash: 71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60
-entities: 3236 | drugs: 271 | linked drugs: 270/271
+---
+### ${TS} | host=${HOST}
+**Status:** one-line experiment state
+**Next:** concrete next action(s)
+- what you did
+- paths / hashes / outcomes worth keeping
+EOF
 ```
 
-Note: scored 24.79660 artifact still missing on disk; user authorized newest v7 as reference.
+Rules:
+- Chronological append only; edit history only to fix a bad last entry you just wrote.
+- Put **Status** + **Next** in every entry so `tail` alone is enough to resume.
+- Keep each entry short; dump long tables/logs under `analysis/` and link the path.
+- Heredoc must be unquoted (`<<EOF`) if you want `${TS}` / `${HOST}` expanded; or paste values literally with `<<'EOF'`.
 
-## Probe ZIPs (validated)
+Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated briefly in Status or linked to `analysis/`.
 
-| Probe | Changed | Signal | SHA256 |
-|-------|--------:|--------|--------|
-| example_policy | 18 | LOW | `19b881fdcfa18c30f028e8f54db107d59d0868d403fac4c4e400d1a9f3309ddb` |
-| ingredient_first | 23 | MODERATE | `880050861f2bd227b405fc74d9bee2cad51c9690c9555079d0c77ca37188684d` |
-| baseline_plus_ingredient | 23 | MODERATE | `4a7f43520051296652821daf707aa547a844d000a11b7f215a307f2ea7af185d` |
+---
 
-Paths under `output/rxnorm_probe_*.zip`.
+### 2026-07-11 02:13 +07 | host=ictserver6
+**Status:** rxnorm_policy_probes COMPLETE — awaiting manual submit; baseline = newest v7 same_env; v9 untouched; CURRENT_MACHINE.md has ict14 + ictserver6
+**Next:** (1) user submits ZIPs per `analysis/rxnorm_probe_submission_order.md` (2) fill `analysis/rxnorm_probe_leaderboard_results.md` (3) resume v9 only after scores or user redirect
+- Baseline: `output/v7_structured/same_env/submission` → frozen `artifacts/v7_newest_same_env/submission`
+- Semantic hash: `71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60` (3236 ents, 271 drugs, 270/271 linked)
+- Probes: example_policy / ingredient_first / baseline_plus_ingredient under `output/rxnorm_probe_*.zip` (see analysis docs for SHA256)
+- Unit tests: nystatin→7597 PASS; acetaminophen→313782 PASS
+- Do not: rerun models/Qwen/v9 for this task; auto-submit; auto-commit
 
-## Done this session
-
-- [x] Phase 0 hygiene
-- [x] Switched baseline to newest v7 same_env (user instruction)
-- [x] RxNorm inventory (no RXNREL; lexical resolver)
-- [x] `modules/evaluation/generate_rxnorm_policy_probes.py`
-- [x] Unit tests nystatin + acetaminophen PASS
-- [x] Control + 3 probes + ZIPs + analysis docs
-- [x] `CURRENT_MACHINE.md` (ict14 specs) + `.gitignore` + `AGENTS.md` pointer
-- [ ] Leaderboard scores (user)
-
-## Unit tests
-
-- nystatin → `7597`: PASS
-- acetaminophen 325-650 → `313782`: PASS
-
-## Do not
-
-- Rerun models / Qwen / v9 for this task
-- Auto-submit Viettel
-- Auto-commit
+---
+### 2026-07-11 02:17 +07 | host=ictserver6
+**Status:** same probes awaiting submit; dual-host machine notes written
+**Next:** same as prior entry (manual ZIP submit → scores)
+- Rewrote `CURRENT_MACHINE.md` for shared `/storage`: active `ictserver6` (8×K80, use `nanachi_ictserver6`) + prior `ict14` (2×Quadro, `nanachi` / `v9_vllm`)
+- Switched WORKLOG to append-only + `tail` read convention (this format)

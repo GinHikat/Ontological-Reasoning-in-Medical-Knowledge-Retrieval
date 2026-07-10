@@ -7,14 +7,27 @@ alwaysApply: true
 
 `AGENTS.md` = durable project conventions.
 `WORKLOG.md` / `PLAN.md` = **live experiment handoff**.
+`WORKLOG.md` is **append-only** and will grow; never rewrite history or Read the whole file.
 
 When the user continues work (or after SSH/chat loss):
 
-1. Read `WORKLOG.md` first → follow **Next action**.
+1. `tail -n 80 WORKLOG.md` → follow **Next** in the latest entry.
 2. Read `PLAN.md` for phase checklist and experiment constraints.
 3. Read `CURRENT_MACHINE.md` if present; if missing, create it from live host specs (see `AGENTS.md`).
 4. Do not rely on prior chat; verify processes/cache on disk.
 
-After each meaningful step, update `WORKLOG.md` in the same turn.
+After each meaningful step, **append** via bash (same turn):
+
+```bash
+HOST=$(hostname); TS=$(date '+%Y-%m-%d %H:%M %z')
+cat >> WORKLOG.md <<EOF
+
+---
+### ${TS} | host=${HOST}
+**Status:** ...
+**Next:** ...
+- ...
+EOF
+```
 
 If SSH died mid-LLM-cache: resume `generate_v9_llm_cache.py` **without** `--force` (SHA256 cache keys).
