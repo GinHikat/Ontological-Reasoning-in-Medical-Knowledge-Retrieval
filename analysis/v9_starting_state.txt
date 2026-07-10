@@ -1,0 +1,45 @@
+=== git status ===
+On branch tung
+Your branch is up to date with 'origin/tung'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	analysis/v9_starting_state.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+=== git diff ===
+
+=== git diff --cached ===
+
+=== HEAD ===
+5b45f37fb92bb513d9c58dbb18c027ab91790767
+
+=== git log -5 --oneline ===
+5b45f37 docs: update README, documentation, and fix import paths for v6-v8 pipelines
+a299cfc feat: v8 candidate rescue and drug ontology provenance enhancements
+bf9d399 Update documentation and analysis modules
+b59e938 Check kaggle i2b2 dataset (dont know why conll here)
+badbf9a refactor: rename data folder to v_dataset to fix git submodule issue
+
+=== note ===
+Working tree is clean at start of v9. v8-rescue work appears already committed (a299cfc).
+
+=== inference_ner.py checkpoint audit ===
+
+old checkpoint path: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/model/statedict/ner/vihealthbert
+new checkpoint path: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/statedict/ner/vihealthbert
+old file existence: False
+new file existence: True
+new model.safetensors SHA256: dcf86eafb66506ad5dc89abac8b36f9809f77e61786055a756e0a8338460677d
+new model.safetensors size: 537676148
+
+CONCLUSION:
+The a299cfc change updates path resolution after data→v_dataset rename.
+It prefers ProjectPaths().data_dir/statedict/ner (v_dataset) and falls back
+to legacy modules/model/statedict/ner (missing on this machine).
+This is a filesystem path fix to the SAME intended NER checkpoint location;
+it does NOT introduce a different model family or alternate fine-tune.
+Old path does not exist on disk, so SHA256 comparison old-vs-new is N/A.
+Already committed on branch tung; not a silent v9-only change.
+v9 will keep this path resolution as-is (required for pipeline to load NER).

@@ -1,0 +1,15 @@
+Exact GPU vLLM failure for Qwen/Qwen3.5-9B (recommended command):
+
+ValueError: Free memory on device cuda:0 (0.65/7.61 GiB) on startup is less than desired GPU memory utilization (0.9, 6.85 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+
+Hardware:
+- 2x Quadro RTX 4000, 8192 MiB each
+- At attempt time both GPUs occupied by student11 training (~7GB used each)
+
+Even if GPUs were free, 7.61 GiB total VRAM per card is insufficient for BF16 Qwen3.5-9B (~18GB weights).
+
+Fallback used for v9 experiment:
+- SAME model id: Qwen/Qwen3.5-9B
+- Local OpenAI-compatible CPU server on 127.0.0.1:8000
+- scripts/serve_v9_qwen_cpu.py
+- No external API; no model switch
