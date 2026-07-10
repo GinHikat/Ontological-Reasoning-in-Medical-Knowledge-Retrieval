@@ -1,5 +1,5 @@
 {
-  "dictionary": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/data/viettel/base/short_drug.csv",
+  "dictionary": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/viettel/base/short_drug.csv",
   "total_rows": 310332,
   "unique_raw_terms": 310332,
   "unique_normalized_aliases": 310182,

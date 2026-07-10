@@ -1,7 +1,7 @@
 {
   "run_name": "v6_refined",
   "output_dir": "output/v6_refined",
-  "input_dir": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/data/var/test",
+  "input_dir": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/var/test",
   "num_files": 100,
   "total_entities": 2644,
   "avg_entities_per_file": 26.44,

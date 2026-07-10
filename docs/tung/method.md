@@ -26,7 +26,7 @@ Since `candidates_score` (ontology linking) carries the highest weight at 40%, a
 
 ```mermaid
 graph TD
-    A["📄 Raw Vietnamese Clinical Note<br/>(data/var/test/N.txt)"] --> B["🔧 Preprocessing"]
+    A["📄 Raw Vietnamese Clinical Note<br/>(v_dataset/var/test/N.txt)"] --> B["🔧 Preprocessing"]
     
     B --> B1["Section Boundary Detection<br/>regex: '1. Tiền sử bệnh'..."]
     B --> B2["Unicode Normalization"]
@@ -683,13 +683,13 @@ The expanded string is used for:
 
 | Dictionary | CSV Path | CSV Columns | Embedding Path | Size |
 |---|---|---|---|---|
-| Diagnosis | `data/viettel/base/short_diagnosis.csv` | `id`, `name_vi` (+ others) | `short_diagnosis.npy` | ~thousands |
-| Drug | `data/viettel/base/short_drug.csv` | `term`, `rxcui`, `tty`, `ingredients`, `snomed`, `atc`, `drugbank` | `short_drug.npy` | ~thousands |
-| Symptom | `data/viettel/base/short_symptom.csv` | `uml_id`, `hpo_id`, `mesh_id`, `omim_id`, `icd`, `pubchem_id`, `drugbank_id`, `name_en`, `name_vi` | `short_symptom.npy` | ~54,000 |
+| Diagnosis | `v_dataset/viettel/base/short_diagnosis.csv` | `id`, `name_vi` (+ others) | `short_diagnosis.npy` | ~thousands |
+| Drug | `v_dataset/viettel/base/short_drug.csv` | `term`, `rxcui`, `tty`, `ingredients`, `snomed`, `atc`, `drugbank` | `short_drug.npy` | ~thousands |
+| Symptom | `v_dataset/viettel/base/short_symptom.csv` | `uml_id`, `hpo_id`, `mesh_id`, `omim_id`, `icd`, `pubchem_id`, `drugbank_id`, `name_en`, `name_vi` | `short_symptom.npy` | ~54,000 |
 
 ### 8.2 RxNorm Processing Pipeline
 
-**Input:** Raw RxNorm RRF files (`RXNCONSO.RRF`, `RXNREL.RRF`) from `data/mapping/RxNorm/`
+**Input:** Raw RxNorm RRF files (`RXNCONSO.RRF`, `RXNREL.RRF`) from `v_dataset/mapping/RxNorm/`
 
 **Step 1 — Parse RXNCONSO.RRF:**
 
@@ -808,7 +808,7 @@ Only these source abbreviations are indexed: `ICD10`, `ICD10CM`, `ICD10PCS`, `IC
 
 ### Input
 
-**File:** `data/var/test/42.txt`
+**File:** `v_dataset/var/test/42.txt`
 ```
 1. Tiền sử bệnh: Bệnh nhân có tiền sử cao huyết áp, đái tháo đường typ 2
 2. Bệnh sử hiện tại: Đau ngực âm ỉ, khó thở khi gắng sức
@@ -980,7 +980,7 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 | Model ≤ 9B params | ViHealthBERT ~110M, SapBERT ~500M |
 | Reproducible | Clean repo structure, `requirements.txt`, central runner |
 | Output format | Strict JSON schema: `{text, type, candidates, assertions, position}` |
-| 100 test files | Automated pipeline processes all `data/var/test/*.txt` → `output/` |
+| 100 test files | Automated pipeline processes all `v_dataset/var/test/*.txt` → `output/` |
 | Source code for top 15 | Well-organized modules with clear separation of concerns |
 
 ---

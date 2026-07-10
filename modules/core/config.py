@@ -12,7 +12,7 @@ class ProjectPaths:
 
     @property
     def data_dir(self) -> Path:
-        return self.root / "data"
+        return self.root / "v_dataset"
 
     @property
     def test_dir(self) -> Path:

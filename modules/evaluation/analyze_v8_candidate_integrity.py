@@ -626,7 +626,7 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--v7-dir", type=Path, required=True)
     p.add_argument("--v8-dir", type=Path, required=True)
-    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "data" / "var" / "test")
+    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "v_dataset" / "var" / "test")
     p.add_argument("--analysis-dir", type=Path, default=PROJECT_ROOT / "analysis")
     p.add_argument("--v7-regression-ok", action="store_true")
     p.add_argument("--invariants-ok", action="store_true")

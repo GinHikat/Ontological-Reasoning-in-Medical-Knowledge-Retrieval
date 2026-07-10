@@ -30,7 +30,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input-dir",
         type=Path,
-        default=PROJECT_ROOT / "data" / "var" / "test",
+        default=PROJECT_ROOT / "v_dataset" / "var" / "test",
         help="Directory of original .txt notes.",
     )
     parser.add_argument(

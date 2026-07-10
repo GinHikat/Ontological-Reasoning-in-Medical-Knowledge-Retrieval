@@ -17,7 +17,7 @@ CONTEXT = 50
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Compare two pipeline output folders.")
-    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "data" / "var" / "test")
+    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "v_dataset" / "var" / "test")
     p.add_argument("--v6-dir", type=Path, required=True)
     p.add_argument("--v7-dir", type=Path, required=True)
     p.add_argument("--analysis-dir", type=Path, default=PROJECT_ROOT / "analysis")

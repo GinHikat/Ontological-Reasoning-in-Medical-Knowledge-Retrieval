@@ -70,7 +70,7 @@ Once boundaries are extracted, entities are matched against canonical dictionari
 *   **Retrieval Models (`modules/components/linking/hybrid.py`):** 
     *   Vietnamese: `cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR`
     *   English: `cambridgeltl/SapBERT-from-PubMedBERT-fulltext`
-*   **Pre-computed Embedding Maps (`data/viettel/base/`):** Pre-calculated `.npy` numpy array embeddings of target concepts.
+*   **Pre-computed Embedding Maps (`v_dataset/viettel/base/`):** Pre-calculated `.npy` numpy array embeddings of target concepts.
 *   **Dual-Retrieval Matching:**
     *   When the NER model yields a disease-related tag, it is simultaneously embedded and compared using cosine similarity against both `short_diagnosis.csv` (ICD-10 codes) and `short_symptom.csv` (symptom identifiers).
     *   It is classified dynamically as `CHẨN_ĐOÁN` or `TRIỆU_CHỨNG` based on the highest cosine similarity score.

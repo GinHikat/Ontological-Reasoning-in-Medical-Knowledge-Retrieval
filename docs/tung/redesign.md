@@ -663,7 +663,7 @@ I’ll first map the current repository structure and identify the main pipeline
 Status: Completed
 
 # Folders:
-Ontological-Reasoning-in-Medical-Knowledge-Retrieval/data
+Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset
 Ontological-Reasoning-in-Medical-Knowledge-Retrieval/docs
 Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules
 Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output
@@ -831,11 +831,11 @@ Status: Completed
     89	## How to Run the System
     90	
     91	### Step 1: Build the Dictionary Base
-    92	Download the mapping data from Huggingface for this project, place it in the data folder. Place the statedict folder to its correct path in modules/model
+    92	Download the mapping data from Huggingface for this project, place it in the v_dataset folder. Place the statedict folder to its correct path in modules/model
     93	
     94	```bash
-    95	mkdir data
-    96	cd data
+    95	mkdir v_dataset
+    96	cd v_dataset
     97	
     98	git clone https://huggingface.co/datasets/zinzinmit/v_dataset .
     99	
@@ -847,7 +847,7 @@ Status: Completed
    105	```
    106	
    107	### Step 2: Run the Evaluation Pipeline
-   108	You can run the end-to-end evaluation script to iterate through all 100 sample `.txt` files in `data/var/test/`, extract their entities, calculate their ontological IDs, and save the results cleanly.
+   108	You can run the end-to-end evaluation script to iterate through all 100 sample `.txt` files in `v_dataset/var/test/`, extract their entities, calculate their ontological IDs, and save the results cleanly.
    109	```bash
    110	python modules/evaluation/test_sample_pipeline.py
    111	```
@@ -901,7 +901,7 @@ Status: Completed
     16	### 1.2 Ontology Standardization (Strict Requirements)
     17	Extracted entities for specific labels MUST be mapped to their standardized IDs (returned in the `candidates` array):
     18	*   **`CHẨN_ĐOÁN`** ➡️ MUST be mapped to **ICD-10**. 
-    19	    *   *Reference File:* `data\viettel\combine\diagnosis_10.csv`
+    19	    *   *Reference File:* `v_dataset\viettel\combine\diagnosis_10.csv`
     20	*   **`THUỐC`** ➡️ MUST be mapped to **RxNorm**.
     21	    *   *Raw Data Source:* `F:\Din\Study\Education\Projects\Thesis\data\mapping\mapping\RxNorm`
     22	    *   *Task:* A `drug_rxnorm.csv` term-ID mapping file must be created to facilitate this.
@@ -917,9 +917,9 @@ Status: Completed
     32	## 2. Target Output & Submission Format
     33	The final pipeline must produce predictions for the final test set.
     34	
-    35	*   **Test Set Location:** `VAR\data\var` (contains `1.txt`, `2.txt`, etc.)
+    35	*   **Test Set Location:** `VAR\v_dataset\var` (contains `1.txt`, `2.txt`, etc.)
     36	*   **Output Location:** Must be saved in an `output/` directory.
-    37	*   **File Structure:** 1-to-1 mapping. `output/1.json` corresponds to the predictions for `VAR\data\var\1.txt`.
+    37	*   **File Structure:** 1-to-1 mapping. `output/1.json` corresponds to the predictions for `VAR\v_dataset\var\1.txt`.
     38	
     39	### 2.1 JSON Schema Requirement
     40	Each `.json` file must contain a JSON array of dictionaries. Each dictionary represents one extracted entity and MUST match this exact schema:
@@ -961,7 +961,7 @@ Status: Completed
     76	*   **`Drug` ➡️ `THUỐC`**.
     77	*   **`Procedure` ➡️ `TÊN_XÉT_NGHIỆM`**.
     78	*   **Missing Labels Extraction:**
-    79	    *   **`TRIỆU_CHỨNG`:** Extract by querying the Knowledge Graph (`data\viettel\mapping\external_kg.parquet`) for `Disease` or `Phenotype` relationships.
+    79	    *   **`TRIỆU_CHỨNG`:** Extract by querying the Knowledge Graph (`v_dataset\viettel\mapping\external_kg.parquet`) for `Disease` or `Phenotype` relationships.
     80	    *   **`KẾT_QUẢ_XÉT_NGHIỆM`:** We will evaluate translating the English `MIMIC-IV Radiology Note` dataset to train a specialized extractor for diagnostic and lab results.
     81	
     82	### Phase 2: Contextual Assertion Detection
@@ -986,8 +986,8 @@ Status: Completed
    101	    > [!WARNING]
    102	    > **Missing Classes:** Currently, **2 required classes are missing entirely** (`TRIỆU_CHỨNG` and `KẾT_QUẢ_XÉT_NGHIỆM`) because the base model does not predict them.
    103	3.  **Knowledge Graph Retrieval:** For the mapped entities, we run dense retrieval (SapBERT) against our mapping datasets to fetch standard IDs:
-   104	    *   **Diagnoses (`CHẨN_ĐOÁN`):** Queried against `data/viettel/base/short_diagnosis.csv` to retrieve the **ICD-10 ID**.
-   105	    *   **Drugs (`THUỐC`):** Queried against `data/viettel/base/short_drug.csv` to retrieve the **RxNorm ID**.
+   104	    *   **Diagnoses (`CHẨN_ĐOÁN`):** Queried against `v_dataset/viettel/base/short_diagnosis.csv` to retrieve the **ICD-10 ID**.
+   105	    *   **Drugs (`THUỐC`):** Queried against `v_dataset/viettel/base/short_drug.csv` to retrieve the **RxNorm ID**.
    106	4.  **Target Output Formatter:** Predictions are formatted into the exact JSON schema and saved in the `output/` directory. Assertions are defaulted to an empty list `[]`.
    107	
    108	### Current Accomplishments & Limitations
@@ -1384,8 +1384,8 @@ Status: Completed
     52	    )
     53	    args = parser.parse_args()
     54	
-    55	    input_file = "data/viettel/vietnamese_ner/gold_standard_benchmark.jsonl"
-    56	    output_file = "data/viettel/vietnamese_ner/ner_predictions.jsonl"
+    55	    input_file = "v_dataset/viettel/vietnamese_ner/gold_standard_benchmark.jsonl"
+    56	    output_file = "v_dataset/viettel/vietnamese_ner/ner_predictions.jsonl"
     57	    THRESHOLD = 0.80
     58	
     59	    # Check if we are running in the correct directory
@@ -1426,7 +1426,7 @@ Status: Completed
     94	
     95	    # Load mapped entities with their SapBERT embeddings for quick cosine similarity matching
     96	    print("Loading pre-computed SapBERT embeddings database...")
-    97	    base_df = pd.read_pickle("data/viettel/mapping/mapped_entities_embedded.pkl")
+    97	    base_df = pd.read_pickle("v_dataset/viettel/mapping/mapped_entities_embedded.pkl")
     98	    # We only care about rows that have a valid CUI
     99	    base_df = base_df.dropna(subset=["mapped_cui"]).reset_index(drop=True)
    100	    base_embeddings = np.vstack(base_df["embedding"].values)
@@ -1922,7 +1922,7 @@ Status: Completed
    168	        if self._base_df_cache is None:
    169	            map_path = os.path.join(
    170	                project_root,
-   171	                "data",
+   171	                "v_dataset",
    172	                "viettel",
    173	                "mapping",
    174	                "mapped_entities_embedded.csv",
@@ -1948,7 +1948,7 @@ Status: Completed
    194	        if self._external_kg_cache is None:
    195	            try:
    196	                ekg_path = os.path.join(
-   197	                    project_root, "data", "viettel", "mapping", "external_kg.parquet"
+   197	                    project_root, "v_dataset", "viettel", "mapping", "external_kg.parquet"
    198	                )
    199	                df_ekg = pd.read_parquet(ekg_path)
    200	                self._external_kg_cache = df_ekg[
@@ -2094,7 +2094,7 @@ Status: Completed
    331	    def _get_cui_vocab_codes(self, cui: str) -> dict:
    332	        if self._mrconso_cache is None:
    333	            optimized_path = os.path.join(
-   334	                project_root, "data", "UML", "MRCONSO_optimized.parquet"
+   334	                project_root, "v_dataset", "UML", "MRCONSO_optimized.parquet"
    335	            )
    336	            if os.path.exists(optimized_path):
    337	                df = pd.read_parquet(optimized_path)
@@ -2507,13 +2507,13 @@ Status: Completed
     36	
     37	def load_dictionaries():
     38	    """Load the pre-computed dictionaries and their embeddings."""
-    39	    diag_csv = var_dir / "data" / "viettel" / "base" / "short_diagnosis.csv"
-    40	    drug_csv = var_dir / "data" / "viettel" / "base" / "short_drug.csv"
-    41	    sym_csv = var_dir / "data" / "viettel" / "base" / "short_symptom.csv"
+    39	    diag_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
+    40	    drug_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.csv"
+    41	    sym_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
     42	    
-    43	    diag_npy = var_dir / "data" / "viettel" / "base" / "short_diagnosis.npy"
-    44	    drug_npy = var_dir / "data" / "viettel" / "base" / "short_drug.npy"
-    45	    sym_npy = var_dir / "data" / "viettel" / "base" / "short_symptom.npy"
+    43	    diag_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.npy"
+    44	    drug_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.npy"
+    45	    sym_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
     46	    
     47	    df_diag = pd.read_csv(diag_csv) if diag_csv.exists() else pd.DataFrame()
     48	    df_drug = pd.read_csv(drug_csv) if drug_csv.exists() else pd.DataFrame()
@@ -2606,7 +2606,7 @@ Status: Completed
    135	    sapbert_vi = extractor._get_sapbert_instance(lang="vi")
    136	    sapbert_en = extractor._get_sapbert_instance(lang="en")
    137	    
-   138	    test_dir = var_dir / "data" / "var" / "test"
+   138	    test_dir = var_dir / "v_dataset" / "var" / "test"
    139	    output_dir = var_dir / "output"
    140	    output_dir.mkdir(parents=True, exist_ok=True)
    141	    

@@ -89,11 +89,11 @@ pip install -r requirements.txt
 ## How to Run the System
 
 ### Step 1: Build the Dictionary Base
-Download the mapping data from Huggingface for this project, place it in the data folder. Place the statedict folder to its correct path in modules/model
+Download the mapping data from Huggingface for this project, place it in the `v_dataset` folder. Place the statedict folder to its correct path in modules/model
 
 ```bash
-mkdir data
-cd data
+mkdir v_dataset
+cd v_dataset
 
 git clone https://huggingface.co/datasets/zinzinmit/v_dataset .
 

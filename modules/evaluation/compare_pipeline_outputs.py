@@ -29,7 +29,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument("--baseline-dir", type=Path, required=True)
     p.add_argument("--candidate-dir", type=Path, required=True)
-    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "data" / "var" / "test")
+    p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "v_dataset" / "var" / "test")
     p.add_argument("--baseline-name", type=str, default="v7")
     p.add_argument("--candidate-name", type=str, default="v8")
     p.add_argument(
