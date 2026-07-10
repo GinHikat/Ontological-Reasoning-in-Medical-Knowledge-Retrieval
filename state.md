@@ -361,20 +361,30 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
    - `rxnorm_probe_ingredient_first.zip` SHA256 `880050861f2bd227b405fc74d9bee2cad51c9690c9555079d0c77ca37188684d`
    - `rxnorm_probe_baseline_plus_ingredient.zip` SHA256 `4a7f43520051296652821daf707aa547a844d000a11b7f215a307f2ea7af185d`
 7. **Hard invariants:** all probes 0 text/position/type/assertion/non-drug-candidate changes; 0 offset mismatches; 3236 entities.
-8. **Leaderboard:** do **not** invent scores. Template: `analysis/rxnorm_probe_leaderboard_results.md`. Policy not proven until official results.
-9. **v9** left untouched for this task.
+8. **Official leaderboard results (accepted; no more RxNorm policy submissions):**
+
+| Submission | Score | WER | J_assertion | J_candidates |
+| --- | ---: | ---: | ---: | ---: |
+| Example Policy | 24.00320 | 72.8869 | 29.6282 | **17.4521** |
+| Ingredient First | 23.86850 | 72.8869 | 29.6282 | 17.1154 |
+| Baseline + Ingredient | 23.82650 | 72.8869 | 29.6282 | 17.0103 |
+
+   Ranking: existing v7 candidate policy ≈ Example Policy > Ingredient First > Baseline + Ingredient.
+
+   **Conclusion:** No more RxNorm policy submissions planned. Ingredient First rejected. Multi-candidate hedging rejected. Example Policy approximately neutral relative to existing v7 behavior. Preserve: return one canonical RxCUI; do not globally reduce drugs to ingredients; do not append ingredient alternatives as a hedge. **Development moved to `v9_llm_recall`.**
 
 ### Modification Ver 9 (`v9_llm_recall`) — in progress
 1. **Goal:** Use a self-hosted LLM as an independent high-recall entity candidate generator for missing clinical entities, while keeping the existing deterministic pipeline responsible for exact offsets, overlap handling, ICD/RxNorm linking, assertions, and final competition JSON.
 2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API).
 3. **Thinking:** disabled (`enable_thinking=false`).
 4. **Target types:** `TRIỆU_CHỨNG`, `CHẨN_ĐOÁN`, `THUỐC` only.
-5. **Architecture:**
+5. **Architecture (additive freeze):**
     *   Phase A: offline LLM candidate cache (`modules/evaluation/generate_v9_llm_cache.py` → `cache/v9_llm_recall/<doc_sha256>.json`)
     *   strict exact line-indexed alignment (no fuzzy / no LLM offsets)
     *   second-pass verifier (accept only when proposer type == verifier type)
-    *   Phase B: `v9_llm_recall` pipeline = `v7_structured` + additive non-overlapping `LLMRecallPostProcessor` before `CandidateMerge`
+    *   Phase B: `LLMAdditiveRecallPipeline` — newest `build_v7_structured_pipeline()` runs **once** → freeze finalized v7 entities → load validated LLM candidates → reject overlaps → link/assert **only** new entities → exclude unlinked diagnoses/drugs → append → deterministic sort
+    *   Same-run diagnostic snapshot: `output/v9_llm_recall/base_v7_snapshot/` beside `submission/`
 6. **Hard rules:** LLM must NOT emit competition JSON, ICD, RxNorm, offsets; must NOT replace/modify existing v7 entities/types/candidates/assertions.
-7. **Canonical leaderboard baseline remains:** `v7_structured` score **24.79660** (do not replace).
+7. **Reference:** newest `build_v7_structured_pipeline()` + same-execution frozen v7 snapshot (do not require historical 24.79660 artifact reproduction).
 8. **Leaderboard:** Do not add v9 metrics until an actual submission is scored.
 

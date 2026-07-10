@@ -1,22 +1,30 @@
 ---
-description: Session recovery — continue experiments from WORKLOG.md / PLAN.md, not chat history
+description: Session recovery — CURRENT_WORK.md for long runs, WORKLOG/PLAN for context
 alwaysApply: true
 ---
 
 # Session recovery
 
 `AGENTS.md` = durable project conventions.
-`WORKLOG.md` / `PLAN.md` = **live experiment handoff**.
+`CURRENT_WORK.md` = **rewriteable** active long-run handoff (tmux commands, Status, Next).
+`WORKLOG.md` / `PLAN.md` = live experiment context.
 `WORKLOG.md` is **append-only** and will grow; never rewrite history or Read the whole file.
 
-When the user continues work (or after SSH/chat loss):
+When the user says **continue from CURRENT_WORK.md**, or continues after SSH/chat loss:
 
-1. `tail -n 80 WORKLOG.md` → follow **Next** in the latest entry.
-2. Read `PLAN.md` for phase checklist and experiment constraints.
-3. Read `CURRENT_MACHINE.md` if present; if missing, create it from live host specs (see `AGENTS.md`).
-4. Do not rely on prior chat; verify processes/cache on disk.
+1. Read `CURRENT_WORK.md` first → follow Status / Next / exact commands.
+2. `tail -n 80 WORKLOG.md` → latest chronological Status / Next.
+3. Read `PLAN.md` for phase checklist and experiment constraints.
+4. Read `CURRENT_MACHINE.md` if present; if missing, create it from live host specs (see `AGENTS.md`).
+5. Do not rely on prior chat; verify processes/cache/logs on disk (`hostname`, `pgrep`, log tail).
 
-After each meaningful step, **append** via bash (same turn):
+When starting or finishing a long run (LLM cache, full pipeline, model server):
+
+1. **Rewrite** `CURRENT_WORK.md` with copy-paste tmux commands, host, log paths, and Next after finish.
+2. Prefer the user running long jobs in **tmux** so network drops do not kill them.
+3. **Append** a short `WORKLOG.md` entry in the same turn.
+
+After each meaningful step, append via bash:
 
 ```bash
 HOST=$(hostname); TS=$(date '+%Y-%m-%d %H:%M %z')
@@ -30,4 +38,4 @@ cat >> WORKLOG.md <<EOF
 EOF
 ```
 
-If SSH died mid-LLM-cache: resume `generate_v9_llm_cache.py` **without** `--force` (SHA256 cache keys).
+If SSH died mid-LLM-cache: resume `generate_v9_llm_cache.py` **without** `--force` (SHA256 cache keys), unless regenerating quarantined timeout stubs.

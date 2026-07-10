@@ -53,3 +53,22 @@ Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated b
 **Next:** same as prior entry (manual ZIP submit → scores)
 - Rewrote `CURRENT_MACHINE.md` for shared `/storage`: active `ictserver6` (8×K80, use `nanachi_ictserver6`) + prior `ict14` (2×Quadro, `nanachi` / `v9_vllm`)
 - Switched WORKLOG to append-only + `tail` read convention (this format)
+
+---
+### 2026-07-11 02:32 +0700 | host=ictserver6
+**Status:** v9_llm_recall resumed on ictserver6; additive freeze pipeline implemented; CPU Qwen server UP; pilot cache regenerating
+**Next:** wait smoke LLM latency → run pilot 12-doc cache (long timeout) → pilot report/quality gate → full 100 cache → Phase B on nanachi_ictserver6 GPU for NER
+- Wrote analysis/v9_resume_audit.md
+- Quarantined 2 timeout cache stubs → cache/v9_llm_recall/_quarantine/
+- Implemented LLMAdditiveRecallPipeline (delegate build_v7_structured_pipeline; freeze; link/assert LLM-only; base_v7_snapshot in run_pipeline)
+- GPU for Qwen: NOT viable here (K80 + driver 440); NER Phase B can use nanachi_ictserver6
+- CPU server: nanachi + serve_v9_qwen_cpu.py on :8000, model Qwen/Qwen3.5-9B, thinking off
+- Recorded official RxNorm probe scores in state.md; no more RxNorm probes
+
+---
+### 2026-07-11 02:40 +0700 | host=ict14
+**Status:** CURRENT_WORK.md convention added; pilot cache still RUNNING on ict14 (CPU timeouts)
+**Next:** user can `continue from CURRENT_WORK.md`; wait/fix pilot timeouts (raise timeout or faster Qwen) before pilot report
+- Created CURRENT_WORK.md (rewriteable long-run handoff + tmux commands)
+- Wired into AGENTS.md + .cursor/rules/v9-resume.mdc
+- Live: serve_v9_qwen_cpu.py + generate_v9_llm_cache pilot 12 docs; doc20 = proposer_failed timeout; usable accepted=0

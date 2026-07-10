@@ -31,13 +31,25 @@ PORT = int(os.environ.get("V9_PORT", "8000"))
 # Prefer float16 on CPU if available to cut memory; fall back to float32.
 DTYPE = torch.float16 if hasattr(torch, "float16") else torch.float32
 
-print(f"[v9-cpu-server] Loading {MODEL_PATH} (id={MODEL_ID}) on CPU dtype={DTYPE} ...", flush=True)
+# Use all host CPUs — critical on shared lab boxes where default thread count is low.
+_nthreads = int(os.environ.get("V9_CPU_THREADS", str(os.cpu_count() or 8)))
+torch.set_num_threads(_nthreads)
+torch.set_num_interop_threads(max(1, min(4, _nthreads // 4)))
+os.environ.setdefault("OMP_NUM_THREADS", str(_nthreads))
+os.environ.setdefault("MKL_NUM_THREADS", str(_nthreads))
+
+print(
+    f"[v9-cpu-server] Loading {MODEL_PATH} (id={MODEL_ID}) on CPU dtype={DTYPE} "
+    f"threads={_nthreads} ...",
+    flush=True,
+)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_PATH,
     dtype=DTYPE,
     device_map="cpu",
     trust_remote_code=True,
+    low_cpu_mem_usage=True,
 )
 model.eval()
 print("[v9-cpu-server] Model ready.", flush=True)
