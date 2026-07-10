@@ -6,7 +6,7 @@ This refactor introduces a versioned, OOP-oriented architecture while preserving
 
 1. Keep old working code available for rollback and regression comparison.
 2. Make each metric-sensitive subsystem replaceable independently.
-3. Support iterative versions such as `legacy_v5`, `v5_refactored`, `v6_lab_results`, `v6_thresholds`, and future reranker/ensemble versions.
+3. Support iterative versions such as `legacy_v5`, `v5_refactored`, `v6_refined`, `v7_structured`, `v8_*`, and future ablations.
 4. Avoid editing one large monolithic script for every experiment.
 
 ## Key Design Choice
@@ -42,12 +42,16 @@ modules/
 │   ├── classification/
 │   ├── linking/
 │   ├── assertions/
+│   ├── structure/
 │   └── formatting/
 ├── pipelines/
 │   ├── base.py
 │   ├── clinical.py
 │   ├── legacy_adapter.py
 │   ├── v5.py
+│   ├── v6.py
+│   ├── v7.py
+│   ├── v8.py
 │   └── factory.py
 └── evaluation/
     └── run_pipeline.py
@@ -59,11 +63,15 @@ modules/
 |---|---|
 | `legacy_v5` | Adapter around the frozen V5 helper logic. Useful for regression checks. |
 | `v5_refactored` | Same main behavior rebuilt from composable classes. |
-| `v6_refined` | Refined pipeline adding type correction, test recall, result extraction, precision filtering, and overlap deduplication. (SOTA) |
+| `v6_refined` | Type correction, test/result recall, precision filtering, overlap dedup. |
+| `v7_structured` | Section-aware + ontology lexical recall on top of V6. **Current best scored** (24.79660). |
+| `v8_candidate_integrity` | Ablation: unconditional unambiguous RxCUI preset override (negative / not for submission). |
+| `v8_candidate_rescue` | Ablation: rescue-only linking for unlinked drugs + provenance transfer (no-op in same-env test). |
 
 Run any version with:
 
 ```bash
+python modules/evaluation/run_pipeline.py --pipeline v7_structured
 python modules/evaluation/run_pipeline.py --pipeline v6_refined
 python modules/evaluation/run_pipeline.py --pipeline v5_refactored
 python modules/evaluation/run_pipeline.py --pipeline legacy_v5
@@ -72,10 +80,10 @@ python modules/evaluation/run_pipeline.py --pipeline legacy_v5
 For a quick smoke test:
 
 ```bash
-python modules/evaluation/run_pipeline.py --pipeline v6_refined --samples 1 --output-dir output_smoke
+python modules/evaluation/run_pipeline.py --pipeline v7_structured --samples 1 --output-dir output_smoke
 ```
 
-Note: the local model weights under `modules/model/statedict/ner/...` must be present for a full run.
+Note: local NER weights under `v_dataset/statedict/ner/...` must be present for a full run (legacy fallback: `modules/model/statedict/ner/...`).
 
 ## Pipeline Flow
 
@@ -88,7 +96,10 @@ Document
   -> Post-classification mention postprocessors
        - ClinicalTypeCorrectionPostProcessor
        - DrugBoundaryPostProcessor
+       - [V7+] SectionAware / LabPair / Ontology drug+diagnosis recall
        - ClinicalRecallPostProcessor
+       - [V7+] CandidateMergePostProcessor
+       - [V8 rescue] DrugOntologyProvenanceTransferPostProcessor
        - ClinicalPrecisionFilterPostProcessor
        - OverlapDedupPostProcessor
   -> Entity linker
@@ -104,9 +115,18 @@ Document
 4.  **`ClinicalPrecisionFilterPostProcessor`**: Removes common noise terms (e.g. "nhẹ", "nặng", "bệnh lý") and standalone dosage tokens (e.g. "po", "bid", "mg").
 5.  **`OverlapDedupPostProcessor`**: Resolves nesting and duplicate conflicts in the final prediction list.
 
-## Future V7 Improvements Ideas
+## Implemented V7+ Components
+
+1.  **`VietnameseClinicalSectionParser`**: Shared section boundaries with original character offsets.
+2.  **`SectionAwareRecallPostProcessor`**: Symptom bullets / short reason-for-admission phrases.
+3.  **`LabPairRecallPostProcessor`**: Lab name/result pairs from structured note text.
+4.  **`OntologyDrugRecallPostProcessor` / `OntologyDiagnosisRecallPostProcessor`**: Lexical ontology recovery.
+5.  **`CandidateMergePostProcessor`**: Deterministic conflict resolution by evidence source.
+6.  **`DrugOntologyProvenanceTransferPostProcessor`** (V8 rescue): Transfer unambiguous RxCUI provenance to expanded drug spans.
+
+## Future Improvement Ideas
 
 1.  **Upgrade the Drug Dictionary (RxNorm Expansion)**: Update dictionary construction to include a larger database of RxNorm codes to improve matching accuracy.
 2.  **AbbreviationNormalizer**: Add component to resolve clinical abbreviations (`THA` -> `tăng huyết áp`, `ĐTĐ` -> `đái tháo đường`) prior to NER or linking.
 3.  **Context-Aware Classifier**: Integrate a cross-encoder model to dynamically resolve ambiguous entities based on neighboring text window content.
-
+4.  **Reduce nested/overlapping spans** and block embedded drug aliases inside symptom phrases (see `state.md` remaining ideas).

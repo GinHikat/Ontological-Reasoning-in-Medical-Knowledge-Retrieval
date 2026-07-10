@@ -8,13 +8,12 @@ from tqdm import tqdm
 
 tqdm.pandas()
 
-# Setup paths to ensure we can import VAR.modules.utils
+# Setup paths so `modules.*` imports resolve from the repo root.
 script_dir = Path(__file__).resolve().parent
-var_dir = script_dir.parents[2] # VAR/
-project_root = var_dir.parent   # Thesis/
-sys.path.append(str(project_root))
+project_root = script_dir.parents[2]
+sys.path.insert(0, str(project_root))
 
-from VAR.modules.utils import EntityExtractor
+from modules.utils import EntityExtractor
 
 def generate_embeddings():
     print("Initializing EntityExtractor and SapBERTs...")
@@ -23,7 +22,7 @@ def generate_embeddings():
     sapbert_vi = extractor._get_sapbert_instance(lang="vi")
     
     # Process Drugs (Temporarily skipped as requested)
-    drug_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.csv"
+    drug_csv = project_root / "v_dataset" / "viettel" / "base" / "short_drug.csv"
     print(f"\nProcessing Drugs from {drug_csv}")
     if drug_csv.exists():
         df_drug = pd.read_csv(drug_csv)
@@ -42,7 +41,7 @@ def generate_embeddings():
         print(f"File not found: {drug_csv}")
         
     # Process Diagnosis
-    diag_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
+    diag_csv = project_root / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
     print(f"\nProcessing Diagnosis from {diag_csv}")
     if diag_csv.exists():
         df_diag = pd.read_csv(diag_csv)

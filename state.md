@@ -72,11 +72,11 @@ The pipeline MUST output exactly these 5 labels (no broad English categories are
 
 ### 1.2 Ontology Standardization (Strict Requirements)
 Extracted entities for specific labels MUST be mapped to their standardized IDs (returned in the `candidates` array):
-*   **`CHẨN_ĐOÁN`** ➡️ MUST be mapped to **ICD-10**. 
-    *   *Reference File:* `v_dataset\viettel\combine\diagnosis_10.csv`
+*   **`CHẨN_ĐOÁN`** ➡️ MUST be mapped to **ICD-10**.
+    *   *Active lookup:* `v_dataset/viettel/base/short_diagnosis.csv` (+ `.npy` embeddings)
 *   **`THUỐC`** ➡️ MUST be mapped to **RxNorm**.
-    *   *Raw Data Source:* `F:\Din\Study\Education\Projects\Thesis\data\mapping\mapping\RxNorm`
-    *   *Task:* A `drug_rxnorm.csv` term-ID mapping file must be created to facilitate this.
+    *   *Active lookup:* `v_dataset/viettel/base/short_drug.csv` (+ `.npy` embeddings)
+    *   *Raw sources:* under `v_dataset/viettel/mapping/` (RxNorm RRF / related files)
 
 ### 1.3 Contextual Assertions (Modifiers)
 We must detect contextual states for the entities.
@@ -89,9 +89,9 @@ We must detect contextual states for the entities.
 ## 2. Target Output & Submission Format
 The final pipeline must produce predictions for the final test set.
 
-*   **Test Set Location:** `VAR\v_dataset\var` (contains `1.txt`, `2.txt`, etc.)
-*   **Output Location:** Must be saved in an `output/` directory.
-*   **File Structure:** 1-to-1 mapping. `output/1.json` corresponds to the predictions for `VAR\v_dataset\var\1.txt`.
+*   **Test Set Location:** `v_dataset/var/test` (contains `1.txt`, `2.txt`, etc.)
+*   **Output Location:** Versioned under `output/<pipeline>/runN/submission/` (or a flat `--output-dir` for submission ZIPs).
+*   **File Structure:** 1-to-1 mapping. `1.json` corresponds to the predictions for `v_dataset/var/test/1.txt`.
 
 ### 2.1 JSON Schema Requirement
 Each `.json` file must contain a JSON array of dictionaries. Each dictionary represents one extracted entity and MUST match this exact schema:
@@ -147,6 +147,8 @@ We will NOT retrain the base Vietnamese NER model (which currently outputs `Dise
 ---
 
 ## 4. What has been done
+
+> Historical baseline notes below describe the **initial** end-to-end script before Ver 2–8. For the current system, use the Change Log and evaluation tables further down. Assertions, dual-retrieval symptoms, V6–V7 postprocessors, and versioned runners are implemented.
 
 We have implemented the initial end-to-end evaluation script (`modules/evaluation/test_sample_pipeline.py`). For a given input sentence (chunked by the test script), the pipeline currently follows these steps:
 

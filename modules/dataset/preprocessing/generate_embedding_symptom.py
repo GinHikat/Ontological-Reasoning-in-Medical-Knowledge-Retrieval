@@ -4,16 +4,16 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-# Setup paths
+# Setup paths so `modules.*` imports resolve from the repo root.
 script_dir = Path(__file__).resolve().parent
-var_dir = script_dir.parents[2]
-sys.path.append(str(var_dir.parent)) # Thesis/
+project_root = script_dir.parents[2]
+sys.path.insert(0, str(project_root))
 
-from VAR.modules.utils import EntityExtractor
+from modules.utils import EntityExtractor
 
-kg_path = var_dir.parent / "v_dataset" / "viettel" / "mapping" / "external_kg.parquet"
-out_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
-out_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
+kg_path = project_root / "v_dataset" / "viettel" / "mapping" / "external_kg.parquet"
+out_csv = project_root / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
+out_npy = project_root / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
 
 if not out_csv.exists() or not out_npy.exists():
     print("Loading external KG...")

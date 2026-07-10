@@ -13,8 +13,9 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 ├── README.md                # General introduction and execution quickstart
 ├── requirements.txt         # Package dependencies (PyTorch, Transformers, etc.)
 ├── state.md                 # Master project state, requirements, and changelog
-├── v_dataset/               # Local clinical notes, ontologies, and embeddings
+├── v_dataset/               # Local clinical notes, ontologies, embeddings, weights
 │   ├── var/test/            # 100 raw clinical note text files
+│   ├── statedict/           # Local NER weights (statedict/ner/<model>)
 │   └── viettel/             # Dictionary lookup files and datasets
 │       ├── base/            # Extracted mapping CSVs & precomputed .npy embeddings
 │       │   ├── short_diagnosis.csv  # ICD-10 code mapping
@@ -23,26 +24,29 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 │       │   ├── short_diagnosis.npy  # SapBERT embeddings for diagnoses
 │       │   ├── short_drug.npy       # SapBERT embeddings for drugs
 │       │   └── short_symptom.npy    # SapBERT embeddings for symptoms
-│       ├── combine/         # Processed mapping dictionaries (e.g., RxNorm)
-│       └── mapping/         # Raw source data for ontologies (RxNorm RRF files)
+│       └── mapping/         # Raw source data for ontologies (RxNorm, KG, etc.)
 ├── modules/                 # Core Python source codebase (refactored to OOP)
 │   ├── core/                # Data structures and schemas
-│   │   ├── config.py        # Centralized configuration
+│   │   ├── config.py        # Centralized configuration / ProjectPaths
 │   │   ├── constants.py     # Global labels, types, and codes
 │   │   └── schemas.py       # Pydantic schemas for Doc, Mention, Span, Link
 │   ├── components/          # Reusable NLP components
 │   │   ├── ner/             # NER extraction (ViHealthBertNERExtractor)
 │   │   ├── normalization/   # Document text normalizers
-│   │   ├── postprocessing/  # Mention adjustments (Recall, Precision, Word boundaries)
+│   │   ├── postprocessing/  # Mention adjustments (recall, precision, ontology, merge)
 │   │   ├── classification/  # Mentions to label mapping (RuleBasedCompetitionLabelMapper)
 │   │   ├── linking/         # Entity linking/mapping (HybridEntityLinker)
-│   │   └── assertions/      # Contextual assertion detectors (RuleBasedAssertionDetector)
+│   │   ├── assertions/      # Contextual assertion detectors (RuleBasedAssertionDetector)
+│   │   ├── structure/       # Clinical section parser (VietnameseClinicalSectionParser)
+│   │   └── formatting/      # Competition JSON formatter
 │   ├── pipelines/           # Composed end-to-end pipelines
 │   │   ├── base.py          # Base pipeline interface
 │   │   ├── clinical.py      # Standard clinical pipeline orchestration
 │   │   ├── factory.py       # Registry and factory for fetching pipelines
-│   │   ├── v5.py            # Rebuilt V5 composable pipeline
-│   │   └── v6.py            # V6 refined pipeline (current SOTA)
+│   │   ├── v5.py            # Refactored V5 composable pipeline
+│   │   ├── v6.py            # V6 refined pipeline
+│   │   ├── v7.py            # V7 structured recall pipeline (current best scored)
+│   │   └── v8.py            # V8 candidate integrity / rescue ablations
 │   ├── legacy/              # Frozen legacy monolithic scripts
 │   │   ├── utils_legacy.py
 │   │   └── test_sample_pipeline_legacy.py
@@ -52,7 +56,7 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 │   ├── model/               # Model initialization and training logic
 │   └── evaluation/          # Evaluation runner scripts
 │       └── run_pipeline.py  # Central pipeline runner and exporter
-└── output/                  # Final generated JSON files matching evaluation schema
+└── output/                  # Versioned JSON submissions + traces
 ```
 
 ---
@@ -61,13 +65,13 @@ Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
 
 ### 2.1 NER Inference & Fine-Tuning
 The Named Entity Recognition (NER) component identifies entity boundaries and labels from raw clinical text.
-*   **Model (`modules/components/ner/vihealthbert.py`):** Utilizes `transformers` to load a pre-trained transformer model (e.g., `vihealthbert`, `vipubmed-deberta`) with token classification heads, processing input line-by-line to respect token constraints.
+*   **Model (`modules/components/ner/vihealthbert.py`):** Utilizes `transformers` to load a pre-trained transformer model (e.g., `vihealthbert`, `vipubmed-deberta`) with token classification heads, processing input line-by-line to respect token constraints. Weights resolve from `v_dataset/statedict/ner/` (with legacy fallback to `modules/model/statedict/ner/`).
 *   **Tags & Token Matching:**
     *   **Vietnamese Labels:** `O`, `B-Disease/Symptom`, `I-Disease/Symptom`, `B-Procedure/Treatment`, `I-Procedure/Treatment`, `B-Drug`, `I-Drug`.
 
 ### 2.2 Entity Linking & Retrieval
 Once boundaries are extracted, entities are matched against canonical dictionaries using semantic embeddings:
-*   **Retrieval Models (`modules/components/linking/hybrid.py`):** 
+*   **Retrieval Models (`modules/components/linking/hybrid.py`):**
     *   Vietnamese: `cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR`
     *   English: `cambridgeltl/SapBERT-from-PubMedBERT-fulltext`
 *   **Pre-computed Embedding Maps (`v_dataset/viettel/base/`):** Pre-calculated `.npy` numpy array embeddings of target concepts.
@@ -77,9 +81,10 @@ Once boundaries are extracted, entities are matched against canonical dictionari
 *   **Reranking & Hybrid Scoring:**
     *   To match strict dosage details in drug mapping, the pipeline retrieves the top-3 candidate strings using SapBERT.
     *   A secondary lexical similarity check (`difflib.SequenceMatcher`) acts as a tie-breaker to favor exact string matches over pure semantic synonyms.
+*   **V7+ preset linking:** Ontology drug/diagnosis recall can attach concept IDs; V8 modes optionally override or rescue-only fill empty drug candidates.
 
 ### 2.3 Post-Processing & Normalization
-V6 implements a highly refined post-processing stack to improve precision and recall:
+**V6** implements a refined post-processing stack to improve precision and recall:
 *   **Word Boundary Fix (`word_boundary.py`):** Pads extracted NER span boundaries to the nearest whitespace or punctuation to capture whole words.
 *   **Clinical Type Correction (`type_correction.py`):** Corrects systematic NER errors, e.g., mapping symptom phrases away from diagnosis tags and restoring drug mentions mislabeled as procedures.
 *   **Drug Boundary Expansion (`drug_boundary.py`):** Scans for dosage and frequency context around drug names (e.g. `325mg x 1`, `po daily`) using regex and expands the span.
@@ -87,17 +92,26 @@ V6 implements a highly refined post-processing stack to improve precision and re
 *   **Clinical Precision Filter (`precision_filter.py`):** Removes common noise terms (e.g. "nhẹ", "nặng", "bệnh lý") and standalone dosage tokens (e.g. "po", "bid", "mg").
 *   **Overlap Deduplication (`overlap_dedup.py`):** Resolves nesting and duplicate conflicts in the final prediction list.
 
+**V7** adds independent candidate generation on top of the V6 stack:
+*   **Section parser (`structure/section_parser.py`):** Shared section boundaries with original offsets.
+*   **Section-aware / lab-pair / ontology recall:** Recover symptoms, lab name–result pairs, and lexical drug/diagnosis matches.
+*   **Candidate merge (`candidate_merge.py`):** Deterministic conflict resolution by evidence source.
+
+**V8** experiments (not submission candidates): preset RxCUI override (`v8_candidate_integrity`) and rescue-only linking plus provenance transfer (`v8_candidate_rescue`). See `state.md`.
+
 ### 2.4 Contextual Assertions (Modifiers)
 Clinical modifiers are flagged using rule-based algorithms inside `modules/components/assertions/rule_based.py`:
-*   `isHistorical`: Checked against clinical section boundaries. If an entity falls under the first section (`1. Tiền sử bệnh`), it is tagged as historical.
+*   `isHistorical`: Checked against clinical section boundaries. If an entity falls under the first section (`1. Tiền sử bệnh`), it is tagged as historical. V7+ can reuse the shared section parser.
 *   `isNegated`: Evaluated via bullet-point rules and clause-based syntax processing. Commas indicate lists of negated symptoms (e.g., *"Không ho, sốt, đau ngực"* negates all), while adversative clauses (e.g., *"nhưng có"*) block negation propagation.
-*   **V6 Label Restriction:** restircts assertions to eligible competition labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
+*   **Label Restriction:** Assertions are restricted to eligible competition labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
 
 ---
 
 ## 3. End-to-End Pipeline Workflow
 
-The evaluation pipeline runner `modules/evaluation/run_pipeline.py` orchestrates the component classes:
+The evaluation pipeline runner `modules/evaluation/run_pipeline.py` orchestrates the component classes.
+
+### V6 flow (`v6_refined`)
 
 ```mermaid
 graph TD
@@ -116,6 +130,10 @@ graph TD
     M --> N[JSON Output File]
 ```
 
+### V7 additions (`v7_structured`)
+
+After drug-boundary expansion, V7 inserts section-aware recall, lab-pair recall, ontology drug/diagnosis recall, then `ClinicalRecallPostProcessor` → `CandidateMergePostProcessor` → precision filter → overlap dedup → linker → assertions (with shared section parser).
+
 ---
 
 ## 4. Run Configurations
@@ -126,18 +144,27 @@ python modules/dataset/preprocessing/generate_embeddings.py
 python modules/dataset/preprocessing/generate_embedding_symptom.py
 ```
 
-### Executing the Refactored Pipeline
-To run the SOTA V6 refined pipeline:
+### Executing Versioned Pipelines
+Canonical best scored pipeline:
+```bash
+python modules/evaluation/run_pipeline.py --pipeline v7_structured
+```
+V6 refined:
 ```bash
 python modules/evaluation/run_pipeline.py --pipeline v6_refined
 ```
-To run the legacy V5 behavior using refactored classes:
+Legacy V5 behavior using refactored classes:
 ```bash
 python modules/evaluation/run_pipeline.py --pipeline v5_refactored
 ```
-To run the frozen legacy monolithic pipeline:
+Frozen legacy monolithic pipeline:
 ```bash
 python modules/evaluation/run_pipeline.py --pipeline legacy_v5
+```
+V8 ablations (experimental; see `state.md`):
+```bash
+python modules/evaluation/run_pipeline.py --pipeline v8_candidate_integrity
+python modules/evaluation/run_pipeline.py --pipeline v8_candidate_rescue
 ```
 
 All output runs are written by default to `output/<version>/runN/` (version defaults to the pipeline name) with `submission/` (JSON) and `trace/` (logs). Override with `--version-name`, `--run-name`, or flat `--output-dir`.
@@ -155,4 +182,3 @@ These trace logs capture:
 You can explicitly control trace logging using command-line arguments:
 - `--trace` (default): Enable writing step-by-step trace logging files under `run/trace/`.
 - `--no-trace`: Disable writing step-by-step trace logging files.
-

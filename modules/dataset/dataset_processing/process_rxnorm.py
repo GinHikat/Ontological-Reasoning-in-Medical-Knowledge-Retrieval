@@ -15,7 +15,7 @@ def process_rxnorm():
     
     base_path_str = os.getenv("RXNORM_RRF_PATH")
     if not base_path_str:
-        raise ValueError("RXNORM_RRF_PATH is not set in VAR/.env")
+        raise ValueError("RXNORM_RRF_PATH is not set in .env")
         
     base_path = Path(base_path_str)
     conso_file = base_path / "RXNCONSO.RRF"

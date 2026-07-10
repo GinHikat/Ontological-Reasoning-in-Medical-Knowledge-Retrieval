@@ -28,21 +28,20 @@ def get_best_row_lexical_sim(query, row):
 
 # Setup paths
 script_dir = Path(__file__).resolve().parent
-var_dir = script_dir.parents[1] # VAR/
-project_root = var_dir.parent   # Thesis/
-sys.path.append(str(var_dir))
+project_root = script_dir.parents[1]
+sys.path.insert(0, str(project_root))
 
 from modules.utils import EntityExtractor
 
 def load_dictionaries():
     """Load the pre-computed dictionaries and their embeddings."""
-    diag_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
-    drug_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.csv"
-    sym_csv = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
+    diag_csv = project_root / "v_dataset" / "viettel" / "base" / "short_diagnosis.csv"
+    drug_csv = project_root / "v_dataset" / "viettel" / "base" / "short_drug.csv"
+    sym_csv = project_root / "v_dataset" / "viettel" / "base" / "short_symptom.csv"
     
-    diag_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_diagnosis.npy"
-    drug_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_drug.npy"
-    sym_npy = var_dir / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
+    diag_npy = project_root / "v_dataset" / "viettel" / "base" / "short_diagnosis.npy"
+    drug_npy = project_root / "v_dataset" / "viettel" / "base" / "short_drug.npy"
+    sym_npy = project_root / "v_dataset" / "viettel" / "base" / "short_symptom.npy"
     
     df_diag = pd.read_csv(diag_csv) if diag_csv.exists() else pd.DataFrame()
     df_drug = pd.read_csv(drug_csv) if drug_csv.exists() else pd.DataFrame()
@@ -135,8 +134,8 @@ def run_pipeline(samples: int = None):
     sapbert_vi = extractor._get_sapbert_instance(lang="vi")
     sapbert_en = extractor._get_sapbert_instance(lang="en")
     
-    test_dir = var_dir / "v_dataset" / "var" / "test"
-    output_dir = var_dir / "output" / "legacy_v5" / "monolithic"
+    test_dir = project_root / "v_dataset" / "var" / "test"
+    output_dir = project_root / "output" / "legacy_v5" / "monolithic"
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Mapping raw NER labels to final categories

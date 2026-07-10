@@ -108,7 +108,7 @@ Index 3: B-Chemical
 Index 4: I-Chemical
 ```
 
-The model is loaded from local weights at `modules/model/statedict/ner/{model_name}` and cached globally in `_PIPELINES` to avoid reloading on repeated calls.
+The model is loaded from local weights at `v_dataset/statedict/ner/{model_name}` (legacy fallback: `modules/model/statedict/ner/{model_name}`) and cached globally in `_PIPELINES` to avoid reloading on repeated calls.
 
 ### 3.2 Line-by-Line Processing with Offset Tracking
 
@@ -992,8 +992,10 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 | `modules/components/ner/vihealthbert.py` | NER extractor component loading model weights |
 | `modules/components/linking/hybrid.py` | Hybrid SapBERT semantic & lexical reranking linker |
 | `modules/components/assertions/rule_based.py` | Negation and historical status detector |
-| `modules/components/postprocessing/` | V6 clinical recall, precision, type correction, and boundary filters |
-| `modules/pipelines/v6.py` | SOTA refined pipeline builder |
+| `modules/components/postprocessing/` | V6–V8 recall, precision, type correction, ontology, merge filters |
+| `modules/pipelines/v6.py` | V6 refined pipeline builder |
+| `modules/pipelines/v7.py` | V7 structured recall pipeline (current best scored) |
+| `modules/pipelines/v8.py` | V8 candidate integrity / rescue ablations |
 | `modules/evaluation/run_pipeline.py` | Central CLI runner for all pipeline configurations |
 | `modules/dataset/preprocessing/generate_embeddings.py` | Embedding precomputation scripts |
 
@@ -1008,15 +1010,19 @@ For each entity, compute cosine similarity against both diagnosis and symptom di
 | v3 | 16.98 | 80.79 | 20.89 | 12.36 | Lowercase normalization + threshold |
 | v4 | 18.43 | 78.05 | 22.12 | 13.02 | Word fragmentation fix + drug expansion |
 | v5 | 18.77 | 77.96 | 22.82 | 13.28 | Hybrid retrieval + smarter assertions |
-| v6 | 22.42 | 73.14 | 28.89 | 14.25 | OOP refactored pipeline SOTA with postprocessors |
+| v6 | 22.42 | 73.14 | 28.89 | 14.25 | OOP refactored pipeline with postprocessors |
+| v7 | 24.80 | 72.00 | 31.37 | 17.47 | Section-aware + ontology lexical recall (canonical) |
+
+V8 ablations did not improve the leaderboard; see `state.md`.
 
 ---
 
-## 15. Future Optimization Directions (Ver 7)
+## 15. Future Optimization Directions
 
 1. **Upgrade the Drug Dictionary (RxNorm Expansion)**: Build embedding map with comprehensive RxNorm SCD terms rather than a subset to maximize candidate retrieval ceiling.
 2. **AbbreviationNormalizer**: Automatically expand clinical acronyms (`THA`, `ĐTĐ`, `XN`) to full Vietnamese terms before matching or linking.
 3. **Threshold Calibration**: Tune entity-specific SapBERT thresholds dynamically to boost True Positives.
+4. **Overlap / embedded-alias cleanup**: Reduce nested spans and false drug aliases inside symptom phrases (see `state.md`).
 
 
 ## 16. Pipeline Debugging & Step-by-Step Tracing
