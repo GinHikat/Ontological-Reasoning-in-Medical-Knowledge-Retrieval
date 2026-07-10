@@ -342,6 +342,28 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 7. **Path note:** After `data`→`v_dataset` rename, NER weights resolve via `v_dataset/statedict`; LFS objects must be pulled for `statedict` + `viettel/base` dictionaries.
 8. **Final conclusion:** **no-op ablation** — newly rescued drugs: **0**. Same-env unlinked drug: `NSAID` (`NO_ONTOLOGY_EVIDENCE`). **Not submitted.** Do not spend more time improving v8.
 
+### RxNorm hidden-policy probes (2026-07-11)
+
+1. **Motivation:** Official examples suggest a hidden RxNorm canonicalization policy (no strength → ingredient; strength range → lower-bound generic SCD). Controlled leaderboard probes; do not integrate into linker until scored.
+2. **Baseline used:** newest `v7_structured` same-env output (scored 24.79660 ZIP still absent on disk; user authorized this substitute).
+   - Source: `output/v7_structured/same_env/submission`
+   - Frozen: `artifacts/v7_newest_same_env/submission`
+   - Semantic manifest SHA256: `71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60`
+   - Entities: **3236**; THUỐC: **271** (270 linked); CHẨN_ĐOÁN 215/215
+3. **Local RxNorm:** `v_dataset/viettel/base/short_drug.csv` only. **No** RXNREL / explicit parent relationships → lexical ingredient resolver.
+4. **Unit tests:** nystatin→`7597` PASS; acetaminophen 325-650→`313782` PASS.
+5. **Hypotheses / probes:**
+   - `rxnorm_probe_example_policy` — changed **18** drugs (LOW SIGNAL); IN=15 SCD=3
+   - `rxnorm_probe_ingredient_first` — changed **23** drugs (MODERATE); all → IN
+   - `rxnorm_probe_baseline_plus_ingredient` — changed **23** drugs (MODERATE); length-2+ lists
+6. **ZIPs** (`output/…`, structure `output/1.json`…`100.json`):
+   - `rxnorm_probe_example_policy.zip` SHA256 `19b881fdcfa18c30f028e8f54db107d59d0868d403fac4c4e400d1a9f3309ddb`
+   - `rxnorm_probe_ingredient_first.zip` SHA256 `880050861f2bd227b405fc74d9bee2cad51c9690c9555079d0c77ca37188684d`
+   - `rxnorm_probe_baseline_plus_ingredient.zip` SHA256 `4a7f43520051296652821daf707aa547a844d000a11b7f215a307f2ea7af185d`
+7. **Hard invariants:** all probes 0 text/position/type/assertion/non-drug-candidate changes; 0 offset mismatches; 3236 entities.
+8. **Leaderboard:** do **not** invent scores. Template: `analysis/rxnorm_probe_leaderboard_results.md`. Policy not proven until official results.
+9. **v9** left untouched for this task.
+
 ### Modification Ver 9 (`v9_llm_recall`) — in progress
 1. **Goal:** Use a self-hosted LLM as an independent high-recall entity candidate generator for missing clinical entities, while keeping the existing deterministic pipeline responsible for exact offsets, overlap handling, ICD/RxNorm linking, assertions, and final competition JSON.
 2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API).
