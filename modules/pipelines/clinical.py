@@ -253,6 +253,9 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
             lines.append("      drug diagnostics:")
             lines.append(f"        drug_link: {meta.get('drug_link', '')}")
             lines.append(
+                f"        drug_link_rescue_kind: {meta.get('drug_link_rescue_kind', '')}"
+            )
+            lines.append(
                 f"        ontology_drug_recall: {meta.get('ontology_drug_recall', False)}"
             )
             lines.append(f"        match: {meta.get('match', '')}")
@@ -262,6 +265,29 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
             )
             lines.append(
                 f"        preset_rxcui_count: {meta.get('preset_rxcui_count', '')}"
+            )
+            lines.append(
+                f"        ontology_drug_evidence_transferred: "
+                f"{meta.get('ontology_drug_evidence_transferred', False)}"
+            )
+            lines.append(
+                f"        transferred_preset_rxcui_candidates: "
+                f"{meta.get('transferred_preset_rxcui_candidates', [])}"
+            )
+            lines.append(
+                f"        ontology_drug_donor_text: {meta.get('ontology_drug_donor_text', '')}"
+            )
+            lines.append(
+                f"        ontology_drug_donor_span: "
+                f"[{meta.get('ontology_drug_donor_start', '')}, "
+                f"{meta.get('ontology_drug_donor_end', '')}]"
+            )
+            lines.append(
+                f"        ontology_drug_donor_alias: {meta.get('ontology_drug_donor_alias', '')}"
+            )
+            lines.append(
+                f"        ontology_drug_evidence_conflict: "
+                f"{meta.get('ontology_drug_evidence_conflict', False)}"
             )
             lines.append(f"        preset_used: {meta.get('preset_used', '')}")
             lines.append(

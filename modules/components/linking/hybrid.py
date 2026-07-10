@@ -39,6 +39,8 @@ def get_best_row_lexical_similarity(query: str, row) -> float:
 class HybridEntityLinker(BaseEntityLinker):
     """V5-style SapBERT retrieval with lexical reranking and disease/symptom split."""
 
+    PRESET_DRUG_LINK_MODES = ("disabled", "override_unambiguous", "rescue_unlinked")
+
     def __init__(
         self,
         dictionary_store: CompetitionDictionaryStore | None = None,
@@ -48,6 +50,7 @@ class HybridEntityLinker(BaseEntityLinker):
         lexical_weight: float = 0.5,
         top_k: int = 3,
         use_unambiguous_preset_drug_rxcui: bool = False,
+        preset_drug_link_mode: str | None = None,
     ):
         self.dictionary_store = dictionary_store or CompetitionDictionaryStore()
         self.diagnosis_threshold = diagnosis_threshold
@@ -55,9 +58,26 @@ class HybridEntityLinker(BaseEntityLinker):
         self.candidate_semantic_floor = candidate_semantic_floor
         self.lexical_weight = lexical_weight
         self.top_k = top_k
-        # Opt-in v8 path: trust unambiguous ontology-drug-recall RxCUI presets.
-        # Default False preserves exact v7 SapBERT drug linking.
-        self.use_unambiguous_preset_drug_rxcui = use_unambiguous_preset_drug_rxcui
+        # Public strategy for ontology preset drug linking.
+        # Default "disabled" preserves exact v7 SapBERT drug linking.
+        # Legacy Boolean use_unambiguous_preset_drug_rxcui maps to override_unambiguous
+        # when preset_drug_link_mode is not explicitly provided.
+        if preset_drug_link_mode is None:
+            mode = (
+                "override_unambiguous"
+                if use_unambiguous_preset_drug_rxcui
+                else "disabled"
+            )
+        else:
+            mode = str(preset_drug_link_mode)
+        if mode not in self.PRESET_DRUG_LINK_MODES:
+            raise ValueError(
+                f"Unknown preset_drug_link_mode={mode!r}. "
+                f"Allowed: {self.PRESET_DRUG_LINK_MODES}"
+            )
+        self.preset_drug_link_mode = mode
+        # Backwards-compatible Boolean: True only for the old override experiment.
+        self.use_unambiguous_preset_drug_rxcui = mode == "override_unambiguous"
         self._sapbert_vi = None
         self._sapbert_en = None
 
@@ -106,9 +126,8 @@ class HybridEntityLinker(BaseEntityLinker):
 
         return best_id, best_semantic_score
 
-    def _valid_unique_preset_rxcuis(self, mention: EntityMention) -> list[str]:
-        """Return sorted unique valid RxCUIs from ontology-recall preset metadata."""
-        raw = mention.metadata.get("preset_rxcui_candidates")
+    def _valid_unique_rxcuis_from(self, raw: object) -> list[str]:
+        """Return sorted unique valid RxCUIs from a raw candidate list."""
         if raw is None:
             return []
         if not isinstance(raw, (list, tuple, set)):
@@ -120,18 +139,16 @@ class HybridEntityLinker(BaseEntityLinker):
                 unique.add(normalized)
         return sorted(unique)
 
-    def _try_preset_drug_link(
+    def _valid_unique_preset_rxcuis(self, mention: EntityMention) -> list[str]:
+        """Return sorted unique valid RxCUIs from ontology-recall preset metadata."""
+        return self._valid_unique_rxcuis_from(
+            mention.metadata.get("preset_rxcui_candidates")
+        )
+
+    def _direct_unambiguous_preset(
         self, mention: EntityMention, metadata: dict
     ) -> tuple[list[str] | None, str]:
-        """Attempt unambiguous preset RxCUI linking.
-
-        Returns (candidates_or_None, fallback_reason).
-        candidates is not None only when the preset path is used.
-        """
-        if not self.use_unambiguous_preset_drug_rxcui:
-            return None, "feature_disabled"
-
-        # Require explicit ontology drug recall provenance (not arbitrary metadata).
+        """Validate direct ontology-recall preset evidence (no SapBERT)."""
         if mention.metadata.get("ontology_drug_recall") is not True:
             return None, "not_ontology_recall"
 
@@ -151,12 +168,110 @@ class HybridEntityLinker(BaseEntityLinker):
             return None, "ambiguous_alias"
 
         unique = valid[0]
-        metadata["drug_link"] = "preset_unambiguous_rxcui"
         metadata["preset_rxcui"] = unique
         metadata["preset_rxcui_count"] = 1
         metadata["preset_rxcui_candidates"] = [unique]
+        return [unique], "direct_preset"
+
+    def _transferred_unambiguous_preset(
+        self, mention: EntityMention, metadata: dict
+    ) -> tuple[list[str] | None, str]:
+        """Validate safely transferred ontology evidence from a contained donor."""
+        if mention.metadata.get("ontology_drug_evidence_conflict") is True:
+            return None, "conflicting_donors"
+        if mention.metadata.get("ontology_drug_evidence_transferred") is not True:
+            return None, "no_transferred_evidence"
+
+        valid = self._valid_unique_rxcuis_from(
+            mention.metadata.get("transferred_preset_rxcui_candidates")
+        )
+        if len(valid) == 0:
+            return None, "invalid_transferred_preset"
+        if len(valid) > 1:
+            return None, "ambiguous_transferred_preset"
+
+        unique = valid[0]
+        metadata["preset_rxcui"] = unique
+        metadata["transferred_preset_rxcui_count"] = 1
+        metadata["transferred_preset_rxcui_candidates"] = [unique]
+        return [unique], "transferred_preset"
+
+    def _try_preset_drug_link(
+        self, mention: EntityMention, metadata: dict
+    ) -> tuple[list[str] | None, str]:
+        """Old v8 override path: unambiguous preset may replace SapBERT entirely.
+
+        Returns (candidates_or_None, fallback_reason).
+        candidates is not None only when the preset path is used.
+        """
+        if self.preset_drug_link_mode != "override_unambiguous":
+            return None, "feature_disabled"
+
+        preset, reason = self._direct_unambiguous_preset(mention, metadata)
+        if preset is None:
+            return None, reason
+
+        metadata["drug_link"] = "preset_unambiguous_rxcui"
         metadata["preset_used"] = True
-        return [unique], "preset_used"
+        return preset, "preset_used"
+
+    def _sapbert_drug_candidates(
+        self, mention: EntityMention, metadata: dict, bundle
+    ) -> list[str]:
+        """Exact v7 SapBERT drug-linking path."""
+        embedding = self._get_sapbert_en().encode_text(
+            [mention.text.lower()], show_progress=False
+        )
+        best_drug_id, best_drug_sim = self._best_hybrid_match(
+            mention.text,
+            embedding,
+            bundle.drugs,
+            bundle.drug_embeddings,
+            "rxcui",
+        )
+        candidates: list[str] = []
+        if best_drug_id is not None and best_drug_sim >= self.drug_threshold:
+            candidates = [best_drug_id]
+        metadata["drug_similarity"] = best_drug_sim
+        return candidates
+
+    def _rescue_unlinked_drug(
+        self, mention: EntityMention, metadata: dict, bundle
+    ) -> list[str]:
+        """V7 SapBERT first; only rescue empty results with safe ontology evidence."""
+        v7_candidates = self._sapbert_drug_candidates(mention, metadata, bundle)
+        if len(v7_candidates) > 0:
+            metadata["drug_link"] = "v7_candidate_preserved"
+            metadata["preset_used"] = False
+            return v7_candidates
+
+        # Priority 1: direct unambiguous ontology recall evidence.
+        direct, direct_reason = self._direct_unambiguous_preset(mention, metadata)
+        if direct is not None:
+            metadata["drug_link"] = "preset_rescue"
+            metadata["drug_link_rescue_kind"] = "direct_preset_rescue"
+            metadata["preset_used"] = True
+            return direct
+
+        # Priority 2: safely transferred unambiguous ontology evidence.
+        transferred, transferred_reason = self._transferred_unambiguous_preset(
+            mention, metadata
+        )
+        if transferred is not None:
+            metadata["drug_link"] = "preset_rescue"
+            metadata["drug_link_rescue_kind"] = "transferred_preset_rescue"
+            metadata["preset_used"] = True
+            return transferred
+
+        metadata["drug_link"] = "unlinked_after_v7_and_rescue"
+        metadata["preset_used"] = False
+        metadata["drug_link_fallback_reason"] = (
+            transferred_reason
+            if transferred_reason
+            not in {"no_transferred_evidence", "feature_disabled"}
+            else direct_reason
+        )
+        return []
 
     def link(
         self, document: Document, mentions: list[EntityMention]
@@ -233,34 +348,26 @@ class HybridEntityLinker(BaseEntityLinker):
                     metadata["diagnosis_similarity"] = best_diag_sim
 
             elif mapped_type == TARGET_LABEL_DRUG:
-                preset_candidates, fallback_reason = self._try_preset_drug_link(
-                    mention, metadata
-                )
-                if preset_candidates is not None:
-                    candidates = preset_candidates
+                if self.preset_drug_link_mode == "rescue_unlinked":
+                    candidates = self._rescue_unlinked_drug(
+                        mention, metadata, bundle
+                    )
                 else:
-                    # Exact current v7 drug-linking behavior (SapBERT fallback).
-                    embedding = self._get_sapbert_en().encode_text(
-                        [mention.text.lower()], show_progress=False
+                    preset_candidates, fallback_reason = self._try_preset_drug_link(
+                        mention, metadata
                     )
-                    best_drug_id, best_drug_sim = self._best_hybrid_match(
-                        mention.text,
-                        embedding,
-                        bundle.drugs,
-                        bundle.drug_embeddings,
-                        "rxcui",
-                    )
-                    if (
-                        best_drug_id is not None
-                        and best_drug_sim >= self.drug_threshold
-                    ):
-                        candidates = [best_drug_id]
-                    metadata["drug_similarity"] = best_drug_sim
-                    # Diagnostic-only fields (stripped from competition JSON).
-                    if self.use_unambiguous_preset_drug_rxcui:
-                        metadata["drug_link"] = "sapbert_fallback"
-                        metadata["drug_link_fallback_reason"] = fallback_reason
-                        metadata["preset_used"] = False
+                    if preset_candidates is not None:
+                        candidates = preset_candidates
+                    else:
+                        # Exact current v7 drug-linking behavior (SapBERT).
+                        candidates = self._sapbert_drug_candidates(
+                            mention, metadata, bundle
+                        )
+                        # Diagnostic-only fields (stripped from competition JSON).
+                        if self.preset_drug_link_mode == "override_unambiguous":
+                            metadata["drug_link"] = "sapbert_fallback"
+                            metadata["drug_link_fallback_reason"] = fallback_reason
+                            metadata["preset_used"] = False
 
             final_entities.append(
                 FinalEntity(

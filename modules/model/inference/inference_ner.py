@@ -43,13 +43,34 @@ class NER:
         pipeline_key = f"{self.mode}_{self.model_name}"
     
         if pipeline_key not in _PIPELINES:
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            statedict_dir = os.path.join(base_dir, "..", "statedict", "ner")
-            if self.mode == 'vietnamese':
-                model_path = os.path.join(statedict_dir, self.model_name)
+            from pathlib import Path
+
+            from modules.core.config import ProjectPaths
+
+            # Prefer v_dataset/statedict (post data-folder rename); fall back to
+            # legacy modules/model/statedict for older checkouts.
+            base_dir = Path(os.path.dirname(os.path.abspath(__file__)))
+            candidates = [
+                ProjectPaths().data_dir / "statedict" / "ner",
+                base_dir / ".." / "statedict" / "ner",
+            ]
+            statedict_dir = None
+            for cand in candidates:
+                cand = cand.resolve()
+                if self.mode == "vietnamese":
+                    probe = cand / self.model_name
+                else:
+                    probe = cand / "eng" / self.model_name
+                if probe.exists():
+                    statedict_dir = cand
+                    break
+            if statedict_dir is None:
+                statedict_dir = candidates[0].resolve()
+            if self.mode == "vietnamese":
+                model_path = str(statedict_dir / self.model_name)
                 label_list = LABEL_LIST_VI
             else:
-                model_path = os.path.join(statedict_dir, "eng", f"{self.model_name}")
+                model_path = str(statedict_dir / "eng" / self.model_name)
                 label_list = LABEL_LIST_EN
         
             if not os.path.exists(model_path):

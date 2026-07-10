@@ -1,0 +1,8 @@
+{
+  "trace_dir": "output/v8_candidate_rescue/same_env/trace",
+  "trace_files": 100,
+  "non_empty": 100,
+  "empty": 0,
+  "empty_names": [],
+  "ok": true
+}

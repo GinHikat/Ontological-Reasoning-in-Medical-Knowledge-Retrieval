@@ -1,0 +1,35 @@
+=== Phase 0 — v8_candidate_rescue starting state ===
+date: 2026-07-10
+branch: tung
+commit: bf9d3998c9d90a4cb2af003892914d99b707e9ac
+status: clean working tree (up to date with origin/tung)
+
+=== git log -5 --oneline ===
+bf9d399 Update documentation and analysis modules
+b59e938 Check kaggle i2b2 dataset (dont know why conll here)
+badbf9a refactor: rename data folder to v_dataset to fix git submodule issue
+39aa6b8 Update
+dabf267 add v_dataset as a submodule
+
+=== Confirmed present ===
+modules/pipelines/v8.py
+  - track_rxcui_sets=True
+  - use_unambiguous_preset_drug_rxcui=True
+modules/components/linking/hybrid.py
+  - use_unambiguous_preset_drug_rxcui
+modules/components/postprocessing/ontology_drug_recall.py
+  - track_rxcui_sets
+  - preset_rxcui_candidates
+
+=== Pipelines constructable at start ===
+v7_structured
+v8_candidate_integrity
+
+=== Notes ===
+- Data path is v_dataset (post-conflict rename from data/).
+- output/ is gitignored; canonical scored v7 artifact
+  output/v7_structured/run1/submission is NOT present on disk.
+- Same-environment fresh v7/v8 runs will be the hard causal gate.
+- Canonical 24.79660 metrics remain the leaderboard reference from state.md.
+- Python env used for this experiment: conda env `nanachi`
+  (sklearn/torch available; base/tung envs have package conflicts).

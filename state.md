@@ -243,8 +243,8 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 2. **Negation + diagnosis conflict:** e.g. `Không chảy máu mũi` still leaves a diagnosis span without `isNegated` and/or a whole-line symptom artifact.
 3. **Upgrade the Drug Dictionary (RxNorm Expansion):** Local `short_drug.csv` still limits `J_candidates` ceiling for SCD-style IDs.
 4. **Precision pass on lab-pair / section recall:** further gate false lab names and over-long symptom bullets.
-5. **Carry ontology preset metadata across drug-boundary expansion / merge** so expanded NER drug spans can still use unambiguous RxCUI presets (v8 currently only helps exact ontology spans).
-6. **Block embedded drug aliases inside symptom phrases** (e.g. `alpain` inside `abdominal pain`).
+5. **Carry ontology preset metadata across drug-boundary expansion / merge** so expanded NER drug spans can still use unambiguous RxCUI presets — attempted in `v8_candidate_rescue` via provenance transfer + rescue-only linking; same-env run rescued 0 (SapBERT already linked almost all drugs).
+6. **Block embedded drug aliases inside symptom phrases** (e.g. `alpain` inside `abdominal pain`) — still open; rescue mode avoids override harm but does not remove the false span.
 
 ---
 
@@ -317,3 +317,23 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
     *   The single change is a noisy embedded alias (`alpain` inside `abdominal pain`).
 6. **Submission ZIP:** `output/v8_candidate_integrity_submission.zip` (also `output/output.zip`), structure `output/1.json`…`100.json`.
 7. **Leaderboard:** No official v8 score yet — do not record metrics until submitted.
+8. **Final conclusion:** Negative / no-op candidate-**override** ablation. Abandoned as a submission candidate because the only change was a false-positive embedded alias (`al pain` / `alpain`), not a safe rescue of unlinked drugs.
+
+### Modification Ver 8b (`v8_candidate_rescue`)
+1. **Goal:** Preserve exact v7 SapBERT drug candidates when present. Only use unambiguous RxNorm ontology evidence to **rescue** currently unlinked THUỐC (direct ontology recall or safe contained-donor provenance transfer). Never override a non-empty v7 candidate.
+2. **Design:**
+    *   Keep `v8_candidate_integrity` unchanged as the historical override ablation.
+    *   New pipeline `v8_candidate_rescue` with:
+        *   `OntologyDrugRecallPostProcessor(track_rxcui_sets=True)`
+        *   `DrugOntologyProvenanceTransferPostProcessor` (after recalls, before `CandidateMerge`)
+        *   `HybridEntityLinker(preset_drug_link_mode="rescue_unlinked")`
+    *   Modes: `disabled` (v7) / `override_unambiguous` (old v8) / `rescue_unlinked` (new).
+3. **Provenance-transfer rules (metadata only):** eligible ontology donors (`exact_norm`/`embedded_compact`, exactly one valid RxCUI); recipient THUỐC strictly contains donor; expansion limits prefix≤15 / suffix≤60 / total≤70 / len≤80; reject sentence markers; medication-extension check after stripping all donors; conflicting RxCUIs → no transfer.
+4. **Same-env causal comparison** (`output/v7_structured/same_env` vs `output/v8_candidate_rescue/same_env`, CPU parallel runner, GPUs occupied by other users):
+    *   Hard invariants: **PASS** (identical text/spans/types/assertions; diagnosis candidates unchanged; existing drug candidates unchanged/removed = 0).
+    *   Total THUỐC: 271; v7 linked 270; v7 unlinked 1 (`NSAID`, no ontology evidence).
+    *   Newly rescued drugs: **0**
+    *   Traces: 100 files, 100 non-empty, 0 empty.
+5. **Submission decision:** **NOT READY TO SUBMIT** (no-op ablation: 0 newly rescued drugs despite correct rescue-only behavior). Do not package a Viettel ZIP.
+6. **Leaderboard:** Do not add metrics until an actual submission with ≥1 safe rescue.
+7. **Path note:** After `data`→`v_dataset` rename, NER weights resolve via `v_dataset/statedict`; LFS objects must be pulled for `statedict` + `viettel/base` dictionaries.

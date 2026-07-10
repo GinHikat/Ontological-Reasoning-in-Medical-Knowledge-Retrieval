@@ -1,0 +1,30 @@
+{
+  "v7_dir": "output/v7_structured/same_env",
+  "v8_dir": "output/v8_candidate_rescue/same_env",
+  "hard_invariants_pass": true,
+  "failures": [],
+  "failure_count": 0,
+  "stats": {
+    "total_drugs": 271,
+    "v7_linked": 270,
+    "v8_linked": 270,
+    "existing_preserved": 270,
+    "v7_unlinked": 1,
+    "v8_unlinked": 1,
+    "still_unlinked": 1
+  },
+  "rescued_rows": [],
+  "unrescued_rows": [
+    {
+      "file": "4",
+      "start": 59,
+      "end": 64,
+      "text": "NSAID",
+      "onto_alias": "",
+      "onto_match": "",
+      "onto_preset": "",
+      "left_context": "1.  Tiền sử bệnh     Bệnh nhân có tiền sử dụng thuốc     - ",
+      "right_context": " để điều trị đau đầu gối (đã ngừng)     - omeprazole (bắt đầ"
+    }
+  ]
+}

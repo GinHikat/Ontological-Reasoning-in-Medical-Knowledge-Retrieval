@@ -1,0 +1,114 @@
+Building pipeline: v7_structured (model=vihealthbert)
+Processing 100 files from /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/var/test
+Submission -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v7_structured/same_env/submission
+Traces     -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v7_structured/same_env/trace
+Running v7_structured/vihealthbert:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][A
+Loading weights:  22%|██▏       | 43/199 [00:00<00:00, 401.89it/s][A
+Loading weights:  42%|████▏     | 84/199 [00:00<00:00, 319.40it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 631.73it/s]
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 5674.61it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 5033.69it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Running v7_structured/vihealthbert:   1%|          | 1/100 [02:23<3:56:49, 143.53s/it]Running v7_structured/vihealthbert:   2%|▏         | 2/100 [02:55<2:07:42, 78.19s/it] Running v7_structured/vihealthbert:   3%|▎         | 3/100 [03:58<1:55:09, 71.23s/it]Running v7_structured/vihealthbert:   4%|▍         | 4/100 [04:32<1:29:51, 56.17s/it]Running v7_structured/vihealthbert:   5%|▌         | 5/100 [05:20<1:24:30, 53.38s/it]Running v7_structured/vihealthbert:   6%|▌         | 6/100 [07:19<1:58:27, 75.61s/it]Running v7_structured/vihealthbert:   7%|▋         | 7/100 [07:52<1:35:41, 61.74s/it]Running v7_structured/vihealthbert:   8%|▊         | 8/100 [08:07<1:11:50, 46.85s/it]Running v7_structured/vihealthbert:   9%|▉         | 9/100 [10:01<1:43:03, 67.95s/it]Running v7_structured/vihealthbert:  10%|█         | 10/100 [11:46<1:58:52, 79.25s/it]Running v7_structured/vihealthbert:  11%|█         | 11/100 [12:18<1:36:15, 64.90s/it]Running v7_structured/vihealthbert:  12%|█▏        | 12/100 [13:30<1:38:09, 66.93s/it]Running v7_structured/vihealthbert:  13%|█▎        | 13/100 [13:59<1:20:22, 55.43s/it]Running v7_structured/vihealthbert:  14%|█▍        | 14/100 [16:42<2:06:17, 88.11s/it]Running v7_structured/vihealthbert:  15%|█▌        | 15/100 [17:03<1:35:57, 67.73s/it]Running v7_structured/vihealthbert:  16%|█▌        | 16/100 [17:21<1:13:54, 52.79s/it]Running v7_structured/vihealthbert:  17%|█▋        | 17/100 [19:24<1:42:23, 74.02s/it]Running v7_structured/vihealthbert:  18%|█▊        | 18/100 [20:28<1:36:57, 70.94s/it]Running v7_structured/vihealthbert:  19%|█▉        | 19/100 [20:45<1:13:52, 54.72s/it]Running v7_structured/vihealthbert:  20%|██        | 20/100 [21:01<57:29, 43.12s/it]  Running v7_structured/vihealthbert:  21%|██        | 21/100 [22:09<1:06:40, 50.64s/it]Parallel run: pipeline=v7_structured workers=4 threads/worker=4
+Total files=100 pending=79 skip_existing=True
+Submission -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v7_structured/same_env/submission
+v7_structured parallel:   0%|          | 0/79 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 46/199 [00:00<00:00, 427.31it/s]Loading weights:  45%|████▍     | 89/199 [00:00<00:00, 357.46it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 721.99it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6784.91it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11010.85it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12837.27it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14400.48it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7637.24it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8935.80it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6430.55it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7008.88it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parallel run: pipeline=v7_structured workers=2 threads/worker=8
+Total files=100 pending=77 skip_existing=True
+Submission -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v7_structured/same_env/submission
+v7_structured parallel:   0%|          | 0/77 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  30%|███       | 60/199 [00:00<00:00, 573.70it/s]Loading weights:  34%|███▍      | 68/199 [00:00<00:00, 641.73it/s]Loading weights:  59%|█████▉    | 118/199 [00:00<00:00, 443.12it/s]Loading weights:  67%|██████▋   | 133/199 [00:00<00:00, 519.24it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 777.62it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 750.33it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8667.45it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8122.88it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5402.44it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5007.99it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+v7_structured parallel:  51%|█████     | 39/77 [1:02:13<1:00:37, 95.73s/it]v7_structured parallel: 100%|██████████| 77/77 [1:04:32<00:00, 42.15s/it]  v7_structured parallel: 100%|██████████| 77/77 [1:04:32<00:00, 50.29s/it]
+Done. newly_written=77 skipped=0 errors=0
+Submission JSON count: 100
+Trace count: 100
