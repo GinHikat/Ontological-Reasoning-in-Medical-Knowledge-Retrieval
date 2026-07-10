@@ -10,6 +10,18 @@ Vietnamese clinical NER + ontology linking for a competition submission pipeline
 - Canonical scored baseline: **`v7_structured` (24.79660)**. Do not replace this leaderboard artifact.
 - Competition JSON is produced by the deterministic pipeline only (offsets, ICD/RxNorm, assertions).
 
+## Machine-local config
+
+Host-specific hardware, absolute paths, disk pressure, and GPU quirks live in
+**`CURRENT_MACHINE.md`** (gitignored).
+
+1. At session start, read `CURRENT_MACHINE.md` if present.
+2. If it is **missing** (new machine / fresh clone), create it from live specs
+   (`hostname`, `lscpu`, `free -h`, `nvidia-smi`, `df -h`, conda envs) and
+   record paths/quirks that agents must respect on that host. Do not invent
+   GPUs, free disk, or conda prefixes.
+3. Keep durable project rules here; keep host facts in `CURRENT_MACHINE.md`.
+
 ## Environments
 
 | Task | Conda env |
@@ -18,6 +30,8 @@ Vietnamese clinical NER + ontology linking for a competition submission pipeline
 | Local Qwen / vLLM server | `v9_vllm` (separate; do not break `nanachi`) |
 
 Do not use env `tung` for the main pipeline (missing sklearn).
+
+Conda activate path is machine-local (see `CURRENT_MACHINE.md`). On this lab host:
 
 ```bash
 source /home/student10/miniforge3/etc/profile.d/conda.sh
@@ -53,7 +67,8 @@ Live progress is **not** maintained in this file.
 
 1. Read `WORKLOG.md` (status + next action).
 2. Read `PLAN.md` (phase checklist + hard constraints).
-3. Use `state.md` for historical scores / conclusions only.
+3. Read or create `CURRENT_MACHINE.md` (host paths / GPU / disk quirks).
+4. Use `state.md` for historical scores / conclusions only.
 
 After meaningful steps, update `WORKLOG.md` in the same turn.
 

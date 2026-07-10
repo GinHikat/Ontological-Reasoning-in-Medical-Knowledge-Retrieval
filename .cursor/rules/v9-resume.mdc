@@ -12,7 +12,8 @@ When the user continues work (or after SSH/chat loss):
 
 1. Read `WORKLOG.md` first → follow **Next action**.
 2. Read `PLAN.md` for phase checklist and experiment constraints.
-3. Do not rely on prior chat; verify processes/cache on disk.
+3. Read `CURRENT_MACHINE.md` if present; if missing, create it from live host specs (see `AGENTS.md`).
+4. Do not rely on prior chat; verify processes/cache on disk.
 
 After each meaningful step, update `WORKLOG.md` in the same turn.
 

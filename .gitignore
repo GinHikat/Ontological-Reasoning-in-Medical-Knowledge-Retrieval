@@ -3,6 +3,9 @@ output/
 folder/
 cache/
 
+# Machine-local hardware / path notes (recreate if missing; see AGENTS.md)
+CURRENT_MACHINE.md
+
 .env
 
 

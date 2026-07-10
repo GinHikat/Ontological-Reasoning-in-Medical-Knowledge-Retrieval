@@ -2,7 +2,7 @@
 
 > **Agents: read this first, then `PLAN.md`.** Update this file after every meaningful step.
 
-Last updated: 2026-07-11 00:45 +07
+Last updated: 2026-07-11 02:10 +07
 
 ## Status
 
@@ -11,6 +11,7 @@ ACTIVE EXPERIMENT: rxnorm_policy_probes (COMPLETE — awaiting manual submit)
 BASELINE: newest v7 same_env (NOT the missing 24.79660 ZIP)
 PARALLEL: v9_llm_recall left untouched
 DECISION: user submits ZIPs manually; fill scores in analysis/rxnorm_probe_leaderboard_results.md
+HYGIENE: CURRENT_MACHINE.md added (gitignored); AGENTS.md points to it
 ```
 
 ## Next action
@@ -48,6 +49,7 @@ Paths under `output/rxnorm_probe_*.zip`.
 - [x] `modules/evaluation/generate_rxnorm_policy_probes.py`
 - [x] Unit tests nystatin + acetaminophen PASS
 - [x] Control + 3 probes + ZIPs + analysis docs
+- [x] `CURRENT_MACHINE.md` (ict14 specs) + `.gitignore` + `AGENTS.md` pointer
 - [ ] Leaderboard scores (user)
 
 ## Unit tests
