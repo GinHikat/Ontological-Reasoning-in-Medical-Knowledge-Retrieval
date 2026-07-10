@@ -480,6 +480,28 @@ class ClinicalEntityLinkingPipeline(BasePipeline):
                     )
                 )
 
+        # Optional LLM-recall diagnostics (v9+); never appears in competition JSON.
+        llm_diag = document.metadata.get("llm_recall_diagnostics")
+        if llm_diag:
+            txt_trace.append("\n" + "=" * 80)
+            txt_trace.append("LLM RECALL DIAGNOSTICS")
+            txt_trace.append("=" * 80)
+            txt_trace.append(f"  document_sha256: {llm_diag.get('document_sha256')}")
+            txt_trace.append(f"  cache_hit: {llm_diag.get('cache_hit')}")
+            for key in (
+                "added",
+                "exact_span_duplicates_skipped",
+                "overlap_rejected",
+                "invalid_rejected",
+                "type_disagreements_logged",
+            ):
+                items = llm_diag.get(key) or []
+                txt_trace.append(f"  {key}: {len(items)}")
+                for item in items:
+                    txt_trace.append(f"    - {item}")
+            if llm_diag.get("error"):
+                txt_trace.append(f"  error: {llm_diag.get('error')}")
+
         txt_trace.append("\n" + "=" * 80)
         txt_trace.append("END OF TRACE")
         txt_trace.append("=" * 80)

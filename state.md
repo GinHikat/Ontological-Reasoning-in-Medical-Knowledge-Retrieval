@@ -319,7 +319,8 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
     *   The single change is a noisy embedded alias (`alpain` inside `abdominal pain`).
 6. **Submission ZIP:** `output/v8_candidate_integrity_submission.zip` (also `output/output.zip`), structure `output/1.json`…`100.json`.
 7. **Leaderboard:** No official v8 score yet — do not record metrics until submitted.
-8. **Final conclusion:** Negative / no-op candidate-**override** ablation. Abandoned as a submission candidate because the only change was a false-positive embedded alias (`al pain` / `alpain`), not a safe rescue of unlinked drugs.
+8. **Final conclusion:** **negative/no-op ablation**. Preset paths 202; candidate no-ops 201; 1 changed candidate (`al pain` inside `abdominal pain` — false-positive ontology match). **Not submitted.**
+
 
 ### Modification Ver 8b (`v8_candidate_rescue`)
 1. **Goal:** Preserve exact v7 SapBERT drug candidates when present. Only use unambiguous RxNorm ontology evidence to **rescue** currently unlinked THUỐC (direct ontology recall or safe contained-donor provenance transfer). Never override a non-empty v7 candidate.
@@ -339,3 +340,19 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 5. **Submission decision:** **NOT READY TO SUBMIT** (no-op ablation: 0 newly rescued drugs despite correct rescue-only behavior). Do not package a Viettel ZIP.
 6. **Leaderboard:** Do not add metrics until an actual submission with ≥1 safe rescue.
 7. **Path note:** After `data`→`v_dataset` rename, NER weights resolve via `v_dataset/statedict`; LFS objects must be pulled for `statedict` + `viettel/base` dictionaries.
+8. **Final conclusion:** **no-op ablation** — newly rescued drugs: **0**. Same-env unlinked drug: `NSAID` (`NO_ONTOLOGY_EVIDENCE`). **Not submitted.** Do not spend more time improving v8.
+
+### Modification Ver 9 (`v9_llm_recall`) — in progress
+1. **Goal:** Use a self-hosted LLM as an independent high-recall entity candidate generator for missing clinical entities, while keeping the existing deterministic pipeline responsible for exact offsets, overlap handling, ICD/RxNorm linking, assertions, and final competition JSON.
+2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API).
+3. **Thinking:** disabled (`enable_thinking=false`).
+4. **Target types:** `TRIỆU_CHỨNG`, `CHẨN_ĐOÁN`, `THUỐC` only.
+5. **Architecture:**
+    *   Phase A: offline LLM candidate cache (`modules/evaluation/generate_v9_llm_cache.py` → `cache/v9_llm_recall/<doc_sha256>.json`)
+    *   strict exact line-indexed alignment (no fuzzy / no LLM offsets)
+    *   second-pass verifier (accept only when proposer type == verifier type)
+    *   Phase B: `v9_llm_recall` pipeline = `v7_structured` + additive non-overlapping `LLMRecallPostProcessor` before `CandidateMerge`
+6. **Hard rules:** LLM must NOT emit competition JSON, ICD, RxNorm, offsets; must NOT replace/modify existing v7 entities/types/candidates/assertions.
+7. **Canonical leaderboard baseline remains:** `v7_structured` score **24.79660** (do not replace).
+8. **Leaderboard:** Do not add v9 metrics until an actual submission is scored.
+

@@ -11,6 +11,7 @@ from modules.pipelines.v8 import (
     build_v8_candidate_integrity_pipeline,
     build_v8_candidate_rescue_pipeline,
 )
+from modules.pipelines.v9 import build_v9_llm_recall_pipeline
 
 NER_MODEL_CHOICES = ["vihealthbert", "vipubmed-deberta", "phobert", "xlm-roberta"]
 
@@ -33,6 +34,10 @@ def _build_v8_rescue(model_name: str = "vihealthbert") -> BasePipeline:
     return build_v8_candidate_rescue_pipeline(model_name=model_name)
 
 
+def _build_v9(model_name: str = "vihealthbert") -> BasePipeline:
+    return build_v9_llm_recall_pipeline(model_name=model_name)
+
+
 PIPELINE_BUILDERS: dict[str, PipelineBuilder] = {
     "legacy_v5": LegacyV5PipelineAdapter,
     "v5_refactored": build_v5_refactored_pipeline,
@@ -40,6 +45,7 @@ PIPELINE_BUILDERS: dict[str, PipelineBuilder] = {
     "v7_structured": _build_v7,
     "v8_candidate_integrity": _build_v8,
     "v8_candidate_rescue": _build_v8_rescue,
+    "v9_llm_recall": _build_v9,
 }
 
 
