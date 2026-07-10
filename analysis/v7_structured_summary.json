@@ -1,0 +1,40 @@
+{
+  "run_name": "v7_structured",
+  "output_dir": "output/v7_structured",
+  "input_dir": "/Volumes/HP_P900/Users/tungnguyen/Programming/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/data/var/test",
+  "num_files": 100,
+  "total_entities": 3160,
+  "avg_entities_per_file": 31.6,
+  "count_by_type": {
+    "CHẨN_ĐOÁN": 216,
+    "THUỐC": 276,
+    "TRIỆU_CHỨNG": 1877,
+    "TÊN_XÉT_NGHIỆM": 655,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 136
+  },
+  "other_types": {},
+  "diagnosis": {
+    "total": 216,
+    "with_candidates": 216,
+    "without_candidates": 0
+  },
+  "drug": {
+    "total": 276,
+    "with_candidates": 274,
+    "without_candidates": 2
+  },
+  "assertions": {
+    "isHistorical": 675,
+    "isNegated": 227,
+    "isFamily": 0,
+    "eligible_with_no_assertion": 1507
+  },
+  "span_quality": {
+    "text_mismatch": 0,
+    "invalid_start_end": 0,
+    "zero_length": 0,
+    "duplicate_exact_spans": 0,
+    "overlapping_spans": 285,
+    "nested_spans": 273
+  }
+}

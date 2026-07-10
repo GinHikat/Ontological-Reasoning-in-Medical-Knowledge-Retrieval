@@ -150,6 +150,31 @@ class HybridEntityLinker(BaseEntityLinker):
                     metadata["diagnosis_similarity"] = best_diag_sim
                     metadata["symptom_similarity"] = best_sym_sim
 
+            elif mapped_type == TARGET_LABEL_DIAGNOSIS:
+                # Already typed as diagnosis (e.g. ontology lexical recall).
+                # Prefer an exact dictionary concept_id when provided; else SapBERT.
+                preset = mention.metadata.get("concept_id")
+                if preset:
+                    candidates = [str(preset)]
+                    metadata["diagnosis_link"] = "preset_concept_id"
+                else:
+                    embedding = self._get_sapbert_vi().encode_text(
+                        [mention.text.lower()], show_progress=False
+                    )
+                    best_diag_id, best_diag_sim = self._best_hybrid_match(
+                        mention.text,
+                        embedding,
+                        bundle.diagnoses,
+                        bundle.diagnosis_embeddings,
+                        "id",
+                    )
+                    if (
+                        best_diag_id is not None
+                        and best_diag_sim >= self.diagnosis_threshold
+                    ):
+                        candidates = [best_diag_id]
+                    metadata["diagnosis_similarity"] = best_diag_sim
+
             elif mapped_type == TARGET_LABEL_DRUG:
                 embedding = self._get_sapbert_en().encode_text(
                     [mention.text.lower()], show_progress=False

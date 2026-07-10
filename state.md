@@ -165,9 +165,27 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 5. **Assertion Scope Tightening:** V6 restricts contextual assertions to the competition-eligible labels only (`CHẨN_ĐOÁN`, `THUỐC`, `TRIỆU_CHỨNG`).
 6. **Generated Full V6 Outputs:** Full V6 runs now live inside the central `output/` folder. The current generated run is at `output/v6_refined/vihealthbert/run1/` with 100 note-level JSON files. External competition/evaluator score has been returned: 22.42480.
 
-### Remaining Ver 6+ Ideas
-1. **Upgrade the Drug Dictionary (RxNorm Expansion):** Our local `short_drug.csv` only contains a subset of IDs, causing mathematically impossible matches (e.g., the test set wants `360047` but our dictionary only has `1360047`). Plan: Download or compile a larger, comprehensive RxNorm dictionary with full Semantic Clinical Drug (SCD) nodes to unlock a higher ceiling for `J_candidates`.
-2. **Simulate Threshold Relaxing:** Currently, SapBERT drops any mapping below a strict `0.7` cosine similarity cutoff. Plan: Experiment with dropping this to `0.6` in combination with the new hybrid lexical tie-breaker, evaluating if the boost in True Positives outweighs the potential noise from False Positives.
+### Modification Ver 7 (`v7_structured`)
+1. **Independent candidate generation:** Stopped treating base NER as the only entity source. Added section-aware + ontology lexical recall on top of the unchanged `v6_refined` stack.
+2. **New components:**
+    *   `VietnameseClinicalSectionParser` — shared section boundaries with original offsets.
+    *   `SectionAwareRecallPostProcessor` — symptom bullets / short reason-for-admission phrases.
+    *   `LabPairRecallPostProcessor` — lab name/result pairs (`kali là 6.6 mmol/l`, `WBC:14,43`, etc.).
+    *   `OntologyDrugRecallPostProcessor` — exact + compact embedded drug recovery (`Dùngmethadonekéo dài`, `vancozosyn`, `bactrim`).
+    *   `OntologyDiagnosisRecallPostProcessor` — conservative ICD lexical recall in priority sections.
+    *   `CandidateMergePostProcessor` — deterministic conflict resolution by evidence source.
+3. **Assertions:** Extended `RuleBasedAssertionDetector` with optional shared section context for `isHistorical` (v6 defaults preserved; v7 enables section parser).
+4. **Linker:** `HybridEntityLinker` can now assign ICD candidates for already-typed `CHẨN_ĐOÁN` mentions (including preset concept IDs from ontology recall).
+5. **Pipeline registration:** `v7_structured` in `modules/pipelines/v7.py` + `modules/pipelines/factory.py`.
+6. **Diagnostics:** `modules/evaluation/analyze_outputs.py`, `compare_outputs.py`, and `analysis/v6_vs_v7.md`.
+7. **Run command:** `python modules/evaluation/run_pipeline.py --pipeline v7_structured --output-dir output/v7_structured`
+8. **External leaderboard:** Score **24.25880** (see evaluation table below).
+
+### Remaining Ver 7+ Ideas
+1. **Reduce nested/overlapping spans:** v7 still has more overlaps than v6; strengthen merge/dedup so ontology drug spans replace concatenated NER junk (`lasixđã`, `Dùngmethadonekéo dài`).
+2. **Negation + diagnosis conflict:** e.g. `Không chảy máu mũi` still leaves a diagnosis span without `isNegated` and/or a whole-line symptom artifact.
+3. **Upgrade the Drug Dictionary (RxNorm Expansion):** Local `short_drug.csv` still limits `J_candidates` ceiling for SCD-style IDs.
+4. **Precision pass on lab-pair / section recall:** further gate false lab names and over-long symptom bullets.
 
 ---
 
@@ -212,3 +230,11 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 *   **J_assertion:** 28.8905
 *   **J_candidates:** 14.2511
 *   **Records Scored:** 100
+
+**Evaluation Results (7th Run - Mod Ver 7: Section-aware + Ontology Lexical Recall):**
+*   **Score (Điểm):** 24.25880
+*   **WER:** 72.035
+*   **J_assertion:** 30.2838
+*   **J_candidates:** 16.9605
+*   **Records Scored:** 100
+*   **Delta vs v6:** Score +1.834 / WER −1.108 / J_assertion +1.393 / J_candidates +2.709
