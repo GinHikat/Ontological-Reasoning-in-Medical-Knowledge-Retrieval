@@ -1,0 +1,115 @@
+[
+    {
+        "text": "xơ gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            61,
+            67
+        ]
+    },
+    {
+        "text": "xơ gan do rượu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            61,
+            75
+        ],
+        "candidates": [
+            "K703"
+        ]
+    },
+    {
+        "text": "rượu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            71,
+            75
+        ]
+    },
+    {
+        "text": "sử dụng rượu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            121,
+            133
+        ],
+        "candidates": [
+            "Z721"
+        ]
+    },
+    {
+        "text": "bia",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            134,
+            137
+        ]
+    },
+    {
+        "text": "hội chứng não gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            191,
+            208
+        ]
+    },
+    {
+        "text": "hội chứng não gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            270,
+            287
+        ]
+    },
+    {
+        "text": "hội chứng não gan tiến triển",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            338,
+            366
+        ]
+    },
+    {
+        "text": "ý thức suy giảm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            368,
+            383
+        ]
+    },
+    {
+        "text": "hội chứng não gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            432,
+            449
+        ]
+    },
+    {
+        "text": "đặt shunt dẫn lưu tĩnh mạch cửa qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            555,
+            593
+        ]
+    }
+]

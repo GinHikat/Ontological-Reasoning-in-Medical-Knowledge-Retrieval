@@ -1,0 +1,54 @@
+[
+    {
+        "text": "tách thành động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            72
+        ],
+        "candidates": [
+            "I710"
+        ]
+    },
+    {
+        "text": "liệt hai chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            89,
+            102
+        ]
+    },
+    {
+        "text": "can thiệp nội mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            136,
+            154
+        ]
+    },
+    {
+        "text": "rung động",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            274,
+            283
+        ]
+    },
+    {
+        "text": "Rò động - tĩnh mạch đùi phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            335,
+            363
+        ]
+    }
+]

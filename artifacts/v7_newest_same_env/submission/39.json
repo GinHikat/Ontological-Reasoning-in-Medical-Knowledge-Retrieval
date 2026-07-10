@@ -1,0 +1,184 @@
+[
+    {
+        "text": "đau bụng dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            37,
+            52
+        ]
+    },
+    {
+        "text": "đau bụng dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            118,
+            133
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            136,
+            147
+        ]
+    },
+    {
+        "text": "ớn lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            150,
+            157
+        ]
+    },
+    {
+        "text": "mất ăn ngon",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            160,
+            171
+        ]
+    },
+    {
+        "text": "Vị trí: thượng vị và góc phần tư trên bên phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            195,
+            241
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: nghiêm trọng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            244,
+            277
+        ]
+    },
+    {
+        "text": "Triệu chứng kèm theo: chướng bụng, ớn lạnh, mất ăn ngon",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            280,
+            335
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            302,
+            313
+        ]
+    },
+    {
+        "text": "ớn lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            315,
+            322
+        ]
+    },
+    {
+        "text": "mất ăn ngon",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            324,
+            335
+        ]
+    },
+    {
+        "text": "buồn nôn hoặc nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            347,
+            364
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            412,
+            415
+        ]
+    },
+    {
+        "text": "nhịp tim nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            418,
+            432
+        ]
+    },
+    {
+        "text": "công thức máu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            454,
+            467
+        ]
+    },
+    {
+        "text": "suy thận cấp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            476,
+            488
+        ]
+    },
+    {
+        "text": "bất thường điện giải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            491,
+            511
+        ]
+    },
+    {
+        "text": "lớp vi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            557,
+            563
+        ]
+    },
+    {
+        "text": "viêm túi mật thủng cấp tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            578,
+            605
+        ]
+    },
+    {
+        "text": "Đặt ống dẫn lưu phúc mạc qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            627,
+            658
+        ]
+    }
+]

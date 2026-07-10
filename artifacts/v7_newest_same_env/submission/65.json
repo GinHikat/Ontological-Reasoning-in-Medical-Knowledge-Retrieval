@@ -1,0 +1,130 @@
+[
+    {
+        "text": "máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            50,
+            53
+        ]
+    },
+    {
+        "text": "Lý do nhập viện",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            75,
+            90
+        ]
+    },
+    {
+        "text": "đại tiện ra máu đỏ tươi gián đoạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            99,
+            132
+        ]
+    },
+    {
+        "text": "đại tiện ra máu đỏ tươi gián đoạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            196,
+            229
+        ]
+    },
+    {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            232,
+            241
+        ]
+    },
+    {
+        "text": "Vị trí: qua đường hậu môn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            265,
+            290
+        ]
+    },
+    {
+        "text": "Màu sắc: đỏ tươi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            293,
+            309
+        ]
+    },
+    {
+        "text": "Triệu chứng kèm theo: chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            312,
+            343
+        ]
+    },
+    {
+        "text": "inr",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            418,
+            421
+        ]
+    },
+    {
+        "text": "2.0",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            425,
+            428
+        ]
+    },
+    {
+        "text": "rối loạn đông máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            489,
+            506
+        ]
+    },
+    {
+        "text": "tăng Cr",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            531,
+            538
+        ]
+    },
+    {
+        "text": "inr",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            606,
+            609
+        ]
+    },
+    {
+        "text": "2.0",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            613,
+            616
+        ]
+    }
+]

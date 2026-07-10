@@ -1,0 +1,365 @@
+[
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "Suy thận mạn giai đoạn V",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            72
+        ],
+        "candidates": [
+            "N185"
+        ]
+    },
+    {
+        "text": "đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            76,
+            90
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            94,
+            107
+        ]
+    },
+    {
+        "text": "u ác của tuyến tiền liệt",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            114,
+            138
+        ],
+        "candidates": [
+            "C61"
+        ]
+    },
+    {
+        "text": "xạ trị cấy hạt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            153,
+            167
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            181,
+            191
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            194,
+            203
+        ]
+    },
+    {
+        "text": "Phẫu thuật cắt bỏ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            210,
+            227
+        ]
+    },
+    {
+        "text": "u dây thần kinh số VIII",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            228,
+            251
+        ]
+    },
+    {
+        "text": "shunt động tĩnh mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            263,
+            283
+        ]
+    },
+    {
+        "text": "AVF",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            285,
+            288
+        ]
+    },
+    {
+        "text": "Sinh thiết tuyến tiền liệt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            317,
+            343
+        ]
+    },
+    {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            387,
+            394
+        ]
+    },
+    {
+        "text": "mất trí nhớ chi tiết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            396,
+            416
+        ]
+    },
+    {
+        "text": "khó chịu mệt mỏi nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            439,
+            461
+        ]
+    },
+    {
+        "text": "ăn không ngon miệng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            463,
+            482
+        ]
+    },
+    {
+        "text": "ngứa da toàn thân nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            484,
+            507
+        ]
+    },
+    {
+        "text": "mất trí nhớ chi tiết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            512,
+            532
+        ]
+    },
+    {
+        "text": "khó thở khi gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            534,
+            554
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            568,
+            576
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            581,
+            584
+        ]
+    },
+    {
+        "text": "Mệt mỏi nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            628,
+            641
+        ]
+    },
+    {
+        "text": "Ăn không ngon miệng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            648,
+            667
+        ]
+    },
+    {
+        "text": "Ngứa da toàn thân nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            674,
+            697
+        ]
+    },
+    {
+        "text": "mất trí nhớ chi tiết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            704,
+            724
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            731,
+            738
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            759,
+            767
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            771,
+            774
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            823,
+            833
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": "tăng từ 5.2 lên 6.3 mg/dl (460 - 557 umol/l) và",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            834,
+            881
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            933,
+            938
+        ]
+    },
+    {
+        "text": "photpho",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            953,
+            960
+        ]
+    },
+    {
+        "text": "8.4",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            961,
+            964
+        ]
+    },
+    {
+        "text": "ghép thận",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1033,
+            1042
+        ]
+    },
+    {
+        "text": "u ác của tuyến tiền liệtAnh",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1081,
+            1108
+        ],
+        "candidates": [
+            "C61"
+        ]
+    },
+    {
+        "text": "chạy thận nhân tạo",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1227,
+            1245
+        ]
+    }
+]

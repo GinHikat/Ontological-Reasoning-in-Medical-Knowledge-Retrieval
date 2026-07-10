@@ -1,0 +1,329 @@
+[
+    {
+        "text": "ung thư biểu mô tế bào mật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            238,
+            264
+        ]
+    },
+    {
+        "text": "đặt stent thành vách vĩnh viễn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            346,
+            376
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            733,
+            741
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            743,
+            746
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            748,
+            751
+        ]
+    },
+    {
+        "text": "ớn lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            753,
+            760
+        ]
+    },
+    {
+        "text": "dịch rò rỉ quanh ống thông",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            767,
+            793
+        ]
+    },
+    {
+        "text": "cholan",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            814,
+            820
+        ],
+        "candidates": [
+            "992825"
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1042,
+            1052
+        ]
+    },
+    {
+        "text": "và lấy mẫu bằng bàn chải vào ngày [Ngày] và kết quả lấy mẫu bằng bàn chải cho thấy tế bào bất thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1053,
+            1153
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1169,
+            1191
+        ]
+    },
+    {
+        "text": "stent thành vách vĩnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1294,
+            1315
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1503,
+            1511
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1513,
+            1516
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1518,
+            1526
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1533,
+            1540
+        ]
+    },
+    {
+        "text": "đau khi sờ nắn xung",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1575,
+            1594
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1930,
+            1938
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1940,
+            1943
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1945,
+            1948
+        ]
+    },
+    {
+        "text": "ớn lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1950,
+            1957
+        ]
+    },
+    {
+        "text": "dịch rò rỉ quanh ống thông",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1964,
+            1990
+        ]
+    },
+    {
+        "text": "cholan",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            2011,
+            2017
+        ],
+        "candidates": [
+            "992825"
+        ]
+    },
+    {
+        "text": "thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2233,
+            2238
+        ]
+    },
+    {
+        "text": "và lấy mẫu bằng bàn chải vào ngày [Ngày] và kết quả lấy mẫu bằng bàn chải cho thấy các tế bào bất thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2239,
+            2343
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2362,
+            2383
+        ]
+    },
+    {
+        "text": "stent thành vách vĩnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2487,
+            2508
+        ]
+    },
+    {
+        "text": "đau khi sờ nắn xung quanh vị trí",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2566,
+            2598
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2751,
+            2772
+        ]
+    },
+    {
+        "text": "cholan",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            2805,
+            2811
+        ],
+        "candidates": [
+            "992825"
+        ]
+    },
+    {
+        "text": "cholangiogram",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2805,
+            2818
+        ]
+    },
+    {
+        "text": "Đặt 3 stent thành vách vĩnh viễn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2952,
+            2984
+        ]
+    }
+]

@@ -1,0 +1,115 @@
+[
+    {
+        "text": "Nhiễm trùng đường tiết niệu kháng thuốc",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            45,
+            84
+        ]
+    },
+    {
+        "text": "theo dõi đại tràng giãn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            129,
+            152
+        ]
+    },
+    {
+        "text": "đại tràng giãn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            138,
+            152
+        ]
+    },
+    {
+        "text": "ý thúc chậm hơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            275,
+            290
+        ]
+    },
+    {
+        "text": "CT ở tuyến",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            300,
+            310
+        ]
+    },
+    {
+        "text": "trước chưa phát hiện bất thường trên phim chụp",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            311,
+            357
+        ]
+    },
+    {
+        "text": "lơ mơ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            415,
+            420
+        ]
+    },
+    {
+        "text": "xét",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            460,
+            463
+        ]
+    },
+    {
+        "text": "Bạch cầu tăng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            472,
+            485
+        ]
+    },
+    {
+        "text": "chụp ctchưa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            518,
+            529
+        ]
+    },
+    {
+        "text": "đại tràng giãn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            598,
+            612
+        ]
+    }
+]

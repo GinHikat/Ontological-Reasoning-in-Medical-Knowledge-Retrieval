@@ -1,0 +1,106 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            61
+        ]
+    },
+    {
+        "text": "suy tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            68,
+            75
+        ]
+    },
+    {
+        "text": "suy tim, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            68,
+            91
+        ],
+        "candidates": [
+            "I509"
+        ]
+    },
+    {
+        "text": "bệnh thận mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            98,
+            111
+        ]
+    },
+    {
+        "text": "đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            119,
+            127
+        ]
+    },
+    {
+        "text": "phình động mạch chủ ngực – bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            231,
+            262
+        ]
+    },
+    {
+        "text": "sử dụng thuốc lá",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            339,
+            355
+        ],
+        "candidates": [
+            "Z720"
+        ]
+    },
+    {
+        "text": "phẫu thuật sửa van tĩnh mạch chủ ngực bụng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            451,
+            493
+        ]
+    }
+]

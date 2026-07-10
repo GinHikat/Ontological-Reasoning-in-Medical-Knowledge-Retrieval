@@ -1,0 +1,85 @@
+[
+    {
+        "text": "bệnh nội khoa\nUng thư vú di căn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            11,
+            42
+        ]
+    },
+    {
+        "text": "tràn dịch màng phổi trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            44,
+            68
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            116,
+            123
+        ]
+    },
+    {
+        "text": "tràn dịch màng ngoài tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            156,
+            180
+        ]
+    },
+    {
+        "text": "ung thư",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            227,
+            234
+        ]
+    },
+    {
+        "text": "dẫn lưu dịch màng tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            304,
+            325
+        ]
+    },
+    {
+        "text": "dính màng phổi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            348,
+            362
+        ]
+    },
+    {
+        "text": "talc",
+        "type": "THUỐC",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            368,
+            372
+        ],
+        "candidates": [
+            "10323"
+        ]
+    }
+]

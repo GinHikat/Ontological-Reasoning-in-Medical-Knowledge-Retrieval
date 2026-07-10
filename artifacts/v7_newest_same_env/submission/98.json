@@ -1,0 +1,120 @@
+[
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            53,
+            66
+        ]
+    },
+    {
+        "text": "hóa trị huy động tế bào gốc.",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            105,
+            133
+        ]
+    },
+    {
+        "text": "ho",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            165,
+            167
+        ]
+    },
+    {
+        "text": "đau lưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            174,
+            182
+        ]
+    },
+    {
+        "text": "phim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            227,
+            231
+        ]
+    },
+    {
+        "text": "CT hình ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            237,
+            248
+        ]
+    },
+    {
+        "text": "đa u tuỷ xương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            291,
+            305
+        ]
+    },
+    {
+        "text": "bệnh đa u tuỷ xương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            355,
+            374
+        ]
+    },
+    {
+        "text": "tổn thương ổ tiêu xương lan tỏa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            438,
+            469
+        ]
+    },
+    {
+        "text": "Đa u tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            485,
+            493
+        ],
+        "candidates": [
+            "C900"
+        ]
+    },
+    {
+        "text": "Đa u tủy xương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            485,
+            499
+        ]
+    }
+]

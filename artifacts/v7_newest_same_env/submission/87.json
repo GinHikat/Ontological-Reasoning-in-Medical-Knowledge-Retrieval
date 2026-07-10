@@ -1,0 +1,198 @@
+[
+    {
+        "text": "Bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            85,
+            101
+        ]
+    },
+    {
+        "text": "trầm cảm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            108,
+            116
+        ]
+    },
+    {
+        "text": "rối loạn lo âu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            121,
+            135
+        ]
+    },
+    {
+        "text": "tổn thương chi dưới do tự tử",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            179,
+            207
+        ],
+        "candidates": [
+            "T93"
+        ]
+    },
+    {
+        "text": "buồn chán",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            314,
+            323
+        ]
+    },
+    {
+        "text": "nhiều rượu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            330,
+            340
+        ]
+    },
+    {
+        "text": "tổn thương chi dưới",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            441,
+            460
+        ],
+        "candidates": [
+            "T93"
+        ]
+    },
+    {
+        "text": "trầm cảm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            555,
+            563
+        ]
+    },
+    {
+        "text": "tổn thương tổn thương chi dưới nghiêm trọng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            622,
+            665
+        ],
+        "candidates": [
+            "T93"
+        ]
+    },
+    {
+        "text": "Phẫu thuật cắt cụt chân trái",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            678,
+            706
+        ]
+    },
+    {
+        "text": "cắt cụt chân phải",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            724,
+            741
+        ]
+    },
+    {
+        "text": "thuyên tắc phổi hai bên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            768,
+            791
+        ]
+    },
+    {
+        "text": "nhiễm trùng chi dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            795,
+            815
+        ]
+    },
+    {
+        "text": "vancomycin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            847,
+            857
+        ],
+        "candidates": [
+            "11124"
+        ]
+    },
+    {
+        "text": "phẫu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            877,
+            881
+        ]
+    },
+    {
+        "text": "kháng sinh tĩnh mạch",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            943,
+            963
+        ],
+        "candidates": [
+            "852617"
+        ]
+    },
+    {
+        "text": "lắp chân giả",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            988,
+            1000
+        ]
+    },
+    {
+        "text": "nghĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1015,
+            1019
+        ]
+    },
+    {
+        "text": "một chấn thương từ bên ngoài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1086,
+            1114
+        ]
+    }
+]

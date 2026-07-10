@@ -1,0 +1,519 @@
+[
+    {
+        "text": "bệnh nội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            11,
+            19
+        ]
+    },
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            24,
+            40
+        ]
+    },
+    {
+        "text": "ho Bệnh bạch cầu dòng tủy mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            43,
+            77
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            80,
+            93
+        ]
+    },
+    {
+        "text": "Đái tháo đường típ 2",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            96,
+            116
+        ]
+    },
+    {
+        "text": "ho Rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            119,
+            130
+        ]
+    },
+    {
+        "text": "đáp ứng thất nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            135,
+            153
+        ]
+    },
+    {
+        "text": "bệnh thận mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            156,
+            169
+        ]
+    },
+    {
+        "text": "đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            177,
+            185
+        ]
+    },
+    {
+        "text": "Khó thở tăng dần",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            222,
+            238
+        ]
+    },
+    {
+        "text": "nghẹt ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            343,
+            353
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            358,
+            361
+        ]
+    },
+    {
+        "text": "nhiệt độ cao nhất",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            363,
+            380
+        ]
+    },
+    {
+        "text": "38,3°C.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            388,
+            395
+        ]
+    },
+    {
+        "text": "nghẹt ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            435,
+            445
+        ]
+    },
+    {
+        "text": "khó thở tăng dần",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            504,
+            520
+        ]
+    },
+    {
+        "text": "phù ngoại vi tăng dần",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            548,
+            569
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            640,
+            643
+        ]
+    },
+    {
+        "text": "đau vai.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            647,
+            655
+        ]
+    },
+    {
+        "text": "suy hô hấp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            700,
+            710
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            715,
+            728
+        ]
+    },
+    {
+        "text": "methicillin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1033,
+            1044
+        ],
+        "candidates": [
+            "2181306"
+        ]
+    },
+    {
+        "text": "Siêu âm mạch máu chi trên",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1116,
+            1141
+        ]
+    },
+    {
+        "text": "chi trên không ghi nhận huyết khối",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1133,
+            1167
+        ]
+    },
+    {
+        "text": "xạ hình thông khí - tưới máu phổi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1169,
+            1202
+        ]
+    },
+    {
+        "text": "thuyên tắc phổi.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            1226,
+            1242
+        ]
+    },
+    {
+        "text": "khò khè",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1382,
+            1389
+        ],
+        "candidates": [
+            "R294"
+        ]
+    },
+    {
+        "text": "ho tăng lên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1393,
+            1404
+        ]
+    },
+    {
+        "text": "albuterol",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1465,
+            1474
+        ],
+        "candidates": [
+            "435"
+        ]
+    },
+    {
+        "text": "guaifenesin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1487,
+            1498
+        ],
+        "candidates": [
+            "5032"
+        ]
+    },
+    {
+        "text": "furosemide",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1502,
+            1512
+        ]
+    },
+    {
+        "text": "furosemide 40 mg",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1502,
+            1518
+        ],
+        "candidates": [
+            "315971"
+        ]
+    },
+    {
+        "text": "Khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1651,
+            1658
+        ]
+    },
+    {
+        "text": "Nghẹt ngực kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1691,
+            1709
+        ]
+    },
+    {
+        "text": "Khò khè\nPhù ngoại vi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1714,
+            1734
+        ]
+    },
+    {
+        "text": "sốt 38,3°C",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1775,
+            1785
+        ]
+    },
+    {
+        "text": "khò khè",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1875,
+            1882
+        ],
+        "candidates": [
+            "R294"
+        ]
+    },
+    {
+        "text": "nghẹt ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1985,
+            1995
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            2060,
+            2068
+        ]
+    },
+    {
+        "text": "ho nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            2074,
+            2082
+        ]
+    },
+    {
+        "text": "Nhiễm khuẩn huyết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            2114,
+            2131
+        ]
+    },
+    {
+        "text": "tụ cầu vàng nhạy cảm methicillin",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            2135,
+            2167
+        ]
+    },
+    {
+        "text": "methicillin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            2156,
+            2167
+        ],
+        "candidates": [
+            "2181306"
+        ]
+    },
+    {
+        "text": "Siêu âm mạch máu chi trên",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2199,
+            2224
+        ]
+    },
+    {
+        "text": "chi trên không ghi nhận huyết khối",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2216,
+            2250
+        ]
+    },
+    {
+        "text": "Xạ hình thông khí",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2252,
+            2269
+        ]
+    },
+    {
+        "text": "tưới máu phổi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2272,
+            2285
+        ]
+    },
+    {
+        "text": "thuyên tắc phổi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            2309,
+            2324
+        ]
+    }
+]

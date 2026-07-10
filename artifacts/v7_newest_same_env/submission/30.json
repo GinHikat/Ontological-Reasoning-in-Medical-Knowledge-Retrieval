@@ -1,0 +1,273 @@
+[
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            50
+        ]
+    },
+    {
+        "text": "Bệnh bạch cầu dòng tủy mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            57,
+            88
+        ]
+    },
+    {
+        "text": "tăng cholesterol máu đơn thuần",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            95,
+            125
+        ],
+        "candidates": [
+            "E780"
+        ]
+    },
+    {
+        "text": "cholesterol",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            100,
+            111
+        ],
+        "candidates": [
+            "2438"
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            132,
+            145
+        ]
+    },
+    {
+        "text": "gleevec",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            190,
+            197
+        ],
+        "candidates": [
+            "282386"
+        ]
+    },
+    {
+        "text": "allopurinol",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            239,
+            250
+        ],
+        "candidates": [
+            "519"
+        ]
+    },
+    {
+        "text": "Thuốc giảm đau",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            293,
+            307
+        ]
+    },
+    {
+        "text": "ảo giác",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            363,
+            370
+        ]
+    },
+    {
+        "text": "ảo giácxuất",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            451,
+            462
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            515,
+            532
+        ]
+    },
+    {
+        "text": "Thuốc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            573,
+            578
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            664,
+            691
+        ]
+    },
+    {
+        "text": "thuốc giảm đau",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            724,
+            738
+        ]
+    },
+    {
+        "text": "gleevec",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            751,
+            758
+        ],
+        "candidates": [
+            "282386"
+        ]
+    },
+    {
+        "text": "allopurinol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            797,
+            808
+        ],
+        "candidates": [
+            "519"
+        ]
+    },
+    {
+        "text": "ảo giác",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            847,
+            854
+        ]
+    },
+    {
+        "text": "ảo giác",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            919,
+            926
+        ]
+    },
+    {
+        "text": "Ảo giác",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1076,
+            1083
+        ]
+    },
+    {
+        "text": "hoang tưởng/lo sợ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1131,
+            1148
+        ],
+        "candidates": [
+            "F40"
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1232,
+            1259
+        ]
+    },
+    {
+        "text": "Thuốc giảm đau",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1289,
+            1303
+        ],
+        "candidates": [
+            "2380565"
+        ]
+    },
+    {
+        "text": "gleevec",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1324,
+            1331
+        ],
+        "candidates": [
+            "282386"
+        ]
+    },
+    {
+        "text": "allopurinol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1369,
+            1380
+        ],
+        "candidates": [
+            "519"
+        ]
+    },
+    {
+        "text": "ảo giác khoảng mỗi đêm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1453,
+            1475
+        ]
+    }
+]

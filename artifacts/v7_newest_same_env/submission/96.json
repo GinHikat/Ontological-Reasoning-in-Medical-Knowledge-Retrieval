@@ -1,0 +1,528 @@
+[
+    {
+        "text": "viêm tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            18,
+            26
+        ],
+        "candidates": [
+            "K040"
+        ]
+    },
+    {
+        "text": "viêm tủy xương mãn tính",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            18,
+            41
+        ],
+        "candidates": [
+            "M863"
+        ]
+    },
+    {
+        "text": "liệt hai chi dưới",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            81,
+            98
+        ],
+        "candidates": [
+            "G821"
+        ]
+    },
+    {
+        "text": "loét tì đè giai",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            102,
+            117
+        ]
+    },
+    {
+        "text": "tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            130,
+            134
+        ]
+    },
+    {
+        "text": "đặt lưu sonde tiểu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            137,
+            155
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            163,
+            190
+        ]
+    },
+    {
+        "text": "zosyn",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            241,
+            246
+        ],
+        "candidates": [
+            "74170"
+        ]
+    },
+    {
+        "text": "bactrim",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            321,
+            328
+        ],
+        "candidates": [
+            "151399"
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            341,
+            368
+        ]
+    },
+    {
+        "text": "sốt cao",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            407,
+            414
+        ]
+    },
+    {
+        "text": "hạ huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            466,
+            477
+        ]
+    },
+    {
+        "text": "nhiễm trùng huyết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            497,
+            514
+        ]
+    },
+    {
+        "text": "zosyn",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            546,
+            551
+        ],
+        "candidates": [
+            "74170"
+        ]
+    },
+    {
+        "text": "bactrim",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            551,
+            558
+        ],
+        "candidates": [
+            "151399"
+        ]
+    },
+    {
+        "text": "viêm tuỷ xương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            575,
+            589
+        ]
+    },
+    {
+        "text": "zosyn",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            604,
+            609
+        ],
+        "candidates": [
+            "74170"
+        ]
+    },
+    {
+        "text": "viêm tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            655,
+            663
+        ],
+        "candidates": [
+            "K040"
+        ]
+    },
+    {
+        "text": "viêm tủy xương mãn tính",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            655,
+            678
+        ],
+        "candidates": [
+            "M863"
+        ]
+    },
+    {
+        "text": "sốt cao 39.7 độ C",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            822,
+            839
+        ]
+    },
+    {
+        "text": "39.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            830,
+            834
+        ]
+    },
+    {
+        "text": "Cảm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            896,
+            899
+        ]
+    },
+    {
+        "text": "khát nước\nDa khô",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            905,
+            921
+        ]
+    },
+    {
+        "text": "nếp véo da mất chậm\nKhông ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            923,
+            953
+        ]
+    },
+    {
+        "text": "không khó thở\nĐau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            956,
+            978
+        ]
+    },
+    {
+        "text": "đau hông từng cơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            980,
+            997
+        ]
+    },
+    {
+        "text": "Hạ huyết áp\nMạch nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            999,
+            1021
+        ]
+    },
+    {
+        "text": "Tim nhịp nhanh đều\nPhổi thông khí đều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1023,
+            1060
+        ]
+    },
+    {
+        "text": "nước tiểu có cặn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1077,
+            1093
+        ]
+    },
+    {
+        "text": "lactate",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1111,
+            1118
+        ]
+    },
+    {
+        "text": "1.1-->0.8",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1119,
+            1128
+        ]
+    },
+    {
+        "text": "tiểu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1140,
+            1144
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1147,
+            1174
+        ]
+    },
+    {
+        "text": "cấy máu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1201,
+            1208
+        ]
+    },
+    {
+        "text": "âm tính",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1210,
+            1217
+        ]
+    },
+    {
+        "text": "marker viêm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1226,
+            1237
+        ]
+    },
+    {
+        "text": "MRI",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1294,
+            1297
+        ]
+    },
+    {
+        "text": "viêm xương tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1322,
+            1336
+        ],
+        "candidates": [
+            "M86"
+        ]
+    },
+    {
+        "text": "Xquang ngực thẳng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1348,
+            1365
+        ]
+    },
+    {
+        "text": "svo2",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1402,
+            1406
+        ]
+    },
+    {
+        "text": "Đặt ống thông tĩnh mạch trung tâm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1413,
+            1446
+        ]
+    },
+    {
+        "text": "đo cvp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1449,
+            1455
+        ]
+    },
+    {
+        "text": "nhiễm trùng huyết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1472,
+            1489
+        ]
+    },
+    {
+        "text": "viêm tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1511,
+            1519
+        ],
+        "candidates": [
+            "K040"
+        ]
+    },
+    {
+        "text": "viêm tủy xương mãn tính",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1511,
+            1534
+        ],
+        "candidates": [
+            "M863"
+        ]
+    },
+    {
+        "text": "Truyền dịch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1550,
+            1561
+        ]
+    },
+    {
+        "text": "4000",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1564,
+            1568
+        ]
+    },
+    {
+        "text": "0.9 %",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1575,
+            1580
+        ]
+    },
+    {
+        "text": "Kháng sinh Cefepim",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1583,
+            1601
+        ],
+        "candidates": [
+            "2282002"
+        ]
+    },
+    {
+        "text": "Vancomycin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1605,
+            1615
+        ],
+        "candidates": [
+            "11124"
+        ]
+    },
+    {
+        "text": "tĩnh mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1623,
+            1632
+        ]
+    }
+]

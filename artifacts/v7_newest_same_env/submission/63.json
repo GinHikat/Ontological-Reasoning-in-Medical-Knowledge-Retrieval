@@ -1,0 +1,371 @@
+[
+    {
+        "text": "túi thừa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            58,
+            66
+        ]
+    },
+    {
+        "text": "colace",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            175,
+            181
+        ]
+    },
+    {
+        "text": "đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            230,
+            238
+        ]
+    },
+    {
+        "text": "đột ngột đau hố chậu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            286,
+            306
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            355,
+            362
+        ]
+    },
+    {
+        "text": "đi đại tiện vài lần liên tục",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            429,
+            457
+        ]
+    },
+    {
+        "text": "phân có vẻ thành khuôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            459,
+            481
+        ]
+    },
+    {
+        "text": "đột ngột đau hố chậu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            526,
+            546
+        ]
+    },
+    {
+        "text": "tylenol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            618,
+            625
+        ],
+        "candidates": [
+            "202433"
+        ]
+    },
+    {
+        "text": "đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            630,
+            633
+        ]
+    },
+    {
+        "text": "tylenol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            655,
+            662
+        ],
+        "candidates": [
+            "202433"
+        ]
+    },
+    {
+        "text": "đau vẫn tiếp tục",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            695,
+            711
+        ]
+    },
+    {
+        "text": "đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            743,
+            751
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            758,
+            765
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            772,
+            780
+        ]
+    },
+    {
+        "text": "Vị trí: đau hố chậu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            812,
+            831
+        ]
+    },
+    {
+        "text": "đau hố chậu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            820,
+            831
+        ]
+    },
+    {
+        "text": "cơn đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            859,
+            866
+        ]
+    },
+    {
+        "text": "tylenol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            896,
+            903
+        ],
+        "candidates": [
+            "202433"
+        ]
+    },
+    {
+        "text": "Triệu chứng liên quan: buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            910,
+            941
+        ]
+    },
+    {
+        "text": "tylenol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1018,
+            1025
+        ],
+        "candidates": [
+            "202433"
+        ]
+    },
+    {
+        "text": "tylenol",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1080,
+            1087
+        ],
+        "candidates": [
+            "202433"
+        ]
+    },
+    {
+        "text": "đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1092,
+            1095
+        ]
+    },
+    {
+        "text": "đau vẫn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1137,
+            1144
+        ]
+    },
+    {
+        "text": "7.8",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1255,
+            1258
+        ]
+    },
+    {
+        "text": "tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1265,
+            1268
+        ]
+    },
+    {
+        "text": "oxy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1313,
+            1316
+        ]
+    },
+    {
+        "text": "thiếu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1366,
+            1375
+        ]
+    },
+    {
+        "text": "thiếu máu hồng cầu nhỏ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1366,
+            1388
+        ]
+    },
+    {
+        "text": "cầu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1381,
+            1384
+        ]
+    },
+    {
+        "text": "27.2",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1392,
+            1396
+        ]
+    },
+    {
+        "text": "bun",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1403,
+            1406
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1407,
+            1417
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": "chụp ct",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1450,
+            1457
+        ]
+    },
+    {
+        "text": "quai ruột kết sigma",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1540,
+            1559
+        ]
+    },
+    {
+        "text": "viêm túi mật cấp tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1567,
+            1588
+        ]
+    },
+    {
+        "text": "viêm túi mật cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1638,
+            1654
+        ],
+        "candidates": [
+            "K810"
+        ]
+    },
+    {
+        "text": "viêm túi mật cấp tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1638,
+            1659
+        ]
+    }
+]

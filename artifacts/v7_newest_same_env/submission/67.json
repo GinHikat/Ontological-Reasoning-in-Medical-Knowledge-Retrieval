@@ -1,0 +1,101 @@
+[
+    {
+        "text": "khoa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            21,
+            25
+        ]
+    },
+    {
+        "text": "nốt sần tuyến giáp phải",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            86,
+            109
+        ],
+        "candidates": [
+            "E034"
+        ]
+    },
+    {
+        "text": "đau vùng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            156,
+            177
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            220,
+            227
+        ]
+    },
+    {
+        "text": "sỏi mật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            237,
+            244
+        ]
+    },
+    {
+        "text": "cắt túi mật nội soi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            259,
+            278
+        ]
+    },
+    {
+        "text": "phẫu thuật cắt bỏ tuyến giáp toàn bộ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            292,
+            328
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            389,
+            396
+        ]
+    },
+    {
+        "text": "sỏi mật",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            406,
+            413
+        ],
+        "candidates": [
+            "K80"
+        ]
+    },
+    {
+        "text": "nốt sần tuyến giáp phải",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            460,
+            483
+        ],
+        "candidates": [
+            "E034"
+        ]
+    }
+]

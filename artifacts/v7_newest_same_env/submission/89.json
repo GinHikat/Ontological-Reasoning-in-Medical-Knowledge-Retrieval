@@ -1,0 +1,256 @@
+[
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            29,
+            39
+        ]
+    },
+    {
+        "text": "nội soi mật tuỵ ngược dòng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            53,
+            79
+        ]
+    },
+    {
+        "text": "ERCP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            81,
+            85
+        ]
+    },
+    {
+        "text": "đặt stent ống tuỵ gần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            88,
+            109
+        ]
+    },
+    {
+        "text": "phẫu thuật cắt bỏ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            112,
+            129
+        ]
+    },
+    {
+        "text": "u thần kinh nội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            135,
+            150
+        ]
+    },
+    {
+        "text": "octreotide",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            206,
+            216
+        ],
+        "candidates": [
+            "7617"
+        ]
+    },
+    {
+        "text": "flagyl",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            223,
+            229
+        ],
+        "candidates": [
+            "202866"
+        ]
+    },
+    {
+        "text": "vết thương tại",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            240,
+            254
+        ]
+    },
+    {
+        "text": "nhịn ăn đường miệng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            260,
+            279
+        ]
+    },
+    {
+        "text": "dinh dưỡng tĩnh mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            281,
+            301
+        ]
+    },
+    {
+        "text": "Tuột sonde dẫn lưu ổ bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            346,
+            371
+        ]
+    },
+    {
+        "text": "rò ống tuỵ mật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            470,
+            484
+        ]
+    },
+    {
+        "text": "Clostridioides difficile",
+        "type": "THUỐC",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            671,
+            695
+        ],
+        "candidates": [
+            "1534764"
+        ]
+    },
+    {
+        "text": "nhiễm trùng vết",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            700,
+            715
+        ]
+    },
+    {
+        "text": "flagyl",
+        "type": "THUỐC",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            742,
+            748
+        ],
+        "candidates": [
+            "202866"
+        ]
+    },
+    {
+        "text": "sau",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            779,
+            782
+        ]
+    },
+    {
+        "text": "tuột ống sonde dẫn lưu ổ bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            853,
+            882
+        ]
+    },
+    {
+        "text": "sưng nề",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            930,
+            937
+        ]
+    },
+    {
+        "text": "ổ bụng sưng nề, đỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1164,
+            1182
+        ]
+    },
+    {
+        "text": "15,24",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1207,
+            1212
+        ]
+    },
+    {
+        "text": "nuôi dưỡng đường tĩnh mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1242,
+            1268
+        ]
+    },
+    {
+        "text": "Catheter PICC",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1270,
+            1283
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1327,
+            1334
+        ]
+    },
+    {
+        "text": "huyết khối tĩnh mạch sâu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1353,
+            1377
+        ],
+        "candidates": [
+            "I81"
+        ]
+    }
+]

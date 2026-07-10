@@ -1,0 +1,827 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            61
+        ]
+    },
+    {
+        "text": "bệnh thận mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            68,
+            81
+        ]
+    },
+    {
+        "text": "đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            89,
+            97
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            104,
+            117
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            104,
+            137
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            121,
+            137
+        ]
+    },
+    {
+        "text": "Nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            142,
+            157
+        ]
+    },
+    {
+        "text": "rung nhĩ kịch phát",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            172,
+            190
+        ],
+        "candidates": [
+            "I480"
+        ]
+    },
+    {
+        "text": "tăng sản tuyến tiền liệt",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            197,
+            221
+        ],
+        "candidates": [
+            "N40"
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            234,
+            244
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            247,
+            256
+        ]
+    },
+    {
+        "text": "phẫu thuật TURP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            266,
+            281
+        ]
+    },
+    {
+        "text": "xạ hình tưới máu cơ tim mibi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            289,
+            317
+        ]
+    },
+    {
+        "text": "metoprolol",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            354,
+            364
+        ],
+        "candidates": [
+            "6918"
+        ]
+    },
+    {
+        "text": "desmopressin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            405,
+            417
+        ],
+        "candidates": [
+            "3251"
+        ]
+    },
+    {
+        "text": "Rối loạn dáng đi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            491,
+            507
+        ]
+    },
+    {
+        "text": "ngã với gãy cổ xương đùi di lệch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            643,
+            675
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            651,
+            667
+        ],
+        "candidates": [
+            "S720"
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi di lệch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            651,
+            675
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            898,
+            914
+        ],
+        "candidates": [
+            "S720"
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi di lệch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            898,
+            922
+        ]
+    },
+    {
+        "text": "Đau ở hông phải khi cử động",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            954,
+            981
+        ]
+    },
+    {
+        "text": "đổi tư",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            990,
+            996
+        ]
+    },
+    {
+        "text": "cử động",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1078,
+            1085
+        ]
+    },
+    {
+        "text": "thay đổi tư thế",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1087,
+            1102
+        ]
+    },
+    {
+        "text": "Chấn thương tù ở Chi dưới phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1173,
+            1203
+        ]
+    },
+    {
+        "text": "vết thương hở phần khác của chi dưới",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1216,
+            1252
+        ],
+        "candidates": [
+            "S818"
+        ]
+    },
+    {
+        "text": "chấn thương đầu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1276,
+            1291
+        ]
+    },
+    {
+        "text": "mất ý thức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1297,
+            1307
+        ]
+    },
+    {
+        "text": "mất ý thức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1309,
+            1319
+        ]
+    },
+    {
+        "text": "chịu trọng lượng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1334,
+            1350
+        ]
+    },
+    {
+        "text": "lái xe sau ngã",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1354,
+            1368
+        ],
+        "candidates": [
+            "V850"
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi di lệch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1412,
+            1436
+        ]
+    },
+    {
+        "text": "mất vận động vùng đỉnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1438,
+            1460
+        ]
+    },
+    {
+        "text": "chụp x-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1467,
+            1484
+        ]
+    },
+    {
+        "text": "chụp ct ngực không thuốc cản quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1526,
+            1560
+        ]
+    },
+    {
+        "text": "không thuốc cản quang cho thấy tim to",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1539,
+            1576
+        ]
+    },
+    {
+        "text": "tim to",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1570,
+            1576
+        ]
+    },
+    {
+        "text": "tràn dịch màng tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1578,
+            1596
+        ]
+    },
+    {
+        "text": "tràn dịch màng phổi hai bên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1598,
+            1625
+        ]
+    },
+    {
+        "text": "thoát vị hoành nhỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1627,
+            1645
+        ]
+    },
+    {
+        "text": "thay đổi khí phế thủng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1647,
+            1669
+        ]
+    },
+    {
+        "text": "xẹp phổi hai đáy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1674,
+            1690
+        ]
+    },
+    {
+        "text": "không thể tự",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1765,
+            1777
+        ]
+    },
+    {
+        "text": "không chịu lực được khi đứng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1791,
+            1819
+        ]
+    },
+    {
+        "text": "cảm thấy khỏe trên sàn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1881,
+            1903
+        ]
+    },
+    {
+        "text": "Than phiền đau ở hông phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1910,
+            1936
+        ]
+    },
+    {
+        "text": "chụp ảnh/kỹ thuật chẩn đoán hình ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1980,
+            2016
+        ]
+    },
+    {
+        "text": "chụp x-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2023,
+            2040
+        ]
+    },
+    {
+        "text": "chụp ct ngực không thuốc cản quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2061,
+            2095
+        ]
+    },
+    {
+        "text": "tim to",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2097,
+            2103
+        ],
+        "candidates": [
+            "I517"
+        ]
+    },
+    {
+        "text": "tràn dịch màng tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2105,
+            2123
+        ]
+    },
+    {
+        "text": "tràn dịch màng phổi hai bên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2125,
+            2152
+        ]
+    },
+    {
+        "text": "thoát vị hoành",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2154,
+            2168
+        ],
+        "candidates": [
+            "K44"
+        ]
+    },
+    {
+        "text": "thoát vị hoành nhỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2154,
+            2172
+        ]
+    },
+    {
+        "text": "thay đổi khí phế thủng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2174,
+            2196
+        ]
+    },
+    {
+        "text": "xẹp phổi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2198,
+            2206
+        ],
+        "candidates": [
+            "J981"
+        ]
+    },
+    {
+        "text": "xẹp phổi hai đáy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            2198,
+            2214
+        ]
+    },
+    {
+        "text": "siêu âm tim qua thành ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2335,
+            2361
+        ]
+    },
+    {
+        "text": "siêu âm tim qua",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2363,
+            2378
+        ]
+    },
+    {
+        "text": "EF3",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2392,
+            2395
+        ]
+    },
+    {
+        "text": "hở van ba lá",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2422,
+            2434
+        ],
+        "candidates": [
+            "I071"
+        ]
+    },
+    {
+        "text": "hở van hai lá",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2463,
+            2476
+        ],
+        "candidates": [
+            "I340"
+        ]
+    },
+    {
+        "text": "Gãy xương hông phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2517,
+            2536
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2538,
+            2554
+        ],
+        "candidates": [
+            "S720"
+        ]
+    },
+    {
+        "text": "gãy cổ xương đùi phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2538,
+            2559
+        ]
+    },
+    {
+        "text": "lún đầu dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2561,
+            2573
+        ]
+    },
+    {
+        "text": "chụp ct ngực không thuốc cản quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2611,
+            2645
+        ]
+    },
+    {
+        "text": "siêu âm tim qua thành ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2652,
+            2678
+        ]
+    },
+    {
+        "text": "siêu âm tim qua thành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2680,
+            2701
+        ]
+    },
+    {
+        "text": "chụp xạ hình tim bằng mibi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2714,
+            2740
+        ]
+    },
+    {
+        "text": "phẫu thuật TURP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2750,
+            2765
+        ]
+    },
+    {
+        "text": "Nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2847,
+            2862
+        ]
+    },
+    {
+        "text": "rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2907,
+            2915
+        ]
+    },
+    {
+        "text": "rung nhĩ kịch phát",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2907,
+            2925
+        ],
+        "candidates": [
+            "I480"
+        ]
+    },
+    {
+        "text": "Nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2941,
+            2956
+        ]
+    },
+    {
+        "text": "tiểu đêm nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2963,
+            2977
+        ]
+    },
+    {
+        "text": "tăng sản tuyến tiền liệt",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2983,
+            3007
+        ],
+        "candidates": [
+            "N40"
+        ]
+    }
+]

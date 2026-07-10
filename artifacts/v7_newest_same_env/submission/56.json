@@ -1,0 +1,355 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4,
+            20
+        ]
+    },
+    {
+        "text": "Đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            31,
+            45
+        ]
+    },
+    {
+        "text": "Đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            55,
+            69
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            73,
+            86
+        ]
+    },
+    {
+        "text": "tăng huyết áp vô căn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            88,
+            108
+        ]
+    },
+    {
+        "text": "xét nghiệm gắng sức",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            172,
+            191
+        ]
+    },
+    {
+        "text": "xét nghiệm gắng sức bất thường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            172,
+            202
+        ]
+    },
+    {
+        "text": "khó chịu vùng ngực gián đoạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            294,
+            322
+        ]
+    },
+    {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            325,
+            334
+        ]
+    },
+    {
+        "text": "khó thở (khó thở)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            337,
+            354
+        ]
+    },
+    {
+        "text": "đổ mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            357,
+            366
+        ]
+    },
+    {
+        "text": "Vị trí: Không rõ (ngụ ý vùng ngực)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            390,
+            424
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: Không rõ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            427,
+            456
+        ]
+    },
+    {
+        "text": "Thời gian: Không rõ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            459,
+            478
+        ]
+    },
+    {
+        "text": "Tần suất: Gián đoạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            481,
+            500
+        ]
+    },
+    {
+        "text": "Gián đoạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            491,
+            500
+        ]
+    },
+    {
+        "text": "Chiếu r xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            503,
+            513
+        ]
+    },
+    {
+        "text": "Chiếu r xạ: Không rõ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            503,
+            523
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: Hoạt động gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            526,
+            570
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm bớt: Nghỉ ngơi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            573,
+            607
+        ]
+    },
+    {
+        "text": "giảm bớt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            588,
+            596
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: chóng mặt, khó thở, đổ mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            610,
+            666
+        ]
+    },
+    {
+        "text": "xét nghiệm gắng sức bất",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            700,
+            723
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            820,
+            831
+        ]
+    },
+    {
+        "text": "bình thường tại phòng cấp cứu",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            832,
+            861
+        ]
+    },
+    {
+        "text": "tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1052,
+            1055
+        ]
+    },
+    {
+        "text": "67 lần/phút",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1056,
+            1067
+        ]
+    },
+    {
+        "text": "oxy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1102,
+            1105
+        ]
+    },
+    {
+        "text": "100%",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1106,
+            1110
+        ]
+    },
+    {
+        "text": "ống nội khí quản",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1154,
+            1170
+        ]
+    },
+    {
+        "text": "sức",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1257,
+            1260
+        ]
+    },
+    {
+        "text": "thiếu máu cơ tim cục bộ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1276,
+            1299
+        ]
+    },
+    {
+        "text": "chênh xuống kiểu xuống",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1377,
+            1399
+        ]
+    },
+    {
+        "text": "sau",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1452,
+            1455
+        ]
+    },
+    {
+        "text": "sau",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1478,
+            1481
+        ]
+    }
+]

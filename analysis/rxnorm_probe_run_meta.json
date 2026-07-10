@@ -1,0 +1,37 @@
+{
+  "baseline_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/artifacts/v7_newest_same_env/submission",
+  "baseline_semantic_hash": "71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60",
+  "entity_count": 3236,
+  "drug_count": 271,
+  "unit_tests": {
+    "nystatin": true,
+    "acetaminophen_range": true
+  },
+  "relationships_available": false,
+  "zips": [
+    {
+      "name": "rxnorm_probe_example_policy",
+      "path": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/rxnorm_probe_example_policy.zip",
+      "size": 91504,
+      "sha256": "19b881fdcfa18c30f028e8f54db107d59d0868d403fac4c4e400d1a9f3309ddb",
+      "changed": 18,
+      "signal": "LOW SIGNAL"
+    },
+    {
+      "name": "rxnorm_probe_ingredient_first",
+      "path": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/rxnorm_probe_ingredient_first.zip",
+      "size": 91494,
+      "sha256": "880050861f2bd227b405fc74d9bee2cad51c9690c9555079d0c77ca37188684d",
+      "changed": 23,
+      "signal": "MODERATE SIGNAL"
+    },
+    {
+      "name": "rxnorm_probe_baseline_plus_ingredient",
+      "path": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/rxnorm_probe_baseline_plus_ingredient.zip",
+      "size": 91652,
+      "sha256": "4a7f43520051296652821daf707aa547a844d000a11b7f215a307f2ea7af185d",
+      "changed": 23,
+      "signal": "MODERATE SIGNAL"
+    }
+  ]
+}

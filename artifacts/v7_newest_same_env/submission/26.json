@@ -1,0 +1,58 @@
+[
+    {
+        "text": "béo phì",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            52,
+            59
+        ]
+    },
+    {
+        "text": "đến khám vì sau cân sau phẫu thuật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            107,
+            141
+        ]
+    },
+    {
+        "text": "sau cân sau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            119,
+            130
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            131,
+            141
+        ]
+    },
+    {
+        "text": "tăng cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            214,
+            222
+        ]
+    },
+    {
+        "text": "tăng cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            335,
+            343
+        ]
+    }
+]

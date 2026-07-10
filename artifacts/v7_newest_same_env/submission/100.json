@@ -1,0 +1,415 @@
+[
+    {
+        "text": "tăng calci máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            61,
+            75
+        ]
+    },
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            100,
+            116
+        ]
+    },
+    {
+        "text": "U ác của đại tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            123,
+            141
+        ],
+        "candidates": [
+            "C170"
+        ]
+    },
+    {
+        "text": "cường cận giáp nguyên phát",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            148,
+            174
+        ],
+        "candidates": [
+            "E210"
+        ]
+    },
+    {
+        "text": "Xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            181,
+            197
+        ],
+        "candidates": [
+            "I70"
+        ]
+    },
+    {
+        "text": "cơn đau thắt ngực",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            204,
+            221
+        ],
+        "candidates": [
+            "I20"
+        ]
+    },
+    {
+        "text": "cơn đau thắt ngực ổn định",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            204,
+            229
+        ]
+    },
+    {
+        "text": "đến khám vì tăng calci máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            263,
+            289
+        ]
+    },
+    {
+        "text": "tăng calci máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            275,
+            289
+        ]
+    },
+    {
+        "text": "tăng calci máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            316,
+            330
+        ]
+    },
+    {
+        "text": "xét nghiệm ngoại trú",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            399,
+            419
+        ]
+    },
+    {
+        "text": "canxi ion hóa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            461,
+            474
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            504,
+            512
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            673,
+            681
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            683,
+            690
+        ]
+    },
+    {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            692,
+            701
+        ]
+    },
+    {
+        "text": "động kinh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            741,
+            750
+        ]
+    },
+    {
+        "text": "MRI ngoại trú",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            769,
+            782
+        ]
+    },
+    {
+        "text": "nhồi máu cũ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            796,
+            807
+        ],
+        "candidates": [
+            "I252"
+        ]
+    },
+    {
+        "text": "não đỉnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            817,
+            825
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            895,
+            903
+        ]
+    },
+    {
+        "text": "cơn đau kéo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            929,
+            940
+        ]
+    },
+    {
+        "text": "ngay",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            983,
+            987
+        ]
+    },
+    {
+        "text": "nitroglycerin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            996,
+            1009
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "đau ở sau đầu và cổ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1053,
+            1072
+        ]
+    },
+    {
+        "text": "nay",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1115,
+            1118
+        ]
+    },
+    {
+        "text": "xétí nghiệm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1159,
+            1170
+        ]
+    },
+    {
+        "text": "canxi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1177,
+            1182
+        ]
+    },
+    {
+        "text": "12.0",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1196,
+            1200
+        ]
+    },
+    {
+        "text": "canxi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1202,
+            1207
+        ]
+    },
+    {
+        "text": "canx toàn phầni",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1226,
+            1241
+        ]
+    },
+    {
+        "text": "12.3",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1245,
+            1249
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1260,
+            1270
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": ") 1.2",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1270,
+            1275
+        ]
+    },
+    {
+        "text": "MRI ngoại trú",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1308,
+            1321
+        ]
+    },
+    {
+        "text": "nhồi máu cũ nhỏ ở vỏ não đỉnh trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1341,
+            1375
+        ]
+    },
+    {
+        "text": "Natriclori",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1486,
+            1496
+        ]
+    },
+    {
+        "text": "0.9 %",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1497,
+            1502
+        ]
+    }
+]

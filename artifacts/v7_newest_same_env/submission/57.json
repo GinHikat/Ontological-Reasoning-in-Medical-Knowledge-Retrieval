@@ -1,0 +1,80 @@
+[
+    {
+        "text": "khoa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            21,
+            25
+        ]
+    },
+    {
+        "text": "bệnh rễ thần kinh tuỷ sống ở ngón tay cái",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            74,
+            115
+        ],
+        "candidates": [
+            "M541"
+        ]
+    },
+    {
+        "text": "bệnh rễ thần kinh tuỷ sống ở ngón tay",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            187,
+            224
+        ],
+        "candidates": [
+            "M541"
+        ]
+    },
+    {
+        "text": "chụp cộng hưởng từ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            279,
+            297
+        ]
+    },
+    {
+        "text": "mri",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            299,
+            302
+        ]
+    },
+    {
+        "text": "cột sống cổ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            304,
+            315
+        ]
+    },
+    {
+        "text": "hẹp ống sống C4-5",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            325,
+            342
+        ]
+    },
+    {
+        "text": "hẹp lỗ liên hợp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            358,
+            373
+        ]
+    }
+]

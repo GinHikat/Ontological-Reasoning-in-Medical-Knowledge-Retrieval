@@ -1,0 +1,443 @@
+[
+    {
+        "text": "NSAID",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            59,
+            64
+        ],
+        "candidates": []
+    },
+    {
+        "text": "đau đầu gối",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            77,
+            88
+        ]
+    },
+    {
+        "text": "omeprazole",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            106,
+            116
+        ],
+        "candidates": [
+            "7646"
+        ]
+    },
+    {
+        "text": "đau vùng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            206,
+            227
+        ]
+    },
+    {
+        "text": "đau vùng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            315,
+            336
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            342,
+            353
+        ]
+    },
+    {
+        "text": "buồn nôn thoáng qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            357,
+            376
+        ]
+    },
+    {
+        "text": "nôn ói",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            404,
+            410
+        ]
+    },
+    {
+        "text": "đau lưng kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            442,
+            458
+        ]
+    },
+    {
+        "text": "khu trú vùng cạnh cột sống bên trái đoạn giữa lưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            467,
+            517
+        ]
+    },
+    {
+        "text": "khi lan ra phía trước bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            523,
+            549
+        ]
+    },
+    {
+        "text": "Đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            551,
+            559
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            632,
+            643
+        ]
+    },
+    {
+        "text": "buồn nôn thoáng qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            676,
+            695
+        ]
+    },
+    {
+        "text": "không nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            697,
+            706
+        ]
+    },
+    {
+        "text": "đau lưng kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            743,
+            759
+        ]
+    },
+    {
+        "text": "đau bụng vùng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            871,
+            897
+        ]
+    },
+    {
+        "text": "đau bụng vùng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            979,
+            1005
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1012,
+            1023
+        ]
+    },
+    {
+        "text": "buồn nôn thoáng qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1031,
+            1050
+        ]
+    },
+    {
+        "text": "Nôn mửa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1057,
+            1064
+        ]
+    },
+    {
+        "text": "Bệnh nhân có  đau lưng âm ỉ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1071,
+            1098
+        ]
+    },
+    {
+        "text": "đau bụng hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1138,
+            1159
+        ]
+    },
+    {
+        "text": "đau lưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1161,
+            1169
+        ]
+    },
+    {
+        "text": "Thời gian: Thường xuất hiện sau bữa ăn (đau bụng, chướng bụng)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1262,
+            1324
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1312,
+            1323
+        ]
+    },
+    {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1358,
+            1369
+        ]
+    },
+    {
+        "text": "buồn nôn thoáng qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1372,
+            1391
+        ]
+    },
+    {
+        "text": "nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1393,
+            1396
+        ]
+    },
+    {
+        "text": "đau lưng kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1398,
+            1414
+        ]
+    },
+    {
+        "text": "nội soi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1467,
+            1474
+        ]
+    },
+    {
+        "text": "viêm dạ dày.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1533,
+            1545
+        ]
+    },
+    {
+        "text": "thuốc NSAIDs",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1563,
+            1575
+        ],
+        "candidates": [
+            "37790"
+        ]
+    },
+    {
+        "text": "omeprazole.",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1596,
+            1607
+        ],
+        "candidates": [
+            "7646"
+        ]
+    },
+    {
+        "text": "Chụp cộng hưởng từ mật tụy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1608,
+            1634
+        ]
+    },
+    {
+        "text": "sỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1645,
+            1648
+        ]
+    },
+    {
+        "text": "men gan tăng.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1706,
+            1719
+        ]
+    },
+    {
+        "text": "Xét nghiệm chức năng gan",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1823,
+            1847
+        ]
+    },
+    {
+        "text": "tăng men gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1857,
+            1869
+        ]
+    },
+    {
+        "text": "Nội soi thực quản - dạ dày - tá tràng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1901,
+            1938
+        ]
+    },
+    {
+        "text": "viêm dạ dày.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1940,
+            1952
+        ]
+    },
+    {
+        "text": "sỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1977,
+            1980
+        ]
+    },
+    {
+        "text": "Nội soi mật tụy ngược dòng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2032,
+            2058
+        ]
+    },
+    {
+        "text": "ERCP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2060,
+            2064
+        ]
+    },
+    {
+        "text": "ERCP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2083,
+            2087
+        ]
+    },
+    {
+        "text": "chụp cộng hưởng từ mật tụy tụi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2155,
+            2185
+        ]
+    },
+    {
+        "text": "sỏi ống dẫn mật chung đoạn cuối",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2214,
+            2245
+        ]
+    }
+]

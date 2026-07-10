@@ -1,0 +1,31 @@
+=== git status ===
+On branch tung
+Your branch is ahead of 'origin/tung' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.cursor/
+	analysis/rxnorm_probe_starting_state.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+=== git diff ===
+
+=== git diff --cached ===
+
+=== git rev-parse HEAD ===
+ca7f71b22f875b9c8a20f198f9346bad513d2f06
+
+=== git log -5 --oneline ===
+ca7f71b docs: add agent instructions, plans, prompts, scripts, and v9 analysis artifacts
+3e1aec3 feat: add v9_llm_recall pipeline with LLM entity candidate generation
+5b45f37 docs: update README, documentation, and fix import paths for v6-v8 pipelines
+a299cfc feat: v8 candidate rescue and drug ontology provenance enhancements
+bf9d399 Update documentation and analysis modules
+
+=== branch ===
+tung
+
+=== note ===
+Paused v9 for RxNorm probe experiment. Do not run Qwen/v9/ViHealthBERT/SapBERT/v7.

@@ -1,0 +1,273 @@
+[
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            38,
+            48
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            51,
+            60
+        ]
+    },
+    {
+        "text": "Cắt bỏ thận trái",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            67,
+            83
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tế bào thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            87,
+            114
+        ]
+    },
+    {
+        "text": "Cắt tuyến giáp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            121,
+            135
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến giật nhú",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            147,
+            177
+        ]
+    },
+    {
+        "text": "đến khám vì mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            226,
+            245
+        ]
+    },
+    {
+        "text": "thiếu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            247,
+            256
+        ]
+    },
+    {
+        "text": "phân có guaiac dương tính đến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            260,
+            289
+        ]
+    },
+    {
+        "text": "guaiac",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            268,
+            274
+        ],
+        "candidates": [
+            "1373150"
+        ]
+    },
+    {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            322,
+            329
+        ]
+    },
+    {
+        "text": "thiếu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            336,
+            345
+        ]
+    },
+    {
+        "text": "phân có guaiac dương tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            352,
+            377
+        ]
+    },
+    {
+        "text": "guaiac",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            360,
+            366
+        ],
+        "candidates": [
+            "1373150"
+        ]
+    },
+    {
+        "text": "Nội soi đại tràng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            421,
+            438
+        ]
+    },
+    {
+        "text": "uốn gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            477,
+            484
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            491,
+            501
+        ]
+    },
+    {
+        "text": "dương tính với ung thư biểu mô tuyến",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            502,
+            538
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            517,
+            538
+        ]
+    },
+    {
+        "text": "thiếu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            597,
+            606
+        ]
+    },
+    {
+        "text": "cắt lớp vi tính",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            644,
+            659
+        ]
+    },
+    {
+        "text": "nội soi đại tràng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            749,
+            766
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            773,
+            783
+        ]
+    },
+    {
+        "text": "chỗ uốn gan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            831,
+            842
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            849,
+            870
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            876,
+            886
+        ]
+    },
+    {
+        "text": "khối u thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            901,
+            912
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tế bào thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            919,
+            946
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến giật nhú",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            953,
+            983
+        ]
+    }
+]

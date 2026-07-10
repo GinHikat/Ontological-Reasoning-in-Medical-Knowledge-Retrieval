@@ -1,0 +1,468 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "bệnh động mạch vành",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            67
+        ]
+    },
+    {
+        "text": "can thiệp bắc cầu nối",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            72,
+            93
+        ]
+    },
+    {
+        "text": "chụp mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            110,
+            119
+        ]
+    },
+    {
+        "text": "can thiệp tim mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            123,
+            141
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            145,
+            153
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            166,
+            176
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            179,
+            188
+        ]
+    },
+    {
+        "text": "cầu nối chủ vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            199,
+            215
+        ]
+    },
+    {
+        "text": "Can thiệp mạch vành qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            222,
+            248
+        ]
+    },
+    {
+        "text": "đặt stent phủ thuốc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            252,
+            271
+        ]
+    },
+    {
+        "text": "DES",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            273,
+            276
+        ]
+    },
+    {
+        "text": "ở động mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            278,
+            289
+        ]
+    },
+    {
+        "text": "Can thiệp mạch vành qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            319,
+            345
+        ]
+    },
+    {
+        "text": "POBA",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            347,
+            351
+        ]
+    },
+    {
+        "text": "Can thiệp mạch vành qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            382,
+            408
+        ]
+    },
+    {
+        "text": "Nong bóng động mạch vành qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            496,
+            527
+        ]
+    },
+    {
+        "text": "PTCA",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            529,
+            533
+        ]
+    },
+    {
+        "text": "đau ngực trái dữ dội lan xuống cánh tay trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            640,
+            684
+        ]
+    },
+    {
+        "text": "đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            720,
+            723
+        ]
+    },
+    {
+        "text": "nitroglycerin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            786,
+            799
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "cơn đau dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            859,
+            873
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            885,
+            892
+        ]
+    },
+    {
+        "text": "nitroglycerin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            909,
+            922
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            945,
+            953
+        ]
+    },
+    {
+        "text": "đau ngực trái dữ dội lan xuống",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1032,
+            1062
+        ]
+    },
+    {
+        "text": "vã mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1083,
+            1092
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1099,
+            1106
+        ]
+    },
+    {
+        "text": "aspirin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1226,
+            1233
+        ],
+        "candidates": [
+            "1191"
+        ]
+    },
+    {
+        "text": "nitroglycerin.",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1256,
+            1270
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "Thuốc nitroglycerin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1277,
+            1296
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "dán",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1306,
+            1309
+        ]
+    },
+    {
+        "text": "mỡ nitroglycerin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1318,
+            1334
+        ],
+        "candidates": [
+            "4917"
+        ]
+    },
+    {
+        "text": "ativan",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1342,
+            1348
+        ],
+        "candidates": [
+            "202479"
+        ]
+    },
+    {
+        "text": "Lorazepam",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1351,
+            1360
+        ],
+        "candidates": [
+            "6470"
+        ]
+    },
+    {
+        "text": "lovenox",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1368,
+            1375
+        ],
+        "candidates": [
+            "225036"
+        ]
+    },
+    {
+        "text": "vã mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1569,
+            1578
+        ]
+    },
+    {
+        "text": "troponin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1603,
+            1611
+        ]
+    },
+    {
+        "text": "0.10",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1615,
+            1619
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1632,
+            1636
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1647,
+            1650
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1657,
+            1668
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1725,
+            1736
+        ]
+    },
+    {
+        "text": "Sóng ST chênh xuống  ở các chuyển đạo v4 đến v6chênh nhiều so với EKG ở  trước đó",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1746,
+            1827
+        ]
+    }
+]

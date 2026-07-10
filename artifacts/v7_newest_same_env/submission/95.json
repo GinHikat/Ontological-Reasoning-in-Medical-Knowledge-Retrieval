@@ -1,0 +1,182 @@
+[
+    {
+        "text": "đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            51,
+            59
+        ]
+    },
+    {
+        "text": "hin tại",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            91,
+            98
+        ]
+    },
+    {
+        "text": "đau âm ỉ vùng quanh rốn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            120,
+            143
+        ]
+    },
+    {
+        "text": "đau bụng âm ỉ quanh rốn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            207,
+            230
+        ]
+    },
+    {
+        "text": "đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            266,
+            269
+        ]
+    },
+    {
+        "text": "Da niêm mạc hồng nhạt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            323,
+            344
+        ]
+    },
+    {
+        "text": "xuất huyết dưới da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            351,
+            369
+        ]
+    },
+    {
+        "text": "đau âm ỉ vùng quanh rốn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            376,
+            399
+        ]
+    },
+    {
+        "text": "buồn nôn nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            430,
+            442
+        ]
+    },
+    {
+        "text": "không nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            444,
+            453
+        ]
+    },
+    {
+        "text": "Không sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            460,
+            469
+        ]
+    },
+    {
+        "text": "không có nhầy máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            514,
+            531
+        ]
+    },
+    {
+        "text": "Không đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            538,
+            552
+        ]
+    },
+    {
+        "text": "Không khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            559,
+            572
+        ]
+    },
+    {
+        "text": "bụng mềm",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            578,
+            586
+        ],
+        "candidates": [
+            "R193"
+        ]
+    },
+    {
+        "text": "không chướng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            588,
+            600
+        ]
+    }
+]

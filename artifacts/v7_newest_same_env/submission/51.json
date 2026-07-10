@@ -1,0 +1,221 @@
+[
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            50
+        ]
+    },
+    {
+        "text": "Đái tháo đường type 2",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            57,
+            78
+        ]
+    },
+    {
+        "text": "type",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            72,
+            76
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            85,
+            98
+        ]
+    },
+    {
+        "text": "cảm thấy khó chịu chung",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            205,
+            228
+        ]
+    },
+    {
+        "text": "nghẹt mũi nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            235,
+            250
+        ]
+    },
+    {
+        "text": "nghẹt mũi nhiều hơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            235,
+            254
+        ]
+    },
+    {
+        "text": "đau đầu bên trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            261,
+            277
+        ]
+    },
+    {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            284,
+            291
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            298,
+            307
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            339,
+            348
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            359,
+            368
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            418,
+            427
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            625,
+            630
+        ]
+    },
+    {
+        "text": "azithromycin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            795,
+            807
+        ],
+        "candidates": [
+            "18631"
+        ]
+    },
+    {
+        "text": "khám thực thể",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            857,
+            870
+        ]
+    },
+    {
+        "text": "khám",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            983,
+            987
+        ]
+    },
+    {
+        "text": "bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            991,
+            1002
+        ]
+    },
+    {
+        "text": "kali",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1032,
+            1036
+        ]
+    },
+    {
+        "text": "2.4",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1040,
+            1043
+        ]
+    },
+    {
+        "text": "kali dai dẳng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1080,
+            1093
+        ],
+        "candidates": [
+            "I481"
+        ]
+    },
+    {
+        "text": "hạ kali máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1203,
+            1214
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1237,
+            1246
+        ]
+    }
+]

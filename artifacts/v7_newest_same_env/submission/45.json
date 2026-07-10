@@ -1,0 +1,165 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            62
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            69,
+            82
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            95,
+            105
+        ]
+    },
+    {
+        "text": "đặt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            119,
+            122
+        ]
+    },
+    {
+        "text": "đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            209,
+            223
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            230,
+            243
+        ]
+    },
+    {
+        "text": "Thủ thuật điện chọn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            292,
+            311
+        ]
+    },
+    {
+        "text": "tai biến mạch máu não",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            364,
+            385
+        ]
+    },
+    {
+        "text": "đặt stent",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            472,
+            481
+        ]
+    },
+    {
+        "text": "phình mạch ACom",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            498,
+            513
+        ]
+    },
+    {
+        "text": "hẹp khoảng 65% của động mạch cảnh chung trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            580,
+            624
+        ]
+    },
+    {
+        "text": "xơ vữa mảng loét",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            648,
+            664
+        ]
+    },
+    {
+        "text": "phẫu thuật nội mạch hóa động mạch cảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            776,
+            814
+        ]
+    },
+    {
+        "text": "mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            880,
+            884
+        ]
+    },
+    {
+        "text": "hẹp khoảng 65% của động mạch cảnh chung trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            909,
+            953
+        ]
+    },
+    {
+        "text": "xơ vữa mảng loét",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            977,
+            993
+        ]
+    }
+]

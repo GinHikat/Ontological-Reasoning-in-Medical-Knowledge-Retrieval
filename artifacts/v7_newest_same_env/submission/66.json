@@ -1,0 +1,434 @@
+[
+    {
+        "text": "bệnh mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            47
+        ]
+    },
+    {
+        "text": "Tiểu đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            54,
+            64
+        ]
+    },
+    {
+        "text": "1 đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            70,
+            86
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            93,
+            106
+        ]
+    },
+    {
+        "text": "tăng lipid máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            113,
+            127
+        ]
+    },
+    {
+        "text": "tăng lipid máu, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            113,
+            143
+        ],
+        "candidates": [
+            "E785"
+        ]
+    },
+    {
+        "text": "béo phì",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            150,
+            157
+        ]
+    },
+    {
+        "text": "Nhiễm trùng đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            164,
+            191
+        ]
+    },
+    {
+        "text": "UTIs",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            193,
+            197
+        ]
+    },
+    {
+        "text": "nhiễm khuẩn đường tiết niệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            208,
+            235
+        ]
+    },
+    {
+        "text": "đau bàn chân phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            307,
+            324
+        ]
+    },
+    {
+        "text": "đau bàn chân phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            360,
+            377
+        ]
+    },
+    {
+        "text": "mất thăng bằng khi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            384,
+            402
+        ]
+    },
+    {
+        "text": "mất thăng bằng khi đi lại",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            384,
+            409
+        ]
+    },
+    {
+        "text": "viêm bể thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            473,
+            485
+        ]
+    },
+    {
+        "text": "viêm phế quản",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            489,
+            502
+        ]
+    },
+    {
+        "text": "trình 14 day course of ertapenem",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            564,
+            596
+        ]
+    },
+    {
+        "text": "ertapenem",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            587,
+            596
+        ],
+        "candidates": [
+            "325642"
+        ]
+    },
+    {
+        "text": "đau bàn chân phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            643,
+            660
+        ]
+    },
+    {
+        "text": "cảm thấy không vững khi đứng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            711,
+            739
+        ]
+    },
+    {
+        "text": "xét nghiệm xét nghiệm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            780,
+            801
+        ]
+    },
+    {
+        "text": "hct",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            808,
+            811
+        ]
+    },
+    {
+        "text": "hematocrit",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            813,
+            823
+        ]
+    },
+    {
+        "text": "hco3-",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            870,
+            875
+        ]
+    },
+    {
+        "text": "bun/creatinine",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            923,
+            937
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            927,
+            937
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": "ure",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            939,
+            942
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            943,
+            953
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": "glucose",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            961,
+            968
+        ]
+    },
+    {
+        "text": "(đường huyết) 316",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            969,
+            986
+        ]
+    },
+    {
+        "text": "lactate",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            993,
+            1000
+        ]
+    },
+    {
+        "text": "lactat",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1007,
+            1013
+        ]
+    },
+    {
+        "text": "phân tích nước tiểu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1055,
+            1074
+        ]
+    },
+    {
+        "text": "): 12 bạch cầu",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1074,
+            1088
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1146,
+            1150
+        ]
+    },
+    {
+        "text": "ảnh chẩn đoán hình ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1161,
+            1183
+        ]
+    },
+    {
+        "text": "x-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1195,
+            1207
+        ]
+    },
+    {
+        "text": "chụp x-quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1286,
+            1298
+        ]
+    },
+    {
+        "text": "chân",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1303,
+            1307
+        ]
+    },
+    {
+        "text": "gãy xương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            1329,
+            1338
+        ]
+    },
+    {
+        "text": "viêm xương tủy",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            1344,
+            1358
+        ],
+        "candidates": [
+            "M86"
+        ]
+    }
+]

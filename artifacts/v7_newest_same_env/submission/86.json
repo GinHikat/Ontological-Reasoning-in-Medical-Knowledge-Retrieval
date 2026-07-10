@@ -1,0 +1,159 @@
+[
+    {
+        "text": "bệnh động mạch vành",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            53
+        ]
+    },
+    {
+        "text": "bệnh lý thần kinh ngoại biên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            55,
+            83
+        ]
+    },
+    {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            160,
+            167
+        ]
+    },
+    {
+        "text": "khó thở tăng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            199,
+            211
+        ]
+    },
+    {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            248,
+            255
+        ]
+    },
+    {
+        "text": "Khó thở tăng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            258,
+            270
+        ]
+    },
+    {
+        "text": "Đi lại khó khăn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            295,
+            310
+        ]
+    },
+    {
+        "text": "Đau hai bàn chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            341,
+            357
+        ]
+    },
+    {
+        "text": "bệnh lý thần kinh ngoại biên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            361,
+            389
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            413,
+            417
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            428,
+            431
+        ]
+    },
+    {
+        "text": "Chụp động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            621,
+            640
+        ]
+    },
+    {
+        "text": "bệnh ba thân động mạch vành",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            650,
+            677
+        ]
+    },
+    {
+        "text": "Chụp động mạch vành can thiệp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            721,
+            750
+        ]
+    },
+    {
+        "text": "Can thiệp mạch vành qua da",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            753,
+            779
+        ]
+    },
+    {
+        "text": "đặt stent phủ thuốc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            783,
+            802
+        ]
+    },
+    {
+        "text": "DES",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            804,
+            807
+        ]
+    }
+]

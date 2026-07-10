@@ -1,0 +1,428 @@
+[
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            50
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            57,
+            70
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            57,
+            90
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            74,
+            90
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            97,
+            110
+        ]
+    },
+    {
+        "text": "tăng lipid máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            117,
+            131
+        ]
+    },
+    {
+        "text": "tăng lipid máu, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            117,
+            147
+        ],
+        "candidates": [
+            "E785"
+        ]
+    },
+    {
+        "text": "bệnh trào ngược dạ dày- thực quản",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            154,
+            187
+        ],
+        "candidates": [
+            "K21"
+        ]
+    },
+    {
+        "text": "bệnh trào ngược dạ dày- thực quản không có viêm thực quản",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            154,
+            211
+        ],
+        "candidates": [
+            "K219"
+        ]
+    },
+    {
+        "text": "viêm thực quản",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            197,
+            211
+        ]
+    },
+    {
+        "text": "đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            260,
+            268
+        ]
+    },
+    {
+        "text": "đau bụng vùng thượng vị",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            387,
+            410
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            417,
+            425
+        ]
+    },
+    {
+        "text": "ớn lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            471,
+            478
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            485,
+            492
+        ]
+    },
+    {
+        "text": "tiểu khó",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            498,
+            506
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            590,
+            593
+        ]
+    },
+    {
+        "text": "hạ huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            647,
+            658
+        ]
+    },
+    {
+        "text": "hạ huyết áp, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            647,
+            674
+        ],
+        "candidates": [
+            "I959"
+        ]
+    },
+    {
+        "text": "viêm gan do men",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            787,
+            802
+        ]
+    },
+    {
+        "text": "ast",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            809,
+            812
+        ]
+    },
+    {
+        "text": "(aspartate aminotransferase) là 319",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            813,
+            848
+        ]
+    },
+    {
+        "text": "aspartate",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            814,
+            823
+        ],
+        "candidates": [
+            "42543"
+        ]
+    },
+    {
+        "text": "alt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            855,
+            858
+        ]
+    },
+    {
+        "text": "(alanine aminotransferase) là 690",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            859,
+            892
+        ]
+    },
+    {
+        "text": "alanine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            860,
+            867
+        ],
+        "candidates": [
+            "426"
+        ]
+    },
+    {
+        "text": "alanine aminotransferase",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            860,
+            884
+        ]
+    },
+    {
+        "text": "phosphatase kiềm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            899,
+            915
+        ]
+    },
+    {
+        "text": "bilirubin toàn phần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            934,
+            953
+        ]
+    },
+    {
+        "text": "wbc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            985,
+            988
+        ]
+    },
+    {
+        "text": ") 11.6",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            988,
+            994
+        ]
+    },
+    {
+        "text": "lấy cấy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1004,
+            1011
+        ]
+    },
+    {
+        "text": "Siêu âm gan mật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1046,
+            1061
+        ]
+    },
+    {
+        "text": "Nội soi mật tụy ngược dòng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1188,
+            1214
+        ]
+    },
+    {
+        "text": "Đặt stent đường mật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1216,
+            1235
+        ]
+    },
+    {
+        "text": "Đặt nội khí quản",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1269,
+            1285
+        ]
+    },
+    {
+        "text": "catheter động mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1296,
+            1314
+        ]
+    },
+    {
+        "text": "Đặt đường truyền tĩnh mạch ngoại vi",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1317,
+            1352
+        ]
+    },
+    {
+        "text": "levophed",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1360,
+            1368
+        ],
+        "candidates": [
+            "227559"
+        ]
+    },
+    {
+        "text": "propofol để",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1375,
+            1386
+        ],
+        "candidates": [
+            "8782"
+        ]
+    },
+    {
+        "text": "phentolamine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1408,
+            1420
+        ],
+        "candidates": [
+            "8153"
+        ]
+    }
+]

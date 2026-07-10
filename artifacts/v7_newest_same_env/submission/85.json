@@ -1,0 +1,173 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            34,
+            50
+        ]
+    },
+    {
+        "text": "Đái tháo đường type II",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            57,
+            79
+        ]
+    },
+    {
+        "text": "bệnh động mạch vành",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            86,
+            105
+        ]
+    },
+    {
+        "text": "phẫu thuật bắc cầu nối động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            110,
+            147
+        ]
+    },
+    {
+        "text": "suy tim",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            154,
+            161
+        ],
+        "candidates": [
+            "I50"
+        ]
+    },
+    {
+        "text": "bệnh mạch máu ngoại biên",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            168,
+            192
+        ],
+        "candidates": [
+            "I73"
+        ]
+    },
+    {
+        "text": "bệnh phổi tắc nghẽn mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            199,
+            227
+        ]
+    },
+    {
+        "text": "Ngưng thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            234,
+            243
+        ]
+    },
+    {
+        "text": "BiPAP",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            275,
+            280
+        ],
+        "candidates": [
+            "215777"
+        ]
+    },
+    {
+        "text": "Ung thư biểu mô tế bào vảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            287,
+            313
+        ]
+    },
+    {
+        "text": "cắt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            354,
+            357
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            410,
+            420
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            423,
+            432
+        ]
+    },
+    {
+        "text": "phẫu thuật bắc cầu nối động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            440,
+            477
+        ]
+    },
+    {
+        "text": "phẫu thuật cắt bao quy đầu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            484,
+            510
+        ]
+    },
+    {
+        "text": "thở không xâm nhập BiPAP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            536,
+            560
+        ]
+    }
+]

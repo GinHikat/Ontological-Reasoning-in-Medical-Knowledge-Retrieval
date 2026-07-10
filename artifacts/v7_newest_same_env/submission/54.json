@@ -1,0 +1,739 @@
+[
+    {
+        "text": "bệnh lý mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            20,
+            36
+        ]
+    },
+    {
+        "text": "u ác trực tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            63
+        ],
+        "candidates": [
+            "C20"
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tế bào thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            66,
+            93
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            159,
+            169
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            172,
+            181
+        ]
+    },
+    {
+        "text": "cắt bỏ một phần thận phải",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            184,
+            209
+        ]
+    },
+    {
+        "text": "cắt bỏ tuyến thượng thận phải",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            212,
+            241
+        ]
+    },
+    {
+        "text": "vancomycin",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            298,
+            308
+        ],
+        "candidates": [
+            "11124"
+        ]
+    },
+    {
+        "text": "ceftazidime",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            311,
+            322
+        ],
+        "candidates": [
+            "2191"
+        ]
+    },
+    {
+        "text": "amiodarone",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            325,
+            335
+        ],
+        "candidates": [
+            "703"
+        ]
+    },
+    {
+        "text": "bicarbonate",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            347,
+            358
+        ]
+    },
+    {
+        "text": "lý do khám bệnh chính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            406,
+            427
+        ]
+    },
+    {
+        "text": "suy thận cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            479,
+            491
+        ],
+        "candidates": [
+            "N17"
+        ]
+    },
+    {
+        "text": "suy thận cấp.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            479,
+            492
+        ]
+    },
+    {
+        "text": "u ác trực tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            504,
+            519
+        ],
+        "candidates": [
+            "C20"
+        ]
+    },
+    {
+        "text": "máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            579,
+            582
+        ]
+    },
+    {
+        "text": "viêm phổi thuỳ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            655,
+            669
+        ]
+    },
+    {
+        "text": "viêm phổi thuỳ, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            655,
+            685
+        ],
+        "candidates": [
+            "J181"
+        ]
+    },
+    {
+        "text": "chụp x-quang.",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            686,
+            699
+        ]
+    },
+    {
+        "text": "vancomycin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            728,
+            738
+        ],
+        "candidates": [
+            "11124"
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            739,
+            744
+        ]
+    },
+    {
+        "text": "vancomycinvà",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            763,
+            775
+        ],
+        "candidates": [
+            "11124"
+        ]
+    },
+    {
+        "text": "ceftazidime",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            776,
+            787
+        ],
+        "candidates": [
+            "2191"
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            788,
+            793
+        ]
+    },
+    {
+        "text": "rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            815,
+            823
+        ]
+    },
+    {
+        "text": "rung nhĩ điển hình",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            815,
+            833
+        ],
+        "candidates": [
+            "I483"
+        ]
+    },
+    {
+        "text": "đáp ứng thất nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            843,
+            861
+        ]
+    },
+    {
+        "text": "rối",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            865,
+            868
+        ]
+    },
+    {
+        "text": "sốc điện",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            915,
+            923
+        ]
+    },
+    {
+        "text": "liệu pháp amiodarone",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            940,
+            960
+        ]
+    },
+    {
+        "text": "amiodarone.",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            950,
+            961
+        ],
+        "candidates": [
+            "703"
+        ]
+    },
+    {
+        "text": "rối loạn cân bằng kiềm toan phối hợp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            977,
+            1013
+        ],
+        "candidates": [
+            "E874"
+        ]
+    },
+    {
+        "text": "bicarbonate",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1034,
+            1045
+        ],
+        "candidates": [
+            "1546277"
+        ]
+    },
+    {
+        "text": "hct vào ngày xuất viện",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1049,
+            1071
+        ]
+    },
+    {
+        "text": "24.5",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1075,
+            1079
+        ]
+    },
+    {
+        "text": "hct trả về",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1231,
+            1241
+        ]
+    },
+    {
+        "text": "24.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1245,
+            1249
+        ]
+    },
+    {
+        "text": "phân ít",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1490,
+            1497
+        ]
+    },
+    {
+        "text": "sưng ở chân trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1559,
+            1575
+        ]
+    },
+    {
+        "text": "sưng nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1577,
+            1585
+        ]
+    },
+    {
+        "text": "đau nhẹ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1587,
+            1594
+        ],
+        "candidates": [
+            "N940"
+        ]
+    },
+    {
+        "text": "thiếu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1633,
+            1642
+        ]
+    },
+    {
+        "text": "phân và máu trong trực tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1645,
+            1673
+        ],
+        "candidates": [
+            "K625"
+        ]
+    },
+    {
+        "text": "phân và máu trong trực tràng (thỉnh thoảng)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1645,
+            1688
+        ]
+    },
+    {
+        "text": "viêm phổi thuỳ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1691,
+            1705
+        ]
+    },
+    {
+        "text": "viêm phổi thuỳ, không đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1691,
+            1721
+        ]
+    },
+    {
+        "text": "rung cuống nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1724,
+            1738
+        ]
+    },
+    {
+        "text": "rung cuống nhĩ với đáp ứng thất nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1724,
+            1761
+        ]
+    },
+    {
+        "text": "suy giảm huyết động",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1764,
+            1783
+        ]
+    },
+    {
+        "text": "rối loạn cân bằng kiềm toan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1786,
+            1813
+        ]
+    },
+    {
+        "text": "rối loạn cân bằng kiềm toan phối hợp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1786,
+            1822
+        ]
+    },
+    {
+        "text": "sưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1825,
+            1829
+        ]
+    },
+    {
+        "text": "sưng, sưng nhẹ, đau nhẹ ở mắt cá chân trái (3 ngày)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1825,
+            1876
+        ]
+    },
+    {
+        "text": "sưng nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1831,
+            1839
+        ]
+    },
+    {
+        "text": "đau nhẹ ở mắt cá chân trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1841,
+            1867
+        ]
+    },
+    {
+        "text": "hct trả về",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1964,
+            1974
+        ]
+    },
+    {
+        "text": "24.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1978,
+            1982
+        ]
+    },
+    {
+        "text": "khám thực thể",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2198,
+            2211
+        ]
+    },
+    {
+        "text": "phân ít",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2413,
+            2420
+        ]
+    },
+    {
+        "text": "sưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2482,
+            2486
+        ]
+    },
+    {
+        "text": "sưng nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2488,
+            2496
+        ]
+    },
+    {
+        "text": "đau nhẹ ở mắt cá chân trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2498,
+            2524
+        ]
+    },
+    {
+        "text": "hct vào ngày xuất viện",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2556,
+            2578
+        ]
+    },
+    {
+        "text": "24.5",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2582,
+            2586
+        ]
+    },
+    {
+        "text": "hct trả về",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2612,
+            2622
+        ]
+    },
+    {
+        "text": "24.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2626,
+            2630
+        ]
+    },
+    {
+        "text": "rối loạn cân bằng kiềm toan",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2656,
+            2683
+        ]
+    },
+    {
+        "text": "rối loạn cân bằng kiềm toan phối hợp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2656,
+            2692
+        ],
+        "candidates": [
+            "E874"
+        ]
+    },
+    {
+        "text": "viêm phổi thùy dưới trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2731,
+            2755
+        ]
+    },
+    {
+        "text": "sốc điện đồng bộ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2816,
+            2832
+        ]
+    },
+    {
+        "text": "truyền máu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2835,
+            2845
+        ]
+    },
+    {
+        "text": "suy thận cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2877,
+            2889
+        ],
+        "candidates": [
+            "N17"
+        ]
+    },
+    {
+        "text": "u ác trực tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            2901,
+            2916
+        ],
+        "candidates": [
+            "C20"
+        ]
+    },
+    {
+        "text": "rung cuống nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2919,
+            2933
+        ]
+    }
+]

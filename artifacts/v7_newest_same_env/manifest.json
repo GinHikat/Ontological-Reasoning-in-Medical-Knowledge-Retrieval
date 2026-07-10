@@ -1,0 +1,24 @@
+{
+  "source_path": "output/v7_structured/same_env/submission",
+  "note": "Newest available v7_structured output used as probe reference (scored 24.79660 ZIP not on disk).",
+  "semantic_manifest_SHA256": "71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60",
+  "file_count": 100,
+  "entity_count": 3236,
+  "type_counts": {
+    "THUỐC": 271,
+    "TÊN_XÉT_NGHIỆM": 696,
+    "CHẨN_ĐOÁN": 215,
+    "TRIỆU_CHỨNG": 1920,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 134
+  },
+  "assertion_counts": {
+    "isHistorical": 686,
+    "isNegated": 223
+  },
+  "candidate_coverage": {
+    "CHẨN_ĐOÁN": "215/215",
+    "THUỐC": "270/271"
+  },
+  "official_score": null,
+  "reference_role": "newest_v7_same_env_baseline"
+}

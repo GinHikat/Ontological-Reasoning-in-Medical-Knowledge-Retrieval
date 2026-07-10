@@ -1,0 +1,202 @@
+[
+    {
+        "text": "Khối sa âm đạo gây khó chịu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            53,
+            80
+        ]
+    },
+    {
+        "text": "được bác sĩ giới thiệu khám chuyên khoa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            82,
+            121
+        ]
+    },
+    {
+        "text": "khối lồi trong âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            155,
+            176
+        ]
+    },
+    {
+        "text": "căng tức vùng âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            286,
+            306
+        ]
+    },
+    {
+        "text": "sờ thấy khối sa tại âm hộ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            308,
+            333
+        ]
+    },
+    {
+        "text": "tiểu buốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            373,
+            382
+        ]
+    },
+    {
+        "text": "tiện",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            418,
+            422
+        ]
+    },
+    {
+        "text": "buồn tiểu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            439,
+            448
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            497,
+            504
+        ]
+    },
+    {
+        "text": "khô âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            506,
+            516
+        ]
+    },
+    {
+        "text": "ra huyết âm đạo lượng ít",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            553,
+            577
+        ],
+        "candidates": [
+            "N897"
+        ]
+    },
+    {
+        "text": "có khối sa lồi ra âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            610,
+            634
+        ]
+    },
+    {
+        "text": "căng tức vùng âm đạo.\nTiểu dắt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            644,
+            674
+        ]
+    },
+    {
+        "text": "Tiểu không tự chủ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            676,
+            693
+        ]
+    },
+    {
+        "text": "Táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            715,
+            722
+        ]
+    },
+    {
+        "text": "Khô âm đạo.\nĐau khi giao hợp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            723,
+            751
+        ]
+    },
+    {
+        "text": "Ra huyết âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            753,
+            768
+        ]
+    },
+    {
+        "text": "khối lồi âm đạo",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1015,
+            1030
+        ]
+    },
+    {
+        "text": "không",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1132,
+            1137
+        ]
+    },
+    {
+        "text": "sỏi thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1244,
+            1252
+        ]
+    },
+    {
+        "text": "viêm bể thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1261,
+            1273
+        ]
+    }
+]

@@ -1,3 +1,3 @@
 Local LLM healthy: {"object": "list", "data": [{"id": "Qwen/Qwen3.5-9B", "object": "model", "owned_by": "local"}]}
 Generating LLM cache for 12 documents -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall
-v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   8%|▊         | 1/12 [1:00:00<11:00:01, 3600.13s/it]
+v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   8%|▊         | 1/12 [1:00:00<11:00:01, 3600.13s/it]v9 LLM cache:  17%|█▋        | 2/12 [2:00:00<10:00:01, 3600.13s/it]

@@ -1,0 +1,1522 @@
+[
+    {
+        "text": "tập kinh lâm sàng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            20,
+            37
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            67,
+            75
+        ]
+    },
+    {
+        "text": "khoa mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            201,
+            214
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            217,
+            230
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            217,
+            250
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            234,
+            250
+        ]
+    },
+    {
+        "text": "tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            253,
+            266
+        ]
+    },
+    {
+        "text": "phình động mạch chủ nhỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            269,
+            292
+        ]
+    },
+    {
+        "text": "thuốc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            357,
+            362
+        ]
+    },
+    {
+        "text": "hút thuốc",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            404,
+            413
+        ]
+    },
+    {
+        "text": "cơn ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            452,
+            464
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            533,
+            541
+        ]
+    },
+    {
+        "text": "ngất xỉu trong xe",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            533,
+            550
+        ]
+    },
+    {
+        "text": "Tỉnh dậy thấy cháu gái hét lên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            553,
+            583
+        ]
+    },
+    {
+        "text": "hét lên",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            576,
+            583
+        ]
+    },
+    {
+        "text": "ước tính mất ý thức có thể trong 30 giây",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            586,
+            626
+        ]
+    },
+    {
+        "text": "mất ý thức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            595,
+            605
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            613,
+            618
+        ]
+    },
+    {
+        "text": "triệu chứng trước đó",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            638,
+            658
+        ]
+    },
+    {
+        "text": "Cảm thấy khỏe khi thức dậy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            661,
+            687
+        ]
+    },
+    {
+        "text": "Không đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            690,
+            711
+        ]
+    },
+    {
+        "text": "Không quầng sáng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            714,
+            730
+        ]
+    },
+    {
+        "text": "quầng sáng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            720,
+            730
+        ]
+    },
+    {
+        "text": "Không chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            733,
+            748
+        ]
+    },
+    {
+        "text": "Không buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            751,
+            765
+        ]
+    },
+    {
+        "text": "Không đổ mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            768,
+            783
+        ]
+    },
+    {
+        "text": "mất kiểm soát đại tiện hoặc tiểu tiện",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            792,
+            829
+        ]
+    },
+    {
+        "text": "tiểu tiện",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            820,
+            829
+        ]
+    },
+    {
+        "text": "đau chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            832,
+            840
+        ]
+    },
+    {
+        "text": "đau chân sau khi đi bộ vài chặng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            832,
+            864
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            867,
+            875
+        ]
+    },
+    {
+        "text": "khó thở khi gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            878,
+            898
+        ]
+    },
+    {
+        "text": "khó thở về đêm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            901,
+            915
+        ]
+    },
+    {
+        "text": "khó thở khi nằm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            918,
+            933
+        ]
+    },
+    {
+        "text": "phù mắt cá chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            936,
+            951
+        ]
+    },
+    {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            954,
+            969
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            972,
+            980
+        ]
+    },
+    {
+        "text": "Xỉu trước",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            983,
+            992
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1016,
+            1024
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1027,
+            1038
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1041,
+            1065
+        ]
+    },
+    {
+        "text": "Thời gian",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1068,
+            1077
+        ]
+    },
+    {
+        "text": "Thời gian: 30 giây (ước tính)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1068,
+            1097
+        ]
+    },
+    {
+        "text": "Tần suất: Hơn một lần một tháng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1100,
+            1131
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1134,
+            1142
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1134,
+            1147
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1150,
+            1179
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1182,
+            1206
+        ]
+    },
+    {
+        "text": "khó chịu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1284,
+            1292
+        ]
+    },
+    {
+        "text": "khó chịu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1304,
+            1312
+        ]
+    },
+    {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1332,
+            1341
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1343,
+            1351
+        ]
+    },
+    {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1353,
+            1368
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1375,
+            1383
+        ]
+    },
+    {
+        "text": "đau chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1433,
+            1441
+        ]
+    },
+    {
+        "text": "Vị trí: Chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1445,
+            1457
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1460,
+            1484
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1487,
+            1501
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1504,
+            1517
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1520,
+            1528
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1520,
+            1533
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: Đi bộ vài chặng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1536,
+            1577
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1580,
+            1604
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1607,
+            1637
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1640,
+            1648
+        ]
+    },
+    {
+        "text": "Vị trí: Ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1652,
+            1664
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1667,
+            1691
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1694,
+            1708
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1711,
+            1724
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1727,
+            1735
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1727,
+            1740
+        ]
+    },
+    {
+        "text": "các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1743,
+            1772
+        ]
+    },
+    {
+        "text": "các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1775,
+            1799
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1802,
+            1832
+        ]
+    },
+    {
+        "text": "**khó thở khi gắng sức:**",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1835,
+            1860
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1863,
+            1874
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1877,
+            1901
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1904,
+            1918
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1921,
+            1934
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1937,
+            1945
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1937,
+            1950
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: Gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1953,
+            1987
+        ]
+    },
+    {
+        "text": "Gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1979,
+            1987
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1990,
+            2014
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2017,
+            2047
+        ]
+    },
+    {
+        "text": "**khó thở về đêm:**",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2050,
+            2069
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2072,
+            2083
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2086,
+            2110
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2113,
+            2127
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2130,
+            2143
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2146,
+            2154
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2146,
+            2159
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2162,
+            2191
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2194,
+            2218
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2221,
+            2251
+        ]
+    },
+    {
+        "text": "**khó thở khi nằm:**",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2254,
+            2274
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2277,
+            2288
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2291,
+            2315
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2318,
+            2332
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2335,
+            2348
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2351,
+            2359
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2351,
+            2364
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2367,
+            2396
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2399,
+            2423
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2426,
+            2456
+        ]
+    },
+    {
+        "text": "phù mắt cá chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2459,
+            2474
+        ]
+    },
+    {
+        "text": "Vị trí: Mắt cá chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2478,
+            2497
+        ]
+    },
+    {
+        "text": "Mắt cá chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2486,
+            2497
+        ]
+    },
+    {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2500,
+            2515
+        ]
+    },
+    {
+        "text": "trống",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2505,
+            2510
+        ]
+    },
+    {
+        "text": "các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2519,
+            2548
+        ]
+    },
+    {
+        "text": "các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2551,
+            2575
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2578,
+            2608
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2611,
+            2619
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2623,
+            2634
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2637,
+            2661
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2664,
+            2678
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2681,
+            2694
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2697,
+            2705
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2697,
+            2710
+        ]
+    },
+    {
+        "text": "các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2713,
+            2742
+        ]
+    },
+    {
+        "text": "các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2745,
+            2769
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2772,
+            2802
+        ]
+    },
+    {
+        "text": "**Xỉu trước:**",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2805,
+            2819
+        ]
+    },
+    {
+        "text": "Xỉu trước",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2807,
+            2816
+        ]
+    },
+    {
+        "text": "Vị trí: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2822,
+            2833
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2836,
+            2860
+        ]
+    },
+    {
+        "text": "Thời gian: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2863,
+            2877
+        ]
+    },
+    {
+        "text": "Tần suất: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2880,
+            2893
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            2896,
+            2904
+        ]
+    },
+    {
+        "text": "Chiếu xạ: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2896,
+            2909
+        ]
+    },
+    {
+        "text": "Các yếu tố làm nặng thêm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2912,
+            2941
+        ]
+    },
+    {
+        "text": "Các yếu tố làm giảm: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2944,
+            2968
+        ]
+    },
+    {
+        "text": "Các triệu chứng liên quan: N/A",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            2971,
+            3001
+        ]
+    },
+    {
+        "text": "spo",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3156,
+            3159
+        ]
+    },
+    {
+        "text": "rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            3200,
+            3208
+        ]
+    },
+    {
+        "text": "nhịp tim chậm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            3261,
+            3274
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3288,
+            3299
+        ]
+    },
+    {
+        "text": "nhồi máu cơ tim vùng dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            3336,
+            3361
+        ]
+    },
+    {
+        "text": "bảng công thức sinh hóa máu cơ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3424,
+            3454
+        ]
+    },
+    {
+        "text": "bảng công thức máu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3460,
+            3478
+        ]
+    },
+    {
+        "text": "bảng chức năng gan",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3480,
+            3498
+        ]
+    },
+    {
+        "text": "phân tích nước tiểu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3506,
+            3525
+        ]
+    },
+    {
+        "text": "troponin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3578,
+            3586
+        ]
+    },
+    {
+        "text": "0.01",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3587,
+            3591
+        ]
+    },
+    {
+        "text": "chụp x-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3595,
+            3612
+        ]
+    },
+    {
+        "text": "tim to",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            3622,
+            3628
+        ]
+    },
+    {
+        "text": "chụp cắt lớp vi tính sọ não",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3667,
+            3694
+        ]
+    },
+    {
+        "text": "sinh hóa máu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            3988,
+            4000
+        ]
+    },
+    {
+        "text": "công thức máu bình",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4027,
+            4045
+        ]
+    },
+    {
+        "text": "phân tích nước tiểu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4092,
+            4111
+        ]
+    },
+    {
+        "text": "bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4112,
+            4123
+        ]
+    },
+    {
+        "text": "troponin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4126,
+            4134
+        ]
+    },
+    {
+        "text": "0.01",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4135,
+            4139
+        ]
+    },
+    {
+        "text": "rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4142,
+            4150
+        ]
+    },
+    {
+        "text": "nhịp tim chậm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4203,
+            4216
+        ]
+    },
+    {
+        "text": "nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4239,
+            4254
+        ]
+    },
+    {
+        "text": "dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4260,
+            4264
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4269,
+            4280
+        ]
+    },
+    {
+        "text": "ecg",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4282,
+            4285
+        ]
+    },
+    {
+        "text": "điện tâm đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4322,
+            4333
+        ]
+    },
+    {
+        "text": "ecg",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4335,
+            4338
+        ]
+    },
+    {
+        "text": "Tim to",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            4360,
+            4366
+        ]
+    },
+    {
+        "text": "chụp x-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4368,
+            4385
+        ]
+    },
+    {
+        "text": "chụp cắt lớp vi tính sọ não",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            4389,
+            4416
+        ]
+    }
+]

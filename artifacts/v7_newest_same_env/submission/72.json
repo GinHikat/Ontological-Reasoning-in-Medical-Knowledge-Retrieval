@@ -1,0 +1,242 @@
+[
+    {
+        "text": "khoa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            21,
+            25
+        ]
+    },
+    {
+        "text": "vàng da không đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            118,
+            135
+        ]
+    },
+    {
+        "text": "ngứa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            138,
+            142
+        ]
+    },
+    {
+        "text": "xét nghiệm chức năng gan và bilirubin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            190,
+            227
+        ]
+    },
+    {
+        "text": "xét nghiệm huyết thanh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            259,
+            281
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            294,
+            301
+        ]
+    },
+    {
+        "text": "giãn đường dẫn mật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            311,
+            329
+        ]
+    },
+    {
+        "text": "ercp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            380,
+            384
+        ]
+    },
+    {
+        "text": "nội soi mật tụy ngược dòng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            386,
+            412
+        ]
+    },
+    {
+        "text": "lấy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            592,
+            595
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            633,
+            643
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            653,
+            674
+        ]
+    },
+    {
+        "text": "xét nghiệm chức năng gan",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            835,
+            859
+        ]
+    },
+    {
+        "text": "bilirubin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            862,
+            871
+        ],
+        "candidates": [
+            "2285328"
+        ]
+    },
+    {
+        "text": "lấy",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            874,
+            877
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            915,
+            925
+        ]
+    },
+    {
+        "text": "ung thư biểu mô tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            935,
+            956
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            992,
+            996
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1007,
+            1010
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1013,
+            1020
+        ]
+    },
+    {
+        "text": "giãn đường dẫn mật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1030,
+            1048
+        ]
+    },
+    {
+        "text": "ercp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1099,
+            1103
+        ]
+    },
+    {
+        "text": "nội soi mật tụy ngược dòng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1105,
+            1131
+        ]
+    },
+    {
+        "text": "ERCP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1327,
+            1331
+        ]
+    },
+    {
+        "text": "Sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1345,
+            1355
+        ]
+    },
+    {
+        "text": "u ác của đầu tuỵ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1387,
+            1403
+        ],
+        "candidates": [
+            "C250"
+        ]
+    }
+]

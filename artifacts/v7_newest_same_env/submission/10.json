@@ -1,0 +1,196 @@
+[
+    {
+        "text": "Đờm",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            107,
+            110
+        ]
+    },
+    {
+        "text": "ho",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            113,
+            115
+        ]
+    },
+    {
+        "text": "đôi khi đau bụng quặn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            118,
+            139
+        ]
+    },
+    {
+        "text": "tiêu chảy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            142,
+            151
+        ]
+    },
+    {
+        "text": "đôi khi đi ngoài ra máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            154,
+            177
+        ]
+    },
+    {
+        "text": "không tăng cân nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            180,
+            200
+        ]
+    },
+    {
+        "text": "tăng cân nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            186,
+            200
+        ]
+    },
+    {
+        "text": "tăng nhẹ lên 4.9",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            279,
+            295
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            304,
+            308
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            319,
+            322
+        ]
+    },
+    {
+        "text": "vùng chậu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            329,
+            338
+        ]
+    },
+    {
+        "text": "không chẩn đoán được do không có mỡ nào trong cơ thể",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            347,
+            399
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            402,
+            409
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            553,
+            563
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            578,
+            585
+        ]
+    },
+    {
+        "text": "khối u trực tràng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            625,
+            642
+        ]
+    },
+    {
+        "text": "u ác trực tràng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            664,
+            679
+        ],
+        "candidates": [
+            "C20"
+        ]
+    },
+    {
+        "text": "sinh thiết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            690,
+            700
+        ]
+    },
+    {
+        "text": "chỉ cho thấy một u tuyến",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            701,
+            725
+        ]
+    },
+    {
+        "text": "u tuyến",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            718,
+            725
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            755,
+            765
+        ]
+    }
+]

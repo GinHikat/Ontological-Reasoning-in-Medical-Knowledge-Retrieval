@@ -1,0 +1,323 @@
+[
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            38,
+            48
+        ]
+    },
+    {
+        "text": "nhiễm trùng tụ cầu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            94,
+            112
+        ]
+    },
+    {
+        "text": "tỉnh giấc kèm theo cảm giác như vòi nước",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            200,
+            240
+        ]
+    },
+    {
+        "text": "cảm giác như bị xịt nước bắt đầu ở ngực trái lan sang ngực phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            267,
+            330
+        ]
+    },
+    {
+        "text": "nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            391,
+            406
+        ]
+    },
+    {
+        "text": "siêu âm tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            426,
+            437
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            447,
+            468
+        ],
+        "candidates": [
+            "I350"
+        ]
+    },
+    {
+        "text": "trọng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            476,
+            481
+        ]
+    },
+    {
+        "text": "phẫu thuật thay van động mạch chủ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            539,
+            572
+        ]
+    },
+    {
+        "text": "siêu âm tim gắng sức",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            628,
+            648
+        ]
+    },
+    {
+        "text": "dobutamine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            649,
+            659
+        ],
+        "candidates": [
+            "3616"
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            669,
+            690
+        ],
+        "candidates": [
+            "I350"
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ nghiêm trọng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            669,
+            703
+        ]
+    },
+    {
+        "text": "thông tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            732,
+            741
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            760,
+            770
+        ]
+    },
+    {
+        "text": "phẫu thuật tim mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            864,
+            883
+        ]
+    },
+    {
+        "text": "chụp tim trái",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            921,
+            934
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            977,
+            984
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            986,
+            994
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            996,
+            1003
+        ]
+    },
+    {
+        "text": "khó thở khi ngủ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1013,
+            1028
+        ]
+    },
+    {
+        "text": "ngất xỉu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1034,
+            1042
+        ]
+    },
+    {
+        "text": "cảm giác tương tự ở ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1057,
+            1081
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1166,
+            1170
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1181,
+            1184
+        ]
+    },
+    {
+        "text": "siêu âm tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1191,
+            1202
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1212,
+            1233
+        ],
+        "candidates": [
+            "I350"
+        ]
+    },
+    {
+        "text": "siêu âm tim gắng sức",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1253,
+            1273
+        ]
+    },
+    {
+        "text": "dobutamine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1274,
+            1284
+        ],
+        "candidates": [
+            "3616"
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1294,
+            1315
+        ],
+        "candidates": [
+            "I350"
+        ]
+    },
+    {
+        "text": "chụp tim mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1362,
+            1375
+        ]
+    },
+    {
+        "text": "hẹp van động mạch chủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            1423,
+            1444
+        ],
+        "candidates": [
+            "I350"
+        ]
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "text": "đau vùng xương bánh chè – đùi phải dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            73,
+            114
+        ]
+    },
+    {
+        "text": "Tái khám vì đau đầu gối phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            190,
+            218
+        ]
+    },
+    {
+        "text": "Đau bánh chè đùi phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            434,
+            455
+        ]
+    },
+    {
+        "text": "đau đau dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            495,
+            509
+        ]
+    },
+    {
+        "text": "đau đầu gối phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            609,
+            625
+        ]
+    },
+    {
+        "text": "dữ dội",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            705,
+            711
+        ]
+    },
+    {
+        "text": "Chiếu xạ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            777,
+            785
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1018,
+            1022
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1033,
+            1036
+        ]
+    },
+    {
+        "text": "x-quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1043,
+            1050
+        ]
+    },
+    {
+        "text": "bánh chè đùi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1124,
+            1136
+        ]
+    },
+    {
+        "text": "chụp cắt lớp vi tính",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1148,
+            1168
+        ]
+    }
+]

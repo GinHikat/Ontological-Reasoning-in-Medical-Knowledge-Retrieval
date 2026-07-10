@@ -1,0 +1,125 @@
+[
+    {
+        "text": "rối loạn lo âu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            39,
+            53
+        ]
+    },
+    {
+        "text": "rối loạn lo âu, không biệt định",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            39,
+            70
+        ],
+        "candidates": [
+            "F419"
+        ]
+    },
+    {
+        "text": "không biệt định",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            55,
+            70
+        ],
+        "candidates": [
+            "Q564"
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            96,
+            106
+        ]
+    },
+    {
+        "text": "phẫu thuật nội soi cắt bỏ tuyến tiền liệt",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            120,
+            161
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            206,
+            214
+        ]
+    },
+    {
+        "text": "đau dai dẳng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            216,
+            228
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            233,
+            240
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            272,
+            280
+        ]
+    },
+    {
+        "text": "đau dai dẳng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            287,
+            299
+        ]
+    },
+    {
+        "text": "táo bón",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            306,
+            313
+        ]
+    }
+]

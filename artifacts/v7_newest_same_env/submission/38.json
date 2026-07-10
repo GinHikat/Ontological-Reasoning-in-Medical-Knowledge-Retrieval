@@ -1,0 +1,408 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "Đái tháo đường típ 2",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            68
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            75,
+            88
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            75,
+            108
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            92,
+            108
+        ]
+    },
+    {
+        "text": "đặt stent",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            109,
+            118
+        ]
+    },
+    {
+        "text": "Suy tim",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            125,
+            132
+        ],
+        "candidates": [
+            "I50"
+        ]
+    },
+    {
+        "text": "Suy tim dãn tâm thu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            125,
+            144
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            179,
+            189
+        ]
+    },
+    {
+        "text": "đặt stent",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            203,
+            212
+        ]
+    },
+    {
+        "text": "đau họng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            261,
+            269
+        ]
+    },
+    {
+        "text": "đau họng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            369,
+            377
+        ]
+    },
+    {
+        "text": "đau họng kèm theo nuốt vướng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            369,
+            397
+        ]
+    },
+    {
+        "text": "nuốt vướng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            387,
+            397
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            404,
+            412
+        ]
+    },
+    {
+        "text": "Tăng tăng cân 3 pound trong 7 ngày qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            419,
+            457
+        ]
+    },
+    {
+        "text": "cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            429,
+            432
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            441,
+            446
+        ]
+    },
+    {
+        "text": "Vị trí: họng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            489,
+            501
+        ]
+    },
+    {
+        "text": "Yếu tố làm nặng thêm: nuốt vướng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            508,
+            540
+        ]
+    },
+    {
+        "text": "nuốt vướng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            530,
+            540
+        ]
+    },
+    {
+        "text": "Yếu tố làm giảm: đồ uống lạnh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            547,
+            576
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            610,
+            618
+        ]
+    },
+    {
+        "text": "tăng tăng cân 3 pound",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            620,
+            641
+        ]
+    },
+    {
+        "text": "trong",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            642,
+            647
+        ]
+    },
+    {
+        "text": "tmax",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            724,
+            728
+        ]
+    },
+    {
+        "text": "102",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            729,
+            732
+        ]
+    },
+    {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            733,
+            736
+        ]
+    },
+    {
+        "text": "khó thở hoặc",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            760,
+            772
+        ]
+    },
+    {
+        "text": "kiểm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            787,
+            791
+        ]
+    },
+    {
+        "text": "đau họng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            864,
+            872
+        ]
+    },
+    {
+        "text": "viêm họng do liên cầu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            915,
+            936
+        ],
+        "candidates": [
+            "J020"
+        ]
+    },
+    {
+        "text": "glucose",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            994,
+            1001
+        ]
+    },
+    {
+        "text": "537",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1002,
+            1005
+        ]
+    },
+    {
+        "text": "glucose",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1012,
+            1019
+        ]
+    },
+    {
+        "text": "cải thiện thành 367",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1020,
+            1039
+        ]
+    },
+    {
+        "text": "bun",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1046,
+            1049
+        ]
+    },
+    {
+        "text": "(ure) 3",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1050,
+            1057
+        ]
+    },
+    {
+        "text": "ure",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1051,
+            1054
+        ]
+    },
+    {
+        "text": "creatinine",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1068,
+            1078
+        ],
+        "candidates": [
+            "2913"
+        ]
+    },
+    {
+        "text": ") 1.2",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1078,
+            1083
+        ]
+    },
+    {
+        "text": "anion gap",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1094,
+            1103
+        ]
+    }
+]

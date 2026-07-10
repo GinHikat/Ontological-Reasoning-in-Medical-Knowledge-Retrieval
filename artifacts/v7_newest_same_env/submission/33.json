@@ -1,0 +1,398 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "béo phì",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            55
+        ]
+    },
+    {
+        "text": "đái tháo đường",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            62,
+            76
+        ]
+    },
+    {
+        "text": "ngừng thở khi ngủ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            113,
+            130
+        ],
+        "candidates": [
+            "G473"
+        ]
+    },
+    {
+        "text": "suy tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            154,
+            161
+        ]
+    },
+    {
+        "text": "suy tim, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            154,
+            177
+        ],
+        "candidates": [
+            "I509"
+        ]
+    },
+    {
+        "text": "Dị ứng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            182,
+            188
+        ]
+    },
+    {
+        "text": "Dị ứng furosemide",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            190,
+            207
+        ]
+    },
+    {
+        "text": "furosemide",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            197,
+            207
+        ],
+        "candidates": [
+            "4603"
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            256,
+            263
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            362,
+            369
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            441,
+            448
+        ]
+    },
+    {
+        "text": "khó nằm vào ban đêm để ngủ vì thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            455,
+            488
+        ]
+    },
+    {
+        "text": "căng cứng vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            495,
+            513
+        ]
+    },
+    {
+        "text": "tiền sử ho có đờm trắng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            574,
+            597
+        ]
+    },
+    {
+        "text": "chủ quan sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            604,
+            616
+        ]
+    },
+    {
+        "text": "phù chi dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            623,
+            635
+        ]
+    },
+    {
+        "text": "phù chi dưới (ổn định)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            623,
+            645
+        ]
+    },
+    {
+        "text": "Vị trí: căng cứng vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            677,
+            703
+        ]
+    },
+    {
+        "text": "căng cứng vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            685,
+            703
+        ]
+    },
+    {
+        "text": "Thời gian: kéo dài 5 phút (căng cứng vai trái)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            710,
+            756
+        ]
+    },
+    {
+        "text": "căng cứng vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            737,
+            755
+        ]
+    },
+    {
+        "text": "Tần suất: xảy ra vài lần mỗi ngày (căng cứng vai trái)",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            763,
+            817
+        ]
+    },
+    {
+        "text": "căng cứng vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            798,
+            816
+        ]
+    },
+    {
+        "text": "khó nằm vào ban đêm để ngủ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            847,
+            873
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            877,
+            884
+        ]
+    },
+    {
+        "text": "ho có đờm trắng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            886,
+            901
+        ]
+    },
+    {
+        "text": "chủ quan sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            903,
+            915
+        ]
+    },
+    {
+        "text": "phù chi dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            917,
+            929
+        ]
+    },
+    {
+        "text": "thiếu oxy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1083,
+            1092
+        ]
+    },
+    {
+        "text": "thiếu oxy",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1279,
+            1288
+        ]
+    },
+    {
+        "text": "bumetanide 2mg iv",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1401,
+            1418
+        ],
+        "candidates": [
+            "315502"
+        ]
+    },
+    {
+        "text": "vancomycin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1434,
+            1444
+        ]
+    },
+    {
+        "text": "vancomycin 1 gram",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1434,
+            1451
+        ],
+        "candidates": [
+            "1807512"
+        ]
+    },
+    {
+        "text": "levofloxacin 750mg iv",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1467,
+            1488
+        ],
+        "candidates": [
+            "311296"
+        ]
+    },
+    {
+        "text": "aspirin 325mg",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1504,
+            1517
+        ],
+        "candidates": [
+            "317300"
+        ]
+    },
+    {
+        "text": "albuterolipratropium nebulizer",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1533,
+            1563
+        ],
+        "candidates": [
+            "2108233"
+        ]
+    },
+    {
+        "text": "methylprednisolone 125mg",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1579,
+            1603
+        ],
+        "candidates": [
+            "1743702"
+        ]
+    },
+    {
+        "text": "lợi tiểu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1613,
+            1621
+        ]
+    }
+]

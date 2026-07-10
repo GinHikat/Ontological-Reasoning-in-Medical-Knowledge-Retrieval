@@ -1,0 +1,84 @@
+[
+    {
+        "text": "xuất huyết nội sọ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            37,
+            54
+        ]
+    },
+    {
+        "text": "xuất huyết nội sọ không do chấn thương",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            37,
+            75
+        ]
+    },
+    {
+        "text": "chấn",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            64,
+            68
+        ],
+        "candidates": [
+            "S060"
+        ]
+    },
+    {
+        "text": "đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            83,
+            91
+        ]
+    },
+    {
+        "text": "Truyền dịch yếu tố IX đậm đặc",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            144,
+            173
+        ]
+    },
+    {
+        "text": "xuất huyết nội sọ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            205,
+            222
+        ]
+    },
+    {
+        "text": "xuất huyết nội sọ không do chấn thương, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            205,
+            259
+        ],
+        "candidates": [
+            "I629"
+        ]
+    },
+    {
+        "text": "Điều trị chống đông",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            262,
+            281
+        ]
+    }
+]

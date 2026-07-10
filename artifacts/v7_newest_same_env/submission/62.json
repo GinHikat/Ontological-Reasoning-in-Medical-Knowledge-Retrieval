@@ -1,0 +1,74 @@
+[
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            38,
+            48
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            51,
+            60
+        ]
+    },
+    {
+        "text": "R BKpop",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            75,
+            82
+        ]
+    },
+    {
+        "text": "đặt stent động mạch thận trái",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            127,
+            156
+        ]
+    },
+    {
+        "text": "loét mới ở ngón chân út bên phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            204,
+            236
+        ]
+    },
+    {
+        "text": "loét đau",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            268,
+            276
+        ]
+    },
+    {
+        "text": "loét đỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            283,
+            290
+        ]
+    },
+    {
+        "text": "loét sưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            297,
+            306
+        ]
+    }
+]

@@ -1,0 +1,319 @@
+[
+    {
+        "text": "Bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            108,
+            124
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            131,
+            144
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            131,
+            164
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            148,
+            164
+        ]
+    },
+    {
+        "text": "blốc nhĩ thất",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            171,
+            184
+        ],
+        "candidates": [
+            "I442"
+        ]
+    },
+    {
+        "text": "blốc nhĩ thất, hoàn toàn",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            171,
+            195
+        ],
+        "candidates": [
+            "I442"
+        ]
+    },
+    {
+        "text": "tạo",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            212,
+            215
+        ]
+    },
+    {
+        "text": "bệnh thận mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            233,
+            246
+        ]
+    },
+    {
+        "text": "đặc hiệu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            254,
+            262
+        ]
+    },
+    {
+        "text": "Suy giảm nhận thức nhẹ suy giảm nhận thức",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            269,
+            310
+        ],
+        "candidates": [
+            "F067"
+        ]
+    },
+    {
+        "text": "phẫu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            323,
+            327
+        ]
+    },
+    {
+        "text": "Các đợt Cảm giác thắt chặt ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            443,
+            474
+        ]
+    },
+    {
+        "text": "Cảm giác thắt chặt ngực.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            451,
+            475
+        ]
+    },
+    {
+        "text": "Thời gian khởi phát",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            518,
+            537
+        ]
+    },
+    {
+        "text": "Cảm giác thắt chặt ngực dưới xương ức nghiêm trọng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            622,
+            672
+        ]
+    },
+    {
+        "text": "thắt chặt ngực dưới xương ức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            631,
+            659
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            679,
+            686
+        ]
+    },
+    {
+        "text": "Vị trí: Sau xương ức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            718,
+            738
+        ]
+    },
+    {
+        "text": "Mức độ nghiêm trọng: Nghiêm trọng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            745,
+            778
+        ]
+    },
+    {
+        "text": "Thời gian: Phút",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            785,
+            800
+        ]
+    },
+    {
+        "text": "Tần suất: Các đợt trong vài tuần qua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            807,
+            843
+        ]
+    },
+    {
+        "text": "Yếu tố làm nặng thêm: Xảy ra khi nghỉ ngơi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            850,
+            892
+        ]
+    },
+    {
+        "text": "Yếu tố làm giảm: Tự khỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            899,
+            923
+        ]
+    },
+    {
+        "text": "Triệu chứng kèm theo: khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            930,
+            959
+        ]
+    },
+    {
+        "text": "Cơn đau thắt ngực không ổn định",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1048,
+            1079
+        ],
+        "candidates": [
+            "I200"
+        ]
+    },
+    {
+        "text": "can thiệp mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1084,
+            1103
+        ]
+    },
+    {
+        "text": "Cơn đau thắt ngực không ổn định",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1174,
+            1205
+        ],
+        "candidates": [
+            "I200"
+        ]
+    },
+    {
+        "text": "can thiệp mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1210,
+            1229
+        ]
+    }
+]

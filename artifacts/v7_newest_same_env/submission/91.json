@@ -1,0 +1,309 @@
+[
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            25,
+            41
+        ]
+    },
+    {
+        "text": "Viêm nội tâm mạc",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            48,
+            64
+        ]
+    },
+    {
+        "text": "rối loạn chức năng tâm thất phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            68,
+            100
+        ]
+    },
+    {
+        "text": "rung nhĩ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            102,
+            110
+        ]
+    },
+    {
+        "text": "Phẫu thuật thay van tim hai lá cơ học",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            115,
+            152
+        ]
+    },
+    {
+        "text": "Suy thận mạn giai V",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            159,
+            178
+        ],
+        "candidates": [
+            "N185"
+        ]
+    },
+    {
+        "text": "ghép thận",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            251,
+            260
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            282,
+            292
+        ]
+    },
+    {
+        "text": "thủ thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            295,
+            304
+        ]
+    },
+    {
+        "text": "Phẫu thuật thay van hai lá cơ học",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            311,
+            344
+        ]
+    },
+    {
+        "text": "ghép thận",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            351,
+            360
+        ]
+    },
+    {
+        "text": "coumadin",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            401,
+            409
+        ]
+    },
+    {
+        "text": "coumadin 3.0 mg /ng",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            401,
+            420
+        ],
+        "candidates": [
+            "331762"
+        ]
+    },
+    {
+        "text": "3.0",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            410,
+            413
+        ]
+    },
+    {
+        "text": "INR dưới ngưỡng điều trị",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            462,
+            486
+        ]
+    },
+    {
+        "text": "chảy máu mũi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "position": [
+            529,
+            541
+        ],
+        "candidates": [
+            "R041"
+        ]
+    },
+    {
+        "text": "INR",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            672,
+            675
+        ]
+    },
+    {
+        "text": "1.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            676,
+            679
+        ]
+    },
+    {
+        "text": "Không chảy máu mũi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            746,
+            764
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            774,
+            782
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            792,
+            799
+        ]
+    },
+    {
+        "text": "đau bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            809,
+            817
+        ]
+    },
+    {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            828,
+            836
+        ]
+    },
+    {
+        "text": "không nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            838,
+            847
+        ]
+    },
+    {
+        "text": "sinh tồn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            955,
+            963
+        ]
+    },
+    {
+        "text": "INR dưới ngưỡng điều trị 1.7",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1075,
+            1103
+        ]
+    },
+    {
+        "text": "heparin",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1130,
+            1137
+        ],
+        "candidates": [
+            "5224"
+        ]
+    },
+    {
+        "text": "truyền",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1138,
+            1144
+        ]
+    },
+    {
+        "text": "tĩnh",
+        "type": "THUỐC",
+        "assertions": [],
+        "position": [
+            1145,
+            1149
+        ],
+        "candidates": [
+            "10603"
+        ]
+    },
+    {
+        "text": "mạch",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            1150,
+            1154
+        ]
+    }
+]

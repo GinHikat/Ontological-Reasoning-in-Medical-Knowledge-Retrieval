@@ -1,0 +1,177 @@
+[
+    {
+        "text": "khoa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            21,
+            25
+        ]
+    },
+    {
+        "text": "đau ngực tráikèm theo  khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            69,
+            99
+        ]
+    },
+    {
+        "text": "đau ngực trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            123,
+            136
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            139,
+            146
+        ]
+    },
+    {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            149,
+            158
+        ]
+    },
+    {
+        "text": "đau ngực trái: gián đoạn, không liên quan đến gắng sức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            182,
+            236
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            239,
+            246
+        ]
+    },
+    {
+        "text": "dị ứng theo mùa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            293,
+            308
+        ]
+    },
+    {
+        "text": "dị ứng phấn hoa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            312,
+            327
+        ]
+    },
+    {
+        "text": "chóng mặt: các đợt kéo dài vài phút, đến rồi đi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            330,
+            377
+        ]
+    },
+    {
+        "text": "nghiệm pháp gắng sức",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            416,
+            436
+        ]
+    },
+    {
+        "text": "Xạ hình tưới máu cơ tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            472,
+            495
+        ]
+    },
+    {
+        "text": "thiếu máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            513,
+            529
+        ]
+    },
+    {
+        "text": "dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            535,
+            539
+        ]
+    },
+    {
+        "text": "Chụp động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            553,
+            572
+        ]
+    },
+    {
+        "text": "phẫu thuật bắc cầu động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            646,
+            679
+        ]
+    },
+    {
+        "text": "Bệnh động mạch vành mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            699,
+            727
+        ]
+    },
+    {
+        "text": "thiếu máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            731,
+            747
+        ]
+    },
+    {
+        "text": "thất",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            781,
+            785
+        ]
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "text": "u cơ trơn tử cung",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            39,
+            56
+        ],
+        "candidates": [
+            "D25"
+        ]
+    },
+    {
+        "text": "u cơ trơn tử cung, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            39,
+            72
+        ],
+        "candidates": [
+            "D259"
+        ]
+    },
+    {
+        "text": "iron",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            104,
+            108
+        ],
+        "candidates": [
+            "90176"
+        ]
+    },
+    {
+        "text": "Bắt đầu đau bụng dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            157,
+            178
+        ]
+    },
+    {
+        "text": "chảy máu nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            182,
+            196
+        ]
+    },
+    {
+        "text": "lower abdominal pain",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            228,
+            248
+        ]
+    },
+    {
+        "text": "chảy máu nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            255,
+            269
+        ]
+    },
+    {
+        "text": "siêu âm",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            312,
+            319
+        ]
+    },
+    {
+        "text": "huyết cầu tố",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            352,
+            364
+        ]
+    },
+    {
+        "text": "26.1",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            368,
+            372
+        ]
+    },
+    {
+        "text": "can thiệp x-quang",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            470,
+            487
+        ]
+    },
+    {
+        "text": "khoa",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            506,
+            510
+        ]
+    },
+    {
+        "text": "u xơ tử cung",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            542,
+            554
+        ]
+    },
+    {
+        "text": "chẩn",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            724,
+            728
+        ]
+    },
+    {
+        "text": "ảnh",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            739,
+            742
+        ]
+    },
+    {
+        "text": "siêu âm tử cung",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            749,
+            764
+        ]
+    },
+    {
+        "text": "vào [Date] cho thấy",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            765,
+            784
+        ]
+    },
+    {
+        "text": "U cơ trơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            829,
+            838
+        ]
+    },
+    {
+        "text": "Dải nội mạc tử cung",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            900,
+            919
+        ]
+    },
+    {
+        "text": "dịch tự do",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            1008,
+            1018
+        ]
+    },
+    {
+        "text": "giãn bể thận",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            1057,
+            1069
+        ]
+    }
+]

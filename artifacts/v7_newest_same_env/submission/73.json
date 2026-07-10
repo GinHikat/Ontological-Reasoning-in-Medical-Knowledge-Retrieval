@@ -1,0 +1,485 @@
+[
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            71,
+            79
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            81,
+            89
+        ]
+    },
+    {
+        "text": "Nhồi máu cơ tim",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            101,
+            116
+        ]
+    },
+    {
+        "text": "Hội chứng mạch vành cấp.",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            137,
+            161
+        ]
+    },
+    {
+        "text": "bệnh lý mãn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            170,
+            186
+        ]
+    },
+    {
+        "text": "tăng huyết áp vô căn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            193,
+            213
+        ]
+    },
+    {
+        "text": "Tăng huyết áp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            229,
+            242
+        ]
+    },
+    {
+        "text": "tăng lipid máu, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            250,
+            280
+        ],
+        "candidates": [
+            "E785"
+        ]
+    },
+    {
+        "text": "tăng lipid máu, không đặc hiệu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            282,
+            312
+        ],
+        "candidates": [
+            "E785"
+        ]
+    },
+    {
+        "text": "Đái tháo đường type 2",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            320,
+            341
+        ]
+    },
+    {
+        "text": "type",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            335,
+            339
+        ]
+    },
+    {
+        "text": "Đái tháo đường típ 2",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            343,
+            363
+        ]
+    },
+    {
+        "text": "bệnh phổi tắc nghẽn mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            371,
+            399
+        ]
+    },
+    {
+        "text": "bệnh phổi tắc nghẽn mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical",
+            "isNegated"
+        ],
+        "position": [
+            417,
+            445
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            469,
+            482
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            469,
+            502
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            486,
+            502
+        ]
+    },
+    {
+        "text": "bệnh tim mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            504,
+            517
+        ]
+    },
+    {
+        "text": "bệnh tim mạch do xơ vữa động mạch",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            504,
+            537
+        ],
+        "candidates": [
+            "I251"
+        ]
+    },
+    {
+        "text": "xơ vữa động mạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            521,
+            537
+        ]
+    },
+    {
+        "text": "phẫu thuật bắc cầu chủ động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            542,
+            579
+        ]
+    },
+    {
+        "text": "phẫu thuật",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            647,
+            657
+        ]
+    },
+    {
+        "text": "Phẫu thuật bắc cầu chủ động mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            671,
+            708
+        ]
+    },
+    {
+        "text": "CABG",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            710,
+            714
+        ]
+    },
+    {
+        "text": "aspirin 81mg",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            760,
+            772
+        ],
+        "candidates": [
+            "315431"
+        ]
+    },
+    {
+        "text": "asa8",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            774,
+            778
+        ]
+    },
+    {
+        "text": "clopidogrel",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            787,
+            798
+        ],
+        "candidates": [
+            "32968"
+        ]
+    },
+    {
+        "text": "prasugrel",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            800,
+            809
+        ],
+        "candidates": [
+            "613391"
+        ]
+    },
+    {
+        "text": "clopidogrel",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            822,
+            833
+        ],
+        "candidates": [
+            "32968"
+        ]
+    },
+    {
+        "text": "Đột quỵ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            837,
+            844
+        ]
+    },
+    {
+        "text": "metoprolol succinate 100mg daily",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            860,
+            892
+        ],
+        "candidates": [
+            "866415"
+        ]
+    },
+    {
+        "text": "lasix 40mg daily",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            911,
+            927
+        ],
+        "candidates": [
+            "200809"
+        ]
+    },
+    {
+        "text": "atorvastatin 80mg daily",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            946,
+            969
+        ],
+        "candidates": [
+            "259255"
+        ]
+    },
+    {
+        "text": "lisinopril",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "position": [
+            986,
+            996
+        ]
+    },
+    {
+        "text": "lisinopril 2.5mg daily",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            986,
+            1008
+        ],
+        "candidates": [
+            "311353"
+        ]
+    },
+    {
+        "text": "ranexa 500mg daily",
+        "type": "THUỐC",
+        "assertions": [
+            "isHistorical"
+        ],
+        "position": [
+            1025,
+            1043
+        ],
+        "candidates": [
+            "616495"
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1103,
+            1111
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1315,
+            1323
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "position": [
+            1410,
+            1418
+        ]
+    },
+    {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1573,
+            1581
+        ]
+    },
+    {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1583,
+            1590
+        ]
+    },
+    {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+            "isNegated"
+        ],
+        "position": [
+            1592,
+            1607
+        ]
+    }
+]

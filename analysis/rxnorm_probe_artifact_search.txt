@@ -1,0 +1,98 @@
+RxNorm probe — canonical artifact search
+========================================
+Date: 2026-07-11
+Expected semantic manifest SHA256:
+  32d661c7d3bd1e5d6b6d161e8e6811c96fecb995d7dd7456ec7f1c082ecfabdf
+Expected full ZIP SHA256:
+  14ac964770e1b77b3b8faf9bc763e34af21700057927017c6cb00c1ab30f21e9
+Expected counts (scored 24.79660):
+  entities=3160
+  TRIỆU_CHỨNG=1899 CHẨN_ĐOÁN=194 THUỐC=276 TÊN_XÉT_NGHIỆM=655 KẾT_QUẢ_XÉT_NGHIỆM=136
+  isHistorical=675 isNegated=227
+  CHẨN_ĐOÁN coverage 194/194; THUỐC coverage 259/276
+
+RESULT: CANONICAL 24.79660 ARTIFACT NOT FOUND
+Probe generation STOPPED (Phase 1 hard gate).
+
+--------------------------------------------------------------------
+Candidate submission directories with 1.json..100.json
+--------------------------------------------------------------------
+
+1) output/v7_structured/run1/submission
+   status: DIRECTORY EXISTS BUT EMPTY (0 JSON files)
+   note: documented path of scored artifact in state.md / v7_canonical_manifest.json
+   semantic hash: N/A (no files)
+
+2) output/v7_structured/same_env/submission
+   entities=3236 drug=270/271 dx=215/215
+   types={'THUỐC': 271, 'TÊN_XÉT_NGHIỆM': 696, 'CHẨN_ĐOÁN': 215,
+          'TRIỆU_CHỨNG': 1920, 'KẾT_QUẢ_XÉT_NGHIỆM': 134}
+   assertions={'isHistorical': 686, 'isNegated': 223}
+   semantic hash:
+     71593faca03ed5339b805b96c381c9e4864693112cccddf3bc14461719653a60
+   match: NO
+   rejected: fresh same-env rerun (different entity set; AGENTS.md forbids using this)
+
+3) output/v8_candidate_rescue/same_env/submission
+   same hash/counts as (2) — same-env v8 rescue output
+   match: NO
+   rejected: v8 output; not the scored canonical
+
+4) output/v7_structured/smoke1/submission
+   only 1 JSON file — not a full artifact
+
+--------------------------------------------------------------------
+Related analysis artifacts (NOT accepted as submission source)
+--------------------------------------------------------------------
+
+- analysis/v7_canonical_manifest.json
+  Records metadata + per-file SHA256 for the scored run, but not the JSON bodies.
+  folder_content_fingerprint_sha256:
+    ccc3c883e6d43e92028fe815bb5324454292ea1864823088401ec267e7ef2ed4
+  zip_sha256: null
+  Counts match expected 24.79660 profile.
+
+- analysis/v7_structured_entities.tsv (3160 rows)
+  types: TRIỆU_CHỨNG=1877 CHẨN_ĐOÁN=216 THUỐC=276 ...
+  drug coverage 274/276 — DOES NOT MATCH scored 1899/194/259 profile
+  rejected: different run; cannot reconstruct canonical
+
+- analysis/v7_structured_summary.json
+  Same mismatched type counts as the TSV above.
+
+--------------------------------------------------------------------
+ZIP search
+--------------------------------------------------------------------
+
+Searched:
+  repo tree (*.zip)
+  /storage/student10/tungnl (depth-limited, name filters run1/v7/submission/probe/24)
+  /home/student10 (depth-limited)
+  /tmp
+  /home/student10/.cursor (run1/submission/1.json)
+  /home/student10/temporary_storage
+  /home/student10/Downloads, Desktop (absent/empty)
+
+No ZIP matched:
+  14ac964770e1b77b3b8faf9bc763e34af21700057927017c6cb00c1ab30f21e9
+
+No run1.zip / v7 submission ZIP found under the project or nearby storage.
+
+Prior session notes already recorded the same gap:
+  analysis/v7_unlinked_drug_root_cases.md / v8_canonical_17_drug_audit.md
+  "Canonical scored artifact unavailable on disk; run1/submission empty"
+
+--------------------------------------------------------------------
+What is needed to unblock
+--------------------------------------------------------------------
+
+Provide the exact scored submission (either):
+
+  A) ZIP with SHA256 14ac964770e1b77b3b8faf9bc763e34af21700057927017c6cb00c1ab30f21e9
+     (or any repackage whose 100 JSONs hash to the semantic manifest), OR
+
+  B) Directory of 1.json..100.json whose semantic manifest SHA256 equals
+     32d661c7d3bd1e5d6b6d161e8e6811c96fecb995d7dd7456ec7f1c082ecfabdf
+
+Then resume from Phase 1 copy → artifacts/v7_canonical_24_79660/submission/
+Do NOT regenerate via pipeline rerun.
