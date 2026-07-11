@@ -1,0 +1,78 @@
+file	line_id	text	type	status	detail
+1	L025	đánh trống ngực	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+1	L026	khó thở	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+1	L030	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+4	L010	đau bụng	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+4	L023	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+5	L021	sốt	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+7	L016	ảo giác thị giác	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+8	L005	kết quả chọc hút bất thường	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+8	L008	kết quả tế bào học từ dịch chọc hút nốt tuyến giáp trái	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+8	L009	nốt tuyến giáp thùy trái	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+10	L005	đờm	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+12	L020	Đau bụng âm ỉ	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+16	L028	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+17	L009	đau vai phải	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+18	L012	tắc mạch phổi	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+19	L005	Tắc mạch huyết khối tĩnh mạch chủ trên	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+23	L008	xuất huyết dưới nhện	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+24	L002	ung thư vú trái	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+27	L006	Thuyên tắc phổi	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+28	L030	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+30	L030	thuốc giảm đau	THUỐC	zero_match	Exact text not found in line
+32	L027	ho	TRIỆU_CHỨNG	multiple_match	Found 4 exact occurrences; rejecting in v9
+34	L019	thiểu niệu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+34	L020	chảy dịch từ lỗ dò	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+35	L003	bệnh bạch cầu dòng tủy mãn tính	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+35	L047	đái tháo đường	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+36	L002	Bệnh thận đa nang	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+36	L007	cellcept	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+40	L027	sốt	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+41	L006	hội chứng ruột kích thích	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+41	L009	loét hồi tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+41	L010	loét tá tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+41	L010	loét hồi tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+41	L021	Nôn ra máu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+41	L025	Nôn ra máu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+41	L025	loét hồi tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+41	L027	Nôn ra máu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+41	L028	Nôn ra máu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+41	L038	Nôn ra máu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+41	L039	loét hồi tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+43	L018	khó thở	TRIỆU_CHỨNG	multiple_match	Found 3 exact occurrences; rejecting in v9
+44	L027	đau buốt khi đi tiểu	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+47	L010	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+47	L017	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+47	L023	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+48	L015	cánh tay trái lơ lửng	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+49	L007	đau nhiều khi giao hợp	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+50	L018	prednisone	THUỐC	multiple_match	Found 3 exact occurrences; rejecting in v9
+50	L018	amoxicillin	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+50	L018	prednisone 30 mg	THUỐC	zero_match	Exact text not found in line
+50	L018	đau đầu	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+50	L032	prednisone 30 mg	THUỐC	zero_match	Exact text not found in line
+50	L042	prednisone 30 mg	THUỐC	zero_match	Exact text not found in line
+51	L015	tiêu chảy	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+52	L010	sốt	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+54	L021	tái phát u ác trực tràng	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+54	L024	vancomycin	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+56	L002	Đái tháo đường	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+56	L011	khó thở	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+60	L013	thoát vị	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+70	L016	đau bụng ngày càng nặng	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+73	L002	đau ngực	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+74	L013	đau	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+74	L027	khó chịu khi đại tiện	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+75	L023	nitroglycerin	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+77	L016	trầm cảm	CHẨN_ĐOÁN	zero_match	Exact text not found in line
+77	L017	suboxone	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+82	L011	nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+84	L005	tăng huyết áp	CHẨN_ĐOÁN	multiple_match	Found 2 exact occurrences; rejecting in v9
+84	L011	ho	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+94	L008	buồn nôn	TRIỆU_CHỨNG	multiple_match	Found 2 exact occurrences; rejecting in v9
+94	L008	nôn	TRIỆU_CHỨNG	multiple_match	Found 4 exact occurrences; rejecting in v9
+96	L009	zosyn	THUỐC	multiple_match	Found 2 exact occurrences; rejecting in v9
+96	L014	da khô	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+96	L016	đau bụng	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+96	L017	hạ huyết áp	TRIỆU_CHỨNG	zero_match	Exact text not found in line
+96	L018	mạch nhanh	TRIỆU_CHỨNG	zero_match	Exact text not found in line

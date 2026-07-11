@@ -1,0 +1,8 @@
+{
+  "documents": 100,
+  "cache_writes": 100,
+  "raw_proposals": 1439,
+  "aligned": 1363,
+  "final_accepted": 1227,
+  "parse_failure_docs": 2
+}

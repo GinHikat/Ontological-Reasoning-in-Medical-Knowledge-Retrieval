@@ -1,0 +1,621 @@
+# v9 pilot report
+
+Pilot files: 3, 13, 20, 41, 48, 70, 87, 89, 91, 93, 96, 100
+
+## Totals
+- raw proposals: 243
+- aligned proposals: 225
+- alignment failures: 18
+- verifier accepted (raw decisions): 200
+- verifier rejected: 25
+- final cache accepted: 200
+
+## Manual review checklist
+Check especially for:
+- anatomy extracted as disease
+- procedures extracted as diagnosis
+- test names extracted as symptoms
+- whole sentences
+- leading negation
+- drug false positives
+
+## Every final addition
+- file 3 [67:75] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [217:250] CHẨN_ĐOÁN: `bệnh tim mạch do xơ vữa động mạch`
+- file 3 [253:266] CHẨN_ĐOÁN: `tăng huyết áp`
+- file 3 [269:292] CHẨN_ĐOÁN: `phình động mạch chủ nhỏ`
+- file 3 [456:464] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [533:541] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [696:711] TRIỆU_CHỨNG: `đánh trống ngực`
+- file 3 [739:748] TRIỆU_CHỨNG: `chóng mặt`
+- file 3 [757:765] TRIỆU_CHỨNG: `buồn nôn`
+- file 3 [832:840] TRIỆU_CHỨNG: `đau chân`
+- file 3 [867:875] TRIỆU_CHỨNG: `đau ngực`
+- file 3 [878:898] TRIỆU_CHỨNG: `khó thở khi gắng sức`
+- file 3 [901:915] TRIỆU_CHỨNG: `khó thở về đêm`
+- file 3 [918:933] TRIỆU_CHỨNG: `khó thở khi nằm`
+- file 3 [936:951] TRIỆU_CHỨNG: `phù mắt cá chân`
+- file 3 [954:969] TRIỆU_CHỨNG: `đánh trống ngực`
+- file 3 [972:980] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [983:992] TRIỆU_CHỨNG: `Xỉu trước`
+- file 3 [1016:1024] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [1332:1341] TRIỆU_CHỨNG: `chóng mặt`
+- file 3 [1343:1351] TRIỆU_CHỨNG: `buồn nôn`
+- file 3 [1353:1368] TRIỆU_CHỨNG: `đánh trống ngực`
+- file 3 [1375:1383] TRIỆU_CHỨNG: `đau ngực`
+- file 3 [1433:1441] TRIỆU_CHỨNG: `đau chân`
+- file 3 [1640:1648] TRIỆU_CHỨNG: `đau ngực`
+- file 3 [1837:1857] TRIỆU_CHỨNG: `khó thở khi gắng sức`
+- file 3 [2052:2066] TRIỆU_CHỨNG: `khó thở về đêm`
+- file 3 [2256:2271] TRIỆU_CHỨNG: `khó thở khi nằm`
+- file 3 [2459:2474] TRIỆU_CHỨNG: `phù mắt cá chân`
+- file 3 [2500:2515] TRIỆU_CHỨNG: `đánh trống ngực`
+- file 3 [2611:2619] TRIỆU_CHỨNG: `ngất xỉu`
+- file 3 [2807:2816] TRIỆU_CHỨNG: `Xỉu trước`
+- file 3 [3200:3235] CHẨN_ĐOÁN: `rung nhĩ kèm đáp ứng thất nhanh mới`
+- file 3 [3336:3364] CHẨN_ĐOÁN: `nhồi máu cơ tim vùng dưới cũ`
+- file 3 [4142:4177] CHẨN_ĐOÁN: `rung nhĩ kèm đáp ứng thất nhanh mới`
+- file 3 [4239:4267] CHẨN_ĐOÁN: `nhồi máu cơ tim vùng dưới cũ`
+- file 3 [4290:4320] CHẨN_ĐOÁN: `thay đổi sóng t không đặc hiệu`
+- file 3 [4360:4366] CHẨN_ĐOÁN: `Tim to`
+- file 13 [44:94] CHẨN_ĐOÁN: `Bệnh phổi kẽ do sử dụng corticoid liều cao kéo dài`
+- file 13 [124:162] CHẨN_ĐOÁN: `Hội chứng kháng enzym tổng hợp protein`
+- file 13 [170:177] CHẨN_ĐOÁN: `béo phì`
+- file 13 [184:209] CHẨN_ĐOÁN: `Tăng huyết áp nguyên phát`
+- file 13 [317:343] THUỐC: `Corticoid liều cao kéo dài`
+- file 13 [382:389] THUỐC: `bactrim`
+- file 13 [430:441] THUỐC: `doxycycline`
+- file 13 [478:525] CHẨN_ĐOÁN: `Suy giảm miễn dịch do sử dụng corticoid kéo dài`
+- file 13 [921:933] THUỐC: `cotrimoxazol`
+- file 13 [953:963] THUỐC: `doxycyclin`
+- file 13 [976:990] CHẨN_ĐOÁN: `viêm mô tế bào`
+- file 13 [1887:1894] THUỐC: `bactrim`
+- file 13 [1898:1909] THUỐC: `doxycycline`
+- file 13 [1932:1946] CHẨN_ĐOÁN: `Viêm mô tế bào`
+- file 13 [2488:2520] CHẨN_ĐOÁN: `Nhiễm virus Herpes simplex (HSV)`
+- file 13 [2526:2572] CHẨN_ĐOÁN: `Bệnh thủy đậu/Zona (do Varicella Zoster Virus)`
+- file 20 [48:61] CHẨN_ĐOÁN: `Tăng huyết áp`
+- file 20 [68:97] CHẨN_ĐOÁN: `bệnh thận mạn, không đặc hiệu`
+- file 20 [104:165] CHẨN_ĐOÁN: `bệnh tim mạch do xơ vữa động mạch với Nhồi máu cơ tim gần đây`
+- file 20 [172:190] CHẨN_ĐOÁN: `rung nhĩ kịch phát`
+- file 20 [197:221] CHẨN_ĐOÁN: `tăng sản tuyến tiền liệt`
+- file 20 [354:364] THUỐC: `metoprolol`
+- file 20 [405:417] THUỐC: `desmopressin`
+- file 20 [651:675] CHẨN_ĐOÁN: `gãy cổ xương đùi di lệch`
+- file 20 [954:1000] TRIỆU_CHỨNG: `Đau ở hông phải khi cử động và thay đổi tư thế`
+- file 20 [1438:1460] TRIỆU_CHỨNG: `mất vận động vùng đỉnh`
+- file 20 [1570:1690] CHẨN_ĐOÁN: `tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, và xẹp phổi hai đáy`
+- file 20 [1921:1967] TRIỆU_CHỨNG: `đau ở hông phải khi cử động và thay đổi tư thế`
+- file 20 [2097:2214] CHẨN_ĐOÁN: `tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, xẹp phổi hai đáy`
+- file 20 [2392:2510] CHẨN_ĐOÁN: `EF30, mất vận động vùng đỉnh, hở van ba lá vừa-nặng (mod-severe TR) và hở van hai lá/van động mạch chủ nhẹ (mild ARMR)`
+- file 20 [2517:2573] CHẨN_ĐOÁN: `Gãy xương hông phải: gãy cổ xương đùi phải, lún đầu dưới`
+- file 20 [2847:2900] CHẨN_ĐOÁN: `Nhồi máu cơ tim vùng vách liên thất, mạn tính và đỉnh`
+- file 20 [2907:2956] CHẨN_ĐOÁN: `rung nhĩ kịch phát liên tục kể từ Nhồi máu cơ tim`
+- file 20 [2963:2977] TRIỆU_CHỨNG: `tiểu đêm nhiều`
+- file 41 [73:81] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [85:94] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [118:128] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [176:186] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [390:403] CHẨN_ĐOÁN: `loét tá tràng`
+- file 41 [435:448] CHẨN_ĐOÁN: `loét tá tràng`
+- file 41 [478:497] CHẨN_ĐOÁN: `Viêm thực quản độ C`
+- file 41 [499:513] CHẨN_ĐOÁN: `loét thực quản`
+- file 41 [625:635] THUỐC: `omeprazole`
+- file 41 [726:736] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [809:817] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [821:830] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [842:867] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus`
+- file 41 [937:945] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [949:958] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [1008:1018] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [1068:1078] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [1115:1123] TRIỆU_CHỨNG: `đau bụng`
+- file 41 [1244:1252] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [1256:1265] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [1277:1302] CHẨN_ĐOÁN: `hội chứng ruột kích thích`
+- file 41 [1314:1327] CHẨN_ĐOÁN: `loét tá tràng`
+- file 41 [1406:1431] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus`
+- file 41 [1534:1542] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [1544:1553] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [1590:1603] CHẨN_ĐOÁN: `loét tá tràng`
+- file 41 [1695:1705] THUỐC: `omeprazole`
+- file 41 [1776:1784] TRIỆU_CHỨNG: `đau bụng`
+- file 41 [1894:1904] TRIỆU_CHỨNG: `Nôn ra máu`
+- file 41 [1911:1922] TRIỆU_CHỨNG: `Ăn uống kém`
+- file 41 [1930:1936] TRIỆU_CHỨNG: `nausea`
+- file 41 [1943:1951] TRIỆU_CHỨNG: `diarrhea`
+- file 41 [1958:1972] TRIỆU_CHỨNG: `abdominal pain`
+- file 41 [2025:2050] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus`
+- file 41 [2120:2128] TRIỆU_CHỨNG: `buồn nôn`
+- file 41 [2132:2141] TRIỆU_CHỨNG: `tiêu chảy`
+- file 41 [2287:2300] CHẨN_ĐOÁN: `loét tá tràng`
+- file 41 [2541:2549] TRIỆU_CHỨNG: `đau bụng`
+- file 48 [123:141] TRIỆU_CHỨNG: `Yếu nửa người trái`
+- file 48 [386:394] TRIỆU_CHỨNG: `ngất xỉu`
+- file 48 [650:666] TRIỆU_CHỨNG: `tiểu tiện ra sàn`
+- file 48 [691:698] TRIỆU_CHỨNG: `yếu sức`
+- file 48 [767:783] TRIỆU_CHỨNG: `kéo lê chân trái`
+- file 48 [827:871] TRIỆU_CHỨNG: `khó khăn khi ước lượng vị trí ngồi xuống ghế`
+- file 48 [886:901] TRIỆU_CHỨNG: `khó khăn khi ăn`
+- file 48 [1006:1040] TRIỆU_CHỨNG: `cảm giác bất thường ở bên phải đầu`
+- file 48 [1309:1327] TRIỆU_CHỨNG: `Yếu nửa người trái`
+- file 48 [1343:1350] TRIỆU_CHỨNG: `yếu sức`
+- file 48 [1357:1380] TRIỆU_CHỨNG: `khó khăn khi cài cúc áo`
+- file 48 [1387:1404] TRIỆU_CHỨNG: `Khó kéo khóa quần`
+- file 48 [1411:1422] TRIỆU_CHỨNG: `Hơi vụng về`
+- file 48 [1429:1445] TRIỆU_CHỨNG: `tiểu tiện ra sàn`
+- file 48 [1452:1480] TRIỆU_CHỨNG: `khó khăn khi ra khỏi ghế tựa`
+- file 48 [1487:1503] TRIỆU_CHỨNG: `kéo lê chân trái`
+- file 48 [1510:1531] TRIỆU_CHỨNG: `Cánh tay trái lơ lửng`
+- file 48 [1538:1582] TRIỆU_CHỨNG: `khó khăn khi ước lượng vị trí ngồi xuống ghế`
+- file 48 [1589:1604] TRIỆU_CHỨNG: `khó khăn khi ăn`
+- file 48 [1611:1645] TRIỆU_CHỨNG: `cảm giác bất thường ở bên phải đầu`
+- file 48 [2713:2738] CHẨN_ĐOÁN: `xuất huyết dưới màng cứng`
+- file 70 [171:190] THUỐC: `acetaminophen 500mg`
+- file 70 [310:323] THUỐC: `thuốc an thần`
+- file 70 [376:399] TRIỆU_CHỨNG: `đau bụng ngày càng nặng`
+- file 70 [449:472] TRIỆU_CHỨNG: `đau bụng ngày càng nặng`
+- file 70 [491:508] TRIỆU_CHỨNG: `đau bụng liên tục`
+- file 70 [542:559] TRIỆU_CHỨNG: `đau bụng liên tục`
+- file 70 [590:598] TRIỆU_CHỨNG: `đau bụng`
+- file 70 [775:798] TRIỆU_CHỨNG: `đau bụng ngày càng nặng`
+- file 70 [801:818] TRIỆU_CHỨNG: `đau bụng liên tục`
+- file 70 [821:838] TRIỆU_CHỨNG: `mệt mỏi toàn thân`
+- file 70 [841:848] TRIỆU_CHỨNG: `yếu sức`
+- file 70 [851:871] TRIỆU_CHỨNG: `khó thở khi gắng sức`
+- file 70 [874:888] TRIỆU_CHỨNG: `ngứa toàn thân`
+- file 70 [899:910] TRIỆU_CHỨNG: `tiểu ra máu`
+- file 70 [952:969] TRIỆU_CHỨNG: `Đau vùng gan phải`
+- file 70 [1183:1202] THUỐC: `acetaminophen 500mg`
+- file 70 [1253:1266] THUỐC: `thuốc an thần`
+- file 70 [1516:1519] THUỐC: `nac`
+- file 87 [108:116] CHẨN_ĐOÁN: `trầm cảm`
+- file 87 [121:135] CHẨN_ĐOÁN: `rối loạn lo âu`
+- file 87 [179:198] TRIỆU_CHỨNG: `tổn thương chi dưới`
+- file 87 [633:652] TRIỆU_CHỨNG: `tổn thương chi dưới`
+- file 87 [757:791] CHẨN_ĐOÁN: `biến chứng thuyên tắc phổi hai bên`
+- file 87 [795:824] CHẨN_ĐOÁN: `nhiễm trùng chi dưới bên phải`
+- file 89 [206:216] THUỐC: `octreotide`
+- file 89 [223:229] THUỐC: `flagyl`
+- file 89 [671:695] CHẨN_ĐOÁN: `Clostridioides difficile`
+- file 89 [1171:1178] TRIỆU_CHỨNG: `sưng nề`
+- file 89 [1180:1182] TRIỆU_CHỨNG: `đỏ`
+- file 91 [48:64] CHẨN_ĐOÁN: `Viêm nội tâm mạc`
+- file 91 [68:100] CHẨN_ĐOÁN: `rối loạn chức năng tâm thất phải`
+- file 91 [102:110] CHẨN_ĐOÁN: `rung nhĩ`
+- file 91 [159:178] CHẨN_ĐOÁN: `Suy thận mạn giai V`
+- file 91 [401:422] THUỐC: `coumadin 3.0 mg /ngày`
+- file 91 [529:541] TRIỆU_CHỨNG: `chảy máu mũi`
+- file 91 [1130:1137] THUỐC: `heparin`
+- file 93 [25:42] CHẨN_ĐOÁN: `Ung thư vú di căn`
+- file 93 [44:68] CHẨN_ĐOÁN: `tràn dịch màng phổi trái`
+- file 93 [116:123] TRIỆU_CHỨNG: `khó thở`
+- file 93 [156:180] TRIỆU_CHỨNG: `tràn dịch màng ngoài tim`
+- file 93 [227:241] CHẨN_ĐOÁN: `ung thư di căn`
+- file 96 [18:41] CHẨN_ĐOÁN: `viêm tủy xương mãn tính`
+- file 96 [45:65] CHẨN_ĐOÁN: `bàng quang thần kinh`
+- file 96 [236:246] THUỐC: `vancozosyn`
+- file 96 [321:328] THUỐC: `bactrim`
+- file 96 [407:414] TRIỆU_CHỨNG: `sốt cao`
+- file 96 [497:514] CHẨN_ĐOÁN: `nhiễm trùng huyết`
+- file 96 [822:839] TRIỆU_CHỨNG: `sốt cao 39.7 độ C`
+- file 96 [905:914] TRIỆU_CHỨNG: `khát nước`
+- file 96 [980:988] TRIỆU_CHỨNG: `đau hông`
+- file 96 [1077:1093] TRIỆU_CHỨNG: `nước tiểu có cặn`
+- file 96 [1472:1509] CHẨN_ĐOÁN: `nhiễm trùng huyết đường vào tiết niệu`
+- file 96 [1511:1534] CHẨN_ĐOÁN: `viêm tủy xương mãn tính`
+- file 96 [1594:1601] THUỐC: `Cefepim`
+- file 96 [1605:1615] THUỐC: `Vancomycin`
+- file 100 [61:75] CHẨN_ĐOÁN: `tăng calci máu`
+- file 100 [123:141] CHẨN_ĐOÁN: `U ác của đại tràng`
+- file 100 [148:174] CHẨN_ĐOÁN: `cường cận giáp nguyên phát`
+- file 100 [181:197] CHẨN_ĐOÁN: `Xơ vữa động mạch`
+- file 100 [204:229] CHẨN_ĐOÁN: `cơn đau thắt ngực ổn định`
+- file 100 [275:289] CHẨN_ĐOÁN: `tăng calci máu`
+- file 100 [316:330] CHẨN_ĐOÁN: `tăng calci máu`
+- file 100 [504:512] TRIỆU_CHỨNG: `ngất xỉu`
+- file 100 [673:681] TRIỆU_CHỨNG: `đau ngực`
+- file 100 [683:690] TRIỆU_CHỨNG: `khó thở`
+- file 100 [692:701] TRIỆU_CHỨNG: `chóng mặt`
+- file 100 [741:750] TRIỆU_CHỨNG: `động kinh`
+- file 100 [895:903] TRIỆU_CHỨNG: `đau ngực`
+- file 100 [1441:1451] THUỐC: `Laxis 20mg`
+
+## Per-file detail
+
+## File 3
+- sha256: `0d0d7cb13fa91fcfa3ff0fb8f9b947cec7c47a9382e739d85db25523659c6168`
+- raw proposals: 39
+- aligned: 39
+- alignment failures: 0
+- verifier accept decisions: 38
+- verifier reject decisions: 1
+- type disagreements: 0
+- final cache accepted: 38
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [67:75] TRIỆU_CHỨNG: `ngất xỉu` (line L003) ctx=`h lâm sàng trước đây - Tái phát các cơn ngất xỉu trong khoảng vài năm nay. - Ban đầu các`
+  - [217:250] CHẨN_ĐOÁN: `bệnh tim mạch do xơ vữa động mạch` (line L006) ctx=` tháng. Các bệnh lý nội khoa mạn tính - bệnh tim mạch do xơ vữa động mạch - tăng huyết áp - phình động mạch chủ n`
+  - [253:266] CHẨN_ĐOÁN: `tăng huyết áp` (line L007) ctx=`h - bệnh tim mạch do xơ vữa động mạch - tăng huyết áp - phình động mạch chủ nhỏ Thuốc trước k`
+  - [269:292] CHẨN_ĐOÁN: `phình động mạch chủ nhỏ` (line L008) ctx=`h do xơ vữa động mạch - tăng huyết áp - phình động mạch chủ nhỏ Thuốc trước khi nhập viện lần này: khôn`
+  - [456:464] TRIỆU_CHỨNG: `ngất xỉu` (line L013) ctx=`. Bệnh sử hiện tại Lý do nhập viện: cơn ngất xỉu Thời điểm khởi phát triệu chứng: Hôm qu`
+  - [533:541] TRIỆU_CHỨNG: `ngất xỉu` (line L016) ctx=`ứng: Hôm qua Các triệu chứng hiện tại - ngất xỉu trong xe - Tỉnh dậy thấy cháu gái hét l`
+  - [696:711] TRIỆU_CHỨNG: `đánh trống ngực` (line L021) ctx=`đó - Cảm thấy khỏe khi thức dậy - Không đánh trống ngực - Không quầng sáng - Không chóng mặt - `
+  - [739:748] TRIỆU_CHỨNG: `chóng mặt` (line L023) ctx=`h trống ngực - Không quầng sáng - Không chóng mặt - Không buồn nôn - Không đổ mồ hôi - Kh`
+  - [757:765] TRIỆU_CHỨNG: `buồn nôn` (line L024) ctx=`ng quầng sáng - Không chóng mặt - Không buồn nôn - Không đổ mồ hôi - Không mất kiểm soát`
+  - [832:840] TRIỆU_CHỨNG: `đau chân` (line L027) ctx=`mất kiểm soát đại tiện hoặc tiểu tiện - đau chân sau khi đi bộ vài chặng - đau ngực - kh`
+  - [867:875] TRIỆU_CHỨNG: `đau ngực` (line L028) ctx=`ện - đau chân sau khi đi bộ vài chặng - đau ngực - khó thở khi gắng sức - khó thở về đêm`
+  - [878:898] TRIỆU_CHỨNG: `khó thở khi gắng sức` (line L029) ctx=`ân sau khi đi bộ vài chặng - đau ngực - khó thở khi gắng sức - khó thở về đêm - khó thở khi nằm - ph`
+  - [901:915] TRIỆU_CHỨNG: `khó thở về đêm` (line L030) ctx=`ặng - đau ngực - khó thở khi gắng sức - khó thở về đêm - khó thở khi nằm - phù mắt cá chân - đ`
+  - [918:933] TRIỆU_CHỨNG: `khó thở khi nằm` (line L031) ctx=`khó thở khi gắng sức - khó thở về đêm - khó thở khi nằm - phù mắt cá chân - đánh trống ngực - n`
+  - [936:951] TRIỆU_CHỨNG: `phù mắt cá chân` (line L032) ctx=`ức - khó thở về đêm - khó thở khi nằm - phù mắt cá chân - đánh trống ngực - ngất xỉu - Xỉu trướ`
+  - [954:969] TRIỆU_CHỨNG: `đánh trống ngực` (line L033) ctx=`m - khó thở khi nằm - phù mắt cá chân - đánh trống ngực - ngất xỉu - Xỉu trước Đặc điểm triệu c`
+  - [972:980] TRIỆU_CHỨNG: `ngất xỉu` (line L034) ctx=`m - phù mắt cá chân - đánh trống ngực - ngất xỉu - Xỉu trước Đặc điểm triệu chứng - ngất`
+  - [983:992] TRIỆU_CHỨNG: `Xỉu trước` (line L035) ctx=` cá chân - đánh trống ngực - ngất xỉu - Xỉu trước Đặc điểm triệu chứng - ngất xỉu - Vị tr`
+  - [1016:1024] TRIỆU_CHỨNG: `ngất xỉu` (line L037) ctx=` xỉu - Xỉu trước Đặc điểm triệu chứng - ngất xỉu - Vị trí: N/A - Mức độ nghiêm trọng: N/`
+  - [1332:1341] TRIỆU_CHỨNG: `chóng mặt` (line L045) ctx=`   cảm thấy khó chịu,không choáng váng, chóng mặt, buồn nôn, đánh trống ngực, hoặc đau ng`
+  - [1343:1351] TRIỆU_CHỨNG: `buồn nôn` (line L045) ctx=` khó chịu,không choáng váng, chóng mặt, buồn nôn, đánh trống ngực, hoặc đau ngực. Không `
+  - [1353:1368] TRIỆU_CHỨNG: `đánh trống ngực` (line L045) ctx=`không choáng váng, chóng mặt, buồn nôn, đánh trống ngực, hoặc đau ngực. Không cảm nhận được tri`
+  - [1375:1383] TRIỆU_CHỨNG: `đau ngực` (line L045) ctx=`ng mặt, buồn nôn, đánh trống ngực, hoặc đau ngực. Không cảm nhận được triệu chứng sau cơ`
+  - [1433:1441] TRIỆU_CHỨNG: `đau chân` (line L046) ctx=`m nhận được triệu chứng sau cơn ngất. - đau chân: - Vị trí: Chân - Mức độ nghiêm trọng: `
+  - [1640:1648] TRIỆU_CHỨNG: `đau ngực` (line L055) ctx=` N/A - Các triệu chứng liên quan: N/A - đau ngực: - Vị trí: Ngực - Mức độ nghiêm trọng: `
+  - [1837:1857] TRIỆU_CHỨNG: `khó thở khi gắng sức` (line L064) ctx=`/A - Các triệu chứng liên quan: N/A - **khó thở khi gắng sức:** - Vị trí: N/A - Mức độ nghiêm trọng:`
+  - [2052:2066] TRIỆU_CHỨNG: `khó thở về đêm` (line L073) ctx=`/A - Các triệu chứng liên quan: N/A - **khó thở về đêm:** - Vị trí: N/A - Mức độ nghiêm trọng:`
+  - [2256:2271] TRIỆU_CHỨNG: `khó thở khi nằm` (line L082) ctx=`/A - Các triệu chứng liên quan: N/A - **khó thở khi nằm:** - Vị trí: N/A - Mức độ nghiêm trọng:`
+  - [2459:2474] TRIỆU_CHỨNG: `phù mắt cá chân` (line L091) ctx=` N/A - Các triệu chứng liên quan: N/A - phù mắt cá chân: - Vị trí: Mắt cá chân - đánh trống ngự`
+  - [2500:2515] TRIỆU_CHỨNG: `đánh trống ngực` (line L093) ctx=`hù mắt cá chân: - Vị trí: Mắt cá chân - đánh trống ngực: - các yếu tố làm nặng thêm: N/A - các `
+  - [2611:2619] TRIỆU_CHỨNG: `ngất xỉu` (line L097) ctx=` N/A - Các triệu chứng liên quan: N/A - ngất xỉu: - Vị trí: N/A - Mức độ nghiêm trọng: N`
+  - [2807:2816] TRIỆU_CHỨNG: `Xỉu trước` (line L106) ctx=`/A - Các triệu chứng liên quan: N/A - **Xỉu trước:** - Vị trí: N/A - Mức độ nghiêm trọng:`
+  - [3200:3235] CHẨN_ĐOÁN: `rung nhĩ kèm đáp ứng thất nhanh mới` (line L118) ctx=` (độ bão hòa oxy) 94-95 RA. - Phát hiện rung nhĩ kèm đáp ứng thất nhanh mới ở mức 130-150, sau đó là nhịp tim chậm `
+  - [3336:3364] CHẨN_ĐOÁN: `nhồi máu cơ tim vùng dưới cũ` (line L119) ctx=` đồ (ecg) cho thấy bằng chứng có thể là nhồi máu cơ tim vùng dưới cũ và những thay đổi sóng T không đặc hiệu`
+  - [4142:4177] CHẨN_ĐOÁN: `rung nhĩ kèm đáp ứng thất nhanh mới` (line L135) ctx=`nước tiểu bình thường - troponin 0.01 - rung nhĩ kèm đáp ứng thất nhanh mới ở mức 130-150, sau đó là nhịp tim chậm `
+  - [4239:4267] CHẨN_ĐOÁN: `nhồi máu cơ tim vùng dưới cũ` (line L136) ctx=` là nhịp tim chậm tương đối - Có thể là nhồi máu cơ tim vùng dưới cũ (điện tâm đồ (ecg)) - thay đổi sóng t k`
+  - [4290:4320] CHẨN_ĐOÁN: `thay đổi sóng t không đặc hiệu` (line L137) ctx=` tim vùng dưới cũ (điện tâm đồ (ecg)) - thay đổi sóng t không đặc hiệu (điện tâm đồ (ecg)) Kết quả hình ảnh - `
+  - [4360:4366] CHẨN_ĐOÁN: `Tim to` (line L139) ctx=` (điện tâm đồ (ecg)) Kết quả hình ảnh - Tim to (chụp x-quang ngực) - chụp cắt lớp vi t`
+
+## File 13
+- sha256: `b275eab9d1e318e3775b6fc5247da05502e8b1c2844f5f32e7c139d07cc7295e`
+- raw proposals: 17
+- aligned: 17
+- alignment failures: 0
+- verifier accept decisions: 16
+- verifier reject decisions: 1
+- type disagreements: 0
+- final cache accepted: 16
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [44:94] CHẨN_ĐOÁN: `Bệnh phổi kẽ do sử dụng corticoid liều cao kéo dài` (line L003) ctx=`Tiền sử bệnh     Các bệnh lý mãn tính - Bệnh phổi kẽ do sử dụng corticoid liều cao kéo dài.     - Thở oxy tại nhà     - Hội chứng `
+  - [124:162] CHẨN_ĐOÁN: `Hội chứng kháng enzym tổng hợp protein` (line L005) ctx=`ao kéo dài.     - Thở oxy tại nhà     - Hội chứng kháng enzym tổng hợp protein.     - béo phì     - Tăng huyết áp nguy`
+  - [170:177] CHẨN_ĐOÁN: `béo phì` (line L006) ctx=`ứng kháng enzym tổng hợp protein.     - béo phì     - Tăng huyết áp nguyên phát.     Ti`
+  - [184:209] CHẨN_ĐOÁN: `Tăng huyết áp nguyên phát` (line L007) ctx=`m tổng hợp protein.     - béo phì     - Tăng huyết áp nguyên phát.     Tiền sử phẫu thuật / thủ thuật: Si`
+  - [317:343] THUỐC: `Corticoid liều cao kéo dài` (line L010) ctx=` đây     Thuốc trước khi nhập viện     -Corticoid liều cao kéo dài     - Thở oxy tại nhà     - Tăng liều b`
+  - [382:389] THUỐC: `bactrim` (line L012) ctx=`i     - Thở oxy tại nhà     - Tăng liều bactrim (do bác sĩ chăm sóc chính kê đơn)     -`
+  - [430:441] THUỐC: `doxycycline` (line L013) ctx=`(do bác sĩ chăm sóc chính kê đơn)     - doxycycline (do bác sĩ chăm sóc chính kê đơn) - Suy`
+  - [478:525] CHẨN_ĐOÁN: `Suy giảm miễn dịch do sử dụng corticoid kéo dài` (line L014) ctx=`ine (do bác sĩ chăm sóc chính kê đơn) - Suy giảm miễn dịch do sử dụng corticoid kéo dài 2.  Tiền sử bệnh hiện tại     Lý do nhậ`
+  - [921:933] THUỐC: `cotrimoxazol` (line L019) ctx=` được bác sĩ điều trị khám và tăng liều cotrimoxazol, đồng thời bổ sung doxycyclin do nghi n`
+  - [953:963] THUỐC: `doxycyclin` (line L019) ctx=`ng liều cotrimoxazol, đồng thời bổ sung doxycyclin do nghi ngờ viêm mô tế bào. Bệnh nhân t`
+  - [976:990] CHẨN_ĐOÁN: `viêm mô tế bào` (line L019) ctx=`ồng thời bổ sung doxycyclin do nghi ngờ viêm mô tế bào. Bệnh nhân thấy  ban đỏ quanh tổn thươn`
+  - [1887:1894] THUỐC: `bactrim` (line L035) ctx=` thay thế khám vào ngày, được tăng liều bactrim và doxycycline để điều trị chẩn đoán Vi`
+  - [1898:1909] THUỐC: `doxycycline` (line L035) ctx=`hám vào ngày, được tăng liều bactrim và doxycycline để điều trị chẩn đoán Viêm mô tế bào   `
+  - [1932:1946] CHẨN_ĐOÁN: `Viêm mô tế bào` (line L035) ctx=`im và doxycycline để điều trị chẩn đoán Viêm mô tế bào     - Báo cáo có cải thiện một phần về `
+  - [2488:2520] CHẨN_ĐOÁN: `Nhiễm virus Herpes simplex (HSV)` (line L043) ctx=`ác phát hiện chẩn đoán khác: Lo ngại về Nhiễm virus Herpes simplex (HSV) hoặc Bệnh thủy đậu/Zona (do Varicella Z`
+  - [2526:2572] CHẨN_ĐOÁN: `Bệnh thủy đậu/Zona (do Varicella Zoster Virus)` (line L043) ctx=`ề Nhiễm virus Herpes simplex (HSV) hoặc Bệnh thủy đậu/Zona (do Varicella Zoster Virus)`
+
+## File 20
+- sha256: `d548f2ad4925c3c08dbf7beebf5fb3e29048036492e10a7b1c584517fdcbc598`
+- raw proposals: 22
+- aligned: 22
+- alignment failures: 0
+- verifier accept decisions: 18
+- verifier reject decisions: 4
+- type disagreements: 0
+- final cache accepted: 18
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [48:61] CHẨN_ĐOÁN: `Tăng huyết áp` (line L003) ctx=` sử bệnh     Các bệnh lý mãn tính     - Tăng huyết áp     - bệnh thận mạn, không đặc hiệu    `
+  - [68:97] CHẨN_ĐOÁN: `bệnh thận mạn, không đặc hiệu` (line L004) ctx=`h lý mãn tính     - Tăng huyết áp     - bệnh thận mạn, không đặc hiệu     - bệnh tim mạch do xơ vữa động mạch`
+  - [104:165] CHẨN_ĐOÁN: `bệnh tim mạch do xơ vữa động mạch với Nhồi máu cơ tim gần đây` (line L005) ctx=`  - bệnh thận mạn, không đặc hiệu     - bệnh tim mạch do xơ vữa động mạch với Nhồi máu cơ tim gần đây     - rung nhĩ kịch phát     - tăng sản`
+  - [172:190] CHẨN_ĐOÁN: `rung nhĩ kịch phát` (line L006) ctx=` mạch với Nhồi máu cơ tim gần đây     - rung nhĩ kịch phát     - tăng sản tuyến tiền liệt     Tiền`
+  - [197:221] CHẨN_ĐOÁN: `tăng sản tuyến tiền liệt` (line L007) ctx=` gần đây     - rung nhĩ kịch phát     - tăng sản tuyến tiền liệt     Tiền sử phẫu thuật / thủ thuật     `
+  - [354:364] THUỐC: `metoprolol` (line L012) ctx=`ibi     Thuốc trước khi nhập viện     - metoprolol (reduced from 50mg to 25mg daily)     -`
+  - [405:417] THUỐC: `desmopressin` (line L013) ctx=`(reduced from 50mg to 25mg daily)     - desmopressin     Các yếu tố nguy cơ liên quan     - `
+  - [651:675] CHẨN_ĐOÁN: `gãy cổ xương đùi di lệch` (line L019) ctx=`h hiện tại     Lý do nhập viện: ngã với gãy cổ xương đùi di lệch     Thời điểm khởi phát triệu chứng: Hô`
+  - [954:1000] TRIỆU_CHỨNG: `Đau ở hông phải khi cử động và thay đổi tư thế` (line L027) ctx=` di lệch     Triệu chứng khi nhập viện: Đau ở hông phải khi cử động và thay đổi tư thế     Đặc điểm triệu chứng     - Vị trí: `
+  - [1438:1460] TRIỆU_CHỨNG: `mất vận động vùng đỉnh` (line L038) ctx=` Phát hiện có gãy cổ xương đùi di lệch; mất vận động vùng đỉnh     - chụp x-quang ngực Hình ảnh mức nư`
+  - [1570:1690] CHẨN_ĐOÁN: `tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, và xẹp phổi hai đáy` (line L040) ctx=` ct ngực không thuốc cản quang cho thấy tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, và xẹp phổi hai đáy     Tình trạng tiến triển nặng trước nh`
+  - [1921:1967] TRIỆU_CHỨNG: `đau ở hông phải khi cử động và thay đổi tư thế` (line L046) ctx=`cảm thấy khỏe trên sàn     - Than phiền đau ở hông phải khi cử động và thay đổi tư thế     Kết quả chụp ảnh/kỹ thuật chẩn đoán`
+  - [2097:2214] CHẨN_ĐOÁN: `tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, xẹp phổi hai đáy` (line L049) ctx=`  - chụp ct ngực không thuốc cản quang: tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, xẹp phổi hai đáy     - xạ hình tưới máu cơ tim  mibi: kh`
+  - [2392:2510] CHẨN_ĐOÁN: `EF30, mất vận động vùng đỉnh, hở van ba lá vừa-nặng (mod-severe TR) và hở van hai lá/van động mạch chủ nhẹ (mild ARMR)` (line L051) ctx=`hành ngực (siêu âm tim qua thành ngực): EF30, mất vận động vùng đỉnh, hở van ba lá vừa-nặng (mod-severe TR) và hở van hai lá/van động mạch chủ nhẹ (mild ARMR)     - Gãy xương hông phải: gãy cổ xương`
+  - [2517:2573] CHẨN_ĐOÁN: `Gãy xương hông phải: gãy cổ xương đùi phải, lún đầu dưới` (line L052) ctx=`van động mạch chủ nhẹ (mild ARMR)     - Gãy xương hông phải: gãy cổ xương đùi phải, lún đầu dưới     Các thủ thuật đã thực hiện     - ch`
+  - [2847:2900] CHẨN_ĐOÁN: `Nhồi máu cơ tim vùng vách liên thất, mạn tính và đỉnh` (line L059) ctx=`     Các phát hiện chẩn đoán khác     - Nhồi máu cơ tim vùng vách liên thất, mạn tính và đỉnh     - rung nhĩ kịch phát liên tục kể từ`
+  - [2907:2956] CHẨN_ĐOÁN: `rung nhĩ kịch phát liên tục kể từ Nhồi máu cơ tim` (line L060) ctx=` vách liên thất, mạn tính và đỉnh     - rung nhĩ kịch phát liên tục kể từ Nhồi máu cơ tim     - tiểu đêm nhiều  do  tăng sản tuyế`
+  - [2963:2977] TRIỆU_CHỨNG: `tiểu đêm nhiều` (line L061) ctx=`át liên tục kể từ Nhồi máu cơ tim     - tiểu đêm nhiều  do  tăng sản tuyến tiền liệt`
+
+## File 41
+- sha256: `6ddac67f9c267b435389fc274297ff6b24267a438f685721f519aec67ec3fd32`
+- raw proposals: 49
+- aligned: 38
+- alignment failures: 11
+- verifier accept decisions: 38
+- verifier reject decisions: 0
+- type disagreements: 0
+- final cache accepted: 38
+- parse_failures: ["proposer_parse_error: Expecting ',' delimiter: line 247 column 6 (char 4673)"]
+- repair_used: True
+- alignment failure detail:
+  - multiple_match L=L006 type=CHẨN_ĐOÁN text='hội chứng ruột kích thích' detail=Found 2 exact occurrences; rejecting in v9
+  - zero_match L=L009 type=CHẨN_ĐOÁN text='loét hồi tràng' detail=Exact text not found in line
+  - zero_match L=L010 type=CHẨN_ĐOÁN text='loét tá tràng' detail=Exact text not found in line
+  - zero_match L=L010 type=CHẨN_ĐOÁN text='loét hồi tràng' detail=Exact text not found in line
+  - zero_match L=L021 type=TRIỆU_CHỨNG text='Nôn ra máu' detail=Exact text not found in line
+  - zero_match L=L025 type=TRIỆU_CHỨNG text='Nôn ra máu' detail=Exact text not found in line
+  - zero_match L=L025 type=CHẨN_ĐOÁN text='loét hồi tràng' detail=Exact text not found in line
+  - zero_match L=L027 type=TRIỆU_CHỨNG text='Nôn ra máu' detail=Exact text not found in line
+  - zero_match L=L028 type=TRIỆU_CHỨNG text='Nôn ra máu' detail=Exact text not found in line
+  - zero_match L=L038 type=TRIỆU_CHỨNG text='Nôn ra máu' detail=Exact text not found in line
+  - zero_match L=L039 type=CHẨN_ĐOÁN text='loét hồi tràng' detail=Exact text not found in line
+- final accepted candidates:
+  - [73:81] TRIỆU_CHỨNG: `buồn nôn` (line L003) ctx=` bệnh tương tự trước đây     - Tái phát buồn nôn và tiêu chảy cách đây vài năm     - Nôn`
+  - [85:94] TRIỆU_CHỨNG: `tiêu chảy` (line L003) ctx=`tự trước đây     - Tái phát buồn nôn và tiêu chảy cách đây vài năm     - Nôn ra máu 2 tuầ`
+  - [118:128] TRIỆU_CHỨNG: `Nôn ra máu` (line L004) ctx=`nôn và tiêu chảy cách đây vài năm     - Nôn ra máu 2 tuần sau tập viêm dạ dày ruột do viru`
+  - [176:186] TRIỆU_CHỨNG: `Nôn ra máu` (line L005) ctx=`sau tập viêm dạ dày ruột do virus     - Nôn ra máu trong 2 ngày qua     Bệnh lý mãn tính: `
+  - [390:403] CHẨN_ĐOÁN: `loét tá tràng` (line L008) ctx=` - Nội soi (cách đây vài năm, phát hiện loét tá tràng)     - Nội soi (cho thấy nhiều loét tá `
+  - [435:448] CHẨN_ĐOÁN: `loét tá tràng` (line L009) ctx=`tá tràng)     - Nội soi (cho thấy nhiều loét tá tràng và hồi tràng)     - nội soi (Viêm thực `
+  - [478:497] CHẨN_ĐOÁN: `Viêm thực quản độ C` (line L010) ctx=`t tá tràng và hồi tràng)     - nội soi (Viêm thực quản độ C, loét thực quản dưới 6 mm có điểm sắc t`
+  - [499:513] CHẨN_ĐOÁN: `loét thực quản` (line L010) ctx=`ng)     - nội soi (Viêm thực quản độ C, loét thực quản dưới 6 mm có điểm sắc tố, nhiều loét nô`
+  - [625:635] THUỐC: `omeprazole` (line L011) ctx=`àng sớm)     Thuốc trước khi nhập viện: omeprazole (vừa ngừng để làm test hơi thở h. pylor`
+  - [726:736] TRIỆU_CHỨNG: `Nôn ra máu` (line L014) ctx=`n sử bệnh hiện tại     Lý do nhập viện: Nôn ra máu     Thời điểm khởi phát triệu chứng    `
+  - [809:817] TRIỆU_CHỨNG: `buồn nôn` (line L016) ctx=`ứng     - Triệu chứng cách đây vài năm (buồn nôn và tiêu chảy)     - Tập viêm dạ dày ruộ`
+  - [821:830] TRIỆU_CHỨNG: `tiêu chảy` (line L016) ctx=`iệu chứng cách đây vài năm (buồn nôn và tiêu chảy)     - Tập viêm dạ dày ruột do virus (t`
+  - [842:867] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus` (line L017) ctx=`i năm (buồn nôn và tiêu chảy)     - Tập viêm dạ dày ruột do virus (trong năm nay)     - Tiếp tục khó khăn`
+  - [937:945] TRIỆU_CHỨNG: `buồn nôn` (line L018) ctx=`c khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dà`
+  - [949:958] TRIỆU_CHỨNG: `tiêu chảy` (line L018) ctx=`hi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dày ruột do vir`
+  - [1008:1018] TRIỆU_CHỨNG: `Nôn ra máu` (line L019) ctx=`au tập viêm dạ dày ruột do virus)     - Nôn ra máu (2 tuần sau tập viêm dạ dày ruột do vir`
+  - [1068:1078] TRIỆU_CHỨNG: `Nôn ra máu` (line L020) ctx=`au tập viêm dạ dày ruột do virus)     - Nôn ra máu (trong 2 ngày qua)     - Tình trạng đau`
+  - [1115:1123] TRIỆU_CHỨNG: `đau bụng` (line L021) ctx=`máu (trong 2 ngày qua)     - Tình trạng đau bụng và nôn ra máu trở nên tồi tệ hơn (khi n`
+  - [1244:1252] TRIỆU_CHỨNG: `buồn nôn` (line L023) ctx=` Triệu chứng cách đây vài năm: tái phát buồn nôn và tiêu chảy, chẩn đoán hội chứng ruột `
+  - [1256:1265] TRIỆU_CHỨNG: `tiêu chảy` (line L023) ctx=` cách đây vài năm: tái phát buồn nôn và tiêu chảy, chẩn đoán hội chứng ruột kích thích, p`
+  - [1277:1302] CHẨN_ĐOÁN: `hội chứng ruột kích thích` (line L023) ctx=`i phát buồn nôn và tiêu chảy, chẩn đoán hội chứng ruột kích thích, phát hiện loét tá tràng khi nội soi.  `
+  - [1314:1327] CHẨN_ĐOÁN: `loét tá tràng` (line L023) ctx=`án hội chứng ruột kích thích, phát hiện loét tá tràng khi nội soi.     - Trong năm nay: không`
+  - [1406:1431] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus` (line L024) ctx=`g thể giữ được bất cứ thứ gì, chẩn đoán viêm dạ dày ruột do virus.     - 2 tuần sau điều trị  viêm dạ dày`
+  - [1534:1542] TRIỆU_CHỨNG: `buồn nôn` (line L025) ctx=`c khó khăn khi ăn uống qua đường miệng, buồn nôn, tiêu chảy, nôn ra máu. nội soi cho thấ`
+  - [1544:1553] TRIỆU_CHỨNG: `tiêu chảy` (line L025) ctx=` khi ăn uống qua đường miệng, buồn nôn, tiêu chảy, nôn ra máu. nội soi cho thấy nhiều loé`
+  - [1590:1603] CHẨN_ĐOÁN: `loét tá tràng` (line L025) ctx=`hảy, nôn ra máu. nội soi cho thấy nhiều loét tá tràng và hồi tràng. dương tính xét nghiệm phâ`
+  - [1695:1705] THUỐC: `omeprazole` (line L026) ctx=`sporidium.     - Gần đây: ngừng sử dụng omeprazole để làm test hơi thở h. pylori.     - Kh`
+  - [1776:1784] TRIỆU_CHỨNG: `đau bụng` (line L027) ctx=`     - Khi ngừng omeprazole: phát triển đau bụng và nôn ra máu trở nên tồi tệ hơn.     -`
+  - [1894:1904] TRIỆU_CHỨNG: `Nôn ra máu` (line L030) ctx=`áu.     Triệu chứng khi nhập viện     - Nôn ra máu     - Ăn uống kém.     - nausea     - d`
+  - [1911:1922] TRIỆU_CHỨNG: `Ăn uống kém` (line L031) ctx=`ng khi nhập viện     - Nôn ra máu     - Ăn uống kém.     - nausea     - diarrhea     - abdo`
+  - [1930:1936] TRIỆU_CHỨNG: `nausea` (line L032) ctx=`  - Nôn ra máu     - Ăn uống kém.     - nausea     - diarrhea     - abdominal pain    `
+  - [1943:1951] TRIỆU_CHỨNG: `diarrhea` (line L033) ctx=`u     - Ăn uống kém.     - nausea     - diarrhea     - abdominal pain     Các sự kiện tr`
+  - [1958:1972] TRIỆU_CHỨNG: `abdominal pain` (line L034) ctx=` kém.     - nausea     - diarrhea     - abdominal pain     Các sự kiện trước khi nhập viện    `
+  - [2025:2050] CHẨN_ĐOÁN: `viêm dạ dày ruột do virus` (line L036) ctx=`iện trước khi nhập viện     - Chẩn đoán viêm dạ dày ruột do virus (trong năm nay)     - Tiếp tục khó khăn`
+  - [2120:2128] TRIỆU_CHỨNG: `buồn nôn` (line L037) ctx=`c khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dà`
+  - [2132:2141] TRIỆU_CHỨNG: `tiêu chảy` (line L037) ctx=`hi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dày ruột do vir`
+  - [2287:2300] CHẨN_ĐOÁN: `loét tá tràng` (line L039) ctx=` do virus)     - nội soi cho thấy nhiều loét tá tràng và hồi tràng (2 tuần sau tập viêm dạ dà`
+  - [2541:2549] TRIỆU_CHỨNG: `đau bụng` (line L042) ctx=`hở h. pylori (gần đây)     - Phát triển đau bụng và nôn ra máu trở nên tồi tệ hơn (khi n`
+
+## File 48
+- sha256: `d33df34973a806a1b2c84ef26ebc85bedfa188e2b3746d720ca66ed7a315fdd9`
+- raw proposals: 22
+- aligned: 21
+- alignment failures: 1
+- verifier accept decisions: 21
+- verifier reject decisions: 0
+- type disagreements: 0
+- final cache accepted: 21
+- parse_failures: []
+- repair_used: False
+- alignment failure detail:
+  - zero_match L=L015 type=TRIỆU_CHỨNG text='cánh tay trái lơ lửng' detail=Exact text not found in line
+- final accepted candidates:
+  - [123:141] TRIỆU_CHỨNG: `Yếu nửa người trái` (line L005) ctx=`n sử bệnh hiện tại     Lý do nhập viện: Yếu nửa người trái     Thời điểm khởi phát triệu chứng: Hô`
+  - [386:394] TRIỆU_CHỨNG: `ngất xỉu` (line L010) ctx=`ời điểm đó     - Gần đây được chẩn đoán ngất xỉu do phản ứng thần kinh mạch máu sau cơn `
+  - [650:666] TRIỆU_CHỨNG: `tiểu tiện ra sàn` (line L013) ctx=`ông ấy     - Thấy ông ấy hơi vụng về và tiểu tiện ra sàn     - Hôm nay, cảm thấy yếu sức     - V`
+  - [691:698] TRIỆU_CHỨNG: `yếu sức` (line L014) ctx=`iểu tiện ra sàn     - Hôm nay, cảm thấy yếu sức     - Vào buổi trưa, khó khăn khi ra kh`
+  - [767:783] TRIỆU_CHỨNG: `kéo lê chân trái` (line L015) ctx=`n khi ra khỏi ghế tựa, nhận thấy ông ấy kéo lê chân trái và cánh tay trái được cho là lơ lửng   `
+  - [827:871] TRIỆU_CHỨNG: `khó khăn khi ước lượng vị trí ngồi xuống ghế` (line L016) ctx=`cánh tay trái được cho là lơ lửng     - khó khăn khi ước lượng vị trí ngồi xuống ghế ăn trưa     - khó khăn khi ăn     - Tìn`
+  - [886:901] TRIỆU_CHỨNG: `khó khăn khi ăn` (line L017) ctx=`ợng vị trí ngồi xuống ghế ăn trưa     - khó khăn khi ăn     - Tình trạng kéo dài khoảng 30 phút`
+  - [1006:1040] TRIỆU_CHỨNG: `cảm giác bất thường ở bên phải đầu` (line L019) ctx=`ạng thái bình thường     - Báo cáo rằng cảm giác bất thường ở bên phải đầu     - tình trạng ổn định vào buổi chiều`
+  - [1309:1327] TRIỆU_CHỨNG: `Yếu nửa người trái` (line L023) ctx=`tối     Triệu chứng khi nhập viện     - Yếu nửa người trái     - cảm thấy yếu sức     - khó khăn k`
+  - [1343:1350] TRIỆU_CHỨNG: `yếu sức` (line L024) ctx=`    - Yếu nửa người trái     - cảm thấy yếu sức     - khó khăn khi cài cúc áo     - Khó`
+  - [1357:1380] TRIỆU_CHỨNG: `khó khăn khi cài cúc áo` (line L025) ctx=`người trái     - cảm thấy yếu sức     - khó khăn khi cài cúc áo     - Khó kéo khóa quần     - Hơi vụng `
+  - [1387:1404] TRIỆU_CHỨNG: `Khó kéo khóa quần` (line L026) ctx=`sức     - khó khăn khi cài cúc áo     - Khó kéo khóa quần     - Hơi vụng về     - tiểu tiện ra sà`
+  - [1411:1422] TRIỆU_CHỨNG: `Hơi vụng về` (line L027) ctx=`ài cúc áo     - Khó kéo khóa quần     - Hơi vụng về     - tiểu tiện ra sàn     - khó khăn k`
+  - [1429:1445] TRIỆU_CHỨNG: `tiểu tiện ra sàn` (line L028) ctx=`ó kéo khóa quần     - Hơi vụng về     - tiểu tiện ra sàn     - khó khăn khi ra khỏi ghế tựa     `
+  - [1452:1480] TRIỆU_CHỨNG: `khó khăn khi ra khỏi ghế tựa` (line L029) ctx=`ơi vụng về     - tiểu tiện ra sàn     - khó khăn khi ra khỏi ghế tựa     - kéo lê chân trái     - Cánh tay t`
+  - [1487:1503] TRIỆU_CHỨNG: `kéo lê chân trái` (line L030) ctx=`   - khó khăn khi ra khỏi ghế tựa     - kéo lê chân trái     - Cánh tay trái lơ lửng     - khó k`
+  - [1510:1531] TRIỆU_CHỨNG: `Cánh tay trái lơ lửng` (line L031) ctx=`ỏi ghế tựa     - kéo lê chân trái     - Cánh tay trái lơ lửng     - khó khăn khi ước lượng vị trí ngồ`
+  - [1538:1582] TRIỆU_CHỨNG: `khó khăn khi ước lượng vị trí ngồi xuống ghế` (line L032) ctx=` trái     - Cánh tay trái lơ lửng     - khó khăn khi ước lượng vị trí ngồi xuống ghế     - khó khăn khi ăn     - cảm giác bấ`
+  - [1589:1604] TRIỆU_CHỨNG: `khó khăn khi ăn` (line L033) ctx=`i ước lượng vị trí ngồi xuống ghế     - khó khăn khi ăn     - cảm giác bất thường ở bên phải đầ`
+  - [1611:1645] TRIỆU_CHỨNG: `cảm giác bất thường ở bên phải đầu` (line L034) ctx=`i xuống ghế     - khó khăn khi ăn     - cảm giác bất thường ở bên phải đầu     Đặc điểm triệu chứng     - Vị trí: `
+  - [2713:2738] CHẨN_ĐOÁN: `xuất huyết dưới màng cứng` (line L052) ctx=`  Kết quả chụp ảnh / tạo ảnh: Phát hiện xuất huyết dưới màng cứng tại bệnh viện bên ngoài`
+
+## File 70
+- sha256: `598bd82c6f8004db78b35e441fc7048cd50d6b0a8c5ebc53277511f153f72980`
+- raw proposals: 24
+- aligned: 23
+- alignment failures: 1
+- verifier accept decisions: 18
+- verifier reject decisions: 5
+- type disagreements: 0
+- final cache accepted: 18
+- parse_failures: []
+- repair_used: False
+- alignment failure detail:
+  - zero_match L=L016 type=TRIỆU_CHỨNG text='đau bụng ngày càng nặng' detail=Exact text not found in line
+- final accepted candidates:
+  - [171:190] THUỐC: `acetaminophen 500mg` (line L004) ctx=`i nhập viện - Tự điều trị bằng liều cao acetaminophen 500mg, taking 10 pills at a time khi cơn đau `
+  - [310:323] THUỐC: `thuốc an thần` (line L005) ctx=` dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ  2. Bệnh sử hiện tại Lý d`
+  - [376:399] TRIỆU_CHỨNG: `đau bụng ngày càng nặng` (line L008) ctx=`ứ  2. Bệnh sử hiện tại Lý do nhập viện: đau bụng ngày càng nặng Thời điểm khởi phát triệu chứng - Tiền `
+  - [449:472] TRIỆU_CHỨNG: `đau bụng ngày càng nặng` (line L010) ctx=` khởi phát triệu chứng - Tiền sử 2 ngày đau bụng ngày càng nặng - Tiền sử 2 tháng đau bụng liên tục Diễ`
+  - [491:508] TRIỆU_CHỨNG: `đau bụng liên tục` (line L011) ctx=`u bụng ngày càng nặng - Tiền sử 2 tháng đau bụng liên tục Diễn biến bệnh - Tiền sử 2 tháng đau bụ`
+  - [542:559] TRIỆU_CHỨNG: `đau bụng liên tục` (line L013) ctx=`ên tục Diễn biến bệnh - Tiền sử 2 tháng đau bụng liên tục - 2 ngày trước khi nhập viện, đau bụng `
+  - [590:598] TRIỆU_CHỨNG: `đau bụng` (line L014) ctx=` liên tục - 2 ngày trước khi nhập viện, đau bụng trở nên tồi tệ hơn - Diễn biến trong vi`
+  - [775:798] TRIỆU_CHỨNG: `đau bụng ngày càng nặng` (line L017) ctx=` Các triệu chứng hiện tại triệu chứng - đau bụng ngày càng nặng - đau bụng liên tục - mệt mỏi toàn thân`
+  - [801:818] TRIỆU_CHỨNG: `đau bụng liên tục` (line L018) ctx=`triệu chứng - đau bụng ngày càng nặng - đau bụng liên tục - mệt mỏi toàn thân - yếu sức - khó thở`
+  - [821:838] TRIỆU_CHỨNG: `mệt mỏi toàn thân` (line L019) ctx=`ng ngày càng nặng - đau bụng liên tục - mệt mỏi toàn thân - yếu sức - khó thở khi gắng sức - ngứa`
+  - [841:848] TRIỆU_CHỨNG: `yếu sức` (line L020) ctx=`đau bụng liên tục - mệt mỏi toàn thân - yếu sức - khó thở khi gắng sức - ngứa toàn thân`
+  - [851:871] TRIỆU_CHỨNG: `khó thở khi gắng sức` (line L021) ctx=`iên tục - mệt mỏi toàn thân - yếu sức - khó thở khi gắng sức - ngứa toàn thân - Vài lần tiểu ra máu `
+  - [874:888] TRIỆU_CHỨNG: `ngứa toàn thân` (line L022) ctx=`thân - yếu sức - khó thở khi gắng sức - ngứa toàn thân - Vài lần tiểu ra máu không đau Đặc điể`
+  - [899:910] TRIỆU_CHỨNG: `tiểu ra máu` (line L023) ctx=`khi gắng sức - ngứa toàn thân - Vài lần tiểu ra máu không đau Đặc điểm triệu chứng - Vị trí`
+  - [952:969] TRIỆU_CHỨNG: `Đau vùng gan phải` (line L025) ctx=`hông đau Đặc điểm triệu chứng - Vị trí: Đau vùng gan phải (RUQ) và thượng vị lan ra sau lưng - Kh`
+  - [1183:1202] THUỐC: `acetaminophen 500mg` (line L031) ctx=`i nhập viện - Tự điều trị bằng liều cao acetaminophen 500mg - làm hỏng dạ dày của cô ấy bằng cách u`
+  - [1253:1266] THUỐC: `thuốc an thần` (line L032) ctx=` dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ - Tại bệnh viện OSH, phát`
+  - [1516:1519] THUỐC: `nac` (line L037) ctx=` nồng độ acetaminophen - Chưa từng dùng nac - Chuyển tạm thời để thực hiện ercp - e`
+
+## File 87
+- sha256: `a8321d957dc21f65bdac3c8a04a4aea53a03ddf2a6653750c57002898cc05ab4`
+- raw proposals: 9
+- aligned: 9
+- alignment failures: 0
+- verifier accept decisions: 6
+- verifier reject decisions: 3
+- type disagreements: 0
+- final cache accepted: 6
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [108:116] CHẨN_ĐOÁN: `trầm cảm` (line L004) ctx=` bạn trai cũ     Bệnh lý mãn tính     - trầm cảm và  rối loạn lo âu 2.  Bệnh sử hiện tại`
+  - [121:135] CHẨN_ĐOÁN: `rối loạn lo âu` (line L004) ctx=`    Bệnh lý mãn tính     - trầm cảm và  rối loạn lo âu 2.  Bệnh sử hiện tại     Lý do nhập việ`
+  - [179:198] TRIỆU_CHỨNG: `tổn thương chi dưới` (line L006) ctx=` Bệnh sử hiện tại     Lý do nhập viện:  tổn thương chi dưới do tự tử không thành     Theo lời người`
+  - [633:652] TRIỆU_CHỨNG: `tổn thương chi dưới` (line L011) ctx=`ó ý định tự tử  Khám thấy bị tổn thương tổn thương chi dưới nghiêm trọng. Chẩn đoán: Phẫu thuật cắt`
+  - [757:791] CHẨN_ĐOÁN: `biến chứng thuyên tắc phổi hai bên` (line L012) ctx=`ối  và cắt cụt chân phải bên dưới gối / biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Ent`
+  - [795:824] CHẨN_ĐOÁN: `nhiễm trùng chi dưới bên phải` (line L012) ctx=`/ biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin     Đi`
+
+## File 89
+- sha256: `c9cd8bb996f867507b35b3a575658f066fe3b562b7b41e186f374fcca84918a5`
+- raw proposals: 5
+- aligned: 5
+- alignment failures: 0
+- verifier accept decisions: 5
+- verifier reject decisions: 0
+- type disagreements: 0
+- final cache accepted: 5
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [206:216] THUỐC: `octreotide` (line L004) ctx=`     Thuốc đang điều trị theo đơn     - octreotide     - flagyl, chăm sóc vết thương tại c`
+  - [223:229] THUỐC: `flagyl` (line L005) ctx=`iều trị theo đơn     - octreotide     - flagyl, chăm sóc vết thương tại chỗ, nhịn ăn đ`
+  - [671:695] CHẨN_ĐOÁN: `Clostridioides difficile` (line L010) ctx=`ịch rò) ,  hậu phẫu  bệnh nhân bị nhiễm Clostridioides difficile, và nhiễm trùng vết mổổ đã được điều tr`
+  - [1171:1178] TRIỆU_CHỨNG: `sưng nề` (line L012) ctx=`vào viện: Tại chân sonde dẫn lưu ổ bụng sưng nề, đỏ  ống dẫn lưu bị tuột ra 15,24 cm Nh`
+  - [1180:1182] TRIỆU_CHỨNG: `đỏ` (line L012) ctx=` Tại chân sonde dẫn lưu ổ bụng sưng nề, đỏ  ống dẫn lưu bị tuột ra 15,24 cm Nhịn ă`
+
+## File 91
+- sha256: `baffa16aea83b067f7e1bdcba92e9149b40aabfaf1358413932d011505b7eb3c`
+- raw proposals: 10
+- aligned: 10
+- alignment failures: 0
+- verifier accept decisions: 7
+- verifier reject decisions: 3
+- type disagreements: 0
+- final cache accepted: 7
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [48:64] CHẨN_ĐOÁN: `Viêm nội tâm mạc` (line L003) ctx=` sử bệnh     Các bệnh lý mãn tính     - Viêm nội tâm mạc  , rối loạn chức năng tâm thất phải, ru`
+  - [68:100] CHẨN_ĐOÁN: `rối loạn chức năng tâm thất phải` (line L003) ctx=`h lý mãn tính     - Viêm nội tâm mạc  , rối loạn chức năng tâm thất phải, rung nhĩ sau Phẫu thuật thay van tim h`
+  - [102:110] CHẨN_ĐOÁN: `rung nhĩ` (line L003) ctx=`ạc  , rối loạn chức năng tâm thất phải, rung nhĩ sau Phẫu thuật thay van tim hai lá cơ h`
+  - [159:178] CHẨN_ĐOÁN: `Suy thận mạn giai V` (line L005) ctx=` thuật thay van tim hai lá cơ học     - Suy thận mạn giai V đang chạy thận nhân tạo chu kì các ngày`
+  - [401:422] THUỐC: `coumadin 3.0 mg /ngày` (line L009) ctx=`thất bại     Thuốc trước khi nhập viện: coumadin 3.0 mg /ngày  2.  Bệnh sử hiện tại Lý do vào viện:, `
+  - [529:541] TRIỆU_CHỨNG: `chảy máu mũi` (line L013) ctx=`eo lời bệnh nhân kể bệnh nhân xuất hiện chảy máu mũi xuất hiện khoảng 01 lần/ tuần. Khi làm `
+  - [1130:1137] THUỐC: `heparin` (line L030) ctx=` điều trị 1.7    Điều trị: Bắt đầu dùng heparin truyền tĩnh mạch liên tục`
+
+## File 93
+- sha256: `654d7ea80ae57095341c0cb15671233ff8780f7553c45e67bf85023c1fa8bb4d`
+- raw proposals: 5
+- aligned: 5
+- alignment failures: 0
+- verifier accept decisions: 5
+- verifier reject decisions: 0
+- type disagreements: 0
+- final cache accepted: 5
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [25:42] CHẨN_ĐOÁN: `Ung thư vú di căn` (line L002) ctx=`1. Tiền sử bệnh nội khoa Ung thư vú di căn, tràn dịch màng phổi trái tái phát  2. `
+  - [44:68] CHẨN_ĐOÁN: `tràn dịch màng phổi trái` (line L002) ctx=`iền sử bệnh nội khoa Ung thư vú di căn, tràn dịch màng phổi trái tái phát  2. Bệnh sử hiện tại Lý do vào`
+  - [116:123] TRIỆU_CHỨNG: `khó thở` (line L005) ctx=`t  2. Bệnh sử hiện tại Lý do vào việni: khó thở 3. Khám tại bệnh viện Lâm sàng: tràn dị`
+  - [156:180] TRIỆU_CHỨNG: `tràn dịch màng ngoài tim` (line L007) ctx=`khó thở 3. Khám tại bệnh viện Lâm sàng: tràn dịch màng ngoài tim mức độ trung bình Kết quả chẩn đoán hìn`
+  - [227:241] CHẨN_ĐOÁN: `ung thư di căn` (line L008) ctx=` trung bình Kết quả chẩn đoán hình ảnh: ung thư di căn theo đường bạch huyết ở hai phổi Các th`
+
+## File 96
+- sha256: `62551379a0547e4fa868b90474792a23b3a107d9a510cfd0454015953a771e95`
+- raw proposals: 25
+- aligned: 20
+- alignment failures: 5
+- verifier accept decisions: 14
+- verifier reject decisions: 6
+- type disagreements: 0
+- final cache accepted: 14
+- parse_failures: []
+- repair_used: False
+- alignment failure detail:
+  - multiple_match L=L009 type=THUỐC text='zosyn' detail=Found 2 exact occurrences; rejecting in v9
+  - zero_match L=L014 type=TRIỆU_CHỨNG text='da khô' detail=Exact text not found in line
+  - zero_match L=L016 type=TRIỆU_CHỨNG text='đau bụng' detail=Exact text not found in line
+  - zero_match L=L017 type=TRIỆU_CHỨNG text='hạ huyết áp' detail=Exact text not found in line
+  - zero_match L=L018 type=TRIỆU_CHỨNG text='mạch nhanh' detail=Exact text not found in line
+- final accepted candidates:
+  - [18:41] CHẨN_ĐOÁN: `viêm tủy xương mãn tính` (line L002) ctx=`1. Tiền sử bệnh - viêm tủy xương mãn tính và bàng quang thần kinh gây biến chứng `
+  - [45:65] CHẨN_ĐOÁN: `bàng quang thần kinh` (line L002) ctx=`ền sử bệnh - viêm tủy xương mãn tính và bàng quang thần kinh gây biến chứng liệt hai chi dưới và loé`
+  - [236:246] THUỐC: `vancozosyn` (line L005) ctx=`hát Thuốc đã dùng trước đây - Đã sử dụngvancozosyn nhưng hiện tại đang dừng. Sau khi khám `
+  - [321:328] THUỐC: `bactrim` (line L005) ctx=`khám chuyên khoa Truyền nhiễm đang dùng bactrim để điều trị nhiễm khuẩn đường tiết niệu`
+  - [407:414] TRIỆU_CHỨNG: `sốt cao` (line L008) ctx=`u  2. Bệnh sử hiện tại Lý do nhập viện: sốt cao Cách ngày vào viện 2 tuần bệnh nhân đã `
+  - [497:514] CHẨN_ĐOÁN: `nhiễm trùng huyết` (line L009) ctx=` viện vì hạ huyết áp và được chẩn đoán  nhiễm trùng huyết điều trị bằng kháng sinh  vancozosynbac`
+  - [822:839] TRIỆU_CHỨNG: `sốt cao 39.7 độ C` (line L010) ctx=` cùng ngày vào viện bệnh nhân xuất hiện sốt cao 39.7 độ C , vào viện điều trị. Tình trạng lúc vào`
+  - [905:914] TRIỆU_CHỨNG: `khát nước` (line L013) ctx=` trạng lúc vào: Bệnh nhân tỉnh Cảm giác khát nước Da khô, nếp véo da mất chậm Không ngực,`
+  - [980:988] TRIỆU_CHỨNG: `đau hông` (line L016) ctx=`ậm Không ngực,  không khó thở Đau bụng, đau hông từng cơn- Hạ huyết áp Mạch nhanh  Tim n`
+  - [1077:1093] TRIỆU_CHỨNG: `nước tiểu có cặn` (line L021) ctx=` đều Phổi thông khí đều Còn sonde tiểu, nước tiểu có cặn Cận lâm sàng:: - lactate 1.1-->0.8 - Cấ`
+  - [1472:1509] CHẨN_ĐOÁN: `nhiễm trùng huyết đường vào tiết niệu` (line L033) ctx=`mạch trung tâm : đo cvp là 6 Chẩn đoán: nhiễm trùng huyết đường vào tiết niệu- viêm tủy xương mãn tính,  Điều trị:  -`
+  - [1511:1534] CHẨN_ĐOÁN: `viêm tủy xương mãn tính` (line L033) ctx=` nhiễm trùng huyết đường vào tiết niệu- viêm tủy xương mãn tính,  Điều trị:  - Truyền dịch : 4000 ml NS`
+  - [1594:1601] THUỐC: `Cefepim` (line L037) ctx=`ền dịch : 4000 ml NS 0.9 % - Kháng sinh Cefepim và Vancomycin truyền tĩnh mạch  .    `
+  - [1605:1615] THUỐC: `Vancomycin` (line L037) ctx=`000 ml NS 0.9 % - Kháng sinh Cefepim và Vancomycin truyền tĩnh mạch  .    `
+
+## File 100
+- sha256: `067762a772e6156050085cee4e0ed7c9a516a19051ba377badcfb809da240d53`
+- raw proposals: 16
+- aligned: 16
+- alignment failures: 0
+- verifier accept decisions: 14
+- verifier reject decisions: 2
+- type disagreements: 0
+- final cache accepted: 14
+- parse_failures: []
+- repair_used: False
+- final accepted candidates:
+  - [61:75] CHẨN_ĐOÁN: `tăng calci máu` (line L002) ctx=`Các bệnh đã điều trị trước đây: tiền sử tăng calci máu trước đây; 11.6     Các bệnh lý mãn tín`
+  - [123:141] CHẨN_ĐOÁN: `U ác của đại tràng` (line L004) ctx=`ây; 11.6     Các bệnh lý mãn tính     - U ác của đại tràng     - cường cận giáp nguyên phát     - `
+  - [148:174] CHẨN_ĐOÁN: `cường cận giáp nguyên phát` (line L005) ctx=`mãn tính     - U ác của đại tràng     - cường cận giáp nguyên phát     - Xơ vữa động mạch     - cơn đau th`
+  - [181:197] CHẨN_ĐOÁN: `Xơ vữa động mạch` (line L006) ctx=`     - cường cận giáp nguyên phát     - Xơ vữa động mạch     - cơn đau thắt ngực ổn định  2. Bện`
+  - [204:229] CHẨN_ĐOÁN: `cơn đau thắt ngực ổn định` (line L007) ctx=`guyên phát     - Xơ vữa động mạch     - cơn đau thắt ngực ổn định  2. Bệnh sử     Lý do nhập viện: đến kh`
+  - [275:289] CHẨN_ĐOÁN: `tăng calci máu` (line L010) ctx=`ệnh sử     Lý do nhập viện: đến khám vì tăng calci máu     Triệu chứng hiện tại: tăng calci má`
+  - [316:330] CHẨN_ĐOÁN: `tăng calci máu` (line L011) ctx=`ăng calci máu     Triệu chứng hiện tại: tăng calci máu     Các lần khám và xét nghiệm trước kh`
+  - [504:512] TRIỆU_CHỨNG: `ngất xỉu` (line L014) ctx=`xi ion hóa 6.8      - xuất hiện hai lần ngất xỉu, một lần khi lái xe lần cuối và một lần`
+  - [673:681] TRIỆU_CHỨNG: `đau ngực` (line L016) ctx=`i vài giây     - Không có các biểu hiện đau ngực, khó thở, chóng mặt trước lần này     -`
+  - [683:690] TRIỆU_CHỨNG: `khó thở` (line L016) ctx=`     - Không có các biểu hiện đau ngực, khó thở, chóng mặt trước lần này     - Không có`
+  - [692:701] TRIỆU_CHỨNG: `chóng mặt` (line L016) ctx=`ông có các biểu hiện đau ngực, khó thở, chóng mặt trước lần này     - Không có biểu hiện `
+  - [741:750] TRIỆU_CHỨNG: `động kinh` (line L017) ctx=` trước lần này     - Không có biểu hiện động kinh     - đã chỉ định MRI ngoại trú  có hìn`
+  - [895:903] TRIỆU_CHỨNG: `đau ngực` (line L019) ctx=` tính     - Bệnh nhân xuất hiện một lần đau ngực vào chiều ngày vào viện, cơn đau kéo dà`
+  - [1441:1451] THUỐC: `Laxis 20mg` (line L030) ctx=`cấp tính     Xử trí thuốc     - đã dùng Laxis 20mg tiêm tĩnh mạch     - Truyền  dịch Natri`
+
+## Quality gate (Phase 16)
+
+**Decision: PASS — continue to full 100-document cache**
+
+Rationale:
+- All 12 pilot docs have cache entries with non-empty proposer responses.
+- Exact alignment is enforced; no fuzzy matching.
+- JSON parser recovered on doc 41 via one repair retry (`completed_with_parse_issues`).
+- Accepted spans are mostly clinical symptoms/diagnoses/drugs, not whole sections.
+- Not dominated by procedures/anatomy-alone/generic status phrases.
+
+Critical flags for later review (do not block full cache):
+- Long imaging/echo bundles tagged as CHẨN_ĐOÁN (file 20).
+- Occasional English tokens (`nausea`, `diarrhea`, `abdominal pain`) in file 41.
+- Very short spans (`đỏ`) and generic drug phrases (`thuốc an thần`).
+- Repeated mentions of the same symptom across lines (expected for high-recall proposer; overlap filter will drop many vs v7).
+
+Hard gate for Phase B still requires frozen-v7 invariants after `run_pipeline`.

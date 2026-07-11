@@ -18,6 +18,34 @@ def strip_think_blocks(text: str) -> str:
     return _THINK_BLOCK_RE.sub("", text).strip()
 
 
+def _salvage_truncated_entities_object(cleaned: str) -> dict[str, Any] | None:
+    """Recover a partial proposer/verifier object when generation truncates mid-entity.
+
+    Keeps complete objects inside the ``entities`` array and closes the JSON.
+    Returns None if salvage is impossible.
+    """
+    start = cleaned.find("{")
+    if start < 0:
+        return None
+    body = cleaned[start:]
+    match = re.search(r'"entities"\s*:\s*\[', body)
+    if not match:
+        return None
+    arr = body[match.end() - 1 :]  # starts at '['
+    # Walk backwards to the last prefix that parses as a JSON array.
+    for cut in range(len(arr), max(0, len(arr) - 4000), -1):
+        frag = arr[:cut].rstrip().rstrip(",")
+        if not frag.endswith("]"):
+            frag = frag + "]"
+        try:
+            entities = json.loads(frag)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(entities, list):
+            return {"entities": entities}
+    return None
+
+
 def _extract_json_object(text: str) -> Any:
     cleaned = strip_think_blocks(text)
     fence = _FENCE_RE.search(cleaned)
@@ -31,7 +59,13 @@ def _extract_json_object(text: str) -> Any:
         start = cleaned.find("{")
         end = cleaned.rfind("}")
         if start >= 0 and end > start:
-            return json.loads(cleaned[start : end + 1])
+            try:
+                return json.loads(cleaned[start : end + 1])
+            except json.JSONDecodeError:
+                pass
+        salvaged = _salvage_truncated_entities_object(cleaned)
+        if salvaged is not None:
+            return salvaged
         raise
 
 

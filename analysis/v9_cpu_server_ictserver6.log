@@ -11,3 +11,4 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 INFO:     127.0.0.1:55718 - "GET /v1/models HTTP/1.1" 200 OK
 [v9-cpu-server] generate start prompt_tokens=38 max_new=128 thinking=False
+[v9-cpu-server] generate done new_tokens=22 secs=20343.4 chars=57

@@ -1,3 +1,61 @@
 Local LLM healthy: {"object": "list", "data": [{"id": "Qwen/Qwen3.5-9B", "object": "model", "owned_by": "local"}]}
 Generating LLM cache for 12 documents -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall
-v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   8%|▊         | 1/12 [1:00:00<11:00:01, 3600.13s/it]v9 LLM cache:  17%|█▋        | 2/12 [2:00:00<10:00:01, 3600.13s/it]v9 LLM cache:  25%|██▌       | 3/12 [3:00:00<9:00:01, 3600.14s/it] 
+v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   8%|▊         | 1/12 [08:04<1:28:54, 484.92s/it]Local LLM healthy: {"object": "list", "data": [{"id": "Qwen/Qwen3.5-9B", "object": "model", "owned_by": "local"}]}
+Generating LLM cache for 12 documents -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall
+v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/evaluation/generate_v9_llm_cache.py", line 434, in <module>
+    main()
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/evaluation/generate_v9_llm_cache.py", line 407, in main
+    record = process_document(
+             ^^^^^^^^^^^^^^^^^
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/evaluation/generate_v9_llm_cache.py", line 183, in process_document
+    raw_proposer, proposals, repair_used, fails = _chat_with_optional_repair(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/evaluation/generate_v9_llm_cache.py", line 117, in _chat_with_optional_repair
+    raw = client.chat(messages)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/components/llm/client.py", line 152, in chat
+    response = self._request_json(self._chat_url(), payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/modules/components/llm/client.py", line 85, in _request_json
+    with urlopen(req, timeout=self.timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/student10/miniforge3/envs/nanachi/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+Local LLM healthy: {"object": "list", "data": [{"id": "Qwen/Qwen3.5-9B", "object": "model", "owned_by": "local"}]}
+Generating LLM cache for 12 documents -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall
+v9 LLM cache:   0%|          | 0/12 [00:00<?, ?it/s]v9 LLM cache:   8%|▊         | 1/12 [12:38<2:19:01, 758.28s/it]v9 LLM cache:  17%|█▋        | 2/12 [18:42<1:27:45, 526.54s/it]v9 LLM cache:  25%|██▌       | 3/12 [27:01<1:17:03, 513.73s/it]v9 LLM cache:  33%|███▎      | 4/12 [48:28<1:49:14, 819.36s/it]v9 LLM cache:  42%|████▏     | 5/12 [55:52<1:19:45, 683.70s/it]v9 LLM cache:  50%|█████     | 6/12 [1:03:42<1:01:06, 611.15s/it]v9 LLM cache:  58%|█████▊    | 7/12 [1:07:08<39:52, 478.56s/it]  v9 LLM cache:  67%|██████▋   | 8/12 [1:09:20<24:33, 368.41s/it]v9 LLM cache:  75%|███████▌  | 9/12 [1:13:03<16:09, 323.06s/it]v9 LLM cache:  83%|████████▎ | 10/12 [1:15:05<08:41, 260.84s/it]v9 LLM cache:  92%|█████████▏| 11/12 [1:22:24<05:15, 315.52s/it]v9 LLM cache: 100%|██████████| 12/12 [1:27:48<00:00, 317.95s/it]v9 LLM cache: 100%|██████████| 12/12 [1:27:48<00:00, 439.04s/it]
+{
+  "documents": 12,
+  "cache_writes": 12,
+  "raw_proposals": 243,
+  "aligned": 225,
+  "final_accepted": 200,
+  "parse_failure_docs": 1
+}
+Summary written to /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall/_generation_summary.json

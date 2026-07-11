@@ -1,0 +1,836 @@
+[v9-llamacpp] Loading /storage/student10/tungnl/cache/huggingface/hub/models--Qwen--Qwen3.5-9B/gguf/Qwen3.5-9B-Q4_K_M.gguf as id=Qwen/Qwen3.5-9B n_threads=40 n_ctx=16384 ...
+[v9-llamacpp] Model ready.
+INFO:     Started server process [380024]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36518 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36526 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=32 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=4 secs=1.8 chars=15 tok/s=2.24
+INFO:     127.0.0.1:36534 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45510 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:54024 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32808 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58040 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39142 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39150 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41286 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57652 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57124 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51660 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51662 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40354 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37172 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56022 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56816 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38216 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56052 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45388 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45400 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33912 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44198 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55016 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47958 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47960 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51062 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36224 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57610 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41564 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41570 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40460 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1651 secs=386.3 chars=3848 tok/s=4.27
+INFO:     127.0.0.1:45520 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:58160 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34288 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50968 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50984 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37312 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48464 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48826 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41074 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41080 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43608 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55846 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56784 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56794 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37092 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58038 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41118 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46920 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57238 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43462 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38832 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45566 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45568 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40398 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57360 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42198 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53886 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53896 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52410 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1385 secs=372.0 chars=3427 tok/s=3.72
+INFO:     127.0.0.1:40474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:37602 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51334 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57248 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=762 secs=192.9 chars=1759 tok/s=3.95
+INFO:     127.0.0.1:55606 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:43524 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55176 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=599 secs=171.4 chars=1443 tok/s=3.49
+INFO:     127.0.0.1:46510 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:37994 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35918 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42104 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34336 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41658 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1128 secs=274.0 chars=2803 tok/s=4.12
+INFO:     127.0.0.1:56912 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:48376 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56472 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39220 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51230 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=794 secs=224.4 chars=1914 tok/s=3.54
+INFO:     127.0.0.1:32874 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:53056 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47346 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57216 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45668 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38384 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53276 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33664 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=2048 secs=465.5 chars=4692 tok/s=4.40
+INFO:     127.0.0.1:51240 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52098 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58550 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42550 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40352 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49266 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47176 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38676 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=2046 secs=466.1 chars=4679 tok/s=4.39
+INFO:     127.0.0.1:40566 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:49326 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39176 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38394 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35194 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44902 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50156 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1352 secs=356.3 chars=3324 tok/s=3.79
+INFO:     127.0.0.1:48452 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:55888 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44194 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48606 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37490 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=962 secs=236.7 chars=2322 tok/s=4.06
+INFO:     127.0.0.1:34060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:45856 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60184 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38296 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=740 secs=206.4 chars=1859 tok/s=3.59
+INFO:     127.0.0.1:32864 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52426 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50444 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42160 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39096 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1018 secs=248.7 chars=2374 tok/s=4.09
+INFO:     127.0.0.1:39882 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:54054 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40648 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53594 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34414 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=798 secs=221.6 chars=2012 tok/s=3.60
+INFO:     127.0.0.1:54046 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:48612 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58738 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=423 secs=111.8 chars=987 tok/s=3.78
+INFO:     127.0.0.1:51902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:59366 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53358 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=332 secs=93.8 chars=794 tok/s=3.54
+INFO:     127.0.0.1:45254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:55520 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=211 secs=70.5 chars=477 tok/s=2.99
+INFO:     127.0.0.1:41030 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:57688 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=180 secs=61.9 chars=443 tok/s=2.91
+INFO:     127.0.0.1:34118 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:53970 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60498 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=447 secs=120.1 chars=1016 tok/s=3.72
+INFO:     127.0.0.1:44860 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:37658 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=356 secs=103.2 chars=875 tok/s=3.45
+INFO:     127.0.0.1:59048 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:55588 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=228 secs=66.0 chars=522 tok/s=3.45
+INFO:     127.0.0.1:55580 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:48782 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=188 secs=55.5 chars=451 tok/s=3.39
+INFO:     127.0.0.1:45050 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:57000 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60310 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53554 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50778 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1053 secs=248.3 chars=2430 tok/s=4.24
+INFO:     127.0.0.1:48794 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:35844 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58504 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56638 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=703 secs=191.1 chars=1739 tok/s=3.68
+INFO:     127.0.0.1:57856 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:54554 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56636 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=685 secs=167.3 chars=1545 tok/s=4.09
+INFO:     127.0.0.1:60454 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52714 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37746 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=572 secs=156.1 chars=1396 tok/s=3.66
+INFO:     127.0.0.1:56644 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43326 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43340 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33770 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48612 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1108 secs=261.9 chars=2596 tok/s=4.23
+INFO:     127.0.0.1:43354 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:44170 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50392 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=799 secs=224.9 chars=1996 tok/s=3.55
+INFO:     127.0.0.1:46982 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:53514 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=232 secs=69.6 chars=514 tok/s=3.33
+INFO:     127.0.0.1:45930 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=192 secs=57.3 chars=447 tok/s=3.35
+INFO:     127.0.0.1:35174 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:60576 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40772 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45460 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1257 secs=295.8 chars=2918 tok/s=4.25
+INFO:     127.0.0.1:37230 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:38438 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46598 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=993 secs=263.0 chars=2451 tok/s=3.78
+INFO:     127.0.0.1:45476 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:41780 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=643 secs=161.9 chars=1464 tok/s=3.97
+INFO:     127.0.0.1:59676 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52488 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=501 secs=137.6 chars=1214 tok/s=3.64
+INFO:     127.0.0.1:32868 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33914 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=234 secs=69.6 chars=558 tok/s=3.36
+INFO:     127.0.0.1:56328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=186 secs=55.3 chars=455 tok/s=3.36
+INFO:     127.0.0.1:42184 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:43324 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56490 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=884 secs=218.2 chars=2089 tok/s=4.05
+INFO:     127.0.0.1:49688 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:47184 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42308 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=680 secs=189.8 chars=1665 tok/s=3.58
+INFO:     127.0.0.1:46880 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:39348 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=417 secs=107.6 chars=994 tok/s=3.88
+INFO:     127.0.0.1:34724 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=218 secs=63.8 chars=537 tok/s=3.41
+INFO:     127.0.0.1:37572 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33580 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=215 secs=70.6 chars=496 tok/s=3.05
+INFO:     127.0.0.1:59162 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=182 secs=60.7 chars=449 tok/s=3.00
+INFO:     127.0.0.1:50648 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33176 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=383 secs=102.8 chars=873 tok/s=3.73
+INFO:     127.0.0.1:34552 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:57852 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=290 secs=84.2 chars=712 tok/s=3.45
+INFO:     127.0.0.1:60414 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33134 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=406 secs=105.1 chars=919 tok/s=3.86
+INFO:     127.0.0.1:56932 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=332 secs=91.6 chars=791 tok/s=3.62
+INFO:     127.0.0.1:35472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:41764 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56570 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=757 secs=184.4 chars=1735 tok/s=4.11
+INFO:     127.0.0.1:35970 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:46942 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=593 secs=155.0 chars=1496 tok/s=3.83
+INFO:     127.0.0.1:33338 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:53944 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=328 secs=89.2 chars=774 tok/s=3.68
+INFO:     127.0.0.1:60906 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:57664 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=256 secs=75.1 chars=627 tok/s=3.41
+INFO:     127.0.0.1:49214 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=161 secs=49.9 chars=401 tok/s=3.22
+INFO:     127.0.0.1:34644 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=116 secs=38.1 chars=274 tok/s=3.04
+INFO:     127.0.0.1:38692 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52196 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54958 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42716 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35400 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=2048 secs=462.9 chars=4751 tok/s=4.42
+INFO:     127.0.0.1:39652 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:43280 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50512 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41380 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40746 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=2048 secs=472.6 chars=4751 tok/s=4.33
+INFO:     127.0.0.1:56350 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:55458 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44832 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1226 secs=288.9 chars=2857 tok/s=4.24
+INFO:     127.0.0.1:58826 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:51392 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44678 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59838 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=985 secs=262.2 chars=2484 tok/s=3.76
+INFO:     127.0.0.1:40202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:59706 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=498 secs=126.3 chars=1193 tok/s=3.94
+INFO:     127.0.0.1:53848 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:47886 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=359 secs=99.2 chars=887 tok/s=3.62
+INFO:     127.0.0.1:57944 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:42514 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=527 secs=135.2 chars=1224 tok/s=3.90
+INFO:     127.0.0.1:47898 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:38116 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=394 secs=109.8 chars=960 tok/s=3.59
+INFO:     127.0.0.1:36084 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=187 secs=57.6 chars=414 tok/s=3.25
+INFO:     127.0.0.1:36372 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=156 secs=48.3 chars=362 tok/s=3.23
+INFO:     127.0.0.1:34030 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52396 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=150 secs=50.4 chars=342 tok/s=2.97
+INFO:     127.0.0.1:34784 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=116 secs=39.4 chars=273 tok/s=2.94
+INFO:     127.0.0.1:54610 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:36676 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56138 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38480 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1705 secs=395.6 chars=4038 tok/s=4.31
+INFO:     127.0.0.1:52728 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:33634 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35734 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56834 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1361 secs=347.1 chars=3341 tok/s=3.92
+INFO:     127.0.0.1:33622 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:59818 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59258 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=782 secs=188.9 chars=1791 tok/s=4.14
+INFO:     127.0.0.1:35904 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:37648 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=629 secs=168.7 chars=1577 tok/s=3.73
+INFO:     127.0.0.1:49498 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:52224 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=186 secs=56.9 chars=426 tok/s=3.27
+INFO:     127.0.0.1:36910 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=154 secs=47.3 chars=364 tok/s=3.26
+INFO:     127.0.0.1:46640 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=54 secs=29.4 chars=111 tok/s=1.84
+INFO:     127.0.0.1:51014 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:55908 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=48 secs=22.8 chars=107 tok/s=2.11
+INFO:     127.0.0.1:55896 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:57204 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=517 secs=135.9 chars=1164 tok/s=3.80
+INFO:     127.0.0.1:52790 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:41230 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=388 secs=114.6 chars=957 tok/s=3.39
+INFO:     127.0.0.1:52300 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:38830 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39254 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=1086 secs=261.2 chars=2481 tok/s=4.16
+INFO:     127.0.0.1:41630 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:58774 - "GET /v1/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50384 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=889 secs=239.2 chars=2192 tok/s=3.72
+INFO:     127.0.0.1:37966 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:53764 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate done new_tokens=264 secs=72.9 chars=628 tok/s=3.62
+INFO:     127.0.0.1:56156 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+INFO:     127.0.0.1:37222 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+find_slot: non-consecutive token position 1 after 996 for sequence 0 with 1 new tokens
+find_slot: non-consecutive token position 1 after 996 for sequence 0 with 1 new tokens
+[v9-llamacpp] Loading /storage/student10/tungnl/cache/huggingface/hub/models--Qwen--Qwen3.5-9B/gguf/Qwen3.5-9B-Q4_K_M.gguf as id=Qwen/Qwen3.5-9B n_threads=40 n_ctx=16384 ...
+[v9-llamacpp] Model ready.
+INFO:     Started server process [541794]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58646 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=264 secs=70.1 chars=628 tok/s=3.76
+INFO:     127.0.0.1:58660 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=216 secs=56.6 chars=544 tok/s=3.82
+INFO:     127.0.0.1:53818 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=712 secs=169.8 chars=1649 tok/s=4.19
+INFO:     127.0.0.1:35632 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=558 secs=148.5 chars=1365 tok/s=3.76
+INFO:     127.0.0.1:36372 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=9 secs=17.0 chars=20 tok/s=0.53
+INFO:     127.0.0.1:43084 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1315 secs=295.6 chars=3021 tok/s=4.45
+INFO:     127.0.0.1:48564 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1064 secs=260.7 chars=2616 tok/s=4.08
+INFO:     127.0.0.1:39998 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=785 secs=186.8 chars=1770 tok/s=4.20
+INFO:     127.0.0.1:53696 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=628 secs=162.0 chars=1553 tok/s=3.88
+INFO:     127.0.0.1:41608 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=731 secs=172.3 chars=1718 tok/s=4.24
+INFO:     127.0.0.1:36094 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=531 secs=138.0 chars=1321 tok/s=3.85
+INFO:     127.0.0.1:56722 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1412 secs=320.0 chars=3207 tok/s=4.41
+INFO:     127.0.0.1:45430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1139 secs=281.4 chars=2800 tok/s=4.05
+INFO:     127.0.0.1:34850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=669 secs=167.1 chars=1506 tok/s=4.00
+INFO:     127.0.0.1:50394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=504 secs=138.1 chars=1218 tok/s=3.65
+INFO:     127.0.0.1:44394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=724 secs=173.9 chars=1632 tok/s=4.16
+INFO:     127.0.0.1:43548 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=616 secs=158.9 chars=1508 tok/s=3.88
+INFO:     127.0.0.1:60292 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=455 secs=114.2 chars=1068 tok/s=3.98
+INFO:     127.0.0.1:37902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=358 secs=95.9 chars=886 tok/s=3.73
+INFO:     127.0.0.1:35978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=506 secs=120.4 chars=1170 tok/s=4.20
+INFO:     127.0.0.1:59190 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=426 secs=106.9 chars=1065 tok/s=3.98
+INFO:     127.0.0.1:32812 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1053 secs=240.0 chars=2409 tok/s=4.39
+INFO:     127.0.0.1:40830 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=844 secs=211.8 chars=2084 tok/s=3.99
+INFO:     127.0.0.1:49102 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=691 secs=158.7 chars=1593 tok/s=4.36
+INFO:     127.0.0.1:56252 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=595 secs=145.5 chars=1503 tok/s=4.09
+INFO:     127.0.0.1:33824 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=624 secs=145.5 chars=1486 tok/s=4.29
+INFO:     127.0.0.1:54464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=392 secs=102.3 chars=1069 tok/s=3.83
+INFO:     127.0.0.1:51108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1213 secs=269.3 chars=2748 tok/s=4.50
+INFO:     127.0.0.1:53446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1009 secs=245.3 chars=2508 tok/s=4.11
+INFO:     127.0.0.1:58544 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=360 secs=89.8 chars=889 tok/s=4.01
+INFO:     127.0.0.1:35620 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=262 secs=70.3 chars=619 tok/s=3.73
+INFO:     127.0.0.1:56286 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=323 secs=80.3 chars=738 tok/s=4.02
+INFO:     127.0.0.1:45330 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=254 secs=66.1 chars=620 tok/s=3.84
+INFO:     127.0.0.1:48050 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=697 secs=166.2 chars=1586 tok/s=4.19
+INFO:     127.0.0.1:35308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=500 secs=132.1 chars=1240 tok/s=3.79
+INFO:     127.0.0.1:51778 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=856 secs=190.5 chars=2026 tok/s=4.49
+INFO:     127.0.0.1:56556 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=668 secs=161.2 chars=1678 tok/s=4.14
+INFO:     127.0.0.1:51212 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=2010 secs=450.1 chars=4584 tok/s=4.47
+INFO:     127.0.0.1:43786 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1493 secs=352.1 chars=3738 tok/s=4.24
+INFO:     127.0.0.1:48494 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=820 secs=181.6 chars=1891 tok/s=4.51
+INFO:     127.0.0.1:55738 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=670 secs=161.0 chars=1667 tok/s=4.16
+INFO:     127.0.0.1:34826 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=388 secs=93.2 chars=865 tok/s=4.16
+INFO:     127.0.0.1:39772 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=292 secs=76.3 chars=705 tok/s=3.83
+INFO:     127.0.0.1:54594 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=458 secs=113.1 chars=1080 tok/s=4.05
+INFO:     127.0.0.1:41690 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=364 secs=94.9 chars=880 tok/s=3.84
+INFO:     127.0.0.1:34702 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1441 secs=321.2 chars=3364 tok/s=4.49
+INFO:     127.0.0.1:43516 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1107 secs=272.9 chars=2685 tok/s=4.06
+INFO:     127.0.0.1:59074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=174 secs=49.1 chars=396 tok/s=3.54
+INFO:     127.0.0.1:59082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=148 secs=40.5 chars=370 tok/s=3.65
+INFO:     127.0.0.1:46070 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=439 secs=108.7 chars=1037 tok/s=4.04
+INFO:     127.0.0.1:52840 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=288 secs=80.9 chars=717 tok/s=3.56
+INFO:     127.0.0.1:50366 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=215 secs=57.3 chars=476 tok/s=3.75
+INFO:     127.0.0.1:38102 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=156 secs=43.7 chars=362 tok/s=3.57
+INFO:     127.0.0.1:45378 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1233 secs=279.7 chars=2949 tok/s=4.41
+INFO:     127.0.0.1:59716 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1023 secs=281.2 chars=2558 tok/s=3.64
+INFO:     127.0.0.1:52996 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=788 secs=183.1 chars=1772 tok/s=4.30
+INFO:     127.0.0.1:52536 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=675 secs=168.9 chars=1676 tok/s=4.00
+INFO:     127.0.0.1:40024 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=232 secs=63.2 chars=523 tok/s=3.67
+INFO:     127.0.0.1:34606 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=154 secs=44.8 chars=366 tok/s=3.44
+INFO:     127.0.0.1:52852 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=239 secs=67.5 chars=592 tok/s=3.54
+INFO:     127.0.0.1:43446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=184 secs=54.7 chars=455 tok/s=3.36
+INFO:     127.0.0.1:36138 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=276 secs=70.0 chars=642 tok/s=3.94
+INFO:     127.0.0.1:46090 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=222 secs=58.1 chars=540 tok/s=3.82
+INFO:     127.0.0.1:45076 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=707 secs=164.6 chars=1633 tok/s=4.30
+INFO:     127.0.0.1:57260 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=591 secs=148.0 chars=1466 tok/s=3.99
+INFO:     127.0.0.1:42888 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=725 secs=170.1 chars=1671 tok/s=4.26
+INFO:     127.0.0.1:42328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=593 secs=149.3 chars=1472 tok/s=3.97
+INFO:     127.0.0.1:58388 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=224 secs=63.0 chars=513 tok/s=3.56
+INFO:     127.0.0.1:51566 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=186 secs=52.1 chars=453 tok/s=3.57
+INFO:     127.0.0.1:43690 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=611 secs=144.2 chars=1402 tok/s=4.24
+INFO:     127.0.0.1:33150 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=506 secs=127.7 chars=1222 tok/s=3.96
+INFO:     127.0.0.1:34678 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=243 secs=64.0 chars=583 tok/s=3.80
+INFO:     127.0.0.1:43160 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=186 secs=50.7 chars=455 tok/s=3.67
+INFO:     127.0.0.1:42680 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=225 secs=59.4 chars=512 tok/s=3.79
+INFO:     127.0.0.1:56034 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=186 secs=49.4 chars=456 tok/s=3.76
+INFO:     127.0.0.1:59410 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=671 secs=153.2 chars=1564 tok/s=4.38
+INFO:     127.0.0.1:33122 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=545 secs=134.3 chars=1315 tok/s=4.06
+INFO:     127.0.0.1:39606 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=753 secs=169.5 chars=1723 tok/s=4.44
+INFO:     127.0.0.1:44474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=611 secs=149.2 chars=1478 tok/s=4.10
+INFO:     127.0.0.1:35166 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=180 secs=56.9 chars=402 tok/s=3.17
+INFO:     127.0.0.1:33616 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=152 secs=48.6 chars=366 tok/s=3.12
+INFO:     127.0.0.1:51614 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=925 secs=205.4 chars=2197 tok/s=4.50
+INFO:     127.0.0.1:52788 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=629 secs=157.3 chars=1545 tok/s=4.00
+INFO:     127.0.0.1:38276 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1036 secs=231.7 chars=2419 tok/s=4.47
+INFO:     127.0.0.1:40632 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=802 secs=198.3 chars=2007 tok/s=4.05
+INFO:     127.0.0.1:50106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=804 secs=188.6 chars=1921 tok/s=4.26
+INFO:     127.0.0.1:57666 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=601 secs=154.7 chars=1477 tok/s=3.89
+INFO:     127.0.0.1:50530 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=737 secs=167.5 chars=1662 tok/s=4.40
+INFO:     127.0.0.1:46954 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=628 secs=154.0 chars=1553 tok/s=4.08
+INFO:     127.0.0.1:38472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=663 secs=152.1 chars=1499 tok/s=4.36
+INFO:     127.0.0.1:60920 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=491 secs=122.6 chars=1208 tok/s=4.00
+INFO:     127.0.0.1:36342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=503 secs=117.0 chars=1155 tok/s=4.30
+INFO:     127.0.0.1:47278 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=428 secs=105.8 chars=1062 tok/s=4.05
+INFO:     127.0.0.1:55106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=156 secs=45.8 chars=391 tok/s=3.40
+INFO:     127.0.0.1:40006 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=116 secs=33.4 chars=281 tok/s=3.47
+INFO:     127.0.0.1:48310 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=240 secs=63.0 chars=541 tok/s=3.81
+INFO:     127.0.0.1:45974 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=188 secs=52.6 chars=451 tok/s=3.58
+INFO:     127.0.0.1:45730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=102 secs=36.1 chars=258 tok/s=2.82
+INFO:     127.0.0.1:35528 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=80 secs=26.9 chars=198 tok/s=2.98
+INFO:     127.0.0.1:44802 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=871 secs=197.2 chars=2075 tok/s=4.42
+INFO:     127.0.0.1:40902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=677 secs=164.7 chars=1674 tok/s=4.11
+INFO:     127.0.0.1:52446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=143 secs=43.2 chars=330 tok/s=3.31
+INFO:     127.0.0.1:50250 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=116 secs=34.1 chars=281 tok/s=3.40
+INFO:     127.0.0.1:50024 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=867 secs=193.2 chars=1962 tok/s=4.49
+INFO:     127.0.0.1:57140 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=671 secs=162.7 chars=1656 tok/s=4.12
+INFO:     127.0.0.1:46624 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=430 secs=100.6 chars=1014 tok/s=4.28
+INFO:     127.0.0.1:59642 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=328 secs=82.3 chars=781 tok/s=3.99
+INFO:     127.0.0.1:49422 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=584 secs=134.1 chars=1400 tok/s=4.35
+INFO:     127.0.0.1:53696 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=467 secs=115.2 chars=1138 tok/s=4.05
+INFO:     127.0.0.1:49528 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=657 secs=148.2 chars=1535 tok/s=4.43
+INFO:     127.0.0.1:33776 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=529 secs=130.5 chars=1298 tok/s=4.05
+INFO:     127.0.0.1:53252 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=184 secs=50.8 chars=436 tok/s=3.62
+INFO:     127.0.0.1:34220 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=148 secs=41.2 chars=372 tok/s=3.59
+INFO:     127.0.0.1:38974 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=144 secs=44.6 chars=336 tok/s=3.23
+INFO:     127.0.0.1:35180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=118 secs=35.6 chars=279 tok/s=3.31
+INFO:     127.0.0.1:52652 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=591 secs=136.4 chars=1397 tok/s=4.33
+INFO:     127.0.0.1:47116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=414 secs=105.8 chars=1032 tok/s=3.91
+INFO:     127.0.0.1:55884 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=270 secs=71.7 chars=619 tok/s=3.77
+INFO:     127.0.0.1:49974 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=216 secs=59.5 chars=545 tok/s=3.63
+INFO:     127.0.0.1:55622 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=846 secs=189.6 chars=1963 tok/s=4.46
+INFO:     127.0.0.1:39142 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=710 secs=172.0 chars=1764 tok/s=4.13
+INFO:     127.0.0.1:57654 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=266 secs=68.8 chars=583 tok/s=3.87
+INFO:     127.0.0.1:52208 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=224 secs=59.5 chars=536 tok/s=3.77
+INFO:     127.0.0.1:34372 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=233 secs=61.7 chars=545 tok/s=3.77
+INFO:     127.0.0.1:45350 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=184 secs=49.9 chars=455 tok/s=3.69
+INFO:     127.0.0.1:44340 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57776 - "GET /v1/models HTTP/1.1" 200 OK
+[v9-llamacpp] generate start max_new=2048 thinking=False msgs=2
+[v9-llamacpp] generate done new_tokens=1673 secs=384.2 chars=4139 tok/s=4.35
+INFO:     127.0.0.1:34954 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [541794]

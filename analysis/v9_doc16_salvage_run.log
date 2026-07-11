@@ -1,0 +1,4 @@
+Wrote /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/analysis/v9_doc16_salvage_record.json
+doc=16 proposals=48 aligned=47 accepted=30 status=completed_with_parse_issues
+Quarantined old stub -> /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall/_quarantine/2a099f1fb2a7ded42c2205c170adfbf76f23f4b3b73e0866f739a91cb546b295.proposer_failed.json
+Wrote cache /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/v9_llm_recall/2a099f1fb2a7ded42c2205c170adfbf76f23f4b3b73e0866f739a91cb546b295.json

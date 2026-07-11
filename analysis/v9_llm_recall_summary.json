@@ -1,0 +1,51 @@
+{
+  "documents": 100,
+  "funnel": {
+    "raw_proposals": 1487,
+    "aligned": 1410,
+    "multiple_match_rejected": 38,
+    "verifier_accept_raw": 1257,
+    "json_parse_failures": 3,
+    "repair_retries": 1,
+    "final_additions": 34,
+    "exact_span_duplicates_skipped": 900,
+    "overlap_rejected": 322,
+    "verifier_rejected": 153,
+    "zero_match_rejected": 39,
+    "dropped_after_merge_or_filter": 1,
+    "verifier_accepted_final_cache": 1257
+  },
+  "type_additions": {
+    "CHẨN_ĐOÁN": 14,
+    "TRIỆU_CHỨNG": 12,
+    "THUỐC": 8
+  },
+  "diag_with_icd": 14,
+  "diag_without_icd": 0,
+  "drug_with_rx": 8,
+  "drug_without_rx": 0,
+  "assertion_counts": {
+    "no_assertion": 25,
+    "isHistorical": 8,
+    "isNegated": 1
+  },
+  "invariants": {
+    "removed": 0,
+    "changed_types": 0,
+    "changed_candidates": 0,
+    "changed_assertions": 0,
+    "invalid_spans": 0,
+    "missing_cache": 0,
+    "parse_failures_unresolved": 0
+  },
+  "trace_stats": {
+    "trace_files": 100,
+    "non_empty": 100,
+    "empty": 0,
+    "trace_dir": "output/v9_llm_recall/trace"
+  },
+  "high_risk": [],
+  "decision": "READY FOR MANUAL REVIEW",
+  "hard_fail_reasons": [],
+  "max_additions_one_doc": 3
+}

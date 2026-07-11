@@ -1,0 +1,494 @@
+{
+  "doc_id": "16",
+  "note": "offline truncated-JSON salvage; verifier NOT run; do not use as Phase B cache",
+  "n_salvaged_proposals": 48,
+  "n_aligned": 47,
+  "alignment_status": {
+    "aligned": 47,
+    "multiple_match": 1
+  },
+  "aligned_candidates": [
+    {
+      "proposal_id": 0,
+      "line_id": "L003",
+      "text": "Ung thư biểu mô tuyến đại tràng",
+      "type": "CHẨN_ĐOÁN",
+      "start": 39,
+      "end": 70,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 1,
+      "line_id": "L004",
+      "text": "bệnh phổi tắc nghẽn mạn tính",
+      "type": "CHẨN_ĐOÁN",
+      "start": 73,
+      "end": 101,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 2,
+      "line_id": "L005",
+      "text": "Đái tháo đường",
+      "type": "CHẨN_ĐOÁN",
+      "start": 120,
+      "end": 134,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 3,
+      "line_id": "L006",
+      "text": "xơ gan do rượu",
+      "type": "CHẨN_ĐOÁN",
+      "start": 137,
+      "end": 151,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 4,
+      "line_id": "L007",
+      "text": "Phẫu thuật mở cắt nối trực tràng/đại tràng sigma",
+      "type": "CHẨN_ĐOÁN",
+      "start": 231,
+      "end": 279,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 5,
+      "line_id": "L008",
+      "text": "xơ gan do rượu",
+      "type": "CHẨN_ĐOÁN",
+      "start": 337,
+      "end": 351,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 6,
+      "line_id": "L011",
+      "text": "tụt huyết áp",
+      "type": "TRIỆU_CHỨNG",
+      "start": 390,
+      "end": 402,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 7,
+      "line_id": "L011",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 427,
+      "end": 434,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 8,
+      "line_id": "L012",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 477,
+      "end": 484,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 9,
+      "line_id": "L014",
+      "text": "Viêm phổi bệnh viện",
+      "type": "CHẨN_ĐOÁN",
+      "start": 557,
+      "end": 576,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 10,
+      "line_id": "L014",
+      "text": "rung nhĩ",
+      "type": "CHẨN_ĐOÁN",
+      "start": 580,
+      "end": 588,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 11,
+      "line_id": "L014",
+      "text": "nhịp nhanh trên thất",
+      "type": "CHẨN_ĐOÁN",
+      "start": 592,
+      "end": 612,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 12,
+      "line_id": "L016",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 826,
+      "end": 833,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 13,
+      "line_id": "L016",
+      "text": "khó khăn khi ra khỏi giường",
+      "type": "TRIỆU_CHỨNG",
+      "start": 867,
+      "end": 894,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 14,
+      "line_id": "L017",
+      "text": "đau bụng",
+      "type": "TRIỆU_CHỨNG",
+      "start": 927,
+      "end": 935,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 15,
+      "line_id": "L019",
+      "text": "hạ huyết áp",
+      "type": "TRIỆU_CHỨNG",
+      "start": 991,
+      "end": 1002,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 16,
+      "line_id": "L020",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1021,
+      "end": 1028,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 17,
+      "line_id": "L021",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1031,
+      "end": 1038,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 18,
+      "line_id": "L022",
+      "text": "khó khăn khi ra khỏi giường",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1041,
+      "end": 1068,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 19,
+      "line_id": "L023",
+      "text": "đau bụng",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1071,
+      "end": 1079,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 20,
+      "line_id": "L024",
+      "text": "khó thở",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1092,
+      "end": 1099,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 21,
+      "line_id": "L025",
+      "text": "ho mạn tính",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1115,
+      "end": 1126,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 22,
+      "line_id": "L026",
+      "text": "chán ăn",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1147,
+      "end": 1154,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 23,
+      "line_id": "L028",
+      "text": "buồn nôn",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1232,
+      "end": 1240,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 25,
+      "line_id": "L028",
+      "text": "tiêu chảy",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1247,
+      "end": 1256,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 26,
+      "line_id": "L028",
+      "text": "táo bón",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1263,
+      "end": 1270,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 27,
+      "line_id": "L030",
+      "text": "sốt",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1321,
+      "end": 1324,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 28,
+      "line_id": "L030",
+      "text": "đau ngực",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1326,
+      "end": 1334,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 29,
+      "line_id": "L030",
+      "text": "chóng mặt",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1336,
+      "end": 1345,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 30,
+      "line_id": "L030",
+      "text": "đánh trống ngực",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1347,
+      "end": 1362,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 31,
+      "line_id": "L035",
+      "text": "ran nổ",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1507,
+      "end": 1513,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 32,
+      "line_id": "L035",
+      "text": "phù phù",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1515,
+      "end": 1522,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 33,
+      "line_id": "L035",
+      "text": "dịch rỉ huyết thanh",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1524,
+      "end": 1543,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 34,
+      "line_id": "L035",
+      "text": "phân nâu dương tính guaiac",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1558,
+      "end": 1584,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 35,
+      "line_id": "L039",
+      "text": "hạ huyết áp",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1732,
+      "end": 1743,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 36,
+      "line_id": "L040",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1762,
+      "end": 1769,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 37,
+      "line_id": "L041",
+      "text": "mệt mỏi",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1772,
+      "end": 1779,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 38,
+      "line_id": "L042",
+      "text": "khó thở",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1782,
+      "end": 1789,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 39,
+      "line_id": "L043",
+      "text": "ho mạn tính",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1805,
+      "end": 1816,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 40,
+      "line_id": "L044",
+      "text": "ran",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1837,
+      "end": 1840,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 41,
+      "line_id": "L045",
+      "text": "phù phù",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1843,
+      "end": 1850,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 42,
+      "line_id": "L046",
+      "text": "dịch thanh dịch lẫn máu",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1853,
+      "end": 1876,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 43,
+      "line_id": "L047",
+      "text": "phân nâu dương tính guaiac",
+      "type": "TRIỆU_CHỨNG",
+      "start": 1889,
+      "end": 1915,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 44,
+      "line_id": "L049",
+      "text": "xẹp phổi thùy dưới phải",
+      "type": "CHẨN_ĐOÁN",
+      "start": 2067,
+      "end": 2090,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 45,
+      "line_id": "L049",
+      "text": "tràn dịch màng phổi",
+      "type": "CHẨN_ĐOÁN",
+      "start": 2106,
+      "end": 2125,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 46,
+      "line_id": "L054",
+      "text": "Viêm phổi bệnh viện",
+      "type": "CHẨN_ĐOÁN",
+      "start": 2231,
+      "end": 2250,
+      "status": "aligned",
+      "detail": ""
+    },
+    {
+      "proposal_id": 47,
+      "line_id": "L055",
+      "text": "Rung nhĩ",
+      "type": "CHẨN_ĐOÁN",
+      "start": 2253,
+      "end": 2261,
+      "status": "aligned",
+      "detail": ""
+    }
+  ],
+  "failed_alignments": [
+    {
+      "proposal_id": 24,
+      "line_id": "L028",
+      "text": "nôn",
+      "type": "TRIỆU_CHỨNG",
+      "start": -1,
+      "end": -1,
+      "status": "multiple_match",
+      "detail": "Found 2 exact occurrences; rejecting in v9"
+    }
+  ]
+}

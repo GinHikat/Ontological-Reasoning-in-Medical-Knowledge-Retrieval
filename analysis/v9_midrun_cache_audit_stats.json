@@ -1,0 +1,159 @@
+{
+  "n_cache_files": 46,
+  "status": {
+    "ok": 44,
+    "completed_with_parse_issues": 1,
+    "proposer_failed": 1
+  },
+  "accepted": 604,
+  "types": {
+    "TRIỆU_CHỨNG": 330,
+    "CHẨN_ĐOÁN": 190,
+    "THUỐC": 84
+  },
+  "vs_v7_same_env": {
+    "exact_span_match": 435,
+    "overlap_nonexact": 150,
+    "novel_nonoverlap": 19,
+    "novel_rate": 0.031,
+    "novels": [
+      {
+        "doc": "1",
+        "type": "CHẨN_ĐOÁN",
+        "text": "ngoại tâm thu nhĩ",
+        "start": 1689,
+        "end": 1706
+      },
+      {
+        "doc": "3",
+        "type": "CHẨN_ĐOÁN",
+        "text": "thay đổi sóng t không đặc hiệu",
+        "start": 4290,
+        "end": 4320
+      },
+      {
+        "doc": "5",
+        "type": "CHẨN_ĐOÁN",
+        "text": "giãn đường mật",
+        "start": 1083,
+        "end": 1097
+      },
+      {
+        "doc": "5",
+        "type": "CHẨN_ĐOÁN",
+        "text": "tắc nghẽn đường mật",
+        "start": 1105,
+        "end": 1124
+      },
+      {
+        "doc": "6",
+        "type": "TRIỆU_CHỨNG",
+        "text": "hẹp nặng",
+        "start": 357,
+        "end": 365
+      },
+      {
+        "doc": "12",
+        "type": "TRIỆU_CHỨNG",
+        "text": "ho",
+        "start": 321,
+        "end": 323
+      },
+      {
+        "doc": "13",
+        "type": "CHẨN_ĐOÁN",
+        "text": "Hội chứng kháng enzym tổng hợp protein",
+        "start": 124,
+        "end": 162
+      },
+      {
+        "doc": "13",
+        "type": "THUỐC",
+        "text": "doxycyclin",
+        "start": 953,
+        "end": 963
+      },
+      {
+        "doc": "13",
+        "type": "CHẨN_ĐOÁN",
+        "text": "viêm mô tế bào",
+        "start": 976,
+        "end": 990
+      },
+      {
+        "doc": "32",
+        "type": "TRIỆU_CHỨNG",
+        "text": "Ho",
+        "start": 1711,
+        "end": 1713
+      },
+      {
+        "doc": "35",
+        "type": "TRIỆU_CHỨNG",
+        "text": "ảo giác",
+        "start": 661,
+        "end": 668
+      },
+      {
+        "doc": "35",
+        "type": "CHẨN_ĐOÁN",
+        "text": "cml",
+        "start": 1693,
+        "end": 1696
+      },
+      {
+        "doc": "37",
+        "type": "THUỐC",
+        "text": "glargine",
+        "start": 943,
+        "end": 951
+      },
+      {
+        "doc": "48",
+        "type": "TRIỆU_CHỨNG",
+        "text": "khó khăn khi ước lượng vị trí ngồi xuống ghế",
+        "start": 827,
+        "end": 871
+      },
+      {
+        "doc": "70",
+        "type": "THUỐC",
+        "text": "thuốc an thần",
+        "start": 310,
+        "end": 323
+      },
+      {
+        "doc": "70",
+        "type": "THUỐC",
+        "text": "thuốc an thần",
+        "start": 1253,
+        "end": 1266
+      },
+      {
+        "doc": "70",
+        "type": "THUỐC",
+        "text": "nac",
+        "start": 1516,
+        "end": 1519
+      },
+      {
+        "doc": "96",
+        "type": "CHẨN_ĐOÁN",
+        "text": "bàng quang thần kinh",
+        "start": 45,
+        "end": 65
+      },
+      {
+        "doc": "100",
+        "type": "THUỐC",
+        "text": "Laxis 20mg",
+        "start": 1441,
+        "end": 1451
+      }
+    ]
+  },
+  "align_fail": {
+    "multiple_match": 16,
+    "zero_match": 29
+  }
+}

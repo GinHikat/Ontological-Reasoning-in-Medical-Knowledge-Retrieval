@@ -46,11 +46,11 @@ Pipeline order (v7 copy + insert):
 - [x] P1–P5 — local LLM client (`modules/components/llm/`)
 - [x] P6–P13 — line index, prompts, parser, aligner, verifier prompts
 - [x] P14–P17 — cache generator, `LLMRecallPostProcessor`, `v9.py`, factory register, `.gitignore` cache/
-- [ ] P18–P20 — pilot on files `3,13,20,41,48,70,87,89,91,93,96,100` → `analysis/v9_pilot_report.md`
-- [ ] P21 — full 100-doc LLM cache; unload Qwen; same-env v7 then v9 runs
-- [ ] P22–P25 — diagnostics TSVs/report + submission decision (`READY FOR MANUAL REVIEW` / `NOT READY`)
-- [ ] P26 — 100 non-empty traces (+ enrich from cache)
-- [ ] P27 — finalize `state.md` (no leaderboard score until submitted)
+- [x] P18–P20 — pilot on files `3,13,20,41,48,70,87,89,91,93,96,100` → `analysis/v9_pilot_report.md`
+- [x] P21 — full 100-doc LLM cache; unload Qwen; same-env v7 then v9 runs
+- [x] P22–P25 — diagnostics TSVs/report + submission decision (`READY FOR MANUAL REVIEW` / `NOT READY`)
+- [x] P26 — 100 non-empty traces (+ enrich from cache)
+- [x] P27 — finalize `state.md` (no leaderboard score until submitted)
 
 ## Environments
 

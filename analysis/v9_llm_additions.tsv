@@ -1,0 +1,35 @@
+file	start	end	text	type	left_context	right_context	proposer_type	verifier_type	candidates	assertions	section
+1	1689	1706	ngoại tâm thu nhĩ	CHẨN_ĐOÁN	- monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận 	 và ngoại tâm thu thất xuất hiện thường xuyên.     - Bắt đầu	CHẨN_ĐOÁN	CHẨN_ĐOÁN	I491		- monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận
+3	4290	4320	thay đổi sóng t không đặc hiệu	CHẨN_ĐOÁN	ó thể là nhồi máu cơ tim vùng dưới cũ (điện tâm đồ (ecg)) - 	 (điện tâm đồ (ecg)) Kết quả hình ảnh - Tim to (chụp x-quang	CHẨN_ĐOÁN	CHẨN_ĐOÁN	L569		-
+5	1083	1097	giãn đường mật	CHẨN_ĐOÁN	ả chẩn đoán hình ảnh:  Siêu âm gan mật  ghi nhận tình trạng 	, gợi ý tắc nghẽn đường mật cần tiếp tục đánh giá và can thi	CHẨN_ĐOÁN	CHẨN_ĐOÁN	K832		Siêu âm gan mật  ghi nhận tình trạng
+5	1105	1124	tắc nghẽn đường mật	CHẨN_ĐOÁN	 Siêu âm gan mật  ghi nhận tình trạng giãn đường mật, gợi ý 	 cần tiếp tục đánh giá và can thiệp. Các thủ thuật đã thực h	CHẨN_ĐOÁN	CHẨN_ĐOÁN	K831		Siêu âm gan mật  ghi nhận tình trạng giãn đường mật, gợi ý
+6	357	365	hẹp nặng	TRIỆU_CHỨNG	   - Ghi nhận trên các siêu âm doppler hai chiều gần đây có 	, tỷ số PSV/EDV > 7, vận tốc dòng chảy tăng rõ     Tình trạn	TRIỆU_CHỨNG	TRIỆU_CHỨNG			- Ghi nhận trên các siêu âm doppler hai chiều gần đây có
+12	321	323	ho	TRIỆU_CHỨNG	êm qua     Diễn biến bệnh     - Các triệu chứng bắt đầu với 	 và mệt mỏi     - Tối qua tiến triển thành 3 cơn ho đánh thứ	TRIỆU_CHỨNG	TRIỆU_CHỨNG			- Các triệu chứng bắt đầu với
+13	124	162	Hội chứng kháng enzym tổng hợp protein	CHẨN_ĐOÁN	ụng corticoid liều cao kéo dài.     - Thở oxy tại nhà     - 	.     - béo phì     - Tăng huyết áp nguyên phát.     Tiền sử	CHẨN_ĐOÁN	CHẨN_ĐOÁN	R65	isHistorical	-
+13	953	963	doxycyclin	THUỐC	 điều trị khám và tăng liều cotrimoxazol, đồng thời bổ sung 	 do nghi ngờ viêm mô tế bào. Bệnh nhân thấy  ban đỏ quanh tổ	THUỐC	THUỐC	3640		Diễn biến bệnh
+13	976	990	viêm mô tế bào	CHẨN_ĐOÁN	liều cotrimoxazol, đồng thời bổ sung doxycyclin do nghi ngờ 	. Bệnh nhân thấy  ban đỏ quanh tổn thương giảm sau điều trị 	CHẨN_ĐOÁN	CHẨN_ĐOÁN	L03		Diễn biến bệnh
+16	867	894	khó khăn khi ra khỏi giường	TRIỆU_CHỨNG	khám vì tình trạng mệt mỏi kéo dài trong vài ngày, kèm theo 	 vào sáng nay. - Bệnh nhân đã có đau bụng gián đoạn kể từ kh	TRIỆU_CHỨNG	TRIỆU_CHỨNG			Diễn biến bệnh
+32	1711	1713	Ho	TRIỆU_CHỨNG	Khó thở tăng dần, chủ yếu khi gắng sức. Nghẹt ngực kéo dài. 	.Khò khè Phù ngoại vi tăng dần trong vài tuần gần đây.Tiền s	TRIỆU_CHỨNG	TRIỆU_CHỨNG		isHistorical	Nghẹt ngực kéo dài.
+35	661	668	ảo giác	TRIỆU_CHỨNG	ng: Cực kỳ yếu kể từ khi xuất viện     Diễn biến bệnh     - 	 được vợ nhận thấy     - Lú lẫn ngày càng nặng được vợ nhận 	TRIỆU_CHỨNG	TRIỆU_CHỨNG			-
+37	943	951	glargine	THUỐC	do hết que thử đường máu. - glucose là thấp, nên ngừng dùng 	 - Báo cáo bị ngã gần đây - Dùng xe đẩy hàng làm dụng cụ hỗ 	THUỐC	THUỐC	274783		- glucose là thấp, nên ngừng dùng
+44	1693	1696	ntg	THUỐC	nh giá tại bệnh viện Các thủ thuật đã thực hiện - Nhận 2 sl 	 - Nhận asa - Nhận 80mg lasix iv - Nhận 8mg morphine - Nhận 	THUỐC	THUỐC	4917		- Nhận 2 sl
+44	1704	1707	asa	THUỐC	bệnh viện Các thủ thuật đã thực hiện - Nhận 2 sl ntg - Nhận 	 - Nhận 80mg lasix iv - Nhận 8mg morphine - Nhận 1mg dilaudi	THUỐC	THUỐC	1191		- Nhận
+48	827	871	khó khăn khi ước lượng vị trí ngồi xuống ghế	TRIỆU_CHỨNG	kéo lê chân trái và cánh tay trái được cho là lơ lửng     - 	 ăn trưa     - khó khăn khi ăn     - Tình trạng kéo dài khoả	TRIỆU_CHỨNG	TRIỆU_CHỨNG			-
+50	1260	1267	Khò khè	TRIỆU_CHỨNG	 ngủ và đau vùng hạ vị. Triệu chứng khi nhập viện: Khó thở. 	. Tiếng rít về đêm. Đau vùng xoang. Ho nhẹ. Đau đầu dữ dội. 	TRIỆU_CHỨNG	TRIỆU_CHỨNG			Khó thở.
+51	1262	1295	nhiễm trùng đường hô hấp trên cấp	CHẨN_ĐOÁN	 hạ kali máu rõ rệt trong bối cảnh tiêu chảy và có khả năng 	, không xác định	CHẨN_ĐOÁN	CHẨN_ĐOÁN	J069		- Nhận 40meq iv k
+54	2938	2956	đáp ứng thất nhanh	TRIỆU_CHỨNG	uy thận cấp - tái phát u ác trực tràng - rung cuống nhĩ với 		TRIỆU_CHỨNG	TRIỆU_CHỨNG			- rung cuống nhĩ với
+58	2606	2642	không nhấc chân phải khỏi mặt giường	TRIỆU_CHỨNG	    - nhịp tim chậm     - hạ huyết áp, không đặc hiệu     - 	     - chân phải liên tục khuỵ xuống     - tỉnh chậm, phản x	TRIỆU_CHỨNG	TRIỆU_CHỨNG			-
+66	1386	1410	huyết khối tĩnh mạch sâu	CHẨN_ĐOÁN	ện gãy xương hoặc viêm xương tủy     - Bên phải âm tính với 	 (DVT)	CHẨN_ĐOÁN	CHẨN_ĐOÁN	I81	isHistorical	- Bên phải âm tính với
+70	310	323	thuốc an thần	THUỐC	n mỗi giờ - làm hỏng dạ dày của cô ấy bằng cách uống 2 chai 	 trong quá khứ  2. Bệnh sử hiện tại Lý do nhập viện: đau bụn	THUỐC	THUỐC	236587	isHistorical	- làm hỏng dạ dày của cô ấy bằng cách uống 2 chai
+70	1253	1266	thuốc an thần	THUỐC	hen 500mg - làm hỏng dạ dày của cô ấy bằng cách uống 2 chai 	 trong quá khứ - Tại bệnh viện OSH, phát hiện tăng men gan v	THUỐC	THUỐC	236587		- làm hỏng dạ dày của cô ấy bằng cách uống 2 chai
+70	1516	1519	nac	THUỐC	Chưa từng xét nghiệm nồng độ acetaminophen - Chưa từng dùng 	 - Chuyển tạm thời để thực hiện ercp - ercp cho thấy túi mật	THUỐC	THUỐC	152089	isNegated	- Chưa từng dùng
+77	1121	1132	hoang tưởng	TRIỆU_CHỨNG	hĩ tự tử, có nghĩ tự bắn vào đầu     - lo âu hoảng sợ     - 	 như đang chiếm khí oxy của người khác  Điều trị     - Hiện 	TRIỆU_CHỨNG	TRIỆU_CHỨNG			-
+80	521	528	gãy vụn	CHẨN_ĐOÁN	Hình ảnh gãy 3 xương sườn 9, 10 và 11, xương sườn thứ 10 bị 	 gây đụng dập một vùng nhu mô phổi nhỏ tại vị trí gãy	CHẨN_ĐOÁN	CHẨN_ĐOÁN	S721	isHistorical	- chụp cắt lớp vi tính (ct) cột sống cổ không thấy tổn thương
+80	533	541	đụng dập	CHẨN_ĐOÁN	 3 xương sườn 9, 10 và 11, xương sườn thứ 10 bị gãy vụn gây 	 một vùng nhu mô phổi nhỏ tại vị trí gãy	CHẨN_ĐOÁN	CHẨN_ĐOÁN	S200	isHistorical	- chụp cắt lớp vi tính (ct) cột sống cổ không thấy tổn thương
+84	748	750	ho	TRIỆU_CHỨNG	Lúc vào phòng cấp cứu trong tình trạng:     - mệt mỏi     - 	     - chảy nước mũi     - nhịp thở nhanh     - Thiếu oxy   	TRIỆU_CHỨNG	TRIỆU_CHỨNG			-
+86	485	528	dị tật cố định vùng trước vách và vách dưới	CHẨN_ĐOÁN	nh ảnh - Đo sức bền cơ tim bằng đồng vị phóng xạ kết quả có 	 với  giảm chức năng tâm thu thất trái nghiêm trọng kèm theo	CHẨN_ĐOÁN	CHẨN_ĐOÁN	Q139		- Đo sức bền cơ tim bằng đồng vị phóng xạ kết quả có
+86	534	579	giảm chức năng tâm thu thất trái nghiêm trọng	CHẨN_ĐOÁN	kết quả có dị tật cố định vùng trước vách và vách dưới với  	 kèm theo rối loạn chức năng thất trái. - Chụp động mạch vàn	CHẨN_ĐOÁN	CHẨN_ĐOÁN	F73		Kết quả chẩn đoán hình ảnh
+86	589	617	rối loạn chức năng thất trái	CHẨN_ĐOÁN	với  giảm chức năng tâm thu thất trái nghiêm trọng kèm theo 	. - Chụp động mạch vành cho thấy bệnh ba thân động mạch vành	CHẨN_ĐOÁN	CHẨN_ĐOÁN	H832		Kết quả chẩn đoán hình ảnh
+96	45	65	bàng quang thần kinh	CHẨN_ĐOÁN	1. Tiền sử bệnh - viêm tủy xương mãn tính và 	 gây biến chứng liệt hai chi dưới và loét tì đè giai đoạn IV	CHẨN_ĐOÁN	CHẨN_ĐOÁN	N210	isHistorical	- viêm tủy xương mãn tính và
+97	1238	1254	đường huyết thấp	TRIỆU_CHỨNG	 điện tâm đồ cho thấy nhịp chậm xoang  - đường huyết lúc đói	)	TRIỆU_CHỨNG	TRIỆU_CHỨNG			- đường huyết lúc đói
+100	1441	1451	Laxis 20mg	THUỐC	 không có quá trình cấp tính     Xử trí thuốc     - đã dùng 	 tiêm tĩnh mạch     - Truyền  dịch Natriclori 0.9 %  tĩnh mạ	THUỐC	THUỐC	342840	isHistorical	- đã dùng

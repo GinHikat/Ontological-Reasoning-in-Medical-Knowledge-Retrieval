@@ -72,3 +72,110 @@ Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated b
 - Created CURRENT_WORK.md (rewriteable long-run handoff + tmux commands)
 - Wired into AGENTS.md + .cursor/rules/v9-resume.mdc
 - Live: serve_v9_qwen_cpu.py + generate_v9_llm_cache pilot 12 docs; doc20 = proposer_failed timeout; usable accepted=0
+
+---
+### 2026-07-11 02:47 +0700 | host=ict14
+**Status:** P20 pilot aborted — CPU Qwen timed out (3600s) on docs 3/13/20; 0 valid cache entries
+**Next:** Unblock serving (GPU+quant when free, or much smaller max_tokens / chunked prompts); then re-run pilot without --force
+- Pilot job 647176 aborted after ~3h; tqdm showed 3/12 at exactly 3600s/doc
+- Quarantined timeout stubs: cache/v9_llm_recall/_quarantine/ (docs 3,13,20; raw_len=0; proposer_failed)
+- Valid cache/*.json count: 0
+- CPU server still on :8000 (pid ~213051); GPUs still ~full (764/604 MiB free)
+- Server never finished generate for long prompts (prompt_tokens~1.6k–2.8k, max_new=1536)
+
+---
+### 2026-07-11 03:09 +0700 | host=ict14
+**Status:** Qwen CPU server task aborted; check :8000 before any cache gen
+**Next:** if resuming v9 on this host, restart serve_v9_qwen_cpu.py then pilot without --force
+- Terminal 647174 aborted; verify with `ss -ltnp | grep 8000`
+
+---
+### 2026-07-11 03:21 +0700 | host=ict14
+**Status:** v9 pilot cache RUNNING on ict14 via llama.cpp Q4 (~3.2 tok/s); HF CPU abandoned
+**Next:** wait pilot 12-doc cache → build_v9_pilot_report → quality gate → full 100 cache → Phase B
+- Quarantined 3 HF-timeout stubs under cache/v9_llm_recall/_quarantine/
+- Added scripts/serve_v9_qwen_llamacpp.py (model id still Qwen/Qwen3.5-9B; GGUF Q4_K_M; 40 threads)
+- Smoke: 177 toks / 55.5s; JSON entity extraction OK
+- GEN_PID generate_v9_llm_cache pilot --timeout 1800 --max-tokens 1024 (no --force)
+- LLMAdditiveRecallPipeline already in modules/pipelines/v9.py; NER path fix = same weights
+
+---
+### 2026-07-11 03:47 +0700 | host=ict14
+**Status:** pilot cache progressing — doc 3 OK (39 parsed / 38 accepted) via llama.cpp Q4 @ ~3.7 tok/s
+**Next:** finish 12-doc pilot → pilot report/quality gate → full 100 cache
+- max_tokens raised to 2048 after doc3 JSON truncation at 1024
+- prompt: compact JSON + explicit untrusted-doc injection resistance
+- generate_v9_llm_cache preserves raw on repair failure
+- GEN 381077; serve 380024 (n_threads=40, n_ctx=16384)
+
+---
+### 2026-07-11 05:04 +0700 | host=ict14
+**Status:** pilot DONE (12/12, 200 accepted); full 100-doc cache RUNNING (resume-safe)
+**Next:** wait 100 valid cache → unload Qwen → Phase B run_pipeline v9_llm_recall → diagnostics
+- Pilot funnel: raw 243 / aligned 225 / accepted 200 (TC 109, CD 66, TH 25)
+- Quality gate PASS with caveats (long imaging phrases, some English tokens, generic drug phrases)
+- Report: analysis/v9_pilot_report.md
+- Full gen PID ~446964; serve ~380024
+
+---
+### 2026-07-11 07:11 +0700 | host=ict14
+**Status:** full cache STOPPED at ~37/100 — server RemoteDisconnected; port 8000 down; gen exited
+**Next:** user resumes in tmux — pane A serve_v9_qwen_llamacpp (40 thr, n_ctx=16384); pane B generate_v9_llm_cache --timeout 1800 --max-tokens 2048 (no --force)
+- Commands in CURRENT_WORK.md
+- Do not --force; skips existing SHA256 cache keys
+
+---
+### 2026-07-11 08:06 +0700 | host=ict14
+**Status:** mid-run audit on ~46/100 cache while gen continues; additive yield looks tiny
+**Next:** wait full 100 cache → salvage doc16 verifier → Phase B → full overlap audit
+- Wrote analysis/v9_midrun_cache_audit.md (+ stats json): 604 accepted but only ~19 non-overlap vs v7 same_env
+- Doc16 truncated JSON salvage: 48 proposals / 47 aligned (analysis/v9_doc16_salvage_record.json); verifier deferred
+- Added truncated-entities salvage in response_parser.py + salvage_v9_failed_cache.py
+- Did not touch live llama.cpp server (gen still RUNNING)
+
+---
+### 2026-07-11 08:58 +0700 | host=ict14
+**Status:** GGUF precision bakeoff Q4 vs Q8 DONE (BF16 still downloading); live cache untouched
+**Next:** finish BF16 download → append BF16 row to analysis/v9_gguf_precision_bench.md; keep waiting full 100 cache
+- Q4_K_M: 2.25 tok/s @ 8 thr (under contention with live 40-thr cache)
+- Q8_0: 1.53 tok/s @ 8 thr — **slower than Q4**, not faster
+- Script: scripts/bench_v9_gguf_precision.py; report analysis/v9_gguf_precision_bench.md
+- Live :8000 still Q4; do not switch mid-cache
+
+---
+### 2026-07-11 09:43 +0700 | host=ict14
+**Status:** GGUF bakeoff complete Q4 vs Q8 vs BF16; Q4 fastest; live cache still on Q4
+**Next:** wait full 100 cache → salvage doc16 → Phase B
+- See analysis/v9_gguf_precision_bench.md
+
+---
+### 2026-07-11 09:43 +0700 | host=ict14
+**Status:** session handoff — full cache RUNNING ~64/100; bakeoff+mid-run audit preserved in CURRENT_WORK.md
+**Next:** wait 100 cache (or resume via CURRENT_WORK.md if PIDs die) → salvage doc16 → unload Qwen → Phase B → diagnostics/decision
+- CURRENT_WORK.md rewritten (PIDs serve 541794 / gen 542957; no tmux — prefer tmux if restarting)
+- Key findings kept: additive ~3% vs v7 same_env; Q4 fastest on CPU; doc16 salvage ready
+- Do not --force; do not switch quant mid-run
+
+---
+### 2026-07-11 14:14 +0700 | host=ict14
+**Status:** Phase A DONE (100 cache + doc16 salvage); Phase B RUNNING on CPU (GPUs full)
+**Next:** wait Phase B → analyze_v9_llm_recall + enrich traces → decision → state.md
+- Cache: 100/100; doc16 salvaged → 30 accepted (completed_with_parse_issues)
+- Qwen server stopped
+- Phase B: CUDA_VISIBLE_DEVICES= empty; log analysis/v9_phase_b_log.txt; out output/v9_llm_recall/
+
+---
+### 2026-07-11 14:21 +0700 | host=ict14
+**Status:** Phase B RUNNING on CPU — layout fixed; ~1/100 done (~7 min/doc → ~12h ETA)
+**Next:** wait 100/100 Phase B → analyze + enrich → decision → state.md
+- Fixed run_pipeline --output-dir to nest submission/base_v7_snapshot/trace under output/v9_llm_recall/
+- CUDA_VISIBLE_DEVICES= (GPUs full); log analysis/v9_phase_b_log.txt
+
+---
+### 2026-07-11 15:58 +0700 | host=ict14
+**Status:** v9_llm_recall Phase B + diagnostics DONE — decision READY FOR MANUAL REVIEW
+**Next:** user manual review of 34 additions; package ZIP only if user asks; no auto-submit
+- Phase B 100/100 (~1h42m CPU); submission + base_v7_snapshot + enriched traces
+- Invariants all 0; final additions 34 (CD14/TC12/TH8); all CD/TH linked
+- Reports: analysis/v9_llm_recall_report.md, analysis/v9_manual_review.md, TSVs
+- state.md + CURRENT_WORK.md updated

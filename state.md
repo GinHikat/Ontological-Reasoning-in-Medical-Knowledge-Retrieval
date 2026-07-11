@@ -373,18 +373,21 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 
    **Conclusion:** No more RxNorm policy submissions planned. Ingredient First rejected. Multi-candidate hedging rejected. Example Policy approximately neutral relative to existing v7 behavior. Preserve: return one canonical RxCUI; do not globally reduce drugs to ingredients; do not append ingredient alternatives as a hedge. **Development moved to `v9_llm_recall`.**
 
-### Modification Ver 9 (`v9_llm_recall`) — in progress
+### Modification Ver 9 (`v9_llm_recall`) — READY FOR MANUAL REVIEW
 1. **Goal:** Use a self-hosted LLM as an independent high-recall entity candidate generator for missing clinical entities, while keeping the existing deterministic pipeline responsible for exact offsets, overlap handling, ICD/RxNorm linking, assertions, and final competition JSON.
-2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API).
-3. **Thinking:** disabled (`enable_thinking=false`).
+2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API). Serving for Phase A: llama.cpp **Q4_K_M** CPU (BF16 GPU OOM; HF CPU too slow; bakeoff Q4 > Q8 > BF16 tok/s).
+3. **Thinking:** disabled (`enable_thinking=false`). Generation: temperature=0, top_p=1, max_tokens=2048.
 4. **Target types:** `TRIỆU_CHỨNG`, `CHẨN_ĐOÁN`, `THUỐC` only.
 5. **Architecture (additive freeze):**
-    *   Phase A: offline LLM candidate cache (`modules/evaluation/generate_v9_llm_cache.py` → `cache/v9_llm_recall/<doc_sha256>.json`)
+    *   Phase A: offline LLM candidate cache (`modules/evaluation/generate_v9_llm_cache.py` → `cache/v9_llm_recall/<doc_sha256>.json`) — **100/100** valid; doc 16 truncated-JSON salvaged offline then verified
     *   strict exact line-indexed alignment (no fuzzy / no LLM offsets)
     *   second-pass verifier (accept only when proposer type == verifier type)
     *   Phase B: `LLMAdditiveRecallPipeline` — newest `build_v7_structured_pipeline()` runs **once** → freeze finalized v7 entities → load validated LLM candidates → reject overlaps → link/assert **only** new entities → exclude unlinked diagnoses/drugs → append → deterministic sort
-    *   Same-run diagnostic snapshot: `output/v9_llm_recall/base_v7_snapshot/` beside `submission/`
+    *   Same-run diagnostic snapshot: `output/v9_llm_recall/base_v7_snapshot/` beside `submission/` + `trace/`
 6. **Hard rules:** LLM must NOT emit competition JSON, ICD, RxNorm, offsets; must NOT replace/modify existing v7 entities/types/candidates/assertions.
 7. **Reference:** newest `build_v7_structured_pipeline()` + same-execution frozen v7 snapshot (do not require historical 24.79660 artifact reproduction).
-8. **Leaderboard:** Do not add v9 metrics until an actual submission is scored.
+8. **Phase B results (same-run invariants):** removed/text/position/type/candidate/assertion changes all **0**; invalid spans **0**; traces 100/100 non-empty.
+9. **Funnel (final):** raw 1487 → aligned 1410 → verifier-accept cache 1257 → exact-dup skip 900 → overlap reject 322 → **final additions 34** (CD 14 / TC 12 / TH 8). All new CD have ICD; all new TH have RxNorm.
+10. **Decision:** `READY FOR MANUAL REVIEW` (not auto-submit). Report: `analysis/v9_llm_recall_report.md`. Do **not** package Viettel ZIP until user reviews additions (esp. weak drugs like `thuốc an thần` / `nac` / abbreviations).
+11. **Leaderboard:** Do not add v9 metrics until an actual submission is scored.
 

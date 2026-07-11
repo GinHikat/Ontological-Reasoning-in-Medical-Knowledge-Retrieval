@@ -112,9 +112,13 @@ def _resolve_run_dirs(
     """Return (submission_dir, trace_dir, structured).
 
     structured=True means the version/run layout with submission/ and trace/.
+    Flat ``--output-dir`` still nests ``submission/``, ``trace/``, and (for v9)
+    ``base_v7_snapshot/`` under that root so exports match the brief layout.
     """
     if args.output_dir is not None:
-        return args.output_dir, None, False
+        submission_dir = args.output_dir / "submission"
+        trace_dir = args.output_dir / "trace" if args.trace else None
+        return submission_dir, trace_dir, True
 
     version_name = args.version_name or args.pipeline
     version_dir = args.output_root / version_name
@@ -164,10 +168,7 @@ def main() -> None:
     # v9 additive architecture: same-run frozen v7 snapshot beside submission/.
     base_v7_dir: Path | None = None
     if args.pipeline == "v9_llm_recall":
-        if structured:
-            base_v7_dir = submission_dir.parent / "base_v7_snapshot"
-        else:
-            base_v7_dir = submission_dir.parent / "base_v7_snapshot"
+        base_v7_dir = submission_dir.parent / "base_v7_snapshot"
         base_v7_dir.mkdir(parents=True, exist_ok=True)
         print(f"Base v7    -> {base_v7_dir}")
 
@@ -196,30 +197,16 @@ def main() -> None:
             )
 
         if args.trace and "trace_txt" in document.metadata:
-            if structured:
-                target_trace_dir = trace_dir
-            else:
-                # Flat --output-dir exports keep traces in a sibling folder.
-                target_trace_dir = (
-                    submission_dir.parent / f"{submission_dir.name}_traces"
-                )
-                target_trace_dir.mkdir(parents=True, exist_ok=True)
-            assert target_trace_dir is not None
-            trace_path = target_trace_dir / f"{file_path.stem}_trace.txt"
+            assert trace_dir is not None
+            trace_path = trace_dir / f"{file_path.stem}_trace.txt"
             trace_path.write_text(
                 document.metadata["trace_txt"],
                 encoding="utf-8",
             )
 
     print(f"Done. Submission written to {submission_dir}")
-    if args.trace:
-        if structured:
-            print(f"Traces written to {trace_dir}")
-        else:
-            print(
-                f"Traces written to "
-                f"{submission_dir.parent / f'{submission_dir.name}_traces'}"
-            )
+    if args.trace and trace_dir is not None:
+        print(f"Traces written to {trace_dir}")
 
 
 if __name__ == "__main__":

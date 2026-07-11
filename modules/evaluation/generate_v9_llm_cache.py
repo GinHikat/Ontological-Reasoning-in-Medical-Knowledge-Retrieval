@@ -135,9 +135,12 @@ def _chat_with_optional_repair(
             return repaired_raw, parsed, True, failures
         except (ResponseParseError, json.JSONDecodeError, ValueError) as repair_parse_exc:
             failures.append(f"{role}_repair_parse_error: {repair_parse_exc}")
-            raise ResponseParseError(
+            # Preserve the best available raw text for cache diagnostics.
+            err = ResponseParseError(
                 f"{role} parse failed after one repair retry: {repair_parse_exc}"
-            ) from repair_parse_exc
+            )
+            err.raw_response = repaired_raw or raw  # type: ignore[attr-defined]
+            raise err from repair_parse_exc
 
 
 def process_document(
@@ -187,6 +190,7 @@ def process_document(
         parse_failures.extend(fails)
     except (ResponseParseError, LocalLLMClientError) as exc:
         parse_failures.append(str(exc))
+        raw_proposer = raw_proposer or str(getattr(exc, "raw_response", "") or "")
         record = DocumentLLMCacheRecord(
             document_sha256=sha,
             doc_id=file_path.stem,
@@ -418,7 +422,8 @@ def main() -> None:
         if record.parse_failures:
             summary["parse_failure_docs"] += 1
 
-    summary_path = args.cache_dir / "_generation_summary.json"
+    summary_path = PROJECT_ROOT / "analysis" / "v9_llm_cache_generation_summary.json"
+    summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
     )
