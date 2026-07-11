@@ -61,5 +61,8 @@ No document exceeds 10 replacements.
 
 ## Decision
 
-READY FOR MANUAL REVIEW
+SCORED — completed; not promoted over v7
+
+Official (submitted 11/07/2026 19:17): Score **24.04370** / WER 72.4852 / J_assertion 30.0917 / J_candidates 16.9044
+vs v9 **+0.20080** / vs v7 **−0.75290**. See `analysis/v10_leaderboard_result.md`.
 

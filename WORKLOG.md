@@ -239,3 +239,30 @@ Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated b
 - A6 B3 C18 D12; competition ZIP output/v10_llm_conflict_resolution_submission.zip sha256 05cb2caf…
 - Diagnostic ZIP output/v10_llm_conflict_resolution_full.zip; report analysis/v10_llm_conflict_report.md
 - CURRENT_WORK.md → IDLE / READY FOR MANUAL REVIEW
+
+---
+### 2026-07-11 19:20 +0700 | host=ict14
+**Status:** v10_llm_conflict_resolution official leaderboard SCORED — closed
+**Next:** design annotation workflow; manual annotation + local evaluation (no v11 yet)
+
+11/07/2026
+
+Submitted v10_llm_conflict_resolution.
+
+Official result:
+24.04370
+
+Comparison:
++0.20080 over v9
+-0.75290 below v7
+
+Decision:
+close v10 as a useful but insufficient conflict-resolution experiment.
+
+Next:
+manual annotation and local evaluation.
+
+- Score 24.04370 / WER 72.4852 / J_assertion 30.0917 / J_candidates 16.9044 / num_scored 100 / num_records 100
+- Submitted: 11/07/2026 19:17
+- Not promoted over v7; no more immediate v10 submissions; do not build v11 yet
+- Updated: state.md, PLAN.md, CURRENT_WORK.md, analysis/v10_leaderboard_result.md

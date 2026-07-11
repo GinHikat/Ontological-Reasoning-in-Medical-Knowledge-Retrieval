@@ -399,3 +399,167 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
     *   Delta vs canonical v7 (`24.79660`): Score **−0.95370** / WER **+0.7822** / J_assertion **−1.6544** / J_candidates **−0.5569**
 12. **Conclusion:** **Negative vs v7.** Additive LLM recall (34 entities) hurt all scored axes relative to canonical `v7_structured`. Keep v7 as the leaderboard baseline; do not treat this v9 ZIP as an improvement. **Do not submit the full 34-addition set; do not loosen the proposer for more additions.** Pivot: LLM value is in the **322 overlap** cases (span/type repair), not additive recall → next experiment `v10_llm_conflict_resolution`.
 
+### Official leaderboard summary (v7 / v9 / v10)
+
+| Version                 |    Score |     WER | J_assertion | J_candidates | Decision                 |
+| ----------------------- | -------: | ------: | ----------: | -----------: | ------------------------ |
+| v7 reference            | 24.79660 | 72.0039 |     31.3672 |      17.4691 | Best current reference   |
+| v9 additive recall      | 23.84290 | 72.7861 |     29.7128 |      16.9122 | Negative                 |
+| v10 conflict resolution | 24.04370 | 72.4852 |     30.0917 |      16.9044 | Better than v9, below v7 |
+
+RxNorm probe results remain in the table under **RxNorm hidden-policy probes** above (separate from this summary).
+
+### Modification Ver 10 (`v10_llm_conflict_resolution`) — SCORED
+
+## v10_llm_conflict_resolution — official result
+
+Submitted:
+11/07/2026 19:17
+
+Score:
+24.04370
+
+WER:
+72.4852
+
+J_assertion:
+30.0917
+
+J_candidates:
+16.9044
+
+num_scored: 100 / num_records: 100
+
+Result:
++0.20080 versus v9
+-0.75290 versus v7
+
+Status:
+completed
+
+Decision:
+not promoted over v7
+
+No more immediate v10 submissions.
+
+1. **Goal:** Same-execution frozen newest v7 + deterministic high-confidence LLM overlap replacements (categories A–D). Reuse `cache/v9_llm_recall/`; no additive free-form entities.
+2. **Phase B:** 100/100; **39** replacements (A6 B3 C18 D12); hard gates all 0.
+3. **ZIP:** `output/v10_llm_conflict_resolution_submission.zip` (sha256 `05cb2caf…`).
+4. **Write-up:** `analysis/v10_leaderboard_result.md`.
+
+#### Accepted nondeterminism assumption
+
+```text
+Separate executions of the neural pipeline are not deterministic
+on the current Mac GPU environment.
+
+The project will not attempt to fix this.
+
+Therefore, leaderboard differences cannot be attributed entirely
+to one set of replacements.
+```
+
+Practical interpretation:
+
+```text
+v10 produced a better official result than v9,
+but still did not outperform the v7 reference.
+```
+
+#### Final verdicts
+
+**Verdict 1 — v9 additive recall**
+
+```text
+v9 additive LLM recall remains a negative experiment.
+
+Adding a small number of non-overlapping LLM entities did not help.
+No more additive-v9 submissions are planned.
+```
+
+**Verdict 2 — v10 conflict resolution**
+
+```text
+v10 conflict resolution is better than v9 additive recall.
+
+The official score improved by 0.20080 over v9.
+
+The improvement came mainly from:
+- better text score
+- better assertion score
+
+Candidate score was almost unchanged and slightly worse.
+```
+
+**Verdict 3 — comparison with v7**
+
+```text
+v10 did not beat the v7 reference.
+
+The score remained 0.75290 below v7.
+
+Therefore, the current 39 conflict replacements are not reliable
+enough to replace v7 as the main submission.
+```
+
+**Verdict 4 — interpretation of LLM value**
+
+```text
+The experiment supports the hypothesis that the LLM is more useful
+for span and type conflict resolution than for additive recall.
+
+However, the current conflict rules are still too noisy.
+
+Categories C and D remain the main risk:
+- span expansion
+- symptom-to-diagnosis type correction
+```
+
+**Verdict 5 — candidate mapping**
+
+```text
+v10 did not improve candidate performance.
+
+J_candidates:
+v9  = 16.9122
+v10 = 16.9044
+
+The difference is effectively neutral but slightly negative.
+```
+
+Therefore:
+
+```text
+Candidate correctness remains an upstream span/type problem.
+
+A non-empty ICD or RxNorm candidate is not sufficient evidence
+that a replacement is correct.
+```
+
+**Verdict 6 — next phase**
+
+```text
+Stop leaderboard-driven model iteration temporarily.
+
+Do not build v11 yet.
+
+The next phase is:
+manual annotation and local evaluation.
+```
+
+Primary goals:
+
+```text
+1. Create a small trusted development set.
+
+2. Annotate exact spans, types, assertions, and candidates.
+
+3. Measure v7, v9, and v10 locally.
+
+4. Determine which replacement categories are actually correct.
+
+5. Use annotation evidence before designing the next model version.
+```
+
+**Summary:** v10 validates conflict resolution as a more promising LLM use than additive recall, but is not strong enough to replace v7. Stop submission-driven iteration; build a manually annotated local development set.
+
