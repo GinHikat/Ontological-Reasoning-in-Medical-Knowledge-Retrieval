@@ -1,0 +1,43 @@
+{
+  "diagnostic": {
+    "path": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v10_llm_conflict_resolution_full.zip",
+    "size": 612247,
+    "sha256": "6dd235b55724ff30d3c7d9a4e3b7ad74744982fba247989d167171657dfb97cc",
+    "entries": 309,
+    "has_base": true,
+    "has_sub": true,
+    "has_trace": true
+  },
+  "competition": {
+    "path": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v10_llm_conflict_resolution_submission.zip",
+    "size": 93843,
+    "sha256": "05cb2caf053f7e29bd8fe0618af591831d84df00c3341c15b266bd36272f7e3d",
+    "json_files": 100,
+    "offset_mismatches": 0,
+    "invalid_types": 0,
+    "malformed_files": 0
+  },
+  "decision": "READY FOR MANUAL REVIEW",
+  "replacements": 39,
+  "category_counts": {
+    "A": 6,
+    "B": 3,
+    "C": 18,
+    "D": 12
+  },
+  "hard": {
+    "invalid_spans": 0,
+    "missing_documents": 0,
+    "malformed_json": 0,
+    "empty_traces": 0,
+    "pure_additions": 0,
+    "unpaired_removals": 0,
+    "unexpected_modifications": 0,
+    "type_errors": 0
+  },
+  "file_counts": {
+    "base": 100,
+    "submission": 100,
+    "trace": 100
+  }
+}

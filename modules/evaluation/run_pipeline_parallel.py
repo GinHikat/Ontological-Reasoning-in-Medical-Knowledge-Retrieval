@@ -29,7 +29,14 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--model", choices=NER_MODEL_CHOICES, default="vihealthbert")
     p.add_argument("--input-dir", type=Path, default=PROJECT_ROOT / "v_dataset" / "var" / "test")
     p.add_argument("--output-root", type=Path, default=PROJECT_ROOT / "output")
-    p.add_argument("--run-name", type=str, required=True)
+    p.add_argument(
+        "--output-dir",
+        type=Path,
+        default=None,
+        help="If set, write submission/trace/base_v7_snapshot directly under this dir "
+        "(same layout as run_pipeline.py --output-dir).",
+    )
+    p.add_argument("--run-name", type=str, default=None)
     p.add_argument("--version-name", type=str, default=None)
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--threads-per-worker", type=int, default=4)
@@ -70,6 +77,7 @@ def _worker(payload: dict) -> dict:
     )
     submission_dir = Path(payload["submission_dir"])
     trace_dir = Path(payload["trace_dir"]) if payload["trace_dir"] else None
+    base_v7_dir = Path(payload["base_v7_dir"]) if payload.get("base_v7_dir") else None
     indent = None if payload["indent"] == 0 else payload["indent"]
 
     done = 0
@@ -90,6 +98,16 @@ def _worker(payload: dict) -> dict:
                 json.dumps(output, ensure_ascii=False, indent=indent),
                 encoding="utf-8",
             )
+            if base_v7_dir is not None:
+                base_entities = document.metadata.get("base_v7_entities")
+                if base_entities is None:
+                    raise RuntimeError(
+                        f"{payload['pipeline']} missing base_v7_entities for {file_path.stem}"
+                    )
+                (base_v7_dir / f"{file_path.stem}.json").write_text(
+                    json.dumps(base_entities, ensure_ascii=False, indent=indent),
+                    encoding="utf-8",
+                )
             if payload["trace"] and trace_dir is not None and "trace_txt" in document.metadata:
                 (trace_dir / f"{file_path.stem}_trace.txt").write_text(
                     document.metadata["trace_txt"],
@@ -108,13 +126,23 @@ def _worker(payload: dict) -> dict:
 
 def main() -> None:
     args = parse_args()
-    version_name = args.version_name or args.pipeline
-    run_dir = args.output_root / version_name / args.run_name
+    if args.output_dir is not None:
+        run_dir = args.output_dir
+    else:
+        if not args.run_name:
+            raise SystemExit("Provide --run-name or --output-dir")
+        version_name = args.version_name or args.pipeline
+        run_dir = args.output_root / version_name / args.run_name
     submission_dir = run_dir / "submission"
     trace_dir = run_dir / "trace" if args.trace else None
+    base_v7_dir: Path | None = None
+    if args.pipeline in {"v9_llm_recall", "v10_llm_conflict_resolution"}:
+        base_v7_dir = run_dir / "base_v7_snapshot"
     submission_dir.mkdir(parents=True, exist_ok=True)
     if trace_dir is not None:
         trace_dir.mkdir(parents=True, exist_ok=True)
+    if base_v7_dir is not None:
+        base_v7_dir.mkdir(parents=True, exist_ok=True)
 
     files = sorted(args.input_dir.glob("*.txt"))
     if args.samples is not None:
@@ -135,6 +163,8 @@ def main() -> None:
     )
     print(f"Total files={len(files)} pending={len(pending)} skip_existing={args.skip_existing}")
     print(f"Submission -> {submission_dir}")
+    if base_v7_dir is not None:
+        print(f"Base v7    -> {base_v7_dir}")
     if not pending:
         print("Nothing to do.")
         return
@@ -155,6 +185,7 @@ def main() -> None:
                 "files": [str(p) for p in shard],
                 "submission_dir": str(submission_dir),
                 "trace_dir": str(trace_dir) if trace_dir else None,
+                "base_v7_dir": str(base_v7_dir) if base_v7_dir else None,
                 "trace": args.trace,
                 "indent": args.indent,
                 "skip_existing": args.skip_existing,

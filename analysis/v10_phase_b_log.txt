@@ -1,23 +1,18 @@
-Building pipeline: v10_llm_conflict_resolution (model=vihealthbert)
-Processing 100 files from /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/var/test
+Parallel run: pipeline=v10_llm_conflict_resolution workers=10 threads/worker=6
+Total files=100 pending=100 skip_existing=False
 Submission -> output/v10_llm_conflict_resolution/submission
-Traces     -> output/v10_llm_conflict_resolution/trace
 Base v7    -> output/v10_llm_conflict_resolution/base_v7_snapshot
-Running v10_llm_conflict_resolution/vihealthbert:   0%|          | 0/100 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][A
-Loading weights:  28%|██▊       | 55/199 [00:00<00:00, 549.52it/s][A
-Loading weights:  61%|██████▏   | 122/199 [00:00<00:00, 613.44it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 702.08it/s]
-
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 6800.89it/s]
-[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
-Key                     | Status     |  | 
-------------------------+------------+--+-
-embeddings.position_ids | UNEXPECTED |  | 
-
-Notes:
-- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 5843.90it/s]
+v10_llm_conflict_resolution parallel:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 63/199 [00:00<00:00, 613.22it/s]Loading weights:  31%|███       | 62/199 [00:00<00:00, 585.83it/s]Loading weights:  37%|███▋      | 74/199 [00:00<00:00, 695.65it/s]Loading weights:  44%|████▍     | 88/199 [00:00<00:00, 875.09it/s]Loading weights:  63%|██████▎   | 125/199 [00:00<00:00, 576.59it/s]Loading weights:  61%|██████    | 121/199 [00:00<00:00, 532.05it/s]Loading weights:  72%|███████▏  | 144/199 [00:00<00:00, 606.52it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 842.65it/s]
+Loading weights:  88%|████████▊ | 176/199 [00:00<00:00, 774.92it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 778.30it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 790.34it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 878.24it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5872.14it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4287.35it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5244.03it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4130.03it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6119.61it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5093.81it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6801.39it/s]
 [1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
 Key                     | Status     |  | 
 ------------------------+------------+--+-
@@ -25,8 +20,31 @@ embeddings.position_ids | UNEXPECTED |  |
 
 Notes:
 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11791.57it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
 
-Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 6224.58it/s]
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5385.33it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10744.52it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14915.95it/s]
 [1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 Key                     | Status     |  | 
 ------------------------+------------+--+-
@@ -34,4 +52,247 @@ embeddings.position_ids | UNEXPECTED |  |
 
 Notes:
 - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-Running v10_llm_conflict_resolution/vihealthbert:   1%|          | 1/100 [02:42<4:27:24, 162.07s/it]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17027.41it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3491.38it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12783.40it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9557.94it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14724.39it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13403.34it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4785.90it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19610.60it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15064.82it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11536.67it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10422.91it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14604.07it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 24381.21it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10850.11it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6438.74it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4846.06it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14031.07it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7958.83it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8121.69it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15607.95it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11278.36it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6755.53it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10924.10it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13316.31it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3169.43it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9657.59it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6965.54it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+v10_llm_conflict_resolution parallel:  10%|█         | 10/100 [57:54<8:41:12, 347.47s/it]v10_llm_conflict_resolution parallel:  20%|██        | 20/100 [59:18<3:17:22, 148.03s/it]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5456.69it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15187.90it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+v10_llm_conflict_resolution parallel:  30%|███       | 30/100 [1:04:00<1:48:50, 93.30s/it]v10_llm_conflict_resolution parallel:  40%|████      | 40/100 [1:06:09<1:01:32, 61.54s/it]v10_llm_conflict_resolution parallel:  50%|█████     | 50/100 [1:06:16<33:00, 39.61s/it]  v10_llm_conflict_resolution parallel:  60%|██████    | 60/100 [1:08:26<20:22, 30.56s/it]v10_llm_conflict_resolution parallel:  70%|███████   | 70/100 [1:10:15<12:04, 24.14s/it]v10_llm_conflict_resolution parallel:  80%|████████  | 80/100 [1:11:07<06:02, 18.12s/it]v10_llm_conflict_resolution parallel:  90%|█████████ | 90/100 [1:11:25<02:10, 13.02s/it]Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5367.32it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+v10_llm_conflict_resolution parallel: 100%|██████████| 100/100 [1:12:53<00:00, 11.72s/it]v10_llm_conflict_resolution parallel: 100%|██████████| 100/100 [1:12:53<00:00, 43.74s/it]
+Done. newly_written=100 skipped=0 errors=0
+Submission JSON count: 100
+Trace count: 100

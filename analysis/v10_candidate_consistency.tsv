@@ -1,0 +1,40 @@
+file	category	new_text	new_type	candidate_id	candidate_terms	candidate_ttys_or_icd_information	lexical_overlap	consistency_status	consistency_reason
+1	A	atenolol	THUỐC	1202	atenolol | amiloride / atenolol / hydrochlorothiazide oral product | atenolol injectable solution | atenolol oral solution | atenolol / chlorthalidone / hydralazine oral tablet	1202	1.000	CONSISTENT	overlap=1.00
+3	B	đánh trống ngực	TRIỆU_CHỨNG					CONSISTENT	symptom_no_ontology
+3	B	chóng mặt	TRIỆU_CHỨNG					CONSISTENT	symptom_no_ontology
+3	B	buồn nôn	TRIỆU_CHỨNG					CONSISTENT	symptom_no_ontology
+3	C	nhồi máu cơ tim vùng dưới cũ	CHẨN_ĐOÁN	I252	Nhồi máu cơ tim cũ	I252	0.714	CONSISTENT	overlap=0.71
+4	D	viêm dạ dày	CHẨN_ĐOÁN	K297	Viêm dạ dày, không đặc hiệu	K297	1.000	CONSISTENT	overlap=1.00
+4	D	men gan tăng	CHẨN_ĐOÁN	K721	Suy gan mãn	K721	0.200	CONSISTENT	overlap=0.20
+4	D	viêm dạ dày	CHẨN_ĐOÁN	K297	Viêm dạ dày, không đặc hiệu	K297	1.000	CONSISTENT	overlap=1.00
+5	A	propofol	THUỐC	8782	propofol | propovan | propofol injection | propothesia | propofol injectable product	8782	1.000	CONSISTENT	overlap=1.00
+16	D	tràn dịch màng phổi	CHẨN_ĐOÁN	J93	Tràn khí màng phổi	J93	0.600	CONSISTENT	overlap=0.60
+18	C	bóc tách động mạch chủ Stanford loại B	CHẨN_ĐOÁN	I710	Tách thành động mạch chủ (bất kỳ đoạn nào)	I710	0.333	CONSISTENT	overlap=0.33
+19	C	Di căn não vùng trán phải	CHẨN_ĐOÁN	Q011	Thoát vị não qua vùng mũi trán	Q011	0.300	CONSISTENT	overlap=0.30
+19	C	Tắc mạch huyết khối tĩnh mạch chủ dưới	CHẨN_ĐOÁN	I743	Thuyên tắc và huyết khối động mạch chi dưới	I743	0.455	CONSISTENT	overlap=0.45
+23	D	tụ dịch/tụ máu dưới màng cứng mạn tính	CHẨN_ĐOÁN	D593	Hội chứng tan máu urê máu cao	D593	0.077	QUESTIONABLE	overlap=0.08
+23	C	tụ máu ngoài màng cứng phải cấp tính	CHẨN_ĐOÁN	I621	Xuất huyết ngoài màng cứng, không do chấn thương	I621	0.214	CONSISTENT	overlap=0.21
+24	C	ung thư vú trái giai IIIB	CHẨN_ĐOÁN	C824	U lympho dạng nang độ IIIb	C824	0.100	QUESTIONABLE	overlap=0.10
+28	D	viêm tụy	CHẨN_ĐOÁN	K040	Viêm tủy	K040	0.333	CONSISTENT	overlap=0.33
+32	D	Bệnh bạch cầu dòng tủy mãn tính	CHẨN_ĐOÁN	D471	Bệnh bạch cầu dòng trung tính mãn tính	D471	0.750	CONSISTENT	overlap=0.75
+36	D	bệnh lý BK	CHẨN_ĐOÁN	M121	Bệnh Kaschin-Beck	M121	0.200	CONSISTENT	overlap=0.20
+37	D	Bệnh thận mạn tính	CHẨN_ĐOÁN	N18	Suy thận mãn tính	N18	0.333	CONSISTENT	overlap=0.33
+41	C	Viêm thực quản độ C	CHẨN_ĐOÁN	K230*	Viêm thực quản do laoA18.8	K230*	0.500	CONSISTENT	overlap=0.50
+47	D	ung thư biểu mô tuyến	CHẨN_ĐOÁN	C220	Ung thư biểu mô tế bào gan	C220	0.500	CONSISTENT	overlap=0.50
+50	A	amoxicillin	THUỐC	723	amoxicillin | amoxicillin 500 mg | amoxicillin / nystatin pill | amoxicillin disintegrating oral product | clavamox	723	1.000	CONSISTENT	overlap=1.00
+50	A	azithromycin	THUỐC	18631	azithromycin | azithromycin oral powder product | azithromycin 250 mg | azithromycin 500 mg | zpak	18631	1.000	CONSISTENT	overlap=1.00
+51	C	hạ kali máu rõ rệt	CHẨN_ĐOÁN	E876	Hạ kali máu	E876	1.000	CONSISTENT	overlap=1.00
+57	C	bệnh rễ thần kinh tuỷ sống ở ngón tay cái	CHẨN_ĐOÁN	M541	Bệnh rễ thần kinh tủy sống	M541	0.500	CONSISTENT	overlap=0.50
+57	C	hẹp ống sống C4-5, C5-6, C6-7	CHẨN_ĐOÁN	M480	Hẹp ống sống	M480	1.000	CONSISTENT	overlap=1.00
+58	D	tai biến mạch máu não	CHẨN_ĐOÁN	I671	Phình động mạch não, không vỡ	I671	0.222	CONSISTENT	overlap=0.22
+63	C	viêm túi mật cấp tính không biến chứng	CHẨN_ĐOÁN	K730	Viêm gan mãn trường diễn, không phân loại nơi khác	K730	0.125	QUESTIONABLE	overlap=0.12
+75	A	nitroglycerin	THUỐC	4917	nitroglycerin | nitroglycerin 6.4 mg | nitroglycerin 0.1 mg/ml | transderm nitro | nitroglycerin rectal ointment	4917	1.000	CONSISTENT	overlap=1.00
+83	C	hở van hai lá nặng	CHẨN_ĐOÁN	I051	Hở van hai lá do thấp	I051	0.571	CONSISTENT	overlap=0.57
+86	C	bệnh ba thân động mạch vành nghiêm trọng	CHẨN_ĐOÁN	I082	Bệnh cả van động mạch chủ và van ba lá	I082	0.308	CONSISTENT	overlap=0.31
+87	C	nhiễm trùng chi dưới bên phải	CHẨN_ĐOÁN	J22	Nhiễm trùng hô hấp dưới cấp không phân loại	J22	0.250	CONSISTENT	overlap=0.25
+88	C	Tăng áp động mạch phổi mức độ trung bình	CHẨN_ĐOÁN	I270	Tăng áp động mạch phổi nguyên phát	I270	0.455	CONSISTENT	overlap=0.45
+88	C	U lympho không hodgkin tế bàoB lớn lan toả	CHẨN_ĐOÁN	C833	U lympho không Hodgkin tế bào B lớn tỏa rộng	C833	0.455	CONSISTENT	overlap=0.45
+88	D	Loét bàn chân nhiễm trùng	CHẨN_ĐOÁN	T874	Nhiễm trùng của mỏm cắt cụt	T874	0.222	CONSISTENT	overlap=0.22
+94	A	aleven	THUỐC	215101	aleve | aleve 220 mg oral capsule | naproxen oral tablet [aleve] | aleve oral product | naproxen sodium 220 mg oral tablet [aleve]	215101	1.000	CONSISTENT	overlap=1.00
+96	C	nhiễm trùng huyết đường vào tiết niệu	CHẨN_ĐOÁN	A40	Nhiễm trùng huyết do liên cầu	A40	0.300	CONSISTENT	overlap=0.30
+97	C	nhiễm trùng đường tiết niệu	CHẨN_ĐOÁN	A39	Nhiễm trùng do não mô cầu	A39	0.222	CONSISTENT	overlap=0.22

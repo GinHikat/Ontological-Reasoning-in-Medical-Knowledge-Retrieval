@@ -1,0 +1,40 @@
+file	category	old_text	new_text	old_assertions	new_assertions	section	local_context	assertion_change	consistency_status	reason
+1	A	atenololtrong	atenolol	[]	[]		-  Ở nhà bệnh nhân đã sử dụng atenololtrong ngày	unchanged	CONSISTENT	ok
+3	B	Không đánh trống ngực	đánh trống ngực	[]	"[""isNegated""]"		- Không đánh trống ngực	[]→['isNegated']	CONSISTENT	isNegated_present
+3	B	Không chóng mặt	chóng mặt	[]	"[""isNegated""]"		- Không chóng mặt	[]→['isNegated']	CONSISTENT	isNegated_present
+3	B	Không buồn nôn	buồn nôn	[]	"[""isNegated""]"		- Không buồn nôn	[]→['isNegated']	CONSISTENT	isNegated_present
+3	C	nhồi máu cơ tim vùng dưới	nhồi máu cơ tim vùng dưới cũ	[]	[]		- điện tâm đồ (ecg) cho thấy bằng chứng có thể là nhồi máu cơ tim vùng dưới cũ và những thay đổi sóng T không đặc hiệu thay đổi sóng t.	unchanged	CONSISTENT	ok
+4	D	viêm dạ dày.	viêm dạ dày	[]	[]		Bệnh nhân được nội soi thực quản - dạ dày - tá tràng ngoại trú, kết quả ghi nhận viêm dạ dày.	unchanged	CONSISTENT	ok
+4	D	men gan tăng.	men gan tăng	[]	[]		Xét nghiệm chức năng gan cho thấy men gan tăng.	unchanged	CONSISTENT	ok
+4	D	viêm dạ dày.	viêm dạ dày	[]	[]		Chẩn đoán hình ảnh và thăm dò:Nội soi thực quản - dạ dày - tá tràng: viêm dạ dày.	unchanged	CONSISTENT	ok
+5	A	propofol để	propofol	[]	[]		- propofol để an thần	unchanged	CONSISTENT	ok
+16	D	tràn dịch màng phổi.	tràn dịch màng phổi	[]	[]		Kết quả chẩn đoán hình ảnh: chụp x-quang ngực có xẹp phổi thùy dưới phải do chèn ép kèm tràn dịch màng phổi.	unchanged	CONSISTENT	ok
+18	C	bóc tách động mạch chủ Stanford	bóc tách động mạch chủ Stanford loại B	[]	[]		Kết quả chụp ảnh: chụp cắt lớp vi tính mạch máu (ctma) ngực được thực hiện để đánh giá tắc mạch phổi, kết quả Không thấy hình ảnh thuyên tắc mạch phổi. Phát hiện tổn thương bóc tách động mạch chủ Stanford loại B	unchanged	CONSISTENT	ok
+19	C	Di căn não vùng trán	Di căn não vùng trán phải	"[""isHistorical""]"	"[""isHistorical""]"		- Di căn não vùng trán phải dã phẫu thuật lấy u	unchanged	CONSISTENT	ok
+19	C	Tắc mạch huyết khối	Tắc mạch huyết khối tĩnh mạch chủ dưới	"[""isHistorical""]"	"[""isHistorical""]"		- Tắc mạch huyết khối tĩnh mạch chủ dưới (IVC) và tĩnh mạch chủ trên (SVC) phải	unchanged	CONSISTENT	ok
+23	D	tụ dịch/tụ máu dưới màng cứng mạn tính.	tụ dịch/tụ máu dưới màng cứng mạn tính	"[""isHistorical""]"	"[""isHistorical""]"		Khoảng 1 tháng trước nhập viện, bệnh nhân bị ngã và được chẩn đoán xuất huyết dưới nhện. Chụp cắt lớp vi tính sọ não cho hình ảnh  xuất huyết dưới nhện vùng trán phải, bầm dập nhu mô vùng trán phải và trán - thái dương phải, kèm một lớp dịch dưới màng cứng mỏng vùng thùy trán phải, nghĩ nhiều đến nang màng nhện hoặc tụ dịch/tụ máu dưới màng cứng mạn tính.	unchanged	CONSISTENT	ok
+23	C	tụ máu ngoài màng cứng phải	tụ máu ngoài màng cứng phải cấp tính	"[""isHistorical""]"	"[""isHistorical""]"		Chụp kiểm tra ghi nhận tụ máu ngoài màng cứng phải cấp tính trên nền tổn thương mạn tính.	unchanged	CONSISTENT	ok
+24	C	ung thư vú trái	ung thư vú trái giai IIIB	"[""isHistorical""]"	"[""isHistorical""]"		Bệnh lý mãn tính: mới được chẩn đoán ung thư vú trái giai IIIB ung thư vú trái	unchanged	CONSISTENT	ok
+28	D	vìviêm tụy	viêm tụy	"[""isHistorical""]"	"[""isHistorical""]"		bệnh nhân có tiền sử nhập viện gần đây vìviêm tụy	unchanged	CONSISTENT	ok
+32	D	ho Bệnh bạch cầu dòng tủy mãn tính	Bệnh bạch cầu dòng tủy mãn tính	"[""isHistorical""]"	"[""isHistorical""]"		- ho Bệnh bạch cầu dòng tủy mãn tính	unchanged	CONSISTENT	ok
+36	D	bệnh lý BK.	bệnh lý BK	[]	[]		*   creatinin tăng được cho là do bệnh lý BK.	unchanged	CONSISTENT	ok
+37	D	Bệnh thận mạn tính.	Bệnh thận mạn tính	"[""isHistorical""]"	"[""isHistorical""]"		Bệnh thận mạn tính.	unchanged	CONSISTENT	ok
+41	C	Viêm thực quản	Viêm thực quản độ C	"[""isHistorical""]"	"[""isHistorical""]"		- nội soi (Viêm thực quản độ C, loét thực quản dưới 6 mm có điểm sắc tố, nhiều loét nông sạch đáy ở tá tràng và hồi tràng sớm)	unchanged	CONSISTENT	ok
+47	D	ung thư biểu mô tuyến.	ung thư biểu mô tuyến	[]	[]		- Đã thực hiện sinh thiết và lấy mẫu bằng bàn chải vào ngày [Ngày] và kết quả lấy mẫu bằng bàn chải cho thấy tế bào bất thường, đáng ngại cho ung thư biểu mô tuyến.	unchanged	CONSISTENT	ok
+50	A	amoxicillin.	amoxicillin	[]	[]		Được chỉ định prednisone giảm liều và amoxicillin.	unchanged	CONSISTENT	ok
+50	A	azithromycin.	azithromycin	[]	[]		Chuyển sang điều trị bằng azithromycin.	unchanged	CONSISTENT	ok
+51	C	hạ kali máu	hạ kali máu rõ rệt	[]	[]		Các phát hiện chẩn đoán khác: hạ kali máu rõ rệt trong bối cảnh tiêu chảy và có khả năng nhiễm trùng đường hô hấp trên cấp, không xác định	unchanged	CONSISTENT	ok
+57	C	bệnh rễ thần kinh tuỷ sống ở ngón tay	bệnh rễ thần kinh tuỷ sống ở ngón tay cái	[]	[]		Triệu chứng hiện tại: bệnh rễ thần kinh tuỷ sống ở ngón tay cái	unchanged	CONSISTENT	ok
+57	C	hẹp ống sống C4-5	hẹp ống sống C4-5, C5-6, C6-7	[]	[]		Kết quả chụp ảnh: chụp cộng hưởng từ (mri) cột sống cổ cho thấy hẹp ống sống C4-5, C5-6, C6-7 và hẹp lỗ liên hợp	unchanged	CONSISTENT	ok
+58	D	tai biến mạch máu não.	tai biến mạch máu não	[]	[]		- Được gọi là Code tai biến mạch máu não.	unchanged	CONSISTENT	ok
+63	C	viêm túi mật cấp tính	viêm túi mật cấp tính không biến chứng	"[""isNegated""]"	"[""isNegated""]"		Kết quả chẩn đoán hình ảnh: chụp ct bụng, chậu, không thuốc cản quang cho thấy một lượng nhỏ dịch và mỡ bao quanh một quai ruột kết sigma, gợi ý viêm túi mật cấp tính không biến chứng	unchanged	CONSISTENT	ok
+75	A	nitroglycerin.	nitroglycerin	"[""isHistorical""]"	"[""isHistorical""]"		Ngậm dưới lưỡi 4 liều nitroglycerin.	unchanged	CONSISTENT	ok
+83	C	hở van hai lá	hở van hai lá nặng	[]	[]		-  siêu âm tim cho thấy hở van hai lá nặng	unchanged	CONSISTENT	ok
+86	C	bệnh ba thân động mạch vành	bệnh ba thân động mạch vành nghiêm trọng	[]	[]		- Chụp động mạch vành cho thấy bệnh ba thân động mạch vành nghiêm trọng	unchanged	CONSISTENT	ok
+87	C	nhiễm trùng chi dưới	nhiễm trùng chi dưới bên phải	[]	[]		Chẩn đoán: Phẫu thuật cắt cụt chân trái bên trên gối  và cắt cụt chân phải bên dưới gối / biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin	unchanged	CONSISTENT	ok
+88	C	Tăng áp động mạch phổi	Tăng áp động mạch phổi mức độ trung bình	"[""isHistorical""]"	"[""isHistorical""]"		- Tăng áp động mạch phổi mức độ trung bình	unchanged	CONSISTENT	ok
+88	C	U lympho không hodgkin tế bàoB	U lympho không hodgkin tế bàoB lớn lan toả	"[""isHistorical""]"	"[""isHistorical""]"		-U lympho không hodgkin tế bàoB lớn lan toả)	unchanged	CONSISTENT	ok
+88	D	dõiLoét bàn chân nhiễm trùng	Loét bàn chân nhiễm trùng	[]	[]		Chẩn đoán: Theo dõiLoét bàn chân nhiễm trùng	unchanged	CONSISTENT	ok
+94	A	alevenhưng	aleven	[]	[]		- compazine và alevenhưng vẫn còn đau	unchanged	CONSISTENT	ok
+96	C	nhiễm trùng huyết	nhiễm trùng huyết đường vào tiết niệu	[]	[]		Chẩn đoán: nhiễm trùng huyết đường vào tiết niệu- viêm tủy xương mãn tính,	unchanged	CONSISTENT	ok
+97	C	nhiễm trùng	nhiễm trùng đường tiết niệu	[]	[]		- tổng phân tích nước tiểu nhiễm trùng đường tiết niệu	unchanged	CONSISTENT	ok

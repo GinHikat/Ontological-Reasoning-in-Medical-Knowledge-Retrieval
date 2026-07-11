@@ -9,47 +9,38 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | `RUNNING` — v10 full 100-doc Phase B |
-| **Updated** | 2026-07-11 17:12 +0700 |
+| **Status** | `IDLE` — Phase B + finalize DONE; **READY FOR MANUAL REVIEW** |
+| **Updated** | 2026-07-11 19:02 +0700 |
 | **Host** | `ict14` |
 | **Experiment** | `v10_llm_conflict_resolution` |
-| **Device** | CPU (`CUDA_VISIBLE_DEVICES=`) |
-| **PID** | `906235` |
-| **HEAD** | `baa37fe` (v10 code is **uncommitted** working tree) |
+| **HEAD** | `baa37fe` (v10 code uncommitted) |
 
-### Log / output
+### Finalize result
 
-| Path | Role |
-|------|------|
-| `analysis/v10_phase_b_log.txt` | live log |
-| `output/v10_llm_conflict_resolution/` | submission + base_v7_snapshot + trace |
-| `analysis/v10_full_run_starting_state.md` | Phase 0 snapshot |
-| `analysis/v10_smoke_validation.md` | Phase 1 smoke OK |
+| Field | Value |
+|-------|-------|
+| Decision | READY FOR MANUAL REVIEW |
+| Replacements | **39** (A6 B3 C18 D12) |
+| Hard gates | all **0** |
+| Competition ZIP | `output/v10_llm_conflict_resolution_submission.zip` (93 843 B, sha256 `05cb2caf…`) |
+| Diagnostic ZIP | `output/v10_llm_conflict_resolution_full.zip` (612 247 B, sha256 `6dd235b5…`) |
+| Offset mismatches / invalid types / malformed | 0 / 0 / 0 |
 
-### Exact command (running)
+### Review packet
 
-```bash
-source /home/student10/miniforge3/etc/profile.d/conda.sh
-conda activate nanachi
-cd /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval
-export CUDA_VISIBLE_DEVICES=
-python modules/evaluation/run_pipeline.py \
-  --pipeline v10_llm_conflict_resolution \
-  --output-dir output/v10_llm_conflict_resolution \
-  --trace \
-  2>&1 | tee analysis/v10_phase_b_log.txt
-```
+- `analysis/v10_annotation_review.md` — fill Human decision
+- `analysis/v10_annotation_review.csv`
+- `analysis/v10_llm_conflict_report.md`
+- `analysis/v10_replacements.tsv`
 
-### Next after finish
+### Next
 
-1. Structural validation + base↔v10 compare
-2. Replacement TSVs / annotation packet / report
-3. Package diagnostic + competition ZIPs
-4. Update PLAN / state / WORKLOG; decision `READY FOR MANUAL REVIEW` or `NOT READY`
+1. Human review of 39 replacements (ACCEPT / REJECT / MODIFY / UNSURE)
+2. Only if accepted: package/submit decision (do **not** auto-submit)
+3. Optionally commit v10 code after review
 
 ## Do not
 
-- Kill mid-run / edit JSON while running
+- Auto-submit Viettel ZIP
 - `--force` cache / rerun Qwen
-- Change conflict rules mid-run
-- Auto-commit / auto-submit
+- Treat hard gates as clinical correctness

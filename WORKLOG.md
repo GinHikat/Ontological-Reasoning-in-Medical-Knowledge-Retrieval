@@ -215,3 +215,27 @@ Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated b
 - Starting state: analysis/v10_full_run_starting_state.md
 - Log: analysis/v10_phase_b_log.txt
 - Note: v10 code still uncommitted on branch tung (HEAD baa37fe)
+
+---
+### 2026-07-11 17:14 +0700 | host=ict14
+**Status:** v10 Phase B restarted PARALLEL (10 workers × 6 threads)
+**Next:** wait 100/100 under output/v10_llm_conflict_resolution/ then finalize_v10_llm_conflict.py
+- Killed sequential PID 906235 (~6/100); wiped partial outputs for clean same-run compare
+- Extended run_pipeline_parallel.py: --output-dir + base_v7_snapshot for v9/v10
+- Parent PID 913811; log analysis/v10_phase_b_log.txt
+
+---
+### 2026-07-11 18:58 +0700 | host=ict14
+**Status:** v10 Phase B DONE — 100/100 parallel CPU (~1h13m); errors=0
+**Next:** run finalize_v10_llm_conflict.py → manual review / decision (no auto-submit)
+- Log end: newly_written=100 skipped=0 errors=0; submission+trace+base_v7 all 100
+- Output: output/v10_llm_conflict_resolution/
+- CURRENT_WORK.md → DONE
+
+---
+### 2026-07-11 19:02 +0700 | host=ict14
+**Status:** v10 finalize DONE — READY FOR MANUAL REVIEW (39 replacements; hard gates all 0)
+**Next:** human review of analysis/v10_annotation_review.md; submit only if user decides
+- A6 B3 C18 D12; competition ZIP output/v10_llm_conflict_resolution_submission.zip sha256 05cb2caf…
+- Diagnostic ZIP output/v10_llm_conflict_resolution_full.zip; report analysis/v10_llm_conflict_report.md
+- CURRENT_WORK.md → IDLE / READY FOR MANUAL REVIEW
