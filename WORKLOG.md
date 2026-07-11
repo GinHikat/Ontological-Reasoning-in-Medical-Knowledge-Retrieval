@@ -179,3 +179,39 @@ Pinned facts that rarely change (baseline hash, probe SHA256s) may be repeated b
 - Invariants all 0; final additions 34 (CD14/TC12/TH8); all CD/TH linked
 - Reports: analysis/v9_llm_recall_report.md, analysis/v9_manual_review.md, TSVs
 - state.md + CURRENT_WORK.md updated
+
+---
+### 2026-07-11 16:45 +0700 | host=ict14
+**Status:** v9_llm_recall official leaderboard SCORED — NEGATIVE vs v7
+**Next:** keep v7_structured (24.79660) as baseline; await user direction on next experiment
+- Commit: baa37fe4235e8ec12e3955d4ece44ad198854344 (baa37fe)
+- Submitted: 2026-07-11 16:42 +0700; ZIP 93 KB SHA prefix 6b74e773a0ec…
+- Score 23.84290 / WER 72.7861 / J_assertion 29.7128 / J_candidates 16.9122 / num_scored 100 / num_records 100
+- Delta vs v7 24.79660: Score −0.95370 / WER +0.7822 / J_assertion −1.6544 / J_candidates −0.5569
+- Logged in state.md + CURRENT_WORK.md
+
+---
+### 2026-07-11 16:59 +0700 | host=ict14
+**Status:** v9 closed NEGATIVE; v10_llm_conflict_resolution implemented + smoke OK
+**Next:** full 100-doc Phase B when ready (GPU preferred; CPU OK); then manual review of replacements
+- v9 leaderboard 23.84290 vs v7 24.79660 (−0.95370) — no more additive v9 submissions
+- Pivot: LLM as constrained span/type conflict resolver (reuse cache/v9_llm_recall)
+- New: llm_conflict_resolution.py (A/B/C/D), pipelines/v10.py, factory register, analyze_v10_llm_conflict.py
+- Offline preview: 40 candidates (A7 B3 C18 D12); exact-span type-only D disabled
+- Smoke: output_smoke/v10_llm_conflict_resolution/ (1 doc, CPU ~2m42s) — atenololtrong→atenolol accepted
+- PLAN.md rewritten for v10; state.md v9 conclusion updated with pivot
+
+---
+### 2026-07-11 17:03 +0700 | host=ict14
+**Status:** hygiene — moved smoke out of repo root
+**Next:** full Phase B still pending (see CURRENT_WORK.md)
+- Removed root `output_smoke/`; smoke now at `output/v10_llm_conflict_resolution_smoke/`
+
+---
+### 2026-07-11 17:05 +0700 | host=ict14
+**Status:** v10 Phase B STARTED (100 docs, CPU)
+**Next:** wait for output/v10_llm_conflict_resolution 100/100 → validation + annotation packet
+- Smoke validated: analysis/v10_smoke_validation.md (PASS)
+- Starting state: analysis/v10_full_run_starting_state.md
+- Log: analysis/v10_phase_b_log.txt
+- Note: v10 code still uncommitted on branch tung (HEAD baa37fe)

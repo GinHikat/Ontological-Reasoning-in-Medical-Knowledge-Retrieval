@@ -1,0 +1,37 @@
+Building pipeline: v10_llm_conflict_resolution (model=vihealthbert)
+Processing 100 files from /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/var/test
+Submission -> output/v10_llm_conflict_resolution/submission
+Traces     -> output/v10_llm_conflict_resolution/trace
+Base v7    -> output/v10_llm_conflict_resolution/base_v7_snapshot
+Running v10_llm_conflict_resolution/vihealthbert:   0%|          | 0/100 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][A
+Loading weights:  28%|██▊       | 55/199 [00:00<00:00, 549.52it/s][A
+Loading weights:  61%|██████▏   | 122/199 [00:00<00:00, 613.44it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 702.08it/s]
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 6800.89it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 5843.90it/s]
+[1mXLMRobertaModel LOAD REPORT[0m from: cambridgeltl/SapBERT-UMLS-2020AB-all-lang-from-XLMR
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 6224.58it/s]
+[1mBertModel LOAD REPORT[0m from: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Running v10_llm_conflict_resolution/vihealthbert:   1%|          | 1/100 [02:42<4:27:24, 162.07s/it]

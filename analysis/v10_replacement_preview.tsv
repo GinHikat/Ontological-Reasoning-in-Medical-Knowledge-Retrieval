@@ -1,0 +1,41 @@
+file	category	reason	start	end	text	type	existing_start	existing_end	existing_text	existing_type
+1	A	drug_junk_boundary	1849	1857	atenolol	THUỐC	1849	1862	atenololtrong	THUỐC
+16	D	trailing_punct_type_upgrade	2106	2125	tràn dịch màng phổi	CHẨN_ĐOÁN	2106	2126	tràn dịch màng phổi.	TRIỆU_CHỨNG
+18	C	diagnosis_span_expand	641	679	bóc tách động mạch chủ Stanford loại B	CHẨN_ĐOÁN	641	672	bóc tách động mạch chủ Stanford	TRIỆU_CHỨNG
+19	C	diagnosis_span_expand	115	140	Di căn não vùng trán phải	CHẨN_ĐOÁN	115	135	Di căn não vùng trán	TRIỆU_CHỨNG
+19	C	diagnosis_span_expand	167	205	Tắc mạch huyết khối tĩnh mạch chủ dưới	CHẨN_ĐOÁN	167	186	Tắc mạch huyết khối	TRIỆU_CHỨNG
+23	D	trailing_punct_type_upgrade	504	542	tụ dịch/tụ máu dưới màng cứng mạn tính	CHẨN_ĐOÁN	504	543	tụ dịch/tụ máu dưới màng cứng mạn tính.	TRIỆU_CHỨNG
+23	C	diagnosis_span_expand	752	788	tụ máu ngoài màng cứng phải cấp tính	CHẨN_ĐOÁN	752	779	tụ máu ngoài màng cứng phải	TRIỆU_CHỨNG
+24	C	diagnosis_span_expand	58	83	ung thư vú trái giai IIIB	CHẨN_ĐOÁN	58	73	ung thư vú trái	TRIỆU_CHỨNG
+24	A	drug_junk_boundary	698	710	levafloxacin	THUỐC	691	710	thuốci levafloxacin	THUỐC
+28	D	leading_junk_type_upgrade	62	70	viêm tụy	CHẨN_ĐOÁN	60	70	vìviêm tụy	TRIỆU_CHỨNG
+3	B	leading_negation_trim	696	711	đánh trống ngực	TRIỆU_CHỨNG	690	711	Không đánh trống ngực	TRIỆU_CHỨNG
+3	B	leading_negation_trim	739	748	chóng mặt	TRIỆU_CHỨNG	733	748	Không chóng mặt	TRIỆU_CHỨNG
+3	B	leading_negation_trim	757	765	buồn nôn	TRIỆU_CHỨNG	751	765	Không buồn nôn	TRIỆU_CHỨNG
+3	C	diagnosis_span_expand	3336	3364	nhồi máu cơ tim vùng dưới cũ	CHẨN_ĐOÁN	3336	3361	nhồi máu cơ tim vùng dưới	TRIỆU_CHỨNG
+32	D	leading_junk_type_upgrade	46	77	Bệnh bạch cầu dòng tủy mãn tính	CHẨN_ĐOÁN	43	77	ho Bệnh bạch cầu dòng tủy mãn tính	TRIỆU_CHỨNG
+36	D	trailing_punct_type_upgrade	869	879	bệnh lý BK	CHẨN_ĐOÁN	869	880	bệnh lý BK.	TRIỆU_CHỨNG
+37	D	trailing_punct_type_upgrade	176	194	Bệnh thận mạn tính	CHẨN_ĐOÁN	176	195	Bệnh thận mạn tính.	TRIỆU_CHỨNG
+4	D	trailing_punct_type_upgrade	1533	1544	viêm dạ dày	CHẨN_ĐOÁN	1533	1545	viêm dạ dày.	TRIỆU_CHỨNG
+4	D	trailing_punct_type_upgrade	1706	1718	men gan tăng	CHẨN_ĐOÁN	1706	1719	men gan tăng.	TRIỆU_CHỨNG
+4	D	trailing_punct_type_upgrade	1940	1951	viêm dạ dày	CHẨN_ĐOÁN	1940	1952	viêm dạ dày.	TRIỆU_CHỨNG
+41	C	diagnosis_span_expand	478	497	Viêm thực quản độ C	CHẨN_ĐOÁN	478	492	Viêm thực quản	CHẨN_ĐOÁN
+47	D	trailing_punct_type_upgrade	1169	1190	ung thư biểu mô tuyến	CHẨN_ĐOÁN	1169	1191	ung thư biểu mô tuyến.	TRIỆU_CHỨNG
+5	A	drug_junk_boundary	1375	1383	propofol	THUỐC	1375	1386	propofol để	THUỐC
+50	A	drug_junk_boundary	1468	1479	amoxicillin	THUỐC	1468	1480	amoxicillin.	THUỐC
+50	A	drug_junk_boundary	1539	1551	azithromycin	THUỐC	1539	1552	azithromycin.	THUỐC
+51	C	diagnosis_span_expand	1203	1221	hạ kali máu rõ rệt	CHẨN_ĐOÁN	1203	1214	hạ kali máu	TRIỆU_CHỨNG
+57	C	diagnosis_span_expand	187	228	bệnh rễ thần kinh tuỷ sống ở ngón tay cái	CHẨN_ĐOÁN	187	224	bệnh rễ thần kinh tuỷ sống ở ngón tay	CHẨN_ĐOÁN
+57	C	diagnosis_span_expand	325	354	hẹp ống sống C4-5, C5-6, C6-7	CHẨN_ĐOÁN	325	342	hẹp ống sống C4-5	TRIỆU_CHỨNG
+58	D	trailing_punct_type_upgrade	1022	1043	tai biến mạch máu não	CHẨN_ĐOÁN	1022	1044	tai biến mạch máu não.	TRIỆU_CHỨNG
+63	C	diagnosis_span_expand	1567	1605	viêm túi mật cấp tính không biến chứng	CHẨN_ĐOÁN	1567	1588	viêm túi mật cấp tính	TRIỆU_CHỨNG
+75	A	drug_junk_boundary	1256	1269	nitroglycerin	THUỐC	1256	1270	nitroglycerin.	THUỐC
+83	C	diagnosis_span_expand	268	286	hở van hai lá nặng	CHẨN_ĐOÁN	268	281	hở van hai lá	CHẨN_ĐOÁN
+86	C	diagnosis_span_expand	650	690	bệnh ba thân động mạch vành nghiêm trọng	CHẨN_ĐOÁN	650	677	bệnh ba thân động mạch vành	TRIỆU_CHỨNG
+87	C	diagnosis_span_expand	795	824	nhiễm trùng chi dưới bên phải	CHẨN_ĐOÁN	795	815	nhiễm trùng chi dưới	TRIỆU_CHỨNG
+88	C	diagnosis_span_expand	143	183	Tăng áp động mạch phổi mức độ trung bình	CHẨN_ĐOÁN	143	165	Tăng áp động mạch phổi	TRIỆU_CHỨNG
+88	C	diagnosis_span_expand	189	231	U lympho không hodgkin tế bàoB lớn lan toả	CHẨN_ĐOÁN	189	219	U lympho không hodgkin tế bàoB	TRIỆU_CHỨNG
+88	D	leading_junk_type_upgrade	938	963	Loét bàn chân nhiễm trùng	CHẨN_ĐOÁN	935	963	dõiLoét bàn chân nhiễm trùng	TRIỆU_CHỨNG
+94	A	drug_junk_boundary	777	783	aleven	THUỐC	777	787	alevenhưng	THUỐC
+96	C	diagnosis_span_expand	1472	1509	nhiễm trùng huyết đường vào tiết niệu	CHẨN_ĐOÁN	1472	1489	nhiễm trùng huyết	TRIỆU_CHỨNG
+97	C	diagnosis_span_expand	862	889	nhiễm trùng đường tiết niệu	CHẨN_ĐOÁN	862	873	nhiễm trùng	TRIỆU_CHỨNG

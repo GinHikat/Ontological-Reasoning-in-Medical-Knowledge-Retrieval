@@ -49,7 +49,7 @@ python modules/evaluation/run_pipeline.py --pipeline v7_structured
 python modules/evaluation/run_pipeline.py --pipeline v9_llm_recall --output-dir output/v9_llm_recall
 
 # Smoke
-python modules/evaluation/run_pipeline.py --pipeline v7_structured --samples 1 --output-dir output_smoke
+python modules/evaluation/run_pipeline.py --pipeline v7_structured --samples 1 --output-dir output/smoke_v7
 ```
 
 Data / weights live under `v_dataset/` (renamed from `data/`). NER weights: `v_dataset/statedict/ner/`.

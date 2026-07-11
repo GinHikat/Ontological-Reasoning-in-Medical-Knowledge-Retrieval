@@ -373,7 +373,7 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 
    **Conclusion:** No more RxNorm policy submissions planned. Ingredient First rejected. Multi-candidate hedging rejected. Example Policy approximately neutral relative to existing v7 behavior. Preserve: return one canonical RxCUI; do not globally reduce drugs to ingredients; do not append ingredient alternatives as a hedge. **Development moved to `v9_llm_recall`.**
 
-### Modification Ver 9 (`v9_llm_recall`) — READY FOR MANUAL REVIEW
+### Modification Ver 9 (`v9_llm_recall`) — SCORED (NEGATIVE vs v7)
 1. **Goal:** Use a self-hosted LLM as an independent high-recall entity candidate generator for missing clinical entities, while keeping the existing deterministic pipeline responsible for exact offsets, overlap handling, ICD/RxNorm linking, assertions, and final competition JSON.
 2. **Model:** `Qwen/Qwen3.5-9B` (self-hosted only; no external API). Serving for Phase A: llama.cpp **Q4_K_M** CPU (BF16 GPU OOM; HF CPU too slow; bakeoff Q4 > Q8 > BF16 tok/s).
 3. **Thinking:** disabled (`enable_thinking=false`). Generation: temperature=0, top_p=1, max_tokens=2048.
@@ -388,6 +388,14 @@ We have implemented the initial end-to-end evaluation script (`modules/evaluatio
 7. **Reference:** newest `build_v7_structured_pipeline()` + same-execution frozen v7 snapshot (do not require historical 24.79660 artifact reproduction).
 8. **Phase B results (same-run invariants):** removed/text/position/type/candidate/assertion changes all **0**; invalid spans **0**; traces 100/100 non-empty.
 9. **Funnel (final):** raw 1487 → aligned 1410 → verifier-accept cache 1257 → exact-dup skip 900 → overlap reject 322 → **final additions 34** (CD 14 / TC 12 / TH 8). All new CD have ICD; all new TH have RxNorm.
-10. **Decision:** `READY FOR MANUAL REVIEW` (not auto-submit). Report: `analysis/v9_llm_recall_report.md`. Do **not** package Viettel ZIP until user reviews additions (esp. weak drugs like `thuốc an thần` / `nac` / abbreviations).
-11. **Leaderboard:** Do not add v9 metrics until an actual submission is scored.
+10. **Git commit (submission):** `baa37fe4235e8ec12e3955d4ece44ad198854344` (`baa37fe` — feat: v9 truncated-JSON salvage, parse-failure raw retention, output-dir layout fix, and prompt injection hardening).
+11. **Official leaderboard (submitted 2026-07-11 16:42 +0700; scored):**
+    *   **Score (Điểm): 23.84290**
+    *   **WER:** 72.7861
+    *   **J_assertion:** 29.7128
+    *   **J_candidates:** 16.9122
+    *   **num_scored:** 100 / **num_records:** 100
+    *   ZIP: 93 KB · SHA prefix `6b74e773a0ec…`
+    *   Delta vs canonical v7 (`24.79660`): Score **−0.95370** / WER **+0.7822** / J_assertion **−1.6544** / J_candidates **−0.5569**
+12. **Conclusion:** **Negative vs v7.** Additive LLM recall (34 entities) hurt all scored axes relative to canonical `v7_structured`. Keep v7 as the leaderboard baseline; do not treat this v9 ZIP as an improvement. **Do not submit the full 34-addition set; do not loosen the proposer for more additions.** Pivot: LLM value is in the **322 overlap** cases (span/type repair), not additive recall → next experiment `v10_llm_conflict_resolution`.
 
