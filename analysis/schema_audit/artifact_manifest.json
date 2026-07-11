@@ -1,0 +1,1092 @@
+{
+  "base_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v10_llm_conflict_resolution/base_v7_snapshot",
+  "v10_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v10_llm_conflict_resolution/submission",
+  "trace_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/v10_llm_conflict_resolution/trace",
+  "input_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/v_dataset/var/test",
+  "base_count": 100,
+  "v10_count": 100,
+  "trace_count": 100,
+  "empty_traces": 0,
+  "input_count": 100,
+  "base_aggregate_sha256": "b246058d1fa317b65e5173b6c70796b59efb7c9545bc7dc44f956871d45d0135",
+  "v10_aggregate_sha256": "769708c4151f72c04d4f18f7c84325258693ae18891356056f2e94c34855b49f",
+  "total_base_entities": 3236,
+  "type_counts": {
+    "THUỐC": 271,
+    "TÊN_XÉT_NGHIỆM": 696,
+    "CHẨN_ĐOÁN": 215,
+    "TRIỆU_CHỨNG": 1920,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 134
+  },
+  "per_file": [
+    {
+      "file": "1.json",
+      "sha256": "26a51ed9b521674e351b4984389c7390220719f88c33cdcde6a7cec91c93b300",
+      "entity_count": 57,
+      "types": {
+        "THUỐC": 8,
+        "TÊN_XÉT_NGHIỆM": 13,
+        "CHẨN_ĐOÁN": 4,
+        "TRIỆU_CHỨNG": 25,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 7
+      }
+    },
+    {
+      "file": "2.json",
+      "sha256": "97d3b285c2c1cda43017f6dd03b4058c18b23450f59c72752cf752815f93e281",
+      "entity_count": 11,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "3.json",
+      "sha256": "7a2606c3edc191d3bd4dcf271c35545258b17795919360478b8cc01be6a3fb9c",
+      "entity_count": 165,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 32,
+        "TRIỆU_CHỨNG": 129,
+        "CHẨN_ĐOÁN": 1,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 3
+      }
+    },
+    {
+      "file": "4.json",
+      "sha256": "ede72594f6a826b16a2290b671a71cb80193b87911d4b2ef3aee76685e616bcf",
+      "entity_count": 47,
+      "types": {
+        "THUỐC": 4,
+        "TRIỆU_CHỨNG": 35,
+        "TÊN_XÉT_NGHIỆM": 8
+      }
+    },
+    {
+      "file": "5.json",
+      "sha256": "72b997575c9dec36a772738c92b912f1aab00dc5ce5889c6f5ea654c03cc9334",
+      "entity_count": 41,
+      "types": {
+        "TRIỆU_CHỨNG": 15,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 13,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 3,
+        "THUỐC": 5
+      }
+    },
+    {
+      "file": "6.json",
+      "sha256": "07444abfaf3734c0e517ea11d2f577d0f576483d06983a8d909a3f1f015c59b9",
+      "entity_count": 7,
+      "types": {
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "TRIỆU_CHỨNG": 2
+      }
+    },
+    {
+      "file": "7.json",
+      "sha256": "fd57d209ddc7d584eed6dd0f8572185b0e28c702e56d2cb59831fb5a50490437",
+      "entity_count": 57,
+      "types": {
+        "TRIỆU_CHỨNG": 46,
+        "CHẨN_ĐOÁN": 1,
+        "THUỐC": 1,
+        "TÊN_XÉT_NGHIỆM": 8,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "8.json",
+      "sha256": "546f5811cb7707a90ac19c23549c058f34e7bed96e1f80b3c3166192e54311f3",
+      "entity_count": 11,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "9.json",
+      "sha256": "4adb37e25fc156a5bb5317b72263274e2231bbe4abf3e7120cffcaa0e17fdfe9",
+      "entity_count": 21,
+      "types": {
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 1,
+        "TRIỆU_CHỨNG": 9,
+        "TÊN_XÉT_NGHIỆM": 7,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "10.json",
+      "sha256": "8c5a422072def9fce4e9df81ca7ef3273b7e209d9f4dc539c01622005dc3c156",
+      "entity_count": 21,
+      "types": {
+        "TRIỆU_CHỨNG": 10,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 3,
+        "TÊN_XÉT_NGHIỆM": 7,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "11.json",
+      "sha256": "bb6330954d627e28054e0e7e4b9c2ebe4e264a52e3b66bb1ba55ac1aed1d2c4a",
+      "entity_count": 17,
+      "types": {
+        "TRIỆU_CHỨNG": 9,
+        "CHẨN_ĐOÁN": 3,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "THUỐC": 1
+      }
+    },
+    {
+      "file": "12.json",
+      "sha256": "dd9372842989ea00d683bde9c1c71377badd727d67b521f0285a06fe5c3dd6df",
+      "entity_count": 30,
+      "types": {
+        "TRIỆU_CHỨNG": 24,
+        "THUỐC": 1,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "13.json",
+      "sha256": "02676d39a166a30fd9f2b94375d3609b048dd82be0106c7faf8f1c4ea0b2a4ec",
+      "entity_count": 56,
+      "types": {
+        "TRIỆU_CHỨNG": 35,
+        "THUỐC": 10,
+        "TÊN_XÉT_NGHIỆM": 5,
+        "CHẨN_ĐOÁN": 6
+      }
+    },
+    {
+      "file": "14.json",
+      "sha256": "24c3cb8cd922c13d9a07e4b4cffbf50ff32ab4bb175706611725e2ec99874106",
+      "entity_count": 19,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 5,
+        "TRIỆU_CHỨNG": 14
+      }
+    },
+    {
+      "file": "15.json",
+      "sha256": "53864b4a92ee5458a80adbbfbdada45fdf1130e9fc5288199fd449154fd79b59",
+      "entity_count": 8,
+      "types": {
+        "TRIỆU_CHỨNG": 4,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "16.json",
+      "sha256": "4d6cfdf9ef71a98acd2fd7848cba94d9cfe5177c13656f86b2ad8e4547e9d8b5",
+      "entity_count": 72,
+      "types": {
+        "TRIỆU_CHỨNG": 54,
+        "CHẨN_ĐOÁN": 6,
+        "TÊN_XÉT_NGHIỆM": 8,
+        "THUỐC": 2,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "17.json",
+      "sha256": "3c4e443158dbc05f09312bfdadb324cd80ae16f3b1c40d4e72c43b559a445b21",
+      "entity_count": 56,
+      "types": {
+        "CHẨN_ĐOÁN": 3,
+        "TRIỆU_CHỨNG": 31,
+        "TÊN_XÉT_NGHIỆM": 18,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1,
+        "THUỐC": 3
+      }
+    },
+    {
+      "file": "18.json",
+      "sha256": "c5b877900bf89df4dacf1d5e624b56a6dca32a87992cbb153b7293afbfd81279",
+      "entity_count": 16,
+      "types": {
+        "TRIỆU_CHỨNG": 11,
+        "TÊN_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "19.json",
+      "sha256": "b962ccfa336b402d0b796896dd9cf58b86b705cd4ef68fe49ced9e740713ef94",
+      "entity_count": 25,
+      "types": {
+        "TRIỆU_CHỨNG": 20,
+        "TÊN_XÉT_NGHIỆM": 2,
+        "THUỐC": 3
+      }
+    },
+    {
+      "file": "20.json",
+      "sha256": "e32c14497a886c2c58ff97da41d19d94a21890a18541d4f07fd16254f1f5a950",
+      "entity_count": 79,
+      "types": {
+        "TRIỆU_CHỨNG": 44,
+        "CHẨN_ĐOÁN": 15,
+        "TÊN_XÉT_NGHIỆM": 17,
+        "THUỐC": 2,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "21.json",
+      "sha256": "db9252f7a3df4505ab1098c5bc5abfe530c7a7460e3115b57fc4ee9516c4788f",
+      "entity_count": 9,
+      "types": {
+        "TRIỆU_CHỨNG": 6,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "22.json",
+      "sha256": "7598568bab7aec67af1879d32744c6042dd4cd98cc11895c1d5432edbbd3e7dc",
+      "entity_count": 6,
+      "types": {
+        "TRIỆU_CHỨNG": 3,
+        "THUỐC": 1,
+        "TÊN_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "23.json",
+      "sha256": "da1e7806ae27038bf23f5e71ed0ec18e6d7a4686fce41623ffb6543334c82faf",
+      "entity_count": 57,
+      "types": {
+        "TRIỆU_CHỨNG": 47,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "24.json",
+      "sha256": "a753c2e0a83ed3604bf1fd2bb973d10cc9ece5695966583d4434e64232cab0c0",
+      "entity_count": 32,
+      "types": {
+        "TRIỆU_CHỨNG": 21,
+        "TÊN_XÉT_NGHIỆM": 8,
+        "THUỐC": 3
+      }
+    },
+    {
+      "file": "25.json",
+      "sha256": "a64308daf09ac22406d5f70577feddc843f60baacfe8f29ae7f85e8acafba931",
+      "entity_count": 5,
+      "types": {
+        "CHẨN_ĐOÁN": 1,
+        "TRIỆU_CHỨNG": 3,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "26.json",
+      "sha256": "8bfe87a5641ced568f52e1262cf16da3397e3733c3edffa4f876b4fd47944f6b",
+      "entity_count": 6,
+      "types": {
+        "TRIỆU_CHỨNG": 5,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "27.json",
+      "sha256": "739eaec8bcbfd152b0a71045dc1b0a5e236f854d31e807ed9bd7b300459ac520",
+      "entity_count": 36,
+      "types": {
+        "TRIỆU_CHỨNG": 22,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 5,
+        "THUỐC": 5,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "28.json",
+      "sha256": "297ee614d4b45b9322a992fbd23eb1e940a406f771ebd186aefb4fbe36fa9d86",
+      "entity_count": 65,
+      "types": {
+        "TRIỆU_CHỨNG": 36,
+        "TÊN_XÉT_NGHIỆM": 14,
+        "CHẨN_ĐOÁN": 12,
+        "THUỐC": 2,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "29.json",
+      "sha256": "58eb157aacebfb88be11a0ad254e4c012f0070b9a3ce2277214ab394cf3154b0",
+      "entity_count": 9,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 1,
+        "TRIỆU_CHỨNG": 8
+      }
+    },
+    {
+      "file": "30.json",
+      "sha256": "e5aa777950acc6ddea643d150c3f32b72097e1c91af99f125223556001dbe080",
+      "entity_count": 25,
+      "types": {
+        "TRIỆU_CHỨNG": 12,
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 8,
+        "TÊN_XÉT_NGHIỆM": 3
+      }
+    },
+    {
+      "file": "31.json",
+      "sha256": "54280d29f10128a7a3f616634f1329a2e6c3224dc9c19276ae9c59059424ce48",
+      "entity_count": 3,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 1,
+        "TRIỆU_CHỨNG": 2
+      }
+    },
+    {
+      "file": "32.json",
+      "sha256": "f329dd2a0fc81419c04103b046bf18bafb9c9bca2167682d674cca01f032f6de",
+      "entity_count": 48,
+      "types": {
+        "TRIỆU_CHỨNG": 33,
+        "THUỐC": 5,
+        "TÊN_XÉT_NGHIỆM": 6,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2,
+        "CHẨN_ĐOÁN": 2
+      }
+    },
+    {
+      "file": "33.json",
+      "sha256": "af98db6baebbe8fec6fff106d0f3cb74dfb653e985ae68668d58c8e6ccd93ee5",
+      "entity_count": 39,
+      "types": {
+        "TRIỆU_CHỨNG": 29,
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 7,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "34.json",
+      "sha256": "6c1f6c0a7fc237b374e8c00da9804a933a5d634790f65b7a3869d939e6a1999a",
+      "entity_count": 37,
+      "types": {
+        "TRIỆU_CHỨNG": 24,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 5,
+        "THUỐC": 3
+      }
+    },
+    {
+      "file": "35.json",
+      "sha256": "dc4be10c3315d5e726f329fd3e09e95f2c4fef8ab438e2188426d43caece9b5f",
+      "entity_count": 54,
+      "types": {
+        "TRIỆU_CHỨNG": 28,
+        "THUỐC": 4,
+        "CHẨN_ĐOÁN": 7,
+        "TÊN_XÉT_NGHIỆM": 8,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 7
+      }
+    },
+    {
+      "file": "36.json",
+      "sha256": "e35874d99db6c126b09bce2f58dcc3fb785a9ce0728d8e53f22ebe5166230a82",
+      "entity_count": 60,
+      "types": {
+        "TRIỆU_CHỨNG": 16,
+        "TÊN_XÉT_NGHIỆM": 12,
+        "THUỐC": 18,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 14
+      }
+    },
+    {
+      "file": "37.json",
+      "sha256": "d4b69f6293250b85c5289c2887d0e347c70d0a6757c15b9512df2536edf600e4",
+      "entity_count": 54,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 14,
+        "TRIỆU_CHỨNG": 12,
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 19,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 7
+      }
+    },
+    {
+      "file": "38.json",
+      "sha256": "c45f2923ca184cc41843642e1e03abefe82bf09e7e3c78df7817c8e9c8cc1b6b",
+      "entity_count": 42,
+      "types": {
+        "TRIỆU_CHỨNG": 22,
+        "CHẨN_ĐOÁN": 3,
+        "TÊN_XÉT_NGHIỆM": 11,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 5,
+        "THUỐC": 1
+      }
+    },
+    {
+      "file": "39.json",
+      "sha256": "2e10d004c5724590aca3720d43c28816f98071e18f81b1432cc59b44f13bfe2f",
+      "entity_count": 20,
+      "types": {
+        "TRIỆU_CHỨNG": 17,
+        "TÊN_XÉT_NGHIỆM": 3
+      }
+    },
+    {
+      "file": "40.json",
+      "sha256": "28aa09fd1135743b2176f4deed0577f15ccdca2b3dae62ce60e259ddd6d9c8b9",
+      "entity_count": 43,
+      "types": {
+        "TRIỆU_CHỨNG": 30,
+        "THUỐC": 5,
+        "TÊN_XÉT_NGHIỆM": 6,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "41.json",
+      "sha256": "eb1a861896e6d59c2ea180df884df7023405f40bb1d02d0e60ae761c17d8e282",
+      "entity_count": 95,
+      "types": {
+        "TRIỆU_CHỨNG": 58,
+        "TÊN_XÉT_NGHIỆM": 18,
+        "CHẨN_ĐOÁN": 11,
+        "THUỐC": 8
+      }
+    },
+    {
+      "file": "42.json",
+      "sha256": "02aade9391c2f20b54c63f669311bdc9034d5231bda366488c24e74034b32c96",
+      "entity_count": 29,
+      "types": {
+        "TRIỆU_CHỨNG": 28,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "43.json",
+      "sha256": "3f4d52f8fff85375bace14e525fe676098e620913e7b6bb8943623f8046fdc42",
+      "entity_count": 32,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 13,
+        "TRIỆU_CHỨNG": 12,
+        "CHẨN_ĐOÁN": 5,
+        "THUỐC": 2
+      }
+    },
+    {
+      "file": "44.json",
+      "sha256": "8f65812aec3bae1e96cb9b7eefdecb3aa94406b4bc3815c98d7496f53d58c32e",
+      "entity_count": 71,
+      "types": {
+        "TRIỆU_CHỨNG": 55,
+        "CHẨN_ĐOÁN": 4,
+        "TÊN_XÉT_NGHIỆM": 6,
+        "THUỐC": 6
+      }
+    },
+    {
+      "file": "45.json",
+      "sha256": "c8ad48f1693c3d5a73a3078ded8959adf2c3c97b5e478f8c0d035900cf10f0a4",
+      "entity_count": 17,
+      "types": {
+        "TRIỆU_CHỨNG": 12,
+        "TÊN_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "46.json",
+      "sha256": "643adf606755b2996da0d35895f9c763dac122276eb991c2f108265d487caae4",
+      "entity_count": 21,
+      "types": {
+        "TRIỆU_CHỨNG": 10,
+        "TÊN_XÉT_NGHIỆM": 9,
+        "CHẨN_ĐOÁN": 1,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "47.json",
+      "sha256": "ccd9fcfbcbf0820ba4ccfb4c6df5158d4cd8f5b8e76bf27c4a55b5cc53dc7979",
+      "entity_count": 32,
+      "types": {
+        "TRIỆU_CHỨNG": 21,
+        "TÊN_XÉT_NGHIỆM": 6,
+        "THUỐC": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "48.json",
+      "sha256": "6141351ef66c56559fb95e1e880198ce9104d862218d99ae40f470aad41ec323",
+      "entity_count": 67,
+      "types": {
+        "TRIỆU_CHỨNG": 62,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "49.json",
+      "sha256": "5777aa59b037c5409a2d6a48f1d59eb16900c45487a1a08c9b3e0cafeb275cd5",
+      "entity_count": 21,
+      "types": {
+        "TRIỆU_CHỨNG": 20,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "50.json",
+      "sha256": "11acf99077be499f9651cfa949bffdd7b52730bde49f05d23b98a8c3ec01d2a2",
+      "entity_count": 60,
+      "types": {
+        "CHẨN_ĐOÁN": 5,
+        "THUỐC": 16,
+        "TÊN_XÉT_NGHIỆM": 7,
+        "TRIỆU_CHỨNG": 32
+      }
+    },
+    {
+      "file": "51.json",
+      "sha256": "69dfaa628c40c19ee619dd02d53042952ac7bf0c785b17779e6d62568ca0d81e",
+      "entity_count": 23,
+      "types": {
+        "TRIỆU_CHỨNG": 14,
+        "TÊN_XÉT_NGHIỆM": 5,
+        "THUỐC": 1,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "52.json",
+      "sha256": "7bdf9b15d159bef969f6b304295f43e8cfb4bf9bd360fea2aa08089d87678b05",
+      "entity_count": 22,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 11,
+        "TRIỆU_CHỨNG": 8,
+        "THUỐC": 2,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "53.json",
+      "sha256": "a0995520c525dd43dbe6600ba7935231da0d02e87ea0c22e1e2140ae000a2410",
+      "entity_count": 28,
+      "types": {
+        "TRIỆU_CHỨNG": 17,
+        "CHẨN_ĐOÁN": 6,
+        "TÊN_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "54.json",
+      "sha256": "84753691f2ec7e218c3937fb85155bc5b81ade76edf046746fd3a6bce96fe4cd",
+      "entity_count": 74,
+      "types": {
+        "TRIỆU_CHỨNG": 32,
+        "CHẨN_ĐOÁN": 11,
+        "TÊN_XÉT_NGHIỆM": 18,
+        "THUỐC": 8,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "55.json",
+      "sha256": "e13a36f075f66f4bde8ba1380330ea744ef688d06bb89258bbc09929a14faf6c",
+      "entity_count": 4,
+      "types": {
+        "TRIỆU_CHỨNG": 4
+      }
+    },
+    {
+      "file": "56.json",
+      "sha256": "f7cfb30aa12941e231d9fa7535a8a2f9cab506938c17ca025b8d0df0b0c1474d",
+      "entity_count": 35,
+      "types": {
+        "TRIỆU_CHỨNG": 22,
+        "TÊN_XÉT_NGHIỆM": 10,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 3
+      }
+    },
+    {
+      "file": "57.json",
+      "sha256": "4f0e5b1db7af9616c87d13a161c34f0fd274e99d0ea44a004eff4362465b020e",
+      "entity_count": 8,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 4,
+        "CHẨN_ĐOÁN": 2,
+        "TRIỆU_CHỨNG": 2
+      }
+    },
+    {
+      "file": "58.json",
+      "sha256": "b4eabe2a97446bf423268dc5cc950c68e9a8004d4c46efc0b89d1513c8b11fd8",
+      "entity_count": 78,
+      "types": {
+        "TRIỆU_CHỨNG": 51,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 13,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 6,
+        "THUỐC": 3
+      }
+    },
+    {
+      "file": "59.json",
+      "sha256": "b7e6c726f9cfe686bcdd35bb0dd8946a148933677d67ff11675ef4ddf5597f8f",
+      "entity_count": 40,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 13,
+        "TRIỆU_CHỨNG": 27
+      }
+    },
+    {
+      "file": "60.json",
+      "sha256": "7c7b0b1e0ecd5592d13183458eb76585dc6d70b5cf6651c0c4ae984da9379015",
+      "entity_count": 11,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 4,
+        "TRIỆU_CHỨNG": 5,
+        "CHẨN_ĐOÁN": 2
+      }
+    },
+    {
+      "file": "61.json",
+      "sha256": "1f8941c8e7e05eed0a64da17da09b4b215b456eecc75fadcbbcbe6ab138d77a3",
+      "entity_count": 12,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "TÊN_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "62.json",
+      "sha256": "db96b4ac022d8b775e09b9e4cc4b433e98db8003695c6aa1389f958c851b8672",
+      "entity_count": 8,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 4,
+        "TRIỆU_CHỨNG": 4
+      }
+    },
+    {
+      "file": "63.json",
+      "sha256": "50ee49381cd0c4e8c18e5f373dd0c5bdaf81a2809a364b8c87f609da16172e54",
+      "entity_count": 38,
+      "types": {
+        "TRIỆU_CHỨNG": 23,
+        "TÊN_XÉT_NGHIỆM": 6,
+        "THUỐC": 6,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "64.json",
+      "sha256": "89ea71f4bab5a487f9479db8fc0e99649b856ee084e1c7f6de6ea983c95211a4",
+      "entity_count": 45,
+      "types": {
+        "CHẨN_ĐOÁN": 5,
+        "THUỐC": 5,
+        "TRIỆU_CHỨNG": 31,
+        "TÊN_XÉT_NGHIỆM": 4
+      }
+    },
+    {
+      "file": "65.json",
+      "sha256": "172d8f7d0b574d0c2afe72a5abc129efa2a412d8807abccb2ab158f9b6f2c66a",
+      "entity_count": 14,
+      "types": {
+        "TRIỆU_CHỨNG": 9,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "66.json",
+      "sha256": "91e55a2c5e6f83b9a9bc45df064d650c71682bf4068ef9380d19a7fff97463cb",
+      "entity_count": 41,
+      "types": {
+        "TRIỆU_CHỨNG": 18,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 16,
+        "THUỐC": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "67.json",
+      "sha256": "dc7ed8fed03259c00f4966960cbf73cbbc2a97612725deaf9b55e1d6fc3bf2ae",
+      "entity_count": 10,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 5,
+        "CHẨN_ĐOÁN": 3,
+        "TRIỆU_CHỨNG": 2
+      }
+    },
+    {
+      "file": "68.json",
+      "sha256": "72b41138328d09ed1f8c0409f63d214c904c50e65fac40968cf8f58212947f4f",
+      "entity_count": 6,
+      "types": {
+        "TRIỆU_CHỨNG": 5,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "69.json",
+      "sha256": "66388584082a8ad1e33c01d96bfe1561894a3c7ed79f13f6a889997ce69c818c",
+      "entity_count": 29,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 10,
+        "TRIỆU_CHỨNG": 16,
+        "THUỐC": 2,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "70.json",
+      "sha256": "fd5c5e6acc049b57cea4b29f22d9b998297b881bb0f70db47029cc8600162d50",
+      "entity_count": 64,
+      "types": {
+        "TRIỆU_CHỨNG": 30,
+        "THUỐC": 5,
+        "TÊN_XÉT_NGHIỆM": 21,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 8
+      }
+    },
+    {
+      "file": "71.json",
+      "sha256": "e2d004c6348ff770d47506bb6559d018e05ee2ab24680de0bf46073d9280e3e4",
+      "entity_count": 36,
+      "types": {
+        "TRIỆU_CHỨNG": 27,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 2,
+        "THUỐC": 2
+      }
+    },
+    {
+      "file": "72.json",
+      "sha256": "9d0d76e273c898706091382b3d5580f47757f8804c6be109047fab72d6a9b20c",
+      "entity_count": 26,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 18,
+        "TRIỆU_CHỨNG": 6,
+        "THUỐC": 1,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "73.json",
+      "sha256": "ee4e74f9769eaed6dca5ef25f3328db9dee7d85413b83e86937a3396a9dc0655",
+      "entity_count": 42,
+      "types": {
+        "TRIỆU_CHỨNG": 22,
+        "CHẨN_ĐOÁN": 4,
+        "TÊN_XÉT_NGHIỆM": 7,
+        "THUỐC": 9
+      }
+    },
+    {
+      "file": "74.json",
+      "sha256": "a44c26734159c934e9e8b05df98b26c9c37ab6b035f3220fdcab34ac2e7a4f9c",
+      "entity_count": 43,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 8,
+        "THUỐC": 6,
+        "TRIỆU_CHỨNG": 27,
+        "CHẨN_ĐOÁN": 1,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "75.json",
+      "sha256": "9f1d9cbac3d704633c74d82386a88531d4a26f0bf2d5b325bb84e5164d126eff",
+      "entity_count": 44,
+      "types": {
+        "TRIỆU_CHỨNG": 12,
+        "TÊN_XÉT_NGHIỆM": 21,
+        "THUỐC": 9,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "76.json",
+      "sha256": "d46b2f1e4d67ab57443e811ac3e28313ab0d208c2bea02838adac48acbc29635",
+      "entity_count": 42,
+      "types": {
+        "TRIỆU_CHỨNG": 23,
+        "TÊN_XÉT_NGHIỆM": 8,
+        "THUỐC": 7,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 4
+      }
+    },
+    {
+      "file": "77.json",
+      "sha256": "0c5c34b7f6f3c0bd3e2fbd6330c0b416db27646ed86f28b3bef13712fbc675d5",
+      "entity_count": 25,
+      "types": {
+        "THUỐC": 8,
+        "TRIỆU_CHỨNG": 13,
+        "CHẨN_ĐOÁN": 3,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "78.json",
+      "sha256": "44caa13b3db5d44d7ba8c29ece4dcf07e6a0e3d285bb11403e9c1433a5c3c623",
+      "entity_count": 16,
+      "types": {
+        "TRIỆU_CHỨNG": 14,
+        "TÊN_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "79.json",
+      "sha256": "d543a8ac6a3ac937202b66bde8e264ddcfa41a9a836eea2521bb9bc262127b2a",
+      "entity_count": 8,
+      "types": {
+        "TRIỆU_CHỨNG": 4,
+        "TÊN_XÉT_NGHIỆM": 4
+      }
+    },
+    {
+      "file": "80.json",
+      "sha256": "c269f6baa1acedbe6feed5ca82382dd82ca608870cab5a332e722efb72eb6b4a",
+      "entity_count": 10,
+      "types": {
+        "TRIỆU_CHỨNG": 3,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "81.json",
+      "sha256": "98d2fb7ae0e6171256f38f90f9e7945f4c5e26598dd4b2f0cc9119acc038264f",
+      "entity_count": 8,
+      "types": {
+        "TRIỆU_CHỨNG": 1,
+        "CHẨN_ĐOÁN": 1,
+        "TÊN_XÉT_NGHIỆM": 5,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "82.json",
+      "sha256": "ae5b33fd4cdd98f51fc2e5e9a23493fd9b68cc0e49e07788fcdc4446dedcf8e8",
+      "entity_count": 37,
+      "types": {
+        "TRIỆU_CHỨNG": 20,
+        "CHẨN_ĐOÁN": 3,
+        "TÊN_XÉT_NGHIỆM": 11,
+        "THUỐC": 1,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "83.json",
+      "sha256": "348db16d96b0a1164e04d2812d9e667a5338d7bbead775d670ed3ad84894d2b2",
+      "entity_count": 8,
+      "types": {
+        "TRIỆU_CHỨNG": 3,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "CHẨN_ĐOÁN": 1,
+        "THUỐC": 1
+      }
+    },
+    {
+      "file": "84.json",
+      "sha256": "5211b2aa05adab2af5a7ec7f69a198639f6910c969a0db01b9ad352320787bb3",
+      "entity_count": 42,
+      "types": {
+        "TRIỆU_CHỨNG": 17,
+        "CHẨN_ĐOÁN": 1,
+        "TÊN_XÉT_NGHIỆM": 14,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 5,
+        "THUỐC": 5
+      }
+    },
+    {
+      "file": "85.json",
+      "sha256": "d601219a210de40122a173643da76228d352fccb5659be9ce47f817d146526e3",
+      "entity_count": 16,
+      "types": {
+        "TRIỆU_CHỨNG": 6,
+        "TÊN_XÉT_NGHIỆM": 7,
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 1
+      }
+    },
+    {
+      "file": "86.json",
+      "sha256": "77b4ca01bf55c7e79398bb835690bc344e8dbc61f412de179508058652f72b62",
+      "entity_count": 17,
+      "types": {
+        "TRIỆU_CHỨNG": 10,
+        "TÊN_XÉT_NGHIỆM": 7
+      }
+    },
+    {
+      "file": "87.json",
+      "sha256": "74b3b84750deaa3d001b0c02cc5bf732afe8f9fc3b4029e1eef8cff14b565b2f",
+      "entity_count": 19,
+      "types": {
+        "TRIỆU_CHỨNG": 10,
+        "CHẨN_ĐOÁN": 3,
+        "TÊN_XÉT_NGHIỆM": 4,
+        "THUỐC": 2
+      }
+    },
+    {
+      "file": "88.json",
+      "sha256": "d79c562569c9e24c6b8e1f37894276447f0a0a7b9e3f201b4095943434affa2d",
+      "entity_count": 24,
+      "types": {
+        "TRIỆU_CHỨNG": 16,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "THUỐC": 4,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "89.json",
+      "sha256": "7afe2b575cb33c1aa646de1d9e7be3368c1d451d7092a3709a241e5dcdd62112",
+      "entity_count": 25,
+      "types": {
+        "TÊN_XÉT_NGHIỆM": 12,
+        "TRIỆU_CHỨNG": 7,
+        "THUỐC": 4,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "90.json",
+      "sha256": "3abcb15e5915b04692739e1d8d39e9a65d7a63c3ef915ef28bab6cc7299376bf",
+      "entity_count": 7,
+      "types": {
+        "TRIỆU_CHỨNG": 6,
+        "TÊN_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "91.json",
+      "sha256": "c26bea330562bd2da99a4492b22a0882e941fd411d29d3662c828f729ae67a19",
+      "entity_count": 30,
+      "types": {
+        "TRIỆU_CHỨNG": 12,
+        "TÊN_XÉT_NGHIỆM": 10,
+        "CHẨN_ĐOÁN": 2,
+        "THUỐC": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 3
+      }
+    },
+    {
+      "file": "92.json",
+      "sha256": "ffeee478295723e8cc151fff053fea7ae9d926fa7463d1d24c5f873360e173a0",
+      "entity_count": 11,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 1
+      }
+    },
+    {
+      "file": "93.json",
+      "sha256": "08c0f72ed540b1a4be50dcc83f4ffdb3352e72b04a56141cc64e95beb9d6d42f",
+      "entity_count": 8,
+      "types": {
+        "TRIỆU_CHỨNG": 6,
+        "TÊN_XÉT_NGHIỆM": 1,
+        "THUỐC": 1
+      }
+    },
+    {
+      "file": "94.json",
+      "sha256": "327f4b59e843e9e5284f0e2526373cf8775f89be79594f0ed2baf95ec7e8235c",
+      "entity_count": 27,
+      "types": {
+        "TRIỆU_CHỨNG": 19,
+        "TÊN_XÉT_NGHIỆM": 2,
+        "THUỐC": 6
+      }
+    },
+    {
+      "file": "95.json",
+      "sha256": "81a855ab7d108497313ee4215ed41ef5adc100a76e96ff7d6326edb2894f9aaa",
+      "entity_count": 16,
+      "types": {
+        "TRIỆU_CHỨNG": 15,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "96.json",
+      "sha256": "e13045d621218184dbe75f4768f4828c0b521b7dc335118a36e4f78eee3b01ab",
+      "entity_count": 51,
+      "types": {
+        "CHẨN_ĐOÁN": 8,
+        "TRIỆU_CHỨNG": 21,
+        "TÊN_XÉT_NGHIỆM": 10,
+        "THUỐC": 7,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 5
+      }
+    },
+    {
+      "file": "97.json",
+      "sha256": "9de6536769219b850e3232994709430306ea502bc1b94e8b9f88be88e932c000",
+      "entity_count": 37,
+      "types": {
+        "TRIỆU_CHỨNG": 19,
+        "CHẨN_ĐOÁN": 1,
+        "TÊN_XÉT_NGHIỆM": 13,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 4
+      }
+    },
+    {
+      "file": "98.json",
+      "sha256": "0a78d458cbf402e2d8670d22d207e28502a3d4b2a20abdd455c76691e6d39d77",
+      "entity_count": 11,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "TÊN_XÉT_NGHIỆM": 3,
+        "CHẨN_ĐOÁN": 1
+      }
+    },
+    {
+      "file": "99.json",
+      "sha256": "89657d63b8e563c0a02eea121387c7f30dd13beba7e467b1c3938c7689419c61",
+      "entity_count": 11,
+      "types": {
+        "TRIỆU_CHỨNG": 7,
+        "CHẨN_ĐOÁN": 2,
+        "TÊN_XÉT_NGHIỆM": 2
+      }
+    },
+    {
+      "file": "100.json",
+      "sha256": "7eb6e2b974e86c78ebff7a6db531bde23e67c0ac477a12a077ff6137f5aab925",
+      "entity_count": 38,
+      "types": {
+        "TRIỆU_CHỨNG": 16,
+        "CHẨN_ĐOÁN": 5,
+        "TÊN_XÉT_NGHIỆM": 11,
+        "THUỐC": 2,
+        "KẾT_QUẢ_XÉT_NGHIỆM": 4
+      }
+    }
+  ],
+  "validation": {
+    "base_100": true,
+    "v10_100": true,
+    "traces_100_nonempty": true
+  }
+}

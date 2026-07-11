@@ -266,3 +266,15 @@ manual annotation and local evaluation.
 - Submitted: 11/07/2026 19:17
 - Not promoted over v7; no more immediate v10 submissions; do not build v11 yet
 - Updated: state.md, PLAN.md, CURRENT_WORK.md, analysis/v10_leaderboard_result.md
+
+---
+### 2026-07-11 21:00 +0700 | host=ict14
+**Status:** schema_first_principles_audit COMPLETED (analysis only; no submission)
+**Next:** annotate analysis/schema_audit/annotation_pool.csv; build local scorer; prototype NONE-aware type/span classifier
+- v7–v10 model iteration paused; no v11; no Qwen/pipeline reruns
+- Base inventory: 3236 ents / 100 docs from output/v10_llm_conflict_resolution/base_v7_snapshot/
+- Procedure-as-test 159; sym↔diag collisions 84; assertion-risk 220; ICD always singleton (215)
+- Precision-first preview: removed 168 → 3068 remain (output/schema_audit/precision_first_preview/)
+- Annotation pool: 415 rows; verdict WRONG_TYPE_SCHEMA + WRONG_SPAN_POLICY + OVER_EXTRACTION (+ candidate/distributed)
+- Primary architecture: task-specific span model (5+NONE) + lab segmentation + multi-label ICD; teachers=v7/Qwen/rules
+- Deliverables under analysis/schema_audit/; scripts: analyze_schema_alignment.py, build_precision_first_preview.py

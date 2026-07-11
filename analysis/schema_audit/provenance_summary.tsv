@@ -1,0 +1,8 @@
+source_component	entities_introduced	entities_surviving_final	type_distribution	mean_span_length	assertion_distribution	candidate_coverage_rate	flagged_by_schema_checks
+UNRESOLVED	0	13	"{""TRIỆU_CHỨNG"": 13}"	26.69	"{""isHistorical"": 4, ""isNegated"": 1}"		0
+ViHealthBERT	2821	2446	"{""THUỐC"": 185, ""TÊN_XÉT_NGHIỆM"": 533, ""CHẨN_ĐOÁN"": 138, ""TRIỆU_CHỨNG"": 1590}"	14.1	"{""isHistorical"": 584, ""isNegated"": 184}"	0.997	300
+clinical recall	119	90	"{""KẾT_QUẢ_XÉT_NGHIỆM"": 59, ""TÊN_XÉT_NGHIỆM"": 29, ""TRIỆU_CHỨNG"": 2}"	24.12	{}		16
+lab-pair recall	354	219	"{""THUỐC"": 10, ""TÊN_XÉT_NGHIỆM"": 134, ""KẾT_QUẢ_XÉT_NGHIỆM"": 75}"	5.93	"{""isHistorical"": 4, ""isNegated"": 2}"	1	11
+ontology diagnosis recall	77	76	"{""CHẨN_ĐOÁN"": 76}"	23.62	"{""isHistorical"": 41, ""isNegated"": 3}"	1	30
+ontology drug recall	76	76	"{""THUỐC"": 76}"	8.03	"{""isHistorical"": 27, ""isNegated"": 6}"	1	1
+section-aware recall	325	316	"{""TRIỆU_CHỨNG"": 315, ""CHẨN_ĐOÁN"": 1}"	26.28	"{""isNegated"": 27, ""isHistorical"": 26}"	1	113

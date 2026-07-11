@@ -1,0 +1,51 @@
+{
+  "base_entity_count": 3236,
+  "removed_entity_count": 168,
+  "remaining_entity_count": 3068,
+  "removals_by_type": {
+    "TÊN_XÉT_NGHIỆM": 152,
+    "THUỐC": 7,
+    "TRIỆU_CHỨNG": 5,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 4
+  },
+  "removals_by_source_component": {
+    "ViHealthBERT": 160,
+    "section-aware recall": 1,
+    "lab-pair recall": 3,
+    "clinical recall": 4
+  },
+  "removals_by_section_top": {
+    "-": 40,
+    "Tiền sử": 30,
+    "Tiền sử phẫu thuật / thủ thuật:": 7,
+    "Kết quả": 4,
+    "Các thủ thuật đã thực hiện:": 3,
+    "- đã": 3,
+    "*": 2,
+    "Thủ thuật thực hiện:": 2,
+    "- Đã được chụp chụp ct sọ não": 2,
+    "- Chụp lại chụp ct sọ não,": 2,
+    "- bệnh động mạch vành sau": 2,
+    "- Can thiệp mạch vành qua da và": 2,
+    "Thuốc trước khi nhập viện lần này: không tuân thủ điều trị bằng": 1,
+    "Đã ngừng sử dụng": 1,
+    "Các thủ thuật đã thực hiện:Nội soi mật tụy ngược dòng": 1,
+    "Đặt": 1,
+    "Kết quả xét nghiệm:": 1,
+    "Thủ thuật đã thực hiện:": 1,
+    "- Các lựa chọn điều trị được cân nhắc: điều trị bảo tồn, điều trị nội khoa,": 1,
+    "- đến khám để phân giai đoạn": 1,
+    "Được chỉ định đánh giá": 1,
+    "Tiền sử phẫu thuật / thủ thuật: Dựa trên tiền sử": 1,
+    "Tiền sử phẫu thuật / thủ thuật: Dựa trên tiền sử phẫu thuật mới được bổ sung: \"": 1,
+    "- Di căn não vùng trán phải dã": 1,
+    "Lý do nhập viện: Đến khám để thực hiện giai đoạn 2 của": 1,
+    "Lý do vào viện: Cơn rối loạn ý thức thoáng qua, nghi ngờ cơn co giật.": 1,
+    "- thủ thuật": 1,
+    "- vùng da sưng nề được": 1,
+    "- được cho về vớ đơn": 1,
+    "-  ban đỏ xuất hiện nhiểu ở vị trí": 1
+  },
+  "output_dir": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/schema_audit/precision_first_preview",
+  "removals_tsv": "/storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/analysis/schema_audit/precision_first_removals.tsv"
+}

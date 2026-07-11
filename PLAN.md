@@ -1,84 +1,73 @@
-# PLAN — next phase: Manual annotation and local evaluation
+# PLAN — schema-first audit complete; annotation next
 
 Last updated: 2026-07-11
 
-## Closed experiments
+## Closed experiments (leaderboard)
 
 | Experiment | Score | Verdict |
 |------------|------:|---------|
 | `v7_structured` | **24.79660** | **Best current reference** — keep as main submission |
-| `v9_llm_recall` (additive) | 23.84290 | **NEGATIVE** — no more additive-v9 submissions |
-| `v10_llm_conflict_resolution` | 24.04370 | Better than v9 (+0.20080); **still −0.75290 below v7** — not promoted |
+| `v9_llm_recall` (additive) | 23.84290 | **NEGATIVE** |
+| `v10_llm_conflict_resolution` | 24.04370 | Better than v9; **still below v7** — closed |
 
 ### Completed checklist
 
 - [x] v9 additive recall experiment (scored negative)
-- [x] v10 conflict-resolution experiment (scored; closed as useful but insufficient)
+- [x] v10 conflict-resolution experiment (scored; closed)
 - [x] Record official v10 leaderboard + project verdicts
+- [x] **Schema-first principles audit** (`schema_first_principles_audit`) completed
+- [x] Annotation pool created (`analysis/schema_audit/annotation_pool.csv`)
 
 ## Active goal
 
 ```text
-Stop leaderboard-driven model iteration temporarily.
+v7–v10 model iteration paused.
 
 Do not build v11 yet.
 
-The next phase is:
-manual annotation and local evaluation.
+Next: human annotation + local evaluation guided by schema audit.
 ```
 
-Primary goals:
+### Audit root-cause verdict
 
 ```text
-1. Create a small trusted development set.
-
-2. Annotate exact spans, types, assertions, and candidates.
-
-3. Measure v7, v9, and v10 locally.
-
-4. Determine which replacement categories are actually correct.
-
-5. Use annotation evidence before designing the next model version.
+WRONG_TYPE_SCHEMA
+WRONG_SPAN_POLICY
+OVER_EXTRACTION
+CANDIDATE_SET_FAILURE
+DISTRIBUTED_PIPELINE_FAILURE
+(+ ASSERTION_SCOPE_FAILURE secondary)
 ```
+
+### Recommended architecture (from evidence)
+
+**Primary:** task-specific span model (5 labels + NONE), dedicated lab name/result segmentation, contextual assertions, multi-label ICD candidate-set ranker; use v7/Qwen/rules/ontologies as weak supervision only.
+
+**Fallback:** precision-first gates on v7 while annotation proceeds (not a submission).
+
+Details: `analysis/schema_audit/architecture_decision.md`, `final_report.md`.
 
 ## Suggested next work items
 
-1. Select representative documents.
-2. Define annotation guidelines.
-3. Build annotation format and tooling.
-4. Annotate the first pilot subset.
-5. Implement local scorer.
-6. Evaluate v7 and v10 against the pilot gold.
+1. Annotate `analysis/schema_audit/annotation_pool.csv` (415 rows; human_* empty).
+2. Prioritize procedure-as-test + symptom/diagnosis collisions.
+3. Build local scorer (WER / J_assertion / J_candidates) on annotated gold.
+4. Prototype NONE-aware type/span classifier; compare to frozen base-v7 locally.
+5. Only then design the next extractor (not additive v11).
 
 ## Hard constraints (still in force)
 
 | Must | Must not |
 |------|----------|
 | Keep v7 as canonical leaderboard reference | Build / submit v11 without annotation evidence |
-| Reuse existing caches / outputs for local eval | External LLM APIs for competition inference |
+| Reuse frozen outputs for analysis | External LLM APIs for competition inference |
 | Annotate before redesigning conflict rules | Investigate SapBERT nondeterminism |
-| Treat categories C/D as main risk | More immediate v10 submissions |
+| Treat precision-first preview as offline only | Submit schema-audit preview ZIP |
 
-## Accepted nondeterminism assumption
-
-```text
-Separate executions of the neural pipeline are not deterministic
-on the current Mac GPU environment.
-
-The project will not attempt to fix this.
-
-Therefore, leaderboard differences cannot be attributed entirely
-to one set of replacements.
-```
-
-Practical interpretation: v10 produced a better official result than v9, but still did not outperform the v7 reference.
-
-## Reference paths (closed v10)
+## Reference paths
 
 | Path | Purpose |
 |------|---------|
-| `output/v10_llm_conflict_resolution/` | full run submission / base_v7_snapshot / trace |
-| `output/v10_llm_conflict_resolution_submission.zip` | submitted competition ZIP |
-| `analysis/v10_leaderboard_result.md` | official score write-up |
-| `analysis/v10_replacements.tsv` | 39 replacements (A6 B3 C18 D12) |
-| `cache/v9_llm_recall/` | reused LLM cache (do not regenerate) |
+| `output/v10_llm_conflict_resolution/base_v7_snapshot/` | Frozen base inventory |
+| `analysis/schema_audit/` | Full audit deliverables |
+| `output/schema_audit/precision_first_preview/` | Offline removals preview |

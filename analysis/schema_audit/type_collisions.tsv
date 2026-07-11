@@ -1,0 +1,211 @@
+file	kind	text_a	type_a	span_a	text_b	type_b	span_b	pair
+1	a_contains_b	metoprolol 25mg po bid	THUỐC	53-75	po bid	TÊN_XÉT_NGHIỆM	69-75	THUỐC ↔ TÊN_XÉT_NGHIỆM
+1	a_contains_b	giảm dung nạp gắng sức	TRIỆU_CHỨNG	1423-1445	nạp gắng sức	TÊN_XÉT_NGHIỆM	1433-1445	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+1	partial_overlap	ecg bình	TÊN_XÉT_NGHIỆM	2331-2339	bình thường	KẾT_QUẢ_XÉT_NGHIỆM	2335-2346	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+2	b_contains_a	xơ gan	TRIỆU_CHỨNG	61-67	xơ gan do rượu	CHẨN_ĐOÁN	61-75	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+2	a_contains_b	xơ gan do rượu	CHẨN_ĐOÁN	61-75	rượu	TRIỆU_CHỨNG	71-75	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+3	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	217-230	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	217-250	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+3	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	217-250	xơ vữa động mạch	TRIỆU_CHỨNG	234-250	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+3	a_contains_b	ước tính mất ý thức có thể trong 30 giây	TRIỆU_CHỨNG	586-626	trong	TÊN_XÉT_NGHIỆM	613-618	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Thời gian	TÊN_XÉT_NGHIỆM	1068-1077	Thời gian: 30 giây (ước tính)	TRIỆU_CHỨNG	1068-1097	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	1134-1142	Chiếu xạ: N/A	TRIỆU_CHỨNG	1134-1147	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	1520-1528	Chiếu xạ: N/A	TRIỆU_CHỨNG	1520-1533	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	1727-1735	Chiếu xạ: N/A	TRIỆU_CHỨNG	1727-1740	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	1937-1945	Chiếu xạ: N/A	TRIỆU_CHỨNG	1937-1950	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	2146-2154	Chiếu xạ: N/A	TRIỆU_CHỨNG	2146-2159	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	2351-2359	Chiếu xạ: N/A	TRIỆU_CHỨNG	2351-2364	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	a_contains_b	đánh trống ngực	TRIỆU_CHỨNG	2500-2515	trống	TÊN_XÉT_NGHIỆM	2505-2510	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	2697-2705	Chiếu xạ: N/A	TRIỆU_CHỨNG	2697-2710	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+3	b_contains_a	Chiếu xạ	TÊN_XÉT_NGHIỆM	2896-2904	Chiếu xạ: N/A	TRIỆU_CHỨNG	2896-2909	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+5	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	57-70	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	57-90	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+5	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	57-90	xơ vữa động mạch	TRIỆU_CHỨNG	74-90	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+5	b_contains_a	tăng lipid máu	TRIỆU_CHỨNG	117-131	tăng lipid máu, không đặc hiệu	CHẨN_ĐOÁN	117-147	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+5	a_contains_b	bệnh trào ngược dạ dày- thực quản không có viêm thực quản	CHẨN_ĐOÁN	154-211	viêm thực quản	TRIỆU_CHỨNG	197-211	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+5	b_contains_a	hạ huyết áp	TRIỆU_CHỨNG	647-658	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	647-674	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+5	a_contains_b	(aspartate aminotransferase) là 319	KẾT_QUẢ_XÉT_NGHIỆM	813-848	aspartate	THUỐC	814-823	KẾT_QUẢ_XÉT_NGHIỆM ↔ THUỐC
+5	a_contains_b	(alanine aminotransferase) là 690	KẾT_QUẢ_XÉT_NGHIỆM	859-892	alanine	THUỐC	860-867	KẾT_QUẢ_XÉT_NGHIỆM ↔ THUỐC
+5	a_contains_b	(alanine aminotransferase) là 690	KẾT_QUẢ_XÉT_NGHIỆM	859-892	alanine aminotransferase	TÊN_XÉT_NGHIỆM	860-884	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+5	b_contains_a	alanine	THUỐC	860-867	alanine aminotransferase	TÊN_XÉT_NGHIỆM	860-884	THUỐC ↔ TÊN_XÉT_NGHIỆM
+6	b_contains_a	nghẽn tắc	TRIỆU_CHỨNG	264-273	nghẽn tắc và hẹp động mạch cảnh	CHẨN_ĐOÁN	264-295	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+6	a_contains_b	nghẽn tắc và hẹp động mạch cảnh	CHẨN_ĐOÁN	264-295	hẹp động mạch cảnh	TRIỆU_CHỨNG	277-295	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+7	a_contains_b	giai đoạn trầm cảm không đặc hiệu	CHẨN_ĐOÁN	88-121	trầm cảm	TRIỆU_CHỨNG	98-106	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+10	a_contains_b	chỉ cho thấy một u tuyến	KẾT_QUẢ_XÉT_NGHIỆM	701-725	u tuyến	TRIỆU_CHỨNG	718-725	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+12	b_contains_a	công	TÊN_XÉT_NGHIỆM	1035-1039	công thức máu (cbc) nâng cao lên 11.3	KẾT_QUẢ_XÉT_NGHIỆM	1035-1072	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+13	partial_overlap	Tình trạng tổn thương vùng âm hộ	TRIỆU_CHỨNG	573-605	tổn thương vùng âm hộ và mông bên phải	CHẨN_ĐOÁN	584-622	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+13	partial_overlap	tổn thương vùng âm hộ và mông bên phải	CHẨN_ĐOÁN	584-622	mông bên phải ngày càng nặng	TRIỆU_CHỨNG	609-637	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+13	b_contains_a	tổn thương vùng âm hộ và mông	CHẨN_ĐOÁN	1344-1373	tổn thương vùng âm hộ và mông bên phải	TRIỆU_CHỨNG	1344-1382	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+13	a_contains_b	Thời gian: Tình trạng ngày càng nặng trong 5 ngày	TRIỆU_CHỨNG	1680-1729	trong	TÊN_XÉT_NGHIỆM	1717-1722	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+15	a_contains_b	xuất huyết nội sọ không do chấn thương	TRIỆU_CHỨNG	37-75	chấn	CHẨN_ĐOÁN	64-68	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+15	b_contains_a	xuất huyết nội sọ	TRIỆU_CHỨNG	205-222	xuất huyết nội sọ không do chấn thương, không đặc hiệu	CHẨN_ĐOÁN	205-259	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+16	a_contains_b	phân nâu dương tính guaiac	TRIỆU_CHỨNG	1558-1584	guaiac	THUỐC	1578-1584	THUỐC ↔ TRIỆU_CHỨNG
+16	b_contains_a	hạ huyết áp	TRIỆU_CHỨNG	1732-1743	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	1732-1759	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+17	a_contains_b	bệnh trào ngược dạ dày- thực quản không có viêm thực quản	CHẨN_ĐOÁN	40-97	viêm thực quản	TRIỆU_CHỨNG	83-97	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+17	b_contains_a	Sốt	TRIỆU_CHỨNG	325-328	Sốt cao nhất	TÊN_XÉT_NGHIỆM	325-337	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+20	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	104-117	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	104-137	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	104-137	xơ vữa động mạch	TRIỆU_CHỨNG	121-137	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	a_contains_b	ngã với gãy cổ xương đùi di lệch	TRIỆU_CHỨNG	643-675	gãy cổ xương đùi	CHẨN_ĐOÁN	651-667	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	b_contains_a	gãy cổ xương đùi	CHẨN_ĐOÁN	651-667	gãy cổ xương đùi di lệch	TRIỆU_CHỨNG	651-675	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	b_contains_a	gãy cổ xương đùi	CHẨN_ĐOÁN	898-914	gãy cổ xương đùi di lệch	TRIỆU_CHỨNG	898-922	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	partial_overlap	chụp ct ngực không thuốc cản quang	TÊN_XÉT_NGHIỆM	1526-1560	không thuốc cản quang cho thấy tim to	KẾT_QUẢ_XÉT_NGHIỆM	1539-1576	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+20	a_contains_b	không thuốc cản quang cho thấy tim to	KẾT_QUẢ_XÉT_NGHIỆM	1539-1576	tim to	TRIỆU_CHỨNG	1570-1576	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+20	b_contains_a	thoát vị hoành	CHẨN_ĐOÁN	2154-2168	thoát vị hoành nhỏ	TRIỆU_CHỨNG	2154-2172	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	b_contains_a	xẹp phổi	CHẨN_ĐOÁN	2198-2206	xẹp phổi hai đáy	TRIỆU_CHỨNG	2198-2214	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	b_contains_a	gãy cổ xương đùi	CHẨN_ĐOÁN	2538-2554	gãy cổ xương đùi phải	TRIỆU_CHỨNG	2538-2559	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+20	b_contains_a	rung nhĩ	TRIỆU_CHỨNG	2907-2915	rung nhĩ kịch phát	CHẨN_ĐOÁN	2907-2925	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+21	b_contains_a	suy tim	TRIỆU_CHỨNG	68-75	suy tim, không đặc hiệu	CHẨN_ĐOÁN	68-91	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+23	b_contains_a	Bệnh tim mạch	TRIỆU_CHỨNG	21-34	Bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	21-54	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+23	a_contains_b	Bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	21-54	xơ vữa động mạch	TRIỆU_CHỨNG	38-54	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+24	a_contains_b	ban đỏ xuất hiện nhiểu ở vị trí phẫu thuật	TRIỆU_CHỨNG	938-980	phẫu thuật	TÊN_XÉT_NGHIỆM	970-980	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+26	a_contains_b	đến khám vì sau cân sau phẫu thuật	TRIỆU_CHỨNG	107-141	phẫu thuật	TÊN_XÉT_NGHIỆM	131-141	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+28	b_contains_a	sỏi	TRIỆU_CHỨNG	2107-2110	sỏi mật	CHẨN_ĐOÁN	2107-2114	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+30	a_contains_b	tăng cholesterol máu đơn thuần	CHẨN_ĐOÁN	95-125	cholesterol	THUỐC	100-111	CHẨN_ĐOÁN ↔ THUỐC
+32	partial_overlap	Siêu âm mạch máu chi trên	TÊN_XÉT_NGHIỆM	1116-1141	chi trên không ghi nhận huyết khối	KẾT_QUẢ_XÉT_NGHIỆM	1133-1167	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+32	b_contains_a	furosemide	TÊN_XÉT_NGHIỆM	1502-1512	furosemide 40 mg	THUỐC	1502-1518	THUỐC ↔ TÊN_XÉT_NGHIỆM
+32	a_contains_b	tụ cầu vàng nhạy cảm methicillin	TRIỆU_CHỨNG	2135-2167	methicillin	THUỐC	2156-2167	THUỐC ↔ TRIỆU_CHỨNG
+32	partial_overlap	Siêu âm mạch máu chi trên	TÊN_XÉT_NGHIỆM	2199-2224	chi trên không ghi nhận huyết khối	KẾT_QUẢ_XÉT_NGHIỆM	2216-2250	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+33	b_contains_a	suy tim	TRIỆU_CHỨNG	154-161	suy tim, không đặc hiệu	CHẨN_ĐOÁN	154-177	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+33	a_contains_b	Dị ứng furosemide	TRIỆU_CHỨNG	190-207	furosemide	THUỐC	197-207	THUỐC ↔ TRIỆU_CHỨNG
+33	b_contains_a	vancomycin	TÊN_XÉT_NGHIỆM	1434-1444	vancomycin 1 gram	THUỐC	1434-1451	THUỐC ↔ TÊN_XÉT_NGHIỆM
+34	a_contains_b	thuốc giảm đau opioid	THUỐC	280-301	opioid	TÊN_XÉT_NGHIỆM	295-301	THUỐC ↔ TÊN_XÉT_NGHIỆM
+34	b_contains_a	ăn uống kém	CHẨN_ĐOÁN	408-419	ăn uống kém do buồn nôn	TRIỆU_CHỨNG	408-431	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+34	b_contains_a	mất cảm giác ngon miệng	CHẨN_ĐOÁN	578-601	mất cảm giác ngon miệng/chán ăn	TRIỆU_CHỨNG	578-609	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+34	a_contains_b	Vị trí: LLQ	TRIỆU_CHỨNG	859-870	LLQ	CHẨN_ĐOÁN	867-870	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+34	b_contains_a	Thời gian	TÊN_XÉT_NGHIỆM	941-950	Thời gian: 48 giờ qua	TRIỆU_CHỨNG	941-962	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+35	b_contains_a	tăng lipid máu	TRIỆU_CHỨNG	133-147	tăng lipid máu, không đặc hiệu	CHẨN_ĐOÁN	133-163	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+35	b_contains_a	Ăn uống kém	CHẨN_ĐOÁN	850-861	Ăn uống kém, ăn vào dễ nôn	TRIỆU_CHỨNG	850-876	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+35	a_contains_b	Nôn không ra máu, không ra dịch mật	TRIỆU_CHỨNG	884-919	không ra dịch mật	CHẨN_ĐOÁN	902-919	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+36	b_contains_a	bắt	TRIỆU_CHỨNG	584-587	bắt đầu tăng muộn	KẾT_QUẢ_XÉT_NGHIỆM	584-601	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+36	a_contains_b	Tăng creatinine	TRIỆU_CHỨNG	687-702	creatinine	THUỐC	692-702	THUỐC ↔ TRIỆU_CHỨNG
+36	partial_overlap	sinh thiết ghép thận	TÊN_XÉT_NGHIỆM	1088-1108	ghép thận không có bằng chứng đào thải kháng thể hữu hình cấp tính	KẾT_QUẢ_XÉT_NGHIỆM	1099-1165	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+36	partial_overlap	sinh thiết ghép thận	TÊN_XÉT_NGHIỆM	1593-1613	ghép thận không có bằng chứng đào thải kháng thể hữu hình cấp tính	KẾT_QUẢ_XÉT_NGHIỆM	1604-1670	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+37	a_contains_b	xét nghiệm bất thường - tăng kali máu	TRIỆU_CHỨNG	566-603	tăng kali máu	CHẨN_ĐOÁN	590-603	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+37	b_contains_a	Creatinine	THUỐC	607-617	Creatinine tăng	TRIỆU_CHỨNG	607-622	THUỐC ↔ TRIỆU_CHỨNG
+37	a_contains_b	iv lasix 40 mg	TÊN_XÉT_NGHIỆM	1720-1734	lasix	THUỐC	1723-1728	THUỐC ↔ TÊN_XÉT_NGHIỆM
+38	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	75-88	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	75-108	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+38	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	75-108	xơ vữa động mạch	TRIỆU_CHỨNG	92-108	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+38	b_contains_a	Suy tim	CHẨN_ĐOÁN	125-132	Suy tim dãn tâm thu	TRIỆU_CHỨNG	125-144	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+38	a_contains_b	Tăng tăng cân 3 pound trong 7 ngày qua	TRIỆU_CHỨNG	419-457	trong	TÊN_XÉT_NGHIỆM	441-446	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+38	a_contains_b	(ure) 3	KẾT_QUẢ_XÉT_NGHIỆM	1050-1057	ure	TÊN_XÉT_NGHIỆM	1051-1054	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+41	a_contains_b	loét thực quản	CHẨN_ĐOÁN	499-513	quản	TRIỆU_CHỨNG	509-513	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+41	a_contains_b	loét tá tràng	CHẨN_ĐOÁN	1590-1603	tá tràng	TRIỆU_CHỨNG	1595-1603	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+41	a_contains_b	abdominal pain	TRIỆU_CHỨNG	1958-1972	al pain	THUỐC	1965-1972	THUỐC ↔ TRIỆU_CHỨNG
+41	b_contains_a	Viêm thực quản	CHẨN_ĐOÁN	3180-3194	Viêm thực quản độ C	TRIỆU_CHỨNG	3180-3199	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+41	a_contains_b	Loét loét thực quản	TRIỆU_CHỨNG	3223-3242	loét thực quản	CHẨN_ĐOÁN	3228-3242	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+43	b_contains_a	hẹp van động mạch chủ	CHẨN_ĐOÁN	669-690	hẹp van động mạch chủ nghiêm trọng	TRIỆU_CHỨNG	669-703	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+44	b_contains_a	suy tim	TRIỆU_CHỨNG	66-73	suy tim, không đặc hiệu	CHẨN_ĐOÁN	66-89	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+44	a_contains_b	giảm khả năng quan hệ tình dục với bạn tình	TRIỆU_CHỨNG	564-607	khả	CHẨN_ĐOÁN	569-572	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+44	a_contains_b	kém trong 3 ngày qua	TRIỆU_CHỨNG	1131-1151	trong	TÊN_XÉT_NGHIỆM	1135-1140	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+44	a_contains_b	từng đợt sau khi ăn trong 3 ngày qua	TRIỆU_CHỨNG	1165-1201	trong	TÊN_XÉT_NGHIỆM	1185-1190	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+44	b_contains_a	lasix	THUỐC	1720-1725	lasix iv	TÊN_XÉT_NGHIỆM	1720-1728	THUỐC ↔ TÊN_XÉT_NGHIỆM
+44	a_contains_b	po metoprolol	TÊN_XÉT_NGHIỆM	1780-1793	metoprolol	THUỐC	1783-1793	THUỐC ↔ TÊN_XÉT_NGHIỆM
+46	a_contains_b	khó khăn với hạ huyết áp, không đặc hiệu	TRIỆU_CHỨNG	200-240	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	213-240	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+46	b_contains_a	hạ huyết áp	TRIỆU_CHỨNG	213-224	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	213-240	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+46	a_contains_b	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	213-240	không đặc hiệu	TRIỆU_CHỨNG	226-240	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+46	a_contains_b	) cho thấy tắc hẹp 80% động mạch thận trái L	KẾT_QUẢ_XÉT_NGHIỆM	511-555	tắc hẹp 80% động mạch thận trái	TRIỆU_CHỨNG	522-553	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+47	b_contains_a	cholan	THUỐC	2805-2811	cholangiogram	TRIỆU_CHỨNG	2805-2818	THUỐC ↔ TRIỆU_CHỨNG
+48	b_contains_a	Tần suất	TÊN_XÉT_NGHIỆM	1808-1816	Tần suất: 2 đợt hôm nay	TRIỆU_CHỨNG	1808-1831	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+50	a_contains_b	z-pack	TÊN_XÉT_NGHIỆM	192-198	pack	THUỐC	194-198	THUỐC ↔ TÊN_XÉT_NGHIỆM
+50	partial_overlap	khó thở	TRIỆU_CHỨNG	673-680	thở, khò khè	CHẨN_ĐOÁN	677-689	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+50	b_contains_a	prednisone	TÊN_XÉT_NGHIỆM	915-925	prednisone 40 mg	THUỐC	915-931	THUỐC ↔ TÊN_XÉT_NGHIỆM
+50	b_contains_a	prednisone	TÊN_XÉT_NGHIỆM	1561-1571	prednisone 40 mg/ng	THUỐC	1561-1580	THUỐC ↔ TÊN_XÉT_NGHIỆM
+51	a_contains_b	Đái tháo đường type 2	TRIỆU_CHỨNG	57-78	type	TÊN_XÉT_NGHIỆM	72-76	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+52	b_contains_a	nang tụy	CHẨN_ĐOÁN	847-855	nang tụy nhỏ	TRIỆU_CHỨNG	847-859	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+53	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	131-144	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	131-164	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+53	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	131-164	xơ vữa động mạch	TRIỆU_CHỨNG	148-164	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+54	b_contains_a	suy thận cấp	CHẨN_ĐOÁN	479-491	suy thận cấp.	TRIỆU_CHỨNG	479-492	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+54	b_contains_a	viêm phổi thuỳ	TRIỆU_CHỨNG	655-669	viêm phổi thuỳ, không đặc hiệu	CHẨN_ĐOÁN	655-685	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+54	b_contains_a	rung nhĩ	TRIỆU_CHỨNG	815-823	rung nhĩ điển hình	CHẨN_ĐOÁN	815-833	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+54	partial_overlap	liệu pháp amiodarone	TÊN_XÉT_NGHIỆM	940-960	amiodarone.	THUỐC	950-961	THUỐC ↔ TÊN_XÉT_NGHIỆM
+54	b_contains_a	phân và máu trong trực tràng	CHẨN_ĐOÁN	1645-1673	phân và máu trong trực tràng (thỉnh thoảng)	TRIỆU_CHỨNG	1645-1688	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+54	b_contains_a	rối loạn cân bằng kiềm toan	TRIỆU_CHỨNG	2656-2683	rối loạn cân bằng kiềm toan phối hợp	CHẨN_ĐOÁN	2656-2692	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+56	b_contains_a	xét nghiệm gắng sức	TÊN_XÉT_NGHIỆM	172-191	xét nghiệm gắng sức bất thường	TRIỆU_CHỨNG	172-202	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+56	b_contains_a	Chiếu r xạ	TÊN_XÉT_NGHIỆM	503-513	Chiếu r xạ: Không rõ	TRIỆU_CHỨNG	503-523	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+58	b_contains_a	tăng lipid máu	TRIỆU_CHỨNG	66-80	tăng lipid máu, không đặc hiệu	CHẨN_ĐOÁN	66-96	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+58	a_contains_b	nhìn song thị	TRIỆU_CHỨNG	218-231	song thị	CHẨN_ĐOÁN	223-231	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+58	partial_overlap	chọc dò dịch não	TÊN_XÉT_NGHIỆM	753-769	dò dịch não tủy	CHẨN_ĐOÁN	758-773	CHẨN_ĐOÁN ↔ TÊN_XÉT_NGHIỆM
+58	b_contains_a	hạ huyết áp	TRIỆU_CHỨNG	2014-2025	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	2014-2041	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+58	b_contains_a	hạ huyết áp	TRIỆU_CHỨNG	2572-2583	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN	2572-2599	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+63	b_contains_a	thiếu máu	TRIỆU_CHỨNG	1366-1375	thiếu máu hồng cầu nhỏ	TÊN_XÉT_NGHIỆM	1366-1388	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+63	a_contains_b	thiếu máu hồng cầu nhỏ	TÊN_XÉT_NGHIỆM	1366-1388	cầu	TRIỆU_CHỨNG	1381-1384	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+63	b_contains_a	viêm túi mật cấp	CHẨN_ĐOÁN	1638-1654	viêm túi mật cấp tính	TRIỆU_CHỨNG	1638-1659	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+64	a_contains_b	Mức độ nghiêm trọng: Tồi tệ hơn	TRIỆU_CHỨNG	1117-1148	Tồi tệ	CHẨN_ĐOÁN	1138-1144	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+64	b_contains_a	Thời gian	TÊN_XÉT_NGHIỆM	1155-1164	Thời gian: 1 ngày	TRIỆU_CHỨNG	1155-1172	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+66	b_contains_a	tăng lipid máu	TRIỆU_CHỨNG	113-127	tăng lipid máu, không đặc hiệu	CHẨN_ĐOÁN	113-143	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+66	a_contains_b	trình 14 day course of ertapenem	TÊN_XÉT_NGHIỆM	564-596	ertapenem	THUỐC	587-596	THUỐC ↔ TÊN_XÉT_NGHIỆM
+66	a_contains_b	bun/creatinine	TÊN_XÉT_NGHIỆM	923-937	creatinine	THUỐC	927-937	THUỐC ↔ TÊN_XÉT_NGHIỆM
+69	a_contains_b	phân có guaiac dương tính đến	TRIỆU_CHỨNG	260-289	guaiac	THUỐC	268-274	THUỐC ↔ TRIỆU_CHỨNG
+69	a_contains_b	phân có guaiac dương tính	TRIỆU_CHỨNG	352-377	guaiac	THUỐC	360-366	THUỐC ↔ TRIỆU_CHỨNG
+69	a_contains_b	dương tính với ung thư biểu mô tuyến	KẾT_QUẢ_XÉT_NGHIỆM	502-538	ung thư biểu mô tuyến	TRIỆU_CHỨNG	517-538	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+70	a_contains_b	taking 10 pills	TÊN_XÉT_NGHIỆM	192-207	pill	THUỐC	202-206	THUỐC ↔ TÊN_XÉT_NGHIỆM
+70	b_contains_a	doppler âm	TÊN_XÉT_NGHIỆM	2122-2132	doppler âm tính âm tính	KẾT_QUẢ_XÉT_NGHIỆM	2122-2145	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+71	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	95-108	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	95-128	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+71	partial_overlap	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	95-128	xơ vữa động mạch sau	TRIỆU_CHỨNG	112-132	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+71	b_contains_a	suy tim	TRIỆU_CHỨNG	140-147	suy tim, không đặc hiệu	CHẨN_ĐOÁN	140-163	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+71	b_contains_a	Suy tim sung huyết	CHẨN_ĐOÁN	485-503	Suy tim sung huyết cấp	TRIỆU_CHỨNG	485-507	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+71	a_contains_b	tăng liều lasix	TÊN_XÉT_NGHIỆM	534-549	lasix	THUỐC	544-549	THUỐC ↔ TÊN_XÉT_NGHIỆM
+73	a_contains_b	Đái tháo đường type 2	TRIỆU_CHỨNG	320-341	type	TÊN_XÉT_NGHIỆM	335-339	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+73	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	469-482	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	469-502	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+73	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	469-502	xơ vữa động mạch	TRIỆU_CHỨNG	486-502	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+73	b_contains_a	bệnh tim mạch	TRIỆU_CHỨNG	504-517	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	504-537	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+73	a_contains_b	bệnh tim mạch do xơ vữa động mạch	CHẨN_ĐOÁN	504-537	xơ vữa động mạch	TRIỆU_CHỨNG	521-537	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+73	b_contains_a	lisinopril	TÊN_XÉT_NGHIỆM	986-996	lisinopril 2.5mg daily	THUỐC	986-1008	THUỐC ↔ TÊN_XÉT_NGHIỆM
+76	b_contains_a	VAS	TÊN_XÉT_NGHIỆM	878-881	VAS 7/10	TRIỆU_CHỨNG	878-886	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+76	a_contains_b	đau trong 1.5h liên lục	TRIỆU_CHỨNG	888-911	trong	TÊN_XÉT_NGHIỆM	892-897	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+77	a_contains_b	chất gây nghiện opioid	THUỐC	593-615	opioid	TÊN_XÉT_NGHIỆM	609-615	THUỐC ↔ TÊN_XÉT_NGHIỆM
+77	a_contains_b	ý nghĩ tự tử, có nghĩ tự bắn vào đầu	TRIỆU_CHỨNG	1057-1093	bắn	CHẨN_ĐOÁN	1082-1085	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+77	b_contains_a	lo âu	TRIỆU_CHỨNG	1100-1105	"lo âu
+hoảng sợ"	CHẨN_ĐOÁN	1100-1114	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+79	a_contains_b	bàn chân vẹo bẩm sinh	TRIỆU_CHỨNG	153-174	sinh	TÊN_XÉT_NGHIỆM	170-174	TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+80	a_contains_b	chấn thương gãy xương sườn trái	TRIỆU_CHỨNG	134-165	gãy xương sườn	CHẨN_ĐOÁN	146-160	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+80	a_contains_b	chấn thương gãy xương sườn trái	TRIỆU_CHỨNG	304-335	gãy xương sườn	CHẨN_ĐOÁN	316-330	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+80	a_contains_b	) lồng ngực Hình ảnh gãy 3 xương sườn 9	KẾT_QUẢ_XÉT_NGHIỆM	449-488	lồng ngực	TÊN_XÉT_NGHIỆM	451-460	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+80	a_contains_b	) lồng ngực Hình ảnh gãy 3 xương sườn 9	KẾT_QUẢ_XÉT_NGHIỆM	449-488	gãy 3 xương sườn	TRIỆU_CHỨNG	470-486	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+81	partial_overlap	chụp cắt lớp vi tính (ct) sọ	TÊN_XÉT_NGHIỆM	257-285	) sọ  trước mổ cho thấy độ dày niêm mạc xoang hàm dày lên	KẾT_QUẢ_XÉT_NGHIỆM	281-338	KẾT_QUẢ_XÉT_NGHIỆM ↔ TÊN_XÉT_NGHIỆM
+84	b_contains_a	Ipratropium	TÊN_XÉT_NGHIỆM	1267-1278	Ipratropium 1 lần	THUỐC	1267-1284	THUỐC ↔ TÊN_XÉT_NGHIỆM
+84	b_contains_a	Ceftriaxone	TÊN_XÉT_NGHIỆM	1291-1302	Ceftriaxone 1 gram	THUỐC	1291-1309	THUỐC ↔ TÊN_XÉT_NGHIỆM
+84	b_contains_a	Tylenol	TÊN_XÉT_NGHIỆM	1333-1340	Tylenol 1 gram	THUỐC	1333-1347	THUỐC ↔ TÊN_XÉT_NGHIỆM
+88	a_contains_b	Dùngmethadonekéo dài	TRIỆU_CHỨNG	356-376	methadone	THUỐC	360-369	THUỐC ↔ TRIỆU_CHỨNG
+88	b_contains_a	lasix	THUỐC	383-388	lasixđã	TÊN_XÉT_NGHIỆM	383-390	THUỐC ↔ TÊN_XÉT_NGHIỆM
+91	b_contains_a	coumadin	TÊN_XÉT_NGHIỆM	401-409	coumadin 3.0 mg /ng	THUỐC	401-420	THUỐC ↔ TÊN_XÉT_NGHIỆM
+91	a_contains_b	coumadin 3.0 mg /ng	THUỐC	401-420	3.0	KẾT_QUẢ_XÉT_NGHIỆM	410-413	KẾT_QUẢ_XÉT_NGHIỆM ↔ THUỐC
+96	a_contains_b	sốt cao 39.7 độ C	TRIỆU_CHỨNG	822-839	39.7	KẾT_QUẢ_XÉT_NGHIỆM	830-834	KẾT_QUẢ_XÉT_NGHIỆM ↔ TRIỆU_CHỨNG
+98	b_contains_a	Đa u tủy	CHẨN_ĐOÁN	485-493	Đa u tủy xương	TRIỆU_CHỨNG	485-499	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+99	b_contains_a	rối loạn lo âu	TRIỆU_CHỨNG	39-53	rối loạn lo âu, không biệt định	CHẨN_ĐOÁN	39-70	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+100	b_contains_a	cơn đau thắt ngực	CHẨN_ĐOÁN	204-221	cơn đau thắt ngực ổn định	TRIỆU_CHỨNG	204-229	CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	không	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	xơ vữa động mạch	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	trong	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tim to	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	viêm thực quản	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	hạ huyết áp, không đặc hiệu	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	đặt nội khí quản	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tylenol	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tổn thương vùng âm hộ và mông bên phải	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	chán ăn	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	sinh	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	suy tim	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	vancomycin	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	coumadin	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	sỏi mật	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	viêm túi mật	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	thuốc giảm đau	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	furosemide	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	lợi tiểu	THUỐC|TRIỆU_CHỨNG					THUỐC ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	tràng	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	ăn uống kém	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	bạch cầu tăng	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tăng kali máu	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	suy thận cấp	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	loét tá tràng	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	methadone	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	đau rát khi đi tiểu	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	prednisone	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	bicarbonate	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	viêm phổi thuỳ, không đặc hiệu	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	rối loạn cân bằng kiềm toan phối hợp	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG
+*	same_normalized_text_multi_type	tim	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	kháng sinh	THUỐC|TÊN_XÉT_NGHIỆM					THUỐC ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tính	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	tăng bilirubin máu	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	cabg	TRIỆU_CHỨNG|TÊN_XÉT_NGHIỆM					TRIỆU_CHỨNG ↔ TÊN_XÉT_NGHIỆM
+*	same_normalized_text_multi_type	vết thương thấu bụng giữa bên phải	CHẨN_ĐOÁN|TRIỆU_CHỨNG					CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG

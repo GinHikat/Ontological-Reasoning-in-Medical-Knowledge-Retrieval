@@ -1,0 +1,697 @@
+file	text	position	section	left_context	right_context	source_component	procedure_cues	test_cues	risk_status	risk_reasons
+1	po bid	69-75	- metoprolol 25mg	ước khi nhập viện     - metoprolol 25mg 	     - doxycycline cho viêm tuyến mồ hôi	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+1	không	389-394	-  và 1 tách cà phê	phê có caffeine     -  và 1 tách cà phê 	 caffeine  2.  Tiền sử bệnh hiện tại    	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+1	nạp gắng sức	1433-1445	- giảm dung	17 giờ, kéo dài 20 giây     - giảm dung 	:      - Không  buồn nôn, hay nôn, đổ mồ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+1	monitor holter	1631-1645	-	 khám bởi bác sĩ phụ trách chính      - 	 cho thấy Nhịp xoang chiếm ưu thế. Ghi n	ViHealthBERT		holter	LIKELY_GENUINE_TEST	test_cues:holter
+1	siêu âm tim qua thành ngực	1929-1955	- Lên lịch tái khám với bác sĩ tim mạch và được chỉ định	ám với bác sĩ tim mạch và được chỉ định 	 vào tuần tới     - Ngày hôm nay khoảng 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+1	chụp x-quang ngực	2223-2240	-	 định điều trị  aspirin 325mg x 1     - 	 không ghi nhận gì bất thường     - phân	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+1	phân tích nước tiểu	2276-2295	-	ngực không ghi nhận gì bất thường     - 	 không ghi nhận gì bất thường     - ecg 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+1	ecg bình	2331-2339	-	tiểu không ghi nhận gì bất thường     - 	 thường     Tình trạng ngay trước khi nh	ViHealthBERT		ecg	LIKELY_GENUINE_TEST	test_cues:ecg
+1	VS9	2482-2485	-	nh viện     Kết quả khám lâm sàng     - 	8.3 12987 56 18 99RA     - Khi được chuy	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+1	phân tích nước	2618-2632	Kết quả xét nghiệm:	 chịu vùng ngực     Kết quả xét nghiệm: 	 tiểu không có gì đáng chú ý     Kết quả	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+1	chụp x-quang ngực	2693-2710	Kết quả chẩn đoán hình ảnh:	g chú ý     Kết quả chẩn đoán hình ảnh: 	 không có gì đáng chú ý     Các kết quả 	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+1	điện tâm đồ	2771-2782	-	 ý     Các kết quả chẩn đoán khác     - 	 là không ghi nhận gì bất thường     - m	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+1	monitor holter	2821-2835	-	ồ là không ghi nhận gì bất thường     - 	 cho thấy Nhịp xoang chiếm ưu thế. Ghi n	ViHealthBERT		holter	LIKELY_GENUINE_TEST	test_cues:holter
+2	bia	134-137	Các yếu tố nguy cơ liên quan: Có tiền sử sử dụng rượu	y cơ liên quan: Có tiền sử sử dụng rượu 	  2.  Tiền sử bệnh hiện tại     Triệu ch	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+2	đặt shunt dẫn lưu tĩnh mạch cửa qua da	555-593	Các thủ thuật đã thực hiện:	nh viện     Các thủ thuật đã thực hiện: 		ViHealthBERT	đặt|dẫn lưu|shunt|đặt shunt		LIKELY_PROCEDURE_NOT_TEST	required_example_shunt;procedure_cues_without_test_cues:đặt|dẫn lưu|shunt|đặt shunt;procedure_section
+3	tập kinh lâm sàng	20-37	Các	1. Tiền sử bệnh Các 	 trước đây - Tái phát các cơn ngất xỉu t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	thuốc	357-362	Thuốc trước khi nhập viện lần này: không tuân thủ điều trị bằng	n lần này: không tuân thủ điều trị bằng 	 Các yếu tố nguy cơ liên quan: Hiện đang	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+3	trong	613-618	- ước tính mất ý thức có thể	ái hét lên - ước tính mất ý thức có thể 	 30 giây - Không có triệu chứng trước đó	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+3	Thời gian	1068-1077	-	ị trí: N/A - Mức độ nghiêm trọng: N/A - 	: 30 giây (ước tính) - Tần suất: Hơn một	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	1134-1142	-	nh) - Tần suất: Hơn một lần một tháng - 	: N/A - Các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	1520-1528	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - Các yếu tố làm nặng thêm: Đi bộ 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	1727-1735	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	1937-1945	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - Các yếu tố làm nặng thêm: Gắng s	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	2146-2154	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - Các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	2351-2359	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - Các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	trống	2505-2510	- đánh	t cá chân: - Vị trí: Mắt cá chân - đánh 	 ngực: - các yếu tố làm nặng thêm: N/A -	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	2697-2705	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	Chiếu xạ	2896-2904	-	 N/A - Thời gian: N/A - Tần suất: N/A - 	: N/A - Các yếu tố làm nặng thêm: N/A - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	spo	3156-3159	- dấu hiệu sinh tồn ban đầu là mạch 83, huyết áp 159/72, nhịp thở 20,	 mạch 83, huyết áp 159/72, nhịp thở 20, 	2 (độ bão hòa oxy) 94-95 RA. - Phát hiện	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+3	điện tâm đồ	3288-3299	-	0, sau đó là nhịp tim chậm tương đối. - 	 (ecg) cho thấy bằng chứng có thể là nhồ	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+3	bảng công thức sinh hóa máu cơ	3424-3454	-	óng T không đặc hiệu thay đổi sóng t. - 	 bản, bảng công thức máu, bảng chức năng	ViHealthBERT			AMBIGUOUS	no_strong_cue
+3	bảng công thức máu	3460-3478	- bảng công thức sinh hóa máu cơ bản,	. - bảng công thức sinh hóa máu cơ bản, 	, bảng chức năng gan và bản phân tích nư	ViHealthBERT		công thức máu	LIKELY_GENUINE_TEST	test_cues:công thức máu
+3	bảng chức năng gan	3480-3498	- bảng công thức sinh hóa máu cơ bản, bảng công thức máu,	inh hóa máu cơ bản, bảng công thức máu, 	 và bản phân tích nước tiểu đều bình thư	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	phân tích nước tiểu	3506-3525	- Được đưa đến một bệnh viện OSH sau khi bị té ngã.	ông thức máu, bảng chức năng gan và bản 	 đều bình thườngbình thườngbình thườngbì	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	troponin	3578-3586	-	ờngbình thườngbình thườngbình thường. - 	 0.01. - chụp x-quang ngực cho thấy tim 	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+3	chụp x-quang ngực	3595-3612	-	h thườngbình thường. - troponin 0.01. - 	 cho thấy tim to nhưng không có bất thườ	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+3	chụp cắt lớp vi tính sọ não	3667-3694	-	o nhưng không có bất thường nào khác. - 	 bình thường. - Nhập viện khoa Nội. - Qu	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+3	sinh hóa máu	3988-4000	- bảng công thức	iện Kết quả xét nghiệm - bảng công thức 	 cơ bản bình thường - bảng công thức máu	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+3	công thức máu bình	4027-4045	- bảng	 sinh hóa máu cơ bản bình thường - bảng 	 thường - bảng chức năng gan bình thường	ViHealthBERT		công thức máu	LIKELY_GENUINE_TEST	test_cues:công thức máu
+3	phân tích nước tiểu	4092-4111	- bản	 - bảng chức năng gan bình thường - bản 	 bình thường - troponin 0.01 - rung nhĩ 	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+3	troponin	4126-4134	-	- bản phân tích nước tiểu bình thường - 	 0.01 - rung nhĩ kèm đáp ứng thất nhanh 	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+3	điện tâm đồ	4269-4280	- Có thể là nhồi máu cơ tim vùng dưới cũ (	Có thể là nhồi máu cơ tim vùng dưới cũ (	 (ecg)) - thay đổi sóng t không đặc hiệu	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+3	ecg	4282-4285	- Có thể là nhồi máu cơ tim vùng dưới cũ (điện tâm đồ (	i máu cơ tim vùng dưới cũ (điện tâm đồ (	)) - thay đổi sóng t không đặc hiệu (điệ	clinical recall		ecg	LIKELY_GENUINE_TEST	test_cues:ecg
+3	điện tâm đồ	4322-4333	- thay đổi sóng t không đặc hiệu (	ecg)) - thay đổi sóng t không đặc hiệu (	 (ecg)) Kết quả hình ảnh - Tim to (chụp 	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+3	ecg	4335-4338	- thay đổi sóng t không đặc hiệu (điện tâm đồ (	đổi sóng t không đặc hiệu (điện tâm đồ (	)) Kết quả hình ảnh - Tim to (chụp x-qua	clinical recall		ecg	LIKELY_GENUINE_TEST	test_cues:ecg
+3	chụp x-quang ngực	4368-4385	- Tim to (	âm đồ (ecg)) Kết quả hình ảnh - Tim to (	) - chụp cắt lớp vi tính sọ não bình thư	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+3	chụp cắt lớp vi tính sọ não	4389-4416	-	hình ảnh - Tim to (chụp x-quang ngực) - 	 bình thường	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+4	nội soi	1467-1474	Bệnh nhân được	kiện trước khi nhập viện Bệnh nhân được 	 thực quản - dạ dày - tá tràng ngoại trú	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+4	Chụp cộng hưởng từ mật tụy	1608-1634	Được điều trị bằng omeprazole.	 NSAIDs. Được điều trị bằng omeprazole. 	  ghi nhận sỏi đoạn cuối ống mật chủ. Xé	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+4	Xét nghiệm chức năng gan	1823-1847	Xét nghiệm:	tiếp .Đánh giá tại bệnh viện Xét nghiệm:	 ghi nhận tăng men gan. Chẩn đoán hình ả	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+4	Nội soi thực quản - dạ dày - tá tràng	1901-1938	Chẩn đoán hình ảnh và thăm dò:	 men gan. Chẩn đoán hình ảnh và thăm dò:	: viêm dạ dày. Cộng hưởng từ mật tụy : s	ViHealthBERT			AMBIGUOUS	no_strong_cue
+4	Nội soi mật tụy ngược dòng	2032-2058	Thủ thuật được thực hiện   :	ng mật chủ. Thủ thuật được thực hiện   :	 (ERCP). Trong quá trình ERCP, lấy thành	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+4	ERCP	2060-2064	Thủ thuật được thực hiện   :Nội soi mật tụy ngược dòng (	hực hiện   :Nội soi mật tụy ngược dòng (	). Trong quá trình ERCP, lấy thành công 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+4	ERCP	2083-2087	Thủ thuật được thực hiện   :Nội soi mật tụy ngược dòng (ERCP). Trong quá trình	 tụy ngược dòng (ERCP). Trong quá trình 	, lấy thành công 02 viên sỏi tại đoạn cu	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+4	chụp cộng hưởng từ mật tụy tụi	2155-2185	-	 tại đoạn cuối ống mật chủ (CBD).     - 	 mật được thực hiện cho thấy sỏi ống dẫn	ViHealthBERT			AMBIGUOUS	no_strong_cue
+5	ast	809-812	-	 xét nghiệm     - viêm gan do men     - 	 (aspartate aminotransferase) là 319    	clinical recall		ast	LIKELY_GENUINE_TEST	test_cues:ast
+5	alt	855-858	-	spartate aminotransferase) là 319     - 	 (alanine aminotransferase) là 690     -	clinical recall		alt	LIKELY_GENUINE_TEST	test_cues:alt
+5	alanine aminotransferase	860-884	- alt (	ate aminotransferase) là 319     - alt (	) là 690     - phosphatase kiềm (ap) là 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+5	phosphatase kiềm	899-915	-	(alanine aminotransferase) là 690     - 	 (ap) là 983     - bilirubin toàn phần (	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+5	bilirubin toàn phần	934-953	-	   - phosphatase kiềm (ap) là 983     - 	 (tbili) là 2.4     - bạch cầu (wbc) 11.	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+5	wbc	985-988	- bạch cầu (	oàn phần (tbili) là 2.4     - bạch cầu (	) 11.6     - Đã lấy cấy máu  Kết quả chẩ	clinical recall		wbc	LIKELY_GENUINE_TEST	test_cues:wbc
+5	lấy cấy	1004-1011	- Đã	 2.4     - bạch cầu (wbc) 11.6     - Đã 	 máu  Kết quả chẩn đoán hình ảnh:  Siêu 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+5	Siêu âm gan mật	1046-1061	Kết quả chẩn đoán hình ảnh:	y cấy máu  Kết quả chẩn đoán hình ảnh:  	  ghi nhận tình trạng giãn đường mật, gợ	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+5	Nội soi mật tụy ngược dòng	1188-1214	Các thủ thuật đã thực hiện:	à can thiệp. Các thủ thuật đã thực hiện:	  Đặt stent đường mật để dẫn lưu và giải	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+5	Đặt stent đường mật	1216-1235	Các thủ thuật đã thực hiện:Nội soi mật tụy ngược dòng	ã thực hiện:Nội soi mật tụy ngược dòng  	 để dẫn lưu và giải áp đường mật. Đặt nộ	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+5	Đặt nội khí quản	1269-1285	Đặt stent đường mật để dẫn lưu và giải áp đường mật.	ng mật để dẫn lưu và giải áp đường mật. 	 nhằm  Đặt catheter động mạch ( Đặt đườn	ViHealthBERT	đặt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt
+5	catheter động mạch	1296-1314	Đặt	p đường mật. Đặt nội khí quản nhằm  Đặt 	 ( Đặt đường truyền tĩnh mạch ngoại vi  	ViHealthBERT	catheter		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:catheter
+5	Đặt đường truyền tĩnh mạch ngoại vi	1317-1352	Đặt catheter động mạch (	khí quản nhằm  Đặt catheter động mạch ( 	      - levophed     - propofol để an th	ViHealthBERT	đặt|truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|truyền
+6	siêu âm Doppler động mạchcho	235-263	- Được theo dõi định kỳ bằng	 viện     - Được theo dõi định kỳ bằng  	 nghẽn tắc và hẹp động mạch cảnh     - G	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+6	siêu âm doppler hai chiều	320-345	- Ghi nhận trên các	 động mạch cảnh     - Ghi nhận trên các 	 gần đây có hẹp nặng, tỷ số PSV/EDV > 7,	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+6	tái thông động mạch cảnh	477-501	- Chỉ định can thiệp	 khi nhập viện     - Chỉ định can thiệp 	 sau khi đã đánh giá đầy đủ nguy cơ và l	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+7	trong	1181-1186	- Được yêu cầu ký một mẫu đơn cam kết đảm bảo an toàn	 ký một mẫu đơn cam kết đảm bảo an toàn 	 24 giờ trước khi bắt đầu chương trình đ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+7	chụp ct sọ	1278-1288	-	trú, và anh ấy không thể làm được     - 	 được phát hiện tình cờ tại Cấp cứu; phá	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+7	chọc dò dịch não tủy	1360-1380	-	cứu; phát hiện bệnh lý chất trắng     - 	 là không phát hiện bất thường     - đán	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+7	đánh giá thần kinh	1417-1435	-	tủy là không phát hiện bất thường     - 	 để tìm bệnh lý chất trắng     - các băn	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+7	chọc dò dịch não tủy	1754-1774	Kết quả xét nghiệm:	á tại bệnh viện     Kết quả xét nghiệm: 	 là âm tính     Kết quả chẩn đoán hình ả	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+7	chụp ct sọ	1818-1828	Kết quả chẩn đoán hình ảnh:	âm tính     Kết quả chẩn đoán hình ảnh: 	: phát hiện bệnh lý chất trắng (được phá	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+7	chọc dò dịch não tủy	1916-1936	Các thủ thuật đã thực hiện:	ình cờ)     Các thủ thuật đã thực hiện: 	 (Đột sống thắt lưng)     Các phát hiện 	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc;procedure_section
+7	đánh giá thần kinh	1997-2015	-	     Các phát hiện chẩn đoán khác     - 	 để tìm bệnh lý chất trắng     - các băn	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+8	xét nghiệm tế bào học từ dịch chọc	334-368	Kết quả	m nhỏ  đối với tổn thương này.  Kết quả 	 hút ghi nhận bất thường, cần tiếp tục đ	ViHealthBERT	chọc	xét nghiệm	AMBIGUOUS	both_procedure_and_test_cues
+8	Chọc hút bằng kim nhỏ	852-873	Thủ thuật đã thực hiện:	hận bất thường. Thủ thuật đã thực hiện: 	  nốt tuyến giáp trái.Tổn thương ghi nhậ	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc;procedure_section
+8	tuyến	879-884	Thủ thuật đã thực hiện: Chọc hút bằng kim nhỏ  nốt	ã thực hiện: Chọc hút bằng kim nhỏ  nốt 	 giáp trái.Tổn thương ghi nhận: Nốt tuyế	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+9	siêu âm	312-319	-	  Các sự kiện trước khi nhập viện     - 	 được thực hiện vào [Date]     - huyết c	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+9	huyết cầu tố	352-364	-	siêu âm được thực hiện vào [Date]     - 	 là 26.1 vào thời điểm đó     - Các lựa 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+9	can thiệp x-quang	470-487	- Các lựa chọn điều trị được cân nhắc: điều trị bảo tồn, điều trị nội khoa,	c: điều trị bảo tồn, điều trị nội khoa, 	 và điều trị ngoại khoa     - Bệnh nhân 	ViHealthBERT	can thiệp	x-quang	AMBIGUOUS	both_procedure_and_test_cues;procedure_section
+9	khoa	506-510	- huyết cầu tố là 26.1 vào thời điểm đó	oa, can thiệp x-quang và điều trị ngoại 	     - Bệnh nhân yêu cầu cắt bỏ u xơ tử 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+9	chẩn	724-728	Kết quả	í nghiệm: huyết cầu tố 26.1     Kết quả 	 đoán hình ảnh     - siêu âm tử cung vào	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+9	ảnh	739-742	Kết quả chẩn đoán hình	 cầu tố 26.1     Kết quả chẩn đoán hình 	     - siêu âm tử cung vào [Date] cho th	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+9	siêu âm tử cung	749-764	-	.1     Kết quả chẩn đoán hình ảnh     - 	 vào [Date] cho thấy:     - Tử cung đo 1	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+10	chẩn	304-308	Kết quả	 ung thư phôi) tăng nhẹ lên 4.9 Kết quả 	 đoán hình ảnh - mri vùng chậu thực tế k	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+10	ảnh	319-322	Kết quả chẩn đoán hình	tăng nhẹ lên 4.9 Kết quả chẩn đoán hình 	 - mri vùng chậu thực tế không chẩn đoán	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+10	siêu âm	402-409	-	 được do không có mỡ nào trong cơ thể - 	 hôm nay cũng rất khó khăn, nhưng cho th	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+10	sinh thiết	553-563	-	 thể đánh giá tốt Thủ thuật thực hiện - 	 (trước đây) - siêu âm hôm nay Các phát 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+10	siêu âm	578-585	-	ật thực hiện - sinh thiết (trước đây) - 	 hôm nay Các phát hiện chẩn đoán khác - 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+10	sinh thiết	690-700	-	h ảnh của một u ác trực tràng đáng kể - 	 chỉ cho thấy một u tuyến - đến khám để 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+10	phẫu thuật	755-765	- đến khám để phân giai đoạn	ột u tuyến - đến khám để phân giai đoạn 	 với tem (viết tắt)	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+11	liệu	308-312	Thuốc trước khi nhập viện lần này:	     Thuốc trước khi nhập viện lần này: 	 pháp lợi tiểu 2.  Tiền sử bệnh hiện tại	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+11	chọc dò màng phổi 3L4	443-464	-	ện     Các thủ thuật đã thực hiện     - 	     - chọc dò dịch ổ bụng 7L     - thủ 	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+11	chọc dò dịch ổ bụng	471-490	-	 hiện     - chọc dò màng phổi 3L4     - 	 7L     - thủ thuật TIPS	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+11	thuật TIPS	504-514	- thủ	     - chọc dò dịch ổ bụng 7L     - thủ 		ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+12	tylenol	975-982	- Được chuyển đến phòng cấp cứu khám và điều trị	i cộng đồng ở bệnh nhân phức tạp,  cùng 	  3.  Đánh giá tại bệnh viện     Kết quả	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+12	công	1035-1039	Kết quả xét nghiệm:	á tại bệnh viện     Kết quả xét nghiệm: 	 thức máu (cbc) nâng cao lên 11.3     Kế	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+12	chụp x-quang ngực	1105-1122	Kết quả chẩn đoán hình ảnh:	ên 11.3     Kết quả chẩn đoán hình ảnh: 	 không phát hiện viêm phổi hoặc phù phổi	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+12	mẫu cấy máu	1199-1210	Các thủ thuật đã thực hiện: Lấy	hổi     Các thủ thuật đã thực hiện: Lấy 		ViHealthBERT		cấy máu	LIKELY_GENUINE_TEST	test_cues:cấy máu;procedure_section
+13	Thở oxy	102-109	-	 dụng corticoid liều cao kéo dài.     - 	 tại nhà     - Hội chứng kháng enzym tổn	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+13	phẫu thuật	223-233	Tiền sử	 Tăng huyết áp nguyên phát.     Tiền sử 	 / thủ thuật: Sinh thiết nội mạc tử cung	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+13	Sinh thiết nội mạc tử cung	247-273	Tiền sử phẫu thuật / thủ thuật:	át.     Tiền sử phẫu thuật / thủ thuật: 	 gần đây     Thuốc trước khi nhập viện  	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+13	Thở oxy	350-357	-	n     -Corticoid liều cao kéo dài     - 	 tại nhà     - Tăng liều bactrim (do bác	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+13	trong	1717-1722	- Thời gian: Tình trạng ngày càng nặng	 - Thời gian: Tình trạng ngày càng nặng 	 5 ngày     - Các triệu chứng liên quan:	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+14	khoa	21-25	1.  Tiền sử bệnh nội	1.  Tiền sử bệnh nội 	 2.  Tiền sử bệnh hiện tại Lý do nhập vi	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+14	nghiệm pháp gắng sức	416-436	- Các	i Các sự kiện trước khi nhập viện - Các 	 trước đây cho kết quả bất thường - Xạ h	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+14	Xạ hình tưới máu cơ tim	472-495	-	 sức trước đây cho kết quả bất thường - 	 gần đây cho thấy thiếu máu cơ tim vùng 	ViHealthBERT			AMBIGUOUS	no_strong_cue
+14	Chụp động mạch vành	553-572	- Các nghiệm pháp gắng sức trước đây cho kết quả bất thường	thiếu máu cơ tim vùng dưới và thành bên 	: hẹp 60% đoạn gần động mạch liên thất t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+14	phẫu thuật bắc cầu động mạch vành	646-679	Được chỉ định đánh giá	thất trước trái. Được chỉ định đánh giá 	. Chẩn đoán sơ bộ : Bệnh động mạch vành 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+15	Truyền dịch yếu tố IX đậm đặc	144-173	Các thủ thuật thực hiện:	 tại bệnh viện Các thủ thuật thực hiện: 	 Các phát hiện chẩn đoán khác - xuất huy	ViHealthBERT	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền;procedure_section
+15	Điều trị chống đông	262-281	-	 không do chấn thương, không đặc hiệu - 		ViHealthBERT	điều trị		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:điều trị
+16	phẫu thuật	160-170	Tiền sử	Đái tháo đường - xơ gan do rượu Tiền sử 	 / thủ thuật: Dựa trên tiền sử phẫu thuậ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+16	phẫu thuật	201-211	Tiền sử phẫu thuật / thủ thuật: Dựa trên tiền sử	hẫu thuật / thủ thuật: Dựa trên tiền sử 	" mới được bổ sung: ""Phẫu thuật mở cắt nố"	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+16	Phẫu thuật mở cắt nối trực tràng/đại tràng sigma	231-279	"Tiền sử phẫu thuật / thủ thuật: Dựa trên tiền sử phẫu thuật mới được bổ sung: """	"n tiền sử phẫu thuật mới được bổ sung: """	 vì ung thư tuyến đại tràng Các yếu tố n	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt;procedure_section
+16	khám thực thể	1481-1494	Kết quả	bụng. 3. Đánh giá tại bệnh viện Kết quả 	 - Khám thấy ran nổ, phù phù, dịch rỉ hu	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+16	dấu hiệu sinh tồn là	1588-1608	-	ết mổ, và phân nâu dương tính guaiac. - 	: 98.8 65 9360 20 95 2LNC (tại khoa Cấp 	lab-pair recall			AMBIGUOUS	no_strong_cue
+16	quang	2053-2058	Kết quả chẩn đoán hình ảnh: chụp x-	ước. Kết quả chẩn đoán hình ảnh: chụp x-	 ngực có xẹp phổi thùy dưới phải do chèn	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+16	Truyền dịch tĩnh mạch	2156-2177	-	màng phổi. Các thủ thuật đã thực hiện - 	 750cc - Xông khí dung Các phát hiện chẩ	ViHealthBERT	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền
+16	Xông khí dung	2186-2199	-	ực hiện - Truyền dịch tĩnh mạch 750cc - 	 Các phát hiện chẩn đoán khác - Viêm phổ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	Sốt cao nhất	325-337	-	ng khỏe kèm theo sốt, mệt mỏi, đau cơ - 	 là 102.9°F không đáp ứng với tylenol và	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+17	siêu âm	882-889	- Đã thực hiện	ực hiện khám và điều trị - Đã thực hiện 	 vùng cổ phải  cho có kết qủa là  áp xe/	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+17	Dẫn lưu dịch	953-965	-	t qủa là  áp xe/viêm khớp nhiễm trùng - 	 - x-quang đề nghị mri - nhập viện tại  	ViHealthBERT	dẫn lưu		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:dẫn lưu
+17	x-quang	968-975	-	/viêm khớp nhiễm trùng - Dẫn lưu dịch - 	 đề nghị mri - nhập viện tại  khoa cấp c	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+17	mri	984-987	- x-quang đề nghị	 trùng - Dẫn lưu dịch - x-quang đề nghị 	 - nhập viện tại  khoa cấp cứu để điều t	clinical recall		mri	LIKELY_GENUINE_TEST	test_cues:mri
+17	mri	1065-1068	- nhập viện tại  khoa cấp cứu để điều trị thêm, dùng kháng sinh tĩnh mạch và	 trị thêm, dùng kháng sinh tĩnh mạch và 	 3. Đánh giá tại bệnh viện Kết quả khám 	ViHealthBERT		mri	LIKELY_GENUINE_TEST	test_cues:mri;procedure_section
+17	xét nghiệm máu	1360-1374	Kết quả	đều, không có tiếng tim bệnh lý Kết quả 	 - bạch cầu 13.9 - 80 neutrophil - 11 ly	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+17	chem	1437-1441	- bình thường	eutrophil - 11 lymphocyte - bình thường 	 7 - ck 58 - alt 92 - hiv vl đang chờ - 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+17	alt	1454-1457	-	mphocyte - bình thường chem 7 - ck 58 - 	 92 - hiv vl đang chờ - soi tươi ký sinh	lab-pair recall		alt	LIKELY_GENUINE_TEST	test_cues:alt
+17	soi tươi	1481-1489	-	 7 - ck 58 - alt 92 - hiv vl đang chờ - 	 ký sinh trùng âm tính Kết quả chẩn đoán	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	sinh	1493-1497	- soi tươi ký	 alt 92 - hiv vl đang chờ - soi tươi ký 	 trùng âm tính Kết quả chẩn đoán hình ản	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	chẩn	1520-1524	Kết quả	 soi tươi ký sinh trùng âm tính Kết quả 	 đoán hình ảnh - siêu âm vùng cổ phải (s	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	ảnh	1535-1538	Kết quả chẩn đoán hình	nh trùng âm tính Kết quả chẩn đoán hình 	 - siêu âm vùng cổ phải (scm):  ổ tụ dịc	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	siêu âm vùng cổ phải	1541-1561	-	ng âm tính Kết quả chẩn đoán hình ảnh - 	 (scm):  ổ tụ dịch chia làm hai thùy, gi	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+17	scm	1563-1566	- siêu âm vùng cổ phải (	n đoán hình ảnh - siêu âm vùng cổ phải (	):  ổ tụ dịch chia làm hai thùy, giới hạ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	siêu âm vùng cổ phải	1909-1929	-	 bên trong Các thủ thuật đã thực hiện - 	 (scm) - Hút 0.5cc dịch mủ - Dẫn lưu dịc	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+17	scm	1931-1934	- siêu âm vùng cổ phải (	ật đã thực hiện - siêu âm vùng cổ phải (	) - Hút 0.5cc dịch mủ - Dẫn lưu dịch mủ/	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+17	Dẫn lưu dịch mủ	1958-1973	-	ùng cổ phải (scm) - Hút 0.5cc dịch mủ - 	/dịch chứa	ViHealthBERT	dẫn lưu		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:dẫn lưu
+18	chụp cắt lớp vi tính mạch máu	486-515	Kết quả chụp ảnh:	giá tại bệnh viện     Kết quả chụp ảnh: 	 (ctma) ngực được thực hiện để đánh giá 	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+18	ctma	517-521	Kết quả chụp ảnh: chụp cắt lớp vi tính mạch máu (	hụp ảnh: chụp cắt lớp vi tính mạch máu (	) ngực được thực hiện để đánh giá tắc mạ	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+18	chụp cắt lớp vi tính mạch máu	713-742	Các thủ thuật đã thực hiện:	loại B      Các thủ thuật đã thực hiện: 	 (ctma) ngực được thực hiện     Các phát	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt;procedure_section
+18	ctma	744-748	Các thủ thuật đã thực hiện: chụp cắt lớp vi tính mạch máu (	ực hiện: chụp cắt lớp vi tính mạch máu (	) ngực được thực hiện     Các phát hiện 	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct;procedure_section
+18	ngực	750-754	Các thủ thuật đã thực hiện: chụp cắt lớp vi tính mạch máu (ctma)	n: chụp cắt lớp vi tính mạch máu (ctma) 	 được thực hiện     Các phát hiện chẩn đ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+19	phẫu thuật lấy u	144-160	- Di căn não vùng trán phải dã	 nhỏ     - Di căn não vùng trán phải dã 	     - Tắc mạch huyết khối tĩnh mạch chủ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+19	phẫu thuật	297-307	Tiền sử	uyết áp     - Sa van hai lá     Tiền sử 	 / thủ thuật: lấy u di căn bán cầu não p	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+20	phẫu thuật	234-244	Tiền sử	 - tăng sản tuyến tiền liệt     Tiền sử 	 / thủ thuật     - đã phẫu thuật TURP   	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+20	thủ thuật	247-256	Tiền sử phẫu thuật /	uyến tiền liệt     Tiền sử phẫu thuật / 	     - đã phẫu thuật TURP      - xạ hình	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+20	phẫu thuật TURP	266-281	- đã	Tiền sử phẫu thuật / thủ thuật     - đã 	      - xạ hình tưới máu cơ tim mibi    	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+20	xạ hình tưới máu cơ tim mibi	289-317	-	ủ thuật     - đã phẫu thuật TURP      - 	     Thuốc trước khi nhập viện     - met	ViHealthBERT			AMBIGUOUS	no_strong_cue
+20	chụp x-quang ngực	1467-1484	-	i di lệch; mất vận động vùng đỉnh     - 	 Hình ảnh mức nước - hơi vùng ngực.     	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+20	chụp ct ngực không thuốc cản quang	1526-1560	-	ình ảnh mức nước - hơi vùng ngực.     - 	 cho thấy tim to, tràn dịch màng tim, tr	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+20	chụp ảnh/kỹ thuật chẩn đoán hình ảnh	1980-2016	Kết quả	 cử động và thay đổi tư thế     Kết quả 	     - chụp x-quang ngực: mức nước-khí  	ViHealthBERT			AMBIGUOUS	no_strong_cue
+20	chụp x-quang ngực	2023-2040	-	p ảnh/kỹ thuật chẩn đoán hình ảnh     - 	: mức nước-khí     - chụp ct ngực không 	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+20	chụp ct ngực không thuốc cản quang	2061-2095	-	- chụp x-quang ngực: mức nước-khí     - 	: tim to, tràn dịch màng tim, tràn dịch 	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+20	siêu âm tim qua thành ngực	2335-2361	-	ước vừa phải ở thành dưới gần mấu     - 	 (siêu âm tim qua thành ngực): EF30, mất	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+20	siêu âm tim qua	2363-2378	- siêu âm tim qua thành ngực (	n mấu     - siêu âm tim qua thành ngực (	 thành ngực): EF30, mất vận động vùng đỉ	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+20	EF3	2392-2395	- siêu âm tim qua thành ngực (siêu âm tim qua thành ngực):	hành ngực (siêu âm tim qua thành ngực): 	0, mất vận động vùng đỉnh, hở van ba lá 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+20	chụp ct ngực không thuốc cản quang	2611-2645	-	ới     Các thủ thuật đã thực hiện     - 	     - siêu âm tim qua thành ngực (siêu 	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+20	siêu âm tim qua thành ngực	2652-2678	-	hụp ct ngực không thuốc cản quang     - 	 (siêu âm tim qua thành ngực)     - chụp	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+20	siêu âm tim qua thành	2680-2701	- siêu âm tim qua thành ngực (	quang     - siêu âm tim qua thành ngực (	 ngực)     - chụp xạ hình tim bằng mibi 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+20	chụp xạ hình tim bằng mibi	2714-2740	-	ngực (siêu âm tim qua thành ngực)     - 	     - đã phẫu thuật TURP (Transurethral	ViHealthBERT			AMBIGUOUS	no_strong_cue
+20	phẫu thuật TURP	2750-2765	- đã	  - chụp xạ hình tim bằng mibi     - đã 	 (Transurethral Resection of the Prostat	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+21	phẫu thuật sửa van tĩnh mạch chủ ngực bụng	451-493	Lý do nhập viện: Đến khám để thực hiện giai đoạn 2 của	: Đến khám để thực hiện giai đoạn 2 của 	 3.  Đánh giá tại bệnh viện	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+22	chụp ct sọ não không thuốc cản quang	224-260	Kết quả chẩn đoán hình ảnh:	n thần kinh Kết quả chẩn đoán hình ảnh: 	 Hình ảnh  khối máu tụ dưới màng cứng bá	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+22	chụp ct sọ não không thuốc cản quang	342-378	Các thủ thuật đã thực hiện:	cấp hai bên Các thủ thuật đã thực hiện: 	 	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct;procedure_section
+23	cắt lớp vi tính sọ não	280-302	Lý do vào viện: Cơn rối loạn ý thức thoáng qua, nghi ngờ cơn co giật.	ợc chẩn đoán xuất huyết dưới nhện. Chụp 	 cho hình ảnh  xuất huyết dưới nhện vùng	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+23	CT theo dõi	558-569	Các lần chụp	 dưới màng cứng mạn tính.  Các lần chụp 	 sau đó ổn định và bệnh nhân được xuất v	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+23	CT kiểm tra	867-878	Bệnh nhân tiếp tục được theo dõi, các lần chụp	ân tiếp tục được theo dõi, các lần chụp 	 không ghi nhận diễn tiến xấu nên được x	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+23	CT sọ	2581-2586	Cận lâm sàng:	c tiểu tiện không tự chủ. Cận lâm sàng: 	 não trước đó ghi nhận xuất huyết dưới n	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+24	phẫu thuật	112-122	Tiền sử	i giai IIIB ung thư vú trái     Tiền sử 	 / thủ thuật     - cắt bỏ tuyến vú trái 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+24	thủ thuật	125-134	Tiền sử phẫu thuật /	ng thư vú trái     Tiền sử phẫu thuật / 	     - cắt bỏ tuyến vú trái đơn giản    	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+24	cắt bỏ tuyến vú trái	141-161	-	   Tiền sử phẫu thuật / thủ thuật     - 	 đơn giản     - thủ thuật nạo hạch gác r	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+24	nạo hạch gác rồng	187-204	- thủ thuật	 tuyến vú trái đơn giản     - thủ thuật 	 bên trái 2.  Tiền sử bệnh hiện tại     	ViHealthBERT	nạo		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:nạo;procedure_section
+24	chọc hút dịch	626-639	- vùng da sưng nề được	i phòng khám     - vùng da sưng nề được 	, gửi đi cấy mẫu bệnh phẩm     - được ch	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+24	phẫu thuật	970-980	-  ban đỏ xuất hiện nhiểu ở vị trí	     -  ban đỏ xuất hiện nhiểu ở vị trí 	     - đau khi sờ nắn vùng mổ     - chón	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+24	phẫu thuật	1170-1180	- ban đỏ ở vị trí	Dấu hiệu lâm sàng     - ban đỏ ở vị trí 	     - đau ấn vùng mổ     - không sốt   	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+24	chọc hút dịch	1326-1339	- Đã khám tổn thương da,	 thực hiện     - Đã khám tổn thương da, 	     - dùng vancomycin	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+25	can thiệp nội mạch	136-154	Đã thực hiện nhiều thủ thuật	i chân     Đã thực hiện nhiều thủ thuật 	 qua đường vào động mạch đùi phải. 2.  T	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp;procedure_section
+26	phẫu thuật	131-141	Lý do nhập viện: đến khám vì sau cân sau	ý do nhập viện: đến khám vì sau cân sau 	     Các sự kiện trước khi nhập viện    	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+27	phẫu thuật cắt bỏ đại tràng	115-142	- Tiền sử	 hiệu     - Tăng huyết áp     - Tiền sử 	 do Ung thư đại tràng     - Tiền sử Thuy	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+27	phẫu thuật	270-280	Tiền sử	ắc phổi đang dùng coumadin)     Tiền sử 	 / thủ thuật: Cắt đại tràng nhiều năm tr	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+27	Cắt đại tràng	294-307	Tiền sử phẫu thuật / thủ thuật:	in)     Tiền sử phẫu thuật / thủ thuật: 	 nhiều năm trước     Thuốc trước khi nhậ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt;procedure_section
+27	coumadin	355-363	Thuốc trước khi nhập viện:	ăm trước     Thuốc trước khi nhập viện: 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+27	spo	1170-1173	- Các chỉ số ban đầu vs là tc 37 độ c hr 88 bp 13482 rr 14	u vs là tc 37 độ c hr 88 bp 13482 rr 14 	2 100ra     - Bị kích hoạt để hr 140 kho	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+28	phẫu thuật cắt bỏ tuyến tiền liệt	121-154	-	ý mãn tính     - tiền sử rung nhĩ     - 	 (u ác của tuyến tiền liệt)     - rối lo	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+28	phẫu thuật	232-242	Tiền sử	loạn cảm xúc lưỡng cực khác     Tiền sử 	 / thủ thuật: phẫu thuật cắt bỏ tuyến ti	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+28	phẫu thuật cắt bỏ tuyến tiền liệt	256-289	Tiền sử phẫu thuật / thủ thuật:	hác     Tiền sử phẫu thuật / thủ thuật: 	 (u ác của tuyến tiền liệt)     Thuốc tr	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt;procedure_section
+28	cấy máu	1015-1022	- Được gọi lại nhập viện do có kết quả	- Được gọi lại nhập viện do có kết quả  	 dương tính      Triệu chứng hiện tại   	ViHealthBERT		cấy máu	LIKELY_GENUINE_TEST	test_cues:cấy máu
+28	siêu âm	1601-1608	- Được thực hiện	n nhập viện trước.     - Được thực hiện 	 vùng gan mật tại phòng cấp cứu cho thấy	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+28	laboratory	1751-1761	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - lipase là tăng lên ở mức 623 (lần	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+28	tbr	1870-1873	-	men gan nhẹ (lần nhập viện trước)     - 	 là cao tới 1.0 sau đó cải thiện (lần nh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+28	cấy máu	2010-2017	- dương tính	 (lần nhập viện trước)     - dương tính 	 khi tái khám với GPRs     Kết quả chẩn 	ViHealthBERT		cấy máu	LIKELY_GENUINE_TEST	test_cues:cấy máu
+28	GPRs	2035-2039	- dương tính cấy máu khi tái khám với	  - dương tính cấy máu khi tái khám với 	     Kết quả chẩn đoán hình ảnh     - si	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+28	chẩn	2052-2056	Kết quả	y máu khi tái khám với GPRs     Kết quả 	 đoán hình ảnh     - siêu âm vùng gan mậ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+28	ảnh	2067-2070	Kết quả chẩn đoán hình	hám với GPRs     Kết quả chẩn đoán hình 	     - siêu âm vùng gan mật cho thấy sỏi	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+28	siêu âm	2077-2084	-	Rs     Kết quả chẩn đoán hình ảnh     - 	 vùng gan mật cho thấy sỏi mật nhưng khô	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+28	chụp ct bụng chậu	2188-2205	-	sỏi ống mật (lần nhập viện trước)     - 	 là chưa phát hiện bất thường (lần nhập 	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+28	siêu âm	2263-2270	-	 bất thường (lần nhập viện trước)     - 	 vùng gan mật hiện tại cho thấy túi mật 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+29	khoa	21-25	1.  Tiền sử bệnh nội	1.  Tiền sử bệnh nội 	  2.  Tiền sử bệnh hiện tại Lý do nhập v	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+30	Thuốc giảm đau	293-307	-	gừng uống  cách nhập viện 5 ngày)     - 	 (ngừng) 2.  Tiền sử bệnh hiện tại     L	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+30	Thuốc	573-578	-	tiết niệu, vị trí không xác định.     - 	 giảm đau đã ngừng.     - Không có thay 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+30	thuốc giảm đau	724-738	- Thuốc giảm đau đã ngừng.	ết niệu, vị trí không xác định và ngừng 	.     - Liều gleevec đã ngừng cách nhập 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+31	Thai	45-49	Lý do nhập viện: Khởi phát chuyển dạBệnh sử:	 nhập viện: Khởi phát chuyển dạBệnh sử: 	 41 tuần, nhập viện để khởi phát chuyển 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+32	Siêu âm mạch máu chi trên	1116-1141	Tình trạng hô hấp cải thiện sau hỗ trợ hô hấp và bệnh nhân ổn định trở lại.	n tĩnh mạch trung tâm ngoại vi (PICC).  	 không ghi nhận huyết khối, xạ hình thôn	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+32	xạ hình thông khí - tưới máu phổi	1169-1202	Siêu âm mạch máu chi trên không ghi nhận huyết khối,	máu chi trên không ghi nhận huyết khối, 	 cho thấy xác suất thấp thuyên tắc phổi.	ViHealthBERT			AMBIGUOUS	no_strong_cue
+32	furosemide	1502-1512	Sáng ngày nhập viện, bệnh nhân xuất hiện khò khè và ho tăng lên.	ng albuterol 2 lần, dùng guaifenesin và 	 40 mg đường uống nhưng triệu chứng khôn	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+32	Siêu âm mạch máu chi trên	2199-2224	.Các phát hiện chẩn đoán khác:	hicillin, nghi liên quan catheter PICC  	 không ghi nhận huyết khối. Xạ hình thôn	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+32	Xạ hình thông khí	2252-2269	Siêu âm mạch máu chi trên không ghi nhận huyết khối.	máu chi trên không ghi nhận huyết khối. 	 – tưới máu phổi cho thấy xác suất thấp 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+32	tưới máu phổi	2272-2285	Xạ hình thông khí –	hi nhận huyết khối. Xạ hình thông khí – 	 cho thấy xác suất thấp thuyên tắc phổi.	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+33	vancomycin	1434-1444	- được cho	ợc cho bumetanide 2mg iv     - được cho 	 1 gram     - được cho levofloxacin 750m	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+34	phẫu thuật	157-167	Tiền sử	h gan do rượu ở vị trí 35cm     Tiền sử 	 / thủ thuật: đã phẫu thuật tạo hậu môn 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+34	phẫu thuật tạo hậu môn nhân tạo	184-215	Tiền sử phẫu thuật / thủ thuật: đã	     Tiền sử phẫu thuật / thủ thuật: đã 	 kiểu túi nối hồi tràng - hậu môn     Th	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+34	tràng	233-238	- bằng chứng Bệnh gan do rượu ở vị trí 35cm	t tạo hậu môn nhân tạo kiểu túi nối hồi 	 - hậu môn     Thuốc trước khi nhập viện	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+34	opioid	295-301	Thuốc trước khi nhập viện: thuốc giảm đau	uốc trước khi nhập viện: thuốc giảm đau 	  2.  Tiền sử bệnh hiện tại     Thời điể	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+34	Thời gian	941-950	-	 bụng/khó chịu vùng bụng tăng dần     - 	: 48 giờ qua     - Tần suất: nôn x 1    	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+35	bạch cầu tăng	1290-1303	-	 bệnh viện     Kết quả xét nghiệm     - 	 là 39.2     - creatinin là 3.0     - tr	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+35	creatinin	1318-1327	-	ghiệm     - bạch cầu tăng là 39.2     - 	 là 3.0     - troponin là 0.10     - inr	lab-pair recall		creatinin	LIKELY_GENUINE_TEST	test_cues:creatinin
+35	troponin	1341-1349	-	ng là 39.2     - creatinin là 3.0     - 	 là 0.10     - inr là 1.4     - Tăng men	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+35	inr	1364-1367	-	nin là 3.0     - troponin là 0.10     - 	 là 1.4     - Tăng men gan. với alt là 1	lab-pair recall		inr	LIKELY_GENUINE_TEST	test_cues:inr
+35	với alt	1395-1402	- Tăng men gan.	10     - inr là 1.4     - Tăng men gan. 	 là 176 và ast là 287     - tổng phân tí	lab-pair recall		alt	LIKELY_GENUINE_TEST	test_cues:alt
+35	và ast	1410-1416	- Tăng men gan. với alt là 176	 1.4     - Tăng men gan. với alt là 176 	 là 287     - tổng phân tích nước tiểu c	lab-pair recall		ast	LIKELY_GENUINE_TEST	test_cues:ast
+35	phân tích nước tiểu	1435-1454	- tổng	với alt là 176 và ast là 287     - tổng 	 có đái tháo đườngđái tháo đường     Kết	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+35	chụp x-quang ngực	1519-1536	Kết quả chẩn đoán hình ảnh:	o đường     Kết quả chẩn đoán hình ảnh: 	 là bình thường     Các phát hiện chẩn đ	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+36	phẫu thuật	103-113	*   Tiền sử	n sử Bệnh thận đa nang)     *   Tiền sử 	 / thủ thuật: phẫu thuật tái tạo niệu qu	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+36	phẫu thuật tái tạo niệu quản trái	127-160	*   Tiền sử phẫu thuật / thủ thuật:	    *   Tiền sử phẫu thuật / thủ thuật: 	.     *   Thuốc trước khi nhập viện     	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+36	pcr	794-797	*   Giai đoạn giữa (	t một phần.         *   Giai đoạn giữa (	 là dương tính với virus bk).         * 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+36	siêu âm thận	1024-1036	*	   *   Lo ngại về đào thải.         *   	 cho thấy chỉ số kháng trở bình thường. 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+36	sinh thiết ghép thận	1088-1108	*	ỉ số kháng trở bình thường.         *   	 không có bằng chứng đào thải kháng thể 	ViHealthBERT	ghép		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:ghép
+36	siêu âm thận	1529-1541	*	ed from 5mg bid to 1mg bid.         *   	 cho thấy chỉ số kháng trở bình thường. 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+36	sinh thiết ghép thận	1593-1613	*	ỉ số kháng trở bình thường.         *   	 không có bằng chứng đào thải kháng thể 	ViHealthBERT	ghép		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:ghép
+36	sinh thiết	1834-1844	*   Tình trạng ngay trước khi nhập viện: Nhập viện để đánh giá thêm và	hập viện: Nhập viện để đánh giá thêm và 	 thận lại vào buổi sáng.  3.  Đánh giá t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+36	siêu âm thận	2045-2057	*   Kết quả chẩn đoán hình ảnh:	 bk     *   Kết quả chẩn đoán hình ảnh: 	 cho thấy chỉ số kháng trở bình thường  	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+36	Sinh thiết thận	2139-2154	*	 *   Thủ thuật đã thực hiện         *   	 (vào chính ngày hôm đó)         *   Sin	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+36	Sinh thiết thận	2191-2206	*	hận (vào chính ngày hôm đó)         *   	 lại vào buổi sáng (dự kiến)     *   Các	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+36	sinh thiết	2409-2419	*   Không có bằng chứng đào thải kháng thể hữu hình cấp tính (trong	thải kháng thể hữu hình cấp tính (trong 	)	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	Tiền sử bệnh nội khoa	16-37	1. Tiền sử bệnh	1. Tiền sử bệnh 	: Tăng huyết áp. Đái tháo đường, có biến	lab-pair recall			AMBIGUOUS	no_strong_cue
+37	khi	257-260	Torsemide: uống 1 viên/ngày, đôi	viện   Torsemide: uống 1 viên/ngày, đôi 	 2 viên/ngày. Insulin glargine: theo đơn	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	khi	763-766	- Báo cáo đang dùng 1 viên Torsemide/ ngày , đôi	 đang dùng 1 viên Torsemide/ ngày , đôi 	 2 viên - Bác sĩ đề nghị ngừng sử dụng t	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	glucose	911-918	-	yên tại nhà do hết que thử đường máu. - 	 là thấp, nên ngừng dùng glargine - Báo 	lab-pair recall		glucose	LIKELY_GENUINE_TEST	test_cues:glucose
+37	PCP	1200-1203	- Các xét nghiệm xét nghiệm được kiểm tra bởi	xét nghiệm xét nghiệm được kiểm tra bởi 	: kali là 6.3 mẫu không tan máu - Được g	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+37	kali	1205-1209	- Các xét nghiệm xét nghiệm được kiểm tra bởi PCP:	ghiệm xét nghiệm được kiểm tra bởi PCP: 	 là 6.3 mẫu không tan máu - Được gọi điệ	lab-pair recall		kali	LIKELY_GENUINE_TEST	test_cues:kali
+37	kali	1356-1360	-	 giá tại bệnh viện Kết quả xét nghiệm - 	 6.3, mẫu không tan máu - kali (k).8 - u	lab-pair recall		kali	LIKELY_GENUINE_TEST	test_cues:kali
+37	bun	1404-1407	- ure (	, mẫu không tan máu - kali (k).8 - ure (	) 83 - creatinine 5.7 - hemoglobin 7.8 -	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	hemoglobin	1431-1441	-	(k).8 - ure (bun) 83 - creatinine 5.7 - 	 7.8 - hba1c 6.5 - bnp 21,000 - tổng phâ	lab-pair recall		hemoglobin	LIKELY_GENUINE_TEST	test_cues:hemoglobin
+37	hba1c	1448-1453	-	 83 - creatinine 5.7 - hemoglobin 7.8 - 	 6.5 - bnp 21,000 - tổng phân tích nước 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	bnp	1460-1463	-	nine 5.7 - hemoglobin 7.8 - hba1c 6.5 - 	 21,000 - tổng phân tích nước tiểu bình 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	phân tích nước tiểu	1478-1497	- tổng	bin 7.8 - hba1c 6.5 - bnp 21,000 - tổng 	 bình thường - cúm âm tính Kết quả chẩn 	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+37	chụp x-quang ngực	1552-1569	Kết quả chẩn đoán hình ảnh:	cúm âm tính Kết quả chẩn đoán hình ảnh: 	: Tăng gánh nhẹ tuần hoàn phổi, tràn dịc	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+37	iv lasix 40 mg	1720-1734	-	insulin và dextrose cho tăng kali máu - 	 once	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+38	đặt stent	109-118	- bệnh tim mạch do xơ vữa động mạch	    - bệnh tim mạch do xơ vữa động mạch 	     - Suy tim dãn tâm thu giữ nguyên tr	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent
+38	phẫu thuật	179-189	Tiền sử	m thu giữ nguyên trương lực     Tiền sử 	 / thủ thuật: đặt stent  2.  Tiền sử bện	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+38	đặt stent	203-212	Tiền sử phẫu thuật / thủ thuật:	lực     Tiền sử phẫu thuật / thủ thuật: 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+38	trong	441-446	- Tăng tăng cân 3 pound	 - buồn nôn     - Tăng tăng cân 3 pound 	 7 ngày qua     Đặc điểm triệu chứng    	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+38	trong	642-647	- Các triệu chứng liên quan: buồn nôn, tăng tăng cân 3 pound	n quan: buồn nôn, tăng tăng cân 3 pound 	 7 ngày qua     Các sự kiện trước khi nh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+38	tmax	724-728	- Tự đo từ temperate đến	 nhập viện     - Tự đo từ temperate đến 	 102 sốt tại nhà     - Không có khó thở 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+38	kiểm	787-791	- Chưa	  - Không có khó thở hoặc ho     - Chưa 	 tra đường huyết     - Cháu gái xét nghi	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+38	glucose	994-1001	-	 bệnh viện     Kết quả xét nghiệm     - 	 537     - glucose cải thiện thành 367  	lab-pair recall		glucose	LIKELY_GENUINE_TEST	test_cues:glucose
+38	glucose	1012-1019	-	 quả xét nghiệm     - glucose 537     - 	 cải thiện thành 367     - bun (ure) 3  	clinical recall		glucose	LIKELY_GENUINE_TEST	test_cues:glucose
+38	bun	1046-1049	-	    - glucose cải thiện thành 367     - 	 (ure) 3     - cr (creatinine) 1.2     -	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+38	ure	1051-1054	- bun (	 glucose cải thiện thành 367     - bun (	) 3     - cr (creatinine) 1.2     - ag (	ViHealthBERT		ure	LIKELY_GENUINE_TEST	test_cues:ure
+39	công thức máu	454-467	-	t - nhịp tim nhanh Kết quả xét nghiệm - 	 là 32 - suy thận cấp - bất thường điện 	lab-pair recall		công thức máu	LIKELY_GENUINE_TEST	test_cues:công thức máu
+39	lớp vi	557-563	Kết quả chẩn đoán hình ảnh: Kết quả chụp cắt	uả chẩn đoán hình ảnh: Kết quả chụp cắt 	 tính cho thấy viêm túi mật thủng cấp tí	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+39	Đặt ống dẫn lưu phúc mạc qua da	627-658	Thủ thuật thực hiện:	mật thủng cấp tính Thủ thuật thực hiện: 	 cho túi mật	ViHealthBERT	đặt|dẫn lưu|đặt ống		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|dẫn lưu|đặt ống;procedure_section
+40	spo	1361-1364	- Bác sĩ PCP ghi nhận	gày nhập viện     - Bác sĩ PCP ghi nhận 	2 là 90-92% spo2 khi thở khí trời, 93% k	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+40	spo	1376-1379	- Bác sĩ PCP ghi nhận spo2 là 90-92%	   - Bác sĩ PCP ghi nhận spo2 là 90-92% 	2 khi thở khí trời, 93% khi không dùng o	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+40	số lượng bạch cầu	1532-1549	-	 bệnh viện     Kết quả xét nghiệm     - 	 là 12.5     - tổng phân tích nước tiểu 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+40	tổng phân tích nước tiểu	1564-1588	-	m     - số lượng bạch cầu là 12.5     - 	 đáng chú ý chỉ có vếtvết protein niệu. 	ViHealthBERT			AMBIGUOUS	no_strong_cue
+40	troponin	1636-1644	-	ú ý chỉ có vếtvết protein niệu.       - 	 âm tính x1     Kết quả chẩn đoán hình ả	clinical recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+40	x-quang ngực	1693-1705	Kết quả chẩn đoán hình ảnh: chụp	x1     Kết quả chẩn đoán hình ảnh: chụp 	 được cho là viêm phổi thùy dưới phải (R	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+41	trong	187-192	- Nôn ra máu	m dạ dày ruột do virus     - Nôn ra máu 	 2 ngày qua     Bệnh lý mãn tính: hội ch	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+41	phẫu thuật	324-334	Tiền sử	ích thích cách đây vài năm)     Tiền sử 	 / thủ thuật     - Nội soi (cách đây vài	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+41	thủ thuật	337-346	Tiền sử phẫu thuật /	h đây vài năm)     Tiền sử phẫu thuật / 	     - Nội soi (cách đây vài năm, phát h	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+41	Nội soi	353-360	-	   Tiền sử phẫu thuật / thủ thuật     - 	 (cách đây vài năm, phát hiện loét tá tr	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	Nội soi	411-418	-	vài năm, phát hiện loét tá tràng)     - 	 (cho thấy nhiều loét tá tràng và hồi tr	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	469-476	-	nhiều loét tá tràng và hồi tràng)     - 	 (Viêm thực quản độ C, loét thực quản dư	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	trong	1080-1085	- Nôn ra máu (	dạ dày ruột do virus)     - Nôn ra máu (	 2 ngày qua)     - Tình trạng đau bụng v	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	1332-1339	Diễn biến bệnh	kích thích, phát hiện loét tá tràng khi 	.     - Trong năm nay: không thể giữ đượ	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	1567-1574	Diễn biến bệnh	miệng, buồn nôn, tiêu chảy, nôn ra máu. 	 cho thấy nhiều loét tá tràng và hồi trà	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	test hơi thở h. pylori	1713-1735	- Gần đây: ngừng sử dụng omeprazole để làm	ần đây: ngừng sử dụng omeprazole để làm 	.     - Khi ngừng omeprazole: phát triển	ViHealthBERT			AMBIGUOUS	no_strong_cue
+41	nội soi	2264-2271	-	au tập viêm dạ dày ruột do virus)     - 	 cho thấy nhiều loét tá tràng và hồi trà	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	test hơi thở	2491-2503	- Ngừng sử dụng omeprazole để làm	)     - Ngừng sử dụng omeprazole để làm 	 h. pylori (gần đây)     - Phát triển đa	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	trong	2667-2672	Tình trạng ngay trước khi nhập viện: Tiếp tục nôn ra máu	rước khi nhập viện: Tiếp tục nôn ra máu 	 2 ngày qua  3.  khám  tại bệnh viện    	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+41	qua	2680-2683	Tình trạng ngay trước khi nhập viện: Tiếp tục nôn ra máu trong 2 ngày	 viện: Tiếp tục nôn ra máu trong 2 ngày 	  3.  khám  tại bệnh viện     Kết quả ph	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+41	test hơi thở	2840-2852	-	au tập viêm dạ dày ruột do virus)     - 	 h. pylori (lý do ngừng omeprazole)     	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	2925-2932	-	e)     Các thủ thuật đã thực hiện     - 	 (cách đây vài năm)     - nội soi (cho t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	2958-2965	-	     - nội soi (cách đây vài năm)     - 	 (cho thấy nhiều loét tá tràng và hồi tr	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+41	nội soi	3016-3023	-	nhiều loét tá tràng và hồi tràng)     - 	 (Viêm thực quản độ C, loét thực quản dư	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+42	methadone	162-171	Thuốc trước khi nhập viện lần này: đang dùng	 trước khi nhập viện lần này: đang dùng 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+43	phẫu thuật	38-48	Tiền sử	1.  Tiền sử bệnh nội khoa     Tiền sử 	 / thủ thuật: cắt cụt nhiều ngón chân ph	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+43	siêu âm tim	426-437	- đã thực hiện	năng nhồi máu cơ tim     - đã thực hiện 	 cho thấy hẹp van động mạch chủ nghiêm t	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+43	phẫu thuật thay van động mạch chủ	539-572	- được đề nghị	 bác sĩ tim mạch tại     - được đề nghị 	     - được giới thiệu để gặp bác sĩ    	ViHealthBERT	phẫu thuật|thay van		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|thay van
+43	siêu âm tim gắng sức	628-648	- đã thực hiện	 thiệu để gặp bác sĩ     - đã thực hiện 	 dobutamine ghi nhận hẹp van động mạch c	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+43	thông tim	732-741	- đến khám để thực hiện	ghiêm trọng     - đến khám để thực hiện 	 để đánh giá trước phẫu thuật     - thôn	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+43	phẫu thuật	760-770	- đến khám để thực hiện thông tim để đánh giá trước	ể thực hiện thông tim để đánh giá trước 	     - thông tim trái không ghi nhận hẹp	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+43	phẫu thuật tim mạch	864-883	- được giới thiệu đến khoa	òng chảy     - được giới thiệu đến khoa 	     - tình trạng chung tốt kể từ khi ch	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+43	chụp tim trái	921-934	- tình trạng chung tốt kể từ khi	ch     - tình trạng chung tốt kể từ khi 	     - phủ nhận bất kỳ triệu chứng nào n	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+43	chẩn	1166-1170	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	 đoán hình ảnh     - siêu âm tim cho thấ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+43	ảnh	1181-1184	Kết quả chẩn đoán hình	ại bệnh viện     Kết quả chẩn đoán hình 	     - siêu âm tim cho thấy hẹp van động	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+43	siêu âm tim	1191-1202	-	ện     Kết quả chẩn đoán hình ảnh     - 	 cho thấy hẹp van động mạch chủ nghiêm t	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+43	siêu âm tim gắng sức	1253-1273	-	ẹp van động mạch chủ nghiêm trọng     - 	 dobutamine ghi nhận hẹp van động mạch c	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+43	chụp tim mạch	1362-1375	-	 trọng     Thủ thuật đã thực hiện     - 	     - LHC     Các kết quả chẩn đoán khá	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+44	trong	372-377	- chán ăn	tiểu, từng đợt, khoảng 2 tuần - chán ăn 	 3 ngày qua - nôn từng đợt sau khi ăn tr	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+44	trong	415-420	- nôn từng đợt sau khi ăn	ng 3 ngày qua - nôn từng đợt sau khi ăn 	 3 ngày qua Triệu chứng khi nhập viện - 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+44	trong	1135-1140	- kém	ừng đợt, khoảng 2 tuần - Ăn uống: - kém 	 3 ngày qua - Nôn mửa: - từng đợt sau kh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+44	trong	1185-1190	- từng đợt sau khi ăn	ày qua - Nôn mửa: - từng đợt sau khi ăn 	 3 ngày qua - cơn ngất xỉu: - 2 tháng tr	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+44	lasix iv	1720-1728	- Nhận 80mg	 - Nhận 2 sl ntg - Nhận asa - Nhận 80mg 	 - Nhận 8mg morphine - Nhận 1mg dilaudid	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+44	po metoprolol	1780-1793	- Được cho	morphine - Nhận 1mg dilaudid - Được cho 	 - Được cho 10mg iv diltiazem Các phát h	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+45	phẫu thuật	95-105	Tiền sử	o đường     - tăng huyết áp     Tiền sử 	 / thủ thuật: đặt stent hỗ trợ cuộn dây 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+45	đặt	119-122	Tiền sử phẫu thuật / thủ thuật:	 áp     Tiền sử phẫu thuật / thủ thuật: 	 stent hỗ trợ cuộn dây phình mạch ACom b	ViHealthBERT	đặt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt;procedure_section
+45	đặt stent	472-481	- Gần đây được điều trị bằng cách	n     - Gần đây được điều trị bằng cách 	 hỗ trợ cuộn dây phình mạch ACom bên phả	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+45	phẫu thuật nội mạch hóa động mạch cảnh	776-814	Các sự kiện trước khi nhập viện	ẽ cần được điều trị tình trạng này bằng 	  3.  Đánh giá tại bệnh viện     Kết quả	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+45	mạch	880-884	Kết quả chẩn đoán hình ảnh: chụp	ện     Kết quả chẩn đoán hình ảnh: chụp 	 máu ghi nhận tình trạng hẹp khoảng 65% 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+46	phẫu thuật	85-95	Tiền sử	ử lâu dài của tăng huyết áp     Tiền sử 	 / thủ thuật: đã thực hiện R BK-pop đến 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+46	R BK	122-126	Tiền sử phẫu thuật / thủ thuật: đã thực hiện	sử phẫu thuật / thủ thuật: đã thực hiện 	-pop đến DP BPG  2.  Tiền sử bệnh hiện t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+46	BPG	138-141	Tiền sử phẫu thuật / thủ thuật: đã thực hiện R BK-pop đến DP	thủ thuật: đã thực hiện R BK-pop đến DP 	  2.  Tiền sử bệnh hiện tại     Triệu ch	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+46	chụp cắt lớp vi tính	343-363	Sự kiện trước khi nhập viện:	 quãng     Sự kiện trước khi nhập viện: 	 (ct) được thực hiện cho thấy tắc hẹp 80	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+46	ct	365-367	Sự kiện trước khi nhập viện: chụp cắt lớp vi tính (	ớc khi nhập viện: chụp cắt lớp vi tính (	) được thực hiện cho thấy tắc hẹp 80% độ	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+46	chụp cắt lớp vi tính	487-507	Kết quả chẩn đoán hình ảnh:	nh viện     Kết quả chẩn đoán hình ảnh: 	 (ct) cho thấy tắc hẹp 80% động mạch thậ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+46	ct	509-511	Kết quả chẩn đoán hình ảnh: chụp cắt lớp vi tính (	ẩn đoán hình ảnh: chụp cắt lớp vi tính (	) cho thấy tắc hẹp 80% động mạch thận tr	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+46	chụp mạch máu thận	586-604	-	ận trái L     Thủ thuật thực hiện     - 	     - stent	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+46	stent	611-616	-	hực hiện     - chụp mạch máu thận     - 		ViHealthBERT	stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:stent
+47	đặt stent thành vách vĩnh viễn	346-376	Lý do nhập viện: Đến hôm nay để	tại     Lý do nhập viện: Đến hôm nay để 	     Diễn biến bệnh     - Gần đây nhất đ	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent
+47	sinh thiết	1042-1052	- Đã thực hiện	fr vào thời điểm đó.     - Đã thực hiện 	 và lấy mẫu bằng bàn chải vào ngày [Ngày	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+47	stent thành vách vĩnh	1294-1315	- Bà ấy tiếp tục có ống dẫn mật xuyên gan tại chỗ.	 quyết định rằng bệnh nhân nên được đặt 	 viễn.     - Bà ấy đã được đặt 3 stent t	ViHealthBERT	stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:stent
+47	thiết	2233-2238	- Đã thực hiện sinh	o thời điểm đó.     - Đã thực hiện sinh 	 và lấy mẫu bằng bàn chải vào ngày [Ngày	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+47	stent thành vách vĩnh	2487-2508	- Ống dẫn mật được tăng kích cỡ từ 8.5fr lên 10.2 fr vào thời điểm đó.	 quyết định rằng bệnh nhân nên được đặt 	 viễn.  3.  Đánh giá tại bệnh viện     D	ViHealthBERT	stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:stent
+47	Đặt 3 stent thành vách vĩnh viễn	2952-2984	Thủ thuật thực hiện:	à sau bên phải     Thủ thuật thực hiện: 		ViHealthBERT	đặt|stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent;procedure_section
+48	chụp ct não	328-339	- ngã khoảng 6 tuần trước, không va đập đầu, bình thường	ần trước, không va đập đầu, bình thường 	 vào thời điểm đó     - Gần đây được chẩ	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+48	Tần suất	1808-1816	-	an: Khoảng 30 phút (đợt đầu tiên)     - 	: 2 đợt hôm nay     - Lan tỏa: Không đượ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+48	chụp ct não	2378-2389	- ngã khoảng 6 tuần trước nhưng không đập đầu; bình thường	 trước nhưng không đập đầu; bình thường 	 vào thời điểm đó     - Gần đây được chẩ	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+48	chụp	2683-2687	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	 ảnh / tạo ảnh: Phát hiện xuất huyết dướ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+50	z-pack	192-198	-	     - albuterol nebs q4h tại nhà     - 	 2.  Tiền sử bệnh hiện tại     Lý do nhậ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+50	prednisone	915-925	2. Bệnh sử hiện tạiBệnh nhân được bác sĩ chăm sóc ban đầu khám cách đây khoảng 1 tuần vì khó thở, khò khè và các triệu c	 sử dụng azithromycin.Bệnh nhân đã dùng 	 40 mg/ngày trong 3 ngày, sau đó giảm xu	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+50	trong	937-942	2. Bệnh sử hiện tạiBệnh nhân được bác sĩ chăm sóc ban đầu khám cách đây khoảng 1 tuần vì khó thở, khò khè và các triệu c	Bệnh nhân đã dùng prednisone 40 mg/ngày 	 3 ngày, sau đó giảm xuống 30 mg vào ngà	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+50	prednisone	1561-1571	Đã dùng	ang điều trị bằng azithromycin. Đã dùng 	 40 mg/ngày trong 3 ngày, sau đó 30 mg v	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+50	trong	1583-1588	Đã dùng prednisone 40 mg/ngày	hromycin. Đã dùng prednisone 40 mg/ngày 	 3 ngày, sau đó 30 mg vào ngày trước nhậ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+50	chụp x-quang ngực	1799-1816	Kết quả chẩn đoán hình ảnh:	nh viện     Kết quả chẩn đoán hình ảnh: 	 không cho thấy bằng chứng của viêm phổi	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+50	every	1928-1933	- combivent nebs x3	ật đã thực hiện     - combivent nebs x3 	 20 minutes     - iv magnesium     - 30 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+51	type	72-76	- Đái tháo đường	c bệnh lý mạn tính     - Đái tháo đường 	 2     - Tăng huyết áp  2.  Tiền sử bệnh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+51	trong	625-630	- Được bổ sung kali 80mEq	li là 2.4     - Được bổ sung kali 80mEq 	 24 giờ     - Quay lại để làm lại xét ng	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+51	khám thực thể	857-870	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - Khi đến Khoa Cấp cứu, nhiệt độ 97	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+51	khám	983-987	-	p 14279, spo2 96 khi thở khí trời     - 	 là bình thường     Kết quả xét nghiệm  	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+51	kali	1032-1036	-	ình thường     Kết quả xét nghiệm     - 	 là 2.4     - kali vẫn giảm xuống 2.2   	lab-pair recall		kali	LIKELY_GENUINE_TEST	test_cues:kali
+52	phẫu thuật	38-48	Tiền sử	1.  Tiền sử bệnh nội khoa     Tiền sử 	 / thủ thuật     - cắt bỏ ống dẫn mật ch	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+52	thủ thuật	51-60	Tiền sử phẫu thuật /	 bệnh nội khoa     Tiền sử phẫu thuật / 	     - cắt bỏ ống dẫn mật chủ     - cắt 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+52	cắt bỏ ống dẫn mật chủ	67-89	-	   Tiền sử phẫu thuật / thủ thuật     - 	     - cắt bỏ phân đoạn bên trái gan    	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+52	cắt bỏ phân đoạn bên trái gan	96-125	-	huật     - cắt bỏ ống dẫn mật chủ     - 	     - Đã phẫu thuật nối ống gan - hỗng 	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+52	phẫu thuật nối ống gan - hỗng tràng	135-170	- Đã	 cắt bỏ phân đoạn bên trái gan     - Đã 	 vì nghi ngờ ung thư đường mật không thể	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+52	kháng	562-567	- Điều trị bằng	g được cho là áp xe     - Điều trị bằng 	 sinh tĩnh mạch trong thời gian nằm viện	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+52	tĩnh mạch	573-582	- Điều trị bằng kháng sinh	là áp xe     - Điều trị bằng kháng sinh 	 trong thời gian nằm viện     - Ra viện 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+52	trong	651-656	- Ra viện với đơn Augmentin đường uống	 - Ra viện với đơn Augmentin đường uống 	 10 ngày      - Tình trạng ổn định ở nhà	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+52	chụp chẩn đoán hình ảnh	768-791	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - mrcp (chụp cộng hưởng từ mật tụy)	ViHealthBERT			AMBIGUOUS	no_strong_cue
+52	chụp cộng hưởng từ	804-822	- mrcp (	quả chụp chẩn đoán hình ảnh     - mrcp (	 mật tụy) cho thấy nhiều nang tụy nhỏ   	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+52	stent mật kim	869-882	- ba	y) cho thấy nhiều nang tụy nhỏ     - ba 	 loại đã được đặt     - một ổ dịch sau p	ViHealthBERT	stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:stent
+53	tạo	212-215	- blốc nhĩ thất, hoàn toàn sau khi đặt máy	lốc nhĩ thất, hoàn toàn sau khi đặt máy 	 nhịp (PPM)     - bệnh thận mạn, không đ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+53	phẫu	323-327	Tiền sử	thức nhẹ suy giảm nhận thức     Tiền sử 	 thuật / thủ thuật: sau khi đặt máy tạo 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+53	Thời gian khởi phát	518-537	-	  Thời điểm khởi phát triệu chứng     - 	: 14 giờ     - Khởi phát cấp tính hay từ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+53	can thiệp mạch vành	1084-1103	- Chuyển đến vì lo ngại Cơn đau thắt ngực không ổn định cần	gại Cơn đau thắt ngực không ổn định cần 	  3.  Đánh giá tại bệnh viện     Các phá	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+53	can thiệp mạch vành	1210-1229	Các phát hiện chẩn đoán khác: Lo ngại Cơn đau thắt ngực không ổn định cần	gại Cơn đau thắt ngực không ổn định cần 		ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+54	phẫu thuật	159-169	Tiền sử	phải và tuyến thượng thận phải  Tiền sử 	 / thủ thuật - cắt bỏ một phần thận phải	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+54	thủ thuật	172-181	Tiền sử phẫu thuật /	 thượng thận phải  Tiền sử phẫu thuật / 	 - cắt bỏ một phần thận phải - cắt bỏ tu	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+54	cắt bỏ một phần thận phải	184-209	-	 phải  Tiền sử phẫu thuật / thủ thuật - 	 - cắt bỏ tuyến thượng thận phải - DC ca	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+54	cắt bỏ tuyến thượng thận phải	212-241	-	thủ thuật - cắt bỏ một phần thận phải - 	 - DC cardioversion  Thuốc trước khi nhậ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+54	bicarbonate	347-358	- thay thế	n - ceftazidime - amiodarone - thay thế 	  2. Bệnh sử hiện tại Lý do nhập viện: K	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+54	chụp x-quang.	686-699	- Chẩn đoán viêm phổi thuỳ, không đặc hiệu	hẩn đoán viêm phổi thuỳ, không đặc hiệu 	 - Điều trị bằng Đã điều trị vancomycin 	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+54	trong	739-744	- Điều trị bằng Đã điều trị vancomycin	 - Điều trị bằng Đã điều trị vancomycin 	 7 ngàyĐã điều trị vancomycinvà ceftazid	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+54	trong	788-793	- Chẩn đoán viêm phổi thuỳ, không đặc hiệu chụp x-quang.	gàyĐã điều trị vancomycinvà ceftazidime 	 7 ngày. - Phát hiện  rung nhĩ điển hình	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+54	sốc điện	915-923	- Tiến hành chuyển nhịp bằng	uyết động. - Tiến hành chuyển nhịp bằng 	 đồng bộ bắt đầu liệu pháp amiodarone. -	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+54	liệu pháp amiodarone	940-960	- Tiến hành chuyển nhịp bằng sốc điện đồng bộ bắt đầu	uyển nhịp bằng sốc điện đồng bộ bắt đầu 	. - Phát hiện có rối loạn cân bằng kiềm 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+54	hct vào ngày xuất viện	1049-1071	-	 hợp. - Bắt đầu thay thế bicarbonate. - 	 là 24.5 và lặp lại ở 26.1. - Tình trạng	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+54	hct trả về	1231-1241	- xét nghiệm theo dõi được lấy tại cơ sở điều dưỡng,	theo dõi được lấy tại cơ sở điều dưỡng, 	 là 24.7. - Được đưa đến phòng cấp cứu đ	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+54	hct trả về	1964-1974	-	eo dõi được lấy tại cơ sở điều dưỡng. - 	 là 24.7. - Được đưa đến phòng cấp cứu đ	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+54	khám thực thể	2198-2211	Kết quả	 dài  3. Đánh giá tại bệnh viện Kết quả 	 - dấu hiệu sinh tồn tại phòng cấp cứu l	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+54	hct vào ngày xuất viện	2556-2578	-	hân trái (3 ngày). Kết quả xét nghiệm - 	 là 24.5 - hct lặp lại tại 26.1 - hct tr	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+54	hct trả về	2612-2622	-	t viện là 24.5 - hct lặp lại tại 26.1 - 	 là 24.7 (tại cơ sở điều dưỡng) - rối lo	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+54	sốc điện đồng bộ	2816-2832	- Chuyển nhịp bằng	ủ thuật đã thực hiện - Chuyển nhịp bằng 	 - truyền máu Các phát hiện chẩn đoán kh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+54	truyền máu	2835-2845	-	n - Chuyển nhịp bằng sốc điện đồng bộ - 	 Các phát hiện chẩn đoán khác - suy thận	ViHealthBERT	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền
+56	xét nghiệm gắng sức	172-191	Lý do nhập viện:	 sử bệnh bệnh hiện tại Lý do nhập viện: 	 bất thường Thời điểm khởi phát triệu ch	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+56	Chiếu r xạ	503-513	-	 gian: Không rõ - Tần suất: Gián đoạn - 	: Không rõ - Các yếu tố làm nặng thêm: H	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+56	xét nghiệm gắng sức bất	700-723	Các sự kiện trước khi nhập viện:	mồ hôi Các sự kiện trước khi nhập viện: 	 thường  3. Đánh giá tại bệnh viện Kết q	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+56	điện tâm đồ	820-831	-	sàng - Không có đau tại phòng cấp cứu - 	 bình thường tại phòng cấp cứu - Các chỉ	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+56	tim	1052-1055	- điện tâm đồ bình thường tại phòng cấp cứu	t độ 36.7°c, huyết áp 139/68 mmhg, nhịp 	 67 lần/phút, nhịp thở 16 lần/phút, độ b	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+56	oxy	1102-1105	- điện tâm đồ bình thường tại phòng cấp cứu	/phút, nhịp thở 16 lần/phút, độ bão hòa 	 100% trên khí trời) Các thủ thuật đã th	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+56	ống nội khí quản	1154-1170	Các thủ thuật đã thực hiện:	n khí trời) Các thủ thuật đã thực hiện: 	 (nghiệm pháp gắng sức trên máy chạy bộ)	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+56	sức	1257-1260	Nghiệm pháp gắng	át hiện chẩn đoán khác Nghiệm pháp gắng 	 dương tính với thiếu máu cơ tim cục bộ,	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+56	sau	1452-1455	Các phát hiện chẩn đoán khác	n trong giai đoạn hồi phục, còn tồn tại 	 1 phút và kéo dài đến sau 5 phút hồi ph	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+56	sau	1478-1481	Các phát hiện chẩn đoán khác	, còn tồn tại sau 1 phút và kéo dài đến 	 5 phút hồi phục. 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+57	khoa	21-25	1.  Tiền sử bệnh nội	1.  Tiền sử bệnh nội 	  2.  Tiền sử bệnh hiện tại     Lý do nh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+57	chụp cộng hưởng từ	279-297	Kết quả chụp ảnh:	giá tại bệnh viện     Kết quả chụp ảnh: 	 (mri) cột sống cổ cho thấy hẹp ống sống	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+57	mri	299-302	Kết quả chụp ảnh: chụp cộng hưởng từ (	  Kết quả chụp ảnh: chụp cộng hưởng từ (	) cột sống cổ cho thấy hẹp ống sống C4-5	ViHealthBERT		mri	LIKELY_GENUINE_TEST	test_cues:mri
+57	cột sống cổ	304-315	Kết quả chụp ảnh: chụp cộng hưởng từ (mri)	 quả chụp ảnh: chụp cộng hưởng từ (mri) 	 cho thấy hẹp ống sống C4-5, C5-6, C6-7 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+58	khoảng 11	285-294	- Thời gian:	 khởi phát triệu chứng     - Thời gian: 	:00 sáng     - Khởi phát cấp tính hay từ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+58	chụp ct sọ não	692-706	- Đã được chụp	ợc giúp đỡ đứng dậy.     - Đã được chụp 	 kết quả âm tính.     - Đội ngũ y tế tiế	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chọc dò dịch não	753-769	- Đội ngũ y tế tiến hành	ả âm tính.     - Đội ngũ y tế tiến hành 	 tủy.     - Bị một cơn nhịp tim chậm nặn	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+58	chụp ct sọ não	917-931	- Chụp lại	dùng intravenous fluids.     - Chụp lại 	, kết quả âm tính.     - Chuyển đến bệnh	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chụp ct sọ não	1913-1927	- Đã được chụp	ề yếu sức chân phải.     - Đã được chụp 	 kết quả âm tính.     - Tiến hành chọc d	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chọc dò dịch não tủy	1961-1981	- Tiến hành	sọ não kết quả âm tính.     - Tiến hành 	.     - Bị nhịp tim chậm nặng và hạ huyế	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+58	chụp ct sọ não	2114-2128	- Chụp lại	dùng intravenous fluids.     - Chụp lại 	, kết quả âm tính.     - Đã dùng kháng s	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	Chẩn đoán hình ảnh	2737-2755	-	hản xạ kém     Kết quả xét nghiệm     - 	     - chụp ct sọ não: âm tính     - Chụ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+58	chụp ct sọ não	2762-2776	-	t nghiệm     - Chẩn đoán hình ảnh     - 	: âm tính     - Chụp lại chụp ct sọ não:	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chụp ct sọ não	2801-2815	- Chụp lại	 chụp ct sọ não: âm tính     - Chụp lại 	: âm tính     Các thủ thuật đã thực hiện	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chụp ct sọ não	2862-2876	-	nh     Các thủ thuật đã thực hiện     - 	     - chọc dò dịch não tủy     - Truyền	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+58	chọc dò dịch não tủy	2883-2903	-	đã thực hiện     - chụp ct sọ não     - 	     - Truyền dịch tĩnh mạch	ViHealthBERT	chọc		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:chọc
+58	Truyền dịch tĩnh mạch	2910-2931	-	sọ não     - chọc dò dịch não tủy     - 		ViHealthBERT	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền
+59	thông não	93-102	- Nhập viện khoa Thần kinh từ [Date] với	 Nhập viện khoa Thần kinh từ [Date] với 	 so với chụp cắt lớp vi tính (ct) đầu từ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+59	chụp cắt lớp vi tính	110-130	- Nhập viện khoa Thần kinh từ [Date] với thông não so với	hần kinh từ [Date] với thông não so với 	 (ct) đầu từ [Date].     - Bị tăng đau đ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+59	ct) đầu từ	132-142	- Nhập viện khoa Thần kinh từ [Date] với thông não so với chụp cắt lớp vi tính (	 thông não so với chụp cắt lớp vi tính (	 [Date].     - Bị tăng đau đầu cải thiện	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+59	Date	144-148	Các tập tương tự trước đây	o với chụp cắt lớp vi tính (ct) đầu từ [	].     - Bị tăng đau đầu cải thiện khi n	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+59	phẫu thuật	437-447	Tiền sử	huỷ khác từ thời kỳ sơ sinh     Tiền sử 	 / thủ thuật     - Phẫu thuật đặt cảng đ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+59	thủ thuật	450-459	Tiền sử phẫu thuật /	hời kỳ sơ sinh     Tiền sử phẫu thuật / 	     - Phẫu thuật đặt cảng để điều trị c	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+59	Phẫu thuật đặt cảng	466-485	-	   Tiền sử phẫu thuật / thủ thuật     - 	 để điều trị chứng tăng nhãn áp ở thời k	ViHealthBERT	đặt|phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|phẫu thuật
+59	khi	578-581	- Hệ thống dẫn lưu được chỉnh sửa/thay thế	ệ thống dẫn lưu được chỉnh sửa/thay thế 	 3 tháng tuổi - Hệ thống dẫn lưu được ch	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+59	trong	791-796	Thời điểm khởi phát triệu chứng: nhìn mờ tiến triển	ởi phát triệu chứng: nhìn mờ tiến triển 	 2 tuần qua     Diễn biến bệnh     - Bện	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+59	trong	1297-1302	- Nhập viện trước đây vào khoa Thần kinh để điều trị chứng đau đầu.	 bên trái nặng hơn bên phải, tiến triển 	 2 tuần qua.     - Đến hôm nay, bệnh nhâ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+59	trong	1563-1568	- nhìn mờ: tiến triển	m triệu chứng     - nhìn mờ: tiến triển 	 2 tuần qua, bên trái nặng hơn bên phải 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+59	chụp cắt lớp vi tính	2007-2027	- Tăng nhãn áp so với	hẩn đoán khác     - Tăng nhãn áp so với 	 (ct) đầu từ [Date] (từ lần nhập viện tr	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+59	ct	2029-2031	- Tăng nhãn áp so với chụp cắt lớp vi tính (	ng nhãn áp so với chụp cắt lớp vi tính (	) đầu từ [Date] (từ lần nhập viện trước)	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+60	phẫu thuật	38-48	Tiền sử	1.  Tiền sử bệnh nội khoa     Tiền sử 	 / thủ thuật: phẫu thuật tạo đáy vị (fun	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+60	phẫu thuật tạo đáy vị	62-83	Tiền sử phẫu thuật / thủ thuật:	hoa     Tiền sử phẫu thuật / thủ thuật: 	 (fundoplication)  2.  Tiền sử bệnh hiện	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+60	fundoplication	85-99	Tiền sử phẫu thuật / thủ thuật: phẫu thuật tạo đáy vị (	uật / thủ thuật: phẫu thuật tạo đáy vị (	)  2.  Tiền sử bệnh hiện tại     Lý do n	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+60	Chẩn đoán hình ảnh	590-608	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - Kêt quả không cho thấy thoát vị h	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+61	Chiếu xạ	777-785	-	i rõ     - Tần suất: Không ghi rõ     - 	: Không ghi rõ     - Các yếu tố làm nặng	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+61	chẩn	1018-1022	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	 đoán hình ảnh     - x-quang vào thời đi	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+61	ảnh	1033-1036	Kết quả chẩn đoán hình	ại bệnh viện     Kết quả chẩn đoán hình 	     - x-quang vào thời điểm đó cho thấy	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+61	x-quang	1043-1050	-	ện     Kết quả chẩn đoán hình ảnh     - 	 vào thời điểm đó cho thấy những thay đổ	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+61	chụp cắt lớp vi tính	1148-1168	-	 trọng của khớp bánh chè đùi phải     - 	 kể từ lần khám cuối cùng cho thấy góc t	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+62	phẫu thuật	38-48	Tiền sử	1.  Tiền sử bệnh nội khoa     Tiền sử 	 / thủ thuật     - tiền sử R BKpop-DP by	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+62	thủ thuật	51-60	Tiền sử phẫu thuật /	 bệnh nội khoa     Tiền sử phẫu thuật / 	     - tiền sử R BKpop-DP bypass bằng tĩ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+62	R BKpop	75-82	- tiền sử	sử phẫu thuật / thủ thuật     - tiền sử 	-DP bypass bằng tĩnh mạch hiển     - tiề	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+62	đặt stent động mạch thận trái	127-156	- tiền sử	ypass bằng tĩnh mạch hiển     - tiền sử 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent
+63	colace	175-181	Thuốc trước khi nhập viện: thường dùng	 Thuốc trước khi nhập viện: thường dùng 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+63	tim	1265-1268	khám thực thể Kết quả: dấu hiệu sinh tồn ban đầu được ghi nhận là T97.8, nhịp	ồn ban đầu được ghi nhận là T97.8, nhịp 	 84, huyết áp 15670, nhịp thở 20, độ bão	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+63	oxy	1313-1316	3.  Đánh giá tại bệnh viện	huyết áp 15670, nhịp thở 20, độ bão hòa 	 99 khi thở khí trời     xét nghiệm Kết 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+63	thiếu máu hồng cầu nhỏ	1366-1388	-	ở khí trời     xét nghiệm Kết quả     - 	 là 27.2     - bun/creatinine     Kết qu	lab-pair recall			AMBIGUOUS	no_strong_cue
+63	bun	1403-1406	-	 - thiếu máu hồng cầu nhỏ là 27.2     - 	/creatinine     Kết quả chẩn đoán hình ả	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+63	chụp ct	1450-1457	Kết quả chẩn đoán hình ảnh:	atinine     Kết quả chẩn đoán hình ảnh: 	 bụng, chậu, không thuốc cản quang cho t	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+64	cắt lớp	308-315	- Nhiều lần chụp chụp	bằng percocet     - Nhiều lần chụp chụp 	 vi tính trong lần nhập viện trước cho t	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+64	tính	319-323	- Nhiều lần chụp chụp cắt lớp vi	et     - Nhiều lần chụp chụp cắt lớp vi 	 trong lần nhập viện trước cho thấy viêm	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+64	trong	786-791	Thời điểm khởi phát triệu chứng: đau bụng ở vùng bụng dưới trở nên tồi tệ hơn	ụng ở vùng bụng dưới trở nên tồi tệ hơn 	 1 ngày     Triệu chứng hiện tại     - đ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+64	Thời gian	1155-1164	-	- Mức độ nghiêm trọng: Tồi tệ hơn     - 	: 1 ngày     - Các triệu chứng liên quan	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+65	Lý do nhập viện	75-90	2. Bệnh sử hiện tại	 để chống đông máu  2. Bệnh sử hiện tại 	: 3 ngày đại tiện ra máu đỏ tươi gián đo	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+65	inr	418-421	-	Bệnh nhân được khám tại phòng cấp cứu - 	 là 2.0 Tình trạng ngay trước khi nhập v	lab-pair recall		inr	LIKELY_GENUINE_TEST	test_cues:inr
+65	inr	606-609	-	 giá tại bệnh viện Kết quả xét nghiệm - 	 là 2.0 - tăng Cr theo phòng cấp cứu 	lab-pair recall		inr	LIKELY_GENUINE_TEST	test_cues:inr
+66	trình 14 day course of ertapenem	564-596	- Đang dùng một liệu	à ngày hôm qua     - Đang dùng một liệu 	     Tình trạng ngay trước khi nhập viện	ViHealthBERT			AMBIGUOUS	no_strong_cue
+66	xét nghiệm xét nghiệm	780-801	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - hct (hematocrit) 8.126.3     - ti	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+66	hct	808-811	-	    Kết quả xét nghiệm xét nghiệm     - 	 (hematocrit) 8.126.3     - tiểu cầu (pl	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+66	hematocrit	813-823	- hct (	ết quả xét nghiệm xét nghiệm     - hct (	) 8.126.3     - tiểu cầu (platelets) 478	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+66	hco3-	870-875	-	.3     - tiểu cầu (platelets) 478     - 	 (bicarbonate) 20     - ag (anion gap) 1	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+66	bun/creatinine	923-937	-	onate) 20     - ag (anion gap) 13     - 	 (ure/creatinine)     - glucose (đường h	ViHealthBERT		creatinin|creatinine	LIKELY_GENUINE_TEST	test_cues:creatinin|creatinine
+66	ure	939-942	- bun/creatinine (	ag (anion gap) 13     - bun/creatinine (	/creatinine)     - glucose (đường huyết)	ViHealthBERT		ure	LIKELY_GENUINE_TEST	test_cues:ure
+66	glucose	961-968	-	- bun/creatinine (ure/creatinine)     - 	 (đường huyết) 316     - lactate (acid l	clinical recall		glucose	LIKELY_GENUINE_TEST	test_cues:glucose
+66	lactate	993-1000	-	)     - glucose (đường huyết) 316     - 	 (acid lactat) 1.3     - Kết quả ua (uri	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+66	lactat	1007-1013	- lactate (acid	e (đường huyết) 316     - lactate (acid 	) 1.3     - Kết quả ua (urinalysis - tổn	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+66	phân tích nước tiểu	1055-1074	- Kết quả ua (urinalysis - tổng	1.3     - Kết quả ua (urinalysis - tổng 	): 12 bạch cầu, không vi khuẩn, 1 hồng c	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+66	chẩn	1146-1150	Kết quả	1 hồng cầu, âm tính nitrite     Kết quả 	 đoán hình ảnh chẩn đoán hình ảnh     - 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+66	ảnh chẩn đoán hình ảnh	1161-1183	Kết quả chẩn đoán hình	tính nitrite     Kết quả chẩn đoán hình 	     - chụp x-quang ngực cho thấy dòng p	ViHealthBERT			AMBIGUOUS	no_strong_cue
+66	x-quang ngực	1195-1207	- chụp	 hình ảnh chẩn đoán hình ảnh     - chụp 	 cho thấy dòng picc đã đặt, không có quá	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+66	chụp x-quang	1286-1298	-	á trình bệnh lý tim phổi cấp tính     - 	 bàn chân phải không phát hiện gãy xương	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+66	chân	1303-1307	- chụp x-quang bàn	im phổi cấp tính     - chụp x-quang bàn 	 phải không phát hiện gãy xương hoặc viê	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+67	khoa	21-25	1.  Tiền sử bệnh nội	1.  Tiền sử bệnh nội 	  2.  Tiền sử bệnh hiện tại     Lý do nh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+67	siêu âm	220-227	-	  Các sự kiện trước khi nhập viện     - 	 cho thấy sỏi mật     - Đề nghị cắt túi 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+67	cắt túi mật nội soi	259-278	- Đề nghị	 siêu âm cho thấy sỏi mật     - Đề nghị 	 cùng lúc với phẫu thuật cắt bỏ tuyến gi	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+67	phẫu thuật cắt bỏ tuyến giáp toàn bộ	292-328	- Đề nghị cắt túi mật nội soi cùng lúc với	ề nghị cắt túi mật nội soi cùng lúc với 	  3.  Đánh giá tại bệnh viện     Kết quả	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+67	siêu âm	389-396	Kết quả chẩn đoán hình ảnh:	nh viện     Kết quả chẩn đoán hình ảnh: 	 cho thấy sỏi mật     Các phát hiện chẩn	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+69	phẫu thuật	38-48	Tiền sử	1.  Tiền sử bệnh nội khoa     Tiền sử 	 / thủ thuật     - Cắt bỏ thận trái do u	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+69	thủ thuật	51-60	Tiền sử phẫu thuật /	 bệnh nội khoa     Tiền sử phẫu thuật / 	     - Cắt bỏ thận trái do ung thư biểu 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+69	Cắt bỏ thận trái	67-83	-	   Tiền sử phẫu thuật / thủ thuật     - 	 do ung thư biểu mô tế bào thận     - Cắ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+69	Cắt tuyến giáp	121-135	-	ái do ung thư biểu mô tế bào thận     - 	 với Dr. do ung thư biểu mô tuyến giật n	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+69	Nội soi đại tràng	421-438	-	  Các sự kiện trước khi nhập viện     - 	 sau xuất viện cho thấy một khối ở chỗ u	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+69	sinh thiết	491-501	-	n cho thấy một khối ở chỗ uốn gan     - 	 dương tính với ung thư biểu mô tuyến  3	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+69	cắt lớp vi tính	644-659	Kết quả chẩn đoán hình ảnh: chụp	áu     Kết quả chẩn đoán hình ảnh: chụp 	 ổ bụng năm ngoái cho thấy không có dấu 	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+69	nội soi đại tràng	749-766	-	lan rộng      Thủ thuật thực hiện     - 	     - sinh thiết      Các phát hiện chẩ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+69	sinh thiết	773-783	-	thực hiện     - nội soi đại tràng     - 	      Các phát hiện chẩn đoán khác     -	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+69	sinh thiết	876-886	- ung thư biểu mô tuyến trên	ốn gan     - ung thư biểu mô tuyến trên 	     - tiền sử khối u thận     - ung thư	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	taking 10 pills	192-207	- Tự điều trị bằng liều cao acetaminophen 500mg,	 trị bằng liều cao acetaminophen 500mg, 	 at a time khi cơn đau dữ dội, thường 4 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+70	Diễn biến trong viện	620-640	-	hập viện, đau bụng trở nên tồi tệ hơn - 	: tăng men gan bắt đầu có xu hướng giảm 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+70	ast	1349-1352	- Tại bệnh viện OSH, phát hiện tăng men gan với tăng bilirubin máu:	ện tăng men gan với tăng bilirubin máu: 	 421, alt 336, alp 185, bilirubin toàn p	lab-pair recall		ast	LIKELY_GENUINE_TEST	test_cues:ast
+70	alt	1358-1361	- Tại bệnh viện OSH, phát hiện tăng men gan với tăng bilirubin máu: ast 421,	en gan với tăng bilirubin máu: ast 421, 	 336, alp 185, bilirubin toàn phần 0.9 -	lab-pair recall		alt	LIKELY_GENUINE_TEST	test_cues:alt
+70	alp	1367-1370	- làm hỏng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ	i tăng bilirubin máu: ast 421, alt 336, 	 185, bilirubin toàn phần 0.9 - âm tính 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+70	siêu âm bụng có doppler	1410-1433	- âm tính	 185, bilirubin toàn phần 0.9 - âm tính 	 - âm tính chụp hida - Chưa từng xét ngh	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+70	chụp hida	1444-1453	- âm tính	 tính siêu âm bụng có doppler - âm tính 	 - Chưa từng xét nghiệm nồng độ acetamin	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ercp	1551-1555	- Chuyển tạm thời để thực hiện	dùng nac - Chuyển tạm thời để thực hiện 	 - ercp cho thấy túi mật giãn nở rõ rệt 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ercp	1558-1562	-	c - Chuyển tạm thời để thực hiện ercp - 	 cho thấy túi mật giãn nở rõ rệt nhưng k	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ast	1830-1833	-	 giá tại bệnh viện Kết quả xét nghiệm - 	 421 - alt 336 - alp 185 - bilirubin toà	lab-pair recall		ast	LIKELY_GENUINE_TEST	test_cues:ast
+70	alt	1840-1843	-	ệnh viện Kết quả xét nghiệm - ast 421 - 	 336 - alp 185 - bilirubin toàn phần 0.9	lab-pair recall		alt	LIKELY_GENUINE_TEST	test_cues:alt
+70	alp	1850-1853	-	ết quả xét nghiệm - ast 421 - alt 336 - 	 185 - bilirubin toàn phần 0.9 - total b	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+70	bilirubin toàn phần	1860-1879	-	 nghiệm - ast 421 - alt 336 - alp 185 - 	 0.9 - total bili bắt đầu tăng lên đạt đ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ferritin	1973-1981	-	 xét nghiệm viêm gan virus là âm tính - 	 là bình thường - ceruloplasmin vẫn đang	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+70	chẩn	2085-2089	Kết quả	t quả tại thời điểm chuyển viện Kết quả 	 đoán hình ảnh - siêu âm bụng có doppler	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ảnh	2100-2103	Kết quả chẩn đoán hình	điểm chuyển viện Kết quả chẩn đoán hình 	 - siêu âm bụng có doppler âm tính âm tí	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	siêu âm bụng	2106-2118	-	huyển viện Kết quả chẩn đoán hình ảnh - 	 có doppler âm tính âm tính - âm tính ch	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+70	doppler âm	2122-2132	- siêu âm bụng có	uả chẩn đoán hình ảnh - siêu âm bụng có 	 tính âm tính - âm tính chụp hida - ercp	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	chụp hida	2156-2165	- âm tính	ng có doppler âm tính âm tính - âm tính 	 - ercp cho thấy túi mật giãn nở rõ rệt 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	ercp	2168-2172	-	r âm tính âm tính - âm tính chụp hida - 	 cho thấy túi mật giãn nở rõ rệt túi mật	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+70	tăng bilirubin máu	2342-2360	-	át hiện chẩn đoán khác - tăng men gan - 		ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+71	phẫu thuật	216-226	Tiền sử	áu 50 inch - Tăng huyết áp phổi Tiền sử 	 / thủ thuật: CABG Thuốc trước khi nhập 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+71	tăng liều lasix	534-549	- được điều trị bằng cách	ung huyết cấp - được điều trị bằng cách 	 Tình trạng ngay trước khi nhập viện - v	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+72	khoa	21-25	1.  Tiền sử bệnh nội	1.  Tiền sử bệnh nội 	  2.  Tiền sử bệnh hiện tại Thời điểm kh	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+72	xét nghiệm chức năng gan và bilirubin	190-227	- tăngtăng các	kiện trước khi nhập viện - tăngtăng các 	 khi khám - âm tính đánh giá từ xét nghi	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+72	xét nghiệm huyết thanh	259-281	- âm tính đánh giá từ	ilirubin khi khám - âm tính đánh giá từ 	 của cô ấy - siêu âm cho thấy giãn đường	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+72	siêu âm	294-301	-	á từ xét nghiệm huyết thanh của cô ấy - 	 cho thấy giãn đường dẫn mật trong gan ở	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+72	ercp	380-384	-	ở ống mật chủ 15 mm tại mức tuyến tụy - 	 (nội soi mật tụy ngược dòng) bởi Bác sĩ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	nội soi mật tụy ngược dòng	386-412	- ercp (	mật chủ 15 mm tại mức tuyến tụy - ercp (	) bởi Bác sĩ cho thấy một khối phình to 	ViHealthBERT			AMBIGUOUS	no_strong_cue
+72	lấy	592-595	-	mm ở một phần ba dưới của ống mật chủ - 	 mẫu tế bào bằng chổi là phiên hình - si	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	sinh thiết	633-643	-	ấy mẫu tế bào bằng chổi là phiên hình - 	 cho thấy ung thư biểu mô tuyến, biệt hó	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	xét nghiệm chức năng gan	835-859	- tăng các	bệnh viện Kết quả xét nghiệm - tăng các 	 - bilirubin - lấy mẫu tế bào bằng chổi 	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+72	lấy	874-877	-	 xét nghiệm chức năng gan - bilirubin - 	 mẫu tế bào bằng chổi là phiên hình - si	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	sinh thiết	915-925	-	ấy mẫu tế bào bằng chổi là phiên hình - 	 cho thấy ung thư biểu mô tuyến, biệt hó	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	chẩn	992-996	Kết quả	uyến, biệt hóa vừa phải đến kém Kết quả 	 đoán hình ảnh - siêu âm cho thấy giãn đ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	ảnh	1007-1010	Kết quả chẩn đoán hình	vừa phải đến kém Kết quả chẩn đoán hình 	 - siêu âm cho thấy giãn đường dẫn mật t	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	siêu âm	1013-1020	-	ải đến kém Kết quả chẩn đoán hình ảnh - 	 cho thấy giãn đường dẫn mật trong gan ở	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+72	ercp	1099-1103	-	ở ống mật chủ 15 mm tại mức tuyến tụy - 	 (nội soi mật tụy ngược dòng) cho thấy m	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	nội soi mật tụy ngược dòng	1105-1131	- ercp (	mật chủ 15 mm tại mức tuyến tụy - ercp (	) cho thấy một khối phình to 2 cm ở nhúm	ViHealthBERT			AMBIGUOUS	no_strong_cue
+72	ERCP	1327-1331	-	ng mật chủ Các thủ thuật đã thực hiện - 	 bởi Bác sĩ - Sinh thiết Các phát hiện c	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+72	Sinh thiết	1345-1355	-	 thuật đã thực hiện - ERCP bởi Bác sĩ - 	 Các phát hiện chẩn đoán khác - u ác của	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+73	type	335-339	- Đái tháo đường	u, không đặc hiệu)     - Đái tháo đường 	 2 (Đái tháo đường típ 2)     - bệnh phổ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+73	phẫu thuật bắc cầu chủ động mạch vành	542-579	- bệnh tim mạch do xơ vữa động mạch (bệnh tim mạch do xơ vữa động mạch) đã	 (bệnh tim mạch do xơ vữa động mạch) đã 	 (sp CABG)     - Nhập viện gần đây vì Đã	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+73	phẫu thuật	647-657	Tiền sử	ần đây vì Đã tử vong (dced)     Tiền sử 	 / thủ thuật: Phẫu thuật bắc cầu chủ độn	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+73	Phẫu thuật bắc cầu chủ động mạch vành	671-708	Tiền sử phẫu thuật / thủ thuật:	ed)     Tiền sử phẫu thuật / thủ thuật: 	 (CABG)     Thuốc trước khi nhập viện lầ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+73	CABG	710-714	Tiền sử phẫu thuật / thủ thuật: Phẫu thuật bắc cầu chủ động mạch vành (	 Phẫu thuật bắc cầu chủ động mạch vành (	)     Thuốc trước khi nhập viện lần này 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+73	asa8	774-778	- aspirin 81mg (	i nhập viện lần này     - aspirin 81mg (	1)     - clopidogrel (prasugrel chuyển s	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+73	lisinopril	986-996	-	atorvastatin 80mg daily (bắt đầu)     - 	 2.5mg daily (bắt đầu)     - ranexa 500m	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+74	phẫu thuật	29-39	Tiền sử	1.  Tiền sử bệnh     Tiền sử 	 / thủ thuật: sp TLH (tình trạng sau phẫ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+74	phẫu thuật cắt tử cung bằng nội soi toàn bộ	76-119	Tiền sử phẫu thuật / thủ thuật: sp TLH (tình trạng sau	uật / thủ thuật: sp TLH (tình trạng sau 	)     Thuốc trước khi nhập viện lần này 	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt;procedure_section
+74	Kháng sinh	191-201	-	lần này     - cipro     - bactrim     - 	 cho nhiễm khuẩn đường tiết niệu, vị trí	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+74	kháng	880-885	- Được bác sĩ chăm sóc chính khám vào cuối tuần, được kê đơn	c chính khám vào cuối tuần, được kê đơn 	 sinh cho nhiễm khuẩn đường tiết niệu, v	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+74	CPSOB	1365-1370	- Phủ nhận	iệu chứng tiết niệu khác     - Phủ nhận 	 (đau ngực, khó thở), NV (buồn nôn, nôn 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+74	chụp cắt lớp vi tính	1597-1617	Kết quả chẩn đoán hình ảnh:	g nhẹ))     Kết quả chẩn đoán hình ảnh: 	 (ct) bụng và chậu cho thấy một khoang c	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+74	ct	1619-1621	Kết quả chẩn đoán hình ảnh: chụp cắt lớp vi tính (	ẩn đoán hình ảnh: chụp cắt lớp vi tính (	) bụng và chậu cho thấy một khoang chứa 	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+74	bụng	1623-1627	Kết quả chẩn đoán hình ảnh: chụp cắt lớp vi tính (ct)	oán hình ảnh: chụp cắt lớp vi tính (ct) 	 và chậu cho thấy một khoang chứa dịch p	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	can thiệp bắc cầu nối	72-93	- bệnh động mạch vành sau	 mãn tính     - bệnh động mạch vành sau 	     - Nhiều lần chụp mạch và can thiệp 	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+75	chụp mạch	110-119	- Nhiều lần	u can thiệp bắc cầu nối     - Nhiều lần 	 và can thiệp tim mạch do đau ngực     T	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	can thiệp tim mạch	123-141	- Nhiều lần chụp mạch và	ắc cầu nối     - Nhiều lần chụp mạch và 	 do đau ngực     Tiền sử phẫu thuật / th	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+75	phẫu thuật	166-176	Tiền sử	 thiệp tim mạch do đau ngực     Tiền sử 	 / thủ thuật     - Bắc cầu nối chủ vành 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+75	thủ thuật	179-188	Tiền sử phẫu thuật /	ch do đau ngực     Tiền sử phẫu thuật / 	     - Bắc cầu nối chủ vành     - Can th	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+75	cầu nối chủ vành	199-215	- Bắc	iền sử phẫu thuật / thủ thuật     - Bắc 	     - Can thiệp mạch vành qua da và đặt	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	Can thiệp mạch vành qua da	222-248	-	 thuật     - Bắc cầu nối chủ vành     - 	 và đặt stent phủ thuốc (DES) ở động mạc	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+75	đặt stent phủ thuốc	252-271	- Can thiệp mạch vành qua da và	ành     - Can thiệp mạch vành qua da và 	 (DES) ở động mạch liên thất trước (LAD)	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+75	DES	273-276	- Can thiệp mạch vành qua da và đặt stent phủ thuốc (	ạch vành qua da và đặt stent phủ thuốc (	) ở động mạch liên thất trước (LAD).    	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+75	ở động mạch	278-289	- Can thiệp mạch vành qua da và đặt stent phủ thuốc (DES)	ành qua da và đặt stent phủ thuốc (DES) 	 liên thất trước (LAD).     - Can thiệp 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+75	Can thiệp mạch vành qua da	319-345	-	 động mạch liên thất trước (LAD).     - 	 (POBA) vào động mạch chéo gốc     - Can	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+75	POBA	347-351	- Can thiệp mạch vành qua da (	LAD).     - Can thiệp mạch vành qua da (	) vào động mạch chéo gốc     - Can thiệp	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+75	Can thiệp mạch vành qua da	382-408	-	 da (POBA) vào động mạch chéo gốc     - 	 và đặt 2 stent phủ thuốc có chồng lấp n	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+75	Nong bóng động mạch vành qua da	496-527	-	ạn giữa động mạch vành phải (RCA)     - 	 (PTCA) tại nhánh sau bên (posterolatera	ViHealthBERT			AMBIGUOUS	no_strong_cue
+75	PTCA	529-533	- Nong bóng động mạch vành qua da (	     - Nong bóng động mạch vành qua da (	) tại nhánh sau bên (posterolateral bran	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	dán	1306-1309	- Thuốc nitroglycerin dạng bôi/	rin.     - Thuốc nitroglycerin dạng bôi/	 lên da (mỡ nitroglycerin)     - ativan 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	troponin	1603-1611	Kết quả xét nghiệm:	sàng: vã mồ hôi     Kết quả xét nghiệm: 	 là 0.10     Kết quả chẩn đoán hình ảnh 	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+75	chẩn	1632-1636	Kết quả	ét nghiệm: troponin là 0.10     Kết quả 	 đoán hình ảnh     - điện tâm đồ cho thấ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	ảnh	1647-1650	Kết quả chẩn đoán hình	onin là 0.10     Kết quả chẩn đoán hình 	     - điện tâm đồ cho thấy nhịp xoangnh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+75	điện tâm đồ	1657-1668	-	10     Kết quả chẩn đoán hình ảnh     - 	 cho thấy nhịp xoangnhịp xoang, tần số 9	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+75	điện tâm đồ	1725-1736	-	angnhịp xoang, tần số 91 lần/phút     - 	 cho thấy Sóng ST chênh xuống  ở các chu	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+76	phẫu thuật	146-156	Tiền sử	vành     -  Nhồi máu cơ tim     Tiền sử 	 / thủ thuật     - đã từng âm tính thử n	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+76	thủ thuật	159-168	Tiền sử phẫu thuật /	hồi máu cơ tim     Tiền sử phẫu thuật / 	     - đã từng âm tính thử nghiệm gắng s	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+76	nghiệm gắng sức	195-210	- đã từng âm tính thử	t / thủ thuật     - đã từng âm tính thử 	     - Thông tim trái cho thấy mạch vành	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+76	VAS	878-881	Khám thấy:	óp nghẹt, lan lên hàm và cánh tay trái, 	 7/10, đau trong 1.5h liên lục     - khó	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+76	trong	892-897	Khám thấy:	lên hàm và cánh tay trái, VAS 7/10, đau 	 1.5h liên lục     - khó thở     - vã mồ	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+76	troponin	1095-1103	-	did 3mg       Kết quả xét nghiệm:     - 	 là 0.03     - creatinine là  2.0 -> 3.2	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+76	phosphate	1172-1181	-	 2.0 -> 3.2     - k (kali) là 5.4     - 	 là 5.6     Kết quả chẩn đoán hình ảnh: 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+76	điện tâm đồ	1221-1232	Kết quả chẩn đoán hình ảnh:	 là 5.6     Kết quả chẩn đoán hình ảnh: 	 (ekg) là bình thường  	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+77	opioid	609-615	- Lạm dụng chất kích thích, chất gây nghiện	m dụng chất kích thích, chất gây nghiện 	 2.   Bệnh sử hiện tại     Lý do nhập vi	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+78	thở oxy	133-140	Trước khi nhập viện:	éo dài tại nhà     Trước khi nhập viện: 	 3L/p tại nhà  2.  Bệnh sử hiện tại     	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+78	Siêu âm tim	562-573	Cận lâm sàng	ộ bão hòa oxy dưới 90 % Cận lâm sàng    	: chèn ép tim   	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+79	phẫu thuật	73-83	Tiền sử	tính: bàn chân vẹo bẩm sinh     Tiền sử 	 / thủ thuật     - đã phẫu thuật chân tr	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+79	thủ thuật	86-95	Tiền sử phẫu thuật /	n vẹo bẩm sinh     Tiền sử phẫu thuật / 	     - đã phẫu thuật chân trái nhiều lần	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+79	phẫu thuật	105-115	- đã	Tiền sử phẫu thuật / thủ thuật     - đã 	 chân trái nhiều lần trong quá khứ vì bà	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+79	sinh	170-174	- đã phẫu thuật chân trái nhiều lần trong quá khứ vì bàn chân vẹo bẩm	u lần trong quá khứ vì bàn chân vẹo bẩm 	  2.  Bệnh sử hiện tại     Lý do nhập vi	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+80	chụp cắt lớp vi tính (ct) cột sống cổ	359-396	-	 xương sườn trái    Cận lâm sàng:     - 	 không thấy tổn thương     - chụp cắt lớ	ViHealthBERT	cắt	ct	AMBIGUOUS	both_procedure_and_test_cues
+80	chụp cắt lớp vi tính	425-445	-	cột sống cổ không thấy tổn thương     - 	 (ct) lồng ngực Hình ảnh gãy 3 xương sườ	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+80	ct	447-449	- chụp cắt lớp vi tính (	 tổn thương     - chụp cắt lớp vi tính (	) lồng ngực Hình ảnh gãy 3 xương sườn 9,	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+80	lồng ngực	451-460	- chụp cắt lớp vi tính (ct)	 thương     - chụp cắt lớp vi tính (ct) 	 Hình ảnh gãy 3 xương sườn 9, 10 và 11, 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+81	chụp cắt lớp vi tính (ct) sọ	257-285	-	bệnh viện Kết quả chẩn đoán hình ảnh: - 	  trước mổ cho thấy độ dày niêm mạc xoan	ViHealthBERT	cắt	ct	AMBIGUOUS	both_procedure_and_test_cues
+81	chụp cắt lớp vi tính	379-399	- không có tổn thương rõ ràng khác trên	- không có tổn thương rõ ràng khác trên 	 (ct) bụng Các thủ thuật đã thực hiện: n	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+81	ct	401-403	- không có tổn thương rõ ràng khác trên chụp cắt lớp vi tính (	rõ ràng khác trên chụp cắt lớp vi tính (	) bụng Các thủ thuật đã thực hiện: nội s	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+81	bụng	405-409	- không có tổn thương rõ ràng khác trên chụp cắt lớp vi tính (ct)	àng khác trên chụp cắt lớp vi tính (ct) 	 Các thủ thuật đã thực hiện: nội soi ổ b	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+81	nội soi ổ bụng	438-452	Các thủ thuật đã thực hiện:	h (ct) bụng Các thủ thuật đã thực hiện: 	 chẩn đoán	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+82	xạ trị cấy hạt	153-167	- u ác của tuyến tiền liệt điều trị bằng	 u ác của tuyến tiền liệt điều trị bằng 	      Tiền sử phẫu thuật / thủ thuật    	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+82	phẫu thuật	181-191	Tiền sử	ều trị bằng xạ trị cấy hạt      Tiền sử 	 / thủ thuật     - Phẫu thuật cắt bỏ u d	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+82	thủ thuật	194-203	Tiền sử phẫu thuật /	ạ trị cấy hạt      Tiền sử phẫu thuật / 	     - Phẫu thuật cắt bỏ u dây thần kinh	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+82	Phẫu thuật cắt bỏ	210-227	-	   Tiền sử phẫu thuật / thủ thuật     - 	 u dây thần kinh số VIII      - Đặt shun	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+82	shunt động tĩnh mạch	263-283	- Đặt	t bỏ u dây thần kinh số VIII      - Đặt 	 (AVF) ở tay phải (RUE AVF)     - Sinh t	ViHealthBERT	shunt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:shunt
+82	AVF	285-288	- Đặt shunt động tĩnh mạch (	ố VIII      - Đặt shunt động tĩnh mạch (	) ở tay phải (RUE AVF)     - Sinh thiết 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+82	Sinh thiết tuyến tiền liệt	317-343	-	h mạch (AVF) ở tay phải (RUE AVF)     - 	 2.  Bệnh sử hiện tại     Lý do nhập việ	ViHealthBERT			AMBIGUOUS	no_strong_cue
+82	trong	933-938	Ure tăng từ 69 lên 91 mg/dl ( 24.6 -32.5 mmol/l)	 từ 69 lên 91 mg/dl ( 24.6 -32.5 mmol/l)	 2 tháng qua,  photpho 8.4 Điều trị:    	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+82	photpho	953-960	Ure tăng từ 69 lên 91 mg/dl ( 24.6 -32.5 mmol/l)trong 2 tháng qua,	( 24.6 -32.5 mmol/l)trong 2 tháng qua,  	 8.4 Điều trị:      -  Bệnh nhân đã  hoà	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+82	ghép thận	1033-1042	-  Bệnh nhân đã  hoàn thành quá trình đánh giá trước	đã  hoàn thành quá trình đánh giá trước 	 nhưng tạm hoãn ghép thận do chẩn đoán u	ViHealthBERT	ghép		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:ghép
+82	chạy thận nhân tạo	1227-1245	- Điều trị bắt đầu	ỳ ai trong số họ     - Điều trị bắt đầu 	 (HD) 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+83	Chẩn đoán hình ảnh	225-243	Cận lâm sàng:	tỉnh Khó thở khi gắng sức Cận lâm sàng: 	 -  siêu âm tim cho thấy hở van hai lá n	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+83	siêu âm tim	247-258	-	sức Cận lâm sàng: Chẩn đoán hình ảnh -  	 cho thấy hở van hai lá nặng - Chụp động	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+83	Chụp động mạch vành	289-308	-	êu âm tim cho thấy hở van hai lá nặng - 	 cho thấy không có bệnh động mạch vành  	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	SPO	555-558	- Tại phòng khám, bệnh nhân được ghi nhận có độ bão hòa oxy (	h nhân được ghi nhận có độ bão hòa oxy (	2) từ 88-92 % khi thở khí trời và nhịp t	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+84	bnp	867-870	-	uả xét nghiệm     - bạch cầu 26.7     - 	 4227     - kali 3.2     - troponin 0.01	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+84	kali	882-886	-	   - bạch cầu 26.7     - bnp 4227     - 	 3.2     - troponin 0.01     - lactate 1	lab-pair recall		kali	LIKELY_GENUINE_TEST	test_cues:kali
+84	troponin	897-905	-	6.7     - bnp 4227     - kali 3.2     - 	 0.01     - lactate 1.8     - tổng phân 	lab-pair recall		troponin	LIKELY_GENUINE_TEST	test_cues:troponin
+84	lactate	917-924	-	   - kali 3.2     - troponin 0.01     - 	 1.8     - tổng phân tích nước tiểu có k	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+84	tích nước	945-954	- tổng phân	 0.01     - lactate 1.8     - tổng phân 	 tiểu có kết quả dương tính  với 182bạch	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	chẩn	1043-1047	Kết quả	i khuẩn (vi khuẩn), nitrite     Kết quả 	 đoán hình ảnh     - chẩn đoán hình ảnh 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	ảnh	1058-1061	Kết quả chẩn đoán hình	ẩn), nitrite     Kết quả chẩn đoán hình 	     - chẩn đoán hình ảnh không cho thấy	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	chụp x-quang ngực	1157-1174	-	lý tim mạch hoặc hô hấp cấp tính      - 	 phù hợp với viêm phổi kẽ. Đã xử trí thu	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+84	Ipratropium	1267-1278	- Khí dung phối hợp Albuterol và	ật     - Khí dung phối hợp Albuterol và 	 1 lần     - Ceftriaxone 1 gram dùng 1 l	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	Ceftriaxone	1291-1302	-	ợp Albuterol và Ipratropium 1 lần     - 	 1 gram dùng 1 liều     - Uống Tylenol 1	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+84	Tylenol	1333-1340	- Uống	ftriaxone 1 gram dùng 1 liều     - Uống 	 1 gram, 1 liều duy nhất.     - cấy máu 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+84	cấy máu	1372-1379	-	 Tylenol 1 gram, 1 liều duy nhất.     - 	 2 mẫu và cấy nước tiểu đã được gửi.	ViHealthBERT		cấy máu	LIKELY_GENUINE_TEST	test_cues:cấy máu
+84	cấy	1389-1392	- cấy máu 2 mẫu và	1 liều duy nhất.     - cấy máu 2 mẫu và 	 nước tiểu đã được gửi.	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+85	phẫu thuật bắc cầu nối động mạch vành	110-147	- bệnh động mạch vành sau	g type II     - bệnh động mạch vành sau 	     - suy tim     - bệnh mạch máu ngoại	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+85	cắt	354-357	- Ung thư biểu mô tế bào vảy xâm nhập của dương vậtbiệt hóa kém, sau	xâm nhập của dương vậtbiệt hóa kém, sau 	 bao quy đầu với bờ diện cắt dương tính.	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+85	phẫu thuật	410-420	Tiền sử	với bờ diện cắt dương tính.     Tiền sử 	 / thủ thuật     -  phẫu thuật bắc cầu n	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+85	thủ thuật	423-432	Tiền sử phẫu thuật /	ắt dương tính.     Tiền sử phẫu thuật / 	     -  phẫu thuật bắc cầu nối động mạch	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+85	phẫu thuật bắc cầu nối động mạch vành	440-477	-	  Tiền sử phẫu thuật / thủ thuật     -  	     - phẫu thuật cắt bao quy đầu     Tr	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+85	phẫu thuật cắt bao quy đầu	484-510	-	 thuật bắc cầu nối động mạch vành     - 	     Trước khi nhập viện: thở không xâm 	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+85	thở không xâm nhập BiPAP	536-560	Trước khi nhập viện:	ắt bao quy đầu     Trước khi nhập viện: 	  2.  Bệnh sử  hiện tại  3.  Đánh giá tạ	ViHealthBERT			AMBIGUOUS	no_strong_cue
+86	chẩn	413-417	Kết quả	 kinh ngoại biên  Cận lâm sàng: Kết quả 	 đoán hình ảnh - Đo sức bền cơ tim bằng 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+86	ảnh	428-431	Kết quả chẩn đoán hình	n  Cận lâm sàng: Kết quả chẩn đoán hình 	 - Đo sức bền cơ tim bằng đồng vị phóng 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+86	Chụp động mạch vành	621-640	-	èm theo rối loạn chức năng thất trái. - 	 cho thấy bệnh ba thân động mạch vành ng	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+86	Chụp động mạch vành can thiệp	721-750	-	iêm trọng  Các thủ thuật đã thực hiện - 	 - Can thiệp mạch vành qua da và đặt ste	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+86	Can thiệp mạch vành qua da	753-779	-	 hiện - Chụp động mạch vành can thiệp - 	 và đặt stent phủ thuốc (DES) vào đoạn g	ViHealthBERT	can thiệp		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:can thiệp
+86	đặt stent phủ thuốc	783-802	- Can thiệp mạch vành qua da và	n thiệp - Can thiệp mạch vành qua da và 	 (DES) vào đoạn giữa của động mạch liên 	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+86	DES	804-807	- Can thiệp mạch vành qua da và đặt stent phủ thuốc (	ạch vành qua da và đặt stent phủ thuốc (	) vào đoạn giữa của động mạch liên thất 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+87	Phẫu thuật cắt cụt chân trái	678-706	Chẩn đoán:	hương chi dưới nghiêm trọng. Chẩn đoán: 	 bên trên gối  và cắt cụt chân phải bên 	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+87	cắt cụt chân phải	724-741	Chẩn đoán: Phẫu thuật cắt cụt chân trái bên trên gối  và	huật cắt cụt chân trái bên trên gối  và 	 bên dưới gối / biến chứng thuyên tắc ph	ViHealthBERT	cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:cắt
+87	phẫu	877-881	Đã	cus kháng vancomycin     Điều trị :  Đã 	 thuật cắt cụt chân trái trên gối và châ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+87	lắp chân giả	988-1000	Có ý định điều trị và	 sinh tĩnh mạch.  Có ý định điều trị và 	 Bệnh nhân suy nghĩ tích cực nghĩ cho tư	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+88	phẫu thuật	245-255	Tiền sử	odgkin tế bàoB lớn lan toả)     Tiền sử 	 / thủ thuật:  Phẫu thuật thay toàn bộ k	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+88	Phẫu thuật thay toàn bộ khớp háng phải	270-308	Tiền sử phẫu thuật / thủ thuật:	ả)     Tiền sử phẫu thuật / thủ thuật:  	      Thuốc đang dùng trước khi nhập việ	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật;procedure_section
+88	lasixđã	383-390	-	p viện     - Dùngmethadonekéo dài     - 	 dừng cách vài tuần  2.  Bệnh sử hiện tạ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+89	phẫu thuật	29-39	Lịch sử	1.  Tiền sử bệnh     Lịch sử 	 / thủ thuật: nội soi mật tuỵ ngược dòng	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+89	nội soi mật tuỵ ngược dòng	53-79	Lịch sử phẫu thuật / thủ thuật:	ệnh     Lịch sử phẫu thuật / thủ thuật: 	 (ERCP) ,đặt stent ống tuỵ gần,  phẫu th	ViHealthBERT			AMBIGUOUS	no_strong_cue;procedure_section
+89	ERCP	81-85	Lịch sử phẫu thuật / thủ thuật: nội soi mật tuỵ ngược dòng (	 thủ thuật: nội soi mật tuỵ ngược dòng (	) ,đặt stent ống tuỵ gần,  phẫu thuật cắ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+89	đặt stent ống tuỵ gần	88-109	Lịch sử phẫu thuật / thủ thuật: nội soi mật tuỵ ngược dòng (ERCP) ,	uật: nội soi mật tuỵ ngược dòng (ERCP) ,	,  phẫu thuật cắt bỏ khối u thần kinh nộ	ViHealthBERT	đặt|stent|đặt stent		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|stent|đặt stent;procedure_section
+89	phẫu thuật cắt bỏ	112-129	1.  Tiền sử bệnh	ợc dòng (ERCP) ,đặt stent ống tuỵ gần,  	 khối u thần kinh nội tiết ở thân tụy   	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt
+89	vết thương tại	240-254	- flagyl, chăm sóc	    - octreotide     - flagyl, chăm sóc 	 chỗ, nhịn ăn đường miệng, dinh dưỡng tĩ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+89	nhịn ăn đường miệng	260-279	- flagyl, chăm sóc vết thương tại chỗ,	 - flagyl, chăm sóc vết thương tại chỗ, 	, dinh dưỡng tĩnh mạch   2.  Bệnh sử hiệ	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+89	dinh dưỡng tĩnh mạch	281-301	- flagyl, chăm sóc vết thương tại chỗ, nhịn ăn đường miệng,	ết thương tại chỗ, nhịn ăn đường miệng, 	   2.  Bệnh sử hiện tại     Lý do nhập v	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+89	sau	779-782	Lý do nhập viện: Tuột sonde dẫn lưu ổ bụng	ng flagyl, chăm sóc vết thương tại chỗ, 	 23 ngày điều trị thì xuất viện.  Đêm tr	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+89	nuôi dưỡng đường tĩnh mạch	1242-1268	Nhịn ăn uống đường miệng,	t ra 15,24 cm Nhịn ăn uống đường miệng, 	  Catheter PICC được chuyển sang tay trá	ViHealthBERT			AMBIGUOUS	no_strong_cue
+89	Catheter PICC	1270-1283	Nhịn ăn uống đường miệng, nuôi dưỡng đường tĩnh mạch	ường miệng, nuôi dưỡng đường tĩnh mạch  	 được chuyển sang tay trái Cận lâm sàng:	ViHealthBERT	catheter		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:catheter
+89	siêu âm	1327-1334	-	c chuyển sang tay trái Cận lâm sàng:  - 	:  không phát hiện huyết khối tĩnh mạch 	ViHealthBERT		siêu âm	LIKELY_GENUINE_TEST	test_cues:siêu âm
+90	nạo vét tổn thương dây thanh quản	202-235	Các thủ thuật đã thực hiện:	i bệnh viện Các thủ thuật đã thực hiện: 		ViHealthBERT	nạo		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:nạo;procedure_section
+91	Phẫu thuật thay van tim hai lá cơ học	115-152	sau	n chức năng tâm thất phải, rung nhĩ sau 	     - Suy thận mạn giai V đang chạy thậ	ViHealthBERT	phẫu thuật|thay van		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|thay van
+91	ghép thận	251-260	sau Phẫu thuật thay van tim hai lá cơ học	ác ngày thứ 2, thứ 6, chủ nhật, sau khi 	 thất bại     Tiền sử phẫu thuật / thủ t	ViHealthBERT	ghép		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:ghép
+91	phẫu thuật	282-292	Tiền sử	 sau khi ghép thận thất bại     Tiền sử 	 / thủ thuật     - Phẫu thuật thay van h	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+91	thủ thuật	295-304	Tiền sử phẫu thuật /	 thận thất bại     Tiền sử phẫu thuật / 	     - Phẫu thuật thay van hai lá cơ học	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+91	Phẫu thuật thay van hai lá cơ học	311-344	-	   Tiền sử phẫu thuật / thủ thuật     - 	     - ghép thận thất bại     Thuốc trướ	ViHealthBERT	phẫu thuật|thay van		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|thay van
+91	ghép thận	351-360	-	Phẫu thuật thay van hai lá cơ học     - 	 thất bại     Thuốc trước khi nhập viện:	ViHealthBERT	ghép		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:ghép
+91	coumadin	401-409	Thuốc trước khi nhập viện:	thất bại     Thuốc trước khi nhập viện: 	 3.0 mg /ngày  2.  Bệnh sử hiện tại Lý d	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+91	INR	672-675	Lý do vào viện:, INR dưới ngưỡng điều trị	g máu dưới ngưỡng điều trị ( kết quả là 	 1.7) ,không có biểu hiện bất thường khá	lab-pair recall		inr	LIKELY_GENUINE_TEST	test_cues:inr;procedure_section
+91	truyền	1138-1144	Điều trị: Bắt đầu dùng heparin	ị 1.7    Điều trị: Bắt đầu dùng heparin 	 tĩnh mạch liên tục	ViHealthBERT	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền;procedure_section
+91	mạch	1150-1154	Điều trị: Bắt đầu dùng heparin truyền tĩnh	u trị: Bắt đầu dùng heparin truyền tĩnh 	 liên tục	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure;procedure_section
+92	CT ở tuyến	300-310	Lý do nhập viện: theo dõi đại tràng giãn	 nay xuất hiện ý thúc chậm hơn, đã chụp 	 trước chưa phát hiện bất thường trên ph	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+92	xét	460-463	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	 nghiệm: Bạch cầu tăng     Kết quả chẩn 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+92	chụp ctchưa	518-529	Kết quả chẩn đoán hình ảnh:	ầu tăng     Kết quả chẩn đoán hình ảnh: 	 phát hiện bất thường trên phim chụp    	ViHealthBERT		ct	LIKELY_GENUINE_TEST	test_cues:ct
+93	dẫn lưu dịch màng tim	304-325	-	ở hai phổi Các thủ thuật đã thực hiện - 	 - Không thực hiện gây dính màng phổi bằ	ViHealthBERT	dẫn lưu		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:dẫn lưu
+94	HER	71-74	Các bệnh mãn tính: Ung thư vú di căn ER+/	ác bệnh mãn tính: Ung thư vú di căn ER+/	2−     đang dùng thuốc  weekly taxol và 	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+94	VAS	433-436	Lý do nhập viện: đau bụng vùng hạ sườn phải ngày càng tăng	 cùng ngày vào viện đau bụng tăng lên , 	 7/10 kèm theo buồn nôn, nôn nhiều, chưa	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+96	đặt lưu sonde tiểu	137-155	-	i và loét tì đè giai đoạn IV mãn tính - 	    gây nhiễm khuẩn đường tiết niệu tái 	ViHealthBERT	đặt|sonde		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|sonde
+96	lactate	1111-1118	-	tiểu, nước tiểu có cặn Cận lâm sàng:: - 	 1.1-->0.8 - Cấy nước tiểu : nhiễm khuẩn	lab-pair recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+96	cấy máu	1201-1208	-	ờng tiết niệu có các vi khuẩn hỗn hợp - 	 :âm tính -chỉ số marker viêm của anh ấy	ViHealthBERT		cấy máu	LIKELY_GENUINE_TEST	test_cues:cấy máu
+96	MRI	1294-1297	-	 xu hướng tăng  chẩn đoán hình ảnh:   - 	:  không thấy tình trạng viêm xương tủy 	ViHealthBERT		mri	LIKELY_GENUINE_TEST	test_cues:mri
+96	Xquang ngực thẳng	1348-1365	-	ấy tình trạng viêm xương tủy nặng hơn - 	: không thấy thâm nhiễm Thủ thuật: - svo	ViHealthBERT		xquang	LIKELY_GENUINE_TEST	test_cues:xquang
+96	svo2	1402-1406	-	ẳng: không thấy thâm nhiễm Thủ thuật: - 	 là 82 Đặt ống thông tĩnh mạch trung tâm	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+96	Đặt ống thông tĩnh mạch trung tâm	1413-1446	- svo2 là 82	thấy thâm nhiễm Thủ thuật: - svo2 là 82 	 : đo cvp là 6 Chẩn đoán: nhiễm trùng hu	ViHealthBERT	đặt|đặt ống		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|đặt ống
+96	đo cvp	1449-1455	Đặt ống thông tĩnh mạch trung tâm :	 82 Đặt ống thông tĩnh mạch trung tâm : 	 là 6 Chẩn đoán: nhiễm trùng huyết đường	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+96	Truyền dịch	1550-1561	-	 viêm tủy xương mãn tính,  Điều trị:  - 	 : 4000 ml NS 0.9 % - Kháng sinh Cefepim	lab-pair recall	truyền		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:truyền
+96	tĩnh mạch	1623-1632	- Kháng sinh Cefepim và Vancomycin truyền	Kháng sinh Cefepim và Vancomycin truyền 	  .    	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+97	kali	730-734	-	u có/không     Kết quả xét nghiệm     - 	 là 6.6 mmol/l     - creatinin là 1.9 mm	lab-pair recall		kali	LIKELY_GENUINE_TEST	test_cues:kali
+97	creatinin	755-764	-	t nghiệm     - kali là 6.6 mmol/l     - 	 là 1.9 mmol/l     - tiểu cầu là 81 G/L 	lab-pair recall		creatinin	LIKELY_GENUINE_TEST	test_cues:creatinin
+97	tiểu cầu	785-793	-	l/l     - creatinin là 1.9 mmol/l     - 	 là 81 G/L     - bạch cầu là 10.9 G/L   	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+97	bạch cầu	810-818	-	9 mmol/l     - tiểu cầu là 81 G/L     - 	 là 10.9 G/L     - tổng phân tích nước t	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+97	phân tích nước tiểu	842-861	- tổng	L     - bạch cầu là 10.9 G/L     - tổng 	 nhiễm trùng đường tiết niệu     Kết quả	clinical recall			LIKELY_GENUINE_TEST	short_non_procedure
+97	chẩn	902-906	Kết quả	nhiễm trùng đường tiết niệu     Kết quả 	 đoán hình ảnh     - chẩn đoán hình ảnh:	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+97	ảnh	917-920	Kết quả chẩn đoán hình	ng tiết niệu     Kết quả chẩn đoán hình 	     - chẩn đoán hình ảnh: chụp x-quang 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+97	x-quang ngực	952-964	- chẩn đoán hình ảnh: chụp	hình ảnh     - chẩn đoán hình ảnh: chụp 	 cho thấy không có hình ảnh tổn thương v	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+97	chụp x-quang ngực	1024-1041	Kết quả chẩn đoán hình ảnh	ình ảnh tổn thương viêm cấp tính so với 	 trước đó     Các thủ thuật đã thực hiện	ViHealthBERT		x-quang	LIKELY_GENUINE_TEST	test_cues:x-quang
+97	Đặt sonde bàng quang	1088-1108	-	đó     Các thủ thuật đã thực hiện     - 	     - Gửi xét nghiệm máu và cấy nước ti	ViHealthBERT	đặt|sonde|đặt sonde		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:đặt|sonde|đặt sonde
+97	xét nghiệm máu	1119-1133	- Gửi	ện     - Đặt sonde bàng quang     - Gửi 	 và cấy nước tiểu     Các thủ thuậ khác 	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+97	cấy nước tiểu	1137-1150	- Gửi xét nghiệm máu và	 bàng quang     - Gửi xét nghiệm máu và 	     Các thủ thuậ khác     - điện tâm đồ	ViHealthBERT		cấy nước tiểu	LIKELY_GENUINE_TEST	test_cues:cấy nước tiểu
+97	điện tâm đồ	1179-1190	-	y nước tiểu     Các thủ thuậ khác     - 	 cho thấy nhịp chậm xoang  - đường huyết	ViHealthBERT		điện tâm đồ	LIKELY_GENUINE_TEST	test_cues:điện tâm đồ
+98	hóa trị huy động tế bào gốc.	105-133	Lý do nhập viện: Theo hẹn	p 2.  Bệnh sử Lý do nhập viện: Theo hẹn 	     Triệu chứng hiện tại     - ho     -	ViHealthBERT			AMBIGUOUS	no_strong_cue
+98	phim	227-231	-	Cận lâm sàng  trước khi nhập viện     - 	 chụp CT hình ảnh tổn thương tiêu xương 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+98	CT hình ảnh	237-248	- phim chụp	ng  trước khi nhập viện     - phim chụp 	 tổn thương tiêu xương lan tỏa phù hợp v	clinical recall		ct	LIKELY_GENUINE_TEST	test_cues:ct
+99	phẫu thuật	96-106	Tiền sử	hông biệt định nghiêm trọng     Tiền sử 	 / thủ thuật: phẫu thuật nội soi cắt bỏ 	ViHealthBERT	phẫu thuật		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật
+99	phẫu thuật nội soi cắt bỏ tuyến tiền liệt	120-161	Tiền sử phẫu thuật / thủ thuật:	ọng     Tiền sử phẫu thuật / thủ thuật: 	  bên trái  2.  Bệnh sử     Lý do nhập v	ViHealthBERT	phẫu thuật|cắt		LIKELY_PROCEDURE_NOT_TEST	procedure_cues_without_test_cues:phẫu thuật|cắt;procedure_section
+100	xét nghiệm ngoại trú	399-419	- xét nghiệm	ệm trước khi nhập viện     - xét nghiệm 	 được thực hiện hôm nay và canxi là 12.0	ViHealthBERT		xét nghiệm	LIKELY_GENUINE_TEST	test_cues:xét nghiệm
+100	canxi ion hóa	461-474	- xét nghiệm xét nghiệm ngoại trú được thực hiện hôm nay và canxi là 12.0;	ược thực hiện hôm nay và canxi là 12.0; 	 6.8      - xuất hiện hai lần ngất xỉu, 	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+100	MRI ngoại trú	769-782	- đã chỉ định	ó biểu hiện động kinh     - đã chỉ định 	  có hình ảnh nhồi máu cũ nhỏ ở vỏ não đ	ViHealthBERT		mri	LIKELY_GENUINE_TEST	test_cues:mri
+100	ngay	983-987	sau đó đã được sử dụng	i khoảng 5 phút  sau đó đã được sử dụng 	 01 viên nitroglycerin đặt dưới lưỡi    	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+100	nay	1115-1118	sau đó đã được sử dụng ngay 01 viên nitroglycerin đặt dưới lưỡi	 khi bị ngã trong bồn tắm năm ngoái đến 	  3.  Đánh giá tại bệnh viện     Kết quả	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+100	xétí nghiệm	1159-1170	Kết quả	 3.  Đánh giá tại bệnh viện     Kết quả 	     - canxi toàn phần là 12.0; canxi io	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+100	canxi	1177-1182	-	bệnh viện     Kết quả xétí nghiệm     - 	 toàn phần là 12.0; canxi ion hóa 6.8   	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+100	canxi	1202-1207	- canxi toàn phần là 12.0;	í nghiệm     - canxi toàn phần là 12.0; 	 ion hóa 6.8     - canx toàn phầni là 12	ViHealthBERT			LIKELY_GENUINE_TEST	short_non_procedure
+100	canx toàn phầni	1226-1241	-	n phần là 12.0; canxi ion hóa 6.8     - 	 là 12.3     - cr (creatinine) 1.2     K	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure
+100	MRI ngoại trú	1308-1321	Kết quả chẩn đoán hình ảnh:	ne) 1.2     Kết quả chẩn đoán hình ảnh: 	 cho thấy hình ảnh  nhồi máu cũ nhỏ ở vỏ	ViHealthBERT		mri	LIKELY_GENUINE_TEST	test_cues:mri
+100	Natriclori	1486-1496	- Truyền  dịch	 20mg tiêm tĩnh mạch     - Truyền  dịch 	 0.9 %  tĩnh mạch	lab-pair recall			LIKELY_GENUINE_TEST	short_non_procedure

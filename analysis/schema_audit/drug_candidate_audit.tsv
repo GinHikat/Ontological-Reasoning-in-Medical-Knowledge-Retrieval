@@ -1,0 +1,274 @@
+file	text	position	candidates	candidate_count	candidate_tty	ingredient_vs_clinical	strength_aware	brand_aware	unlinked	source_component	drug_similarity
+1	metoprolol 25mg po bid	53-75	866924	1			True	False	False	ViHealthBERT	0.9180127382278442
+1	doxycycline	82-93	3640	1			False	False	False	ViHealthBERT	0.9990570545196533
+1	atenolol	122-130	1202	1			False	False	False	ViHealthBERT	0.9990676641464233
+1	caffeine	356-364	1886	1			False	False	False	ontology drug recall	0.99871826171875
+1	caffeine	395-403	1886	1			False	False	False	lab-pair recall	0.99871826171875
+1	metoprolol 25mg po bid	1772-1794	866924	1			True	False	False	ViHealthBERT	0.9180127382278442
+1	atenololtrong	1849-1862	1202	1			False	False	False	ViHealthBERT	0.7549590468406677
+1	aspirin 325mg x 1	2199-2216	198466	1			True	False	False	ViHealthBERT	0.8150780200958252
+4	NSAID	59-64		0			False	False	True	ViHealthBERT	0.5883215665817261
+4	omeprazole	106-116	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+4	thuốc NSAIDs	1563-1575	37790	1			False	False	False	ViHealthBERT	0.6504151821136475
+4	omeprazole.	1596-1607	7646	1			False	False	False	ViHealthBERT	0.984994649887085
+5	aspartate	814-823	42543	1			False	False	False	ontology drug recall	0.9990065097808838
+5	alanine	860-867	426	1			False	False	False	ontology drug recall	0.9992284774780273
+5	levophed	1360-1368	227559	1			False	False	False	ViHealthBERT	0.9983591437339783
+5	propofol để	1375-1386	8782	1			False	False	False	ViHealthBERT	0.883427619934082
+5	phentolamine	1408-1420	8153	1			False	False	False	ViHealthBERT	0.9997451305389404
+7	seroquel	190-198	83553	1			False	False	False	ViHealthBERT	0.999488353729248
+9	iron	104-108	90176	1			False	False	False	lab-pair recall	0.998854398727417
+11	pháp lợi tiểu	313-326	202999	1			False	False	False	ViHealthBERT	0.6419204473495483
+12	levofloxacin	876-888	82122	1			False	False	False	ViHealthBERT	0.9990502595901489
+13	corticoid	68-77	261486	1			False	False	False	ViHealthBERT	0.8331074714660645
+13	Corticoid liều cao kéo dài	317-343	795064	1			False	False	False	ViHealthBERT	0.7307993173599243
+13	bactrim	382-389	151399	1			False	False	False	ViHealthBERT	0.999413013458252
+13	doxycycline	430-441	3640	1			False	False	False	ViHealthBERT	0.9990570545196533
+13	corticoid	508-517	261486	1			False	False	False	ViHealthBERT	0.8331074714660645
+13	cotrim	921-927	202796	1			False	False	False	ontology drug recall	0.9996241927146912
+13	bactrim	1887-1894	151399	1			False	False	False	ontology drug recall	0.999413013458252
+13	doxycycline	1898-1909	3640	1			False	False	False	ontology drug recall	0.9990570545196533
+13	doxycycline	2235-2246	3640	1			False	False	False	ontology drug recall	0.9990570545196533
+13	bactrim	2246-2253	151399	1			False	False	False	ontology drug recall	0.999413013458252
+16	guaiac	1578-1584	1373150	1			False	False	False	ontology drug recall	0.9921905994415283
+16	guaiac	1909-1915	1373150	1			False	False	False	ontology drug recall	0.9921905994415283
+17	tylenol	367-374	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+17	advil	378-383	153010	1			False	False	False	ontology drug recall	0.9978746175765991
+17	kháng sinh tĩnh mạch	1041-1061	852617	1			False	False	False	ViHealthBERT	0.632296621799469
+19	vicodin	382-389	128793	1			False	False	False	ViHealthBERT	0.9977859854698181
+19	vicodin	906-913	128793	1			False	False	False	ViHealthBERT	0.9977859854698181
+19	vicodin	1081-1088	128793	1			False	False	False	ViHealthBERT	0.9977859854698181
+20	metoprolol	354-364	6918	1			False	False	False	ViHealthBERT	0.9992459416389465
+20	desmopressin	405-417	3251	1			False	False	False	ontology drug recall	0.9989793300628662
+22	aspirin 325mg h	75-90	198467	1			True	False	False	ViHealthBERT	0.8323902487754822
+24	thuốci levafloxacin	691-710	37771	1			False	False	False	ViHealthBERT	0.7917032837867737
+24	cephalexin	714-724	2231	1			False	False	False	ViHealthBERT	0.9991347193717957
+24	vancomycin	1351-1361	11124	1			False	False	False	ViHealthBERT	0.9992589950561523
+27	coumadin	204-212	202421	1			False	False	False	ViHealthBERT	0.9982119798660278
+27	coumadin	248-256	202421	1			False	False	False	ViHealthBERT	0.9982119798660278
+27	albuterolipratropium nebs	1018-1043	435	1			False	False	False	ViHealthBERT	0.6461906433105469
+27	"metoprolol 5mg iv x2
+    C"	1053-1079	250082	1			True	False	False	ViHealthBERT	
+27	metoprolol	1298-1308	6918	1			False	False	False	ViHealthBERT	0.9992459416389465
+28	eliquis	358-365	1364436	1			False	False	False	ViHealthBERT	0.9975836873054504
+28	lipase	1768-1774	6406	1			False	False	False	ViHealthBERT	0.9992822408676147
+30	cholesterol	100-111	2438	1			False	False	False	ontology drug recall	0.9988683462142944
+30	gleevec	190-197	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+30	allopurinol	239-250	519	1			False	False	False	ViHealthBERT	0.999407172203064
+30	gleevec	751-758	282386	1			False	False	False	ViHealthBERT	0.9961879253387451
+30	allopurinol	797-808	519	1			False	False	False	ViHealthBERT	0.999407172203064
+30	Thuốc giảm đau	1289-1303	2380565	1			False	False	False	ViHealthBERT	0.6041988134384155
+30	gleevec	1324-1331	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+30	allopurinol	1369-1380	519	1			False	False	False	ViHealthBERT	0.999407172203064
+32	methicillin	1033-1044	2181306	1			False	False	False	ontology drug recall	0.9987673759460449
+32	albuterol	1465-1474	435	1			False	False	False	lab-pair recall	0.9990154504776001
+32	guaifenesin	1487-1498	5032	1			False	False	False	ontology drug recall	0.9985529184341431
+32	furosemide 40 mg	1502-1518	315971	1			True	False	False	ontology drug recall	0.995015561580658
+32	methicillin	2156-2167	2181306	1			False	False	False	ontology drug recall	0.9987673759460449
+33	furosemide	197-207	4603	1			False	False	False	lab-pair recall	0.9994081258773804
+33	bumetanide 2mg iv	1401-1418	315502	1			True	False	False	ViHealthBERT	0.7666996717453003
+33	vancomycin 1 gram	1434-1451	1807512	1			False	False	False	ViHealthBERT	0.8117516040802002
+33	levofloxacin 750mg iv	1467-1488	311296	1			True	False	False	ViHealthBERT	0.8129339218139648
+33	aspirin 325mg	1504-1517	317300	1			True	False	False	ViHealthBERT	0.9691665172576904
+33	albuterolipratropium nebulizer	1533-1563	2108233	1			False	False	False	ViHealthBERT	0.6829131841659546
+33	methylprednisolone 125mg	1579-1603	1743702	1			True	False	False	ViHealthBERT	0.9487282037734985
+34	thuốc giảm đau opioid	280-301	220150	1			False	False	False	ViHealthBERT	0.609670102596283
+34	thuốc giảm đau opioid	1245-1266	220150	1			False	False	False	ViHealthBERT	0.609670102596283
+34	thuốc giảm đau opioid	1279-1300	220150	1			False	False	False	ViHealthBERT	0.609670102596283
+35	gleevec	99-106	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+35	gleevec	381-388	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+35	gleevec	1047-1054	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+35	gleevec	1718-1725	282386	1			False	False	False	ontology drug recall	0.9961879253387451
+36	azathioprine	208-220	1256	1			False	False	False	ViHealthBERT	0.999125063419342
+36	prograf	233-240	196463	1			False	False	False	ontology drug recall	0.9989773035049438
+36	g bid	264-269	217225	1			False	False	False	ontology drug recall	0.9985083341598511
+36	g bid	275-280	217225	1			False	False	False	ontology drug recall	0.9985083341598511
+36	cellcept	294-302	152633	1			False	False	False	ViHealthBERT	0.9972698092460632
+36	cellcept	324-332	152633	1			False	False	False	ViHealthBERT	0.9972698092460632
+36	creatinine	457-467	2913	1			False	False	False	ViHealthBERT	0.9989430904388428
+36	creatinine	514-524	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+36	creatinine	573-583	2913	1			False	False	False	ViHealthBERT	0.9989430904388428
+36	cellcept	653-661	152633	1			False	False	False	ViHealthBERT	0.9972698092460632
+36	creatinine	692-702	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+36	prograf	893-900	196463	1			False	False	False	ontology drug recall	0.9989773035049438
+36	creatinine	953-963	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+36	creatinine	1179-1189	2913	1			False	False	False	lab-pair recall	0.9989430904388428
+36	cellcept	1385-1393	152633	1			False	False	False	ViHealthBERT	0.9972698092460632
+36	prograf	1469-1476	196463	1			False	False	False	ontology drug recall	0.9989773035049438
+36	creatinine	1736-1746	2913	1			False	False	False	lab-pair recall	0.9989430904388428
+36	creatinine	1936-1946	2913	1			False	False	False	ViHealthBERT	0.9989430904388428
+37	Torsemide	224-233	38413	1			False	False	False	ViHealthBERT	0.9991452693939209
+37	Insulin glargine	274-290	274783	1			False	False	False	ViHealthBERT	0.9985634088516235
+37	Isosorbide	349-359	6057	1			False	False	False	ViHealthBERT	0.9994913339614868
+37	Rosuvastatin	405-417	301542	1			False	False	False	ViHealthBERT	0.996915876865387
+37	Crestor	419-426	320864	1			False	False	False	ontology drug recall	0.9983415007591248
+37	Carvedilol	473-483	20352	1			False	False	False	ViHealthBERT	0.9985935091972351
+37	Creatinine	607-617	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+37	Torsemide	741-750	38413	1			False	False	False	ViHealthBERT	0.9991452693939209
+37	torsemide	805-814	38413	1			False	False	False	ViHealthBERT	0.9991452693939209
+37	isosorbide	1040-1050	6057	1			False	False	False	ViHealthBERT	0.9994913339614868
+37	crestor	1052-1059	320864	1			False	False	False	ViHealthBERT	0.9983415007591248
+37	carvedilol	1061-1071	20352	1			False	False	False	ViHealthBERT	0.9985935091972351
+37	isosorbide	1102-1112	6057	1			False	False	False	ViHealthBERT	0.9994913339614868
+37	crestor	1114-1121	320864	1			False	False	False	ViHealthBERT	0.9983415007591248
+37	carvedilol	1123-1133	20352	1			False	False	False	ViHealthBERT	0.9985935091972351
+37	creatinine	1414-1424	2913	1			False	False	False	lab-pair recall	0.9989430904388428
+37	insulin	1680-1687	253182	1			False	False	False	ViHealthBERT	0.7668737173080444
+37	dextrose	1691-1699	4850	1			False	False	False	ViHealthBERT	0.9312419891357422
+37	lasix	1723-1728	202991	1			False	False	False	ontology drug recall	0.999549150466919
+38	creatinine	1068-1078	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+40	tylenol	176-183	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+40	mucinex	190-197	352777	1			False	False	False	ViHealthBERT	0.9988577961921692
+40	azithromycin	1207-1219	18631	1			False	False	False	ViHealthBERT	0.9993242025375366
+40	tylenol	1243-1250	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+40	mucinex d	1254-1263	352777	1			False	False	False	ViHealthBERT	0.8892769813537598
+41	omeprazole	625-635	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	omeprazole	1168-1178	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	omeprazole	1695-1705	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	omeprazole	1753-1763	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	al pain	1965-1972	152220	1			False	False	False	ontology drug recall	0.6961569786071777
+41	omeprazole	2473-2483	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	omeprazole	2594-2604	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+41	omeprazole	2876-2886	7646	1			False	False	False	ViHealthBERT	0.9985686540603638
+43	dobutamine	649-659	3616	1			False	False	False	ViHealthBERT	0.9986761808395386
+43	dobutamine	1274-1284	3616	1			False	False	False	ViHealthBERT	0.9986761808395386
+44	lasix	1440-1445	202991	1			False	False	False	ViHealthBERT	0.999549150466919
+44	lasix	1720-1725	202991	1			False	False	False	ontology drug recall	0.999549150466919
+44	morphine	1740-1748	7052	1			False	False	False	ViHealthBERT	0.9993008971214294
+44	dilaudid	1760-1768	224913	1			False	False	False	ontology drug recall	0.9989827871322632
+44	metoprolol	1783-1793	6918	1			False	False	False	ontology drug recall	0.9992459416389465
+44	diltiazem	1813-1822	3443	1			False	False	False	ontology drug recall	0.9974048733711243
+47	cholan	814-820	992825	1			False	False	False	ontology drug recall	0.9966336488723755
+47	cholan	2011-2017	992825	1			False	False	False	ontology drug recall	0.9966336488723755
+47	cholan	2805-2811	992825	1			False	False	False	ontology drug recall	0.9966336488723755
+50	albuterol nebs	159-173	435	1			False	False	False	ViHealthBERT	0.8603766560554504
+50	pack	194-198	746839	1			False	False	False	ontology drug recall	0.9984968304634094
+50	prednisone	747-757	8640	1			False	False	False	ontology drug recall	0.9993335604667664
+50	amoxicillin	771-782	723	1			False	False	False	ontology drug recall	0.9990447759628296
+50	amoxicillin	820-831	723	1			False	False	False	ontology drug recall	0.9990447759628296
+50	azithromycin	884-896	18631	1			False	False	False	ontology drug recall	0.9993242025375366
+50	prednisone 40 mg	915-931	451144	1			True	False	False	ontology drug recall	0.9933657050132751
+50	prednisone	1010-1020	8640	1			False	False	False	ontology drug recall	0.9993335604667664
+50	prednisone giảm liều	1444-1464	582600	1			False	False	False	ViHealthBERT	0.8270553350448608
+50	amoxicillin.	1468-1480	723	1			False	False	False	ViHealthBERT	0.981372058391571
+50	amoxicillin	1487-1498	723	1			False	False	False	ViHealthBERT	0.9990447759628296
+50	azithromycin.	1539-1552	18631	1			False	False	False	ViHealthBERT	0.989947497844696
+50	prednisone 40 mg/ng	1561-1580	451144	1			True	False	False	ViHealthBERT	0.6811264753341675
+50	combivent	1910-1919	151539	1			False	False	False	ViHealthBERT	0.9999109506607056
+50	magnesium	1954-1963	6574	1			False	False	False	ViHealthBERT	0.9992426633834839
+50	prednisone	1979-1989	8640	1			False	False	False	ViHealthBERT	0.9993335604667664
+51	azithromycin	795-807	18631	1			False	False	False	ViHealthBERT	0.9993242025375366
+52	sinh	568-572	1995984	1			False	False	False	ViHealthBERT	0.696029007434845
+52	Augmentin	630-639	151392	1			False	False	False	ViHealthBERT	0.9995976686477661
+54	vancomycin	298-308	11124	1			False	False	False	ViHealthBERT	0.9992589950561523
+54	ceftazidime	311-322	2191	1			False	False	False	ViHealthBERT	0.9987533092498779
+54	amiodarone	325-335	703	1			False	False	False	ViHealthBERT	0.9995085597038269
+54	vancomycin	728-738	11124	1			False	False	False	ViHealthBERT	0.9992589950561523
+54	vancomycinvà	763-775	11124	1			False	False	False	ViHealthBERT	0.9692964553833008
+54	ceftazidime	776-787	2191	1			False	False	False	ViHealthBERT	0.9987533092498779
+54	amiodarone.	950-961	703	1			False	False	False	ViHealthBERT	0.9912787675857544
+54	bicarbonate	1034-1045	1546277	1			False	False	False	ViHealthBERT	0.9662070274353027
+58	intravenous fluids.	882-901	316952	1			False	False	False	ViHealthBERT	0.8288682699203491
+58	intravenous fluids.	2079-2098	316952	1			False	False	False	ViHealthBERT	0.8288682699203491
+58	kháng sinh	2161-2171	2106369	1			False	False	False	ViHealthBERT	0.6313835978507996
+63	tylenol	618-625	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+63	tylenol	655-662	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+63	tylenol	896-903	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+63	tylenol	1018-1025	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+63	tylenol	1080-1087	202433	1			False	False	False	ViHealthBERT	0.9979738593101501
+63	creatinine	1407-1417	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+64	ciproflagyl	161-172	540704	1			False	False	False	ViHealthBERT	0.7753226161003113
+64	percocet	273-281	42844	1			False	False	False	ViHealthBERT	0.9991021752357483
+64	percocet	582-590	42844	1			False	False	False	ViHealthBERT	0.9991021752357483
+64	ciproflagyl	1262-1273	540704	1			False	False	False	ViHealthBERT	0.7753226161003113
+64	percocet	1400-1408	42844	1			False	False	False	ViHealthBERT	0.9991021752357483
+66	ertapenem	587-596	325642	1			False	False	False	ontology drug recall	0.9982441663742065
+66	creatinine	927-937	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+66	creatinine	943-953	2913	1			False	False	False	ViHealthBERT	0.9989430904388428
+69	guaiac	268-274	1373150	1			False	False	False	ontology drug recall	0.9921905994415283
+69	guaiac	360-366	1373150	1			False	False	False	ontology drug recall	0.9921905994415283
+70	acetaminophen 500mg	171-190	315266	1			True	False	False	ViHealthBERT	0.9537642002105713
+70	pill	202-206	1151133	1			False	False	False	ontology drug recall	0.9980129599571228
+70	acetaminophen 500mg	1183-1202	315266	1			True	False	False	ViHealthBERT	0.9537642002105713
+70	acetaminophen	1485-1498	161	1			False	False	False	ViHealthBERT	0.9980764389038086
+70	ceruloplasmin	1999-2012	5363	1			False	False	False	ViHealthBERT	0.7095598578453064
+71	lasix	272-277	202991	1			False	False	False	ViHealthBERT	0.999549150466919
+71	lasix	544-549	202991	1			False	False	False	ontology drug recall	0.999549150466919
+72	bilirubin	862-871	2285328	1			False	False	False	ViHealthBERT	0.9634824991226196
+73	aspirin 81mg	760-772	315431	1			True	False	False	ViHealthBERT	0.958670973777771
+73	clopidogrel	787-798	32968	1			False	False	False	ViHealthBERT	0.9992537498474121
+73	prasugrel	800-809	613391	1			False	False	False	ontology drug recall	0.9966387152671814
+73	clopidogrel	822-833	32968	1			False	False	False	ViHealthBERT	0.9992537498474121
+73	metoprolol succinate 100mg daily	860-892	866415	1			True	False	False	ViHealthBERT	0.8722296357154846
+73	lasix 40mg daily	911-927	200809	1			True	False	False	ViHealthBERT	0.8066407442092896
+73	atorvastatin 80mg daily	946-969	259255	1			True	False	False	ViHealthBERT	0.8319070339202881
+73	lisinopril 2.5mg daily	986-1008	311353	1			True	False	False	ViHealthBERT	0.8854075074195862
+73	ranexa 500mg daily	1025-1043	616495	1			True	False	False	ViHealthBERT	0.8134304881095886
+74	cipro	165-170	203563	1			False	False	False	ViHealthBERT	0.9993935227394104
+74	bactrim	177-184	151399	1			False	False	False	ontology drug recall	0.999413013458252
+74	iv morphineiv morphine	634-656	1728776	1			False	False	False	ViHealthBERT	0.7946069240570068
+74	toradol	661-668	57309	1			False	False	False	ViHealthBERT	0.9986252784729004
+74	cipro	1012-1017	203563	1			False	False	False	ViHealthBERT	0.9993935227394104
+74	bactrim	1021-1028	151399	1			False	False	False	ontology drug recall	0.999413013458252
+75	nitroglycerin	786-799	4917	1			False	False	False	ViHealthBERT	0.999117910861969
+75	nitroglycerin	909-922	4917	1			False	False	False	ViHealthBERT	0.999117910861969
+75	aspirin	1226-1233	1191	1			False	False	False	ViHealthBERT	0.9979325532913208
+75	nitroglycerin.	1256-1270	4917	1			False	False	False	ViHealthBERT	0.9899994134902954
+75	Thuốc nitroglycerin	1277-1296	4917	1			False	False	False	ViHealthBERT	0.8473677039146423
+75	mỡ nitroglycerin	1318-1334	4917	1			False	False	False	ViHealthBERT	0.8116724491119385
+75	ativan	1342-1348	202479	1			False	False	False	ViHealthBERT	0.9995710253715515
+75	Lorazepam	1351-1360	6470	1			False	False	False	ViHealthBERT	0.9994128942489624
+75	lovenox	1368-1375	225036	1			False	False	False	ontology drug recall	0.999171257019043
+76	plavix	355-361	174742	1			False	False	False	ViHealthBERT	0.9988769292831421
+76	nitrateskhi	373-384	1546271	1			False	False	False	ViHealthBERT	0.7229339480400085
+76	nitroglycerin	631-644	4917	1			False	False	False	ontology drug recall	0.999117910861969
+76	heparin	1006-1013	5224	1			False	False	False	ViHealthBERT	0.9988552331924438
+76	nitro	1041-1046	202521	1			False	False	False	ViHealthBERT	0.9498494267463684
+76	"dilaudid 3mg  
+    K"	1050-1070	897751	1			True	False	False	ViHealthBERT	
+76	creatinine	1118-1128	2913	1			False	False	False	lab-pair recall	0.9989430904388428
+77	klonopinclonidine	46-63	202585	1			False	False	False	ViHealthBERT	0.7454308867454529
+77	đặt nội khí quản	73-89	2716551	1			False	False	False	ViHealthBERT	0.6531546115875244
+77	klonopinclonidine	360-377	202585	1			False	False	False	ViHealthBERT	0.7454308867454529
+77	clonidine	398-407	2599	1			False	False	False	ViHealthBERT	0.9991874694824219
+77	suboxone	435-443	352990	1			False	False	False	ViHealthBERT	0.9988808631896973
+77	chất gây nghiện opioid	593-615	3304	1			False	False	False	ViHealthBERT	0.6446623802185059
+77	suboxone	957-965	352990	1			False	False	False	lab-pair recall	0.9988808631896973
+77	suboxone	1000-1008	352990	1			False	False	False	ontology drug recall	0.9988808631896973
+82	creatinine	823-833	2913	1			False	False	False	ontology drug recall	0.9989430904388428
+83	lợi tiểu	364-372	1090993	1			False	False	False	ViHealthBERT	0.6302952170372009
+84	nitrite	1023-1030	1546424	1			False	False	False	ViHealthBERT	0.9734983444213867
+84	Albuterol	1254-1263	435	1			False	False	False	ViHealthBERT	0.9990154504776001
+84	Ipratropium 1 lần	1267-1284	7213	1			False	False	False	ViHealthBERT	0.8043162226676941
+84	Ceftriaxone 1 gram	1291-1309	1665020	1			False	False	False	ViHealthBERT	0.859375
+84	Tylenol 1 gram	1333-1347	993837	1			False	False	False	ViHealthBERT	0.7368751168251038
+85	BiPAP	275-280	215777	1			False	False	False	ViHealthBERT	0.6857345104217529
+87	vancomycin	847-857	11124	1			False	False	False	ontology drug recall	0.9992589950561523
+87	kháng sinh tĩnh mạch	943-963	852617	1			False	False	False	ViHealthBERT	0.632296621799469
+88	methadone	360-369	6813	1			False	False	False	ontology drug recall	0.9993701577186584
+88	lasix	383-388	202991	1			False	False	False	ViHealthBERT	0.999549150466919
+88	Lasix	604-609	202991	1			False	False	False	ontology drug recall	0.999549150466919
+88	lasix	664-669	202991	1			False	False	False	ontology drug recall	0.999549150466919
+89	octreotide	206-216	7617	1			False	False	False	ViHealthBERT	0.9988142251968384
+89	flagyl	223-229	202866	1			False	False	False	ViHealthBERT	0.9996015429496765
+89	Clostridioides difficile	671-695	1534764	1			False	False	False	ViHealthBERT	0.9915449619293213
+89	flagyl	742-748	202866	1			False	False	False	ontology drug recall	0.9996015429496765
+91	coumadin 3.0 mg /ng	401-420	331762	1			True	False	False	ViHealthBERT	0.7035104036331177
+91	heparin	1130-1137	5224	1			False	False	False	ViHealthBERT	0.9988552331924438
+91	tĩnh	1145-1149	10603	1			False	False	False	ViHealthBERT	0.8140442371368408
+93	talc	368-372	10323	1			False	False	False	ontology drug recall	0.9990673661231995
+94	taxol	105-110	196466	1			False	False	False	ontology drug recall	0.9990836381912231
+94	fulvestrant	114-125	282357	1			False	False	False	ViHealthBERT	0.9951401352882385
+94	compazine	764-773	203546	1			False	False	False	ViHealthBERT	0.9990957975387573
+94	alevenhưng	777-787	215098	1			False	False	False	ViHealthBERT	0.6808066368103027
+94	morphineoral	812-824	7052	1			False	False	False	ViHealthBERT	0.7777748107910156
+94	lorazepam	829-838	6470	1			False	False	False	ViHealthBERT	0.9994128942489624
+96	zosyn	241-246	74170	1			False	False	False	ontology drug recall	0.999091625213623
+96	bactrim	321-328	151399	1			False	False	False	ontology drug recall	0.999413013458252
+96	zosyn	546-551	74170	1			False	False	False	ontology drug recall	0.999091625213623
+96	bactrim	551-558	151399	1			False	False	False	ontology drug recall	0.999413013458252
+96	zosyn	604-609	74170	1			False	False	False	lab-pair recall	0.999091625213623
+96	Kháng sinh Cefepim	1583-1601	2282002	1			False	False	False	ViHealthBERT	0.6931430101394653
+96	Vancomycin	1605-1615	11124	1			False	False	False	ViHealthBERT	0.9992589950561523
+100	nitroglycerin	996-1009	4917	1			False	False	False	ViHealthBERT	0.999117910861969
+100	creatinine	1260-1270	2913	1			False	False	False	ontology drug recall	0.9989430904388428

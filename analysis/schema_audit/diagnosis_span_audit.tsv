@@ -1,0 +1,217 @@
+file	text	position	section	section_origin	left_context	right_context	source_component	flags	candidates	candidate_count
+1	viêm tuyến mồ hôi	98-115	- doxycycline cho	other	rolol 25mg po bid     - doxycycline cho 	     - atenolol (uống hôm nay)     Các y	ViHealthBERT	ok	K112	1
+1	ngoại tâm thu thất	1710-1728	- monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và	other	m ưu thế. Ghi nhận ngoại tâm thu nhĩ và 	 xuất hiện thường xuyên.     - Bắt đầu d	ontology diagnosis recall	ok	I493	1
+1	ngoại tâm thu nhĩ	2879-2896	- monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận	other	 thấy Nhịp xoang chiếm ưu thế. Ghi nhận 	 và ngoại tâm thu thất xuất hiện thường 	ontology diagnosis recall	ok	I491	1
+1	ngoại tâm thu thất	2900-2918	- monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và	other	m ưu thế. Ghi nhận ngoại tâm thu nhĩ và 	 xuất hiện thường xuyên.	ontology diagnosis recall	ok	I493	1
+2	xơ gan do rượu	61-75	Các bệnh lý mãn tính: nghi ngờ	other	khoa     Các bệnh lý mãn tính: nghi ngờ 	     Các yếu tố nguy cơ liên quan: Có ti	ontology diagnosis recall	ok	K703	1
+2	sử dụng rượu	121-133	Các yếu tố nguy cơ liên quan: Có tiền sử	history_section	ác yếu tố nguy cơ liên quan: Có tiền sử 	 bia  2.  Tiền sử bệnh hiện tại     Triệ	ontology diagnosis recall	ok	Z721	1
+3	bệnh tim mạch do xơ vữa động mạch	217-250	-	other	 tháng. Các bệnh lý nội khoa mạn tính - 	 - tăng huyết áp - phình động mạch chủ n	ontology diagnosis recall	ok	I251	1
+5	bệnh tim mạch do xơ vữa động mạch	57-90	-	other	nội khoa     Các bệnh lý mạn tính     - 	     - Tăng huyết áp     - tăng lipid má	ontology diagnosis recall	ok	I251	1
+5	tăng lipid máu, không đặc hiệu	117-147	-	other	vữa động mạch     - Tăng huyết áp     - 	     - bệnh trào ngược dạ dày- thực quản	ontology diagnosis recall	ok	E785	1
+5	bệnh trào ngược dạ dày- thực quản	154-187	-	other	 - tăng lipid máu, không đặc hiệu     - 	 không có viêm thực quản  2.  Tiền sử bệ	ViHealthBERT	ok	K21	1
+5	bệnh trào ngược dạ dày- thực quản không có viêm thực quản	154-211	-	other	 - tăng lipid máu, không đặc hiệu     - 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ontology diagnosis recall	whole_explanatory_clause	K219	1
+5	hạ huyết áp, không đặc hiệu	647-674	-	other	 - Tăng lên 101.8 trước thủ thuật     - 	 trong khi thủ thuật     - chỉ số huyết 	ontology diagnosis recall	ok	I959	1
+6	Nghẽn tắc và hẹp động mạch cảnh	50-81	Bệnh nhân có tiền sử	history_section	ử bệnh nội khoa    Bệnh nhân có tiền sử 	, được theo dõi định kỳ chuyên khoa tim 	ViHealthBERT	ok	I652	1
+6	nghẽn tắc và hẹp động mạch cảnh	264-295	- Được theo dõi định kỳ bằng  siêu âm Doppler động mạchcho	imaging_conclusion	h kỳ bằng  siêu âm Doppler động mạchcho 	     - Ghi nhận trên các siêu âm doppler	ontology diagnosis recall	ok	I652	1
+7	giai đoạn trầm cảm không đặc hiệu	88-121	- ho Rối loạn cảm xúc (trầm cảm) (tiền sử	history_section	ho Rối loạn cảm xúc (trầm cảm) (tiền sử 	)     - hội chứng nghiện rượu     Thuốc 	ontology diagnosis recall	ok	F329	1
+9	u cơ trơn tử cung	39-56	Bệnh lý mãn tính:	other	1.  Tiền sử bệnh     Bệnh lý mãn tính: 	, không đặc hiệu     Thuốc trước khi nhậ	ViHealthBERT	ok	D25	1
+9	u cơ trơn tử cung, không đặc hiệu	39-72	Bệnh lý mãn tính:	other	1.  Tiền sử bệnh     Bệnh lý mãn tính: 	     Thuốc trước khi nhập viện: iron  2.	ontology diagnosis recall	ok	D259	1
+10	u ác trực tràng	664-679	- khối u trực tràng với hình ảnh của một	imaging_conclusion	 khối u trực tràng với hình ảnh của một 	 đáng kể - sinh thiết chỉ cho thấy một u	ViHealthBERT	ok	C20	1
+11	bệnh gút	77-85	-	other	h lý mạn tính     - tăng huyết áp     - 	 không đặc hiệu     - bệnh thận mạn, khô	ViHealthBERT	ok	M100	1
+11	bệnh gút không đặc hiệu	77-100	-	other	h lý mạn tính     - tăng huyết áp     - 	     - bệnh thận mạn, không đặc hiệu    	ontology diagnosis recall	ok	M109	1
+11	tăng áp lực tĩnh mạch cửa	208-233	- Bệnh nhân xơ gan mất bù có	other	éo phì     - Bệnh nhân xơ gan mất bù có 	, cổ trướng và tràn dịch màng phổi.     	ViHealthBERT	ok	K766	1
+13	tổn thương vùng âm hộ và mông bên phải	584-622	Lý do nhập viện: Tình trạng	other	iện tại     Lý do nhập viện: Tình trạng 	 ngày càng nặng     Diễn biến bệnh - Bện	ViHealthBERT	ok	S399	1
+13	tổn thương vùng âm hộ phải lan rộng sang mông phải	682-732	- Bệnh nhân nhập viện vì	other	Diễn biến bệnh - Bệnh nhân nhập viện vì 	, diễn biến tăng dần trong khoảng 5 ngày	ViHealthBERT	whole_explanatory_clause	C518	1
+13	tổn thương đơn độc vùng âm hộ phải	839-873	- Cách nhập viện 5 ngày, bệnh nhân phát hiện một	other	ập viện 5 ngày, bệnh nhân phát hiện một 	. Sau đó được bác sĩ điều trị khám và tă	ViHealthBERT	ok	C518	1
+13	tổn thương vùng âm hộ và mông	1344-1373	-	other	iếp     Triệu chứng khi nhập viện     - 	 bên phải     - Tổn thương cực kỳ đau đớ	ViHealthBERT	ok	S70	1
+13	tổn thương	2032-2042	- dịch tiết có vẻ như mủ từ một số	other	     - dịch tiết có vẻ như mủ từ một số 	 vào ngày, nhưng tình trạng này đã tự kh	ViHealthBERT	ok	T149	1
+13	HSV	2516-2519	Các phát hiện chẩn đoán khác: Lo ngại về Nhiễm virus Herpes simplex (	explicit_diagnosis_section	 Lo ngại về Nhiễm virus Herpes simplex (	) hoặc Bệnh thủy đậu/Zona (do Varicella 	ViHealthBERT	fragment	B007	1
+15	chấn	64-68	Lý do nhập viện: xuất huyết nội sọ không do	other	o nhập viện: xuất huyết nội sọ không do 	 thương, không đặc hiệu  3. Đánh giá tại	ViHealthBERT	fragment	S060	1
+15	xuất huyết nội sọ không do chấn thương, không đặc hiệu	205-259	-	other	 đậm đặc Các phát hiện chẩn đoán khác - 	 - Điều trị chống đông	ontology diagnosis recall	whole_explanatory_clause	I629	1
+16	xơ gan do rượu	137-151	-	other	tính, không xác định - Đái tháo đường - 	 Tiền sử phẫu thuật / thủ thuật: Dựa trê	ViHealthBERT	ok	K703	1
+16	xơ gan do rượu	337-351	Các yếu tố nguy cơ liên quan:	other	đại tràng Các yếu tố nguy cơ liên quan: 	  2. Bệnh sử hiện tại Lý do nhập viện: t	ViHealthBERT	ok	K703	1
+16	nhịp nhanh trên thất	592-612	Diễn biến bệnh	other	 bởi Viêm phổi bệnh viện và rung nhĩ và 	, sau đó xuất viện về trung tâm phục hồi	ViHealthBERT	ok	I471	1
+16	ran nổ	1507-1513	- Khám thấy	other	 viện Kết quả khám thực thể - Khám thấy 	, phù phù, dịch rỉ huyết thanh từ vết mổ	ViHealthBERT	ok	W39	1
+16	hạ huyết áp, không đặc hiệu	1732-1759	-	other	2LNC (khi đến MICU) Dấu hiệu lâm sàng - 	 - mệt mỏi - mệt mỏi - khó thở khi gắng 	ontology diagnosis recall	ok	I959	1
+16	nhịp nhanh trên thất	2266-2286	- Rung nhĩ kèm	other	ác - Viêm phổi bệnh viện - Rung nhĩ kèm 		ViHealthBERT	ok	I471	1
+17	bệnh trào ngược dạ dày- thực quản	40-73	Bệnh mãn tính:	other	1. Tiền sử bệnh nội khoa Bệnh mãn tính: 	 không có viêm thực quản 2. Bệnh sử hiện	ViHealthBERT	ok	K21	1
+17	bệnh trào ngược dạ dày- thực quản không có viêm thực quản	40-97	Bệnh mãn tính:	other	1. Tiền sử bệnh nội khoa Bệnh mãn tính: 	 2. Bệnh sử hiện tại Lý do nhập viện: số	ontology diagnosis recall	whole_explanatory_clause	K219	1
+17	hiv vl	1463-1469	-	other	- bình thường chem 7 - ck 58 - alt 92 - 	 đang chờ - soi tươi ký sinh trùng âm tí	ViHealthBERT	ok	B202	1
+20	bệnh tim mạch do xơ vữa động mạch	104-137	-	other	  - bệnh thận mạn, không đặc hiệu     - 	 với Nhồi máu cơ tim gần đây     - rung 	ontology diagnosis recall	ok	I251	1
+20	rung nhĩ kịch phát	172-190	-	other	 mạch với Nhồi máu cơ tim gần đây     - 	     - tăng sản tuyến tiền liệt     Tiền	ViHealthBERT	ok	I480	1
+20	tăng sản tuyến tiền liệt	197-221	-	other	 gần đây     - rung nhĩ kịch phát     - 	     Tiền sử phẫu thuật / thủ thuật     	ViHealthBERT	ok	N40	1
+20	gãy cổ xương đùi	651-667	Lý do nhập viện: ngã với	other	h hiện tại     Lý do nhập viện: ngã với 	 di lệch     Thời điểm khởi phát triệu c	ontology diagnosis recall	ok	S720	1
+20	gãy cổ xương đùi	898-914	- Phát hiện có	other	 - Gọi xe cứu thương     - Phát hiện có 	 di lệch     Triệu chứng khi nhập viện: 	ontology diagnosis recall	ok	S720	1
+20	vết thương hở phần khác của chi dưới	1216-1252	-	other	n thương tù ở Chi dưới phải (RLE)     - 	     - Không có tiền sử chấn thương đầu 	ViHealthBERT	ok	S818	1
+20	lái xe sau ngã	1354-1368	- có thể chịu trọng lượng và	other	 thức)     - có thể chịu trọng lượng và 	     - Gọi xe cứu thương     - Phát hiện	ViHealthBERT	ok	V850	1
+20	tim to	2097-2103	- chụp ct ngực không thuốc cản quang:	imaging_conclusion	  - chụp ct ngực không thuốc cản quang: 	, tràn dịch màng tim, tràn dịch màng phổ	ViHealthBERT	ok	I517	1
+20	thoát vị hoành	2154-2168	- chụp x-quang ngực: mức nước-khí	imaging_conclusion	 màng tim, tràn dịch màng phổi hai bên, 	 nhỏ, thay đổi khí phế thủng, xẹp phổi h	ontology diagnosis recall	ok	K44	1
+20	xẹp phổi	2198-2206	- chụp x-quang ngực: mức nước-khí	imaging_conclusion	t vị hoành nhỏ, thay đổi khí phế thủng, 	 hai đáy     - xạ hình tưới máu cơ tim  	ontology diagnosis recall	ok	J981	1
+20	hở van ba lá	2422-2434	- chụp x-quang ngực: mức nước-khí	imaging_conclusion	nh ngực): EF30, mất vận động vùng đỉnh, 	 vừa-nặng (mod-severe TR) và hở van hai 	ViHealthBERT	ok	I071	1
+20	hở van hai lá	2463-2476	- chụp x-quang ngực: mức nước-khí	imaging_conclusion	ở van ba lá vừa-nặng (mod-severe TR) và 	/van động mạch chủ nhẹ (mild ARMR)     -	ontology diagnosis recall	ok	I340	1
+20	gãy cổ xương đùi	2538-2554	- Gãy xương hông phải:	other	 (mild ARMR)     - Gãy xương hông phải: 	 phải, lún đầu dưới     Các thủ thuật đã	ontology diagnosis recall	ok	S720	1
+20	rung nhĩ kịch phát	2907-2925	-	other	 vách liên thất, mạn tính và đỉnh     - 	 liên tục kể từ Nhồi máu cơ tim     - ti	ontology diagnosis recall	ok	I480	1
+20	tăng sản tuyến tiền liệt	2983-3007	- tiểu đêm nhiều  do	other	ồi máu cơ tim     - tiểu đêm nhiều  do  		ViHealthBERT	ok	N40	1
+21	suy tim, không đặc hiệu	68-91	-	other	h lý mãn tính     - Tăng huyết áp     - 	     - bệnh thận mạn, không đặc hiệu    	ontology diagnosis recall	ok	I509	1
+21	sử dụng thuốc lá	339-355	Các yếu tố nguy cơ liên quan: Sử dụng	other	  Các yếu tố nguy cơ liên quan: Sử dụng 	 nhiều năm 2.  Tiền sử bệnh hiện tại    	ontology diagnosis recall	ok	Z720	1
+23	Bệnh tim mạch do xơ vữa động mạch	21-54	1.  Tiền sử bệnh lý	history_section	1.  Tiền sử bệnh lý  	. ăng huyết áp.Rối loạn lipid máu. Đái t	ontology diagnosis recall	ok	I251	1
+23	ăng huyết áp	56-68	Bệnh tim mạch do xơ vữa động mạch.	other	 lý  Bệnh tim mạch do xơ vữa động mạch. 	.Rối loạn lipid máu. Đái tháo đường.2.  	ViHealthBERT	ok	Z013	1
+23	vùng trán phải và da đầu	1085-1109	Sau xuất viện, bệnh nhân từng quay lại khoa Cấp cứu vì đau đầu kéo dài.	other	m cảm giác tê bì nửa mặt phải, đặc biệt 	 phải từ sau lần ngã. Ngày vào viện, buổ	ViHealthBERT	ok	J341	1
+23	mất định hướng	1376-1390	Người nhà nhận thấy bệnh nhân có biểu hiện bất thường,	other	thấy bệnh nhân có biểu hiện bất thường, 	, đi lại không vững và gần như ngất.  Bệ	ViHealthBERT	ok	R410	1
+23	mất định hướng	2360-2374	Có ghi nhận giai đoạn	other	ện Khám lâm sàng: Có ghi nhận giai đoạn 	 và đi lại không vững theo lời kể người 	ViHealthBERT	ok	R410	1
+25	tách thành động mạch chủ	48-72	Bệnh lý mãn tính:	other	 sử bệnh nội khoa     Bệnh lý mãn tính: 	  biến chứng bởi liệt hai chân     Đã th	ViHealthBERT	ok	I710	1
+27	hội chứng turner	48-64	-	other	 sử bệnh     Các bệnh lý mãn tính     - 	, không đặc hiệu     - Tăng huyết áp    	ViHealthBERT	ok	Q96	1
+27	hội chứng turner, không đặc hiệu	48-80	-	other	 sử bệnh     Các bệnh lý mãn tính     - 	     - Tăng huyết áp     - Tiền sử phẫu 	ontology diagnosis recall	ok	Q969	1
+28	u ác của tuyến tiền liệt	156-180	- phẫu thuật cắt bỏ tuyến tiền liệt (	other	   - phẫu thuật cắt bỏ tuyến tiền liệt (	)     - rối loạn cảm xúc lưỡng cực khác 	ontology diagnosis recall	ok	C61	1
+28	rối loạn cảm xúc lưỡng cực	188-214	-	other	n liệt (u ác của tuyến tiền liệt)     - 	 khác     Tiền sử phẫu thuật / thủ thuật	ViHealthBERT	ok	F31	1
+28	rối loạn cảm xúc lưỡng cực khác	188-219	-	other	n liệt (u ác của tuyến tiền liệt)     - 	     Tiền sử phẫu thuật / thủ thuật: phẫ	ontology diagnosis recall	ok	F318	1
+28	u ác	291-295	Tiền sử phẫu thuật / thủ thuật: phẫu thuật cắt bỏ tuyến tiền liệt (	history_section	uật: phẫu thuật cắt bỏ tuyến tiền liệt (	 của tuyến tiền liệt)     Thuốc trước kh	ViHealthBERT	ok	C25	1
+28	u ác của tuyến tiền liệt	291-315	Tiền sử phẫu thuật / thủ thuật: phẫu thuật cắt bỏ tuyến tiền liệt (	history_section	uật: phẫu thuật cắt bỏ tuyến tiền liệt (	)     Thuốc trước khi nhập viện: đang dù	ontology diagnosis recall	ok	C61	1
+28	3°C	575-578	- Hôm nay, bệnh nhân có sốt nhẹ đến 38.	other	 - Hôm nay, bệnh nhân có sốt nhẹ đến 38.	 kèm theo đau hạ sườn phải tái phát, ngà	ViHealthBERT	fragment	E212	1
+28	3°C	911-914	- Hôm nay, bệnh nhân có sốt nhẹ đến 38.	other	 - Hôm nay, bệnh nhân có sốt nhẹ đến 38.	 kèm theo đau hạ sườn phải tái phát, ngà	ViHealthBERT	fragment	E212	1
+28	viêm túi mật cấp.	1694-1711	Diễn biến  trước khi nhập viện	other	ật căng to với dịch quanh túi mật gợi ý 	 3.  Đánh giá tại bệnh viện     Kết quả 	ViHealthBERT	ok	K810	1
+28	sỏi mật	2107-2114	- siêu âm vùng gan mật cho thấy	imaging_conclusion	ảnh     - siêu âm vùng gan mật cho thấy 	 nhưng không có viêm túi mật hoặc sỏi ốn	ontology diagnosis recall	ok	K80	1
+28	viêm túi mật	2130-2142	- siêu âm vùng gan mật cho thấy sỏi mật nhưng không có	imaging_conclusion	gan mật cho thấy sỏi mật nhưng không có 	 hoặc sỏi ống mật (lần nhập viện trước) 	ViHealthBERT	ok	K81	1
+28	viêm túi mật cấp	2347-2363	- chụp ct bụng chậu là chưa phát hiện bất thường (lần nhập viện trước)	imaging_conclusion	ật căng to với dịch quanh túi mật gợi ý 	     Các phát hiện chẩn đoán khác: lo ng	ViHealthBERT	ok	K810	1
+28	viêm túi mật cấp	2406-2422	Các phát hiện chẩn đoán khác: lo ngại	explicit_diagnosis_section	  Các phát hiện chẩn đoán khác: lo ngại 		ViHealthBERT	ok	K810	1
+30	tăng cholesterol máu đơn thuần	95-125	-	other	- Bệnh bạch cầu dòng tủy mãn tính     - 	     - tăng huyết áp     Thuốc trước khi	ViHealthBERT	ok	E780	1
+30	hoang tưởng/lo sợ	1131-1148	Bệnh nhân thường	other	ang tính chất ra lệnh  Bệnh nhân thường 	 rằng họ sẽ chạm vào da của mình.     Di	ViHealthBERT	ok	F40	1
+32	khò khè	1382-1389	Sáng ngày nhập viện, bệnh nhân xuất hiện	other	áng ngày nhập viện, bệnh nhân xuất hiện 	 và ho tăng lên.  Tại trung tâm phục hồi	ViHealthBERT	ok	R294	1
+32	khò khè	1875-1882	Bệnh nhân xuất hiện ho và	other	ớc nhập viện: Bệnh nhân xuất hiện ho và 	 tăng lên tại trung tâm phục hồi chức nă	ViHealthBERT	ok	R294	1
+33	ngừng thở khi ngủ	113-130	-	other	ờng được kiểm soát bằng chế độ ăn     - 	     - tiền sử lâm sàng suy tim, không đ	ViHealthBERT	ok	G473	1
+33	suy tim, không đặc hiệu	154-177	- tiền sử lâm sàng	history_section	gừng thở khi ngủ     - tiền sử lâm sàng 	     Dị ứng: Dị ứng furosemide  2.  Tiền	ontology diagnosis recall	ok	I509	1
+34	Bệnh gan do rượu	114-130	- bằng chứng	other	ng trong nhiều năm qua     - bằng chứng 	 ở vị trí 35cm     Tiền sử phẫu thuật / 	ViHealthBERT	ok	K70	1
+34	ăn uống kém	408-419	-	other	 giờ qua     Triệu chứng hiện tại     - 	 do buồn nôn     - đau bụng/khó chịu vùn	ViHealthBERT	ok	Z594	1
+34	mất cảm giác ngon miệng	578-601	-	other	x 1     - chủ quan sốt và run rẩy     - 	/chán ăn     - suy nhược     -  Toàn trạ	ViHealthBERT	ok	Y570	1
+34	LLQ	867-870	- Vị trí:	other	     Đặc điểm triệu chứng     - Vị trí: 	     - Mức độ nghiêm trọng: đau bụng/khó	ViHealthBERT	fragment	A78	1
+34	ăn uống kém	1188-1199	-	other	ể     Sự kiện trước khi nhập viện     - 	 do buồn nôn, được cho là do tác dụng ph	ViHealthBERT	ok	Z594	1
+35	tăng lipid máu, không đặc hiệu	133-163	-	other	 dùng gleevec     - Tăng huyết áp     - 	     - Đái tháo đường típ 2     - hẹp ốn	ontology diagnosis recall	ok	E785	1
+35	hẹp ống sống	197-209	-	other	c hiệu     - Đái tháo đường típ 2     - 	     - Giả gout     - bệnh thận mạn, khô	ViHealthBERT	ok	M480	1
+35	tăng sản tuyến tiền liệt	279-303	-	other	n mạn, không đặc hiệu Giai đoạn 4     - 	     - Nhiều lần ngã gần đây Ngã     - ả	ViHealthBERT	ok	N40	1
+35	Ăn uống kém	850-861	-	other	y kiệt     - ảo giác     - Lú lẫn     - 	, ăn vào dễ nôn.     - Nôn không ra máu,	ViHealthBERT	ok	Z594	1
+35	không ra dịch mật	902-919	- Nôn không ra máu,	other	 ăn vào dễ nôn.     - Nôn không ra máu, 	     Các sự kiện trước khi nhập viện    	ViHealthBERT	ok	O730	1
+35	Ăn uống kém	1163-1174	-	other	  - trượt ngã xuống sàn do yếu cơ     - 	, ăn vào dễ nôn.     - Nôn không ra máu,	ViHealthBERT	ok	Z594	1
+35	không ra dịch mật	1215-1232	- Nôn không ra máu,	other	 ăn vào dễ nôn.     - Nôn không ra máu, 	  3.  Đánh giá tại bệnh viện     Kết quả	ViHealthBERT	ok	O730	1
+37	Suy tim	114-121	Đái tháo đường, có biến chứng bệnh lý thần kinh ngoại biên.	other	iến chứng bệnh lý thần kinh ngoại biên. 	 không do thiếu máu cơ tim (theo chẩn đo	ViHealthBERT	ok	I50	1
+37	tăng kali máu	590-603	Lý do nhập viện: xét nghiệm bất thường -	other	ý do nhập viện: xét nghiệm bất thường - 	 và Creatinine tăng Các sự kiện trước kh	ViHealthBERT	ok	E875	1
+38	bệnh tim mạch do xơ vữa động mạch	75-108	-	other	n tính     - Đái tháo đường típ 2     - 	 đặt stent     - Suy tim dãn tâm thu giữ	ontology diagnosis recall	ok	I251	1
+38	Suy tim	125-132	-	other	ạch do xơ vữa động mạch đặt stent     - 	 dãn tâm thu giữ nguyên trương lực     T	ontology diagnosis recall	ok	I50	1
+38	viêm họng do liên cầu	915-936	- Chưa kiểm tra đường huyết	other	hưng được cho là xét nghiệm âm tính với 	  3.  Đánh giá tại bệnh viện     Kết quả	ViHealthBERT	ok	J020	1
+41	hội chứng ruột kích thích	226-251	Bệnh lý mãn tính:	other	 trong 2 ngày qua     Bệnh lý mãn tính: 	 (được chẩn đoán hội chứng ruột kích thí	ViHealthBERT	ok	K58	1
+41	hội chứng ruột kích thích	268-293	Bệnh lý mãn tính: hội chứng ruột kích thích (được chẩn đoán	explicit_diagnosis_section	i chứng ruột kích thích (được chẩn đoán 	 cách đây vài năm)     Tiền sử phẫu thuậ	ViHealthBERT	ok	K58	1
+41	loét tá tràng	390-403	- Nội soi (cách đây vài năm, phát hiện	other	 - Nội soi (cách đây vài năm, phát hiện 	)     - Nội soi (cho thấy nhiều loét tá 	ViHealthBERT	ok	K26	1
+41	loét tá tràng	435-448	- Nội soi (cho thấy nhiều	other	tá tràng)     - Nội soi (cho thấy nhiều 	 và hồi tràng)     - nội soi (Viêm thực 	ViHealthBERT	ok	K26	1
+41	Viêm thực quản	478-492	- nội soi (	other	t tá tràng và hồi tràng)     - nội soi (	 độ C, loét thực quản dưới 6 mm có điểm 	ViHealthBERT	ok	K20	1
+41	loét thực quản	499-513	- nội soi (Viêm thực quản độ C,	other	ng)     - nội soi (Viêm thực quản độ C, 	 dưới 6 mm có điểm sắc tố, nhiều loét nô	ontology diagnosis recall	ok	K221	1
+41	hội chứng ruột kích thích	1277-1302	- Triệu chứng cách đây vài năm: tái phát buồn nôn và tiêu chảy, chẩn đoán	explicit_diagnosis_section	i phát buồn nôn và tiêu chảy, chẩn đoán 	, phát hiện loét tá tràng khi nội soi.  	ViHealthBERT	ok	K58	1
+41	loét tá tràng	1314-1327	Diễn biến bệnh	other	án hội chứng ruột kích thích, phát hiện 	 khi nội soi.     - Trong năm nay: không	ViHealthBERT	ok	K26	1
+41	loét tá tràng	1590-1603	Diễn biến bệnh	other	hảy, nôn ra máu. nội soi cho thấy nhiều 	 và hồi tràng. dương tính xét nghiệm phâ	ontology diagnosis recall	ok	K26	1
+41	Viêm thực quản	3180-3194	-	other	     Các phát hiện chẩn đoán khác     - 	 độ C ở thực quản dưới     - Loét loét t	ontology diagnosis recall	ok	K20	1
+41	loét thực quản	3228-3242	- Loét	other	c quản độ C ở thực quản dưới     - Loét 	 6 mm có điểm sắc tố     - Nhiều loét sạ	ontology diagnosis recall	ok	K221	1
+43	hẹp van động mạch chủ	447-468	- đã thực hiện siêu âm tim cho thấy	imaging_conclusion	    - đã thực hiện siêu âm tim cho thấy 	 nghiêm trọng     - đã khám với bác sĩ t	ViHealthBERT	ok	I350	1
+43	hẹp van động mạch chủ	669-690	- đã thực hiện siêu âm tim gắng sức dobutamine ghi nhận	imaging_conclusion	iêu âm tim gắng sức dobutamine ghi nhận 	 nghiêm trọng     - đến khám để thực hiệ	ontology diagnosis recall	ok	I350	1
+43	hẹp van động mạch chủ	1212-1233	- siêu âm tim cho thấy	imaging_conclusion	oán hình ảnh     - siêu âm tim cho thấy 	 nghiêm trọng     - siêu âm tim gắng sức	ViHealthBERT	ok	I350	1
+43	hẹp van động mạch chủ	1294-1315	- siêu âm tim gắng sức dobutamine ghi nhận	imaging_conclusion	iêu âm tim gắng sức dobutamine ghi nhận 	 nghiêm trọng     Thủ thuật đã thực hiện	ViHealthBERT	ok	I350	1
+43	hẹp van động mạch chủ	1423-1444	-	other	HC     Các kết quả chẩn đoán khác     - 	 nghiêm trọng     - LHC không ghi nhận h	ViHealthBERT	ok	I350	1
+44	suy tim, không đặc hiệu	66-89	-	other	ý mạn tính - rung nhĩ - tăng huyết áp - 	 - béo phì  2. Bệnh sử hiện tại Lý do nh	ontology diagnosis recall	ok	I509	1
+44	đau rát khi đi tiểu	317-336	-	other	tuần qua - cơn ngất xỉu 2 tháng trước - 	, từng đợt, khoảng 2 tuần - chán ăn tron	ViHealthBERT	symptom_mislabeled	R30	1
+44	chán ăn	364-371	-	other	 khi đi tiểu, từng đợt, khoảng 2 tuần - 	 trong 3 ngày qua - nôn từng đợt sau khi	ViHealthBERT	ok	R630	1
+44	khả	569-572	- giảm	other	ên ngủ quên hoặc có thể ngất xỉu - giảm 	 năng quan hệ tình dục với bạn tình - Đa	ViHealthBERT	fragment	M674	1
+46	hạ huyết áp, không đặc hiệu	213-240	- khó khăn với	other	Triệu chứng hiện tại     - khó khăn với 	     - khó kiểm soát huyết áp đáng kể   	ontology diagnosis recall	ok	I959	1
+48	kéo lê chân trái và cánh tay buông thõng	1206-1246	- tình trạng ổn định vào buổi chiều, có thể dễ dàng lên cầu thang	other	ó cùng các vấn đề như bữa trưa, bao gồm 	 và khó khăn khi tự ăn tối     Triệu chứ	ViHealthBERT	ok	S534	1
+49	ra huyết âm đạo lượng ít	553-577	Bệnh nhân có  táo bón, khô âm đạo, đau nhiều khi  giao hợp và đôi lúc	other	đạo, đau nhiều khi  giao hợp và đôi lúc 	. Triệu chứng hiện tại: Cảm giác có khối	ViHealthBERT	ok	N897	1
+50	hen suyễn	84-93	Các đợt tương tự trước đây: Nhập viện trong quá khứ vì đợt cấp	other	đây: Nhập viện trong quá khứ vì đợt cấp 	     Bệnh mạn tính: hen suyễn     Thuốc 	ViHealthBERT	ok	J45	1
+50	hen suyễn	113-122	Bệnh mạn tính:	other	vì đợt cấp hen suyễn     Bệnh mạn tính: 	     Thuốc trước khi nhập viện     - alb	ViHealthBERT	ok	J45	1
+50	thở, khò khè	677-689	2. Bệnh sử hiện tạiBệnh nhân được bác sĩ chăm sóc ban đầu khám cách đây khoảng 1 tuần vì khó	symptom_section	 đầu khám cách đây khoảng 1 tuần vì khó 	 và các triệu chứng đường hô hấp trên.  	ontology diagnosis recall	ok	R062	1
+50	khò khè	682-689	2. Bệnh sử hiện tạiBệnh nhân được bác sĩ chăm sóc ban đầu khám cách đây khoảng 1 tuần vì khó thở,	symptom_section	khám cách đây khoảng 1 tuần vì khó thở, 	 và các triệu chứng đường hô hấp trên.  	ViHealthBERT	ok	R294	1
+50	đau vùng hạ vị	1208-1222	2. Bệnh sử hiện tạiBệnh nhân được bác sĩ chăm sóc ban đầu khám cách đây khoảng 1 tuần vì khó thở, khò khè và các triệu c	symptom_section	hiều, nghe tiếng rít về đêm, mất ngủ và 	. Triệu chứng khi nhập viện: Khó thở. Kh	ViHealthBERT	symptom_mislabeled	M542	1
+51	kali dai dẳng	1080-1093	-	other	2.4     - kali vẫn giảm xuống 2.2     - 	 2.2     Thủ thuật đã thực hiện     - Nh	ViHealthBERT	ok	I481	1
+52	nang tụy	847-855	- mrcp (chụp cộng hưởng từ mật tụy) cho thấy nhiều	other	p cộng hưởng từ mật tụy) cho thấy nhiều 	 nhỏ     - ba stent mật kim loại đã được	ontology diagnosis recall	ok	K862	1
+53	bệnh tim mạch do xơ vữa động mạch	131-164	-	other	vài tuần qua     Bệnh lý mãn tính     - 	     - blốc nhĩ thất, hoàn toàn sau khi 	ontology diagnosis recall	ok	I251	1
+53	blốc nhĩ thất	171-184	-	other	bệnh tim mạch do xơ vữa động mạch     - 	, hoàn toàn sau khi đặt máy tạo nhịp (PP	ViHealthBERT	ok	I442	1
+53	blốc nhĩ thất, hoàn toàn	171-195	-	other	bệnh tim mạch do xơ vữa động mạch     - 	 sau khi đặt máy tạo nhịp (PPM)     - bệ	ontology diagnosis recall	ok	I442	1
+53	Suy giảm nhận thức nhẹ suy giảm nhận thức	269-310	-	other	  - bệnh thận mạn, không đặc hiệu     - 	     Tiền sử phẫu thuật / thủ thuật: sau	ViHealthBERT	ok	F067	1
+53	Cơn đau thắt ngực không ổn định	1048-1079	- Chuyển đến vì lo ngại	other	ban đầu đến     - Chuyển đến vì lo ngại 	 cần can thiệp mạch vành  3.  Đánh giá t	ViHealthBERT	symptom_mislabeled	I200	1
+53	Cơn đau thắt ngực không ổn định	1174-1205	Các phát hiện chẩn đoán khác: Lo ngại	explicit_diagnosis_section	  Các phát hiện chẩn đoán khác: Lo ngại 	 cần can thiệp mạch vành	ViHealthBERT	symptom_mislabeled	I200	1
+54	u ác trực tràng	48-63	- tái phát	other	sử bệnh Các bệnh lý mạn tính - tái phát 	 - ung thư biểu mô tế bào thận sau cắt b	ViHealthBERT	ok	C20	1
+54	suy thận cấp	479-491	- Nhập viện từ cơ sở điều dưỡng với	other	ệnh - Nhập viện từ cơ sở điều dưỡng với 	. - Tái phát u ác trực tràng được phát h	ontology diagnosis recall	ok	N17	1
+54	u ác trực tràng	504-519	- Tái phát	other	điều dưỡng với suy thận cấp. - Tái phát 	 được phát hiện trong quá trình điều trị	ViHealthBERT	ok	C20	1
+54	viêm phổi thuỳ, không đặc hiệu	655-685	- Chẩn đoán	explicit_diagnosis_section	ng suốt quá trình điều trị. - Chẩn đoán 	 chụp x-quang. - Điều trị bằng Đã điều t	ontology diagnosis recall	ok	J181	1
+54	rung nhĩ điển hình	815-833	- Phát hiện	other	 ceftazidime trong 7 ngày. - Phát hiện  	 kèm theo đáp ứng thất nhanh và rối loạn	ontology diagnosis recall	ok	I483	1
+54	rối loạn cân bằng kiềm toan phối hợp	977-1013	- Phát hiện có	other	ầu liệu pháp amiodarone. - Phát hiện có 	. - Bắt đầu thay thế bicarbonate. - hct 	ontology diagnosis recall	ok	E874	1
+54	đau nhẹ	1587-1594	- Báo cáo sưng ở chân trái, sưng nhẹ,	other	. - Báo cáo sưng ở chân trái, sưng nhẹ, 	 (3 ngày). Triệu chứng khi nhập viện - t	ViHealthBERT	symptom_mislabeled	N940	1
+54	phân và máu trong trực tràng	1645-1673	-	other	Triệu chứng khi nhập viện - thiếu máu - 	 (thỉnh thoảng) - viêm phổi thuỳ, không 	ViHealthBERT	ok	K625	1
+54	rối loạn cân bằng kiềm toan phối hợp	2656-2692	-	other	trả về là 24.7 (tại cơ sở điều dưỡng) - 	 Kết quả chẩn đoán hình ảnh: chẩn đoán v	ontology diagnosis recall	ok	E874	1
+54	suy thận cấp	2877-2889	-	other	uyền máu Các phát hiện chẩn đoán khác - 	 - tái phát u ác trực tràng - rung cuống	ViHealthBERT	ok	N17	1
+54	u ác trực tràng	2901-2916	- tái phát	other	hẩn đoán khác - suy thận cấp - tái phát 	 - rung cuống nhĩ với đáp ứng thất nhanh	ViHealthBERT	ok	C20	1
+57	bệnh rễ thần kinh tuỷ sống ở ngón tay cái	74-115	Lý do nhập viện:	other	n sử bệnh hiện tại     Lý do nhập viện: 	     Thời điểm khởi phát triệu chứng: và	ViHealthBERT	whole_explanatory_clause	M541	1
+57	bệnh rễ thần kinh tuỷ sống ở ngón tay	187-224	Triệu chứng hiện tại:	symptom_section	hứng: vài năm     Triệu chứng hiện tại: 	 cái  3.  Đánh giá tại bệnh viện     Kết	ViHealthBERT	ok	M541	1
+58	tăng lipid máu, không đặc hiệu	66-96	-	other	ệnh lý mạn tính     - bệnh Graves     - 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ontology diagnosis recall	ok	E785	1
+58	song thị	223-231	- nhìn	other	tình trạng tri giác giảm sút     - nhìn 	     Thời điểm khởi phát triệu chứng    	ontology diagnosis recall	ok	H532	1
+58	dò dịch não tủy	758-773	- Đội ngũ y tế tiến hành chọc	other	tính.     - Đội ngũ y tế tiến hành chọc 	.     - Bị một cơn nhịp tim chậm nặng và	ontology diagnosis recall	ok	G960	1
+58	hạ huyết áp, không đặc hiệu	2014-2041	- Bị nhịp tim chậm nặng và	other	não tủy.     - Bị nhịp tim chậm nặng và 	.     - Cơn bệnh tự khỏi sau khi dùng in	ontology diagnosis recall	ok	I959	1
+58	hạ huyết áp, không đặc hiệu	2572-2599	-	other	nhìn song thị     - nhịp tim chậm     - 	     - không nhấc chân phải khỏi mặt giư	ontology diagnosis recall	ok	I959	1
+60	thoát vị hoành	638-652	- Kêt quả không cho thấy	other	n hình ảnh     - Kêt quả không cho thấy 	 cách đây một năm.     - Phát hiện có mộ	ViHealthBERT	ok	K44	1
+60	thoát vị cạnh thực quản	694-717	- Phát hiện có một	other	ách đây một năm.     - Phát hiện có một 	 khá lớn.     - Thoát vị này dường như b	ViHealthBERT	ok	Q313	1
+63	viêm túi mật cấp	1638-1654	Các kết quả chẩn đoán khác:	explicit_diagnosis_section	n chứng     Các kết quả chẩn đoán khác: 	 tính không biến chứng	ontology diagnosis recall	ok	K810	1
+64	viêm túi mật	109-121	- Nhiều lần nhập viện trước đây vào khoa nội để điều trị	other	viện trước đây vào khoa nội để điều trị 	     - Nhập viện trước đây bắt đầu bằng 	ViHealthBERT	ok	K81	1
+64	viêm túi mật	359-371	- Nhiều lần chụp chụp cắt lớp vi tính trong lần nhập viện trước cho thấy	other	tính trong lần nhập viện trước cho thấy 	 không biến chứng     Bệnh lý mãn tính  	ViHealthBERT	ok	K81	1
+64	bệnh túi thừa	436-449	- Tiền sử đã biết của	history_section	h lý mãn tính     - Tiền sử đã biết của 	 của cả ruột non và đại tràng, không thủ	ViHealthBERT	ok	K57	1
+64	bệnh túi thừa của cả ruột non và đại tràng, không thủng hay áp xe	436-501	- Tiền sử đã biết của	history_section	h lý mãn tính     - Tiền sử đã biết của 	     - táo bón trở nên tồi tệ hơn gần đâ	ontology diagnosis recall	whole_explanatory_clause	K575	1
+64	Tồi tệ	1138-1144	- Mức độ nghiêm trọng:	other	(đau RLQLLQ)     - Mức độ nghiêm trọng: 	 hơn     - Thời gian: 1 ngày     - Các t	ViHealthBERT	ok	R452	1
+66	tăng lipid máu, không đặc hiệu	113-143	-	other	ái tháo đường     - tăng huyết áp     - 	     - béo phì     - Nhiễm trùng đường t	ontology diagnosis recall	ok	E785	1
+66	viêm xương tủy	1344-1358	- chụp x-quang bàn chân phải không phát hiện gãy xương hoặc	imaging_conclusion	hân phải không phát hiện gãy xương hoặc 	     - Bên phải âm tính với huyết khối t	ViHealthBERT	ok	M86	1
+67	nốt sần tuyến giáp phải	86-109	Lý do nhập viện: FNA của một	other	ện tại     Lý do nhập viện: FNA của một 	 có cấu trúc vi nang     Triệu chứng hiệ	ViHealthBERT	ok	E034	1
+67	sỏi mật	406-413	Kết quả chẩn đoán hình ảnh: siêu âm cho thấy	explicit_diagnosis_section	uả chẩn đoán hình ảnh: siêu âm cho thấy 	     Các phát hiện chẩn đoán khác: FNA c	ViHealthBERT	ok	K80	1
+67	nốt sần tuyến giáp phải	460-483	Các phát hiện chẩn đoán khác: FNA của một	explicit_diagnosis_section	c phát hiện chẩn đoán khác: FNA của một 	 có cấu trúc vi nang	ViHealthBERT	ok	E034	1
+68	tâm thần phân liệt	108-126	-	other	ắc nghẽn mạn tính, không xác định     - 	  2.  Tiền sử bệnh hiện tại     Lý do nh	ViHealthBERT	ok	F20	1
+71	bệnh tim mạch do xơ vữa động mạch	95-128	-	other	Tăng lipid máu - Đái tháo đường típ 2 - 	 sau CABG - suy tim, không đặc hiệu hệ s	ontology diagnosis recall	ok	I251	1
+71	suy tim, không đặc hiệu	140-163	-	other	tim mạch do xơ vữa động mạch sau CABG - 	 hệ số tống máu 50 inch - Tăng huyết áp 	ontology diagnosis recall	ok	I509	1
+71	Suy tim sung huyết	485-503	- đến ED vì	other	sự kiện trước khi nhập viện - đến ED vì 	 cấp - được điều trị bằng cách tăng liều	ontology diagnosis recall	ok	I500	1
+71	thông tim trái	749-763	-	other	đã thực hiện - thông tim trái và phải - 	 - thông tim phải Các phát hiện chẩn đoá	ViHealthBERT	ok	Q241	1
+71	graft SVG bị tắc	812-828	-	other	tim phải Các phát hiện chẩn đoán khác - 	 - graft lima ổn định - Bệnh động mạch v	ViHealthBERT	ok	T868	1
+72	u ác của đầu tuỵ	1387-1403	-	other	nh thiết Các phát hiện chẩn đoán khác - 	 mới được chẩn đoán - các đặc điểm mô họ	ViHealthBERT	ok	C250	1
+73	tăng lipid máu, không đặc hiệu	250-280	-	other	căn (nguyên phát) (Tăng huyết áp)     - 	 (tăng lipid máu, không đặc hiệu)     - 	ontology diagnosis recall	ok	E785	1
+73	tăng lipid máu, không đặc hiệu	282-312	- tăng lipid máu, không đặc hiệu (	other	)     - tăng lipid máu, không đặc hiệu (	)     - Đái tháo đường type 2 (Đái tháo 	ontology diagnosis recall	ok	E785	1
+73	bệnh tim mạch do xơ vữa động mạch	469-502	-	other	c nghẽn mạn tính, không xác định)     - 	 (bệnh tim mạch do xơ vữa động mạch) đã 	ontology diagnosis recall	ok	I251	1
+73	bệnh tim mạch do xơ vữa động mạch	504-537	- bệnh tim mạch do xơ vữa động mạch (	other	   - bệnh tim mạch do xơ vữa động mạch (	) đã phẫu thuật bắc cầu chủ động mạch và	ontology diagnosis recall	ok	I251	1
+74	chảy máu âm đạo	1420-1435	- Phủ nhận CPSOB (đau ngực, khó thở), NV (buồn nôn, nôn mửa), VB (	other	, khó thở), NV (buồn nôn, nôn mửa), VB (	), khí hư bất thường, thay đổi cân nặng 	ViHealthBERT	ok	N897	1
+77	Rối loạn lưỡng cực	219-237	-	other	 mãn tính     - Rối loạn cảm xúc      - 	     - rối loạn lo âu     Thuốc đã điều 	ViHealthBERT	ok	F31	1
+77	bắn	1082-1085	- ý nghĩ tự tử, có nghĩ tự	other	vào viện     - ý nghĩ tự tử, có nghĩ tự 	 vào đầu     - lo âu hoảng sợ     - hoan	ViHealthBERT	fragment	X93	1
+77	"lo âu
+hoảng sợ"	1100-1114	-	other	ghĩ tự tử, có nghĩ tự bắn vào đầu     - 	     - hoang tưởng như đang chiếm khí ox	section-aware recall	ok	F40	1
+80	gãy xương sườn	146-160	Lý do nhập viện: chấn thương	other	ện tại     Lý do nhập viện: chấn thương 	 trái sau tai nạn trượt ván giao thông B	ontology diagnosis recall	ok	S223	1
+80	gãy xương sườn	316-330	Triệu chứng lúc vào: chấn thương	symptom_section	ng     Triệu chứng lúc vào: chấn thương 	 trái    Cận lâm sàng:     - chụp cắt lớ	ontology diagnosis recall	ok	S223	1
+81	vết thương thấu bụng giữa bên phải	95-129	-	other	ng giữa bên phải Triệu chứng khi đến: - 	 Tình trạng ngay trước khi nhập viện: ổn	ViHealthBERT	ok	S3621	1
+82	Suy thận mạn giai đoạn V	48-72	-	other	 sử bệnh     Các bệnh lý mạn tính     - 	 do đái tháo đường và tăng huyết áp     	ViHealthBERT	ok	N185	1
+82	u ác của tuyến tiền liệt	114-138	-	other	o đái tháo đường và tăng huyết áp     - 	 điều trị bằng xạ trị cấy hạt      Tiền 	ViHealthBERT	ok	C61	1
+82	u ác của tuyến tiền liệtAnh	1081-1108	Điều trị:	other	n nhưng tạm hoãn ghép thận do chẩn đoán 	 ấy có một vài người hiến tiềm năng, như	ViHealthBERT	ok	C61	1
+83	hở van hai lá	268-281	-  siêu âm tim cho thấy	imaging_conclusion	n đoán hình ảnh -  siêu âm tim cho thấy 	 nặng - Chụp động mạch vành cho thấy khô	ViHealthBERT	ok	I340	1
+84	hen suyễn	54-63	-	other	nh nội khoa     Các bệnh mãn tính     - 	     - rối loạn lo âu     - tăng huyết á	ViHealthBERT	ok	J45	1
+85	suy tim	154-161	-	other	 thuật bắc cầu nối động mạch vành     - 	     - bệnh mạch máu ngoại biên     - bệ	ViHealthBERT	ok	I50	1
+85	bệnh mạch máu ngoại biên	168-192	-	other	 nối động mạch vành     - suy tim     - 	     - bệnh phổi tắc nghẽn mạn tính     	ViHealthBERT	ok	I73	1
+87	tổn thương chi dưới do tự tử	179-207	Lý do nhập viện:	other	 Bệnh sử hiện tại     Lý do nhập viện:  	 không thành     Theo lời người nhà kể l	ViHealthBERT	ok	T93	1
+87	tổn thương chi dưới	441-460	Lý do nhập viện:  tổn thương chi dưới do tự tử không thành	other	xuống  bệnh nhân nhảy cầu tự tử, sau đó 	 , vào viện Tình trạng khi đến khoa Cấp 	ViHealthBERT	ok	T93	1
+87	tổn thương tổn thương chi dưới nghiêm trọng	622-665	Khám thấy bị	other	 xác nhận có ý định tự tử  Khám thấy bị 	. Chẩn đoán: Phẫu thuật cắt cụt chân trá	ViHealthBERT	ok	T93	1
+88	phù chân và hoại tử nặng	718-742	Lý do nhập viện: Phù chân trái và hoại tử ngày càng nặng	other	 vài tuần, xuất hiện phù chân. Ngày nay 	 lên, chưa xử trí gì, vào viện. Tình trạ	ViHealthBERT	ok	Q845	1
+89	huyết khối tĩnh mạch sâu	1353-1377	- siêu âm:  không phát hiện	imaging_conclusion	 lâm sàng:  - siêu âm:  không phát hiện 	      Thủ thuật đã thực hiện     - PICC 	ViHealthBERT	ok	I81	1
+91	Suy thận mạn giai V	159-178	-	other	 thuật thay van tim hai lá cơ học     - 	 đang chạy thận nhân tạo chu kì các ngày	ViHealthBERT	ok	N185	1
+91	chảy máu mũi	529-541	Theo lời bệnh nhân kể bệnh nhân xuất hiện	other	eo lời bệnh nhân kể bệnh nhân xuất hiện 	 xuất hiện khoảng 01 lần/ tuần. Khi làm 	ViHealthBERT	ok	R041	1
+95	bụng mềm	578-586	Khám	other	Không đau ngực     - Không khó thở Khám 	, không chướng - Khám cơ quan khác chưa 	ViHealthBERT	ok	R193	1
+96	viêm tủy	18-26	-	other	1. Tiền sử bệnh - 	 xương mãn tính và bàng quang thần kinh 	ontology diagnosis recall	ok	K040	1
+96	viêm tủy xương mãn tính	18-41	-	other	1. Tiền sử bệnh - 	 và bàng quang thần kinh gây biến chứng 	ViHealthBERT	ok	M863	1
+96	liệt hai chi dưới	81-98	- viêm tủy xương mãn tính và bàng quang thần kinh gây biến chứng	other	 và bàng quang thần kinh gây biến chứng 	 và loét tì đè giai đoạn IV mãn tính - đ	ViHealthBERT	ok	G821	1
+96	viêm tủy	655-663	Lý do nhập viện: sốt cao	other	y và dừng tất cả kháng sinh để điều trị 	 xương mãn tính tại khoa Hồi sức tích cự	ontology diagnosis recall	ok	K040	1
+96	viêm tủy xương mãn tính	655-678	Lý do nhập viện: sốt cao	other	y và dừng tất cả kháng sinh để điều trị 	 tại khoa Hồi sức tích cực. Ra viện và t	ViHealthBERT	ok	M863	1
+96	viêm xương tủy	1322-1336	- MRI:  không thấy tình trạng	imaging_conclusion	nh ảnh:   - MRI:  không thấy tình trạng 	 nặng hơn - Xquang ngực thẳng: không thấ	ViHealthBERT	ok	M86	1
+96	viêm tủy	1511-1519	Chẩn đoán: nhiễm trùng huyết đường vào tiết niệu-	explicit_diagnosis_section	 nhiễm trùng huyết đường vào tiết niệu- 	 xương mãn tính,  Điều trị:  - Truyền dị	ontology diagnosis recall	ok	K040	1
+96	viêm tủy xương mãn tính	1511-1534	Chẩn đoán: nhiễm trùng huyết đường vào tiết niệu-	explicit_diagnosis_section	 nhiễm trùng huyết đường vào tiết niệu- 	,  Điều trị:  - Truyền dịch : 4000 ml NS	ViHealthBERT	ok	M863	1
+97	liệt hai chi dưới	105-122	Các bệnh lý mãn tính: viêm tủy xương và bàng quang thần kinh có biến chứng	other	g và bàng quang thần kinh có biến chứng 	  2.  Bệnh sử hiện tại     Lý do nhập vi	ViHealthBERT	ok	G821	1
+98	Đa u tủy	485-493	Chẩn đoán:	explicit_diagnosis_section	ơng ổ tiêu xương lan tỏa     Chẩn đoán: 	 xương	ontology diagnosis recall	ok	C900	1
+99	rối loạn lo âu, không biệt định	39-70	Bệnh lý mãn tính:	other	1.  Tiền sử bệnh     Bệnh lý mãn tính: 	 nghiêm trọng     Tiền sử phẫu thuật / t	ontology diagnosis recall	ok	F419	1
+99	không biệt định	55-70	Bệnh lý mãn tính: rối loạn lo âu,	other	h     Bệnh lý mãn tính: rối loạn lo âu, 	 nghiêm trọng     Tiền sử phẫu thuật / t	ViHealthBERT	ok	Q564	1
+100	U ác của đại tràng	123-141	-	other	ây; 11.6     Các bệnh lý mãn tính     - 	     - cường cận giáp nguyên phát     - 	ViHealthBERT	ok	C170	1
+100	cường cận giáp nguyên phát	148-174	-	other	mãn tính     - U ác của đại tràng     - 	     - Xơ vữa động mạch     - cơn đau th	ViHealthBERT	ok	E210	1
+100	Xơ vữa động mạch	181-197	-	other	     - cường cận giáp nguyên phát     - 	     - cơn đau thắt ngực ổn định  2. Bện	ViHealthBERT	ok	I70	1
+100	cơn đau thắt ngực	204-221	-	other	guyên phát     - Xơ vữa động mạch     - 	 ổn định  2. Bệnh sử     Lý do nhập viện	ontology diagnosis recall	symptom_mislabeled	I20	1
+100	nhồi máu cũ	796-807	- đã chỉ định MRI ngoại trú  có hình ảnh	imaging_conclusion	 đã chỉ định MRI ngoại trú  có hình ảnh 	 nhỏ ở vỏ não đỉnh trái, không có tổn th	ViHealthBERT	ok	I252	1

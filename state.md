@@ -563,3 +563,40 @@ Primary goals:
 
 **Summary:** v10 validates conflict resolution as a more promising LLM use than additive recall, but is not strong enough to replace v7. Stop submission-driven iteration; build a manually annotated local development set.
 
+---
+
+## Schema-first principles audit (2026-07-11) — analysis only
+
+**Project:** `schema_first_principles_audit` (not a model version; no leaderboard score).
+
+**Status:** completed. v7–v10 model iteration **paused**.
+
+**Artifacts analyzed:** frozen `output/v10_llm_conflict_resolution/base_v7_snapshot/` (3236 entities / 100 docs) + traces; no Qwen/v7/v9/v10 reruns.
+
+**Root-cause verdict:**
+
+```text
+WRONG_TYPE_SCHEMA
+WRONG_SPAN_POLICY
+OVER_EXTRACTION
+CANDIDATE_SET_FAILURE
+DISTRIBUTED_PIPELINE_FAILURE
+(+ ASSERTION_SCOPE_FAILURE secondary)
+```
+
+Headline evidence:
+
+- 159 / 696 `TÊN_XÉT_NGHIỆM` flagged likely procedures (including required shunt example)
+- 84 `CHẨN_ĐOÁN ↔ TRIỆU_CHỨNG` type collisions
+- ICD candidates: 215/215 singleton (official example is multi-label)
+- 0 `isFamily` predictions; 220 assertion-risk rows
+- Precision-first offline removals: 168 → 3068 remain (not submitted)
+
+**Recommended architecture (primary):** task-specific span model with five labels + NONE, dedicated lab name/result segmentation, contextual assertions, multi-label ICD ranker; use v7/Qwen/rules/ontologies as weak supervision only.
+
+**Annotation pool:** `analysis/schema_audit/annotation_pool.csv` (415 rows).
+
+**Reports:** `analysis/schema_audit/final_report.md`, `architecture_decision.md`.
+
+Do **not** declare a model version successful from this audit.
+

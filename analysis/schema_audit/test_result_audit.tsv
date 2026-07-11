@@ -1,0 +1,135 @@
+file	text	position	section	left_context	right_context	source_component	result_class	contains_test_name_cue
+1	không ghi nhận gì bất thường	2241-2269	- chụp x-quang ngực	pirin 325mg x 1     - chụp x-quang ngực 	     - phân tích nước tiểu không ghi nhậ	clinical recall	OVERLONG_RESULT_CLAUSE	False
+1	không ghi nhận gì bất thường	2296-2324	- phân tích nước tiểu	gì bất thường     - phân tích nước tiểu 	     - ecg bình thường     Tình trạng ng	clinical recall	OVERLONG_RESULT_CLAUSE	False
+1	bình thường	2335-2346	- ecg	 không ghi nhận gì bất thường     - ecg 	     Tình trạng ngay trước khi nhập viện	clinical recall	QUALITATIVE_RESULT	False
+1	8.3	2485-2488	- VS9	viện     Kết quả khám lâm sàng     - VS9	 12987 56 18 99RA     - Khi được chuyển 	lab-pair recall	VALUE_ONLY	False
+1	không có gì đáng chú ý	2638-2660	Kết quả xét nghiệm: phân tích nước tiểu	Kết quả xét nghiệm: phân tích nước tiểu 	     Kết quả chẩn đoán hình ảnh: chụp x-	clinical recall	OVERLONG_RESULT_CLAUSE	False
+1	không có gì đáng chú ý	2711-2733	Kết quả chẩn đoán hình ảnh: chụp x-quang ngực	ả chẩn đoán hình ảnh: chụp x-quang ngực 	     Các kết quả chẩn đoán khác     - đi	clinical recall	OVERLONG_RESULT_CLAUSE	False
+1	không ghi nhận gì bất thường	2786-2814	- điện tâm đồ là	quả chẩn đoán khác     - điện tâm đồ là 	     - monitor holter cho thấy Nhịp xoan	clinical recall	OVERLONG_RESULT_CLAUSE	False
+3	0.01	3587-3591	- troponin	hườngbình thườngbình thường. - troponin 	. - chụp x-quang ngực cho thấy tim to nh	lab-pair recall	VALUE_ONLY	False
+3	bình thường	4112-4123	- bản phân tích nước tiểu	n bình thường - bản phân tích nước tiểu 	 - troponin 0.01 - rung nhĩ kèm đáp ứng 	clinical recall	QUALITATIVE_RESULT	False
+3	0.01	4135-4139	- troponin	n tích nước tiểu bình thường - troponin 	 - rung nhĩ kèm đáp ứng thất nhanh mới ở	lab-pair recall	VALUE_ONLY	False
+5	(aspartate aminotransferase) là 319	813-848	- ast	 nghiệm     - viêm gan do men     - ast 	     - alt (alanine aminotransferase) là	clinical recall	OVERLONG_RESULT_CLAUSE	True
+5	(alanine aminotransferase) là 690	859-892	- alt	tate aminotransferase) là 319     - alt 	     - phosphatase kiềm (ap) là 983     	clinical recall	OVERLONG_RESULT_CLAUSE	True
+5	) 11.6	988-994	- bạch cầu (wbc	 phần (tbili) là 2.4     - bạch cầu (wbc	     - Đã lấy cấy máu  Kết quả chẩn đoán	clinical recall	VALUE_ONLY	False
+7	âm tính	1778-1785	Kết quả xét nghiệm: chọc dò dịch não tủy là	quả xét nghiệm: chọc dò dịch não tủy là 	     Kết quả chẩn đoán hình ảnh: chụp ct	lab-pair recall	QUALITATIVE_RESULT	False
+8	Kết quả tế bào học từ dịch chọc hút nốt tuyến giáp trái ghi nhận bất thường	751-826	Kết quả xét nghiệm:	 khám tại bệnh viện Kết quả xét nghiệm: 	. Thủ thuật đã thực hiện: Chọc hút bằng 	clinical recall	OVERLONG_RESULT_CLAUSE	False
+9	26.1	368-372	- huyết cầu tố là	c hiện vào [Date]     - huyết cầu tố là 	 vào thời điểm đó     - Các lựa chọn điề	lab-pair recall	VALUE_ONLY	False
+9	vào [Date] cho thấy	765-784	- siêu âm tử cung	hẩn đoán hình ảnh     - siêu âm tử cung 	:     - Tử cung đo 14,2 x 8,8 x 7,5 cm  	clinical recall	NON_RESULT_PHRASE	False
+10	tăng nhẹ lên 4.9	279-295	Kết quả xét nghiệm: cea (kháng nguyên ung thư phôi)	nghiệm: cea (kháng nguyên ung thư phôi) 	 Kết quả chẩn đoán hình ảnh - mri vùng c	clinical recall	VALUE_ONLY	False
+10	không chẩn đoán được do không có mỡ nào trong cơ thể	347-399	- mri vùng chậu thực tế	n đoán hình ảnh - mri vùng chậu thực tế 	 - siêu âm hôm nay cũng rất khó khăn, nh	clinical recall	OVERLONG_RESULT_CLAUSE	False
+10	chỉ cho thấy một u tuyến	701-725	- sinh thiết	ột u ác trực tràng đáng kể - sinh thiết 	 - đến khám để phân giai đoạn phẫu thuật	clinical recall	OVERLONG_RESULT_CLAUSE	False
+12	công thức máu (cbc) nâng cao lên 11.3	1035-1072	Kết quả xét nghiệm:	á tại bệnh viện     Kết quả xét nghiệm: 	     Kết quả chẩn đoán hình ảnh: chụp x-	clinical recall	OVERLONG_RESULT_CLAUSE	True
+16	98.8	1610-1614	- dấu hiệu sinh tồn là:	ng tính guaiac. - dấu hiệu sinh tồn là: 	 65 9360 20 95 2LNC (tại khoa Cấp cứu) -	lab-pair recall	VALUE_ONLY	False
+16	huyết khối 26.3, giảm so với hôm qua, nhưng ổn định ở mức 28 hậu phẫu tuần trước	1936-2016	Kết quả xét nghiệm:	u dương tính guaiac Kết quả xét nghiệm: 	. Kết quả chẩn đoán hình ảnh: chụp x-qua	clinical recall	OVERLONG_RESULT_CLAUSE	False
+17	102.9	341-346	- Sốt cao nhất là	 sốt, mệt mỏi, đau cơ - Sốt cao nhất là 	°F không đáp ứng với tylenol và advil - 	lab-pair recall	VALUE_ONLY	False
+20	không thuốc cản quang cho thấy tim to	1539-1576	- chụp ct ngực	ước - hơi vùng ngực.     - chụp ct ngực 	, tràn dịch màng tim, tràn dịch màng phổ	clinical recall	OVERLONG_RESULT_CLAUSE	False
+23	không ghi nhận diễn tiến xấu nên được xuất viện về nhà	879-933	Bệnh nhân tiếp tục được theo dõi, các lần chụp CT kiểm tra	được theo dõi, các lần chụp CT kiểm tra 	. Trong thời gian sau đó, bệnh nhân tươn	clinical recall	OVERLONG_RESULT_CLAUSE	False
+27	13482	1158-1163	- Các chỉ số ban đầu vs là tc 37 độ c hr 88 bp	hỉ số ban đầu vs là tc 37 độ c hr 88 bp 	 rr 14 spo2 100ra     - Bị kích hoạt để 	lab-pair recall	VALUE_ONLY	False
+27	140	1206-1209	- Bị kích hoạt để hr	 14 spo2 100ra     - Bị kích hoạt để hr 	 khoảng một giờ sau khi dùng ống xịt thứ	lab-pair recall	VALUE_ONLY	False
+28	chưa phát hiện bất thường (lần nhập viện trước)	2209-2256	- chụp ct bụng chậu là	 viện trước)     - chụp ct bụng chậu là 	     - siêu âm vùng gan mật hiện tại cho	clinical recall	OVERLONG_RESULT_CLAUSE	False
+32	chi trên không ghi nhận huyết khối	1133-1167	Siêu âm mạch máu	 tâm ngoại vi (PICC).  Siêu âm mạch máu 	, xạ hình thông khí - tưới máu phổi cho 	clinical recall	OVERLONG_RESULT_CLAUSE	False
+32	chi trên không ghi nhận huyết khối	2216-2250	Siêu âm mạch máu	ên quan catheter PICC  Siêu âm mạch máu 	. Xạ hình thông khí – tưới máu phổi cho 	clinical recall	OVERLONG_RESULT_CLAUSE	False
+35	39.2	1307-1311	- bạch cầu tăng là	t quả xét nghiệm     - bạch cầu tăng là 	     - creatinin là 3.0     - troponin l	lab-pair recall	VALUE_ONLY	False
+35	3.0	1331-1334	- creatinin là	ạch cầu tăng là 39.2     - creatinin là 	     - troponin là 0.10     - inr là 1.4	lab-pair recall	VALUE_ONLY	False
+35	0.10	1353-1357	- troponin là	   - creatinin là 3.0     - troponin là 	     - inr là 1.4     - Tăng men gan. vớ	lab-pair recall	VALUE_ONLY	False
+35	1.4	1371-1374	- inr là	3.0     - troponin là 0.10     - inr là 	     - Tăng men gan. với alt là 176 và a	lab-pair recall	VALUE_ONLY	False
+35	176	1406-1409	- Tăng men gan. với alt là	r là 1.4     - Tăng men gan. với alt là 	 và ast là 287     - tổng phân tích nước	lab-pair recall	VALUE_ONLY	False
+35	287	1420-1423	- Tăng men gan. với alt là 176 và ast là	 Tăng men gan. với alt là 176 và ast là 	     - tổng phân tích nước tiểu có đái t	lab-pair recall	VALUE_ONLY	False
+35	bình thường	1540-1551	Kết quả chẩn đoán hình ảnh: chụp x-quang ngực là	hẩn đoán hình ảnh: chụp x-quang ngực là 	     Các phát hiện chẩn đoán khác: đánh 	lab-pair recall	QUALITATIVE_RESULT	False
+36	tăng cao)	469-478	*   Thời điểm khởi phát triệu chứng: Muộn (creatinine	hởi phát triệu chứng: Muộn (creatinine  	     *   Diễn biến bệnh         *   crea	clinical recall	QUALITATIVE_RESULT	False
+36	ổn định ở mức 1.4-1.6 sau khi ghép	525-559	*   creatinine	  Diễn biến bệnh         *   creatinine 	.         *   creatinine bắt đầu tăng mu	clinical recall	OVERLONG_RESULT_CLAUSE	False
+36	bắt đầu tăng muộn	584-601	*   creatinine	.6 sau khi ghép.         *   creatinine 	.         *   Tình trạng tiêu chảy đáng 	clinical recall	QUALITATIVE_RESULT	False
+36	dương tính	801-811	*   Giai đoạn giữa (pcr là	hần.         *   Giai đoạn giữa (pcr là 	 với virus bk).         *   creatinin tă	lab-pair recall	QUALITATIVE_RESULT	False
+36	tiếp tục tăng	964-977	*   creatinine	 bid to 1mg bid.         *   creatinine 	.         *   Lo ngại về đào thải.      	clinical recall	QUALITATIVE_RESULT	False
+36	thấy chỉ số kháng trở bình thường	1041-1074	*   siêu âm thận cho	 đào thải.         *   siêu âm thận cho 	.         *   sinh thiết ghép thận không	clinical recall	QUALITATIVE_RESULT	False
+36	ghép thận không có bằng chứng đào thải kháng thể hữu hình cấp tính	1099-1165	*   sinh thiết	trở bình thường.         *   sinh thiết 	.         *   creatinine là 5.1 hôm nay.	clinical recall	OVERLONG_RESULT_CLAUSE	False
+36	5.1	1193-1196	*   creatinine là	ình cấp tính.         *   creatinine là 	 hôm nay.         *   k là 5.8 hôm nay. 	lab-pair recall	VALUE_ONLY	False
+36	5.8	1223-1226	*   k là	tinine là 5.1 hôm nay.         *   k là 	 hôm nay.     *   Triệu chứng khi nhập v	lab-pair recall	VALUE_ONLY	False
+36	thấy chỉ số kháng trở bình thường	1546-1579	*   siêu âm thận cho	o 1mg bid.         *   siêu âm thận cho 	.         *   sinh thiết ghép thận không	clinical recall	QUALITATIVE_RESULT	False
+36	ghép thận không có bằng chứng đào thải kháng thể hữu hình cấp tính	1604-1670	*   sinh thiết	trở bình thường.         *   sinh thiết 	.         *   xét nghiệm được kiểm tra n	clinical recall	OVERLONG_RESULT_CLAUSE	False
+36	5.1	1747-1750	*   xét nghiệm được kiểm tra ngoại trú hôm nay cho thấy creatinine	a ngoại trú hôm nay cho thấy creatinine 	; k 5.8.     *   Tình trạng ngay trước k	lab-pair recall	VALUE_ONLY	False
+36	5.1	1947-1950	*   creatinine	t quả xét nghiệm         *   creatinine 	         *   k 5.8         *   pcr dương	lab-pair recall	VALUE_ONLY	False
+36	thấy chỉ số kháng trở bình thường	2062-2095	*   Kết quả chẩn đoán hình ảnh: siêu âm thận cho	uả chẩn đoán hình ảnh: siêu âm thận cho 	     *   Thủ thuật đã thực hiện         	clinical recall	QUALITATIVE_RESULT	False
+37	6.3	1213-1216	- Các xét nghiệm xét nghiệm được kiểm tra bởi PCP: kali là	t nghiệm được kiểm tra bởi PCP: kali là 	 mẫu không tan máu - Được gọi điện bởi b	lab-pair recall	VALUE_ONLY	False
+37	6.3	1361-1364	- kali	tại bệnh viện Kết quả xét nghiệm - kali 	, mẫu không tan máu - kali (k).8 - ure (	lab-pair recall	VALUE_ONLY	False
+37	5.7	1425-1428	- creatinine	 kali (k).8 - ure (bun) 83 - creatinine 	 - hemoglobin 7.8 - hba1c 6.5 - bnp 21,0	lab-pair recall	VALUE_ONLY	False
+37	7.8	1442-1445	- hemoglobin	 (bun) 83 - creatinine 5.7 - hemoglobin 	 - hba1c 6.5 - bnp 21,000 - tổng phân tí	lab-pair recall	VALUE_ONLY	False
+37	6.5	1454-1457	- hba1c	creatinine 5.7 - hemoglobin 7.8 - hba1c 	 - bnp 21,000 - tổng phân tích nước tiểu	lab-pair recall	VALUE_ONLY	False
+37	21,000	1464-1470	- bnp	 5.7 - hemoglobin 7.8 - hba1c 6.5 - bnp 	 - tổng phân tích nước tiểu bình thường 	lab-pair recall	VALUE_ONLY	False
+37	bình thường	1498-1509	- tổng phân tích nước tiểu	- bnp 21,000 - tổng phân tích nước tiểu 	 - cúm âm tính Kết quả chẩn đoán hình ản	clinical recall	QUALITATIVE_RESULT	False
+38	102	729-732	- Tự đo từ temperate đến tmax	 viện     - Tự đo từ temperate đến tmax 	 sốt tại nhà     - Không có khó thở hoặc	lab-pair recall	VALUE_ONLY	False
+38	537	1002-1005	- glucose	ện     Kết quả xét nghiệm     - glucose 	     - glucose cải thiện thành 367     -	lab-pair recall	VALUE_ONLY	False
+38	cải thiện thành 367	1020-1039	- glucose	 nghiệm     - glucose 537     - glucose 	     - bun (ure) 3     - cr (creatinine)	clinical recall	VALUE_ONLY	False
+38	(ure) 3	1050-1057	- bun	- glucose cải thiện thành 367     - bun 	     - cr (creatinine) 1.2     - ag (ani	clinical recall	OVERLONG_RESULT_CLAUSE	True
+38	) 1.2	1078-1083	- cr (creatinine	7     - bun (ure) 3     - cr (creatinine	     - ag (anion gap) 17     - ag (anion	clinical recall	VALUE_ONLY	False
+40	12.5	1553-1557	- số lượng bạch cầu là	ả xét nghiệm     - số lượng bạch cầu là 	     - tổng phân tích nước tiểu đáng chú	lab-pair recall	VALUE_ONLY	False
+40	âm tính x1	1645-1655	- troponin	ó vếtvết protein niệu.       - troponin 	     Kết quả chẩn đoán hình ảnh: chụp x-	clinical recall	VALUE_ONLY	False
+46	) cho thấy tắc hẹp 80% động mạch thận trái L	511-555	Kết quả chẩn đoán hình ảnh: chụp cắt lớp vi tính (ct	 đoán hình ảnh: chụp cắt lớp vi tính (ct	     Thủ thuật thực hiện     - chụp mạch	clinical recall	VALUE_PLUS_UNIT	False
+47	và lấy mẫu bằng bàn chải vào ngày [Ngày] và kết quả lấy mẫu bằng bàn chải cho thấy tế bào bất thường	1053-1153	- Đã thực hiện sinh thiết	 điểm đó.     - Đã thực hiện sinh thiết 	, đáng ngại cho ung thư biểu mô tuyến.  	clinical recall	OVERLONG_RESULT_CLAUSE	False
+47	và lấy mẫu bằng bàn chải vào ngày [Ngày] và kết quả lấy mẫu bằng bàn chải cho thấy các tế bào bất thường	2239-2343	- Đã thực hiện sinh thiết	 điểm đó.     - Đã thực hiện sinh thiết 	, đáng lo ngại cho ung thư biểu mô tuyến	clinical recall	OVERLONG_RESULT_CLAUSE	False
+51	bình thường	991-1002	- khám là	 spo2 96 khi thở khí trời     - khám là 	     Kết quả xét nghiệm     - kali là 2.	lab-pair recall	QUALITATIVE_RESULT	False
+51	2.4	1040-1043	- kali là	ng     Kết quả xét nghiệm     - kali là 	     - kali vẫn giảm xuống 2.2     - kal	lab-pair recall	VALUE_ONLY	False
+54	24.5	1075-1079	- hct vào ngày xuất viện là	icarbonate. - hct vào ngày xuất viện là 	 và lặp lại ở 26.1. - Tình trạng sức khỏ	lab-pair recall	VALUE_ONLY	False
+54	24.7	1245-1249	- xét nghiệm theo dõi được lấy tại cơ sở điều dưỡng, hct trả về là	lấy tại cơ sở điều dưỡng, hct trả về là 	. - Được đưa đến phòng cấp cứu để truyền	lab-pair recall	VALUE_ONLY	False
+54	24.7	1978-1982	- hct trả về là	y tại cơ sở điều dưỡng. - hct trả về là 	. - Được đưa đến phòng cấp cứu để truyền	lab-pair recall	VALUE_ONLY	False
+54	24.5	2582-2586	- hct vào ngày xuất viện là	 xét nghiệm - hct vào ngày xuất viện là 	 - hct lặp lại tại 26.1 - hct trả về là 	lab-pair recall	VALUE_ONLY	False
+54	24.7	2626-2630	- hct trả về là	 - hct lặp lại tại 26.1 - hct trả về là 	 (tại cơ sở điều dưỡng) - rối loạn cân b	lab-pair recall	VALUE_ONLY	False
+56	bình thường tại phòng cấp cứu	832-861	- điện tâm đồ	 có đau tại phòng cấp cứu - điện tâm đồ 	 - Các chỉ số ban đầu tại phòng cấp cứu:	clinical recall	QUALITATIVE_RESULT	False
+56	67 lần/phút	1056-1067	- điện tâm đồ bình thường tại phòng cấp cứu	 36.7°c, huyết áp 139/68 mmhg, nhịp tim 	, nhịp thở 16 lần/phút, độ bão hòa oxy 1	lab-pair recall	VALUE_ONLY	False
+56	100%	1106-1110	- điện tâm đồ bình thường tại phòng cấp cứu	t, nhịp thở 16 lần/phút, độ bão hòa oxy 	 trên khí trời) Các thủ thuật đã thực hi	lab-pair recall	VALUE_PLUS_UNIT	False
+58	kết quả âm tính	707-722	- Đã được chụp chụp ct sọ não	 dậy.     - Đã được chụp chụp ct sọ não 	.     - Đội ngũ y tế tiến hành chọc dò d	clinical recall	QUALITATIVE_RESULT	False
+58	kết quả âm tính	933-948	- Chụp lại chụp ct sọ não,	 fluids.     - Chụp lại chụp ct sọ não, 	.     - Chuyển đến bệnh viện để tiếp tục	clinical recall	QUALITATIVE_RESULT	False
+58	kết quả âm tính	1928-1943	- Đã được chụp chụp ct sọ não	phải.     - Đã được chụp chụp ct sọ não 	.     - Tiến hành chọc dò dịch não tủy. 	clinical recall	QUALITATIVE_RESULT	False
+58	kết quả âm tính	2130-2145	- Chụp lại chụp ct sọ não,	 fluids.     - Chụp lại chụp ct sọ não, 	.     - Đã dùng kháng sinh cho nhiễm trù	clinical recall	QUALITATIVE_RESULT	False
+58	âm tính	2778-2785	- chụp ct sọ não:	hẩn đoán hình ảnh     - chụp ct sọ não: 	     - Chụp lại chụp ct sọ não: âm tính 	lab-pair recall	QUALITATIVE_RESULT	False
+58	âm tính	2817-2824	- Chụp lại chụp ct sọ não:	 âm tính     - Chụp lại chụp ct sọ não: 	     Các thủ thuật đã thực hiện     - ch	clinical recall	QUALITATIVE_RESULT	False
+63	7.8	1255-1258	khám thực thể Kết quả: dấu hiệu sinh tồn ban đầu được ghi nhận là T9	iệu sinh tồn ban đầu được ghi nhận là T9	, nhịp tim 84, huyết áp 15670, nhịp thở 	lab-pair recall	VALUE_ONLY	False
+63	27.2	1392-1396	- thiếu máu hồng cầu nhỏ là	Kết quả     - thiếu máu hồng cầu nhỏ là 	     - bun/creatinine     Kết quả chẩn đ	lab-pair recall	VALUE_ONLY	False
+65	2.0	425-428	- inr là	ân được khám tại phòng cấp cứu - inr là 	 Tình trạng ngay trước khi nhập viện - n	lab-pair recall	VALUE_ONLY	False
+65	2.0	613-616	- inr là	i bệnh viện Kết quả xét nghiệm - inr là 	 - tăng Cr theo phòng cấp cứu 	lab-pair recall	VALUE_ONLY	False
+66	(đường huyết) 316	969-986	- glucose	eatinine (ure/creatinine)     - glucose 	     - lactate (acid lactat) 1.3     - K	clinical recall	VALUE_ONLY	False
+66	): 12 bạch cầu	1074-1088	- Kết quả ua (urinalysis - tổng phân tích nước tiểu	a (urinalysis - tổng phân tích nước tiểu	, không vi khuẩn, 1 hồng cầu, âm tính ni	clinical recall	OVERLONG_RESULT_CLAUSE	True
+69	dương tính với ung thư biểu mô tuyến	502-538	- sinh thiết	một khối ở chỗ uốn gan     - sinh thiết 	  3.  Đánh giá tại bệnh viện     Kết quả	clinical recall	QUALITATIVE_RESULT	False
+70	421	1353-1356	- Tại bệnh viện OSH, phát hiện tăng men gan với tăng bilirubin máu: ast	ăng men gan với tăng bilirubin máu: ast 	, alt 336, alp 185, bilirubin toàn phần 	lab-pair recall	VALUE_ONLY	False
+70	336	1362-1365	- Tại bệnh viện OSH, phát hiện tăng men gan với tăng bilirubin máu: ast 421, alt	an với tăng bilirubin máu: ast 421, alt 	, alp 185, bilirubin toàn phần 0.9 - âm 	lab-pair recall	VALUE_ONLY	False
+70	185	1371-1374	- làm hỏng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ	ng bilirubin máu: ast 421, alt 336, alp 	, bilirubin toàn phần 0.9 - âm tính siêu	lab-pair recall	VALUE_ONLY	False
+70	421	1834-1837	- ast	 tại bệnh viện Kết quả xét nghiệm - ast 	 - alt 336 - alp 185 - bilirubin toàn ph	lab-pair recall	VALUE_ONLY	False
+70	336	1844-1847	- alt	viện Kết quả xét nghiệm - ast 421 - alt 	 - alp 185 - bilirubin toàn phần 0.9 - t	lab-pair recall	VALUE_ONLY	False
+70	185	1854-1857	- alp	uả xét nghiệm - ast 421 - alt 336 - alp 	 - bilirubin toàn phần 0.9 - total bili 	lab-pair recall	VALUE_ONLY	False
+70	bình thường	1985-1996	- ferritin là	viêm gan virus là âm tính - ferritin là 	 - ceruloplasmin vẫn đang chờ kết quả đa	lab-pair recall	QUALITATIVE_RESULT	False
+70	doppler âm tính âm tính	2122-2145	- siêu âm bụng có	uả chẩn đoán hình ảnh - siêu âm bụng có 	 - âm tính chụp hida - ercp cho thấy túi	clinical recall	QUALITATIVE_RESULT	False
+74	công thức máu (cbc) là 12 (tăng nhẹ))	1527-1564	Kết quả xét nghiệm:	á tại bệnh viện     Kết quả xét nghiệm: 	     Kết quả chẩn đoán hình ảnh: chụp cắ	clinical recall	OVERLONG_RESULT_CLAUSE	True
+75	0.10	1615-1619	Kết quả xét nghiệm: troponin là	hôi     Kết quả xét nghiệm: troponin là 	     Kết quả chẩn đoán hình ảnh     - đi	lab-pair recall	VALUE_ONLY	False
+75	Sóng ST chênh xuống  ở các chuyển đạo v4 đến v6chênh nhiều so với EKG ở  trước đó	1746-1827	- điện tâm đồ cho thấy	 91 lần/phút     - điện tâm đồ cho thấy 	 	clinical recall	OVERLONG_RESULT_CLAUSE	True
+76	0.03	1107-1111	- troponin là	  Kết quả xét nghiệm:     - troponin là 	     - creatinine là  2.0 -> 3.2     - k	lab-pair recall	VALUE_ONLY	False
+76	2.0 -> 3.2	1133-1143	- creatinine là	- troponin là 0.03     - creatinine là  	     - k (kali) là 5.4     - phosphate l	lab-pair recall	VALUE_ONLY	False
+76	5.6	1185-1188	- phosphate là	   - k (kali) là 5.4     - phosphate là 	     Kết quả chẩn đoán hình ảnh: điện tâ	lab-pair recall	VALUE_ONLY	False
+76	(ekg) là bình thường	1233-1253	Kết quả chẩn đoán hình ảnh: điện tâm đồ	Kết quả chẩn đoán hình ảnh: điện tâm đồ 	  	clinical recall	QUALITATIVE_RESULT	True
+80	) lồng ngực Hình ảnh gãy 3 xương sườn 9	449-488	- chụp cắt lớp vi tính (ct	ổn thương     - chụp cắt lớp vi tính (ct	, 10 và 11, xương sườn thứ 10 bị gãy vụn	clinical recall	OVERLONG_RESULT_CLAUSE	False
+81	) sọ  trước mổ cho thấy độ dày niêm mạc xoang hàm dày lên	281-338	- chụp cắt lớp vi tính (ct	oán hình ảnh: - chụp cắt lớp vi tính (ct	 - không có tổn thương rõ ràng khác trên	clinical recall	OVERLONG_RESULT_CLAUSE	False
+82	tăng từ 5.2 lên 6.3 mg/dl (460 - 557 umol/l) và	834-881	- Kết quả xét nghiệm cho thấy creatinine	 Kết quả xét nghiệm cho thấy creatinine 	    Ure tăng từ 69 lên 91 mg/dl ( 24.6 -	clinical recall	VALUE_PLUS_UNIT	False
+82	8.4	961-964	Ure tăng từ 69 lên 91 mg/dl ( 24.6 -32.5 mmol/l)trong 2 tháng qua,  photpho	32.5 mmol/l)trong 2 tháng qua,  photpho 	 Điều trị:      -  Bệnh nhân đã  hoàn th	lab-pair recall	VALUE_ONLY	False
+84	4227	871-875	- bnp	ét nghiệm     - bạch cầu 26.7     - bnp 	     - kali 3.2     - troponin 0.01     	lab-pair recall	VALUE_ONLY	False
+84	3.2	887-890	- kali	bạch cầu 26.7     - bnp 4227     - kali 	     - troponin 0.01     - lactate 1.8  	lab-pair recall	VALUE_ONLY	False
+84	0.01	906-910	- troponin	 bnp 4227     - kali 3.2     - troponin 	     - lactate 1.8     - tổng phân tích 	lab-pair recall	VALUE_ONLY	False
+84	1.8	925-928	- lactate	i 3.2     - troponin 0.01     - lactate 	     - tổng phân tích nước tiểu có kết q	lab-pair recall	VALUE_ONLY	False
+84	có kết quả dương tính  với 182bạch cầuvài vi khuẩn (vi khuẩn)	960-1021	- tổng phân tích nước tiểu	tate 1.8     - tổng phân tích nước tiểu 	, nitrite     Kết quả chẩn đoán hình ảnh	clinical recall	OVERLONG_RESULT_CLAUSE	False
+89	15,24	1207-1212	ống dẫn lưu bị tuột ra	ụng sưng nề, đỏ  ống dẫn lưu bị tuột ra 	 cm Nhịn ăn uống đường miệng, nuôi dưỡng	lab-pair recall	VALUE_ONLY	False
+91	3.0	410-413	Thuốc trước khi nhập viện: coumadin	    Thuốc trước khi nhập viện: coumadin 	 mg /ngày  2.  Bệnh sử hiện tại Lý do và	lab-pair recall	VALUE_ONLY	False
+91	1.7	676-679	Lý do vào viện:, INR dưới ngưỡng điều trị	u dưới ngưỡng điều trị ( kết quả là INR 	) ,không có biểu hiện bất thường khác, v	lab-pair recall	VALUE_ONLY	False
+91	INR dưới ngưỡng điều trị 1.7	1075-1103	Kết quả xét nghiệm:	l/p SPO2:  92 %     Kết quả xét nghiệm: 	    Điều trị: Bắt đầu dùng heparin truyề	clinical recall	OVERLONG_RESULT_CLAUSE	True
+92	trước chưa phát hiện bất thường trên phim chụp	311-357	Lý do nhập viện: theo dõi đại tràng giãn	iện ý thúc chậm hơn, đã chụp CT ở tuyến 	,  vào viện     Tình trạng vào Khoa Cấp 	clinical recall	OVERLONG_RESULT_CLAUSE	False
+96	39.7	830-834	Sáng cùng ngày vào viện bệnh nhân xuất hiện sốt cao	ày vào viện bệnh nhân xuất hiện sốt cao 	 độ C , vào viện điều trị. Tình trạng lú	lab-pair recall	VALUE_ONLY	False
+96	1.1-->0.8	1119-1128	- lactate	ớc tiểu có cặn Cận lâm sàng:: - lactate 	 - Cấy nước tiểu : nhiễm khuẩn đường tiế	lab-pair recall	VALUE_ONLY	False
+96	âm tính	1210-1217	- cấy máu :	niệu có các vi khuẩn hỗn hợp - cấy máu :	 -chỉ số marker viêm của anh ấy đã có xu	lab-pair recall	QUALITATIVE_RESULT	False
+96	4000	1564-1568	- Truyền dịch :	g mãn tính,  Điều trị:  - Truyền dịch : 	 ml NS 0.9 % - Kháng sinh Cefepim và Van	lab-pair recall	VALUE_ONLY	False
+96	0.9 %	1575-1580	- Truyền dịch : 4000 ml NS	  Điều trị:  - Truyền dịch : 4000 ml NS 	 - Kháng sinh Cefepim và Vancomycin truy	lab-pair recall	VALUE_PLUS_UNIT	False
+97	6.6 mmol/l	738-748	- kali là	ng     Kết quả xét nghiệm     - kali là 	     - creatinin là 1.9 mmol/l     - tiể	lab-pair recall	VALUE_PLUS_UNIT	False
+97	1.9 mmol/l	768-778	- creatinin là	- kali là 6.6 mmol/l     - creatinin là 	     - tiểu cầu là 81 G/L     - bạch cầu	lab-pair recall	VALUE_PLUS_UNIT	False
+97	81 G/L	797-803	- tiểu cầu là	eatinin là 1.9 mmol/l     - tiểu cầu là 	     - bạch cầu là 10.9 G/L     - tổng p	lab-pair recall	VALUE_PLUS_UNIT	False
+97	10.9 G/L	822-830	- bạch cầu là	 - tiểu cầu là 81 G/L     - bạch cầu là 	     - tổng phân tích nước tiểu nhiễm tr	lab-pair recall	VALUE_PLUS_UNIT	False
+100	12.0	1196-1200	- canxi toàn phần là	uả xétí nghiệm     - canxi toàn phần là 	; canxi ion hóa 6.8     - canx toàn phần	lab-pair recall	VALUE_ONLY	False
+100	12.3	1245-1249	- canx toàn phầni là	xi ion hóa 6.8     - canx toàn phầni là 	     - cr (creatinine) 1.2     Kết quả c	lab-pair recall	VALUE_ONLY	False
+100	) 1.2	1270-1275	- cr (creatinine	 toàn phầni là 12.3     - cr (creatinine	     Kết quả chẩn đoán hình ảnh: MRI ngo	clinical recall	VALUE_ONLY	False
+100	0.9 %	1497-1502	- Truyền  dịch Natriclori	tĩnh mạch     - Truyền  dịch Natriclori 	  tĩnh mạch	lab-pair recall	VALUE_PLUS_UNIT	False
