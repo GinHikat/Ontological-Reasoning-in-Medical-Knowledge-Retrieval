@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "selections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entity_id": {
+            "type": "string"
+          },
+          "selected_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Zero, one, or multiple ICD codes chosen only from the provided candidate list."
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "entity_id",
+          "selected_ids",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "selections"
+  ],
+  "additionalProperties": false
+}

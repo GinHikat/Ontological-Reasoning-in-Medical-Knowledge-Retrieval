@@ -1,0 +1,215 @@
+[
+  {
+    "text": "nhiễm trùng tụ cầu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      94,
+      112
+    ],
+    "candidates": [
+      "A490"
+    ]
+  },
+  {
+    "text": "cảm giác như bị xịt nước",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      267,
+      291
+    ]
+  },
+  {
+    "text": "ngực trái",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      302,
+      311
+    ]
+  },
+  {
+    "text": "ngực phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      321,
+      330
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      447,
+      481
+    ],
+    "candidates": [
+      "I350"
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      669,
+      703
+    ],
+    "candidates": [
+      "I350"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      977,
+      984
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      986,
+      994
+    ]
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      996,
+      1011
+    ]
+  },
+  {
+    "text": "khó thở khi ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      1013,
+      1028
+    ]
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      1034,
+      1042
+    ]
+  },
+  {
+    "text": "cảm giác tương tự",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      1057,
+      1074
+    ]
+  },
+  {
+    "text": "tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1199,
+      1202
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1212,
+      1246
+    ],
+    "candidates": [
+      "I350"
+    ]
+  },
+  {
+    "text": "tim gắng sức dobutamine",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1261,
+      1284
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1294,
+      1328
+    ],
+    "candidates": [
+      "I350"
+    ]
+  },
+  {
+    "text": "LHC",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1382,
+      1385
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1423,
+      1457
+    ],
+    "candidates": [
+      "I350"
+    ]
+  },
+  {
+    "text": "hẹp gây hạn chế dòng chảy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1483,
+      1508
+    ]
+  }
+]

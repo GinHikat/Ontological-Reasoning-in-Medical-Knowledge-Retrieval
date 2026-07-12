@@ -1,0 +1,106 @@
+{
+  "mode": "profile:free_first",
+  "extractors": [
+    {
+      "model_id": "tencent/hy3:free",
+      "family": "tencent",
+      "context_length": 262144,
+      "supports_structured_outputs": true,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "reason": "Profile-configured free_first / explicit IDs; validated via Models API.",
+      "role": "extractor_A",
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ]
+    },
+    {
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "family": "nvidia",
+      "context_length": 1000000,
+      "supports_structured_outputs": null,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "reason": "Profile-configured free_first / explicit IDs; validated via Models API.",
+      "role": "extractor_B",
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ]
+    },
+    {
+      "model_id": "poolside/laguna-m.1:free",
+      "family": "poolside",
+      "context_length": 262144,
+      "supports_structured_outputs": null,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "reason": "Profile-configured free_first / explicit IDs; validated via Models API.",
+      "role": "extractor_C",
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ]
+    }
+  ],
+  "judge": {
+    "model_id": "tencent/hy3:free",
+    "family": "tencent",
+    "context_length": 262144,
+    "supports_structured_outputs": true,
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "reason": "Profile-configured judge; validated via Models API.",
+    "role": "judge",
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ]
+  }
+}

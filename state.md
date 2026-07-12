@@ -600,3 +600,37 @@ Headline evidence:
 
 Do **not** declare a model version successful from this audit.
 
+## openrouter_schema_teacher (EXTERNAL_API_DIAGNOSTIC_ONLY)
+
+Diagnostic teacher ensemble via OpenRouter (not a competition pipeline; not v11).
+Free-tier full corpus is **archived permanently** (not reproducible bit-for-bit).
+
+### `free_first` — COMPLETED & ARCHIVED (2026-07-12)
+
+| Field | Value |
+|-------|-------|
+| Status | **100/100 gold archived** |
+| Permanent path | `archives/openrouter_schema_teacher_free_2026-07-12/` |
+| Extractors | `tencent/hy3:free`, `nvidia/nemotron-3-ultra-550b-a55b:free`, `poolside/laguna-m.1:free` |
+| Judge | `tencent/hy3:free` |
+| Entities | **2213** (vs frozen v7 **3236**, density **0.684**) |
+| Procedure-as-test | **150/159 rejected** |
+| Exact agree vs v7 (sum) | 1006 |
+| Verdict | `FREE_ENSEMBLE_PARTIALLY_CORRECT_SCHEMA` |
+| Architecture lean | `STILL_UNCERTAIN` — task-specific span model; **not** free-teacher distillation |
+| Reproducible | **No** — treat archive as source of truth |
+| Submission / training | **None** — diagnostic only |
+
+Read: `archives/openrouter_schema_teacher_free_2026-07-12/README.md` and `analysis/final_report.md` inside that archive.
+Live mirror (gitignored output): `output/openrouter_schema_teacher_free/`; analysis mirror: `analysis/openrouter_teacher_free/`.
+
+### Paid `default` — still blocked / partial
+
+| Field | Value |
+|-------|-------|
+| Status | Pilot blocked earlier by key credit limit (partial `24.json` only) |
+| Extractors (historical attempt) | opus / gemini / gpt-5.5 placeholders — **do not reuse without new user-chosen IDs** |
+| Interim verdict (partial) | `FRONTIER_MODELS_PARTIALLY_CORRECT_SCHEMA` |
+| Artifacts | `analysis/openrouter_teacher/`, `output/openrouter_schema_teacher/` |
+
+Frozen v7 remains the leaderboard reference (24.79660).

@@ -1,0 +1,71 @@
+[
+  {
+    "text": "octreotide",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      206,
+      216
+    ],
+    "candidates": [
+      "7617"
+    ]
+  },
+  {
+    "text": "flagyl",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      223,
+      229
+    ],
+    "candidates": [
+      "202866"
+    ]
+  },
+  {
+    "text": "chân sonde dẫn lưu sưng nề, đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      911,
+      941
+    ]
+  },
+  {
+    "text": "chân sonde dẫn lưu ổ bụng sưng nề",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1145,
+      1178
+    ]
+  },
+  {
+    "text": "đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1180,
+      1182
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1327,
+      1334
+    ]
+  },
+  {
+    "text": "không phát hiện huyết khối tĩnh mạch sâu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1337,
+      1377
+    ]
+  }
+]

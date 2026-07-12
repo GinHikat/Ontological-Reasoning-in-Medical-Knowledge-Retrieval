@@ -1,0 +1,326 @@
+[
+  {
+    "text": "NSAID",
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      59,
+      64
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      206,
+      227
+    ]
+  },
+  {
+    "text": "đau vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      315,
+      336
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      342,
+      353
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      357,
+      365
+    ]
+  },
+  {
+    "text": "đau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      442,
+      450
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      632,
+      643
+    ]
+  },
+  {
+    "text": "buồn nôn thoáng qua",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      676,
+      695
+    ]
+  },
+  {
+    "text": "đau lưng kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      743,
+      759
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      871,
+      897
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      979,
+      1005
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1012,
+      1023
+    ]
+  },
+  {
+    "text": "buồn nôn thoáng qua",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1031,
+      1050
+    ]
+  },
+  {
+    "text": "Nôn mửa",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1057,
+      1064
+    ]
+  },
+  {
+    "text": "đau lưng âm ỉ",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1085,
+      1098
+    ]
+  },
+  {
+    "text": "đau bụng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1138,
+      1159
+    ]
+  },
+  {
+    "text": "đau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1161,
+      1169
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1358,
+      1369
+    ]
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      1393,
+      1396
+    ]
+  },
+  {
+    "text": "đau lưng kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      1398,
+      1414
+    ]
+  },
+  {
+    "text": "nội soi thực quản - dạ dày - tá tràng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1467,
+      1504
+    ]
+  },
+  {
+    "text": "viêm dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1533,
+      1544
+    ],
+    "candidates": [
+      "K297"
+    ]
+  },
+  {
+    "text": "cộng hưởng từ mật tụy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1613,
+      1634
+    ]
+  },
+  {
+    "text": "sỏi đoạn cuối ống mật chủ",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1645,
+      1670
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1683,
+      1696
+    ]
+  },
+  {
+    "text": "men gan tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1706,
+      1718
+    ]
+  },
+  {
+    "text": "Xét nghiệm chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1823,
+      1847
+    ]
+  },
+  {
+    "text": "tăng men gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1857,
+      1869
+    ]
+  },
+  {
+    "text": "Nội soi thực quản - dạ dày - tá tràng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1901,
+      1938
+    ]
+  },
+  {
+    "text": "viêm dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1940,
+      1951
+    ],
+    "candidates": [
+      "K297"
+    ]
+  },
+  {
+    "text": "mật tụy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1967,
+      1974
+    ]
+  },
+  {
+    "text": "sỏi đoạn cuối ống mật chủ",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1977,
+      2002
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cộng hưởng từ mật tụy tụi mật",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      2160,
+      2189
+    ]
+  },
+  {
+    "text": "sỏi ống dẫn mật chung đoạn cuối",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      2214,
+      2245
+    ],
+    "candidates": []
+  }
+]

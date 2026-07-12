@@ -1,0 +1,103 @@
+[
+  {
+    "text": "ung thư đường mật",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      183,
+      200
+    ],
+    "candidates": [
+      "C221"
+    ]
+  },
+  {
+    "text": "run rẩy kèm sốt kèm theo sốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      401,
+      429
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      493,
+      496
+    ]
+  },
+  {
+    "text": "các ổ dịch trong ổ bụng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      500,
+      523
+    ]
+  },
+  {
+    "text": "áp xe",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      536,
+      541
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Augmentin đường uống",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      630,
+      650
+    ],
+    "candidates": [
+      "151392"
+    ]
+  },
+  {
+    "text": "mrcp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      798,
+      802
+    ]
+  },
+  {
+    "text": "chụp cộng hưởng từ mật tụy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      804,
+      830
+    ]
+  },
+  {
+    "text": "nhiều nang tụy nhỏ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      841,
+      859
+    ]
+  },
+  {
+    "text": "ổ dịch sau phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      910,
+      931
+    ]
+  }
+]

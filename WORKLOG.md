@@ -20,7 +20,7 @@ TS=$(date '+%Y-%m-%d %H:%M %z')
 cat >> WORKLOG.md <<EOF
 
 ---
-### ${TS} | host=${HOST}
+### ${TS} | host=ict14
 **Status:** one-line experiment state
 **Next:** concrete next action(s)
 - what you did
@@ -278,3 +278,59 @@ manual annotation and local evaluation.
 - Annotation pool: 415 rows; verdict WRONG_TYPE_SCHEMA + WRONG_SPAN_POLICY + OVER_EXTRACTION (+ candidate/distributed)
 - Primary architecture: task-specific span model (5+NONE) + lab segmentation + multi-label ICD; teachers=v7/Qwen/rules
 - Deliverables under analysis/schema_audit/; scripts: analyze_schema_alignment.py, build_precision_first_preview.py
+
+---
+### 2026-07-11 22:42 +0700 | host=ict14
+**Status:** openrouter_schema_teacher implemented; pilot BLOCKED by OpenRouter key credit limit ($0 remaining of $3 key cap). 1/5 pilot gold complete (`24.json`). Procedure-as-test on file 24: 7/7 rejected. Interim verdict FRONTIER_MODELS_PARTIALLY_CORRECT_SCHEMA; architecture UNCERTAIN.
+**Next:** Raise OpenRouter key spending limit / budget, resume pilot docs 75 36 20 37 51 then full 100 if gates pass; refresh comparison + final_report.
+- EXTERNAL_API_DIAGNOSTIC_ONLY — no submit, no training use.
+- Models: opus-4.8, gemini-3.1-pro-preview, gpt-5.5; judge opus-4.8.
+- Code: modules/external/*, modules/evaluation/run_openrouter_schema_teacher.py, compare_teacher_outputs.py
+- Reports: analysis/openrouter_teacher/
+
+---
+### 2026-07-11 23:46 +0700 | host=ict14
+**Status:** Started separate free_first profile (all $0 models): hy3:free, nemotron-3-ultra:free, gpt-oss-120b:free; judge hy3:free. Output under output/openrouter_schema_teacher_free/.
+**Next:** Monitor tmux openrouter_teacher_free; after pilot gates, full 100 may proceed ($3 key enough because spend≈0).
+
+---
+### 2026-07-11 23:48 +0700 | host=ict14
+**Status:** free_first run continuing (tmux openrouter_teacher_free). Cleared stale paid model IDs from .env; default profile now refuses empty models and reminds to ask user for NEW paid IDs later.
+**Next:** Monitor free pilot 75/36/20/37/51 → full 100 if gates pass.
+
+---
+### 2026-07-11 23:55 +0700 | host=ict14
+**Status:** Patched free-model client (reasoning none/low, max_tokens 24k, no cache of failed parses, parse retry, lazy Rx index). Cleared free outputs; restarted tmux openrouter_teacher_free with concurrency=1.
+**Next:** Monitor pilot 75/36/20/37/51 then full 100.
+
+---
+### 2026-07-12 00:14 +0700 | host=ict14
+**Status:** Replaced extractor C openai/gpt-oss-120b:free → poolside/laguna-m.1:free. Cleared doc 75 downstream for redo; restarted free_first tmux.
+**Next:** Monitor pilot with Laguna as C.
+
+---
+### 2026-07-12 01:49 +0700 | host=ict14
+**Status:** Overnight free_first full corpus started (`--full-only`). Fallback key rotation on 429 wired. Pilot gold 5/5 already present; filling remaining ~95 docs.
+**Next:** Tomorrow — check gold count→100, attach tmux `openrouter_teacher_free`, run compare + free analysis if DONE; resume same command if job died.
+- Models: hy3 / nemotron-ultra / laguna-m.1 / judge hy3
+- Log: output/openrouter_schema_teacher_free/logs/full_only.log
+- CURRENT_WORK.md rewritten for resume
+
+---
+### 2026-07-12 22:28 +0700 | host=ict14
+**Status:** free_first openrouter_schema_teacher COMPLETED — 100/100 diagnostic gold + compare
+**Next:** human review of analysis/openrouter_teacher_free/final_report.md; choose annotation/scorer path or paid teacher (needs NEW model IDs)
+- Overnight full-only finished 99/100; doc 29 KeyError on hy3 missing `type` → skip incomplete proposals; gold now 100/100
+- Compare: analysis/openrouter_teacher_free/{comparison_v7_v10.tsv,schema_metrics.*,final_report.md}
+- Teacher 2213 ents vs v7 3236 (0.684×); procedure-as-test rejected 150/159; exact agree vs v7 sum=1006
+- Verdict: FREE_ENSEMBLE_PARTIALLY_CORRECT_SCHEMA; do not submit / distill; CURRENT_WORK → DONE
+- Spend ≈ $0; paid default still blocked until user supplies new model IDs
+
+---
+### 2026-07-12 22:45 +0700 | host=ict14
+**Status:** free_first teacher run permanently archived under archives/
+**Next:** IDLE — human chooses annotation/scorer or paid teacher (new model IDs)
+- Created archives/openrouter_schema_teacher_free_2026-07-12/ (100 gold + analysis + logs + SHA256 manifest)
+- gold_manifest_sha256=c601c9f66d4e49d107c975aa74cc59c40d0f0802456c3201c5eafe6693de8aaf; n_entities=2213
+- Updated state.md / PLAN.md / CURRENT_WORK.md → IDLE pointing at archive
+- Rationale: output/cache gitignored; free OpenRouter run not bit-reproducible

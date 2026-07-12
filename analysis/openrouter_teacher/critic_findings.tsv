@@ -1,0 +1,7 @@
+file	issue_id	category	text	start	end	suggested_type	rationale	severity
+24	1	missed_entity	chọc hút dịch	655	668	NONE	Procedure, correctly omitted; noting cấy mẫu bệnh phẩm nearby is a diagnostic investigation possibly missed.	0.2
+24	2	missed_entity	cấy mẫu bệnh phẩm	676	693	TÊN_XÉT_NGHIỆM	Culture of specimen is a diagnostic investigation (cấy) and should be extracted as TÊN_XÉT_NGHIỆM.	0.5
+24	3	wrong_boundary	ban đỏ ở vị trí phẫu thuật	1154	1180	TRIỆU_CHỨNG	Minimal symptom phrase is 'ban đỏ'; the location descriptor should be excluded per minimal meaningful guidance.	0.3
+24	4	wrong_boundary	đau khi sờ nắn ở vết mổ	288	311	TRIỆU_CHỨNG	Include minimal symptom, drop location 'ở vết mổ'.	0.3
+24	5	missed_entity	ban đỏ xuất hiện nhiểu ở vị trí phẫu thuật	938	944	TRIỆU_CHỨNG	Already captured 'ban đỏ' - noting boundary is fine.	0.1
+24	6	wrong_assertion	ung thư vú trái giai IIIB	58	83	CHẨN_ĐOÁN	Text states 'mới được chẩn đoán' (newly diagnosed), so isHistorical may be inappropriate as it's an active/current diagnosis.	0.4

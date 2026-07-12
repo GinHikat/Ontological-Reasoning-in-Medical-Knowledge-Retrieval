@@ -1,0 +1,137 @@
+[
+  {
+    "text": "Đờm",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      107,
+      110
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      113,
+      115
+    ]
+  },
+  {
+    "text": "đau bụng quặn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      126,
+      139
+    ]
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      142,
+      151
+    ]
+  },
+  {
+    "text": "đi ngoài ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      162,
+      177
+    ]
+  },
+  {
+    "text": "không tăng cân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      180,
+      200
+    ]
+  },
+  {
+    "text": "cea",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      247,
+      250
+    ]
+  },
+  {
+    "text": "tăng nhẹ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      279,
+      287
+    ]
+  },
+  {
+    "text": "4.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      292,
+      295
+    ]
+  },
+  {
+    "text": "mri",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      325,
+      328
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      402,
+      409
+    ]
+  },
+  {
+    "text": "khối u trực tràng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      625,
+      642
+    ],
+    "candidates": [
+      "C20"
+    ]
+  },
+  {
+    "text": "u ác trực tràng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      664,
+      679
+    ],
+    "candidates": [
+      "C20"
+    ]
+  },
+  {
+    "text": "u tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      718,
+      725
+    ],
+    "candidates": []
+  }
+]

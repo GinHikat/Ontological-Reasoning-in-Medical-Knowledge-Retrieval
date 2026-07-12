@@ -1,0 +1,75 @@
+[
+  {
+    "text": "chỉ dùng để chống đông máu",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      27,
+      53
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đại tiện ra máu đỏ tươi gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      99,
+      132
+    ]
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      232,
+      241
+    ]
+  },
+  {
+    "text": "qua đường hậu môn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      273,
+      290
+    ]
+  },
+  {
+    "text": "inr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      418,
+      421
+    ]
+  },
+  {
+    "text": "2.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      425,
+      428
+    ]
+  },
+  {
+    "text": "2.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      613,
+      616
+    ]
+  },
+  {
+    "text": "Cr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      624,
+      626
+    ]
+  }
+]

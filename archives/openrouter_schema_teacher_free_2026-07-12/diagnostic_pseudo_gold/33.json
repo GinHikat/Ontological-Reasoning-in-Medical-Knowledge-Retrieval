@@ -1,0 +1,219 @@
+[
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      48,
+      55
+    ],
+    "candidates": [
+      "E669"
+    ]
+  },
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      62,
+      76
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ngừng thở khi ngủ",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      113,
+      130
+    ],
+    "candidates": [
+      "G473"
+    ]
+  },
+  {
+    "text": "suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      154,
+      161
+    ],
+    "candidates": [
+      "I509"
+    ]
+  },
+  {
+    "text": "furosemide",
+    "type": "THUỐC",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      197,
+      207
+    ],
+    "candidates": [
+      "4603"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      256,
+      263
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      441,
+      448
+    ]
+  },
+  {
+    "text": "khó nằm vào ban đêm để ngủ vì thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      455,
+      488
+    ]
+  },
+  {
+    "text": "căng cứng vai trái",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      495,
+      513
+    ]
+  },
+  {
+    "text": "ho có đờm trắng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      582,
+      597
+    ]
+  },
+  {
+    "text": "chủ quan sốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      604,
+      616
+    ]
+  },
+  {
+    "text": "phù chi dưới",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      623,
+      635
+    ]
+  },
+  {
+    "text": "độ bão hòa oxy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1097,
+      1111
+    ]
+  },
+  {
+    "text": "86",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1115,
+      1117
+    ]
+  },
+  {
+    "text": "bumetanide",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1401,
+      1411
+    ],
+    "candidates": [
+      "1808"
+    ]
+  },
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1434,
+      1444
+    ],
+    "candidates": [
+      "11124"
+    ]
+  },
+  {
+    "text": "levofloxacin",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1467,
+      1479
+    ],
+    "candidates": [
+      "82122"
+    ]
+  },
+  {
+    "text": "aspirin",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1504,
+      1511
+    ],
+    "candidates": [
+      "1191"
+    ]
+  },
+  {
+    "text": "albuterolipratropium",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1533,
+      1553
+    ],
+    "candidates": [
+      "214199"
+    ]
+  },
+  {
+    "text": "methylprednisolone",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1579,
+      1597
+    ],
+    "candidates": [
+      "6902"
+    ]
+  }
+]

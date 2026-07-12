@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "cluster_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cluster_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "ACCEPT_PROPOSAL",
+              "REPLACE_WITH_CORRECTED_SPAN",
+              "SPLIT_INTO_MULTIPLE_ENTITIES",
+              "MERGE_PROPOSALS",
+              "REJECT_ALL"
+            ]
+          },
+          "accepted_proposal_id": {
+            "type": "string"
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "TRIỆU_CHỨNG",
+                    "TÊN_XÉT_NGHIỆM",
+                    "KẾT_QUẢ_XÉT_NGHIỆM",
+                    "CHẨN_ĐOÁN",
+                    "THUỐC"
+                  ]
+                },
+                "assertions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "isNegated",
+                      "isFamily",
+                      "isHistorical"
+                    ]
+                  }
+                },
+                "brief_reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "text",
+                "start",
+                "end",
+                "type",
+                "assertions",
+                "brief_reason"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cluster_id",
+          "action",
+          "accepted_proposal_id",
+          "entities",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "cluster_decisions"
+  ],
+  "additionalProperties": false
+}

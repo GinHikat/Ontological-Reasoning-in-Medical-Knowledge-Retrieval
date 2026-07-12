@@ -1,0 +1,690 @@
+{
+  "mode": "full_only",
+  "missing_at_start": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "76",
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89",
+    "90",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100"
+  ],
+  "full": [
+    {
+      "doc_id": "1",
+      "status": "ok",
+      "n_entities": 50,
+      "n_critic_issues": 18
+    },
+    {
+      "doc_id": "2",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "3",
+      "status": "ok",
+      "n_entities": 65,
+      "n_critic_issues": 29
+    },
+    {
+      "doc_id": "4",
+      "status": "ok",
+      "n_entities": 34,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "5",
+      "status": "ok",
+      "n_entities": 39,
+      "n_critic_issues": 19
+    },
+    {
+      "doc_id": "6",
+      "status": "ok",
+      "n_entities": 6,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "7",
+      "status": "ok",
+      "n_entities": 17,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "8",
+      "status": "ok",
+      "n_entities": 9,
+      "n_critic_issues": 7
+    },
+    {
+      "doc_id": "9",
+      "status": "ok",
+      "n_entities": 18,
+      "n_critic_issues": 13
+    },
+    {
+      "doc_id": "10",
+      "status": "ok",
+      "n_entities": 14,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "11",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "12",
+      "status": "ok",
+      "n_entities": 22,
+      "n_critic_issues": 15
+    },
+    {
+      "doc_id": "13",
+      "status": "ok",
+      "n_entities": 32,
+      "n_critic_issues": 18
+    },
+    {
+      "doc_id": "14",
+      "status": "ok",
+      "n_entities": 10,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "15",
+      "status": "ok",
+      "n_entities": 2,
+      "n_critic_issues": 10
+    },
+    {
+      "doc_id": "16",
+      "status": "ok",
+      "n_entities": 44,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "17",
+      "status": "ok",
+      "n_entities": 46,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "18",
+      "status": "ok",
+      "n_entities": 13,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "19",
+      "status": "ok",
+      "n_entities": 18,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "21",
+      "status": "ok",
+      "n_entities": 5,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "22",
+      "status": "ok",
+      "n_entities": 5,
+      "n_critic_issues": 6
+    },
+    {
+      "doc_id": "23",
+      "status": "ok",
+      "n_entities": 51,
+      "n_critic_issues": 24
+    },
+    {
+      "doc_id": "24",
+      "status": "ok",
+      "n_entities": 19,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "25",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 10
+    },
+    {
+      "doc_id": "26",
+      "status": "ok",
+      "n_entities": 1,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "27",
+      "status": "ok",
+      "n_entities": 18,
+      "n_critic_issues": 13
+    },
+    {
+      "doc_id": "28",
+      "status": "ok",
+      "n_entities": 36,
+      "n_critic_issues": 19
+    },
+    {
+      "doc_id": "29",
+      "status": "error",
+      "error": "KeyError"
+    },
+    {
+      "doc_id": "30",
+      "status": "ok",
+      "n_entities": 13,
+      "n_critic_issues": 17
+    },
+    {
+      "doc_id": "31",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "32",
+      "status": "ok",
+      "n_entities": 48,
+      "n_critic_issues": 14
+    },
+    {
+      "doc_id": "33",
+      "status": "ok",
+      "n_entities": 20,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "34",
+      "status": "ok",
+      "n_entities": 18,
+      "n_critic_issues": 13
+    },
+    {
+      "doc_id": "35",
+      "status": "ok",
+      "n_entities": 50,
+      "n_critic_issues": 17
+    },
+    {
+      "doc_id": "38",
+      "status": "ok",
+      "n_entities": 27,
+      "n_critic_issues": 18
+    },
+    {
+      "doc_id": "39",
+      "status": "ok",
+      "n_entities": 15,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "40",
+      "status": "ok",
+      "n_entities": 43,
+      "n_critic_issues": 16
+    },
+    {
+      "doc_id": "41",
+      "status": "ok",
+      "n_entities": 59,
+      "n_critic_issues": 56
+    },
+    {
+      "doc_id": "42",
+      "status": "ok",
+      "n_entities": 23,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "43",
+      "status": "ok",
+      "n_entities": 19,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "44",
+      "status": "ok",
+      "n_entities": 45,
+      "n_critic_issues": 20
+    },
+    {
+      "doc_id": "45",
+      "status": "ok",
+      "n_entities": 10,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "46",
+      "status": "ok",
+      "n_entities": 1,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "47",
+      "status": "ok",
+      "n_entities": 32,
+      "n_critic_issues": 17
+    },
+    {
+      "doc_id": "48",
+      "status": "ok",
+      "n_entities": 34,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "49",
+      "status": "ok",
+      "n_entities": 24,
+      "n_critic_issues": 14
+    },
+    {
+      "doc_id": "50",
+      "status": "ok",
+      "n_entities": 44,
+      "n_critic_issues": 14
+    },
+    {
+      "doc_id": "52",
+      "status": "ok",
+      "n_entities": 10,
+      "n_critic_issues": 12
+    },
+    {
+      "doc_id": "53",
+      "status": "ok",
+      "n_entities": 11,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "54",
+      "status": "ok",
+      "n_entities": 48,
+      "n_critic_issues": 27
+    },
+    {
+      "doc_id": "55",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 3
+    },
+    {
+      "doc_id": "56",
+      "status": "ok",
+      "n_entities": 20,
+      "n_critic_issues": 12
+    },
+    {
+      "doc_id": "57",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "58",
+      "status": "ok",
+      "n_entities": 53,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "59",
+      "status": "ok",
+      "n_entities": 25,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "60",
+      "status": "ok",
+      "n_entities": 5,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "61",
+      "status": "ok",
+      "n_entities": 11,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "62",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "63",
+      "status": "ok",
+      "n_entities": 3,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "64",
+      "status": "ok",
+      "n_entities": 27,
+      "n_critic_issues": 14
+    },
+    {
+      "doc_id": "65",
+      "status": "ok",
+      "n_entities": 8,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "66",
+      "status": "ok",
+      "n_entities": 31,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "67",
+      "status": "ok",
+      "n_entities": 8,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "68",
+      "status": "ok",
+      "n_entities": 5,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "69",
+      "status": "ok",
+      "n_entities": 22,
+      "n_critic_issues": 14
+    },
+    {
+      "doc_id": "70",
+      "status": "ok",
+      "n_entities": 56,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "71",
+      "status": "ok",
+      "n_entities": 29,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "72",
+      "status": "ok",
+      "n_entities": 25,
+      "n_critic_issues": 20
+    },
+    {
+      "doc_id": "73",
+      "status": "ok",
+      "n_entities": 28,
+      "n_critic_issues": 21
+    },
+    {
+      "doc_id": "74",
+      "status": "ok",
+      "n_entities": 26,
+      "n_critic_issues": 16
+    },
+    {
+      "doc_id": "76",
+      "status": "ok",
+      "n_entities": 33,
+      "n_critic_issues": 20
+    },
+    {
+      "doc_id": "77",
+      "status": "ok",
+      "n_entities": 17,
+      "n_critic_issues": 16
+    },
+    {
+      "doc_id": "78",
+      "status": "ok",
+      "n_entities": 15,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "79",
+      "status": "ok",
+      "n_entities": 4,
+      "n_critic_issues": 8
+    },
+    {
+      "doc_id": "80",
+      "status": "ok",
+      "n_entities": 6,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "81",
+      "status": "ok",
+      "n_entities": 6,
+      "n_critic_issues": 6
+    },
+    {
+      "doc_id": "82",
+      "status": "ok",
+      "n_entities": 29,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "83",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 7
+    },
+    {
+      "doc_id": "84",
+      "status": "ok",
+      "n_entities": 39,
+      "n_critic_issues": 12
+    },
+    {
+      "doc_id": "85",
+      "status": "ok",
+      "n_entities": 10,
+      "n_critic_issues": 10
+    },
+    {
+      "doc_id": "86",
+      "status": "ok",
+      "n_entities": 14,
+      "n_critic_issues": 18
+    },
+    {
+      "doc_id": "87",
+      "status": "ok",
+      "n_entities": 17,
+      "n_critic_issues": 20
+    },
+    {
+      "doc_id": "88",
+      "status": "ok",
+      "n_entities": 17,
+      "n_critic_issues": 11
+    },
+    {
+      "doc_id": "89",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 11
+    },
+    {
+      "doc_id": "90",
+      "status": "ok",
+      "n_entities": 1,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "91",
+      "status": "ok",
+      "n_entities": 26,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "92",
+      "status": "ok",
+      "n_entities": 13,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "93",
+      "status": "ok",
+      "n_entities": 6,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "94",
+      "status": "ok",
+      "n_entities": 27,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "95",
+      "status": "ok",
+      "n_entities": 11,
+      "n_critic_issues": 9
+    },
+    {
+      "doc_id": "96",
+      "status": "ok",
+      "n_entities": 46,
+      "n_critic_issues": 25
+    },
+    {
+      "doc_id": "97",
+      "status": "ok",
+      "n_entities": 34,
+      "n_critic_issues": 15
+    },
+    {
+      "doc_id": "98",
+      "status": "ok",
+      "n_entities": 9,
+      "n_critic_issues": 1
+    },
+    {
+      "doc_id": "99",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 7
+    },
+    {
+      "doc_id": "100",
+      "status": "ok",
+      "n_entities": 33,
+      "n_critic_issues": 17
+    }
+  ],
+  "usage": {
+    "requests": 786,
+    "cached_hits": 0,
+    "uncached_requests": 786,
+    "input_tokens": 2862959,
+    "output_tokens": 3491088,
+    "estimated_cost_usd": 0.0,
+    "budget_spent_usd": 0.0,
+    "budget_limit_usd": 2.95,
+    "parse_ok": 754,
+    "parse_ok_rate": 0.9592875318066157
+  },
+  "alignment": {
+    "valid_model_offset": 1589,
+    "realigned_unique": 4769,
+    "rejected_ambiguous": 37,
+    "rejected_not_found": 87,
+    "rejected_empty": 15
+  }
+}

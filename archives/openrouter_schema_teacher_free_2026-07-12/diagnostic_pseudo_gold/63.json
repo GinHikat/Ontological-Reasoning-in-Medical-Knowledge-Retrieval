@@ -1,0 +1,37 @@
+[
+  {
+    "text": "Bệnh túi thừa ở cả ruột non và đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      53,
+      93
+    ],
+    "candidates": [
+      "K575"
+    ]
+  },
+  {
+    "text": "áp xe",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      125,
+      130
+    ]
+  },
+  {
+    "text": "colace",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      175,
+      181
+    ],
+    "candidates": [
+      "82000"
+    ]
+  }
+]

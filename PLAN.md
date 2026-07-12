@@ -1,6 +1,6 @@
-# PLAN — schema-first audit complete; annotation next
+# PLAN — openrouter_schema_teacher (diagnostic) active; v7–v10 paused
 
-Last updated: 2026-07-11
+Last updated: 2026-07-12
 
 ## Closed experiments (leaderboard)
 
@@ -9,65 +9,65 @@ Last updated: 2026-07-11
 | `v7_structured` | **24.79660** | **Best current reference** — keep as main submission |
 | `v9_llm_recall` (additive) | 23.84290 | **NEGATIVE** |
 | `v10_llm_conflict_resolution` | 24.04370 | Better than v9; **still below v7** — closed |
-
-### Completed checklist
-
-- [x] v9 additive recall experiment (scored negative)
-- [x] v10 conflict-resolution experiment (scored; closed)
-- [x] Record official v10 leaderboard + project verdicts
-- [x] **Schema-first principles audit** (`schema_first_principles_audit`) completed
-- [x] Annotation pool created (`analysis/schema_audit/annotation_pool.csv`)
+| `schema_first_principles_audit` | — | Completed (analysis only) |
 
 ## Active goal
 
 ```text
-v7–v10 model iteration paused.
+openrouter_schema_teacher — EXTERNAL_API_DIAGNOSTIC_ONLY
 
-Do not build v11 yet.
+Question: Can frontier / strong models infer the organizer schema substantially
+better than frozen v7/v10?
 
-Next: human annotation + local evaluation guided by schema audit.
+NOT a competition pipeline. NOT v11. Do not submit teacher outputs.
+Do not train on them unless organizers confirm external-API offline data is allowed.
 ```
 
-### Audit root-cause verdict
+### Status
+
+- [x] Phases 0–13 implemented (client, schemas, extract/judge, align, ontology, gold)
+- [x] Paid pilot attempted — **blocked** by key credit limit (partial doc 24 only)
+- [x] **`free_first` full 100/100** gold + compare — **archived** at
+      `archives/openrouter_schema_teacher_free_2026-07-12/` (not bit-reproducible)
+- [ ] Paid `default` full run — only after user supplies **new** model IDs + budget
+- [ ] Manual annotation / local scorer (schema audit path) — still open
+
+### Diagnostic verdict (`free_first`)
 
 ```text
-WRONG_TYPE_SCHEMA
-WRONG_SPAN_POLICY
-OVER_EXTRACTION
-CANDIDATE_SET_FAILURE
-DISTRIBUTED_PIPELINE_FAILURE
-(+ ASSERTION_SCOPE_FAILURE secondary)
+FREE_ENSEMBLE_PARTIALLY_CORRECT_SCHEMA
 ```
 
-### Recommended architecture (from evidence)
+Evidence: 150/159 procedure-as-test rejected; density 0.68× v7; low exact agreement
+with frozen v7/v10. Permanent copy: `archives/openrouter_schema_teacher_free_2026-07-12/`.
+Live mirror: `analysis/openrouter_teacher_free/final_report.md`.
 
-**Primary:** task-specific span model (5 labels + NONE), dedicated lab name/result segmentation, contextual assertions, multi-label ICD candidate-set ranker; use v7/Qwen/rules/ontologies as weak supervision only.
+### Recommended compliant architecture
 
-**Fallback:** precision-first gates on v7 while annotation proceeds (not a submission).
-
-Details: `analysis/schema_audit/architecture_decision.md`, `final_report.md`.
-
-## Suggested next work items
-
-1. Annotate `analysis/schema_audit/annotation_pool.csv` (415 rows; human_* empty).
-2. Prioritize procedure-as-test + symptom/diagnosis collisions.
-3. Build local scorer (WER / J_assertion / J_candidates) on annotated gold.
-4. Prototype NONE-aware type/span classifier; compare to frozen base-v7 locally.
-5. Only then design the next extractor (not additive v11).
+```text
+STILL_UNCERTAIN — lean task-specific span model (5+NONE), not free-teacher distillation
+```
 
 ## Hard constraints (still in force)
 
 | Must | Must not |
 |------|----------|
-| Keep v7 as canonical leaderboard reference | Build / submit v11 without annotation evidence |
-| Reuse frozen outputs for analysis | External LLM APIs for competition inference |
-| Annotate before redesigning conflict rules | Investigate SapBERT nondeterminism |
-| Treat precision-first preview as offline only | Submit schema-audit preview ZIP |
+| Keep v7 as canonical leaderboard reference | Build / submit v11 from teacher gold |
+| Mark all OpenRouter outputs EXTERNAL_API_DIAGNOSTIC_ONLY | Use OpenRouter for competition inference |
+| Resume via cache without `--force` | Commit/push/submit unless explicitly asked |
+| Local ICD/RxNorm retrieval only for IDs | Invent ontology IDs in model prompts |
 
 ## Reference paths
 
 | Path | Purpose |
 |------|---------|
-| `output/v10_llm_conflict_resolution/base_v7_snapshot/` | Frozen base inventory |
-| `analysis/schema_audit/` | Full audit deliverables |
-| `output/schema_audit/precision_first_preview/` | Offline removals preview |
+| `modules/external/` | Teacher ensemble implementation |
+| `archives/openrouter_schema_teacher_free_2026-07-12/` | **Permanent** free gold + report (git-tracked) |
+| `output/openrouter_schema_teacher_free/` | Live free outputs (gitignored; may be deleted) |
+| `analysis/openrouter_teacher_free/` | Live free reports / metrics |
+| `cache/openrouter_schema_teacher_free/` | Free request cache (gitignored; not archived) |
+| `output/openrouter_schema_teacher/` | Paid diagnostic outputs (partial) |
+| `analysis/openrouter_teacher/` | Paid reports |
+| `output/v10_llm_conflict_resolution/base_v7_snapshot/` | Frozen v7 |
+| `output/v10_llm_conflict_resolution/submission/` | Frozen v10 |
+| `analysis/schema_audit/` | Schema-first audit |

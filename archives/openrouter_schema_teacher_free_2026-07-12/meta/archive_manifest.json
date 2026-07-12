@@ -1,0 +1,27 @@
+{
+  "archive_id": "openrouter_schema_teacher_free_2026-07-12",
+  "archived_at": "2026-07-12T22:45:00+07:00",
+  "host": "ict14",
+  "profile": "free_first",
+  "compliance": "EXTERNAL_API_DIAGNOSTIC_ONLY",
+  "reproducible": false,
+  "reproducibility_note": "OpenRouter free-tier models, rate limits, and JSON flake make bit-identical reruns unreliable. Treat this archive as the permanent artifact.",
+  "models": {
+    "A": "tencent/hy3:free",
+    "B": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "C": "poolside/laguna-m.1:free",
+    "judge": "tencent/hy3:free"
+  },
+  "n_docs": 100,
+  "n_entities": 2213,
+  "gold_manifest_sha256": "c601c9f66d4e49d107c975aa74cc59c40d0f0802456c3201c5eafe6693de8aaf",
+  "source_output": "output/openrouter_schema_teacher_free/",
+  "source_cache": "cache/openrouter_schema_teacher_free/",
+  "source_analysis": "analysis/openrouter_teacher_free/",
+  "verdict": "FREE_ENSEMBLE_PARTIALLY_CORRECT_SCHEMA",
+  "do_not": [
+    "submit",
+    "train_competition_model_without_organizer_OK",
+    "mix_into_viettel_zip"
+  ]
+}

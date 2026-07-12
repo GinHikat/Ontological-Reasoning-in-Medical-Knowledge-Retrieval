@@ -1,0 +1,110 @@
+[
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      48,
+      62
+    ],
+    "candidates": [
+      "E11"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      69,
+      82
+    ],
+    "candidates": [
+      "I10"
+    ]
+  },
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      209,
+      223
+    ],
+    "candidates": [
+      "E11"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      230,
+      243
+    ],
+    "candidates": [
+      "I10"
+    ]
+  },
+  {
+    "text": "tai biến mạch máu não",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      364,
+      385
+    ],
+    "candidates": [
+      "I64"
+    ]
+  },
+  {
+    "text": "chụp mạch máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      545,
+      558
+    ]
+  },
+  {
+    "text": "hẹp khoảng 65% của động mạch cảnh chung trái gần gốc với bằng chứng xơ vữa mảng loét",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      580,
+      664
+    ]
+  },
+  {
+    "text": "xơ vữa mảng loét",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      648,
+      664
+    ],
+    "candidates": [
+      "I70"
+    ]
+  },
+  {
+    "text": "chụp mạch máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      875,
+      888
+    ]
+  },
+  {
+    "text": "hẹp khoảng 65%",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      909,
+      923
+    ]
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "text": "hội chứng turner",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      48,
+      64
+    ],
+    "candidates": [
+      "Q969"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      87,
+      100
+    ],
+    "candidates": [
+      "I10"
+    ]
+  },
+  {
+    "text": "Ung thư đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      146,
+      163
+    ],
+    "candidates": [
+      "C18"
+    ]
+  },
+  {
+    "text": "Thuyên tắc phổi",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      178,
+      193
+    ],
+    "candidates": [
+      "I269"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      248,
+      256
+    ],
+    "candidates": [
+      "202421"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      355,
+      363
+    ],
+    "candidates": [
+      "202421"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      412,
+      419
+    ]
+  },
+  {
+    "text": "Cảm giác có đờm ở cổ họng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      470,
+      495
+    ]
+  },
+  {
+    "text": "ho nó ra",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      511,
+      519
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      532,
+      535
+    ]
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      548,
+      555
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      568,
+      576
+    ]
+  },
+  {
+    "text": "thay đổi tính chất cơn đau khi thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      610,
+      656
+    ]
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      669,
+      689
+    ]
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      702,
+      717
+    ]
+  },
+  {
+    "text": "khó thở tăng lên khi xuất hiện  Cơn nhịp nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      730,
+      776
+    ]
+  },
+  {
+    "text": "khó nuốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      945,
+      953
+    ]
+  },
+  {
+    "text": "metoprolol 5mg",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      1053,
+      1067
+    ],
+    "candidates": [
+      "335209"
+    ]
+  }
+]

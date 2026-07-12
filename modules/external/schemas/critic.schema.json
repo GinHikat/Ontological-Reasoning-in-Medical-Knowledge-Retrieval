@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue_id": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "false_positive",
+              "missed_entity",
+              "wrong_type",
+              "wrong_boundary",
+              "wrong_assertion",
+              "wrong_candidate",
+              "procedure_as_test",
+              "test_name_result_segmentation"
+            ]
+          },
+          "text": { "type": "string" },
+          "start": { "type": "integer" },
+          "end": { "type": "integer" },
+          "suggested_type": {
+            "type": "string",
+            "enum": [
+              "TRIỆU_CHỨNG",
+              "TÊN_XÉT_NGHIỆM",
+              "KẾT_QUẢ_XÉT_NGHIỆM",
+              "CHẨN_ĐOÁN",
+              "THUỐC",
+              "NONE"
+            ]
+          },
+          "suggested_text": { "type": "string" },
+          "suggested_start": { "type": "integer" },
+          "suggested_end": { "type": "integer" },
+          "suggested_assertions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["isNegated", "isFamily", "isHistorical"]
+            }
+          },
+          "rationale": { "type": "string" },
+          "severity": { "type": "number" }
+        },
+        "required": [
+          "issue_id",
+          "category",
+          "text",
+          "start",
+          "end",
+          "suggested_type",
+          "suggested_text",
+          "suggested_start",
+          "suggested_end",
+          "suggested_assertions",
+          "rationale",
+          "severity"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["issues"],
+  "additionalProperties": false
+}

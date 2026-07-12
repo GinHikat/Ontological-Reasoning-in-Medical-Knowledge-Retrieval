@@ -1,0 +1,169 @@
+[
+  {
+    "text": "Rối loạn cảm xúc (trầm cảm)",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      51,
+      78
+    ],
+    "candidates": [
+      "F32"
+    ]
+  },
+  {
+    "text": "hội chứng nghiện rượu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      129,
+      150
+    ],
+    "candidates": []
+  },
+  {
+    "text": "seroquel",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      190,
+      198
+    ],
+    "candidates": [
+      "83553"
+    ]
+  },
+  {
+    "text": "tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      465,
+      470
+    ]
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      477,
+      483
+    ]
+  },
+  {
+    "text": "cảm giác chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      507,
+      525
+    ]
+  },
+  {
+    "text": "khó khăn khi nhìn gần",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      532,
+      553
+    ]
+  },
+  {
+    "text": "rối loạn thị giác",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      560,
+      577
+    ]
+  },
+  {
+    "text": "ảo giác thị giác",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      618,
+      634
+    ]
+  },
+  {
+    "text": "Ảo thanh (AH)",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      660,
+      673
+    ]
+  },
+  {
+    "text": "chụp ct sọ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1278,
+      1288
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1360,
+      1380
+    ]
+  },
+  {
+    "text": "các băng nhóm oligoclonal",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1468,
+      1493
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1754,
+      1774
+    ]
+  },
+  {
+    "text": "âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1778,
+      1785
+    ]
+  },
+  {
+    "text": "chụp ct sọ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1818,
+      1828
+    ]
+  },
+  {
+    "text": "Ảo giác do rượu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      2240,
+      2255
+    ],
+    "candidates": []
+  }
+]

@@ -1,0 +1,13 @@
+file	cluster_id	model	text	start	end	type	assertions	confidence	reason	agreement_type
+29	29::c0000	tencent/hy3:free	tiểu tiện không tự chủ	70	92	TRIỆU_CHỨNG	isHistorical	0.95	historical present illness symptom	ASSERTION_DISAGREEMENT
+29	29::c0000	poolside/laguna-m.1:free	tiểu tiện không tự chủ	70	92	TRIỆU_CHỨNG		0.95	Explicit symptom reported in current illness history	ASSERTION_DISAGREEMENT
+29	29::c0001	tencent/hy3:free	sa âm đạo	96	105	TRIỆU_CHỨNG	isHistorical	0.95	historical present illness symptom	ASSERTION_DISAGREEMENT
+29	29::c0001	poolside/laguna-m.1:free	sa âm đạo	96	105	TRIỆU_CHỨNG		0.95	Explicit symptom reported in current illness history	ASSERTION_DISAGREEMENT
+29	29::c0002	nvidia/nemotron-3-ultra-550b-a55b:free	tiểu tiện không tự chủ	177	199	TRIỆU_CHỨNG		0.95	Urinary incontinence symptom listed in current symptoms	SINGLE_MODEL_ONLY
+29	29::c0003	nvidia/nemotron-3-ultra-550b-a55b:free	sa âm đạo	202	211	TRIỆU_CHỨNG		0.95	Vaginal prolapse symptom listed in current symptoms	SINGLE_MODEL_ONLY
+29	29::c0004	nvidia/nemotron-3-ultra-550b-a55b:free	bàng quang căng	214	229	TRIỆU_CHỨNG		0.95	Distended bladder symptom listed in current symptoms	EXACT_AGREEMENT
+29	29::c0004	poolside/laguna-m.1:free	bàng quang căng	214	229	TRIỆU_CHỨNG		0.95	Explicit symptom reported in current illness history	EXACT_AGREEMENT
+29	29::c0005	nvidia/nemotron-3-ultra-550b-a55b:free	cảm giác bí tiếu liên tục	233	258	TRIỆU_CHỨNG		0.95	Continuous urinary retention sensation symptom listed in current symptoms	EXACT_AGREEMENT
+29	29::c0005	poolside/laguna-m.1:free	cảm giác bí tiếu liên tục	233	258	TRIỆU_CHỨNG		0.95	Explicit symptom reported in current illness history	EXACT_AGREEMENT
+29	29::c0006	nvidia/nemotron-3-ultra-550b-a55b:free	một khối cứng trong âm đạo	317	343	TRIỆU_CHỨNG		0.9	Physical exam finding of hard mass in vagina, documented as clinical sign	MULTIPLE_CONCEPT_SEGMENTATION
+29	29::c0006	poolside/laguna-m.1:free	khối cứng trong âm đạo	321	343	CHẨN_ĐOÁN		0.9	Physical finding suggesting a mass lesion, diagnostic conclusion from examination	MULTIPLE_CONCEPT_SEGMENTATION

@@ -1,0 +1,15 @@
+Profile: free_first
+Output: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/openrouter_schema_teacher_free
+Cache:  /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/openrouter_schema_teacher_free
+Extractors: tencent/hy3:free, nvidia/nemotron-3-ultra-550b-a55b:free, openai/gpt-oss-120b:free
+Judge: tencent/hy3:free
+Pilot docs: ['75', '36', '20', '37', '51']
+Profile: free_first
+Output: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/openrouter_schema_teacher_free
+Cache:  /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/openrouter_schema_teacher_free
+Extractors: tencent/hy3:free, nvidia/nemotron-3-ultra-550b-a55b:free, poolside/laguna-m.1:free
+Judge: tencent/hy3:free
+Pilot docs: ['75', '36', '20', '37', '51']
+Pilot gates: {'profile': 'free_first', 'budget_set': True, 'valid_final': 5, 'pilot_n': 5, 'parse_ok_rate': 0.9444444444444444, 'pilot_ok': False, 'continue_full': False}
+Stopping after pilot — gates not satisfied or budget unset.
+EXIT:0

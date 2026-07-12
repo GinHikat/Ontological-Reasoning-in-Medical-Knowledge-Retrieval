@@ -1,0 +1,69 @@
+{
+  "mode": "explicit_env",
+  "extractors": [
+    {
+      "model_id": "anthropic/claude-opus-4.8",
+      "family": "anthropic",
+      "context_length": 1000000,
+      "supports_structured_outputs": true,
+      "pricing": {
+        "prompt": "0.000005",
+        "completion": "0.000025",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000005",
+        "input_cache_write": "0.00000625",
+        "input_cache_write_1h": "0.00001"
+      },
+      "reason": "Explicitly configured via OPENROUTER_EXTRACTOR_MODELS; validated against Models API.",
+      "role": "extractor_A"
+    },
+    {
+      "model_id": "google/gemini-3.1-pro-preview",
+      "family": "google",
+      "context_length": 1048576,
+      "supports_structured_outputs": true,
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000012",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "web_search": "0.014",
+        "internal_reasoning": "0.000012",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000000375"
+      },
+      "reason": "Explicitly configured via OPENROUTER_EXTRACTOR_MODELS; validated against Models API.",
+      "role": "extractor_B"
+    },
+    {
+      "model_id": "openai/gpt-5.5",
+      "family": "openai",
+      "context_length": 1050000,
+      "supports_structured_outputs": true,
+      "pricing": {
+        "prompt": "0.000005",
+        "completion": "0.00003",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000005"
+      },
+      "reason": "Explicitly configured via OPENROUTER_EXTRACTOR_MODELS; validated against Models API.",
+      "role": "extractor_C"
+    }
+  ],
+  "judge": {
+    "model_id": "anthropic/claude-opus-4.8",
+    "family": "anthropic",
+    "context_length": 1000000,
+    "supports_structured_outputs": true,
+    "pricing": {
+      "prompt": "0.000005",
+      "completion": "0.000025",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000005",
+      "input_cache_write": "0.00000625",
+      "input_cache_write_1h": "0.00001"
+    },
+    "reason": "Explicitly configured via OPENROUTER_JUDGE_MODEL; validated against Models API.",
+    "role": "judge"
+  }
+}

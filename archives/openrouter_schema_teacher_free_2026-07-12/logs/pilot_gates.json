@@ -1,0 +1,9 @@
+{
+  "profile": "free_first",
+  "budget_set": true,
+  "valid_final": 5,
+  "pilot_n": 5,
+  "parse_ok_rate": 0.9444444444444444,
+  "pilot_ok": false,
+  "continue_full": false
+}

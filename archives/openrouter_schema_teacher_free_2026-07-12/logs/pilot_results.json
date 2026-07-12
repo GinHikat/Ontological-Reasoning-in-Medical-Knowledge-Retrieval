@@ -1,0 +1,52 @@
+{
+  "docs": [
+    "75",
+    "36",
+    "20",
+    "37",
+    "51"
+  ],
+  "results": [
+    {
+      "doc_id": "75",
+      "status": "resumed",
+      "n_entities": 26
+    },
+    {
+      "doc_id": "36",
+      "status": "ok",
+      "n_entities": 48,
+      "n_critic_issues": 16
+    },
+    {
+      "doc_id": "20",
+      "status": "ok",
+      "n_entities": 48,
+      "n_critic_issues": 25
+    },
+    {
+      "doc_id": "37",
+      "status": "ok",
+      "n_entities": 39,
+      "n_critic_issues": 20
+    },
+    {
+      "doc_id": "51",
+      "status": "ok",
+      "n_entities": 27,
+      "n_critic_issues": 16
+    }
+  ],
+  "usage": {
+    "requests": 36,
+    "cached_hits": 1,
+    "uncached_requests": 35,
+    "input_tokens": 199778,
+    "output_tokens": 158113,
+    "estimated_cost_usd": 0.0,
+    "budget_spent_usd": 0.0,
+    "budget_limit_usd": 2.95,
+    "parse_ok": 34,
+    "parse_ok_rate": 0.9444444444444444
+  }
+}

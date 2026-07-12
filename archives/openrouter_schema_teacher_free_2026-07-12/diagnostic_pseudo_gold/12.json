@@ -1,0 +1,207 @@
+[
+  {
+    "text": "U Sacoit tổn thương chủ yếu tại tim",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      48,
+      83
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      133,
+      135
+    ]
+  },
+  {
+    "text": "ho ra máu cỡ đồng xu",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      156,
+      176
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      230,
+      232
+    ]
+  },
+  {
+    "text": "ho ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      247,
+      256
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      321,
+      323
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      327,
+      334
+    ]
+  },
+  {
+    "text": "màu hồng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      422,
+      430
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      461,
+      464
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      562,
+      564
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      571,
+      578
+    ]
+  },
+  {
+    "text": "ho ra máu cỡ đồng xu",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      585,
+      605
+    ]
+  },
+  {
+    "text": "Đờm pha màu hồng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      623,
+      639
+    ]
+  },
+  {
+    "text": "fever",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      646,
+      651
+    ]
+  },
+  {
+    "text": "Đau bụng  âm ỉ",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      685,
+      699
+    ]
+  },
+  {
+    "text": "levofloxacin",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      876,
+      888
+    ],
+    "candidates": [
+      "82122"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      975,
+      982
+    ],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "công thức máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1035,
+      1048
+    ]
+  },
+  {
+    "text": "cbc",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1050,
+      1053
+    ]
+  },
+  {
+    "text": "11.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1068,
+      1072
+    ]
+  },
+  {
+    "text": "x-quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1110,
+      1117
+    ]
+  },
+  {
+    "text": "cấy máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "assertions": [],
+    "position": [
+      1203,
+      1210
+    ]
+  }
+]

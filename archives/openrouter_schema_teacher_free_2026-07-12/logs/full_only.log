@@ -1,0 +1,14 @@
+Profile: free_first
+Output: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/openrouter_schema_teacher_free
+Cache:  /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/openrouter_schema_teacher_free
+OpenRouter API keys loaded: 2
+Extractors: tencent/hy3:free, nvidia/nemotron-3-ultra-550b-a55b:free, poolside/laguna-m.1:free
+Judge: tencent/hy3:free
+full-only: 95 missing of 100 (skipping existing gold)
+=== EXIT:0 2026-07-12T12:48:00+07:00 ===
+Profile: free_first
+Output: /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/output/openrouter_schema_teacher_free
+Cache:  /storage/student10/tungnl/Ontological-Reasoning-in-Medical-Knowledge-Retrieval/cache/openrouter_schema_teacher_free
+OpenRouter API keys loaded: 2
+Extractors: tencent/hy3:free, nvidia/nemotron-3-ultra-550b-a55b:free, poolside/laguna-m.1:free
+Judge: tencent/hy3:free

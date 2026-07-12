@@ -1,0 +1,120 @@
+[
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      131,
+      164
+    ],
+    "candidates": [
+      "I251"
+    ]
+  },
+  {
+    "text": "blốc nhĩ thất, hoàn toàn sau khi đặt máy tạo nhịp (PPM)",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      171,
+      226
+    ],
+    "candidates": [
+      "I442"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      233,
+      262
+    ],
+    "candidates": [
+      "N189"
+    ]
+  },
+  {
+    "text": "Suy giảm nhận thức nhẹ suy giảm nhận thức",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      269,
+      310
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Cảm giác thắt chặt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      451,
+      474
+    ]
+  },
+  {
+    "text": "Cảm giác thắt chặt ngực dưới xương ức nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      622,
+      672
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      679,
+      686
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      952,
+      959
+    ]
+  },
+  {
+    "text": "Cơn đau thắt ngực không ổn định cần can thiệp mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1048,
+      1103
+    ],
+    "candidates": [
+      "I200"
+    ]
+  },
+  {
+    "text": "đau thắt ngực không ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1052,
+      1079
+    ],
+    "candidates": [
+      "I200"
+    ]
+  },
+  {
+    "text": "Cơn đau thắt ngực không ổn định cần can thiệp mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      1174,
+      1229
+    ],
+    "candidates": [
+      "I200"
+    ]
+  }
+]

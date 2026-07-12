@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue_id": { "type": "string" },
+          "action": {
+            "type": "string",
+            "enum": ["APPLY_FIX", "IGNORE"]
+          },
+          "entity": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "start": { "type": "integer" },
+              "end": { "type": "integer" },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "TRIỆU_CHỨNG",
+                  "TÊN_XÉT_NGHIỆM",
+                  "KẾT_QUẢ_XÉT_NGHIỆM",
+                  "CHẨN_ĐOÁN",
+                  "THUỐC"
+                ]
+              },
+              "assertions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["isNegated", "isFamily", "isHistorical"]
+                }
+              },
+              "remove_existing": { "type": "boolean" }
+            },
+            "required": [
+              "text",
+              "start",
+              "end",
+              "type",
+              "assertions",
+              "remove_existing"
+            ],
+            "additionalProperties": false
+          },
+          "reason": { "type": "string" }
+        },
+        "required": ["issue_id", "action", "reason"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["actions"],
+  "additionalProperties": false
+}

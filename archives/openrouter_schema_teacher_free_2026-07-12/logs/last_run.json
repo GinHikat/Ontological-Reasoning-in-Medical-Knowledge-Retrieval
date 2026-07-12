@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "doc_id": "29",
+      "status": "ok",
+      "n_entities": 7,
+      "n_critic_issues": 9
+    }
+  ]
+}

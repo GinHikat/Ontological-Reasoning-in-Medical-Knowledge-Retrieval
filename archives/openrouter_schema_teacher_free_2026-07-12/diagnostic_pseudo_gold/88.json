@@ -1,0 +1,178 @@
+[
+  {
+    "text": "Đái tháo đường típ 1 có biến chứng viêm thần kinh ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      48,
+      108
+    ],
+    "candidates": [
+      "E104†"
+    ]
+  },
+  {
+    "text": "Viêm gan virus C và B",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      115,
+      136
+    ],
+    "candidates": [
+      "B182",
+      "B188"
+    ]
+  },
+  {
+    "text": "Tăng áp động mạch phổi mức độ trung bình",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      143,
+      183
+    ],
+    "candidates": [
+      "I270",
+      "I272"
+    ]
+  },
+  {
+    "text": "U lympho không hodgkin tế bàoB lớn lan toả",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      189,
+      231
+    ],
+    "candidates": [
+      "C833"
+    ]
+  },
+  {
+    "text": "methadone",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      360,
+      369
+    ],
+    "candidates": [
+      "6813"
+    ]
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "assertions": [],
+    "position": [
+      383,
+      388
+    ],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "Phù chân trái",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      453,
+      466
+    ]
+  },
+  {
+    "text": "hoại tử",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      470,
+      477
+    ]
+  },
+  {
+    "text": "khó khăn",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      534,
+      542
+    ]
+  },
+  {
+    "text": "phù chân",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      699,
+      707
+    ]
+  },
+  {
+    "text": "hoại tử",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      730,
+      737
+    ]
+  },
+  {
+    "text": "Phù 2 chân nặng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      834,
+      849
+    ]
+  },
+  {
+    "text": "Loét 2 bàn chân",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      851,
+      866
+    ]
+  },
+  {
+    "text": "chảy dịch vàng",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      868,
+      882
+    ]
+  },
+  {
+    "text": "hoại tử đen",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      889,
+      900
+    ]
+  },
+  {
+    "text": "2*4 cm",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      912,
+      918
+    ]
+  },
+  {
+    "text": "Loét bàn chân nhiễm trùng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [],
+    "position": [
+      938,
+      963
+    ],
+    "candidates": []
+  }
+]

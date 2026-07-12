@@ -1,0 +1,72 @@
+[
+  {
+    "text": "xơ gan do rượu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      61,
+      75
+    ],
+    "candidates": [
+      "K703"
+    ]
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      191,
+      208
+    ]
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      270,
+      287
+    ]
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      338,
+      355
+    ]
+  },
+  {
+    "text": "ý thức suy giảm",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      368,
+      383
+    ]
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [],
+    "position": [
+      432,
+      449
+    ]
+  },
+  {
+    "text": "không thể tự chăm sóc bản thân tại nhà",
+    "type": "TRIỆU_CHỨNG",
+    "assertions": [
+      "isNegated"
+    ],
+    "position": [
+      456,
+      494
+    ]
+  }
+]

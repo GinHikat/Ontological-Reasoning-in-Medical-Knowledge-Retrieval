@@ -1,0 +1,98 @@
+[
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      57,
+      70
+    ],
+    "candidates": [
+      "I10"
+    ]
+  },
+  {
+    "text": "bệnh gút không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      77,
+      100
+    ],
+    "candidates": [
+      "M109"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      107,
+      136
+    ],
+    "candidates": [
+      "N189"
+    ]
+  },
+  {
+    "text": "ung thư đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      143,
+      160
+    ],
+    "candidates": [
+      "C18"
+    ]
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      167,
+      174
+    ],
+    "candidates": [
+      "E669"
+    ]
+  },
+  {
+    "text": "xơ gan mất bù có tăng áp lực tĩnh mạch cửa, cổ trướng và tràn dịch màng phổi",
+    "type": "CHẨN_ĐOÁN",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      191,
+      267
+    ],
+    "candidates": [
+      "K766"
+    ]
+  },
+  {
+    "text": "liệu pháp lợi tiểu",
+    "type": "THUỐC",
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      308,
+      326
+    ],
+    "candidates": []
+  }
+]
