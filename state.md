@@ -634,3 +634,22 @@ Live mirror (gitignored output): `output/openrouter_schema_teacher_free/`; analy
 | Artifacts | `analysis/openrouter_teacher/`, `output/openrouter_schema_teacher/` |
 
 Frozen v7 remains the leaderboard reference (24.79660).
+
+## openrouter_schema_teacher_reduced (EXTERNAL_API_DIAGNOSTIC_ONLY)
+
+Low-call redesign of the free frontier teacher (not v11; not a competition submission).
+
+| Field | Value |
+|-------|-------|
+| Status | **Implemented + 10-doc benchmark**; full 100 **blocked by gates** |
+| Primary extractor | `tencent/hy3:free` (offline ablation winner) |
+| Judge (largest) | `nvidia/nemotron-3-ultra-550b-a55b:free` (550B) |
+| Prior ensemble | ~**786** requests; user-stated score **35.72280** |
+| Benchmark requests | **19** / 10 docs (**1.9**/doc) |
+| Benchmark overlap vs archive | **0.665** (gate ≥0.90 **FAIL**) |
+| Verdict | `REDUCED_PIPELINE_TOO_AGGRESSIVE` |
+| Outputs | `output/openrouter_schema_teacher_reduced/` |
+| Analysis | `analysis/openrouter_reduced/final_report.md` |
+
+Largest model used only for ambiguous candidate batches + high-risk document review.
+Target 65–140 full-run requests remains pending a passing benchmark.

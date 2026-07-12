@@ -1,0 +1,11 @@
+document_id	entity_count	risk_score	risk_reasons	requires_judge
+2	7	3	+3_abnormally_low_entity_count	True
+3	58	1	+1_very_long_document	False
+20	40	7	+2_negation_cue_inside_span:2;+2_unusually_long_symptom:2;+2_overlong_test_result:4;+1_very_long_document	True
+24	21	0		False
+31	3	3	+3_abnormally_low_entity_count	True
+36	26	5	+3_unresolved_span_alignment;+2_negation_cue_inside_span:1	True
+37	37	2	+2_negation_cue_inside_span:1	False
+41	53	3	+2_negation_cue_inside_span:6;+1_very_long_document	True
+55	2	3	+3_abnormally_low_entity_count	True
+75	21	2	+2_unusually_long_symptom:1	False

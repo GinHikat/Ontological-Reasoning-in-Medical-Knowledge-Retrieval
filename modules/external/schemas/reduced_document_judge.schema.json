@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "start": { "type": "integer" },
+          "end": { "type": "integer" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "TRIỆU_CHỨNG",
+              "TÊN_XÉT_NGHIỆM",
+              "KẾT_QUẢ_XÉT_NGHIỆM",
+              "CHẨN_ĐOÁN",
+              "THUỐC"
+            ]
+          },
+          "assertions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["isNegated", "isFamily", "isHistorical"]
+            }
+          },
+          "candidates": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "confidence": { "type": "number" },
+          "left_anchor": { "type": "string" },
+          "right_anchor": { "type": "string" }
+        },
+        "required": ["text", "start", "end", "type", "assertions"],
+        "additionalProperties": false
+      }
+    },
+    "issue_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["entities", "issue_tags"],
+  "additionalProperties": false
+}

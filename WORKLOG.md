@@ -334,3 +334,25 @@ manual annotation and local evaluation.
 - gold_manifest_sha256=c601c9f66d4e49d107c975aa74cc59c40d0f0802456c3201c5eafe6693de8aaf; n_entities=2213
 - Updated state.md / PLAN.md / CURRENT_WORK.md → IDLE pointing at archive
 - Rationale: output/cache gitignored; free OpenRouter run not bit-reproducible
+
+---
+### 2026-07-13 00:28 +0700 | host=ict14
+**Status:** openrouter_schema_teacher_reduced implemented; starting 10-doc benchmark
+**Next:** finish benchmark → compare vs archive gold → gates → full 100 only if pass
+- Extractor (ablation): tencent/hy3:free (exact recall 0.711 vs frontier gold)
+- Judge (largest): nvidia/nemotron-3-ultra-550b-a55b:free (550B)
+- Prior ensemble requests: 786; target reduced 65–140
+- Code: modules/external/reduced_teacher_pipeline.py, scripts/run_openrouter_reduced.py
+- Analysis: analysis/openrouter_reduced/{starting_state,extractor_ablation,model_selection}.md
+- tmux: openrouter_reduced_bench
+
+---
+### 2026-07-13 00:55 +0700 | host=ict14
+**Status:** openrouter_schema_teacher_reduced benchmark COMPLETED — gates FAILED; full 100 not started
+**Next:** fix extractor prompt drift / risk triggers; re-benchmark before full run
+- Extractor: tencent/hy3:free | Judge: nvidia/nemotron-3-ultra-550b-a55b:free
+- Prior ensemble: 786 req; user-stated score 35.72280
+- Benchmark 10 docs: 19 req (1.9/doc), 6 doc-judged, 3 cand batches, 0×429, ~1044s
+- Overlap vs archive gold: 0.665 (gate ≥0.90 FAIL); type agree 0.962 PASS
+- Verdict: REDUCED_PIPELINE_TOO_AGGRESSIVE
+- Reports: analysis/openrouter_reduced/final_report.md

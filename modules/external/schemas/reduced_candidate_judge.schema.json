@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "selections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item_id": { "type": "string" },
+          "selected_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["item_id", "selected_ids"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["selections"],
+  "additionalProperties": false
+}

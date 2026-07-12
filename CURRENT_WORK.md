@@ -9,34 +9,33 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | `IDLE` |
-| **Updated** | 2026-07-12 22:45 +0700 |
+| **Status** | `IDLE` — reduced pipeline implemented; benchmark gates **FAILED** |
+| **Updated** | 2026-07-13 00:55 +0700 |
 | **Host** | `ict14` |
+| **Verdict** | `REDUCED_PIPELINE_TOO_AGGRESSIVE` |
 
-### Last completed (archived permanently)
+### Done
 
-`openrouter_schema_teacher` / **`free_first`** — long OpenRouter free run, **not reproducible**.
+- Implemented `openrouter_schema_teacher_reduced` (one extractor + conditional largest-model judge).
+- Offline ablation → extractor `tencent/hy3:free`; judge `nvidia/nemotron-3-ultra-550b-a55b:free`.
+- 10-doc benchmark: **19** requests (1.9/doc), 0×429, overlap vs archive **0.665** (need ≥0.90).
+- Full 100 **not started** (per success gates).
 
-**Permanent archive (git-tracked):**
+### Reports
 
-`archives/openrouter_schema_teacher_free_2026-07-12/`
+- `analysis/openrouter_reduced/final_report.md`
+- `analysis/openrouter_reduced/benchmark_10_docs.md`
+- Archive gold reference: `archives/openrouter_schema_teacher_free_2026-07-12/` (35.72280 / ~786 req)
 
-| Contained | Path inside archive |
-|-----------|---------------------|
-| 100-doc gold | `diagnostic_pseudo_gold/` |
-| Report + metrics | `analysis/` |
-| Run logs | `logs/` |
-| SHA256 + manifest | `meta/` |
+### Next (human / next session)
 
-Also recorded in `state.md` and `analysis/openrouter_teacher_free/` (live mirror).
+1. Fix extractor prompt drift vs ablation A outputs; lower doc-judge rate.
+2. Re-run: `PYTHONUNBUFFERED=1 python scripts/run_openrouter_reduced.py --benchmark-10`
+3. Only if gates pass: full 100.
 
-### Next (needs human decision)
+### Do not
 
-1. Schema-audit manual annotation / local scorer, **or**
-2. Paid teacher only after user supplies **new** OpenRouter model IDs + budget.
-
-## Do not
-
-- Delete or overwrite `archives/openrouter_schema_teacher_free_2026-07-12/` without creating a new dated archive
-- Mix teacher outputs into competition submission
-- Start `profile=default` without user-chosen paid model IDs
+- Commit / push / submit automatically
+- Delete caches or archive
+- Modify v7 / v9 / v10
+- Call this v11
