@@ -1,0 +1,1 @@
+../../../external/prompts/competition_schema.md

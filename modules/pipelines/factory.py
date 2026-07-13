@@ -1,75 +1,66 @@
+"""Active track factory — only baseline_hybrid, ner, and llm."""
+
 from __future__ import annotations
 
 from collections.abc import Callable
 
 from modules.pipelines.base import BasePipeline
-from modules.pipelines.legacy_adapter import LegacyV5PipelineAdapter
-from modules.pipelines.v5 import build_v5_refactored_pipeline
-from modules.pipelines.v6 import build_v6_refined_pipeline
-from modules.pipelines.v7 import build_v7_structured_pipeline
-from modules.pipelines.v8 import (
-    build_v8_candidate_integrity_pipeline,
-    build_v8_candidate_rescue_pipeline,
-)
-from modules.pipelines.v9 import build_v9_llm_recall_pipeline
-from modules.pipelines.v10 import build_v10_llm_conflict_resolution_pipeline
+from modules.pipelines.baseline import build_baseline_hybrid_pipeline
+from modules.pipelines.llm import build_llm_pipeline
+from modules.pipelines.ner import build_ner_pipeline
 
 NER_MODEL_CHOICES = ["vihealthbert", "vipubmed-deberta", "phobert", "xlm-roberta"]
 
 PipelineBuilder = Callable[..., BasePipeline]
 
-
-def _build_v6(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v6_refined_pipeline(model_name=model_name)
-
-
-def _build_v7(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v7_structured_pipeline(model_name=model_name)
-
-
-def _build_v8(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v8_candidate_integrity_pipeline(model_name=model_name)
-
-
-def _build_v8_rescue(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v8_candidate_rescue_pipeline(model_name=model_name)
-
-
-def _build_v9(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v9_llm_recall_pipeline(model_name=model_name)
-
-
-def _build_v10(model_name: str = "vihealthbert") -> BasePipeline:
-    return build_v10_llm_conflict_resolution_pipeline(model_name=model_name)
-
+ACTIVE_TRACKS = ("baseline_hybrid", "ner", "llm")
 
 PIPELINE_BUILDERS: dict[str, PipelineBuilder] = {
-    "legacy_v5": LegacyV5PipelineAdapter,
-    "v5_refactored": build_v5_refactored_pipeline,
-    "v6_refined": _build_v6,
-    "v7_structured": _build_v7,
-    "v8_candidate_integrity": _build_v8,
-    "v8_candidate_rescue": _build_v8_rescue,
-    "v9_llm_recall": _build_v9,
-    "v10_llm_conflict_resolution": _build_v10,
+    "baseline_hybrid": build_baseline_hybrid_pipeline,
+    "ner": build_ner_pipeline,
+    "llm": build_llm_pipeline,
+}
+
+# Historical names → archive pointer (not registered as runnable).
+ARCHIVED_PIPELINE_ALIASES = {
+    "legacy_v5": "archives/legacy_pipelines/",
+    "v5_refactored": "archives/legacy_pipelines/",
+    "v6_refined": "archives/legacy_pipelines/",
+    "v7_structured": "baseline_hybrid (frozen rename)",
+    "v8_candidate_integrity": "archives/legacy_pipelines/",
+    "v8_candidate_rescue": "archives/legacy_pipelines/",
+    "v9_llm_recall": "archives/legacy_pipelines/",
+    "v10_llm_conflict_resolution": "archives/legacy_pipelines/",
 }
 
 
 def available_pipelines() -> list[str]:
-    return sorted(PIPELINE_BUILDERS.keys())
+    return list(ACTIVE_TRACKS)
 
 
-def build_pipeline(name: str, model_name: str = "vihealthbert") -> BasePipeline:
+def build_pipeline(name: str, model_name: str = "vihealthbert", **kwargs) -> BasePipeline:
+    if name in ARCHIVED_PIPELINE_ALIASES and name not in PIPELINE_BUILDERS:
+        hint = ARCHIVED_PIPELINE_ALIASES[name]
+        raise ValueError(
+            f"Pipeline '{name}' is archived. "
+            f"Active tracks: {', '.join(available_pipelines())}. "
+            f"See {hint}"
+        )
     try:
         builder = PIPELINE_BUILDERS[name]
     except KeyError as exc:
         available = ", ".join(available_pipelines())
         raise ValueError(
-            f"Unknown pipeline '{name}'. Available pipelines: {available}"
+            f"Unknown pipeline '{name}'. Active tracks: {available}"
         ) from exc
-    
+
     import inspect
+
     sig = inspect.signature(builder)
+    call_kwargs: dict = {}
     if "model_name" in sig.parameters:
-        return builder(model_name=model_name)
-    return builder()
+        call_kwargs["model_name"] = model_name
+    for key, value in kwargs.items():
+        if key in sig.parameters:
+            call_kwargs[key] = value
+    return builder(**call_kwargs)

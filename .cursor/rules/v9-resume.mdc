@@ -1,22 +1,27 @@
----
-description: Session recovery — CURRENT_WORK.md for long runs, WORKLOG/PLAN for context
-alwaysApply: true
----
-
 # Session recovery
 
 `AGENTS.md` = durable project conventions.
-`CURRENT_WORK.md` = **rewriteable** active long-run handoff (tmux commands, Status, Next).
+`CURRENT_WORK.md` = **rewriteable** active handoff (NER + LLM next steps only).
 `WORKLOG.md` / `PLAN.md` = live experiment context.
-`WORKLOG.md` is **append-only** and will grow; never rewrite history or Read the whole file.
+`WORKLOG.md` is **append-only**; never rewrite history or Read the whole file.
 
 When the user says **continue from CURRENT_WORK.md**, or continues after SSH/chat loss:
 
-1. Read `CURRENT_WORK.md` first → follow Status / Next / exact commands.
+1. Read `CURRENT_WORK.md` first → follow NER / LLM Status and Next.
 2. `tail -n 80 WORKLOG.md` → latest chronological Status / Next.
 3. Read `PLAN.md` for phase checklist and experiment constraints.
 4. Read `CURRENT_MACHINE.md` if present; if missing, create it from live host specs (see `AGENTS.md`).
 5. Do not rely on prior chat; verify processes/cache/logs on disk (`hostname`, `pgrep`, log tail).
+
+## Active tracks only
+
+```bash
+python scripts/run_baseline.py
+python scripts/run_ner.py
+python scripts/run_llm.py --mode diagnostic|competition
+```
+
+Do not revive archived `v5`–`v10` factory names. Baseline is `baseline_hybrid` (frozen).
 
 When starting or finishing a long run (LLM cache, full pipeline, model server):
 
@@ -37,5 +42,3 @@ cat >> WORKLOG.md <<EOF
 - ...
 EOF
 ```
-
-If SSH died mid-LLM-cache: resume `generate_v9_llm_cache.py` **without** `--force` (SHA256 cache keys), unless regenerating quarantined timeout stubs.

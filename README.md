@@ -1,156 +1,168 @@
-# Vietnamese Clinical NER & Entity Linking Pipeline
+# Vietnamese Clinical NER & Entity Linking
 
-This repository processes unstructured Vietnamese clinical notes to extract medical entities, map them to international standard ontologies (ICD-10 for Diagnosis, RxNorm for Drugs), and identify contextual assertions (e.g., negation, historical).
+Extract five competition labels from Vietnamese clinical notes, attach assertions, and link diagnoses/drugs to local ICD-10 / RxNorm dictionaries.
 
-## Core Architecture Overview
+## Research question
 
-The system extracts 5 core labels:
-1. `CHẨN_ĐOÁN` (Diagnosis) → Mapped to ICD-10
-2. `THUỐC` (Medication/Drug) → Mapped to RxNorm
-3. `TÊN_XÉT_NGHIỆM` (Procedure/Test Name)
-4. `TRIỆU_CHỨNG` (Symptom/Phenotype)
-5. `KẾT_QUẢ_XÉT_NGHIỆM` (Test/Lab Result)
+> Can a task-specific NER model or a schema-aware self-hosted LLM reproduce the frontier teacher’s improvement over the frozen baseline?
 
-The pipeline uses a BERT-based NER model for entity boundaries and SapBERT (English & Vietnamese variants) for zero-shot cosine similarity linking against standardized dictionaries.
+## Active tracks
 
-**Current best scored pipeline:** `v7_structured` (leaderboard **24.79660**). See `state.md` for full changelog and scores.
+| Track | Purpose | CLI |
+|-------|---------|-----|
+| **Baseline** (`baseline_hybrid`) | Frozen reference / fallback | `python scripts/run_baseline.py` |
+| **NER** | Direct five-label + NONE extraction | `python scripts/run_ner.py` |
+| **LLM** | One-pass schema extraction + local linking | `python scripts/run_llm.py` |
+
+Historical `v5`–`v10` pipelines are archived evidence under `archives/` — not CLI options.
 
 ---
 
-## Repository Structure
+## 1. Problem
+
+Competition output labels:
+
+1. `CHẨN_ĐOÁN` → ICD-10 candidates  
+2. `THUỐC` → RxNorm candidates  
+3. `TÊN_XÉT_NGHIỆM`  
+4. `TRIỆU_CHỨNG`  
+5. `KẾT_QUẢ_XÉT_NGHIỆM`  
+
+Plus assertions (`isNegated`, `isHistorical`, `isFamily`) where eligible.
+
+---
+
+## 2. Installation
+
+```bash
+git clone <repo-url>
+cd Ontological-Reasoning-in-Medical-Knowledge-Retrieval
+cp .env.example .env
+
+# NER / baseline (conda env nanachi on lab hosts — see CURRENT_MACHINE.md)
+source /home/student10/miniforge3/etc/profile.d/conda.sh
+conda activate nanachi
+# or: pip install -r requirements.txt
+```
+
+Data and weights live under `v_dataset/` (notes, dictionaries, NER statedicts).
+
+---
+
+## 3. Baseline
+
+Frozen hybrid stack (formerly scored as `v7_structured`):
 
 ```text
-Ontological-Reasoning-in-Medical-Knowledge-Retrieval/
-├── .env.example             # Template for environment variables
-├── README.md                # This file
-├── requirements.txt         # Python dependencies
-├── state.md                 # Master project state, requirements & changelog
-├── v_dataset/               # Clinical notes, ontologies, and model weights
-│   ├── var/test/            # 100 sample clinical note .txt files
-│   ├── statedict/           # Local NER weights (e.g. statedict/ner/vihealthbert)
-│   └── viettel/             # Dictionaries and datasets for mapping
-│       ├── base/            # CSV + .npy embedding dictionaries
-│       └── mapping/         # Raw ontology sources (RxNorm, KG, etc.)
-├── modules/                 # Core Python codebase (OOP components)
-│   ├── core/                # Config, constants, Pydantic schemas
-│   ├── components/          # NER, linking, postprocessing, assertions, formatting
-│   ├── pipelines/           # Versioned pipeline builders (v5–v8)
-│   ├── evaluation/          # run_pipeline.py and analysis scripts
-│   ├── legacy/              # Frozen monolithic V5 rollback copies
-│   ├── dataset/             # Dictionary preprocessing & embedding scripts
-│   ├── model/               # NER inference / training helpers
-│   └── utils.py             # Legacy EntityExtractor (DataFrame API)
-├── docs/                    # Technical documentation
-├── analysis/                # Experiment notes and ablation reports
-└── output/                  # Versioned JSON submissions + traces
+generic Vietnamese medical NER
+  → deterministic span cleanup
+  → assertion rules
+  → local ICD / RxNorm retrieval
+  → competition JSON
 ```
+
+```bash
+python scripts/run_baseline.py
+python scripts/run_baseline.py --samples 1 --output-dir output/smoke_baseline
+```
+
+**Leaderboard reference: 24.79660.** Do not keep adding rules to this track.
 
 ---
 
-## Getting Started
+## 4. NER direction
 
-### 0. Read first
-Check the current state in [`state.md`](state.md).
+Task-specific extractor with an explicit `NONE` class — no Procedure→test remapping:
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/GinHikat/Ontological-Reasoning-in-Medical-Knowledge-Retrieval.git
-cd Ontological-Reasoning-in-Medical-Knowledge-Retrieval
+```text
+document → five-label (+NONE) spans → assertions → shared ICD/RxNorm → JSON
 ```
 
-### 2. Set Up Environment Variables
-
 ```bash
-cp .env.example .env
+python scripts/run_ner.py --train-notes   # design constraints
+python scripts/run_ner.py                # runs once a model is wired
 ```
 
-### 3. Install Python Dependencies
-
-For fast installs, use [`uv`](https://github.com/astral-sh/uv):
-
-```bash
-pip install uv
-uv pip install -r requirements.txt
-```
-
-*Or standard pip:*
-
-```bash
-pip install -r requirements.txt
-```
+Backends (common interface): GLiNER / span classifier / token classifier / small clinical LM.
 
 ---
 
-## How to Run the System
+## 5. LLM direction
 
-### Step 1: Build the Dictionary Base
-Download the mapping data from Hugging Face for this project and place it under `v_dataset/`. NER weights should live at `v_dataset/statedict/` (the inference code also falls back to legacy `modules/model/statedict/` if present).
-
-```bash
-mkdir -p v_dataset
-cd v_dataset
-
-git clone https://huggingface.co/datasets/zinzinmit/v_dataset .
-
-# If the clone puts statedict at the repo root of the dataset, keep it under v_dataset/statedict
-# (preferred). Older docs that moved it to modules/model/statedict are obsolete.
+```text
+document
+  → one schema-aware LLM extraction call
+  → exact-span validation
+  → local ICD/RxNorm retrieval
+  → optional judge only for risky cases
+  → JSON
 ```
 
-Ensure LFS objects are pulled for `statedict` and `viettel/base` dictionaries.
+Two modes, **same** prompts / schemas / alignment / ontology / writer:
 
-### Step 2: Run a Versioned Pipeline
-The recommended entrypoint is `modules/evaluation/run_pipeline.py`:
-
-```bash
-# Canonical best scored run — output/v7_structured/runN/{submission,trace}/
-python modules/evaluation/run_pipeline.py --pipeline v7_structured
-
-# Refined V6 — output/v6_refined/runN/{submission,trace}/
-python modules/evaluation/run_pipeline.py --pipeline v6_refined
-
-# Refactored V5 — output/v5_refactored/runN/{submission,trace}/
-python modules/evaluation/run_pipeline.py --pipeline v5_refactored
-
-# V8 ablations (not submission candidates; see state.md)
-python modules/evaluation/run_pipeline.py --pipeline v8_candidate_integrity
-python modules/evaluation/run_pipeline.py --pipeline v8_candidate_rescue
-
-# Quick smoke test on one note
-python modules/evaluation/run_pipeline.py --pipeline v7_structured --samples 1
-
-# Optional flat export for submission/evaluator compatibility
-python modules/evaluation/run_pipeline.py --pipeline v7_structured --output-dir output_submission
-```
-
-Available pipelines: `legacy_v5`, `v5_refactored`, `v6_refined`, `v7_structured`, `v8_candidate_integrity`, `v8_candidate_rescue`.
-
-By default, each run is saved under `output/<version>/runN/` where `<version>` defaults to the `--pipeline` name (override with `--version-name`). Inside each run:
-
-- `submission/` — competition JSON files (`1.json`, `2.json`, …)
-- `trace/` — step-by-step trace logs (`1_trace.txt`, …)
-
-New runs auto-increment (`run1`, `run2`, …). Use `--no-trace` to disable traces.
-
-The original monolithic runner remains available for rollback/reference:
+| Mode | Backend | Compliance |
+|------|---------|------------|
+| `diagnostic` | OpenRouter frontier | External API — proof only |
+| `competition` | Self-hosted ≤9B localhost | Required for submission |
 
 ```bash
-python modules/evaluation/test_sample_pipeline.py
+python scripts/run_llm.py --mode diagnostic --benchmark-10
+python scripts/run_llm.py --mode competition   # localhost ≤9B (wiring in progress)
 ```
+
+OpenRouter diagnostic score **35.72280** (WER 54.9016 / J_assertion 43.9687 / J_candidates 22.5066) proves the schema direction; it is **not** competition-compliant.
 
 ---
 
-## Using the `EntityExtractor` Class in Code
+## 6. Evaluation
 
-The legacy `EntityExtractor` in `modules/utils.py` returns a raw Pandas DataFrame. Prefer the versioned pipelines above for competition JSON output.
+```bash
+# Shared writer / ontology used by active tracks
+python -c "from modules.pipelines.factory import available_pipelines; print(available_pipelines())"
 
-```python
-from modules.utils import EntityExtractor
-
-extractor = EntityExtractor(mode="ner + retrieval")
-clinical_note = "Bệnh nhân bị u ác đại tràng, uống paracetamol."
-df_results = extractor.extract(clinical_note)
-print(df_results.head())
+# Compare two submission directories
+python modules/evaluation/compare_outputs.py --help
 ```
 
-**Strict JSON formatting** (`type`, `candidates`, `assertions`, `position`) is handled by `modules/components/formatting/competition_json.py` when using `modules/evaluation/run_pipeline.py`.
+Prefer fair comparisons: same input, same ontology layer, same validator, same output writer — only the extractor differs.
+
+---
+
+## 7. Competition compliance
+
+- No external LLM APIs for final inference (OpenAI / Anthropic / Gemini / DashScope / OpenRouter).
+- Localhost-only self-hosted models for the competition LLM track.
+- Competition JSON must not expose internal metadata.
+- Do not package / submit Viettel ZIPs unless explicitly decided after review.
+
+---
+
+## 8. Archived experiments
+
+See `archives/`:
+
+- `legacy_pipelines/` — v5–v10 builders + old unit tests  
+- `leaderboard_submissions/` — scores / ZIP hashes  
+- `experiment_reports/` — pointers to analysis verdicts  
+- `openrouter_schema_teacher_free_2026-07-12/` — frontier diagnostic gold  
+
+Live handoff: `CURRENT_WORK.md`. Scored summary: `state.md`.
+
+---
+
+## Repository layout (active)
+
+```text
+modules/
+  common/           # shared schema, spans, assertions, ontology, writer
+  pipelines/
+    baseline/       # baseline_hybrid (frozen)
+    ner/            # task-specific NER track
+    llm/            # schema-aware LLM track
+  evaluation/       # runners + metrics helpers
+scripts/
+  run_baseline.py
+  run_ner.py
+  run_llm.py
+archives/           # evidence only
+```

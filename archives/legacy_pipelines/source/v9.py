@@ -19,7 +19,7 @@ from modules.components.structure.section_parser import VietnameseClinicalSectio
 from modules.core.constants import TARGET_LABEL_DIAGNOSIS, TARGET_LABEL_DRUG
 from modules.core.schemas import Document, EntityMention, FinalEntity, Span
 from modules.pipelines.base import BasePipeline
-from modules.pipelines.v7 import build_v7_structured_pipeline
+from modules.pipelines.baseline.pipeline import build_baseline_hybrid_pipeline as build_v7_structured_pipeline
 
 
 def _entity_sort_key(entity: FinalEntity) -> tuple:

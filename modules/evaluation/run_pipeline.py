@@ -17,19 +17,19 @@ def parse_args() -> argparse.Namespace:
     from modules.pipelines.factory import NER_MODEL_CHOICES, available_pipelines
 
     parser = argparse.ArgumentParser(
-        description="Run a versioned clinical NER/linking pipeline."
+        description="Run an active clinical track (baseline_hybrid / ner / llm)."
     )
     parser.add_argument(
         "--pipeline",
         choices=available_pipelines(),
-        default="v5_refactored",
-        help="Pipeline implementation to run.",
+        default="baseline_hybrid",
+        help="Active track to run (historical v5–v10 names are archived).",
     )
     parser.add_argument(
         "--model",
         choices=NER_MODEL_CHOICES,
         default="vihealthbert",
-        help="Base NER model used by the pipeline.",
+        help="Base NER model used by baseline_hybrid (ignored by llm).",
     )
     parser.add_argument(
         "--version-name",
@@ -165,13 +165,6 @@ def main() -> None:
     if trace_dir is not None:
         print(f"Traces     -> {trace_dir}")
 
-    # v9/v10 freeze architecture: same-run frozen v7 snapshot beside submission/.
-    base_v7_dir: Path | None = None
-    if args.pipeline in {"v9_llm_recall", "v10_llm_conflict_resolution"}:
-        base_v7_dir = submission_dir.parent / "base_v7_snapshot"
-        base_v7_dir.mkdir(parents=True, exist_ok=True)
-        print(f"Base v7    -> {base_v7_dir}")
-
     for file_path in tqdm(files, desc=f"Running {args.pipeline}/{args.model}"):
         text = file_path.read_text(encoding="utf-8")
         document = Document(doc_id=file_path.stem, text=text)
@@ -184,17 +177,6 @@ def main() -> None:
             json.dumps(output, ensure_ascii=False, indent=indent),
             encoding="utf-8",
         )
-
-        if base_v7_dir is not None:
-            base_entities = document.metadata.get("base_v7_entities")
-            if base_entities is None:
-                raise RuntimeError(
-                    f"{args.pipeline} missing base_v7_entities for {file_path.stem}"
-                )
-            (base_v7_dir / f"{file_path.stem}.json").write_text(
-                json.dumps(base_entities, ensure_ascii=False, indent=indent),
-                encoding="utf-8",
-            )
 
         if args.trace and "trace_txt" in document.metadata:
             assert trace_dir is not None

@@ -1,41 +1,35 @@
 # CURRENT_WORK.md
 
-> **Single active long-run handoff.** Rewrite (do not append) when a long job starts, changes, or finishes.
-> User resume prompt: `continue from CURRENT_WORK.md`
+> Active handoff only. Rewrite (do not append) when focus changes.
+> Resume prompt: `continue from CURRENT_WORK.md`
 
 ---
 
-## Active work
+## NER
 
 | Field | Value |
 |-------|-------|
-| **Status** | `IDLE` — reduced pipeline implemented; benchmark gates **FAILED** |
-| **Updated** | 2026-07-13 00:55 +0700 |
-| **Host** | `ict14` |
-| **Verdict** | `REDUCED_PIPELINE_TOO_AGGRESSIVE` |
+| **Status** | Scaffolded — no trained five-label + NONE model yet |
+| **Next** | Build training data with direct competition labels + explicit NONE (no Procedure→test remap); pick backend (token / span / GLiNER); train; wire `modules/pipelines/ner/inference.py` |
+| **Command** | `python scripts/run_ner.py --train-notes` |
 
-### Done
+Weak-label sources: frozen `baseline_hybrid` outputs; optional diagnostic gold under `archives/openrouter_schema_teacher_free_2026-07-12/`.
 
-- Implemented `openrouter_schema_teacher_reduced` (one extractor + conditional largest-model judge).
-- Offline ablation → extractor `tencent/hy3:free`; judge `nvidia/nemotron-3-ultra-550b-a55b:free`.
-- 10-doc benchmark: **19** requests (1.9/doc), 0×429, overlap vs archive **0.665** (need ≥0.90).
-- Full 100 **not started** (per success gates).
+---
 
-### Reports
+## LLM
 
-- `analysis/openrouter_reduced/final_report.md`
-- `analysis/openrouter_reduced/benchmark_10_docs.md`
-- Archive gold reference: `archives/openrouter_schema_teacher_free_2026-07-12/` (35.72280 / ~786 req)
+| Field | Value |
+|-------|-------|
+| **Status** | Diagnostic path runnable (reduced OpenRouter); competition localhost backend not wired |
+| **Diagnostic proof** | OpenRouter ensemble **35.72280** (archived); reduced 1-extractor gates previously FAILED (overlap 0.665) |
+| **Next** | Wire competition mode: same prompts/schemas as diagnostic, localhost model ≤9B, shared `modules/common/ontology`; then smoke → full 100 |
+| **Commands** | `python scripts/run_llm.py --mode diagnostic --benchmark-10` · `python scripts/run_llm.py --mode competition` |
 
-### Next (human / next session)
+Do **not** treat the 786-call ensemble as the main implementation. Do **not** submit OpenRouter outputs.
 
-1. Fix extractor prompt drift vs ablation A outputs; lower doc-judge rate.
-2. Re-run: `PYTHONUNBUFFERED=1 python scripts/run_openrouter_reduced.py --benchmark-10`
-3. Only if gates pass: full 100.
+---
 
-### Do not
+## Baseline
 
-- Commit / push / submit automatically
-- Delete caches or archive
-- Modify v7 / v9 / v10
-- Call this v11
+Frozen as `baseline_hybrid` (24.79660). Do not add rules.

@@ -136,8 +136,6 @@ def main() -> None:
     submission_dir = run_dir / "submission"
     trace_dir = run_dir / "trace" if args.trace else None
     base_v7_dir: Path | None = None
-    if args.pipeline in {"v9_llm_recall", "v10_llm_conflict_resolution"}:
-        base_v7_dir = run_dir / "base_v7_snapshot"
     submission_dir.mkdir(parents=True, exist_ok=True)
     if trace_dir is not None:
         trace_dir.mkdir(parents=True, exist_ok=True)

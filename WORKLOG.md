@@ -356,3 +356,12 @@ manual annotation and local evaluation.
 - Overlap vs archive gold: 0.665 (gate ≥0.90 FAIL); type agree 0.962 PASS
 - Verdict: REDUCED_PIPELINE_TOO_AGGRESSIVE
 - Reports: analysis/openrouter_reduced/final_report.md
+
+---
+### 2026-07-13 02:24 +0700 | host=ict14
+**Status:** Three-track consolidation DONE — only baseline_hybrid / ner / llm remain active
+**Next:** NER train five-label+NONE; LLM wire localhost ≤9B competition mode
+- Archived v5–v10 builders → archives/legacy_pipelines/source/
+- Factory + CLIs: scripts/run_{baseline,ner,llm}.py (no --pipeline vN)
+- Shared modules/common/ ontology + writer; docs rewritten (README/CURRENT_WORK/state/AGENTS/PLAN)
+- OpenRouter diagnostic remains via run_llm.py --mode diagnostic; 786-call ensemble archived
